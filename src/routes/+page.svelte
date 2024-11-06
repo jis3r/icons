@@ -1,3 +1,13 @@
-<h1>Welcome to your library project</h1>
-<p>Create your package using @sveltejs/package and preview/showcase your work with SvelteKit</p>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+	import ArrowLeft from '$lib/icons/arrowLeft.svelte';
+	import ArrowRight from '$lib/icons/arrowRight.svelte';
+	import Clock from '$lib/icons/clock.svelte';
+	import Expand from '$lib/icons/expand.svelte';
+</script>
+
+<div class="grid w-fit grid-cols-12 p-7">
+	<ArrowLeft />
+	<ArrowRight />
+	<Clock />
+	<Expand />
+</div>
