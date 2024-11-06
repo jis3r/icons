@@ -14,8 +14,8 @@
 	class={classes}
 	aria-label="refresh-ccw"
 	role="img"
-	on:mouseenter={handleMouseEnter}
-	on:mouseleave={handleMouseLeave}
+	onmouseenter={handleMouseEnter}
+	onmouseleave={handleMouseLeave}
 >
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
