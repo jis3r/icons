@@ -1,8 +1,8 @@
 <script>
 	import { Button } from '$lib/components/ui/button';
+	import { Input } from '$lib/components/ui/input';
 
-	import { Sun } from 'lucide-svelte';
-	import { Moon } from 'lucide-svelte';
+	import { Sun, Moon, Copy as LucideCopy } from 'lucide-svelte';
 	import ArrowLeft from '$lib/icons/arrow-left.svelte';
 	import ArrowRight from '$lib/icons/arrow-right.svelte';
 	import ArrowUp from '$lib/icons/arrow-up.svelte';
@@ -108,6 +108,10 @@
 			>
 		</p>
 		<div class="my-10 flex flex-col gap-6 sm:my-20">
+			<Input
+				placeholder="Search {icons.length} icons..."
+				class="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent disabled:cursor-not-allowed disabled:opacity-50"
+			></Input>
 			<div
 				class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-[repeat(auto-fill,minmax(165px,1fr))]"
 			>
@@ -119,6 +123,17 @@
 							classes="flex cursor-pointer select-none items-center justify-center rounded-md p-2 transition-colors duration-200 hover:bg-accent"
 						/>
 						<p class="mb-3 mt-5 text-center text-xs text-muted-foreground">{icon.name}</p>
+						<div class="flex items-center justify-center gap-2">
+							<Button
+								on:click={() => {
+									//copy code of the icon to the clipboard
+								}}
+								variant="ghost"
+								class="size-8 cursor-pointer rounded-md p-2 transition-colors duration-200 hover:bg-accent"
+							>
+								<LucideCopy class="h-4 w-4" />
+							</Button>
+						</div>
 					</div>
 				{/each}
 			</div>
