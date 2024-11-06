@@ -10,6 +10,9 @@
 	import Clock from '$lib/icons/clock.svelte';
 	import Expand from '$lib/icons/expand.svelte';
 	import Unplug from '$lib/icons/unplug.svelte';
+	import RefreshCcw from '$lib/icons/refresh-ccw.svelte';
+	import Settings from '$lib/icons/settings.svelte';
+	import Copy from '$lib/icons/copy.svelte';
 
 	import { toggleMode } from 'mode-watcher';
 
@@ -41,6 +44,18 @@
 		{
 			name: 'unplug',
 			component: Unplug
+		},
+		{
+			name: 'refresh-ccw',
+			component: RefreshCcw
+		},
+		{
+			name: 'settings',
+			component: Settings
+		},
+		{
+			name: 'copy',
+			component: Copy
 		}
 	];
 </script>
