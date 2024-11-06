@@ -1,7 +1,7 @@
 ---
 name: Icon request
-about: Template for new icon requests
-title: 'Icon Request: '
+about: Request a new icon for this project
+title: 'Icon request: '
 labels: icon request
 assignees: jis3r
 
