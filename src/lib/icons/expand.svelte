@@ -1,5 +1,5 @@
 <script>
-	let { color = '#fff', isHovered } = $props();
+	let { color = 'currentColor', isHovered, classes = '' } = $props();
 
 	function handleMouseEnter() {
 		isHovered = true;
@@ -11,9 +11,11 @@
 </script>
 
 <div
-	class="flex cursor-pointer select-none items-center justify-center rounded-md p-2 transition-colors duration-200 hover:bg-neutral-800"
-	on:mouseenter={handleMouseEnter}
-	on:mouseleave={handleMouseLeave}
+	class={classes}
+	aria-label="expand"
+	role="img"
+	onmouseenter={handleMouseEnter}
+	onmouseleave={handleMouseLeave}
 >
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
