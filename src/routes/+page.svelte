@@ -5,7 +5,7 @@
 	import Expand from '$lib/icons/expand.svelte';
 </script>
 
-<div class="grid w-fit grid-cols-12 p-7">
+<div class="flex gap-1 p-7">
 	<ArrowLeft />
 	<ArrowRight />
 	<Clock />
