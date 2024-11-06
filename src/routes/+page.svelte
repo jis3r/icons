@@ -1,11 +1,12 @@
 <script>
 	import { Button } from '$lib/components/ui/button';
-	import * as Card from '$lib/components/ui/card/index.js';
 
 	import { Sun } from 'lucide-svelte';
 	import { Moon } from 'lucide-svelte';
-	import ArrowLeft from '$lib/icons/arrowLeft.svelte';
-	import ArrowRight from '$lib/icons/arrowRight.svelte';
+	import ArrowLeft from '$lib/icons/arrow-left.svelte';
+	import ArrowRight from '$lib/icons/arrow-right.svelte';
+	import ArrowUp from '$lib/icons/arrow-up.svelte';
+	import ArrowDown from '$lib/icons/arrow-down.svelte';
 	import Clock from '$lib/icons/clock.svelte';
 	import Expand from '$lib/icons/expand.svelte';
 	import Unplug from '$lib/icons/unplug.svelte';
@@ -20,6 +21,14 @@
 		{
 			name: 'arrow-right',
 			component: ArrowRight
+		},
+		{
+			name: 'arrow-up',
+			component: ArrowUp
+		},
+		{
+			name: 'arrow-down',
+			component: ArrowDown
 		},
 		{
 			name: 'clock',
