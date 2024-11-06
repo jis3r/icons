@@ -6,7 +6,7 @@
 
 		setTimeout(() => {
 			isHovered = false;
-		}, 200); // Adjust this duration as needed
+		}, 200);
 	}
 </script>
 
@@ -34,9 +34,5 @@
 
 	.head {
 		transform: translateX(3px);
-	}
-
-	.line {
-		transition: d 0.2s ease-in;
 	}
 </style>
