@@ -1,12 +1,12 @@
 <script>
-	let { color = 'currentColor', isHovered, classes = '' } = $props();
+	let { color = 'currentColor', isHovered = false, classes = '' } = $props();
 
 	function handleMouseEnter() {
 		isHovered = true;
 
 		setTimeout(() => {
 			isHovered = false;
-		}, 200);
+		}, 200); // Adjust this duration as needed
 	}
 </script>
 
@@ -22,21 +22,21 @@
 		stroke-linecap="round"
 		stroke-linejoin="round"
 	>
-		<path d="m12 19-7-7 7-7" class:animate={isHovered} />
-		<path d="M19 12H5" class:animate={isHovered} />
+		<path d="m12 19-7-7 7-7" class:head={isHovered} />
+		<path d={isHovered ? 'M19 12H10' : 'M19 12H5'} class="line" />
 	</svg>
 </div>
 
 <style>
 	path {
-		transition: all 0.4s ease;
+		transition: all 0.2s ease-in;
 	}
 
-	.animate:nth-child(1) {
+	.head {
 		transform: translateX(3px);
 	}
 
-	.animate:nth-child(2) {
-		d: path('M19 12H10');
+	.line {
+		transition: d 0.2s ease-in;
 	}
 </style>
