@@ -23,7 +23,8 @@
 		stroke-linejoin="round"
 	>
 		<path d="m12 19-7-7 7-7" class:head={isHovered} />
-		<path d={isHovered ? 'M19 12H10' : 'M19 12H5'} class:line={isHovered} />
+		<path d="M10 12H5" class:head={isHovered} />
+		<path d="M19 12H10" />
 	</svg>
 </div>
 
@@ -34,9 +35,5 @@
 
 	.head {
 		transform: translateX(3px);
-	}
-
-	.line {
-		transition: d 0.2s ease-in;
 	}
 </style>
