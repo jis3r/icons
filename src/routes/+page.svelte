@@ -13,6 +13,7 @@
 	import RefreshCcw from '$lib/icons/refresh-ccw.svelte';
 	import Settings from '$lib/icons/settings.svelte';
 	import Copy from '$lib/icons/copy.svelte';
+	import Search from '$lib/icons/search.svelte';
 
 	import { toggleMode } from 'mode-watcher';
 
@@ -56,6 +57,10 @@
 		{
 			name: 'copy',
 			component: Copy
+		},
+		{
+			name: 'search',
+			component: Search
 		}
 	];
 </script>
