@@ -14,6 +14,8 @@
 	import Settings from '$lib/icons/settings.svelte';
 	import Copy from '$lib/icons/copy.svelte';
 	import Search from '$lib/icons/search.svelte';
+	import Compass from '$lib/icons/compass.svelte';
+	import AudioLines from '$lib/icons/audio-lines.svelte';
 
 	import { toggleMode } from 'mode-watcher';
 
@@ -61,6 +63,14 @@
 		{
 			name: 'search',
 			component: Search
+		},
+		{
+			name: 'compass',
+			component: Compass
+		},
+		{
+			name: 'audio-lines',
+			component: AudioLines
 		}
 	];
 </script>

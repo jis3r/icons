@@ -6,7 +6,7 @@
 			isHovered = true;
 			setTimeout(() => {
 				isHovered = false;
-			}, 1000); // Match the animation duration
+			}, 1000);
 		}
 	}
 </script>
