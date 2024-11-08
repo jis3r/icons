@@ -5,64 +5,7 @@
 
 ## Contributing
 
-We welcome contributions to `jis3r/icons`! Please read the instructions carefully before submitting improvements and new icons:
-
-1. Fork the repository on GitHub.
-
-2. Clone your forked repository to your local machine:
-
-   ```
-   git clone https://github.com/your-username/icons.git
-   ```
-
-3. Navigate to the project directory:
-
-   ```
-   cd icons
-   ```
-
-4. Create a new branch for your feature or bug fix:
-
-   ```
-   git checkout -b your-branch-name
-   ```
-
-5. Install the project dependencies:
-
-   ```
-   npm i
-   ```
-
-6. Make your changes to the codebase.
-
-7. Build the project:
-
-   ```
-   npm run build
-   ```
-
-8. Test the application to ensure your changes work as expected.
-
-   ```
-   npm run build
-   npm run preview
-   ```
-
-9. Commit your changes:
-
-   ```
-   git commit -m "Your commit message"
-   ```
-
-10. Push your changes to your fork:
-
-    ```
-    git push origin your-branch-name
-    ```
-
-11. Open a pull request on the original repository.
-
-Thank you for contributing to the project!
+We welcome contributions to `jis3r/icons`! Please read the [contribution guidelines](https://github.com/jis3r/icons/CONTRIBUTING.md) carefully before submitting improvements and new icons:
 
 ## Terms of Use
 
