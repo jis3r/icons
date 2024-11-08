@@ -1,78 +1,17 @@
 <script>
 	import { Button } from '$lib/components/ui/button';
 	import { Input } from '$lib/components/ui/input';
-
 	import { Sun, Moon, Copy as LucideCopy } from 'lucide-svelte';
-	import ArrowLeft from '$lib/icons/arrow-left.svelte';
-	import ArrowRight from '$lib/icons/arrow-right.svelte';
-	import ArrowUp from '$lib/icons/arrow-up.svelte';
-	import ArrowDown from '$lib/icons/arrow-down.svelte';
-	import Clock from '$lib/icons/clock.svelte';
-	import Expand from '$lib/icons/expand.svelte';
-	import Unplug from '$lib/icons/unplug.svelte';
-	import RefreshCcw from '$lib/icons/refresh-ccw.svelte';
-	import Settings from '$lib/icons/settings.svelte';
-	import Copy from '$lib/icons/copy.svelte';
-	import Search from '$lib/icons/search.svelte';
-	import Compass from '$lib/icons/compass.svelte';
-	import AudioLines from '$lib/icons/audio-lines.svelte';
-
 	import { toggleMode } from 'mode-watcher';
+	import { onMount } from 'svelte';
+	import { getIcons } from '$lib/utils/icons.js';
 
-	let icons = [
-		{
-			name: 'arrow-left',
-			component: ArrowLeft
-		},
-		{
-			name: 'arrow-right',
-			component: ArrowRight
-		},
-		{
-			name: 'arrow-up',
-			component: ArrowUp
-		},
-		{
-			name: 'arrow-down',
-			component: ArrowDown
-		},
-		{
-			name: 'clock',
-			component: Clock
-		},
-		{
-			name: 'expand',
-			component: Expand
-		},
-		{
-			name: 'unplug',
-			component: Unplug
-		},
-		{
-			name: 'refresh-ccw',
-			component: RefreshCcw
-		},
-		{
-			name: 'settings',
-			component: Settings
-		},
-		{
-			name: 'copy',
-			component: Copy
-		},
-		{
-			name: 'search',
-			component: Search
-		},
-		{
-			name: 'compass',
-			component: Compass
-		},
-		{
-			name: 'audio-lines',
-			component: AudioLines
-		}
-	];
+	let icons = [];
+
+	onMount(async () => {
+		icons = await getIcons();
+		console.log(icons);
+	});
 </script>
 
 <header class="container flex h-full w-full max-w-7xl items-center justify-between py-4">
@@ -141,7 +80,7 @@
 						<div class="flex items-center justify-center gap-2">
 							<Button
 								on:click={() => {
-									//copy code of the icon to the clipboard
+									navigator.clipboard.writeText(icon.source);
 								}}
 								variant="ghost"
 								class="size-8 cursor-pointer rounded-md p-2 transition-colors duration-200 hover:bg-accent"

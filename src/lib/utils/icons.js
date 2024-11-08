@@ -1,16 +1,19 @@
 export let getIcons = async () => {
-	let icons = import.meta.glob('../icons/*');
+	let icons = import.meta.glob('../icons/*.svelte');
 
-	console.log(icons);
+	let rawIcons = import.meta.glob('../icons/*.svelte', {
+		query: '?raw',
+		import: 'default'
+	});
 
-	// Map over the keys and dynamically import each icon component
 	const iconArray = await Promise.all(
 		Object.keys(icons).map(async (key) => {
 			const module = await icons[key]();
+			const source = await rawIcons[key]();
 			return {
 				name: key.split('/').pop().split('.').shift(),
 				component: module.default,
-				source: module.source // Ensure 'source' is correctly accessible in each component
+				source: source
 			};
 		})
 	);
