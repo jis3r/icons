@@ -20,3 +20,13 @@ export let getIcons = async () => {
 
 	return iconArray;
 };
+
+export let downloadIcon = (icon) => {
+	const blob = new Blob([icon.source], { type: 'text/plain' });
+	const url = URL.createObjectURL(blob);
+	const link = document.createElement('a');
+	link.href = url;
+	link.download = `${icon.name}.svelte`;
+	link.click();
+	URL.revokeObjectURL(url);
+};
