@@ -1,11 +1,12 @@
 <script>
 	import { Button } from '$lib/components/ui/button';
 	import { Input } from '$lib/components/ui/input';
-	import { Sun, Moon, Download, Copy } from 'lucide-svelte';
+	import { Sun, Moon, Download, Copy, ExternalLink, Check } from 'lucide-svelte';
 	import { toggleMode } from 'mode-watcher';
 	import { onMount } from 'svelte';
 	import { getIcons, downloadIcon } from '$lib/utils/icons.js';
 	import Github from '$lib/components/github.svelte';
+	import { fade } from 'svelte/transition';
 
 	let stars = $state(0);
 	let icons = [];
@@ -100,20 +101,53 @@
 							<Button
 								on:click={() => {
 									navigator.clipboard.writeText(icon.source);
+									icon.copied = true;
+									setTimeout(() => {
+										icon.copied = false;
+									}, 1500);
 								}}
 								variant="ghost"
 								class="size-8 cursor-pointer rounded-md p-2 transition-colors duration-200 hover:bg-accent"
 							>
-								<Copy class="h-4 w-4" />
+								{#if icon.copied}
+									<div in:fade={{ duration: 150 }}>
+										<Check class="h-4 w-4" />
+									</div>
+								{:else}
+									<div in:fade={{ duration: 150 }}>
+										<Copy class="h-4 w-4" />
+									</div>
+								{/if}
 							</Button>
 							<Button
 								on:click={() => {
 									downloadIcon(icon);
+									icon.downloaded = true;
+									setTimeout(() => {
+										icon.downloaded = false;
+									}, 1500);
 								}}
 								variant="ghost"
 								class="size-8 cursor-pointer rounded-md p-2 transition-colors duration-200 hover:bg-accent"
 							>
-								<Download class="h-4 w-4" />
+								{#if icon.downloaded}
+									<div in:fade={{ duration: 150 }}>
+										<Check class="h-4 w-4" />
+									</div>
+								{:else}
+									<div in:fade={{ duration: 150 }}>
+										<Download class="h-4 w-4" />
+									</div>
+								{/if}
+							</Button>
+							<Button
+								href={'https://github.com/jis3r/icons/blob/master/src/lib/icons/' +
+									icon.name +
+									'.svelte'}
+								variant="ghost"
+								class="size-8 cursor-pointer rounded-md p-2 transition-colors duration-200 hover:bg-accent"
+							>
+								<ExternalLink class="h-4 w-4" />
 							</Button>
 						</div>
 					</div>
