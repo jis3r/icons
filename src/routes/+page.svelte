@@ -1,24 +1,39 @@
 <script>
 	import { Button } from '$lib/components/ui/button';
 	import { Input } from '$lib/components/ui/input';
-	import { Sun, Moon, Copy as LucideCopy } from 'lucide-svelte';
+	import { Sun, Moon, Star, Copy as LucideCopy } from 'lucide-svelte';
 	import { toggleMode } from 'mode-watcher';
 	import { onMount } from 'svelte';
 	import { getIcons } from '$lib/utils/icons.js';
+	import Github from '$lib/components/github.svelte';
 
+	let stars = $state(0);
 	let icons = [];
+	let searchQuery = $state('');
+	let filteredIcons = $state(icons);
+
+	$effect(() => {
+		console.log('searchQuery', searchQuery);
+		filteredIcons = icons.filter((icon) =>
+			icon.name.toLowerCase().includes(searchQuery.toLowerCase())
+		);
+	});
 
 	onMount(async () => {
 		icons = await getIcons();
-		console.log(icons);
+		filteredIcons = icons;
+		const res = await fetch('https://api.github.com/repos/jis3r/icons');
+		const data = await res.json();
+		stars = data.stargazers_count;
 	});
 </script>
 
 <header class="container flex h-full w-full max-w-7xl items-center justify-between py-4">
 	<h1 class="text-base">jis3r/icons</h1>
 	<div class="flex gap-1">
-		<Button variant="outline" class="flex gap-1" href="https://github.com/jis3r/icons">
-			github
+		<Button variant="outline" class="flex gap-2" href="https://github.com/jis3r/icons">
+			<Github size="20" />
+			<span>{stars}</span>
 		</Button>
 
 		<Button on:click={toggleMode} variant="outline" size="icon">
@@ -32,6 +47,7 @@
 		</Button>
 	</div>
 </header>
+
 <main class="mt-8 flex w-full items-center justify-center sm:mt-16">
 	<div class="container max-w-7xl">
 		<h1 class="text-balance text-2xl sm:text-3xl">
@@ -61,15 +77,18 @@
 				href="https://github.com/pqoqubbw">@pqoqubbw</Button
 			>
 		</p>
+
 		<div class="my-10 flex flex-col gap-6 sm:my-20">
 			<Input
-				placeholder="Search {icons.length} icons..."
+				placeholder="Search {filteredIcons.length} icons..."
 				class="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent disabled:cursor-not-allowed disabled:opacity-50"
+				bind:value={searchQuery}
 			></Input>
+
 			<div
 				class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-[repeat(auto-fill,minmax(165px,1fr))]"
 			>
-				{#each icons as icon}
+				{#each filteredIcons as icon}
 					<div
 						class="flex h-full w-full flex-col items-center justify-center rounded-md border border-input p-3"
 					>
