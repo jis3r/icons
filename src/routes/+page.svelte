@@ -14,7 +14,6 @@
 	let filteredIcons = $state(icons);
 
 	$effect(() => {
-		console.log('searchQuery', searchQuery);
 		filteredIcons = icons.filter((icon) =>
 			icon.name.toLowerCase().includes(searchQuery.toLowerCase())
 		);
