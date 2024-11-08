@@ -68,7 +68,7 @@ Thank you for contributing to the project!
 
 Feel free to use these components in personal and commercial projects. However, while the tutorials and demos are available for your use as-is, they cannot be redistributed or resold. Let’s keep things fair and respect each other’s work.
 
-If you have any questions or just want to say hi, feel free to reach out to me 👉 [@pqoqubbw](https://twitter.com/jis3r).
+If you have any questions or just want to say hi, feel free to reach out to me 👉 [@jis3r](https://twitter.com/jis3r).
 
 ## Notes
 
