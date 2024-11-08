@@ -1,10 +1,10 @@
 <script>
 	import { Button } from '$lib/components/ui/button';
 	import { Input } from '$lib/components/ui/input';
-	import { Sun, Moon, Star, Copy as LucideCopy } from 'lucide-svelte';
+	import { Sun, Moon, Download, Copy } from 'lucide-svelte';
 	import { toggleMode } from 'mode-watcher';
 	import { onMount } from 'svelte';
-	import { getIcons } from '$lib/utils/icons.js';
+	import { getIcons, downloadIcon } from '$lib/utils/icons.js';
 	import Github from '$lib/components/github.svelte';
 
 	let stars = $state(0);
@@ -104,7 +104,16 @@
 								variant="ghost"
 								class="size-8 cursor-pointer rounded-md p-2 transition-colors duration-200 hover:bg-accent"
 							>
-								<LucideCopy class="h-4 w-4" />
+								<Copy class="h-4 w-4" />
+							</Button>
+							<Button
+								on:click={() => {
+									downloadIcon(icon);
+								}}
+								variant="ghost"
+								class="size-8 cursor-pointer rounded-md p-2 transition-colors duration-200 hover:bg-accent"
+							>
+								<Download class="h-4 w-4" />
 							</Button>
 						</div>
 					</div>
