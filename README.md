@@ -1,58 +1,79 @@
-# create-svelte
+# `jis3r/icons` is beautifully crafted, moving icons. for svelte. 🧡
 
-Everything you need to build a Svelte library, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
 
-Read more about creating a library [in the docs](https://svelte.dev/docs/kit/packaging).
+**Demo** → [https://movingicons.dev](https://movingicons.dev)
 
-## Creating a project
+## Contributing
 
-If you're seeing this, you've probably already done this step. Congrats!
+We welcome contributions to `jis3r/icons`! Please read the instructions carefully before submitting improvements and new icons:
 
-```bash
-# create a new project in the current directory
-npx sv create
+1. Fork the repository on GitHub.
 
-# create a new project in my-app
-npx sv create my-app
-```
+2. Clone your forked repository to your local machine:
 
-## Developing
+   ```
+   git clone https://github.com/your-username/icons.git
+   ```
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+3. Navigate to the project directory:
 
-```bash
-npm run dev
+   ```
+   cd icons
+   ```
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+4. Create a new branch for your feature or bug fix:
 
-Everything inside `src/lib` is part of your library, everything inside `src/routes` can be used as a showcase or preview app.
+   ```
+   git checkout -b your-branch-name
+   ```
 
-## Building
+5. Install the project dependencies:
 
-To build your library:
+   ```
+   npm i
+   ```
 
-```bash
-npm run package
-```
+6. Make your changes to the codebase.
 
-To create a production version of your showcase app:
+7. Build the project:
 
-```bash
-npm run build
-```
+   ```
+   npm run build
+   ```
 
-You can preview the production build with `npm run preview`.
+8. Test the application to ensure your changes work as expected.
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+   ```
+   npm run build
+   npm run preview
+   ```
 
-## Publishing
+9. Commit your changes:
 
-Go into the `package.json` and give your package the desired name through the `"name"` option. Also consider adding a `"license"` field and point it to a `LICENSE` file which you can create from a template (one popular option is the [MIT license](https://opensource.org/license/mit/)).
+   ```
+   git commit -m "Your commit message"
+   ```
 
-To publish your library to [npm](https://www.npmjs.com):
+10. Push your changes to your fork:
 
-```bash
-npm publish
-```
+    ```
+    git push origin your-branch-name
+    ```
+
+11. Open a pull request on the original repository.
+
+Thank you for contributing to the project!
+
+## Terms of Use
+
+Feel free to use these components in personal and commercial projects. However, while the tutorials and demos are available for your use as-is, they cannot be redistributed or resold. Let’s keep things fair and respect each other’s work.
+
+If you have any questions or just want to say hi, feel free to reach out to me 👉 [@pqoqubbw](https://twitter.com/jis3r).
+
+## Notes
+
+This project is a work in progress, and i'm continuously working to improve and expand this collection. I’d love to hear your feedback or see your contributions as the project evolves!
+
+## Credits
+
+Thank you to the awesome [Dmytro](https://twitter.com/pqoqubbw) 💜 for the idea and inspiration to animated lucide-icons! I loved his project so much that I wanted to make it available for the svelte ecosystem, so here we go! :)
