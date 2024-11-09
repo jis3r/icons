@@ -12,7 +12,7 @@
 
 <div
 	class={classes}
-	aria-label="hand coins"
+	aria-label="hand-coins"
 	role="img"
 	onmouseenter={handleMouseEnter}
 	onmouseleave={handleMouseLeave}

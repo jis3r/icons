@@ -12,7 +12,7 @@
 
 <div
 	class={classes}
-	aria-label="delete-icon"
+	aria-label="trash"
 	role="img"
 	onmouseenter={handleMouseEnter}
 	onmouseleave={handleMouseLeave}

@@ -12,7 +12,7 @@
 
 <div
 	class={classes}
-	aria-label="square pen"
+	aria-label="square-pen"
 	role="img"
 	onmouseenter={handleMouseEnter}
 	onmouseleave={handleMouseLeave}

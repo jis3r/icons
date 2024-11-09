@@ -12,7 +12,7 @@
 
 <div
 	class={classes}
-	aria-label="align-center-icon"
+	aria-label="align-center"
 	role="img"
 	onmouseenter={handleMouseEnter}
 	onmouseleave={handleMouseLeave}

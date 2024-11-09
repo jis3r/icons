@@ -12,7 +12,7 @@
 
 <div
 	class={classes}
-	aria-label="file stack"
+	aria-label="file-stack"
 	role="img"
 	onmouseenter={handleMouseEnter}
 	onmouseleave={handleMouseLeave}

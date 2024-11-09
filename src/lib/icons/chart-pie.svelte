@@ -12,7 +12,7 @@
 
 <div
 	class={classes}
-	aria-label="chart pie"
+	aria-label="chart-pie"
 	role="img"
 	onmouseenter={handleMouseEnter}
 	onmouseleave={handleMouseLeave}

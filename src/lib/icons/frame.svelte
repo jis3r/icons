@@ -12,7 +12,7 @@
 
 <div
 	class={classes}
-	aria-label="frame-icon"
+	aria-label="frame"
 	role="img"
 	onmouseenter={handleMouseEnter}
 	onmouseleave={handleMouseLeave}

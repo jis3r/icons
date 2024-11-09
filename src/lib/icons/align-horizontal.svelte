@@ -12,7 +12,7 @@
 
 <div
 	class={classes}
-	aria-label="align horizontal"
+	aria-label="align-horizontal"
 	role="img"
 	onmouseenter={handleMouseEnter}
 	onmouseleave={handleMouseLeave}

@@ -12,7 +12,7 @@
 
 <div
 	class={classes}
-	aria-label="bone-icon"
+	aria-label="bone"
 	role="img"
 	onmouseenter={handleMouseEnter}
 	onmouseleave={handleMouseLeave}

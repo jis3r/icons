@@ -12,7 +12,7 @@
 
 <div
 	class={classes}
-	aria-label="archive-icon"
+	aria-label="archive"
 	role="img"
 	onmouseenter={handleMouseEnter}
 	onmouseleave={handleMouseLeave}

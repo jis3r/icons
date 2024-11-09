@@ -14,7 +14,7 @@
 	class={classes}
 	onmouseenter={handleMouseEnter}
 	onmouseleave={handleMouseLeave}
-	aria-label="upvote-icon"
+	aria-label="thumbs-up"
 	role="img"
 >
 	<svg

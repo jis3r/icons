@@ -12,7 +12,7 @@
 
 <div
 	class={classes}
-	aria-label="calendar settings"
+	aria-label="calendar-settings"
 	role="img"
 	onmouseenter={handleMouseEnter}
 	onmouseleave={handleMouseLeave}

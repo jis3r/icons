@@ -12,7 +12,7 @@
 
 <div
 	class={classes}
-	aria-label="message circle more"
+	aria-label="message-circle-more"
 	role="img"
 	onmouseenter={handleMouseEnter}
 	onmouseleave={handleMouseLeave}

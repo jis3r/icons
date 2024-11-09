@@ -14,7 +14,7 @@
 	class={classes}
 	onmouseenter={handleMouseEnter}
 	onmouseleave={handleMouseLeave}
-	aria-label="download-icon"
+	aria-label="download"
 	role="img"
 >
 	<svg

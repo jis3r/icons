@@ -12,7 +12,7 @@
 
 <div
 	class={classes}
-	aria-label="badge-alert-icon"
+	aria-label="badge-alert"
 	role="img"
 	onmouseenter={handleMouseEnter}
 	onmouseleave={handleMouseLeave}

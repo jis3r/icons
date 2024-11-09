@@ -12,7 +12,7 @@
 
 <div
 	class={classes}
-	aria-label="audio lines"
+	aria-label="audio-lines"
 	role="img"
 	onmouseenter={handleMouseEnter}
 	onmouseleave={handleMouseLeave}

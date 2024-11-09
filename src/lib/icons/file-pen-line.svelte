@@ -12,7 +12,7 @@
 
 <div
 	class={classes}
-	aria-label="file pen line"
+	aria-label="file-pen-line"
 	role="img"
 	onmouseenter={handleMouseEnter}
 	onmouseleave={handleMouseLeave}

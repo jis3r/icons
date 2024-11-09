@@ -14,7 +14,7 @@
 	class={classes}
 	onmouseenter={handleMouseEnter}
 	onmouseleave={handleMouseLeave}
-	aria-label="logout-icon"
+	aria-label="logout"
 	role="img"
 >
 	<svg

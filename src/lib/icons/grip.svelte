@@ -23,7 +23,7 @@
 	}
 </script>
 
-<div class={classes} aria-label="grip icon" role="img" onmouseenter={handleMouseEnter}>
+<div class={classes} aria-label="grip" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width="28"

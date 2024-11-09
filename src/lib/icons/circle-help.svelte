@@ -12,7 +12,7 @@
 
 <div
 	class={classes}
-	aria-label="circle-help-icon"
+	aria-label="circle-help"
 	role="img"
 	onmouseenter={handleMouseEnter}
 	onmouseleave={handleMouseLeave}
