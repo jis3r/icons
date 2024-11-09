@@ -5,7 +5,7 @@
 
 ## Contributing
 
-We welcome contributions to `jis3r/icons`! Please read the [contribution guidelines](https://github.com/jis3r/icons/CONTRIBUTING.md) carefully before submitting improvements and new icons:
+We welcome contributions to `jis3r/icons`! Please read the [contribution guidelines](https://github.com/jis3r/icons/blob/master/CONTRIBUTING.md) carefully before submitting improvements and new icons:
 
 ## Terms of Use
 
