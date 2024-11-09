@@ -14,6 +14,7 @@
 	let filteredIcons = $state(icons);
 
 	$effect(() => {
+		searchQuery = searchQuery;
 		filteredIcons = icons.filter((icon) =>
 			icon.name.toLowerCase().includes(searchQuery.toLowerCase())
 		);
@@ -79,11 +80,7 @@
 		</p>
 
 		<div class="my-10 flex flex-col gap-6 sm:my-20">
-			<Input
-				placeholder="Search {filteredIcons.length} icons..."
-				class="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-accent disabled:cursor-not-allowed disabled:opacity-50"
-				bind:value={searchQuery}
-			></Input>
+			<Input placeholder="Search {filteredIcons.length} icons..." bind:value={searchQuery}></Input>
 
 			<div
 				class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-[repeat(auto-fill,minmax(165px,1fr))]"
