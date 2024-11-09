@@ -1,6 +1,7 @@
 <script>
 	import { Button } from '$lib/components/ui/button';
 	import { Input } from '$lib/components/ui/input';
+	import { Badge } from '$lib/components/ui/badge';
 	import { Sun, Moon, Download, Copy, ExternalLink, Check } from 'lucide-svelte';
 	import { toggleMode } from 'mode-watcher';
 	import { onMount } from 'svelte';
@@ -9,6 +10,7 @@
 	import { fade } from 'svelte/transition';
 
 	let stars = $state(0);
+	let iconsAdded = $state(0);
 	let icons = [];
 	let searchQuery = $state('');
 	let filteredIcons = $state(icons);
@@ -26,6 +28,12 @@
 		const res = await fetch('https://api.github.com/repos/jis3r/icons');
 		const data = await res.json();
 		stars = data.stargazers_count;
+
+		const lastVisit = localStorage.getItem('lastVisit');
+		if (lastVisit) {
+			iconsAdded = icons.length - JSON.parse(lastVisit);
+		}
+		localStorage.setItem('lastVisit', JSON.stringify(icons.length));
 	});
 </script>
 
@@ -80,6 +88,9 @@
 		</p>
 
 		<div class="my-10 flex flex-col gap-6 sm:my-20">
+			{#if iconsAdded > 0}
+				<Badge class="w-fit text-xs">+{iconsAdded} icons since your last visit! 🎉</Badge>
+			{/if}
 			<Input placeholder="Search {filteredIcons.length} icons..." bind:value={searchQuery}></Input>
 
 			<div
@@ -150,5 +161,9 @@
 				{/each}
 			</div>
 		</div>
+
+		<p class="mb-4 text-center text-xs text-muted-foreground">
+			built with ❤️ by <a href="https://github.com/jis3r" class="underline">jis3r</a>
+		</p>
 	</div>
 </main>
