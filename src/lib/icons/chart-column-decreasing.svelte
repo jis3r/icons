@@ -1,0 +1,86 @@
+<script>
+	let { color = 'currentColor', isHovered = false, classes = '' } = $props();
+
+	function handleMouseEnter() {
+		isHovered = true;
+
+		setTimeout(() => {
+			isHovered = false;
+		}, 600);
+	}
+</script>
+
+<div
+	class={classes}
+	aria-label="chart column decreasing"
+	role="img"
+	onmouseenter={handleMouseEnter}
+>
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width="28"
+		height="28"
+		viewBox="0 0 24 24"
+		fill="none"
+		stroke={color}
+		stroke-width="2"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		class="chart-column-decreasing-icon"
+		class:animate={isHovered}
+	>
+		<path d="M13 17V9" class="column column-1" />
+		<path d="M18 17v-3" class="column column-2" />
+		<path d="M3 3v16a2 2 0 0 0 2 2h16" class="frame" />
+		<path d="M8 17V5" class="column column-0" />
+	</svg>
+</div>
+
+<style>
+	.chart-column-decreasing-icon {
+		overflow: visible;
+	}
+
+	.column {
+		stroke-dasharray: 12;
+		stroke-dashoffset: 0;
+		transition:
+			stroke-dashoffset 0.3s ease,
+			opacity 0.3s ease;
+	}
+
+	.chart-column-decreasing-icon.animate .column {
+		animation: columnAnimation 0.6s ease forwards;
+	}
+
+	.chart-column-decreasing-icon.animate .column-0 {
+		animation-delay: 0s;
+	}
+
+	.chart-column-decreasing-icon.animate .column-1 {
+		animation-delay: 0.1s;
+	}
+
+	.chart-column-decreasing-icon.animate .column-2 {
+		animation-delay: 0.2s;
+	}
+
+	@keyframes columnAnimation {
+		0% {
+			stroke-dashoffset: 0;
+			opacity: 1;
+		}
+		50% {
+			stroke-dashoffset: 12;
+			opacity: 0;
+		}
+		51% {
+			stroke-dashoffset: 12;
+			opacity: 0;
+		}
+		100% {
+			stroke-dashoffset: 0;
+			opacity: 1;
+		}
+	}
+</style>
