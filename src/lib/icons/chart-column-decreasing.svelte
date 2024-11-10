@@ -12,7 +12,7 @@
 
 <div
 	class={classes}
-	aria-label="chart column decreasing"
+	aria-label="chart-column-decreasing"
 	role="img"
 	onmouseenter={handleMouseEnter}
 >
