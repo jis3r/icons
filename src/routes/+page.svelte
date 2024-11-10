@@ -27,7 +27,13 @@
 		filteredIcons = icons;
 		const res = await fetch('https://api.github.com/repos/jis3r/icons');
 		const data = await res.json();
-		stars = data.stargazers_count;
+		const interval = setInterval(() => {
+			if (stars < data.stargazers_count) {
+				stars += 1;
+			} else {
+				clearInterval(interval);
+			}
+		}, 10);
 
 		const lastVisit = localStorage.getItem('lastVisit');
 		if (lastVisit) {
