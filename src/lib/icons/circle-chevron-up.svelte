@@ -21,7 +21,7 @@
 		stroke-width="2"
 		stroke-linecap="round"
 		stroke-linejoin="round"
-		class="circle-chevron-down"
+		class="circle-chevron-up"
 		class:animate={isHovered}
 	>
 		<circle cx="12" cy="12" r="10" />
@@ -30,7 +30,7 @@
 </div>
 
 <style>
-	.circle-chevron-down {
+	.circle-chevron-up {
 		overflow: visible;
 	}
 
@@ -38,7 +38,7 @@
 		transition: transform 0.3s ease-in;
 	}
 
-	.circle-chevron-down.animate .chevron {
+	.circle-chevron-up.animate .chevron {
 		animation: bounceChevron 0.3s ease-in;
 	}
 
