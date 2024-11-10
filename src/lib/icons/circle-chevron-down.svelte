@@ -6,7 +6,7 @@
 
 		setTimeout(() => {
 			isHovered = false;
-		}, 500);
+		}, 300);
 	}
 </script>
 
