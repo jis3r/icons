@@ -169,7 +169,7 @@
 		</div>
 
 		<p class="mb-4 text-center text-xs text-muted-foreground">
-			built with ❤️ by <a href="https://github.com/jis3r" class="underline">jis3r</a>
+			built with ❤️ by <a href="https://github.com/jis3r" class="underline">@jis3r</a>
 		</p>
 	</div>
 </main>
