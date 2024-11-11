@@ -35,7 +35,7 @@
 	}
 
 	.line {
-		stroke-dasharray: 17; /* Adjust if needed */
+		stroke-dasharray: 17;
 		stroke-dashoffset: 0;
 		transition:
 			stroke-dashoffset 0.3s ease,
@@ -48,11 +48,11 @@
 
 	@keyframes lineAnimation {
 		0% {
-			stroke-dashoffset: 17; /* Change based on stroke-dasharray */
+			stroke-dashoffset: 17;
 			opacity: 1;
 		}
 		15% {
-			stroke-dashoffset: 17; /* Same as stroke-dasharray */
+			stroke-dashoffset: 17;
 			opacity: 0;
 		}
 		100% {

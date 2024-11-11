@@ -41,9 +41,8 @@
 		overflow: visible;
 	}
 
-	/* Graph line animation */
 	.line {
-		stroke-dasharray: 28; /* Adjust based on path length if needed */
+		stroke-dasharray: 28;
 		stroke-dashoffset: 0;
 		transition:
 			stroke-dashoffset 0.3s ease,
@@ -55,7 +54,6 @@
 		animation-delay: 0.1s;
 	}
 
-	/* Column animation */
 	.column {
 		stroke-dasharray: 20;
 		stroke-dashoffset: 0;
@@ -88,7 +86,6 @@
 		animation-delay: 0.4s;
 	}
 
-	/* Keyframes */
 	@keyframes lineAnimation {
 		0% {
 			stroke-dashoffset: 28;
