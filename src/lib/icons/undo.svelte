@@ -42,6 +42,6 @@
 	}
 
 	.undo-icon.animate {
-		transform: rotate(-10deg);
+		transform: rotate(-13deg);
 	}
 </style>
