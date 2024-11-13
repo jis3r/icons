@@ -1,0 +1,68 @@
+<script>
+	let { color = 'currentColor', isHovered = false, classes = '' } = $props();
+
+	function handleMouseEnter() {
+		isHovered = true;
+	}
+
+	function handleMouseLeave() {
+		isHovered = false;
+	}
+</script>
+
+<div
+	class={classes}
+	aria-label="user-round-pen"
+	role="img"
+	onmouseenter={handleMouseEnter}
+	onmouseleave={handleMouseLeave}
+>
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width="28"
+		height="28"
+		viewBox="0 0 24 24"
+		fill="none"
+		stroke={color}
+		stroke-width="2"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		class="user-round-pen-icon"
+	>
+		<path d="M2 21a8 8 0 0 1 10.821-7.487" />
+		<path
+			d="M21.378 16.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"
+			class="pen"
+			class:animate={isHovered}
+		/>
+		<circle cx="10" cy="8" r="5" />
+	</svg>
+</div>
+
+<style>
+	.user-round-pen-icon {
+		overflow: visible;
+	}
+
+	.pen {
+		transform-origin: 21.378px 16.626px;
+		transition: transform 0.25s ease-in-out;
+	}
+
+	.pen.animate {
+		animation: penWiggle 0.5s ease-in-out 2;
+	}
+
+	@keyframes penWiggle {
+		0%,
+		100% {
+			transform: rotate(0deg) translate(0px, 0px);
+		}
+		25% {
+			transform: rotate(-0.5deg) translate(-1px, 1.5px);
+		}
+		75% {
+			transform: rotate(0.5deg) translate(1.5px, -1px);
+		}
+	}
+</style>
