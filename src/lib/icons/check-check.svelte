@@ -23,8 +23,8 @@
 		class="check-check-icon"
 		class:animate={isHovered}
 	>
-		<path d="M18 6 7 17l-5-5" class="check-path" />
-		<path d="m22 10-7.5 7.5L13 16" class="check-path" />
+		<path d="M2 12l5 5L18 6" class="check-path" />
+		<path d="M13 16l1.5 1.5L22 10" class="check-path" />
 	</svg>
 </div>
 
