@@ -36,6 +36,7 @@
 
 <style>
 	.animate-svg {
+		transform-origin: top;
 		animation: rotateAnimation 0.5s ease-in-out;
 	}
 
