@@ -43,6 +43,22 @@
 	});
 </script>
 
+<svelte:window
+	on:keydown|window={(e) => {
+		const searchbar = document.getElementById('searchbar');
+
+		// Focus search bar when Meta+K is pressed
+		if (e.key === 'k' && e.metaKey) {
+			searchbar.focus();
+		}
+
+		// Remove focus from search bar when Escape is pressed
+		if (e.key === 'Escape') {
+			searchbar.blur();
+		}
+	}}
+/>
+
 <header class="container flex h-full w-full max-w-7xl items-center justify-between py-4">
 	<h1 class="text-base">jis3r/icons</h1>
 	<div class="flex gap-1">
@@ -97,7 +113,17 @@
 			{#if iconsAdded > 0}
 				<Badge class="w-fit text-xs">+{iconsAdded} icons since your last visit! 🎉</Badge>
 			{/if}
-			<Input placeholder="Search {filteredIcons.length} icons..." bind:value={searchQuery}></Input>
+			<div class="relative">
+				<Input
+					id="searchbar"
+					placeholder="Search {filteredIcons.length} icons..."
+					bind:value={searchQuery}
+				></Input>
+				<kbd
+					class="pointer-events-none absolute right-2 top-1/2 inline-flex h-5 -translate-y-1/2 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100"
+					><span class="text-xs">⌘</span>K</kbd
+				>
+			</div>
 
 			<div
 				class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-[repeat(auto-fill,minmax(165px,1fr))]"
