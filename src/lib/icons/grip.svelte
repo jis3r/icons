@@ -1,5 +1,11 @@
 <script>
-	let { color = 'currentColor', isHovered = false, classes = '' } = $props();
+	let {
+		color = 'currentColor',
+		size = 28,
+		strokeWidth = 2,
+		isHovered = false,
+		classes = ''
+	} = $props();
 
 	const circles = [
 		{ cx: 19, cy: 5, delay: 0 }, // Top right
@@ -26,12 +32,12 @@
 <div class={classes} aria-label="grip" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
-		width="28"
-		height="28"
+		width={size}
+		height={size}
 		viewBox="0 0 24 24"
 		fill="none"
 		stroke={color}
-		stroke-width="2"
+		stroke-width={strokeWidth}
 		stroke-linecap="round"
 		stroke-linejoin="round"
 		class="grip-icon"
