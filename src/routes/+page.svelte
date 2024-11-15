@@ -8,6 +8,7 @@
 	import { getIcons, downloadIcon } from '$lib/utils/icons.js';
 	import Github from '$lib/components/github.svelte';
 	import { fade } from 'svelte/transition';
+	import NumberFlow from '@number-flow/svelte';
 
 	let stars = $state(0);
 	let iconsAdded = $state(0);
@@ -23,8 +24,6 @@
 	});
 
 	onMount(async () => {
-		icons = await getIcons();
-		filteredIcons = icons;
 		const res = await fetch('https://api.github.com/repos/jis3r/icons');
 		const data = await res.json();
 		const interval = setInterval(() => {
@@ -34,6 +33,8 @@
 				clearInterval(interval);
 			}
 		}, 10);
+		icons = await getIcons();
+		filteredIcons = icons;
 
 		const lastVisit = localStorage.getItem('lastVisit');
 		if (lastVisit) {
@@ -64,7 +65,7 @@
 	<div class="flex gap-1">
 		<Button variant="outline" class="flex gap-2" href="https://github.com/jis3r/icons">
 			<Github size="20" />
-			<span>{stars}</span>
+			<NumberFlow value={stars} />
 		</Button>
 
 		<Button on:click={toggleMode} variant="outline" size="icon">
