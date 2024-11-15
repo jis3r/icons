@@ -15,6 +15,9 @@
 	let icons = [];
 	let searchQuery = $state('');
 	let filteredIcons = $state(icons);
+	let size = $state(28);
+	let color = $state('currentColor');
+	let strokeWidth = $state(2);
 
 	$effect(() => {
 		searchQuery = searchQuery;
@@ -134,6 +137,9 @@
 						class="flex h-full w-full flex-col items-center justify-center rounded-md border border-input p-3"
 					>
 						<icon.component
+							{size}
+							{color}
+							{strokeWidth}
 							classes="flex cursor-pointer select-none items-center justify-center rounded-md p-2 transition-colors duration-200 hover:bg-accent"
 						/>
 						<p class="mb-3 mt-5 text-center text-xs text-muted-foreground">{icon.name}</p>
