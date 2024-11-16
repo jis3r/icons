@@ -59,6 +59,7 @@
 		"vitest": "^2.0.4"
 	},
 	"dependencies": {
+		"@number-flow/svelte": "^0.1.4",
 		"lucide-svelte": "^0.454.0",
 		"mode-watcher": "^0.4.1"
 	}
