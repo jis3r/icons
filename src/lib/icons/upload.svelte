@@ -1,5 +1,11 @@
 <script>
-	let { color = 'currentColor', isHovered = false, classes = '' } = $props();
+	let {
+		color = 'currentColor',
+		size = 28,
+		strokeWidth = 2,
+		isHovered = false,
+		classes = ''
+	} = $props();
 
 	function handleMouseEnter() {
 		isHovered = true;
@@ -19,12 +25,12 @@
 >
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
-		width="24"
-		height="24"
+		width={size}
+		height={size}
 		viewBox="0 0 24 24"
 		fill="none"
 		stroke={color}
-		stroke-width="2"
+		stroke-width={strokeWidth}
 		stroke-linecap="round"
 		stroke-linejoin="round"
 	>
