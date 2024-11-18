@@ -12,7 +12,7 @@
 
 		setTimeout(() => {
 			isHovered = false;
-		}, 1000);
+		}, 1100);
 	}
 </script>
 
@@ -48,7 +48,7 @@
 	}
 
 	.battery-icon.animate .battery-bar {
-		animation: fadeInSequence 0.6s ease forwards;
+		animation: fadeInSequence 0.3s ease forwards;
 	}
 
 	.battery-icon.animate .battery-bar-1 {
