@@ -1,6 +1,11 @@
 <script>
-	let { color = 'currentColor', isHovered = false, classes = '' } = $props();
-
+	let {
+		color = 'currentColor',
+		size = 28,
+		strokeWidth = 2,
+		isHovered = false,
+		classes = ''
+	} = $props();
 	const SPEED_LINES = [
 		{ x1: 5, y1: 15, x2: 1, y2: 19, delay: 0.1 },
 		{ x1: 7, y1: 17, x2: 3, y2: 21, delay: 0.2 },
@@ -25,12 +30,12 @@
 >
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
-		width="28"
-		height="28"
+		width={size}
+		height={size}
 		viewBox="0 0 24 24"
 		fill="none"
 		stroke={color}
-		stroke-width="2"
+		stroke-width={strokeWidth}
 		stroke-linecap="round"
 		stroke-linejoin="round"
 		class="plane-icon"
