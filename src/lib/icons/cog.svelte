@@ -6,6 +6,7 @@
 		isHovered = false,
 		classes = ''
 	} = $props();
+
 	function handleMouseEnter() {
 		isHovered = true;
 	}
