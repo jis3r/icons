@@ -16,7 +16,7 @@
 	}
 </script>
 
-<div class={classes} aria-label="cpu-icon" role="img" onmouseenter={handleMouseEnter}>
+<div class={classes} aria-label="cpu" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
