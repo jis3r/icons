@@ -47,7 +47,7 @@
 				style="--delay: {dot.delay * 0.15}s"
 			/>
 		{/each}
-		<path d="M3 3v16a2 2 0 0 0 2 2h16" stroke-width="2" />
+		<path d="M3 3v16a2 2 0 0 0 2 2h16" />
 	</svg>
 </div>
 
