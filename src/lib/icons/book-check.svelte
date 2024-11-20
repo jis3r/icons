@@ -11,7 +11,7 @@
 		isHovered = true;
 		setTimeout(() => {
 			isHovered = false;
-		}, 500);
+		}, 700);
 	}
 </script>
 
@@ -47,8 +47,31 @@
 			stroke-dashoffset 0.125s ease-out,
 			opacity 0.125s ease-out;
 	}
+
+	.book-check-icon.animate {
+		animation: bookAnimation 0.6s ease forwards;
+	}
+
 	.book-check-icon.animate .check-path {
 		animation: checkAnimation 0.5s ease-out backwards;
+	}
+
+	@keyframes bookAnimation {
+		0% {
+			transform: scale(1) rotate(0deg) translateY(0);
+		}
+		20% {
+			transform: scale(1.04) rotate(-8deg) translateY(-2px);
+		}
+		50% {
+			transform: scale(1.04) rotate(8deg) translateY(-2px);
+		}
+		80% {
+			transform: scale(1.04) rotate(-8deg) translateY(-2px);
+		}
+		100% {
+			transform: scale(1) rotate(0deg) translateY(0);
+		}
 	}
 	@keyframes checkAnimation {
 		0% {
