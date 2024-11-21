@@ -52,7 +52,7 @@
 	}
 
 	.signature-icon.animate .line {
-		animation: lineAnimation 0.6s ease-out;
+		animation: lineAnimation 0.6s ease-in;
 	}
 
 	@keyframes lineAnimation {
@@ -63,7 +63,7 @@
 			stroke-dashoffset: 53;
 		}
 		100% {
-			stroke-dashoffset: 0;
+			stroke-dashoffset: 106;
 		}
 	}
 </style>
