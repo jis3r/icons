@@ -36,8 +36,8 @@
 	>
 		<path d="M8 3H5a2 2 0 0 0-2 2v3" class:top-left={isHovered} />
 		<path d="M21 8V5a2 2 0 0 0-2-2h-3" class:top-right={isHovered} />
-		<path d="M3 16v3a2 2 0 0 0 2 2h3" class:bottom-right={isHovered} />
-		<path d="M16 21h3a2 2 0 0 0 2-2v-3" class:bottom-left={isHovered} />
+		<path d="M3 16v3a2 2 0 0 0 2 2h3" class:bottom-left={isHovered} />
+		<path d="M16 21h3a2 2 0 0 0 2-2v-3" class:bottom-right={isHovered} />
 	</svg>
 </div>
 
@@ -46,11 +46,11 @@
 		transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	}
 
-	.bottom-left {
+	.bottom-right {
 		transform: translate(2px, 2px);
 	}
 
-	.bottom-right {
+	.bottom-left {
 		transform: translate(-2px, 2px);
 	}
 
