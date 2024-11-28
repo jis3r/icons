@@ -24,9 +24,8 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install deps
-        run: npm install
-
+      # jsrepo doesn't need any of your 
+      # dependencies to be installed to work
       - name: Build jsrepo-manifest.json
         run: npm build:registry
 

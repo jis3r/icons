@@ -8,9 +8,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"activity.svelte"
-				],
+				"files": ["activity.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -21,9 +19,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"alarm-clock-check.svelte"
-				],
+				"files": ["alarm-clock-check.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -34,9 +30,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"alarm-clock-off.svelte"
-				],
+				"files": ["alarm-clock-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -47,9 +41,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"alarm-clock.svelte"
-				],
+				"files": ["alarm-clock.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -60,9 +52,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"align-center.svelte"
-				],
+				"files": ["align-center.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -73,9 +63,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"align-horizontal-space-around.svelte"
-				],
+				"files": ["align-horizontal-space-around.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -86,9 +74,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"align-vertical-space-around.svelte"
-				],
+				"files": ["align-vertical-space-around.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -99,9 +85,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"anvil.svelte"
-				],
+				"files": ["anvil.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -112,9 +96,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"archive.svelte"
-				],
+				"files": ["archive.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -125,9 +107,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"arrow-down.svelte"
-				],
+				"files": ["arrow-down.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -138,9 +118,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"arrow-left.svelte"
-				],
+				"files": ["arrow-left.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -151,9 +129,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"arrow-right.svelte"
-				],
+				"files": ["arrow-right.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -164,9 +140,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"arrow-up.svelte"
-				],
+				"files": ["arrow-up.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -177,9 +151,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"audio-lines.svelte"
-				],
+				"files": ["audio-lines.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -190,9 +162,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"award.svelte"
-				],
+				"files": ["award.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -203,9 +173,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"axe.svelte"
-				],
+				"files": ["axe.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -216,9 +184,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"badge-alert.svelte"
-				],
+				"files": ["badge-alert.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -229,9 +195,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"badge-check.svelte"
-				],
+				"files": ["badge-check.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -242,9 +206,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"battery-charging.svelte"
-				],
+				"files": ["battery-charging.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -255,9 +217,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"battery-full.svelte"
-				],
+				"files": ["battery-full.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -268,9 +228,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"battery-low.svelte"
-				],
+				"files": ["battery-low.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -281,9 +239,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"battery-medium.svelte"
-				],
+				"files": ["battery-medium.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -294,9 +250,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"battery-warning.svelte"
-				],
+				"files": ["battery-warning.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -307,9 +261,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"battery.svelte"
-				],
+				"files": ["battery.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -320,9 +272,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"bean-off.svelte"
-				],
+				"files": ["bean-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -333,9 +283,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"beer-off.svelte"
-				],
+				"files": ["beer-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -346,9 +294,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"bell-off.svelte"
-				],
+				"files": ["bell-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -359,9 +305,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"bell.svelte"
-				],
+				"files": ["bell.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -372,9 +316,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"between-horizontal-end.svelte"
-				],
+				"files": ["between-horizontal-end.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -385,9 +327,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"between-horizontal-start.svelte"
-				],
+				"files": ["between-horizontal-start.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -398,9 +338,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"between-vertical-end.svelte"
-				],
+				"files": ["between-vertical-end.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -411,9 +349,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"between-vertical-start.svelte"
-				],
+				"files": ["between-vertical-start.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -424,9 +360,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"blend.svelte"
-				],
+				"files": ["blend.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -437,9 +371,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"blocks.svelte"
-				],
+				"files": ["blocks.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -450,9 +382,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"bluetooth-off.svelte"
-				],
+				"files": ["bluetooth-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -463,9 +393,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"bolt.svelte"
-				],
+				"files": ["bolt.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -476,9 +404,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"bone.svelte"
-				],
+				"files": ["bone.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -489,9 +415,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"book-check.svelte"
-				],
+				"files": ["book-check.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -502,9 +426,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"book-open-check.svelte"
-				],
+				"files": ["book-open-check.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -515,9 +437,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"book-text.svelte"
-				],
+				"files": ["book-text.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -528,9 +448,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"book.svelte"
-				],
+				"files": ["book.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -541,9 +459,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"bookmark-check.svelte"
-				],
+				"files": ["bookmark-check.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -554,9 +470,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"bot-off.svelte"
-				],
+				"files": ["bot-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -567,9 +481,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"bug-off.svelte"
-				],
+				"files": ["bug-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -580,9 +492,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"calendar-check-2.svelte"
-				],
+				"files": ["calendar-check-2.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -593,9 +503,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"calendar-check.svelte"
-				],
+				"files": ["calendar-check.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -606,9 +514,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"calendar-cog.svelte"
-				],
+				"files": ["calendar-cog.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -619,9 +525,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"calendar-off.svelte"
-				],
+				"files": ["calendar-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -632,9 +536,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"camera-off.svelte"
-				],
+				"files": ["camera-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -645,9 +547,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"candy-off.svelte"
-				],
+				"files": ["candy-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -658,9 +558,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"captions-off.svelte"
-				],
+				"files": ["captions-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -671,9 +569,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"cart.svelte"
-				],
+				"files": ["cart.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -684,9 +580,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"cctv.svelte"
-				],
+				"files": ["cctv.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -697,9 +591,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"chart-bar-decreasing.svelte"
-				],
+				"files": ["chart-bar-decreasing.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -710,9 +602,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"chart-bar-increasing.svelte"
-				],
+				"files": ["chart-bar-increasing.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -723,9 +613,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"chart-bar.svelte"
-				],
+				"files": ["chart-bar.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -736,9 +624,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"chart-column-decreasing.svelte"
-				],
+				"files": ["chart-column-decreasing.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -749,9 +635,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"chart-column-increasing.svelte"
-				],
+				"files": ["chart-column-increasing.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -762,9 +646,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"chart-column.svelte"
-				],
+				"files": ["chart-column.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -775,9 +657,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"chart-gannt.svelte"
-				],
+				"files": ["chart-gannt.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -788,9 +668,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"chart-line.svelte"
-				],
+				"files": ["chart-line.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -801,9 +679,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"chart-no-axes-column-decreasing.svelte"
-				],
+				"files": ["chart-no-axes-column-decreasing.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -814,9 +690,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"chart-no-axes-column-increasing.svelte"
-				],
+				"files": ["chart-no-axes-column-increasing.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -827,9 +701,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"chart-no-axes-column.svelte"
-				],
+				"files": ["chart-no-axes-column.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -840,9 +712,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"chart-no-axes-combined.svelte"
-				],
+				"files": ["chart-no-axes-combined.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -853,9 +723,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"chart-no-axes-gannt.svelte"
-				],
+				"files": ["chart-no-axes-gannt.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -866,9 +734,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"chart-pie.svelte"
-				],
+				"files": ["chart-pie.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -879,9 +745,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"chart-scatter.svelte"
-				],
+				"files": ["chart-scatter.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -892,9 +756,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"check-check.svelte"
-				],
+				"files": ["check-check.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -905,9 +767,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"check.svelte"
-				],
+				"files": ["check.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -918,9 +778,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"chevron-down.svelte"
-				],
+				"files": ["chevron-down.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -931,9 +789,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"chevron-left.svelte"
-				],
+				"files": ["chevron-left.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -944,9 +800,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"chevron-right.svelte"
-				],
+				"files": ["chevron-right.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -957,9 +811,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"chevron-up.svelte"
-				],
+				"files": ["chevron-up.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -970,9 +822,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"chevrons-down-up.svelte"
-				],
+				"files": ["chevrons-down-up.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -983,9 +833,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"chevrons-down.svelte"
-				],
+				"files": ["chevrons-down.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -996,9 +844,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"chevrons-left-right.svelte"
-				],
+				"files": ["chevrons-left-right.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1009,9 +855,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"chevrons-left.svelte"
-				],
+				"files": ["chevrons-left.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1022,9 +866,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"chevrons-right-left.svelte"
-				],
+				"files": ["chevrons-right-left.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1035,9 +877,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"chevrons-right.svelte"
-				],
+				"files": ["chevrons-right.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1048,9 +888,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"chevrons-up-down.svelte"
-				],
+				"files": ["chevrons-up-down.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1061,9 +899,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"chevrons-up.svelte"
-				],
+				"files": ["chevrons-up.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1074,9 +910,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"cigarette-off.svelte"
-				],
+				"files": ["cigarette-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1087,9 +921,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"circle-check-big.svelte"
-				],
+				"files": ["circle-check-big.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1100,9 +932,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"circle-check.svelte"
-				],
+				"files": ["circle-check.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1113,9 +943,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"circle-chevron-down.svelte"
-				],
+				"files": ["circle-chevron-down.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1126,9 +954,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"circle-chevron-left.svelte"
-				],
+				"files": ["circle-chevron-left.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1139,9 +965,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"circle-chevron-right.svelte"
-				],
+				"files": ["circle-chevron-right.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1152,9 +976,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"circle-chevron-up.svelte"
-				],
+				"files": ["circle-chevron-up.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1165,9 +987,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"circle-help.svelte"
-				],
+				"files": ["circle-help.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1178,9 +998,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"circle-off.svelte"
-				],
+				"files": ["circle-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1191,9 +1009,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"clap.svelte"
-				],
+				"files": ["clap.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1204,9 +1020,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"clipboard-check.svelte"
-				],
+				"files": ["clipboard-check.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1217,9 +1031,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"clipboard-pen-line.svelte"
-				],
+				"files": ["clipboard-pen-line.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1230,9 +1042,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"clipboard-pen.svelte"
-				],
+				"files": ["clipboard-pen.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1243,9 +1053,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"clock-1.svelte"
-				],
+				"files": ["clock-1.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1256,9 +1064,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"clock-10.svelte"
-				],
+				"files": ["clock-10.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1269,9 +1075,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"clock-11.svelte"
-				],
+				"files": ["clock-11.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1282,9 +1086,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"clock-12.svelte"
-				],
+				"files": ["clock-12.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1295,9 +1097,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"clock-2.svelte"
-				],
+				"files": ["clock-2.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1308,9 +1108,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"clock-3.svelte"
-				],
+				"files": ["clock-3.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1321,9 +1119,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"clock-4.svelte"
-				],
+				"files": ["clock-4.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1334,9 +1130,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"clock-5.svelte"
-				],
+				"files": ["clock-5.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1347,9 +1141,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"clock-6.svelte"
-				],
+				"files": ["clock-6.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1360,9 +1152,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"clock-7.svelte"
-				],
+				"files": ["clock-7.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1373,9 +1163,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"clock-8.svelte"
-				],
+				"files": ["clock-8.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1386,9 +1174,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"clock-9.svelte"
-				],
+				"files": ["clock-9.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1399,9 +1185,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"clock.svelte"
-				],
+				"files": ["clock.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1412,9 +1196,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"cloud-off.svelte"
-				],
+				"files": ["cloud-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1425,9 +1207,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"cog.svelte"
-				],
+				"files": ["cog.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1438,9 +1218,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"compass.svelte"
-				],
+				"files": ["compass.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1451,9 +1229,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"copy-check.svelte"
-				],
+				"files": ["copy-check.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1464,9 +1240,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"copy.svelte"
-				],
+				"files": ["copy.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1477,9 +1251,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"cpu.svelte"
-				],
+				"files": ["cpu.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1490,9 +1262,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"dna-off.svelte"
-				],
+				"files": ["dna-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1503,9 +1273,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"download.svelte"
-				],
+				"files": ["download.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1516,9 +1284,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"drum.svelte"
-				],
+				"files": ["drum.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1529,9 +1295,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"ear-off.svelte"
-				],
+				"files": ["ear-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1542,9 +1306,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"egg-off.svelte"
-				],
+				"files": ["egg-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1555,9 +1317,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"expand.svelte"
-				],
+				"files": ["expand.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1568,9 +1328,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"eye-off.svelte"
-				],
+				"files": ["eye-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1581,9 +1339,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"file-chart-column-increasing.svelte"
-				],
+				"files": ["file-chart-column-increasing.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1594,9 +1350,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"file-chart-column.svelte"
-				],
+				"files": ["file-chart-column.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1607,9 +1361,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"file-chart-line.svelte"
-				],
+				"files": ["file-chart-line.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1620,9 +1372,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"file-check-2.svelte"
-				],
+				"files": ["file-check-2.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1633,9 +1383,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"file-check.svelte"
-				],
+				"files": ["file-check.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1646,9 +1394,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"file-pen-line.svelte"
-				],
+				"files": ["file-pen-line.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1659,9 +1405,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"file-pen.svelte"
-				],
+				"files": ["file-pen.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1672,9 +1416,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"file-stack.svelte"
-				],
+				"files": ["file-stack.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1685,9 +1427,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"file-terminal.svelte"
-				],
+				"files": ["file-terminal.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1698,9 +1438,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"fish-off.svelte"
-				],
+				"files": ["fish-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1711,9 +1449,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"flag-off.svelte"
-				],
+				"files": ["flag-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1724,9 +1460,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"flashlight-off.svelte"
-				],
+				"files": ["flashlight-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1737,9 +1471,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"flask-conical-off.svelte"
-				],
+				"files": ["flask-conical-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1750,9 +1482,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"folder-check.svelte"
-				],
+				"files": ["folder-check.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1763,9 +1493,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"folder-kanban.svelte"
-				],
+				"files": ["folder-kanban.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1776,9 +1504,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"folder-pen.svelte"
-				],
+				"files": ["folder-pen.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1789,9 +1515,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"frame.svelte"
-				],
+				"files": ["frame.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1802,9 +1526,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"gauge.svelte"
-				],
+				"files": ["gauge.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1815,9 +1537,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"gravel.svelte"
-				],
+				"files": ["gravel.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1828,9 +1548,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"grid-2-x-2-check.svelte"
-				],
+				"files": ["grid-2-x-2-check.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1841,9 +1559,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"grip-horizontal.svelte"
-				],
+				"files": ["grip-horizontal.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1854,9 +1570,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"grip-vertical.svelte"
-				],
+				"files": ["grip-vertical.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1867,9 +1581,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"grip.svelte"
-				],
+				"files": ["grip.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1880,9 +1592,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"hammer.svelte"
-				],
+				"files": ["hammer.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1893,9 +1603,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"hand-coins.svelte"
-				],
+				"files": ["hand-coins.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1906,9 +1614,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"headphone-off.svelte"
-				],
+				"files": ["headphone-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1919,9 +1625,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"heart-off.svelte"
-				],
+				"files": ["heart-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1932,9 +1636,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"home.svelte"
-				],
+				"files": ["home.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1945,9 +1647,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"hop-off.svelte"
-				],
+				"files": ["hop-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1958,9 +1658,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"image-off.svelte"
-				],
+				"files": ["image-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1971,9 +1669,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"kanban.svelte"
-				],
+				"files": ["kanban.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1984,9 +1680,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"keyboard-off.svelte"
-				],
+				"files": ["keyboard-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -1997,9 +1691,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"keyboard.svelte"
-				],
+				"files": ["keyboard.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2010,9 +1702,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"layers.svelte"
-				],
+				"files": ["layers.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2023,9 +1713,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"layout-dashboard.svelte"
-				],
+				"files": ["layout-dashboard.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2036,9 +1724,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"layout-grid.svelte"
-				],
+				"files": ["layout-grid.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2049,9 +1735,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"layout-panel-left.svelte"
-				],
+				"files": ["layout-panel-left.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2062,9 +1746,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"layout-panel-top.svelte"
-				],
+				"files": ["layout-panel-top.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2075,9 +1757,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"layout-template.svelte"
-				],
+				"files": ["layout-template.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2088,9 +1768,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"lightbulb-off.svelte"
-				],
+				"files": ["lightbulb-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2101,9 +1779,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"link-2-off.svelte"
-				],
+				"files": ["link-2-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2114,9 +1790,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"list-check.svelte"
-				],
+				"files": ["list-check.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2127,9 +1801,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"list-checks.svelte"
-				],
+				"files": ["list-checks.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2140,9 +1812,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"list-todo.svelte"
-				],
+				"files": ["list-todo.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2153,9 +1823,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"locate-off.svelte"
-				],
+				"files": ["locate-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2166,9 +1834,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"logout.svelte"
-				],
+				"files": ["logout.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2179,9 +1845,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"mail-check.svelte"
-				],
+				"files": ["mail-check.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2192,9 +1856,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"map-pin-check-inside.svelte"
-				],
+				"files": ["map-pin-check-inside.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2205,9 +1867,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"map-pin-check.svelte"
-				],
+				"files": ["map-pin-check.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2218,9 +1878,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"map-pin-off.svelte"
-				],
+				"files": ["map-pin-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2231,9 +1889,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"maximize-2.svelte"
-				],
+				"files": ["maximize-2.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2244,9 +1900,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"maximize.svelte"
-				],
+				"files": ["maximize.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2257,9 +1911,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"megaphone-off.svelte"
-				],
+				"files": ["megaphone-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2270,9 +1922,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"message-circle-more.svelte"
-				],
+				"files": ["message-circle-more.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2283,9 +1933,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"message-circle-off.svelte"
-				],
+				"files": ["message-circle-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2296,9 +1944,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"message-circle.svelte"
-				],
+				"files": ["message-circle.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2309,9 +1955,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"message-square-off.svelte"
-				],
+				"files": ["message-square-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2322,9 +1966,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"message-square.svelte"
-				],
+				"files": ["message-square.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2335,9 +1977,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"mic-off.svelte"
-				],
+				"files": ["mic-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2348,9 +1988,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"milk-off.svelte"
-				],
+				"files": ["milk-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2361,9 +1999,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"minimize-2.svelte"
-				],
+				"files": ["minimize-2.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2374,9 +2010,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"minimize.svelte"
-				],
+				"files": ["minimize.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2387,9 +2021,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"monitor-check.svelte"
-				],
+				"files": ["monitor-check.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2400,9 +2032,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"monitor-off.svelte"
-				],
+				"files": ["monitor-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2413,9 +2043,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"mouse-off.svelte"
-				],
+				"files": ["mouse-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2426,9 +2054,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"mouse-pointer-2.svelte"
-				],
+				"files": ["mouse-pointer-2.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2439,9 +2065,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"mouse-pointer.svelte"
-				],
+				"files": ["mouse-pointer.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2452,9 +2076,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"navigation-2-off.svelte"
-				],
+				"files": ["navigation-2-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2465,9 +2087,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"navigation-off.svelte"
-				],
+				"files": ["navigation-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2478,9 +2098,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"notebook-pen.svelte"
-				],
+				"files": ["notebook-pen.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2491,9 +2109,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"nut-off.svelte"
-				],
+				"files": ["nut-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2504,9 +2120,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"orbit.svelte"
-				],
+				"files": ["orbit.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2517,9 +2131,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"package-check.svelte"
-				],
+				"files": ["package-check.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2530,9 +2142,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"parking-circle-off.svelte"
-				],
+				"files": ["parking-circle-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2543,9 +2153,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"pen-line.svelte"
-				],
+				"files": ["pen-line.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2556,9 +2164,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"pen-off.svelte"
-				],
+				"files": ["pen-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2569,9 +2175,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"pen.svelte"
-				],
+				"files": ["pen.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2582,9 +2186,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"pencil-line.svelte"
-				],
+				"files": ["pencil-line.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2595,9 +2197,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"pencil-off.svelte"
-				],
+				"files": ["pencil-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2608,9 +2208,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"pencil.svelte"
-				],
+				"files": ["pencil.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2621,9 +2219,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"phone-off.svelte"
-				],
+				"files": ["phone-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2634,9 +2230,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"pickaxe.svelte"
-				],
+				"files": ["pickaxe.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2647,9 +2241,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"pin-off.svelte"
-				],
+				"files": ["pin-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2660,9 +2252,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"plane.svelte"
-				],
+				"files": ["plane.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2673,9 +2263,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"pointer-off.svelte"
-				],
+				"files": ["pointer-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2686,9 +2274,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"power-off.svelte"
-				],
+				"files": ["power-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2699,9 +2285,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"printer-check.svelte"
-				],
+				"files": ["printer-check.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2712,9 +2296,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"radar.svelte"
-				],
+				"files": ["radar.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2725,9 +2307,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"redo.svelte"
-				],
+				"files": ["redo.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2738,9 +2318,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"refresh-ccw.svelte"
-				],
+				"files": ["refresh-ccw.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2751,9 +2329,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"refresh-cw-off.svelte"
-				],
+				"files": ["refresh-cw-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2764,9 +2340,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"rocket.svelte"
-				],
+				"files": ["rocket.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2777,9 +2351,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"rocking-chair.svelte"
-				],
+				"files": ["rocking-chair.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2790,9 +2362,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"route-off.svelte"
-				],
+				"files": ["route-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2803,9 +2373,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"route.svelte"
-				],
+				"files": ["route.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2816,9 +2384,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"save-off.svelte"
-				],
+				"files": ["save-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2829,9 +2395,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"scan-text.svelte"
-				],
+				"files": ["scan-text.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2842,9 +2406,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"search-check.svelte"
-				],
+				"files": ["search-check.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2855,9 +2417,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"search.svelte"
-				],
+				"files": ["search.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2868,9 +2428,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"settings.svelte"
-				],
+				"files": ["settings.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2881,9 +2439,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"shield-check.svelte"
-				],
+				"files": ["shield-check.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2894,9 +2450,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"shield-off.svelte"
-				],
+				"files": ["shield-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2907,9 +2461,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"ship-wheel.svelte"
-				],
+				"files": ["ship-wheel.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2920,9 +2472,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"ship.svelte"
-				],
+				"files": ["ship.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2933,9 +2483,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"shovel.svelte"
-				],
+				"files": ["shovel.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2946,9 +2494,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"shower-head.svelte"
-				],
+				"files": ["shower-head.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2959,9 +2505,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"shrink.svelte"
-				],
+				"files": ["shrink.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2972,9 +2516,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"signal-high.svelte"
-				],
+				"files": ["signal-high.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2985,9 +2527,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"signal-low.svelte"
-				],
+				"files": ["signal-low.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -2998,9 +2538,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"signal-medium.svelte"
-				],
+				"files": ["signal-medium.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3011,9 +2549,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"signal-zero.svelte"
-				],
+				"files": ["signal-zero.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3024,9 +2560,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"signal.svelte"
-				],
+				"files": ["signal.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3037,9 +2571,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"signature.svelte"
-				],
+				"files": ["signature.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3050,9 +2582,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"spell-check.svelte"
-				],
+				"files": ["spell-check.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3063,9 +2593,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"square-chart-gannt.svelte"
-				],
+				"files": ["square-chart-gannt.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3076,9 +2604,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"square-check-big.svelte"
-				],
+				"files": ["square-check-big.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3089,9 +2615,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"square-check.svelte"
-				],
+				"files": ["square-check.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3102,9 +2626,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"square-chevron-down.svelte"
-				],
+				"files": ["square-chevron-down.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3115,9 +2637,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"square-chevron-left.svelte"
-				],
+				"files": ["square-chevron-left.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3128,9 +2648,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"square-chevron-right.svelte"
-				],
+				"files": ["square-chevron-right.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3141,9 +2659,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"square-chevron-up.svelte"
-				],
+				"files": ["square-chevron-up.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3154,9 +2670,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"square-dashed-kanban.svelte"
-				],
+				"files": ["square-dashed-kanban.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3167,9 +2681,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"square-kanban.svelte"
-				],
+				"files": ["square-kanban.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3180,9 +2692,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"square-parking-off.svelte"
-				],
+				"files": ["square-parking-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3193,9 +2703,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"square-pen.svelte"
-				],
+				"files": ["square-pen.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3206,9 +2714,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"square-stack.svelte"
-				],
+				"files": ["square-stack.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3219,9 +2725,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"square-terminal.svelte"
-				],
+				"files": ["square-terminal.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3232,9 +2736,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"star-off.svelte"
-				],
+				"files": ["star-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3245,9 +2747,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"sun.svelte"
-				],
+				"files": ["sun.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3258,9 +2758,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"sword.svelte"
-				],
+				"files": ["sword.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3271,9 +2769,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"telescope.svelte"
-				],
+				"files": ["telescope.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3284,9 +2780,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"terminal.svelte"
-				],
+				"files": ["terminal.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3297,9 +2791,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"thumbs-down.svelte"
-				],
+				"files": ["thumbs-down.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3310,9 +2802,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"thumbs-up.svelte"
-				],
+				"files": ["thumbs-up.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3323,9 +2813,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"ticket-check.svelte"
-				],
+				"files": ["ticket-check.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3336,9 +2824,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"timer-off.svelte"
-				],
+				"files": ["timer-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3349,9 +2835,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"timer.svelte"
-				],
+				"files": ["timer.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3362,9 +2846,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"touchpad-off.svelte"
-				],
+				"files": ["touchpad-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3375,9 +2857,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"trash-2.svelte"
-				],
+				"files": ["trash-2.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3388,9 +2868,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"trash.svelte"
-				],
+				"files": ["trash.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3401,9 +2879,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"umbrella-off.svelte"
-				],
+				"files": ["umbrella-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3414,9 +2890,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"undo-dot.svelte"
-				],
+				"files": ["undo-dot.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3427,9 +2901,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"undo.svelte"
-				],
+				"files": ["undo.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3440,9 +2912,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"unplug.svelte"
-				],
+				"files": ["unplug.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3453,9 +2923,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"upload.svelte"
-				],
+				"files": ["upload.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3466,9 +2934,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"user-check.svelte"
-				],
+				"files": ["user-check.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3479,9 +2945,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"user-pen.svelte"
-				],
+				"files": ["user-pen.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3492,9 +2956,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"user-round-check.svelte"
-				],
+				"files": ["user-round-check.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3505,9 +2967,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"user-round-pen.svelte"
-				],
+				"files": ["user-round-pen.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3518,9 +2978,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"users-round.svelte"
-				],
+				"files": ["users-round.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3531,9 +2989,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"users.svelte"
-				],
+				"files": ["users.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3544,9 +3000,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"vibrate-off.svelte"
-				],
+				"files": ["vibrate-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3557,9 +3011,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"video-off.svelte"
-				],
+				"files": ["video-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3570,9 +3022,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"volume-off.svelte"
-				],
+				"files": ["volume-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3583,9 +3033,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"vote.svelte"
-				],
+				"files": ["vote.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3596,9 +3044,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"webhook-off.svelte"
-				],
+				"files": ["webhook-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3609,9 +3055,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"wheat-off.svelte"
-				],
+				"files": ["wheat-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3622,9 +3066,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"wifi-high.svelte"
-				],
+				"files": ["wifi-high.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3635,9 +3077,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"wifi-low.svelte"
-				],
+				"files": ["wifi-low.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3648,9 +3088,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"wifi-off.svelte"
-				],
+				"files": ["wifi-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3661,9 +3099,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"wifi-zero.svelte"
-				],
+				"files": ["wifi-zero.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3674,9 +3110,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"wifi.svelte"
-				],
+				"files": ["wifi.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3687,9 +3121,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"wine-off.svelte"
-				],
+				"files": ["wine-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []
@@ -3700,9 +3132,7 @@
 				"category": "icons",
 				"tests": false,
 				"subdirectory": false,
-				"files": [
-					"zap-off.svelte"
-				],
+				"files": ["zap-off.svelte"],
 				"localDependencies": [],
 				"dependencies": [],
 				"devDependencies": []

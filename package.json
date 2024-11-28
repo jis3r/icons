@@ -11,7 +11,7 @@
 		"lint": "prettier --check . && eslint .",
 		"test:unit": "vitest",
 		"test": "npm run test:unit -- --run",
-		"build:registry": "jsrepo build --dirs ./src/lib --include-categories icons"
+		"build:registry": "pnpm dlx jsrepo build --dirs ./src/lib --include-categories icons"
 	},
 	"files": [
 		"dist",
@@ -46,7 +46,6 @@
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.36.0",
 		"globals": "^15.0.0",
-		"jsrepo": "^1.12.2",
 		"prettier": "^3.3.2",
 		"prettier-plugin-svelte": "^3.2.6",
 		"prettier-plugin-tailwindcss": "^0.6.5",
