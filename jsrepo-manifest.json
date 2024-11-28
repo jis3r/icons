@@ -1,0 +1,3712 @@
+[
+	{
+		"name": "icons",
+		"blocks": [
+			{
+				"name": "activity",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"activity.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "alarm-clock-check",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"alarm-clock-check.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "alarm-clock-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"alarm-clock-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "alarm-clock",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"alarm-clock.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "align-center",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"align-center.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "align-horizontal-space-around",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"align-horizontal-space-around.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "align-vertical-space-around",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"align-vertical-space-around.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "anvil",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"anvil.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "archive",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"archive.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "arrow-down",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"arrow-down.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "arrow-left",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"arrow-left.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "arrow-right",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"arrow-right.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "arrow-up",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"arrow-up.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "audio-lines",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"audio-lines.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "award",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"award.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "axe",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"axe.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "badge-alert",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"badge-alert.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "badge-check",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"badge-check.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "battery-charging",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"battery-charging.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "battery-full",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"battery-full.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "battery-low",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"battery-low.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "battery-medium",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"battery-medium.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "battery-warning",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"battery-warning.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "battery",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"battery.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "bean-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"bean-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "beer-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"beer-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "bell-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"bell-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "bell",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"bell.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "between-horizontal-end",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"between-horizontal-end.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "between-horizontal-start",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"between-horizontal-start.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "between-vertical-end",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"between-vertical-end.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "between-vertical-start",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"between-vertical-start.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "blend",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"blend.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "blocks",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"blocks.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "bluetooth-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"bluetooth-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "bolt",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"bolt.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "bone",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"bone.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "book-check",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"book-check.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "book-open-check",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"book-open-check.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "book-text",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"book-text.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "book",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"book.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "bookmark-check",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"bookmark-check.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "bot-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"bot-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "bug-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"bug-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "calendar-check-2",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"calendar-check-2.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "calendar-check",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"calendar-check.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "calendar-cog",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"calendar-cog.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "calendar-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"calendar-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "camera-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"camera-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "candy-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"candy-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "captions-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"captions-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "cart",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"cart.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "cctv",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"cctv.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "chart-bar-decreasing",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"chart-bar-decreasing.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "chart-bar-increasing",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"chart-bar-increasing.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "chart-bar",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"chart-bar.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "chart-column-decreasing",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"chart-column-decreasing.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "chart-column-increasing",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"chart-column-increasing.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "chart-column",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"chart-column.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "chart-gannt",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"chart-gannt.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "chart-line",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"chart-line.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "chart-no-axes-column-decreasing",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"chart-no-axes-column-decreasing.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "chart-no-axes-column-increasing",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"chart-no-axes-column-increasing.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "chart-no-axes-column",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"chart-no-axes-column.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "chart-no-axes-combined",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"chart-no-axes-combined.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "chart-no-axes-gannt",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"chart-no-axes-gannt.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "chart-pie",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"chart-pie.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "chart-scatter",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"chart-scatter.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "check-check",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"check-check.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "check",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"check.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "chevron-down",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"chevron-down.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "chevron-left",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"chevron-left.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "chevron-right",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"chevron-right.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "chevron-up",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"chevron-up.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "chevrons-down-up",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"chevrons-down-up.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "chevrons-down",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"chevrons-down.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "chevrons-left-right",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"chevrons-left-right.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "chevrons-left",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"chevrons-left.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "chevrons-right-left",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"chevrons-right-left.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "chevrons-right",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"chevrons-right.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "chevrons-up-down",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"chevrons-up-down.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "chevrons-up",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"chevrons-up.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "cigarette-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"cigarette-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "circle-check-big",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"circle-check-big.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "circle-check",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"circle-check.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "circle-chevron-down",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"circle-chevron-down.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "circle-chevron-left",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"circle-chevron-left.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "circle-chevron-right",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"circle-chevron-right.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "circle-chevron-up",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"circle-chevron-up.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "circle-help",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"circle-help.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "circle-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"circle-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "clap",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"clap.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "clipboard-check",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"clipboard-check.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "clipboard-pen-line",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"clipboard-pen-line.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "clipboard-pen",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"clipboard-pen.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "clock-1",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"clock-1.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "clock-10",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"clock-10.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "clock-11",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"clock-11.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "clock-12",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"clock-12.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "clock-2",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"clock-2.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "clock-3",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"clock-3.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "clock-4",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"clock-4.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "clock-5",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"clock-5.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "clock-6",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"clock-6.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "clock-7",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"clock-7.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "clock-8",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"clock-8.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "clock-9",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"clock-9.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "clock",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"clock.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "cloud-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"cloud-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "cog",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"cog.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "compass",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"compass.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "copy-check",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"copy-check.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "copy",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"copy.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "cpu",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"cpu.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "dna-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"dna-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "download",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"download.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "drum",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"drum.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "ear-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"ear-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "egg-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"egg-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "expand",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"expand.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "eye-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"eye-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "file-chart-column-increasing",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"file-chart-column-increasing.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "file-chart-column",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"file-chart-column.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "file-chart-line",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"file-chart-line.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "file-check-2",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"file-check-2.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "file-check",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"file-check.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "file-pen-line",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"file-pen-line.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "file-pen",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"file-pen.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "file-stack",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"file-stack.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "file-terminal",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"file-terminal.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "fish-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"fish-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "flag-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"flag-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "flashlight-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"flashlight-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "flask-conical-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"flask-conical-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "folder-check",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"folder-check.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "folder-kanban",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"folder-kanban.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "folder-pen",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"folder-pen.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "frame",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"frame.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "gauge",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"gauge.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "gravel",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"gravel.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "grid-2-x-2-check",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"grid-2-x-2-check.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "grip-horizontal",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"grip-horizontal.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "grip-vertical",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"grip-vertical.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "grip",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"grip.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "hammer",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"hammer.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "hand-coins",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"hand-coins.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "headphone-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"headphone-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "heart-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"heart-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "home",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"home.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "hop-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"hop-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "image-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"image-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "kanban",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"kanban.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "keyboard-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"keyboard-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "keyboard",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"keyboard.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "layers",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"layers.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "layout-dashboard",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"layout-dashboard.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "layout-grid",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"layout-grid.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "layout-panel-left",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"layout-panel-left.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "layout-panel-top",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"layout-panel-top.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "layout-template",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"layout-template.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "lightbulb-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"lightbulb-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "link-2-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"link-2-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "list-check",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"list-check.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "list-checks",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"list-checks.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "list-todo",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"list-todo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "locate-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"locate-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "logout",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"logout.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "mail-check",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"mail-check.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "map-pin-check-inside",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"map-pin-check-inside.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "map-pin-check",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"map-pin-check.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "map-pin-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"map-pin-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "maximize-2",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"maximize-2.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "maximize",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"maximize.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "megaphone-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"megaphone-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "message-circle-more",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"message-circle-more.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "message-circle-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"message-circle-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "message-circle",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"message-circle.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "message-square-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"message-square-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "message-square",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"message-square.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "mic-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"mic-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "milk-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"milk-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "minimize-2",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"minimize-2.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "minimize",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"minimize.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "monitor-check",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"monitor-check.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "monitor-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"monitor-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "mouse-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"mouse-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "mouse-pointer-2",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"mouse-pointer-2.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "mouse-pointer",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"mouse-pointer.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "navigation-2-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"navigation-2-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "navigation-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"navigation-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "notebook-pen",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"notebook-pen.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "nut-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"nut-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "orbit",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"orbit.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "package-check",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"package-check.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "parking-circle-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"parking-circle-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "pen-line",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"pen-line.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "pen-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"pen-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "pen",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"pen.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "pencil-line",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"pencil-line.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "pencil-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"pencil-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "pencil",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"pencil.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "phone-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"phone-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "pickaxe",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"pickaxe.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "pin-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"pin-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "plane",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"plane.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "pointer-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"pointer-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "power-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"power-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "printer-check",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"printer-check.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "radar",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"radar.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "redo",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"redo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "refresh-ccw",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"refresh-ccw.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "refresh-cw-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"refresh-cw-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "rocket",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"rocket.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "rocking-chair",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"rocking-chair.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "route-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"route-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "route",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"route.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "save-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"save-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "scan-text",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"scan-text.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "search-check",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"search-check.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "search",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"search.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "settings",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"settings.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "shield-check",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"shield-check.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "shield-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"shield-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "ship-wheel",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"ship-wheel.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "ship",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"ship.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "shovel",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"shovel.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "shower-head",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"shower-head.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "shrink",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"shrink.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "signal-high",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"signal-high.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "signal-low",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"signal-low.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "signal-medium",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"signal-medium.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "signal-zero",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"signal-zero.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "signal",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"signal.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "signature",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"signature.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "spell-check",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"spell-check.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "square-chart-gannt",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"square-chart-gannt.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "square-check-big",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"square-check-big.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "square-check",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"square-check.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "square-chevron-down",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"square-chevron-down.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "square-chevron-left",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"square-chevron-left.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "square-chevron-right",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"square-chevron-right.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "square-chevron-up",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"square-chevron-up.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "square-dashed-kanban",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"square-dashed-kanban.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "square-kanban",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"square-kanban.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "square-parking-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"square-parking-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "square-pen",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"square-pen.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "square-stack",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"square-stack.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "square-terminal",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"square-terminal.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "star-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"star-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "sun",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"sun.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "sword",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"sword.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "telescope",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"telescope.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "terminal",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"terminal.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "thumbs-down",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"thumbs-down.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "thumbs-up",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"thumbs-up.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "ticket-check",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"ticket-check.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "timer-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"timer-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "timer",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"timer.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "touchpad-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"touchpad-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "trash-2",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"trash-2.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "trash",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"trash.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "umbrella-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"umbrella-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "undo-dot",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"undo-dot.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "undo",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"undo.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "unplug",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"unplug.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "upload",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"upload.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "user-check",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"user-check.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "user-pen",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"user-pen.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "user-round-check",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"user-round-check.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "user-round-pen",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"user-round-pen.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "users-round",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"users-round.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "users",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"users.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "vibrate-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"vibrate-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "video-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"video-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "volume-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"volume-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "vote",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"vote.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "webhook-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"webhook-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "wheat-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"wheat-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "wifi-high",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"wifi-high.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "wifi-low",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"wifi-low.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "wifi-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"wifi-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "wifi-zero",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"wifi-zero.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "wifi",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"wifi.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "wine-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"wine-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			},
+			{
+				"name": "zap-off",
+				"directory": "src/lib/icons",
+				"category": "icons",
+				"tests": false,
+				"subdirectory": false,
+				"files": [
+					"zap-off.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": []
+			}
+		]
+	}
+]
