@@ -11,7 +11,7 @@
 		"lint": "prettier --check . && eslint .",
 		"test:unit": "vitest",
 		"test": "npm run test:unit -- --run",
-		"build:registry": "pnpm dlx jsrepo build --dirs ./src/lib --include-categories icons"
+		"build:registry": "npx jsrepo build --dirs ./src/lib --include-categories icons"
 	},
 	"files": [
 		"dist",
