@@ -10,6 +10,7 @@
 				"subdirectory": false,
 				"files": ["activity.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -21,6 +22,7 @@
 				"subdirectory": false,
 				"files": ["alarm-clock-check.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -32,6 +34,7 @@
 				"subdirectory": false,
 				"files": ["alarm-clock-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -43,6 +46,7 @@
 				"subdirectory": false,
 				"files": ["alarm-clock.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -54,6 +58,7 @@
 				"subdirectory": false,
 				"files": ["align-center.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -65,6 +70,7 @@
 				"subdirectory": false,
 				"files": ["align-horizontal-space-around.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -76,6 +82,7 @@
 				"subdirectory": false,
 				"files": ["align-vertical-space-around.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -87,6 +94,7 @@
 				"subdirectory": false,
 				"files": ["anvil.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -98,6 +106,7 @@
 				"subdirectory": false,
 				"files": ["archive.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -109,6 +118,7 @@
 				"subdirectory": false,
 				"files": ["arrow-down.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -120,6 +130,7 @@
 				"subdirectory": false,
 				"files": ["arrow-left.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -131,6 +142,7 @@
 				"subdirectory": false,
 				"files": ["arrow-right.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -142,6 +154,7 @@
 				"subdirectory": false,
 				"files": ["arrow-up.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -153,6 +166,7 @@
 				"subdirectory": false,
 				"files": ["audio-lines.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -164,6 +178,7 @@
 				"subdirectory": false,
 				"files": ["award.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -175,6 +190,7 @@
 				"subdirectory": false,
 				"files": ["axe.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -186,6 +202,7 @@
 				"subdirectory": false,
 				"files": ["badge-alert.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -197,6 +214,7 @@
 				"subdirectory": false,
 				"files": ["badge-check.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -208,6 +226,7 @@
 				"subdirectory": false,
 				"files": ["battery-charging.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -219,6 +238,7 @@
 				"subdirectory": false,
 				"files": ["battery-full.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -230,6 +250,7 @@
 				"subdirectory": false,
 				"files": ["battery-low.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -241,6 +262,7 @@
 				"subdirectory": false,
 				"files": ["battery-medium.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -252,6 +274,7 @@
 				"subdirectory": false,
 				"files": ["battery-warning.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -263,6 +286,7 @@
 				"subdirectory": false,
 				"files": ["battery.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -274,6 +298,7 @@
 				"subdirectory": false,
 				"files": ["bean-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -285,6 +310,7 @@
 				"subdirectory": false,
 				"files": ["beer-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -296,6 +322,7 @@
 				"subdirectory": false,
 				"files": ["bell-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -307,6 +334,7 @@
 				"subdirectory": false,
 				"files": ["bell.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -318,6 +346,7 @@
 				"subdirectory": false,
 				"files": ["between-horizontal-end.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -329,6 +358,7 @@
 				"subdirectory": false,
 				"files": ["between-horizontal-start.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -340,6 +370,7 @@
 				"subdirectory": false,
 				"files": ["between-vertical-end.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -351,6 +382,7 @@
 				"subdirectory": false,
 				"files": ["between-vertical-start.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -362,6 +394,7 @@
 				"subdirectory": false,
 				"files": ["blend.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -373,6 +406,7 @@
 				"subdirectory": false,
 				"files": ["blocks.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -384,6 +418,7 @@
 				"subdirectory": false,
 				"files": ["bluetooth-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -395,6 +430,7 @@
 				"subdirectory": false,
 				"files": ["bolt.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -406,6 +442,7 @@
 				"subdirectory": false,
 				"files": ["bone.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -417,6 +454,7 @@
 				"subdirectory": false,
 				"files": ["book-check.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -428,6 +466,7 @@
 				"subdirectory": false,
 				"files": ["book-open-check.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -439,6 +478,7 @@
 				"subdirectory": false,
 				"files": ["book-text.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -450,6 +490,7 @@
 				"subdirectory": false,
 				"files": ["book.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -461,6 +502,7 @@
 				"subdirectory": false,
 				"files": ["bookmark-check.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -472,6 +514,7 @@
 				"subdirectory": false,
 				"files": ["bot-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -483,6 +526,7 @@
 				"subdirectory": false,
 				"files": ["bug-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -494,6 +538,7 @@
 				"subdirectory": false,
 				"files": ["calendar-check-2.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -505,6 +550,7 @@
 				"subdirectory": false,
 				"files": ["calendar-check.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -516,6 +562,7 @@
 				"subdirectory": false,
 				"files": ["calendar-cog.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -527,6 +574,7 @@
 				"subdirectory": false,
 				"files": ["calendar-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -538,6 +586,7 @@
 				"subdirectory": false,
 				"files": ["camera-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -549,6 +598,7 @@
 				"subdirectory": false,
 				"files": ["candy-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -560,6 +610,7 @@
 				"subdirectory": false,
 				"files": ["captions-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -571,6 +622,7 @@
 				"subdirectory": false,
 				"files": ["cart.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -582,6 +634,7 @@
 				"subdirectory": false,
 				"files": ["cctv.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -593,6 +646,7 @@
 				"subdirectory": false,
 				"files": ["chart-bar-decreasing.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -604,6 +658,7 @@
 				"subdirectory": false,
 				"files": ["chart-bar-increasing.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -615,6 +670,7 @@
 				"subdirectory": false,
 				"files": ["chart-bar.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -626,6 +682,7 @@
 				"subdirectory": false,
 				"files": ["chart-column-decreasing.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -637,6 +694,7 @@
 				"subdirectory": false,
 				"files": ["chart-column-increasing.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -648,6 +706,7 @@
 				"subdirectory": false,
 				"files": ["chart-column.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -659,6 +718,7 @@
 				"subdirectory": false,
 				"files": ["chart-gannt.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -670,6 +730,7 @@
 				"subdirectory": false,
 				"files": ["chart-line.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -681,6 +742,7 @@
 				"subdirectory": false,
 				"files": ["chart-no-axes-column-decreasing.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -692,6 +754,7 @@
 				"subdirectory": false,
 				"files": ["chart-no-axes-column-increasing.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -703,6 +766,7 @@
 				"subdirectory": false,
 				"files": ["chart-no-axes-column.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -714,6 +778,7 @@
 				"subdirectory": false,
 				"files": ["chart-no-axes-combined.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -725,6 +790,7 @@
 				"subdirectory": false,
 				"files": ["chart-no-axes-gannt.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -736,6 +802,7 @@
 				"subdirectory": false,
 				"files": ["chart-pie.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -747,6 +814,7 @@
 				"subdirectory": false,
 				"files": ["chart-scatter.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -758,6 +826,7 @@
 				"subdirectory": false,
 				"files": ["check-check.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -769,6 +838,7 @@
 				"subdirectory": false,
 				"files": ["check.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -780,6 +850,7 @@
 				"subdirectory": false,
 				"files": ["chevron-down.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -791,6 +862,7 @@
 				"subdirectory": false,
 				"files": ["chevron-left.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -802,6 +874,7 @@
 				"subdirectory": false,
 				"files": ["chevron-right.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -813,6 +886,7 @@
 				"subdirectory": false,
 				"files": ["chevron-up.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -824,6 +898,7 @@
 				"subdirectory": false,
 				"files": ["chevrons-down-up.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -835,6 +910,7 @@
 				"subdirectory": false,
 				"files": ["chevrons-down.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -846,6 +922,7 @@
 				"subdirectory": false,
 				"files": ["chevrons-left-right.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -857,6 +934,7 @@
 				"subdirectory": false,
 				"files": ["chevrons-left.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -868,6 +946,7 @@
 				"subdirectory": false,
 				"files": ["chevrons-right-left.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -879,6 +958,7 @@
 				"subdirectory": false,
 				"files": ["chevrons-right.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -890,6 +970,7 @@
 				"subdirectory": false,
 				"files": ["chevrons-up-down.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -901,6 +982,7 @@
 				"subdirectory": false,
 				"files": ["chevrons-up.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -912,6 +994,7 @@
 				"subdirectory": false,
 				"files": ["cigarette-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -923,6 +1006,7 @@
 				"subdirectory": false,
 				"files": ["circle-check-big.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -934,6 +1018,7 @@
 				"subdirectory": false,
 				"files": ["circle-check.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -945,6 +1030,7 @@
 				"subdirectory": false,
 				"files": ["circle-chevron-down.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -956,6 +1042,7 @@
 				"subdirectory": false,
 				"files": ["circle-chevron-left.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -967,6 +1054,7 @@
 				"subdirectory": false,
 				"files": ["circle-chevron-right.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -978,6 +1066,7 @@
 				"subdirectory": false,
 				"files": ["circle-chevron-up.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -989,6 +1078,7 @@
 				"subdirectory": false,
 				"files": ["circle-help.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1000,6 +1090,7 @@
 				"subdirectory": false,
 				"files": ["circle-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1011,6 +1102,7 @@
 				"subdirectory": false,
 				"files": ["clap.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1022,6 +1114,7 @@
 				"subdirectory": false,
 				"files": ["clipboard-check.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1033,6 +1126,7 @@
 				"subdirectory": false,
 				"files": ["clipboard-pen-line.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1044,6 +1138,7 @@
 				"subdirectory": false,
 				"files": ["clipboard-pen.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1055,6 +1150,7 @@
 				"subdirectory": false,
 				"files": ["clock-1.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1066,6 +1162,7 @@
 				"subdirectory": false,
 				"files": ["clock-10.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1077,6 +1174,7 @@
 				"subdirectory": false,
 				"files": ["clock-11.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1088,6 +1186,7 @@
 				"subdirectory": false,
 				"files": ["clock-12.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1099,6 +1198,7 @@
 				"subdirectory": false,
 				"files": ["clock-2.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1110,6 +1210,7 @@
 				"subdirectory": false,
 				"files": ["clock-3.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1121,6 +1222,7 @@
 				"subdirectory": false,
 				"files": ["clock-4.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1132,6 +1234,7 @@
 				"subdirectory": false,
 				"files": ["clock-5.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1143,6 +1246,7 @@
 				"subdirectory": false,
 				"files": ["clock-6.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1154,6 +1258,7 @@
 				"subdirectory": false,
 				"files": ["clock-7.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1165,6 +1270,7 @@
 				"subdirectory": false,
 				"files": ["clock-8.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1176,6 +1282,7 @@
 				"subdirectory": false,
 				"files": ["clock-9.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1187,6 +1294,7 @@
 				"subdirectory": false,
 				"files": ["clock.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1198,6 +1306,7 @@
 				"subdirectory": false,
 				"files": ["cloud-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1209,6 +1318,7 @@
 				"subdirectory": false,
 				"files": ["cog.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1220,6 +1330,7 @@
 				"subdirectory": false,
 				"files": ["compass.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1231,6 +1342,7 @@
 				"subdirectory": false,
 				"files": ["copy-check.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1242,6 +1354,7 @@
 				"subdirectory": false,
 				"files": ["copy.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1253,6 +1366,7 @@
 				"subdirectory": false,
 				"files": ["cpu.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1264,6 +1378,7 @@
 				"subdirectory": false,
 				"files": ["dna-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1275,6 +1390,7 @@
 				"subdirectory": false,
 				"files": ["download.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1286,6 +1402,7 @@
 				"subdirectory": false,
 				"files": ["drum.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1297,6 +1414,7 @@
 				"subdirectory": false,
 				"files": ["ear-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1308,6 +1426,7 @@
 				"subdirectory": false,
 				"files": ["egg-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1319,6 +1438,7 @@
 				"subdirectory": false,
 				"files": ["expand.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1330,6 +1450,7 @@
 				"subdirectory": false,
 				"files": ["eye-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1341,6 +1462,7 @@
 				"subdirectory": false,
 				"files": ["file-chart-column-increasing.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1352,6 +1474,7 @@
 				"subdirectory": false,
 				"files": ["file-chart-column.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1363,6 +1486,7 @@
 				"subdirectory": false,
 				"files": ["file-chart-line.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1374,6 +1498,7 @@
 				"subdirectory": false,
 				"files": ["file-check-2.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1385,6 +1510,7 @@
 				"subdirectory": false,
 				"files": ["file-check.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1396,6 +1522,7 @@
 				"subdirectory": false,
 				"files": ["file-pen-line.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1407,6 +1534,7 @@
 				"subdirectory": false,
 				"files": ["file-pen.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1418,6 +1546,7 @@
 				"subdirectory": false,
 				"files": ["file-stack.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1429,6 +1558,7 @@
 				"subdirectory": false,
 				"files": ["file-terminal.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1440,6 +1570,7 @@
 				"subdirectory": false,
 				"files": ["fish-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1451,6 +1582,7 @@
 				"subdirectory": false,
 				"files": ["flag-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1462,6 +1594,7 @@
 				"subdirectory": false,
 				"files": ["flashlight-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1473,6 +1606,7 @@
 				"subdirectory": false,
 				"files": ["flask-conical-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1484,6 +1618,7 @@
 				"subdirectory": false,
 				"files": ["folder-check.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1495,6 +1630,7 @@
 				"subdirectory": false,
 				"files": ["folder-kanban.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1506,6 +1642,7 @@
 				"subdirectory": false,
 				"files": ["folder-pen.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1517,6 +1654,7 @@
 				"subdirectory": false,
 				"files": ["frame.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1528,6 +1666,7 @@
 				"subdirectory": false,
 				"files": ["gauge.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1539,6 +1678,7 @@
 				"subdirectory": false,
 				"files": ["gravel.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1550,6 +1690,7 @@
 				"subdirectory": false,
 				"files": ["grid-2-x-2-check.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1561,6 +1702,7 @@
 				"subdirectory": false,
 				"files": ["grip-horizontal.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1572,6 +1714,7 @@
 				"subdirectory": false,
 				"files": ["grip-vertical.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1583,6 +1726,7 @@
 				"subdirectory": false,
 				"files": ["grip.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1594,6 +1738,7 @@
 				"subdirectory": false,
 				"files": ["hammer.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1605,6 +1750,7 @@
 				"subdirectory": false,
 				"files": ["hand-coins.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1616,6 +1762,7 @@
 				"subdirectory": false,
 				"files": ["headphone-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1627,6 +1774,7 @@
 				"subdirectory": false,
 				"files": ["heart-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1638,6 +1786,7 @@
 				"subdirectory": false,
 				"files": ["home.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1649,6 +1798,7 @@
 				"subdirectory": false,
 				"files": ["hop-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1660,6 +1810,7 @@
 				"subdirectory": false,
 				"files": ["image-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1671,6 +1822,7 @@
 				"subdirectory": false,
 				"files": ["kanban.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1682,6 +1834,7 @@
 				"subdirectory": false,
 				"files": ["keyboard-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1693,6 +1846,7 @@
 				"subdirectory": false,
 				"files": ["keyboard.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1704,6 +1858,7 @@
 				"subdirectory": false,
 				"files": ["layers.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1715,6 +1870,7 @@
 				"subdirectory": false,
 				"files": ["layout-dashboard.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1726,6 +1882,7 @@
 				"subdirectory": false,
 				"files": ["layout-grid.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1737,6 +1894,7 @@
 				"subdirectory": false,
 				"files": ["layout-panel-left.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1748,6 +1906,7 @@
 				"subdirectory": false,
 				"files": ["layout-panel-top.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1759,6 +1918,7 @@
 				"subdirectory": false,
 				"files": ["layout-template.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1770,6 +1930,7 @@
 				"subdirectory": false,
 				"files": ["lightbulb-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1781,6 +1942,7 @@
 				"subdirectory": false,
 				"files": ["link-2-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1792,6 +1954,7 @@
 				"subdirectory": false,
 				"files": ["list-check.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1803,6 +1966,7 @@
 				"subdirectory": false,
 				"files": ["list-checks.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1814,6 +1978,7 @@
 				"subdirectory": false,
 				"files": ["list-todo.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1825,6 +1990,7 @@
 				"subdirectory": false,
 				"files": ["locate-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1836,6 +2002,7 @@
 				"subdirectory": false,
 				"files": ["logout.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1847,6 +2014,7 @@
 				"subdirectory": false,
 				"files": ["mail-check.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1858,6 +2026,7 @@
 				"subdirectory": false,
 				"files": ["map-pin-check-inside.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1869,6 +2038,7 @@
 				"subdirectory": false,
 				"files": ["map-pin-check.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1880,6 +2050,7 @@
 				"subdirectory": false,
 				"files": ["map-pin-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1891,6 +2062,7 @@
 				"subdirectory": false,
 				"files": ["maximize-2.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1902,6 +2074,7 @@
 				"subdirectory": false,
 				"files": ["maximize.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1913,6 +2086,7 @@
 				"subdirectory": false,
 				"files": ["megaphone-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1924,6 +2098,7 @@
 				"subdirectory": false,
 				"files": ["message-circle-more.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1935,6 +2110,7 @@
 				"subdirectory": false,
 				"files": ["message-circle-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1946,6 +2122,7 @@
 				"subdirectory": false,
 				"files": ["message-circle.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1957,6 +2134,7 @@
 				"subdirectory": false,
 				"files": ["message-square-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1968,6 +2146,7 @@
 				"subdirectory": false,
 				"files": ["message-square.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1979,6 +2158,7 @@
 				"subdirectory": false,
 				"files": ["mic-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -1990,6 +2170,7 @@
 				"subdirectory": false,
 				"files": ["milk-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2001,6 +2182,7 @@
 				"subdirectory": false,
 				"files": ["minimize-2.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2012,6 +2194,7 @@
 				"subdirectory": false,
 				"files": ["minimize.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2023,6 +2206,7 @@
 				"subdirectory": false,
 				"files": ["monitor-check.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2034,6 +2218,7 @@
 				"subdirectory": false,
 				"files": ["monitor-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2045,6 +2230,7 @@
 				"subdirectory": false,
 				"files": ["mouse-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2056,6 +2242,7 @@
 				"subdirectory": false,
 				"files": ["mouse-pointer-2.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2067,6 +2254,7 @@
 				"subdirectory": false,
 				"files": ["mouse-pointer.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2078,6 +2266,7 @@
 				"subdirectory": false,
 				"files": ["navigation-2-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2089,6 +2278,7 @@
 				"subdirectory": false,
 				"files": ["navigation-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2100,6 +2290,7 @@
 				"subdirectory": false,
 				"files": ["notebook-pen.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2111,6 +2302,7 @@
 				"subdirectory": false,
 				"files": ["nut-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2122,6 +2314,7 @@
 				"subdirectory": false,
 				"files": ["orbit.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2133,6 +2326,7 @@
 				"subdirectory": false,
 				"files": ["package-check.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2144,6 +2338,7 @@
 				"subdirectory": false,
 				"files": ["parking-circle-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2155,6 +2350,7 @@
 				"subdirectory": false,
 				"files": ["pen-line.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2166,6 +2362,7 @@
 				"subdirectory": false,
 				"files": ["pen-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2177,6 +2374,7 @@
 				"subdirectory": false,
 				"files": ["pen.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2188,6 +2386,7 @@
 				"subdirectory": false,
 				"files": ["pencil-line.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2199,6 +2398,7 @@
 				"subdirectory": false,
 				"files": ["pencil-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2210,6 +2410,7 @@
 				"subdirectory": false,
 				"files": ["pencil.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2221,6 +2422,7 @@
 				"subdirectory": false,
 				"files": ["phone-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2232,6 +2434,7 @@
 				"subdirectory": false,
 				"files": ["pickaxe.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2243,6 +2446,7 @@
 				"subdirectory": false,
 				"files": ["pin-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2254,6 +2458,7 @@
 				"subdirectory": false,
 				"files": ["plane.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2265,6 +2470,7 @@
 				"subdirectory": false,
 				"files": ["pointer-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2276,6 +2482,7 @@
 				"subdirectory": false,
 				"files": ["power-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2287,6 +2494,7 @@
 				"subdirectory": false,
 				"files": ["printer-check.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2298,6 +2506,7 @@
 				"subdirectory": false,
 				"files": ["radar.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2309,6 +2518,7 @@
 				"subdirectory": false,
 				"files": ["redo.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2320,6 +2530,7 @@
 				"subdirectory": false,
 				"files": ["refresh-ccw.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2331,6 +2542,7 @@
 				"subdirectory": false,
 				"files": ["refresh-cw-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2342,6 +2554,7 @@
 				"subdirectory": false,
 				"files": ["rocket.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2353,6 +2566,7 @@
 				"subdirectory": false,
 				"files": ["rocking-chair.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2364,6 +2578,7 @@
 				"subdirectory": false,
 				"files": ["route-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2375,6 +2590,7 @@
 				"subdirectory": false,
 				"files": ["route.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2386,6 +2602,7 @@
 				"subdirectory": false,
 				"files": ["save-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2397,6 +2614,7 @@
 				"subdirectory": false,
 				"files": ["scan-text.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2408,6 +2626,7 @@
 				"subdirectory": false,
 				"files": ["search-check.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2419,6 +2638,7 @@
 				"subdirectory": false,
 				"files": ["search.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2430,6 +2650,7 @@
 				"subdirectory": false,
 				"files": ["settings.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2441,6 +2662,7 @@
 				"subdirectory": false,
 				"files": ["shield-check.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2452,6 +2674,7 @@
 				"subdirectory": false,
 				"files": ["shield-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2463,6 +2686,7 @@
 				"subdirectory": false,
 				"files": ["ship-wheel.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2474,6 +2698,7 @@
 				"subdirectory": false,
 				"files": ["ship.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2485,6 +2710,7 @@
 				"subdirectory": false,
 				"files": ["shovel.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2496,6 +2722,7 @@
 				"subdirectory": false,
 				"files": ["shower-head.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2507,6 +2734,7 @@
 				"subdirectory": false,
 				"files": ["shrink.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2518,6 +2746,7 @@
 				"subdirectory": false,
 				"files": ["signal-high.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2529,6 +2758,7 @@
 				"subdirectory": false,
 				"files": ["signal-low.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2540,6 +2770,7 @@
 				"subdirectory": false,
 				"files": ["signal-medium.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2551,6 +2782,7 @@
 				"subdirectory": false,
 				"files": ["signal-zero.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2562,6 +2794,7 @@
 				"subdirectory": false,
 				"files": ["signal.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2573,6 +2806,7 @@
 				"subdirectory": false,
 				"files": ["signature.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2584,6 +2818,7 @@
 				"subdirectory": false,
 				"files": ["spell-check.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2595,6 +2830,7 @@
 				"subdirectory": false,
 				"files": ["square-chart-gannt.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2606,6 +2842,7 @@
 				"subdirectory": false,
 				"files": ["square-check-big.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2617,6 +2854,7 @@
 				"subdirectory": false,
 				"files": ["square-check.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2628,6 +2866,7 @@
 				"subdirectory": false,
 				"files": ["square-chevron-down.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2639,6 +2878,7 @@
 				"subdirectory": false,
 				"files": ["square-chevron-left.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2650,6 +2890,7 @@
 				"subdirectory": false,
 				"files": ["square-chevron-right.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2661,6 +2902,7 @@
 				"subdirectory": false,
 				"files": ["square-chevron-up.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2672,6 +2914,7 @@
 				"subdirectory": false,
 				"files": ["square-dashed-kanban.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2683,6 +2926,7 @@
 				"subdirectory": false,
 				"files": ["square-kanban.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2694,6 +2938,7 @@
 				"subdirectory": false,
 				"files": ["square-parking-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2705,6 +2950,7 @@
 				"subdirectory": false,
 				"files": ["square-pen.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2716,6 +2962,7 @@
 				"subdirectory": false,
 				"files": ["square-stack.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2727,6 +2974,7 @@
 				"subdirectory": false,
 				"files": ["square-terminal.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2738,6 +2986,7 @@
 				"subdirectory": false,
 				"files": ["star-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2749,6 +2998,7 @@
 				"subdirectory": false,
 				"files": ["sun.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2760,6 +3010,7 @@
 				"subdirectory": false,
 				"files": ["sword.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2771,6 +3022,7 @@
 				"subdirectory": false,
 				"files": ["telescope.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2782,6 +3034,7 @@
 				"subdirectory": false,
 				"files": ["terminal.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2793,6 +3046,7 @@
 				"subdirectory": false,
 				"files": ["thumbs-down.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2804,6 +3058,7 @@
 				"subdirectory": false,
 				"files": ["thumbs-up.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2815,6 +3070,7 @@
 				"subdirectory": false,
 				"files": ["ticket-check.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2826,6 +3082,7 @@
 				"subdirectory": false,
 				"files": ["timer-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2837,6 +3094,7 @@
 				"subdirectory": false,
 				"files": ["timer.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2848,6 +3106,7 @@
 				"subdirectory": false,
 				"files": ["touchpad-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2859,6 +3118,7 @@
 				"subdirectory": false,
 				"files": ["trash-2.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2870,6 +3130,7 @@
 				"subdirectory": false,
 				"files": ["trash.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2881,6 +3142,7 @@
 				"subdirectory": false,
 				"files": ["umbrella-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2892,6 +3154,7 @@
 				"subdirectory": false,
 				"files": ["undo-dot.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2903,6 +3166,7 @@
 				"subdirectory": false,
 				"files": ["undo.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2914,6 +3178,7 @@
 				"subdirectory": false,
 				"files": ["unplug.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2925,6 +3190,7 @@
 				"subdirectory": false,
 				"files": ["upload.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2936,6 +3202,7 @@
 				"subdirectory": false,
 				"files": ["user-check.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2947,6 +3214,7 @@
 				"subdirectory": false,
 				"files": ["user-pen.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2958,6 +3226,7 @@
 				"subdirectory": false,
 				"files": ["user-round-check.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2969,6 +3238,7 @@
 				"subdirectory": false,
 				"files": ["user-round-pen.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2980,6 +3250,7 @@
 				"subdirectory": false,
 				"files": ["users-round.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -2991,6 +3262,7 @@
 				"subdirectory": false,
 				"files": ["users.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -3002,6 +3274,7 @@
 				"subdirectory": false,
 				"files": ["vibrate-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -3013,6 +3286,7 @@
 				"subdirectory": false,
 				"files": ["video-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -3024,6 +3298,7 @@
 				"subdirectory": false,
 				"files": ["volume-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -3035,6 +3310,7 @@
 				"subdirectory": false,
 				"files": ["vote.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -3046,6 +3322,7 @@
 				"subdirectory": false,
 				"files": ["webhook-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -3057,6 +3334,7 @@
 				"subdirectory": false,
 				"files": ["wheat-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -3068,6 +3346,7 @@
 				"subdirectory": false,
 				"files": ["wifi-high.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -3079,6 +3358,7 @@
 				"subdirectory": false,
 				"files": ["wifi-low.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -3090,6 +3370,7 @@
 				"subdirectory": false,
 				"files": ["wifi-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -3101,6 +3382,7 @@
 				"subdirectory": false,
 				"files": ["wifi-zero.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -3112,6 +3394,7 @@
 				"subdirectory": false,
 				"files": ["wifi.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -3123,6 +3406,7 @@
 				"subdirectory": false,
 				"files": ["wine-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			},
@@ -3134,6 +3418,7 @@
 				"subdirectory": false,
 				"files": ["zap-off.svelte"],
 				"localDependencies": [],
+				"_imports_": {},
 				"dependencies": [],
 				"devDependencies": []
 			}
