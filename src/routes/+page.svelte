@@ -2,6 +2,7 @@
 	import { Button } from '$lib/components/ui/button';
 	import { Input } from '$lib/components/ui/input';
 	import { Badge } from '$lib/components/ui/badge';
+	import SquareTerminal from "$lib/icons/square-terminal.svelte"
 	import { Sun, Moon, Download, Copy, ExternalLink, Check } from 'lucide-svelte';
 	import { toggleMode } from 'mode-watcher';
 	import { onMount } from 'svelte';
@@ -162,6 +163,27 @@
 								{:else}
 									<div in:fade={{ duration: 150 }}>
 										<Copy class="h-4 w-4" />
+									</div>
+								{/if}
+							</Button>
+							<Button
+								on:click={() => {
+									navigator.clipboard.writeText(`jsrepo add icons/${icon.name}`);
+									icon.commandCopied = true;
+									setTimeout(() => {
+										icon.commandCopied = false;
+									}, 1500);
+								}}
+								variant="ghost"
+								class="size-8 cursor-pointer rounded-md p-2 transition-colors duration-200 hover:bg-accent"
+							>
+								{#if icon.commandCopied}
+									<div in:fade={{ duration: 150 }}>
+										<Check class="h-4 w-4" />
+									</div>
+								{:else}
+									<div in:fade={{ duration: 150 }}>
+										<SquareTerminal size={18} />
 									</div>
 								{/if}
 							</Button>

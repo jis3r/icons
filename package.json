@@ -10,7 +10,8 @@
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
 		"test:unit": "vitest",
-		"test": "npm run test:unit -- --run"
+		"test": "npm run test:unit -- --run",
+		"build:registry": "npx jsrepo build --dirs ./src/lib --include-categories icons"
 	},
 	"files": [
 		"dist",

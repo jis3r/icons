@@ -1,0 +1,42 @@
+name: build-registry
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # jsrepo doesn't need any of your 
+      # dependencies to be installed to work
+      - name: Build jsrepo-manifest.json
+        run: npm build:registry
+
+      - name: Create pull request with changes
+        uses: peter-evans/create-pull-request@v7
+        with:
+          title: 'chore: update `jsrepo-manifest.json`'
+          body: |
+            - Update `jsrepo-manifest.json`
+
+            ---
+            This PR was auto generated
+          branch: build-manifest
+          commit-message: build `jsrepo-manifest.json`
