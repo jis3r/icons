@@ -2,7 +2,8 @@
 	import { Button } from '$lib/components/ui/button';
 	import { Input } from '$lib/components/ui/input';
 	import { Badge } from '$lib/components/ui/badge';
-	import { Sun, Moon, Download, Copy, ExternalLink, Check, SquareTerminal } from 'lucide-svelte';
+	import SquareTerminal from "$lib/icons/square-terminal.svelte"
+	import { Sun, Moon, Download, Copy, ExternalLink, Check } from 'lucide-svelte';
 	import { toggleMode } from 'mode-watcher';
 	import { onMount } from 'svelte';
 	import { getIcons, downloadIcon } from '$lib/utils/icons.js';
@@ -182,7 +183,7 @@
 									</div>
 								{:else}
 									<div in:fade={{ duration: 150 }}>
-										<SquareTerminal class="h-4 w-4" />
+										<SquareTerminal size={18} />
 									</div>
 								{/if}
 							</Button>
