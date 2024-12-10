@@ -26,7 +26,7 @@
 		stroke-width={strokeWidth}
 		stroke-linecap="round"
 		stroke-linejoin="round"
-		class="book-text-icon"
+		class="book-icon"
 		class:animate={isHovered}
 	>
 		<path
@@ -36,11 +36,11 @@
 </div>
 
 <style>
-	.book-text-icon {
+	.book-icon {
 		overflow: visible;
 	}
 
-	.book-text-icon.animate {
+	.book-icon.animate {
 		animation: bookAnimation 0.6s ease-in-out;
 	}
 
