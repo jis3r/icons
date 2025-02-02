@@ -27,7 +27,7 @@
 		stroke-width={strokeWidth}
 		stroke-linecap="round"
 		stroke-linejoin="round"
-		class="battery-icon"
+		class="battery-charging-icon"
 		class:animate={isHovered}
 	>
 		<path d="M15 7h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-2" />
@@ -42,7 +42,7 @@
 		overflow: visible;
 	}
 
-	.battery-icon.animate .battery-charging {
+	.battery-charging-icon.animate .battery-charging {
 		opacity: 0;
 		animation: blink 0.5s 3;
 	}
@@ -53,7 +53,7 @@
 			opacity: 1;
 		}
 		50% {
-			opacity: 0;
+			opacity: 0.1;
 		}
 	}
 </style>
