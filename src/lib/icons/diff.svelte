@@ -50,12 +50,12 @@
 
 	.diff.animate .vertical {
 		opacity: 0;
-		animation: lineAnimation 0.3s ease-out forwards;
+		animation: lineAnimation 0.3s ease-out 0.25s forwards;
 	}
 
 	.diff.animate .horizontal-top {
 		opacity: 0;
-		animation: lineAnimation 0.3s ease-out 0.25s forwards;
+		animation: lineAnimation 0.3s ease-out forwards;
 	}
 
 	.diff.animate .horizontal-bottom {
