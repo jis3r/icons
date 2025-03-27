@@ -1,5 +1,16 @@
 {
 	"name": "icons",
+	"description": "Beautifully crafted, moving icons. For Svelte. 🧡",
+	"license": "MIT",
+	"author": "jis3r",
+	"keywords": [
+		"svelte",
+		"icons",
+		"lucide",
+		"animated",
+		"beautiful",
+		"moving"
+	],
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "vite dev",
@@ -60,7 +71,8 @@
 	},
 	"dependencies": {
 		"@number-flow/svelte": "^0.1.4",
-		"lucide-svelte": "^0.454.0",
-		"mode-watcher": "^0.4.1"
+		"lucide-svelte": "^0.475.0",
+		"mode-watcher": "^0.4.1",
+		"svelte-fast-marquee": "^0.8.0"
 	}
 }
