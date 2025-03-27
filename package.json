@@ -71,7 +71,7 @@
 	},
 	"dependencies": {
 		"@number-flow/svelte": "^0.1.4",
-		"lucide-svelte": "^0.475.0",
+		"lucide-svelte": "^0.484.0",
 		"mode-watcher": "^0.4.1",
 		"svelte-fast-marquee": "^0.8.0"
 	}
