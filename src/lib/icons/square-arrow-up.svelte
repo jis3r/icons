@@ -39,6 +39,6 @@
 		transition: all 0.2s ease-out;
 	}
 	.head {
-		transform: translateY(3px);
+		transform: translateY(1.5px);
 	}
 </style>
