@@ -28,12 +28,9 @@
 		stroke-linejoin="round"
 	>
 		<rect width="18" height="18" x="3" y="3" rx="2" />
-		<!-- Static upper part of the vertical line -->
-		<path d="M12 8v4" />
-		<!-- Animated lower part of the vertical line -->
-		<path d="M12 12v4" class:head={isHovered} />
-		<!-- Animated arrow head (chevron) -->
 		<path d="M8 12 L12 16 L16 12" class:head={isHovered} />
+		<path d="M12 12v4" class:head={isHovered} />
+		<path d="M12 8v4" />
 	</svg>
 </div>
 

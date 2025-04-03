@@ -28,12 +28,9 @@
 		stroke-linejoin="round"
 	>
 		<rect width="18" height="18" x="3" y="3" rx="2" />
-		<!-- Static left side of the horizontal line -->
-		<path d="M8 12H12" />
-		<!-- Animated right side of the horizontal line -->
-		<path d="M12 12H16" class:head={isHovered} />
-		<!-- Animated arrow head -->
 		<path d="M12 16 L16 12 L12 8" class:head={isHovered} />
+		<path d="M12 12H16" class:head={isHovered} />
+		<path d="M8 12H12" />
 	</svg>
 </div>
 

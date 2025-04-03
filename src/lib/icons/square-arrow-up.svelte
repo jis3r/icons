@@ -28,12 +28,9 @@
 		stroke-linejoin="round"
 	>
 		<rect width="18" height="18" x="3" y="3" rx="2" />
-		<!-- Static lower part of the vertical line -->
-		<path d="M12 16V12" />
-		<!-- Animated upper part of the vertical line -->
-		<path d="M12 12V8" class:head={isHovered} />
-		<!-- Animated arrow head -->
 		<path d="M16 12 L12 8 L8 12" class:head={isHovered} />
+		<path d="M12 12V8" class:head={isHovered} />
+		<path d="M12 16V12" />
 	</svg>
 </div>
 
