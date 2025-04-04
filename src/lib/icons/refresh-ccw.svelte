@@ -45,7 +45,7 @@
 
 <style>
 	.refresh-icon {
-		transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+		transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 		transform-origin: center;
 	}
 
