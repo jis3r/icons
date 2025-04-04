@@ -66,11 +66,6 @@
 		animation-delay: 0.45s;
 	}
 
-	.cast-icon.animate .cast-line-4 {
-		opacity: 0;
-		animation-delay: 0.55s;
-	}
-
 	@keyframes fadeInSequence {
 		0% {
 			opacity: 0;

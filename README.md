@@ -1,6 +1,5 @@
 # `jis3r/icons` is beautifully crafted, moving icons. for svelte. 🧡
 
-
 **Demo** → [https://movingicons.dev](https://movingicons.dev)
 
 ## Contributing

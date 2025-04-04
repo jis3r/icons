@@ -48,7 +48,7 @@
 </script>
 
 <svelte:window
-	on:keydown|window={(e) => {
+	onkeydown={(e) => {
 		const searchbar = document.getElementById('searchbar');
 
 		// Focus search bar when Meta+K is pressed
@@ -71,7 +71,7 @@
 			<NumberFlow value={stars} />
 		</Button>
 
-		<Button on:click={toggleMode} variant="outline" size="icon">
+		<Button onclick={toggleMode} variant="outline" size="icon">
 			<Sun
 				class="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
 			/>
@@ -145,7 +145,7 @@
 						<p class="mb-3 mt-5 text-center text-xs text-muted-foreground">{icon.name}</p>
 						<div class="flex items-center justify-center gap-2">
 							<Button
-								on:click={() => {
+								onclick={() => {
 									navigator.clipboard.writeText(icon.source);
 									icon.copied = true;
 									setTimeout(() => {
@@ -166,7 +166,7 @@
 								{/if}
 							</Button>
 							<Button
-								on:click={() => {
+								onclick={() => {
 									downloadIcon(icon);
 									icon.downloaded = true;
 									setTimeout(() => {

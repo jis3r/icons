@@ -1,5 +1,3 @@
-
-
 # Contribution Guidelines for jis3r/icons
 
 First off all, thanks for taking the time to contribute! ❤️
@@ -10,31 +8,31 @@ The following is a set of guidelines for contributing to jis3r/icons. Feel free 
 
 Feel free to open a pull-request to contribute to this project.
 
-**Working on your first Pull Request?** You can learn how from this *free* series
+**Working on your first Pull Request?** You can learn how from this _free_ series
 
 [How to Contribute to an Open Source Project on GitHub](https://app.egghead.io/playlists/how-to-contribute-to-an-open-source-project-on-github)
 
 Guidelines for pull requests:
 
--  __Make your commit messages as descriptive as possible.__ Include as much information as you can. Explain anything that the file diffs themselves won’t make apparent.
+- **Make your commit messages as descriptive as possible.** Include as much information as you can. Explain anything that the file diffs themselves won’t make apparent.
 
--  __Document your pull request__. Explain your fix, link to the relevant issue, add screenshots when adding new icons.
+- **Document your pull request**. Explain your fix, link to the relevant issue, add screenshots when adding new icons.
 
--  __Make sure the target of your pull request is the relevant branch__. Most of bugfix or new feature should go to the `main` branch.
+- **Make sure the target of your pull request is the relevant branch**. Most of bugfix or new feature should go to the `main` branch.
 
--  __Include only related work__. If your pull request has unrelated commit, it won't be accepted.
+- **Include only related work**. If your pull request has unrelated commit, it won't be accepted.
 
 ## Icon Guidelines
 
--  **Icon names should be in kebab-case.** For example, `arrow-up` or `chevron-left`.
+- **Icon names should be in kebab-case.** For example, `arrow-up` or `chevron-left`.
 
--  **Icon names must be dentical to their lucide counterpart.**
+- **Icon names must be dentical to their lucide counterpart.**
 
--  **Icons must be added as .svelte components.**
+- **Icons must be added as .svelte components.**
 
--  **Icons must be added to the `src/lib/icons` directory.**
+- **Icons must be added to the `src/lib/icons` directory.**
 
--  **Only use vanilla CSS to create the animations.** No libraries like svelte-motion.
+- **Only use vanilla CSS to create the animations.** No libraries like svelte-motion.
 
 ## Icon Requests
 
