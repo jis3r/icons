@@ -1,0 +1,73 @@
+<script>
+	let {
+		color = 'currentColor',
+		size = 28,
+		strokeWidth = 2,
+		isHovered = false,
+		classes = ''
+	} = $props();
+
+	function handleMouseEnter() {
+		isHovered = true;
+	}
+
+	function handleMouseLeave() {
+		isHovered = false;
+	}
+</script>
+
+<div
+	class={classes}
+	aria-label="history"
+	role="img"
+	onmouseenter={handleMouseEnter}
+	onmouseleave={handleMouseLeave}
+>
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={size}
+		height={size}
+		viewBox="0 0 24 24"
+		fill="none"
+		stroke={color}
+		stroke-width={strokeWidth}
+		stroke-linecap="round"
+		stroke-linejoin="round"
+	>
+		<g class="arrow" class:animate={isHovered}>
+			<path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+			<path d="M3 3v5h5" />
+		</g>
+		<line x1="12" y1="12" x2="12" y2="7" class="hour-hand" class:animate={isHovered} />
+		<line x1="12" y1="12" x2="16" y2="14" class="minute-hand" class:animate={isHovered} />
+	</svg>
+</div>
+
+<style>
+	.arrow {
+		transform-origin: center;
+		transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.arrow.animate {
+		transform: rotate(-50deg);
+	}
+
+	.hour-hand {
+		transform-origin: 50% 50%;
+		transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.hour-hand.animate {
+		transform: rotate(-360deg);
+	}
+
+	.minute-hand {
+		transform-origin: 50% 50%;
+		transition: transform 0.5s ease-in-out;
+	}
+
+	.minute-hand.animate {
+		transform: rotate(-45deg);
+	}
+</style>
