@@ -16,13 +16,7 @@
 	}
 </script>
 
-<div
-	class={classes}
-	aria-label="key-square"
-	role="img"
-	onmouseenter={handleMouseEnter}
-	onmouseleave={handleMouseLeave}
->
+<div class={classes} aria-label="key-square" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
