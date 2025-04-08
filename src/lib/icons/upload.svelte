@@ -46,12 +46,12 @@
 	g.animate polyline,
 	g.animate line {
 		transform: translateY(-2px);
-		transition: transform 0.3s cubic-bezier(0.68, 0.6, 0.32, 1.6);
+		transition: transform 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 	}
 
 	g polyline,
 	g line {
 		transform: translateY(0);
-		transition: transform 0.3s cubic-bezier(0.68, 0.6, 0.32, 1.6);
+		transition: transform 0.3s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 	}
 </style>
