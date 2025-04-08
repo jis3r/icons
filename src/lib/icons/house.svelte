@@ -15,7 +15,7 @@
 	}
 </script>
 
-<div class={classes} aria-label="home" role="img" onmouseenter={handleMouseEnter}>
+<div class={classes} aria-label="house" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
@@ -26,7 +26,7 @@
 		stroke-width={strokeWidth}
 		stroke-linecap="round"
 		stroke-linejoin="round"
-		class="home-icon"
+		class="house-icon"
 		class:animate={isHovered}
 	>
 		<path
@@ -37,7 +37,7 @@
 </div>
 
 <style>
-	.home-icon {
+	.house-icon {
 		overflow: visible;
 	}
 
@@ -49,7 +49,7 @@
 			opacity 0.3s ease;
 	}
 
-	.home-icon.animate .door {
+	.house-icon.animate .door {
 		animation: doorAnimation 0.6s ease-out forwards;
 	}
 

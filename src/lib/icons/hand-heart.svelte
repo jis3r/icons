@@ -18,7 +18,7 @@
 
 <div
 	class={classes}
-	aria-label="heart-hand"
+	aria-label="hand-heart"
 	role="img"
 	onmouseenter={handleMouseEnter}
 	onmouseleave={handleMouseLeave}
@@ -42,19 +42,19 @@
 		<path d="m2 15 6 6" />
 		<path
 			d="M19.5 8.5c.7-.7 1.5-1.6 1.5-2.7A2.73 2.73 0 0 0 16 4a2.78 2.78 0 0 0-5 1.8c0 1.2.8 2 1.5 2.8L16 12Z"
-			class="heart-path"
+			class="hand-heart-path"
 			class:animate={isHovered}
 		/>
 	</svg>
 </div>
 
 <style>
-	.heart-path {
+	.hand-heart-path {
 		transform-origin: center;
 		transition: transform 0.3s ease;
 	}
 
-	.heart-path.animate {
+	.hand-heart-path.animate {
 		transform: translateY(-2px) scale(1.1);
 	}
 </style>

@@ -16,7 +16,7 @@
 	}
 </script>
 
-<div class={classes} aria-label="cart" role="img" onmouseenter={handleMouseEnter}>
+<div class={classes} aria-label="shopping-cart" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
@@ -27,7 +27,7 @@
 		stroke-width={strokeWidth}
 		stroke-linecap="round"
 		stroke-linejoin="round"
-		class="cart-icon"
+		class="shopping-cart-icon"
 		class:animate={isHovered}
 	>
 		<path
@@ -37,12 +37,12 @@
 </div>
 
 <style>
-	.cart-icon {
+	.shopping-cart-icon {
 		transition: transform 0.2s ease-in-out;
 		transform-origin: center;
 	}
 
-	.cart-icon.animate {
+	.shopping-cart-icon.animate {
 		animation: cartBounce 0.8s ease-in-out;
 	}
 
