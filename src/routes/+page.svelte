@@ -10,6 +10,7 @@
 	import Github from '$lib/components/github.svelte';
 	import { fade } from 'svelte/transition';
 	import NumberFlow from '@number-flow/svelte';
+	import { debounce } from '$lib/utils/debounce';
 
 	let stars = $state(0);
 	let iconsAdded = $state(0);
@@ -20,17 +21,18 @@
 	let color = $state('currentColor');
 	let strokeWidth = $state(2);
 
-	$effect(() => {
-		searchQuery = searchQuery;
+	const updateFilteredIcons = (query) => {
 		filteredIcons = icons.filter((icon) => {
-			const query = searchQuery.toLowerCase();
+			const q = query.toLowerCase();
 			return (
-				icon.name.toLowerCase().includes(query) ||
-				icon.tags?.some((tag) => tag.toLowerCase().includes(query)) ||
-				icon.categories?.some((category) => category.toLowerCase().includes(query))
+				icon.name.toLowerCase().includes(q) ||
+				icon.tags?.some((tag) => tag.toLowerCase().includes(q)) ||
+				icon.categories?.some((category) => category.toLowerCase().includes(q))
 			);
 		});
-	});
+	};
+
+	const debouncedUpdateFilteredIcons = debounce(updateFilteredIcons, 300);
 
 	onMount(async () => {
 		icons = ICONS_LIST;
@@ -128,6 +130,7 @@
 					id="searchbar"
 					placeholder="Search {filteredIcons.length} icons..."
 					bind:value={searchQuery}
+					oninput={() => debouncedUpdateFilteredIcons(searchQuery)}
 				></Input>
 				<kbd
 					class="pointer-events-none absolute right-2 top-1/2 inline-flex h-5 -translate-y-1/2 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100"
