@@ -5,7 +5,8 @@
 	import { Sun, Moon, Download, Copy, ExternalLink, Check } from 'lucide-svelte';
 	import { toggleMode } from 'mode-watcher';
 	import { onMount } from 'svelte';
-	import { getIcons, downloadIcon } from '$lib/utils/icons.js';
+	import { downloadIcon, getIconSource } from '$lib/utils/icons.js';
+	import ICONS_LIST from '$lib/icons/index.js';
 	import Github from '$lib/components/github.svelte';
 	import { fade } from 'svelte/transition';
 	import NumberFlow from '@number-flow/svelte';
@@ -21,12 +22,18 @@
 
 	$effect(() => {
 		searchQuery = searchQuery;
-		filteredIcons = icons.filter((icon) =>
-			icon.name.toLowerCase().includes(searchQuery.toLowerCase())
-		);
+		filteredIcons = icons.filter((icon) => {
+			const query = searchQuery.toLowerCase();
+			return (
+				icon.name.toLowerCase().includes(query) ||
+				icon.tags?.some((tag) => tag.toLowerCase().includes(query)) ||
+				icon.categories?.some((category) => category.toLowerCase().includes(query))
+			);
+		});
 	});
 
 	onMount(async () => {
+		icons = ICONS_LIST;
 		const res = await fetch('https://api.github.com/repos/jis3r/icons');
 		const data = await res.json();
 		const interval = setInterval(() => {
@@ -36,7 +43,6 @@
 				clearInterval(interval);
 			}
 		}, 10);
-		icons = await getIcons();
 		filteredIcons = icons;
 
 		const lastVisit = localStorage.getItem('lastVisit');
@@ -136,7 +142,7 @@
 					<div
 						class="flex h-full w-full flex-col items-center justify-center rounded-md border border-input p-3"
 					>
-						<icon.component
+						<icon.icon
 							{size}
 							{color}
 							{strokeWidth}
@@ -145,8 +151,9 @@
 						<p class="mb-3 mt-5 text-center text-xs text-muted-foreground">{icon.name}</p>
 						<div class="flex items-center justify-center gap-2">
 							<Button
-								onclick={() => {
-									navigator.clipboard.writeText(icon.source);
+								onclick={async () => {
+									let iconSource = await getIconSource(icon.name);
+									navigator.clipboard.writeText(iconSource);
 									icon.copied = true;
 									setTimeout(() => {
 										icon.copied = false;
@@ -166,8 +173,8 @@
 								{/if}
 							</Button>
 							<Button
-								onclick={() => {
-									downloadIcon(icon);
+								onclick={async () => {
+									await downloadIcon(icon.name);
 									icon.downloaded = true;
 									setTimeout(() => {
 										icon.downloaded = false;
