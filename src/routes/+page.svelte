@@ -20,6 +20,8 @@
 	let size = $state(28);
 	let color = $state('currentColor');
 	let strokeWidth = $state(2);
+	let isLoading = $state(true);
+	let error = $state(null);
 
 	const updateFilteredIcons = (query) => {
 		filteredIcons = icons.filter((icon) => {
@@ -34,24 +36,65 @@
 
 	const debouncedUpdateFilteredIcons = debounce(updateFilteredIcons, 300);
 
-	onMount(async () => {
-		icons = ICONS_LIST;
-		const res = await fetch('https://api.github.com/repos/jis3r/icons');
-		const data = await res.json();
-		const interval = setInterval(() => {
-			if (stars < data.stargazers_count) {
-				stars += 1;
-			} else {
-				clearInterval(interval);
-			}
-		}, 10);
-		filteredIcons = icons;
-
-		const lastVisit = localStorage.getItem('lastVisit');
-		if (lastVisit) {
-			iconsAdded = icons.length - JSON.parse(lastVisit);
+	// Memoize the icon action handlers
+	const handleCopy = async (icon) => {
+		try {
+			let iconSource = await getIconSource(icon.name);
+			await navigator.clipboard.writeText(iconSource);
+			icon.copied = true;
+			setTimeout(() => {
+				icon.copied = false;
+			}, 1500);
+		} catch (err) {
+			error = 'Failed to copy icon source';
+			setTimeout(() => {
+				error = null;
+			}, 3000);
 		}
-		localStorage.setItem('lastVisit', JSON.stringify(icons.length));
+	};
+
+	const handleDownload = async (icon) => {
+		try {
+			await downloadIcon(icon.name);
+			icon.downloaded = true;
+			setTimeout(() => {
+				icon.downloaded = false;
+			}, 1500);
+		} catch (err) {
+			error = 'Failed to download icon';
+			setTimeout(() => {
+				error = null;
+			}, 3000);
+		}
+	};
+
+	onMount(async () => {
+		try {
+			icons = ICONS_LIST;
+			filteredIcons = icons;
+
+			const res = await fetch('https://api.github.com/repos/jis3r/icons');
+			if (!res.ok) throw new Error('Failed to fetch GitHub stars');
+			const data = await res.json();
+
+			const interval = setInterval(() => {
+				if (stars < data.stargazers_count) {
+					stars += 1;
+				} else {
+					clearInterval(interval);
+				}
+			}, 10);
+
+			const lastVisit = localStorage.getItem('lastVisit');
+			if (lastVisit) {
+				iconsAdded = icons.length - JSON.parse(lastVisit);
+			}
+			localStorage.setItem('lastVisit', JSON.stringify(icons.length));
+		} catch (err) {
+			error = 'Failed to load some data';
+		} finally {
+			isLoading = false;
+		}
 	});
 </script>
 
@@ -122,9 +165,13 @@
 		</p>
 
 		<div class="my-10 flex flex-col gap-6 sm:my-20">
+			{#if error}
+				<Badge variant="destructive" class="w-fit text-xs">{error}</Badge>
+			{/if}
 			{#if iconsAdded > 0}
 				<Badge class="w-fit text-xs">+{iconsAdded} icons since your last visit! 🎉</Badge>
 			{/if}
+
 			<div class="relative">
 				<Input
 					id="searchbar"
@@ -138,77 +185,77 @@
 				>
 			</div>
 
-			<div
-				class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-[repeat(auto-fill,minmax(165px,1fr))]"
-			>
-				{#each filteredIcons as icon}
-					<div
-						class="flex h-full w-full flex-col items-center justify-center rounded-md border border-input p-3"
-					>
-						<icon.icon
-							{size}
-							{color}
-							{strokeWidth}
-							classes="flex cursor-pointer select-none items-center justify-center rounded-md p-2 transition-colors duration-200 hover:bg-accent"
-						/>
-						<p class="mb-3 mt-5 text-center text-xs text-muted-foreground">{icon.name}</p>
-						<div class="flex items-center justify-center gap-2">
-							<Button
-								onclick={async () => {
-									let iconSource = await getIconSource(icon.name);
-									navigator.clipboard.writeText(iconSource);
-									icon.copied = true;
-									setTimeout(() => {
-										icon.copied = false;
-									}, 1500);
-								}}
-								variant="ghost"
-								class="size-8 cursor-pointer rounded-md p-2 transition-colors duration-200 hover:bg-accent"
-							>
-								{#if icon.copied}
-									<div in:fade={{ duration: 150 }}>
-										<Check class="h-4 w-4" />
-									</div>
-								{:else}
-									<div in:fade={{ duration: 150 }}>
-										<Copy class="h-4 w-4" />
-									</div>
-								{/if}
-							</Button>
-							<Button
-								onclick={async () => {
-									await downloadIcon(icon.name);
-									icon.downloaded = true;
-									setTimeout(() => {
-										icon.downloaded = false;
-									}, 1500);
-								}}
-								variant="ghost"
-								class="size-8 cursor-pointer rounded-md p-2 transition-colors duration-200 hover:bg-accent"
-							>
-								{#if icon.downloaded}
-									<div in:fade={{ duration: 150 }}>
-										<Check class="h-4 w-4" />
-									</div>
-								{:else}
-									<div in:fade={{ duration: 150 }}>
-										<Download class="h-4 w-4" />
-									</div>
-								{/if}
-							</Button>
-							<Button
-								href={'https://github.com/jis3r/icons/blob/master/src/lib/icons/' +
-									icon.name +
-									'.svelte'}
-								variant="ghost"
-								class="size-8 cursor-pointer rounded-md p-2 transition-colors duration-200 hover:bg-accent"
-							>
-								<ExternalLink class="h-4 w-4" />
-							</Button>
+			{#if isLoading}
+				<div class="flex items-center justify-center py-12">
+					<div class="text-muted-foreground">Loading icons...</div>
+				</div>
+			{:else if filteredIcons.length === 0}
+				<div class="flex flex-col items-center justify-center gap-2 py-24 text-center">
+					<h2 class="text-lg">No icons found</h2>
+					<p class="max-w-sm text-pretty text-center text-xs text-muted-foreground">
+						We couldn't find any icons matching your search.<br />Try different keywords.
+					</p>
+				</div>
+			{:else}
+				<div
+					class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-[repeat(auto-fill,minmax(165px,1fr))]"
+				>
+					{#each filteredIcons as icon}
+						<div
+							class="flex h-full w-full flex-col items-center justify-center rounded-md border border-input p-3"
+						>
+							<icon.icon
+								{size}
+								{color}
+								{strokeWidth}
+								classes="flex cursor-pointer select-none items-center justify-center rounded-md p-2 transition-colors duration-200 hover:bg-accent"
+							/>
+							<p class="mb-3 mt-5 text-center text-xs text-muted-foreground">{icon.name}</p>
+							<div class="flex items-center justify-center gap-2">
+								<Button
+									onclick={() => handleCopy(icon)}
+									variant="ghost"
+									class="size-8 cursor-pointer rounded-md p-2 transition-colors duration-200 hover:bg-accent"
+								>
+									{#if icon.copied}
+										<div in:fade={{ duration: 150 }}>
+											<Check class="h-4 w-4" />
+										</div>
+									{:else}
+										<div in:fade={{ duration: 150 }}>
+											<Copy class="h-4 w-4" />
+										</div>
+									{/if}
+								</Button>
+								<Button
+									onclick={() => handleDownload(icon)}
+									variant="ghost"
+									class="size-8 cursor-pointer rounded-md p-2 transition-colors duration-200 hover:bg-accent"
+								>
+									{#if icon.downloaded}
+										<div in:fade={{ duration: 150 }}>
+											<Check class="h-4 w-4" />
+										</div>
+									{:else}
+										<div in:fade={{ duration: 150 }}>
+											<Download class="h-4 w-4" />
+										</div>
+									{/if}
+								</Button>
+								<Button
+									href={'https://github.com/jis3r/icons/blob/master/src/lib/icons/' +
+										icon.name +
+										'.svelte'}
+									variant="ghost"
+									class="size-8 cursor-pointer rounded-md p-2 transition-colors duration-200 hover:bg-accent"
+								>
+									<ExternalLink class="h-4 w-4" />
+								</Button>
+							</div>
 						</div>
-					</div>
-				{/each}
-			</div>
+					{/each}
+				</div>
+			{/if}
 		</div>
 
 		<p class="mb-4 text-center text-xs text-muted-foreground">
