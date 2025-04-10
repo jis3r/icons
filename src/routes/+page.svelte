@@ -115,7 +115,7 @@
 />
 
 <header class="container flex h-full w-full max-w-7xl items-center justify-between py-4">
-	<h1 class="text-base">jis3r/icons</h1>
+	<h1 class="text-base">moving icons</h1>
 	<div class="flex gap-1">
 		<Button variant="outline" class="flex gap-2" href="https://github.com/jis3r/icons">
 			<Github size="20" />
