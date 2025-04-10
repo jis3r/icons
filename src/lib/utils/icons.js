@@ -1,10 +1,22 @@
 export let getIconSource = async (iconName) => {
 	try {
-		const iconPath = `../icons/${iconName}.svelte`;
-		const source = await import(/* @vite-ignore */ `${iconPath}?raw`);
-		return source.default;
+		// Create a map of all icon files at build time
+		const iconModules = import.meta.glob('/src/lib/icons/*.svelte', {
+			query: '?raw',
+			import: 'default',
+			eager: false
+		});
+
+		// Find the matching icon module
+		const iconPath = `/src/lib/icons/${iconName}.svelte`;
+		if (!(iconPath in iconModules)) {
+			throw new Error(`Icon ${iconName} not found`);
+		}
+
+		// Import the source code
+		return await iconModules[iconPath]();
 	} catch (error) {
-		throw new Error(`Icon ${iconName} not found`);
+		throw new Error(`Icon ${iconName} not found: ${error.message}`);
 	}
 };
 
