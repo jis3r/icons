@@ -1,3 +1,55 @@
+// Cache for storing pre-loaded icon sources
+let iconSourceCache = {};
+
+export let preloadIconSources = async () => {
+	try {
+		const startTime = performance.now();
+		console.log('🔄 Starting icon preload...');
+
+		// Create a map of all icon files at build time
+		const iconModules = import.meta.glob('/src/lib/icons/*.svelte', {
+			query: '?raw',
+			import: 'default',
+			eager: false
+		});
+
+		// Start loading all icons in parallel
+		const iconPaths = Object.keys(iconModules);
+		console.log(`📦 Found ${iconPaths.length} icons to preload`);
+
+		const loadPromises = iconPaths.map(async (path) => {
+			const iconName = path.split('/').pop().replace('.svelte', '');
+			iconSourceCache[iconName] = await iconModules[path]();
+		});
+
+		// Wait for all to complete
+		await Promise.all(loadPromises);
+
+		const endTime = performance.now();
+		const timeElapsed = (endTime - startTime).toFixed(2);
+		console.log(`✅ Preloaded ${iconPaths.length} icons in ${timeElapsed}ms`);
+
+		return {
+			success: true,
+			count: iconPaths.length,
+			timeElapsed
+		};
+	} catch (error) {
+		console.error('❌ Failed to preload icon sources:', error);
+		return {
+			success: false,
+			error: error.message
+		};
+	}
+};
+
+export let getIconSourceSync = (iconName) => {
+	if (iconSourceCache[iconName]) {
+		return iconSourceCache[iconName];
+	}
+	throw new Error(`Icon ${iconName} not found in cache`);
+};
+
 export let getIconSource = async (iconName) => {
 	try {
 		// Create a map of all icon files at build time
@@ -22,7 +74,14 @@ export let getIconSource = async (iconName) => {
 
 export let downloadIcon = async (iconName) => {
 	try {
-		const source = await getIconSource(iconName);
+		// Try to get from cache first for immediate response
+		let source;
+		if (iconSourceCache[iconName]) {
+			source = iconSourceCache[iconName];
+		} else {
+			source = await getIconSource(iconName);
+		}
+
 		const blob = new Blob([source], { type: 'text/plain' });
 		const url = URL.createObjectURL(blob);
 		const link = document.createElement('a');

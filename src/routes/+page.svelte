@@ -5,12 +5,18 @@
 	import { Sun, Moon, Download, Copy, ExternalLink, Check } from 'lucide-svelte';
 	import { toggleMode } from 'mode-watcher';
 	import { onMount } from 'svelte';
-	import { downloadIcon, getIconSource } from '$lib/utils/icons.js';
+	import {
+		downloadIcon,
+		getIconSource,
+		preloadIconSources,
+		getIconSourceSync
+	} from '$lib/utils/icons.js';
 	import ICONS_LIST from '$lib/icons/index.js';
 	import Github from '$lib/components/github.svelte';
 	import { fade } from 'svelte/transition';
 	import NumberFlow from '@number-flow/svelte';
 	import { debounce } from '$lib/utils/debounce';
+	import { dev } from '$app/environment';
 
 	let stars = $state(0);
 	let iconsAdded = $state(0);
@@ -21,6 +27,7 @@
 	let color = $state('currentColor');
 	let strokeWidth = $state(2);
 	let isLoading = $state(true);
+	let preloadStats = $state(null);
 
 	const updateFilteredIcons = (query) => {
 		filteredIcons = icons.filter((icon) => {
@@ -36,25 +43,44 @@
 	const debouncedUpdateFilteredIcons = debounce(updateFilteredIcons, 300);
 
 	// Memoize the icon action handlers
-	const handleCopy = async (icon) => {
-		let iconSource = await getIconSource(icon.name);
-		await navigator.clipboard.writeText(iconSource);
-		icon.copied = true;
-		setTimeout(() => {
-			icon.copied = false;
-		}, 1500);
+	const handleCopy = (icon) => {
+		try {
+			// Get the icon source synchronously from cache
+			const iconSource = getIconSourceSync(icon.name);
+
+			// Use clipboard API immediately during transient activation
+			navigator.clipboard.writeText(iconSource).catch((err) => {
+				console.error('Failed to copy to clipboard:', err);
+			});
+
+			// Set visual feedback after copy attempt
+			icon.copied = true;
+			setTimeout(() => {
+				icon.copied = false;
+			}, 1500);
+		} catch (err) {
+			console.error('Failed to copy icon:', err);
+		}
 	};
 
-	const handleDownload = async (icon) => {
-		await downloadIcon(icon.name);
-		icon.downloaded = true;
-		setTimeout(() => {
-			icon.downloaded = false;
-		}, 1500);
+	const handleDownload = (icon) => {
+		// Immediately trigger download to maintain transient activation
+		downloadIcon(icon.name)
+			.then(() => {
+				// Set visual feedback after download starts
+				icon.downloaded = true;
+				setTimeout(() => {
+					icon.downloaded = false;
+				}, 1500);
+			})
+			.catch((err) => {
+				console.error('Failed to download icon:', err);
+			});
 	};
 
 	onMount(async () => {
 		try {
+			const pageLoadTime = performance.now();
 			icons = ICONS_LIST;
 			filteredIcons = icons;
 
@@ -75,6 +101,18 @@
 				iconsAdded = icons.length - JSON.parse(lastVisit);
 			}
 			localStorage.setItem('lastVisit', JSON.stringify(icons.length));
+
+			// Preload all icon sources as the very last thing
+			console.log('📊 Page loaded at:', pageLoadTime.toFixed(2) + 'ms');
+
+			preloadIconSources()
+				.then((stats) => {
+					preloadStats = stats;
+					console.log('📊 Preload performance:', stats);
+				})
+				.catch((err) => {
+					console.error('Failed to preload icons:', err);
+				});
 		} catch (err) {
 			console.error(err);
 		} finally {
@@ -243,5 +281,31 @@
 		<p class="mb-4 text-center text-xs text-muted-foreground">
 			built with ❤️ by <a href="https://github.com/jis3r" class="underline">@jis3r</a>
 		</p>
+
+		{#if dev && preloadStats}
+			<div class="mx-auto mt-8 max-w-md rounded-md border bg-muted/20 p-4">
+				<h3 class="mb-2 text-sm font-medium">Icon Preload Performance</h3>
+				<div class="grid grid-cols-2 gap-2 text-xs">
+					<span class="text-muted-foreground">Status:</span>
+					<span class={preloadStats.success ? 'text-green-500' : 'text-red-500'}>
+						{preloadStats.success ? '✅ Success' : '❌ Failed'}
+					</span>
+
+					{#if preloadStats.success}
+						<span class="text-muted-foreground">Icons loaded:</span>
+						<span>{preloadStats.count}</span>
+
+						<span class="text-muted-foreground">Time taken:</span>
+						<span>{preloadStats.timeElapsed}ms</span>
+
+						<span class="text-muted-foreground">Avg per icon:</span>
+						<span>{(preloadStats.timeElapsed / preloadStats.count).toFixed(2)}ms</span>
+					{:else}
+						<span class="text-muted-foreground">Error:</span>
+						<span>{preloadStats.error}</span>
+					{/if}
+				</div>
+			</div>
+		{/if}
 	</div>
 </main>
