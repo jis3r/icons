@@ -20,18 +20,49 @@ export let getIconSource = async (iconName) => {
 	}
 };
 
-export let downloadIcon = async (iconName) => {
+export let preloadIconSources = async (icons) => {
 	try {
-		const source = await getIconSource(iconName);
-		const blob = new Blob([source], { type: 'text/plain' });
+		// Create a map of all icon files at build time
+		const iconModules = import.meta.glob('/src/lib/icons/*.svelte', {
+			query: '?raw',
+			import: 'default',
+			eager: false
+		});
+
+		// Start loading all icons in parallel
+		const loadPromises = icons.map(async (icon) => {
+			const iconPath = `/src/lib/icons/${icon.name}.svelte`;
+			if (iconPath in iconModules) {
+				// Directly store the source in the icon object
+				icon.source = await iconModules[iconPath]();
+			}
+			return icon;
+		});
+
+		// Wait for all to complete and return the updated icons array
+		return await Promise.all(loadPromises);
+	} catch (error) {
+		console.error('Failed to preload icon sources:', error);
+		throw error;
+	}
+};
+
+export let downloadIcon = async (icon) => {
+	try {
+		if (!icon.source) {
+			// Fetch the source if not already loaded
+			icon.source = await getIconSource(icon.name);
+		}
+
+		const blob = new Blob([icon.source], { type: 'text/plain' });
 		const url = URL.createObjectURL(blob);
 		const link = document.createElement('a');
 		link.href = url;
-		link.download = `${iconName}.svelte`;
+		link.download = `${icon.name}.svelte`;
 		link.click();
 		URL.revokeObjectURL(url);
 	} catch (error) {
-		console.error(`Failed to download icon ${iconName}:`, error);
+		console.error(`Failed to download icon ${icon.name}:`, error);
 		throw error;
 	}
 };
