@@ -37,25 +37,26 @@
 
 	const handleCopy = (icon) => {
 		try {
-			if (icon.source) {
-				navigator.clipboard.writeText(icon.source).catch((err) => {
-					console.error('Failed to copy to clipboard:', err);
-				});
-
-				icon.copied = true;
-				setTimeout(() => {
-					icon.copied = false;
-				}, 1500);
-			} else {
-				console.error('Icon source not preloaded:', icon.name);
+			if (!icon.source) {
+				console.error('Icon source not available:', icon.name);
+				return;
 			}
+
+			navigator.clipboard.writeText(icon.source).catch((err) => {
+				console.error('Failed to copy to clipboard:', err);
+			});
+
+			icon.copied = true;
+			setTimeout(() => {
+				icon.copied = false;
+			}, 1500);
 		} catch (err) {
 			console.error('Failed to copy icon:', err);
 		}
 	};
 
 	const handleDownload = (icon) => {
-		downloadIcon(icon.name, icons)
+		downloadIcon(icon)
 			.then(() => {
 				icon.downloaded = true;
 				setTimeout(() => {
@@ -90,9 +91,14 @@
 			}
 			localStorage.setItem('lastVisit', JSON.stringify(icons.length));
 
-			preloadIconSources(icons).catch((err) => {
-				console.error('Failed to preload icons:', err);
-			});
+			preloadIconSources(icons)
+				.then((updatedIcons) => {
+					icons = updatedIcons;
+					filteredIcons = icons;
+				})
+				.catch((err) => {
+					console.error('Failed to preload icons:', err);
+				});
 		} catch (err) {
 			console.error(err);
 		} finally {
