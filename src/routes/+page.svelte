@@ -37,28 +37,20 @@
 
 	// Memoize the icon action handlers
 	const handleCopy = async (icon) => {
-		try {
-			let iconSource = await getIconSource(icon.name);
-			await navigator.clipboard.writeText(iconSource);
-			icon.copied = true;
-			setTimeout(() => {
-				icon.copied = false;
-			}, 1500);
-		} catch (err) {
-			console.error(err);
-		}
+		let iconSource = await getIconSource(icon.name);
+		await navigator.clipboard.writeText(iconSource);
+		icon.copied = true;
+		setTimeout(() => {
+			icon.copied = false;
+		}, 1500);
 	};
 
 	const handleDownload = async (icon) => {
-		try {
-			await downloadIcon(icon.name);
-			icon.downloaded = true;
-			setTimeout(() => {
-				icon.downloaded = false;
-			}, 1500);
-		} catch (err) {
-			console.error(err);
-		}
+		await downloadIcon(icon.name);
+		icon.downloaded = true;
+		setTimeout(() => {
+			icon.downloaded = false;
+		}, 1500);
 	};
 
 	onMount(async () => {
