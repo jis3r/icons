@@ -16,7 +16,6 @@
 	import { fade } from 'svelte/transition';
 	import NumberFlow from '@number-flow/svelte';
 	import { debounce } from '$lib/utils/debounce';
-	import { dev } from '$app/environment';
 
 	let stars = $state(0);
 	let iconsAdded = $state(0);
@@ -27,7 +26,6 @@
 	let color = $state('currentColor');
 	let strokeWidth = $state(2);
 	let isLoading = $state(true);
-	let preloadStats = $state(null);
 
 	const updateFilteredIcons = (query) => {
 		filteredIcons = icons.filter((icon) => {
@@ -80,7 +78,6 @@
 
 	onMount(async () => {
 		try {
-			const pageLoadTime = performance.now();
 			icons = ICONS_LIST;
 			filteredIcons = icons;
 
@@ -103,16 +100,9 @@
 			localStorage.setItem('lastVisit', JSON.stringify(icons.length));
 
 			// Preload all icon sources as the very last thing
-			console.log('📊 Page loaded at:', pageLoadTime.toFixed(2) + 'ms');
-
-			preloadIconSources()
-				.then((stats) => {
-					preloadStats = stats;
-					console.log('📊 Preload performance:', stats);
-				})
-				.catch((err) => {
-					console.error('Failed to preload icons:', err);
-				});
+			preloadIconSources().catch((err) => {
+				console.error('Failed to preload icons:', err);
+			});
 		} catch (err) {
 			console.error(err);
 		} finally {
@@ -281,31 +271,5 @@
 		<p class="mb-4 text-center text-xs text-muted-foreground">
 			built with ❤️ by <a href="https://github.com/jis3r" class="underline">@jis3r</a>
 		</p>
-
-		{#if dev && preloadStats}
-			<div class="mx-auto mt-8 max-w-md rounded-md border bg-muted/20 p-4">
-				<h3 class="mb-2 text-sm font-medium">Icon Preload Performance</h3>
-				<div class="grid grid-cols-2 gap-2 text-xs">
-					<span class="text-muted-foreground">Status:</span>
-					<span class={preloadStats.success ? 'text-green-500' : 'text-red-500'}>
-						{preloadStats.success ? '✅ Success' : '❌ Failed'}
-					</span>
-
-					{#if preloadStats.success}
-						<span class="text-muted-foreground">Icons loaded:</span>
-						<span>{preloadStats.count}</span>
-
-						<span class="text-muted-foreground">Time taken:</span>
-						<span>{preloadStats.timeElapsed}ms</span>
-
-						<span class="text-muted-foreground">Avg per icon:</span>
-						<span>{(preloadStats.timeElapsed / preloadStats.count).toFixed(2)}ms</span>
-					{:else}
-						<span class="text-muted-foreground">Error:</span>
-						<span>{preloadStats.error}</span>
-					{/if}
-				</div>
-			</div>
-		{/if}
 	</div>
 </main>

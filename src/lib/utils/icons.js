@@ -3,9 +3,6 @@ let iconSourceCache = {};
 
 export let preloadIconSources = async () => {
 	try {
-		const startTime = performance.now();
-		console.log('🔄 Starting icon preload...');
-
 		// Create a map of all icon files at build time
 		const iconModules = import.meta.glob('/src/lib/icons/*.svelte', {
 			query: '?raw',
@@ -15,8 +12,6 @@ export let preloadIconSources = async () => {
 
 		// Start loading all icons in parallel
 		const iconPaths = Object.keys(iconModules);
-		console.log(`📦 Found ${iconPaths.length} icons to preload`);
-
 		const loadPromises = iconPaths.map(async (path) => {
 			const iconName = path.split('/').pop().replace('.svelte', '');
 			iconSourceCache[iconName] = await iconModules[path]();
@@ -24,22 +19,10 @@ export let preloadIconSources = async () => {
 
 		// Wait for all to complete
 		await Promise.all(loadPromises);
-
-		const endTime = performance.now();
-		const timeElapsed = (endTime - startTime).toFixed(2);
-		console.log(`✅ Preloaded ${iconPaths.length} icons in ${timeElapsed}ms`);
-
-		return {
-			success: true,
-			count: iconPaths.length,
-			timeElapsed
-		};
+		return true;
 	} catch (error) {
-		console.error('❌ Failed to preload icon sources:', error);
-		return {
-			success: false,
-			error: error.message
-		};
+		console.error('Failed to preload icon sources:', error);
+		return false;
 	}
 };
 
