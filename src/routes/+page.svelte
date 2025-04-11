@@ -5,12 +5,7 @@
 	import { Sun, Moon, Download, Copy, ExternalLink, Check } from 'lucide-svelte';
 	import { toggleMode } from 'mode-watcher';
 	import { onMount } from 'svelte';
-	import {
-		downloadIcon,
-		getIconSource,
-		preloadIconSources,
-		getIconSourceSync
-	} from '$lib/utils/icons.js';
+	import { downloadIcon, preloadIconSources } from '$lib/utils/icons.js';
 	import ICONS_LIST from '$lib/icons/index.js';
 	import Github from '$lib/components/github.svelte';
 	import { fade } from 'svelte/transition';
@@ -40,32 +35,28 @@
 
 	const debouncedUpdateFilteredIcons = debounce(updateFilteredIcons, 300);
 
-	// Memoize the icon action handlers
 	const handleCopy = (icon) => {
 		try {
-			// Get the icon source synchronously from cache
-			const iconSource = getIconSourceSync(icon.name);
+			if (icon.source) {
+				navigator.clipboard.writeText(icon.source).catch((err) => {
+					console.error('Failed to copy to clipboard:', err);
+				});
 
-			// Use clipboard API immediately during transient activation
-			navigator.clipboard.writeText(iconSource).catch((err) => {
-				console.error('Failed to copy to clipboard:', err);
-			});
-
-			// Set visual feedback after copy attempt
-			icon.copied = true;
-			setTimeout(() => {
-				icon.copied = false;
-			}, 1500);
+				icon.copied = true;
+				setTimeout(() => {
+					icon.copied = false;
+				}, 1500);
+			} else {
+				console.error('Icon source not preloaded:', icon.name);
+			}
 		} catch (err) {
 			console.error('Failed to copy icon:', err);
 		}
 	};
 
 	const handleDownload = (icon) => {
-		// Immediately trigger download to maintain transient activation
-		downloadIcon(icon.name)
+		downloadIcon(icon.name, icons)
 			.then(() => {
-				// Set visual feedback after download starts
 				icon.downloaded = true;
 				setTimeout(() => {
 					icon.downloaded = false;
@@ -99,8 +90,7 @@
 			}
 			localStorage.setItem('lastVisit', JSON.stringify(icons.length));
 
-			// Preload all icon sources as the very last thing
-			preloadIconSources().catch((err) => {
+			preloadIconSources(icons).catch((err) => {
 				console.error('Failed to preload icons:', err);
 			});
 		} catch (err) {
@@ -115,12 +105,10 @@
 	onkeydown={(e) => {
 		const searchbar = document.getElementById('searchbar');
 
-		// Focus search bar when Meta+K is pressed
 		if (e.key === 'k' && e.metaKey) {
 			searchbar.focus();
 		}
 
-		// Remove focus from search bar when Escape is pressed
 		if (e.key === 'Escape') {
 			searchbar.blur();
 		}
