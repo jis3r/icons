@@ -21,7 +21,6 @@
 	let color = $state('currentColor');
 	let strokeWidth = $state(2);
 	let isLoading = $state(true);
-	let error = $state(null);
 
 	const updateFilteredIcons = (query) => {
 		filteredIcons = icons.filter((icon) => {
@@ -46,10 +45,7 @@
 				icon.copied = false;
 			}, 1500);
 		} catch (err) {
-			error = 'Failed to copy icon source';
-			setTimeout(() => {
-				error = null;
-			}, 3000);
+			console.error(err);
 		}
 	};
 
@@ -61,10 +57,7 @@
 				icon.downloaded = false;
 			}, 1500);
 		} catch (err) {
-			error = 'Failed to download icon';
-			setTimeout(() => {
-				error = null;
-			}, 3000);
+			console.error(err);
 		}
 	};
 
@@ -91,7 +84,7 @@
 			}
 			localStorage.setItem('lastVisit', JSON.stringify(icons.length));
 		} catch (err) {
-			error = 'Failed to load some data';
+			console.error(err);
 		} finally {
 			isLoading = false;
 		}
@@ -165,9 +158,6 @@
 		</p>
 
 		<div class="my-10 flex flex-col gap-6 sm:my-20">
-			{#if error}
-				<Badge variant="destructive" class="w-fit text-xs">{error}</Badge>
-			{/if}
 			{#if iconsAdded > 0}
 				<Badge class="w-fit text-xs">+{iconsAdded} icons since your last visit! 🎉</Badge>
 			{/if}
