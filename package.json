@@ -65,6 +65,7 @@
 	"dependencies": {
 		"@number-flow/svelte": "^0.3.6",
 		"lucide-svelte": "^0.487.0",
-		"mode-watcher": "^0.5.1"
+		"mode-watcher": "^0.5.1",
+		"svelte-fast-marquee": "^0.8.0"
 	}
 }
