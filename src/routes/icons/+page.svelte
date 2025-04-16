@@ -107,34 +107,6 @@
 
 <main class="mt-16 flex w-full items-center justify-center sm:mt-32">
 	<div class="container max-w-7xl">
-		<h1 class="text-balance text-2xl sm:text-3xl">
-			beautifully crafted, moving icons. for <span
-				class="bg-gradient-to-br from-svelte to-orange-400 bg-clip-text text-transparent"
-				>svelte</span
-			>.
-		</h1>
-		<p
-			class="mt-2 max-w-lg text-pretty text-xs leading-relaxed text-muted-foreground sm:mt-4 sm:text-sm"
-		>
-			an open-source collection of smooth, animated icons for your projects. feel free to use them,
-			share your feedback, and let's make this library awesome together!
-		</p>
-
-		<p class="mt-4 text-xs text-muted-foreground sm:text-sm">
-			built with
-			<Button
-				variant="secondary"
-				class="h-[22px] px-2 text-xs font-medium text-orange-600"
-				href="https://lucide.dev">lucide</Button
-			>
-			and inspired by the awesome
-			<Button
-				variant="secondary"
-				class="h-[22px] px-2 text-xs font-medium text-purple-700"
-				href="https://github.com/pqoqubbw">@pqoqubbw</Button
-			>
-		</p>
-
 		<div class="my-10 flex flex-col gap-6 sm:my-20">
 			{#if iconsAdded > 0}
 				<Badge class="w-fit text-xs">+{iconsAdded} icons since your last visit! 🎉</Badge>
