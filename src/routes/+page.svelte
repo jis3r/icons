@@ -290,23 +290,23 @@
 						in:fade={{ delay: 500, duration: 1500 }}
 						class="mx-auto mt-8 w-fit max-w-5xl text-balance text-center text-3xl font-semibold sm:text-4xl md:text-5xl"
 					>
-						beautifully crafted, moving icons. for <span
+						Beautifully crafted, moving icons. For <span
 							class="bg-gradient-to-br from-svelte to-orange-400 bg-clip-text text-transparent"
-							>svelte</span
+							>Svelte</span
 						>.
 					</h1>
 					<p
 						in:fade={{ delay: 750, duration: 1500 }}
 						class="mx-auto mt-5 w-fit max-w-2xl text-pretty text-center text-sm leading-relaxed text-muted-foreground sm:mt-4 sm:text-base"
 					>
-						a collection of animated icons for your projects. feel free to use them, share your
-						feedback, and let's make this library awesome together!
+						A collection of animated icons for your projects. Feel free to use them, share your
+						feedback, or contribute. Let's make this library awesome together!
 					</p>
 
 					<div in:fade={{ delay: 1000, duration: 1500 }}>
 						<Button href="/icons" variant="outline" class="mx-auto mt-4">
 							<Search size={16} />
-							Browse Icons</Button
+							Browse icons</Button
 						>
 					</div>
 				</div>
@@ -321,7 +321,7 @@
 					class="items-left mb-2 flex flex-col gap-2 text-sm text-foreground sm:flex-row sm:items-center"
 				>
 					<Code size={16} class="min-h-4 min-w-4" />
-					Open Source
+					Open source
 				</span>
 				<p class="text-sm text-muted-foreground">All icons licensed under the MIT license.</p>
 			</div>
@@ -330,7 +330,7 @@
 					class="items-left mb-2 flex flex-col gap-2 text-sm text-foreground sm:flex-row sm:items-center"
 				>
 					<PackageOpen size={16} class="min-h-4 min-w-4" />
-					Dependency Free
+					Zero dependencies
 				</span>
 				<p class="text-sm text-muted-foreground">Built with vanilla Svelte, JS and CSS.</p>
 			</div>
@@ -350,7 +350,7 @@
 					<Feather size={16} class="min-h-4 min-w-4" />
 					Lightweight
 				</span>
-				<p class="text-sm text-muted-foreground">Simply copy the icons you need.</p>
+				<p class="text-sm text-muted-foreground">Copy only the icons you need. No overhead.</p>
 			</div>
 		</div>
 	</section>
