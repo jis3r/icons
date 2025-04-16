@@ -202,7 +202,7 @@
 	});
 </script>
 
-<main class="flex w-full flex-col">
+<main class="flex w-full flex-col gap-y-8">
 	<section class="flex min-h-screen w-full flex-1 items-center" id="hero">
 		<div class="container max-w-7xl">
 			<div class="relative mx-auto grid max-w-6xl gap-4">
