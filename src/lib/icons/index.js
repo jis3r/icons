@@ -449,6 +449,7 @@ import wifi from './wifi.svelte';
 import wineOff from './wine-off.svelte';
 import x from './x.svelte';
 import zapOff from './zap-off.svelte';
+import wifiPen from './wifi-pen.svelte';
 
 let ICONS_LIST = [
 	{
@@ -5233,6 +5234,12 @@ let ICONS_LIST = [
 		icon: zapOff,
 		tags: ['flash', 'camera', 'lightning', 'electricity', 'energy'],
 		categories: ['connectivity', 'devices', 'photography', 'weather']
+	},
+	{
+		name: 'wifi-pen',
+		icon: wifiPen,
+		tags: ['edit', 'wifi', 'pen', 'change', 'network'],
+		categories: ['connectivity', 'devices']
 	}
 ];
 
