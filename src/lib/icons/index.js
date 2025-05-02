@@ -450,6 +450,7 @@ import wineOff from './wine-off.svelte';
 import x from './x.svelte';
 import zapOff from './zap-off.svelte';
 import wifiPen from './wifi-pen.svelte';
+import houseWifi from './house-wifi.svelte';
 
 let ICONS_LIST = [
 	{
@@ -5240,6 +5241,12 @@ let ICONS_LIST = [
 		icon: wifiPen,
 		tags: ['edit', 'wifi', 'pen', 'change', 'network'],
 		categories: ['connectivity', 'devices']
+	},
+	{
+		name: 'house-wifi',
+		icon: houseWifi,
+		tags: ['home', 'living', 'building', 'wifi', 'connectivity'],
+		categories: ['home', 'buildings', 'connectivity']
 	}
 ];
 
