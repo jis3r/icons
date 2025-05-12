@@ -9,20 +9,14 @@
 
 	function handleMouseEnter() {
 		isHovered = true;
-	}
 
-	function handleMouseLeave() {
-		isHovered = false;
+		setTimeout(() => {
+			isHovered = false;
+		}, 600);
 	}
 </script>
 
-<div
-	class={className}
-	aria-label="loader-pinwheel"
-	role="img"
-	onmouseenter={handleMouseEnter}
-	onmouseleave={handleMouseLeave}
->
+<div class={className} aria-label="loader-pinwheel" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
@@ -55,7 +49,7 @@
 	}
 
 	.pinwheel.animate {
-		animation: spin 1s linear infinite;
+		animation: spin 0.6s ease-in-out infinite;
 	}
 
 	@keyframes spin {
