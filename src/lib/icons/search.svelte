@@ -1,10 +1,10 @@
 <script>
 	let {
 		color = 'currentColor',
-		size = 28,
+		size = 24,
 		strokeWidth = 2,
 		isHovered = false,
-		classes = ''
+		class: className = ''
 	} = $props();
 
 	function handleMouseEnter() {
@@ -17,7 +17,7 @@
 	}
 </script>
 
-<div class={classes} onmouseenter={handleMouseEnter} aria-label="search" role="img">
+<div class={className} onmouseenter={handleMouseEnter} aria-label="search" role="img">
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}

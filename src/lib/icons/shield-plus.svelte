@@ -4,7 +4,7 @@
 		size = 24,
 		strokeWidth = 2,
 		isHovered = false,
-		classes = ''
+		class: className = ''
 	} = $props();
 
 	function handleMouseEnter() {
@@ -15,7 +15,7 @@
 	}
 </script>
 
-<div class={classes} aria-label="shield-plus" role="img" onmouseenter={handleMouseEnter}>
+<div class={className} aria-label="shield-plus" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}

@@ -1,10 +1,10 @@
 <script>
 	let {
 		color = 'currentColor',
-		size = 28,
+		size = 24,
 		strokeWidth = 2,
 		isHovered = false,
-		classes = ''
+		class: className = ''
 	} = $props();
 	const dots = [
 		{ cx: 7.5, cy: 7.5, delay: 2 },
@@ -23,7 +23,7 @@
 	}
 </script>
 
-<div class={classes} aria-label="chart-scatter" role="img" onmouseenter={handleMouseEnter}>
+<div class={className} aria-label="chart-scatter" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}

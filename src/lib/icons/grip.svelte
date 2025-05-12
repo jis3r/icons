@@ -1,10 +1,10 @@
 <script>
 	let {
 		color = 'currentColor',
-		size = 28,
+		size = 24,
 		strokeWidth = 2,
 		isHovered = false,
-		classes = ''
+		class: className = ''
 	} = $props();
 
 	const circles = [
@@ -29,7 +29,7 @@
 	}
 </script>
 
-<div class={classes} aria-label="grip" role="img" onmouseenter={handleMouseEnter}>
+<div class={className} aria-label="grip" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}

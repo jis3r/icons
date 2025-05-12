@@ -4,7 +4,7 @@
 		size = 24,
 		strokeWidth = 2,
 		isHovered = false,
-		classes = ''
+		class: className = ''
 	} = $props();
 
 	function handleMouseEnter() {
@@ -17,7 +17,7 @@
 </script>
 
 <div
-	class={classes}
+	class={className}
 	aria-label="file-warning"
 	role="img"
 	onmouseenter={handleMouseEnter}

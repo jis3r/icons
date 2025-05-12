@@ -1,10 +1,10 @@
 <script>
 	let {
 		color = 'currentColor',
-		size = 28,
+		size = 24,
 		strokeWidth = 2,
 		isHovered = false,
-		classes = ''
+		class: className = ''
 	} = $props();
 
 	function handleMouseEnter() {
@@ -17,7 +17,7 @@
 </script>
 
 <div
-	class={'overflow-hidden ' + classes}
+	class={'overflow-hidden ' + className}
 	aria-label="anvil"
 	role="img"
 	onmouseenter={handleMouseEnter}

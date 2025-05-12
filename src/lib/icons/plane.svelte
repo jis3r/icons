@@ -1,11 +1,12 @@
 <script>
 	let {
 		color = 'currentColor',
-		size = 28,
+		size = 24,
 		strokeWidth = 2,
 		isHovered = false,
-		classes = ''
+		class: className = ''
 	} = $props();
+
 	const SPEED_LINES = [
 		{ x1: 5, y1: 15, x2: 1, y2: 19, delay: 0.1 },
 		{ x1: 7, y1: 17, x2: 3, y2: 21, delay: 0.2 },
@@ -22,7 +23,7 @@
 </script>
 
 <div
-	class={classes}
+	class={className}
 	aria-label="plane"
 	role="img"
 	onmouseenter={handleMouseEnter}

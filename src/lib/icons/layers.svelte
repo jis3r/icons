@@ -3,10 +3,10 @@
 
 	let {
 		color = 'currentColor',
-		size = 28,
+		size = 24,
 		strokeWidth = 2,
 		isHovered = false,
-		classes = ''
+		class: className = ''
 	} = $props();
 	let animationState = $state('normal');
 
@@ -29,7 +29,7 @@
 </script>
 
 <div
-	class={classes}
+	class={className}
 	aria-label="layers"
 	role="img"
 	onmouseenter={handleMouseEnter}
