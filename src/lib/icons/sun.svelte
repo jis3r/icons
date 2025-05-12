@@ -6,12 +6,13 @@
 		isHovered = false,
 		class: className = ''
 	} = $props();
+
 	function handleMouseEnter() {
 		isHovered = true;
-	}
 
-	function handleMouseLeave() {
-		isHovered = false;
+		setTimeout(() => {
+			isHovered = false;
+		}, 1100);
 	}
 
 	const sunRays = [
@@ -26,13 +27,7 @@
 	];
 </script>
 
-<div
-	class={className}
-	aria-label="sun"
-	role="img"
-	onmouseenter={handleMouseEnter}
-	onmouseleave={handleMouseLeave}
->
+<div class={className} aria-label="sun" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
@@ -66,7 +61,7 @@
 	.sun-icon.animate .sun-ray {
 		opacity: 0;
 		animation: fadeIn 0.3s ease forwards;
-		animation-delay: calc(var(--index) * 0.1s + 0.1s);
+		animation-delay: calc(0.1s + var(--index) * 0.09s);
 	}
 
 	@keyframes fadeIn {

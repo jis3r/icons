@@ -9,20 +9,14 @@
 
 	function handleMouseEnter() {
 		isHovered = true;
-	}
 
-	function handleMouseLeave() {
-		isHovered = false;
+		setTimeout(() => {
+			isHovered = false;
+		}, 700);
 	}
 </script>
 
-<div
-	class={className}
-	aria-label="square stack"
-	role="img"
-	onmouseenter={handleMouseEnter}
-	onmouseleave={handleMouseLeave}
->
+<div class={className} aria-label="square stack" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
@@ -59,7 +53,7 @@
 	}
 
 	.square-stack-icon.animate .path-2 {
-		animation: scalePath 0.2s ease 0.2s;
+		animation: scalePath 0.4s ease 0.15s;
 	}
 
 	.square-stack-icon.animate .rect {

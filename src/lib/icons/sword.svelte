@@ -9,20 +9,14 @@
 
 	function handleMouseEnter() {
 		isHovered = true;
-	}
 
-	function handleMouseLeave() {
-		isHovered = false;
+		setTimeout(() => {
+			isHovered = false;
+		}, 700);
 	}
 </script>
 
-<div
-	class={className}
-	aria-label="sword"
-	role="img"
-	onmouseenter={handleMouseEnter}
-	onmouseleave={handleMouseLeave}
->
+<div class={className} aria-label="sword" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
@@ -54,7 +48,8 @@
 	}
 
 	@keyframes swing {
-		0% {
+		0%,
+		70% {
 			transform: rotate(0deg);
 		}
 		30% {
@@ -62,9 +57,6 @@
 		}
 		50% {
 			transform: rotate(-5deg);
-		}
-		70% {
-			transform: rotate(0deg);
 		}
 	}
 </style>

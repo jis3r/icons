@@ -9,10 +9,10 @@
 
 	function handleMouseEnter() {
 		isHovered = true;
-	}
 
-	function handleMouseLeave() {
-		isHovered = false;
+		setTimeout(() => {
+			isHovered = false;
+		}, 500);
 	}
 </script>
 
@@ -21,7 +21,6 @@
 	aria-label="square-arrow-out-up-left"
 	role="img"
 	onmouseenter={handleMouseEnter}
-	onmouseleave={handleMouseLeave}
 >
 	<svg
 		xmlns="http://www.w3.org/2000/svg"

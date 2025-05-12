@@ -9,20 +9,14 @@
 
 	function handleMouseEnter() {
 		isHovered = true;
-	}
 
-	function handleMouseLeave() {
-		isHovered = false;
+		setTimeout(() => {
+			isHovered = false;
+		}, 400);
 	}
 </script>
 
-<div
-	class={className}
-	onmouseenter={handleMouseEnter}
-	onmouseleave={handleMouseLeave}
-	aria-label="log-out"
-	role="img"
->
+<div class={className} onmouseenter={handleMouseEnter} aria-label="log-out" role="img">
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
