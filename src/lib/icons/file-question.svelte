@@ -9,20 +9,14 @@
 
 	function handleMouseEnter() {
 		isHovered = true;
-	}
 
-	function handleMouseLeave() {
-		isHovered = false;
+		setTimeout(() => {
+			isHovered = false;
+		}, 500);
 	}
 </script>
 
-<div
-	class={className}
-	aria-label="file-question"
-	role="img"
-	onmouseenter={handleMouseEnter}
-	onmouseleave={handleMouseLeave}
->
+<div class={className} aria-label="file-question" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
@@ -52,9 +46,6 @@
 	.animate-path {
 		transition: transform 0.5s ease-in-out;
 		transform-origin: center;
-	}
-
-	div:hover .animate-path {
 		animation: rotateAnimation 0.5s ease-in-out;
 	}
 

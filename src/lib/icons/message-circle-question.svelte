@@ -50,9 +50,6 @@
 	.animate-path {
 		transition: transform 0.5s ease-in-out;
 		transform-origin: center;
-	}
-
-	div:hover .animate-path {
 		animation: rotateAnimation 0.5s ease-in-out;
 	}
 
