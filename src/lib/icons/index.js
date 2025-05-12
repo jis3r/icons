@@ -451,6 +451,7 @@ import x from './x.svelte';
 import zapOff from './zap-off.svelte';
 import wifiPen from './wifi-pen.svelte';
 import houseWifi from './house-wifi.svelte';
+import briefcase from './briefcase.svelte';
 
 let ICONS_LIST = [
 	{
@@ -5247,6 +5248,12 @@ let ICONS_LIST = [
 		icon: houseWifi,
 		tags: ['home', 'living', 'building', 'wifi', 'connectivity'],
 		categories: ['home', 'buildings', 'connectivity']
+	},
+	{
+		name: 'briefcase',
+		icon: briefcase,
+		tags: ['work', 'bag', 'baggage', 'folder'],
+		categories: ['transportation']
 	}
 ];
 
