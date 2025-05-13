@@ -452,6 +452,11 @@ import zapOff from './zap-off.svelte';
 import wifiPen from './wifi-pen.svelte';
 import houseWifi from './house-wifi.svelte';
 import briefcase from './briefcase.svelte';
+import briefcaseBusiness from './briefcase-business.svelte';
+import briefcaseConveyorBelt from './briefcase-conveyor-belt.svelte';
+import briefcaseMedical from './briefcase-medical.svelte';
+import landmark from './landmark.svelte';
+import rotateCcwKey from './rotate-ccw-key.svelte';
 
 let ICONS_LIST = [
 	{
@@ -5254,6 +5259,36 @@ let ICONS_LIST = [
 		icon: briefcase,
 		tags: ['work', 'bag', 'baggage', 'folder'],
 		categories: ['transportation']
+	},
+	{
+		name: 'briefcase-business',
+		icon: briefcaseBusiness,
+		tags: ['work', 'bag', 'baggage', 'folder', 'portfolio'],
+		categories: ['transportation']
+	},
+	{
+		name: 'briefcase-conveyor-belt',
+		icon: briefcaseConveyorBelt,
+		tags: ['baggage', 'luggage', 'travel', 'suitcase', 'conveyor', 'carousel'],
+		categories: ['travel', 'transportation']
+	},
+	{
+		name: 'briefcase-medical',
+		icon: briefcaseMedical,
+		tags: ['doctor', 'medicine', 'first aid'],
+		categories: ['medical', 'transportation']
+	},
+	{
+		name: 'landmark',
+		icon: landmark,
+		tags: ['bank', 'building', 'capitol', 'finance', 'money', 'government', 'institution'],
+		categories: ['finance', 'navigation', 'buildings']
+	},
+	{
+		name: 'rotate-ccw-key',
+		icon: rotateCcwKey,
+		tags: ['password', 'key', 'refresh', 'change'],
+		categories: ['security', 'account']
 	}
 ];
 
