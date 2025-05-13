@@ -456,6 +456,7 @@ import briefcaseBusiness from './briefcase-business.svelte';
 import briefcaseConveyorBelt from './briefcase-conveyor-belt.svelte';
 import briefcaseMedical from './briefcase-medical.svelte';
 import landmark from './landmark.svelte';
+import rotateCcwKey from './rotate-ccw-key.svelte';
 
 let ICONS_LIST = [
 	{
@@ -5282,6 +5283,12 @@ let ICONS_LIST = [
 		icon: landmark,
 		tags: ['bank', 'building', 'capitol', 'finance', 'money', 'government', 'institution'],
 		categories: ['finance', 'navigation', 'buildings']
+	},
+	{
+		name: 'rotate-ccw-key',
+		icon: rotateCcwKey,
+		tags: ['password', 'key', 'refresh', 'change'],
+		categories: ['security', 'account']
 	}
 ];
 
