@@ -1,28 +1,32 @@
 <script>
+	/**
+	 * @typedef {Object} Props
+	 * @property {string} [color]
+	 * @property {number} [size]
+	 * @property {number} [strokeWidth]
+	 * @property {boolean} [isHovered]
+	 * @property {string} [class]
+	 */
+
+	/** @type {Props} */
 	let {
 		color = 'currentColor',
-		size = 28,
+		size = 24,
 		strokeWidth = 2,
 		isHovered = false,
-		classes = ''
+		class: className = ''
 	} = $props();
 
 	function handleMouseEnter() {
 		isHovered = true;
-	}
 
-	function handleMouseLeave() {
-		isHovered = false;
+		setTimeout(() => {
+			isHovered = false;
+		}, 2000);
 	}
 </script>
 
-<div
-	class={classes}
-	aria-label="radar"
-	role="img"
-	onmouseenter={handleMouseEnter}
-	onmouseleave={handleMouseLeave}
->
+<div class={className} aria-label="radar" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
@@ -52,7 +56,7 @@
 	}
 
 	.radar-icon.animate {
-		animation: rotate-path 1.5s infinite linear;
+		animation: rotate-path 2s linear;
 	}
 
 	@keyframes rotate-path {
@@ -60,7 +64,7 @@
 			transform: rotate(0deg);
 		}
 		100% {
-			transform: rotate(360deg);
+			transform: rotate(720deg);
 		}
 	}
 </style>
