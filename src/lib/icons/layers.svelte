@@ -1,40 +1,32 @@
 <script>
-	import { onMount } from 'svelte';
+	/**
+	 * @typedef {Object} Props
+	 * @property {string} [color]
+	 * @property {number} [size]
+	 * @property {number} [strokeWidth]
+	 * @property {boolean} [isHovered]
+	 * @property {string} [class]
+	 */
 
+	/** @type {Props} */
 	let {
 		color = 'currentColor',
-		size = 28,
+		size = 24,
 		strokeWidth = 2,
 		isHovered = false,
-		classes = ''
+		class: className = ''
 	} = $props();
-	let animationState = $state('normal');
 
 	function handleMouseEnter() {
 		isHovered = true;
-		animationState = 'firstState';
+
 		setTimeout(() => {
-			animationState = 'secondState';
+			isHovered = false;
 		}, 300);
 	}
-
-	function handleMouseLeave() {
-		isHovered = false;
-		animationState = 'normal';
-	}
-
-	onMount(() => {
-		animationState = 'normal';
-	});
 </script>
 
-<div
-	class={classes}
-	aria-label="layers"
-	role="img"
-	onmouseenter={handleMouseEnter}
-	onmouseleave={handleMouseLeave}
->
+<div class={className} aria-label="layers" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
@@ -54,14 +46,12 @@
 		<path
 			d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"
 			class="layer layer-bottom"
-			class:firstState={animationState === 'firstState'}
-			class:secondState={animationState === 'secondState'}
+			class:animate={isHovered}
 		/>
 		<path
 			d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"
 			class="layer layer-middle"
-			class:firstState={animationState === 'firstState'}
-			class:secondState={animationState === 'secondState'}
+			class:animate={isHovered}
 		/>
 	</svg>
 </div>
@@ -75,16 +65,11 @@
 		transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	}
 
-	.layer-bottom.firstState {
+	.layer-bottom.animate {
 		transform: translateY(-9px);
 	}
 
-	.layer-middle.firstState {
+	.layer-middle.animate {
 		transform: translateY(-5px);
-	}
-
-	.layer-bottom.secondState,
-	.layer-middle.secondState {
-		transform: translateY(0);
 	}
 </style>

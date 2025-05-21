@@ -1,12 +1,22 @@
 <script>
 	import { spring } from 'svelte/motion';
 
+	/**
+	 * @typedef {Object} Props
+	 * @property {string} [color]
+	 * @property {number} [size]
+	 * @property {number} [strokeWidth]
+	 * @property {boolean} [isHovered]
+	 * @property {string} [class]
+	 */
+
+	/** @type {Props} */
 	let {
 		color = 'currentColor',
-		size = 28,
+		size = 24,
 		strokeWidth = 2,
 		isHovered = false,
-		classes = ''
+		class: className = ''
 	} = $props();
 
 	const animatedX = spring(0, {
@@ -25,7 +35,7 @@
 	}
 </script>
 
-<div class={classes} aria-label="users-round" role="img" onmouseenter={handleMouseEnter}>
+<div class={className} aria-label="users-round" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}

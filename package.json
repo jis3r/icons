@@ -32,12 +32,9 @@
 			"svelte": "./dist/index.js"
 		}
 	},
-	"peerDependencies": {
-		"svelte": "^5.0.0"
-	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "^6.0.0",
-		"@sveltejs/kit": "^2.0.0",
+		"@sveltejs/adapter-auto": "^6.0.1",
+		"@sveltejs/kit": "^2.21.1",
 		"@sveltejs/package": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^5.0.3",
 		"@types/eslint": "^9.6.0",
@@ -58,14 +55,18 @@
 		"tailwindcss": "^3.4.9",
 		"tailwindcss-animate": "^1.0.7",
 		"typescript": "^5.3.2",
-		"vite": "^6.2.5",
+		"vite": "^6.3.5",
 		"vite-plugin-raw": "^1.0.3",
 		"vitest": "^3.1.1"
 	},
 	"dependencies": {
 		"@number-flow/svelte": "^0.3.6",
-		"lucide-svelte": "^0.487.0",
+		"@vercel/analytics": "^1.5.0",
+		"lucide-svelte": "^0.511.0",
 		"mode-watcher": "^0.5.1",
-		"svelte-fast-marquee": "^0.8.0"
+		"svelte-fast-marquee": "^1.0.2"
+	},
+	"overrides": {
+		"cookie": "0.7.0"
 	}
 }

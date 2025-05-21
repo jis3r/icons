@@ -314,8 +314,8 @@
 		</div>
 	</section>
 
-	<section class="container max-w-7xl" id="features">
-		<div class="grid grid-cols-2 gap-4 gap-8 border-t pt-8 text-center md:grid-cols-4">
+	<section class="container -mt-8 max-w-7xl" id="features">
+		<div class="grid grid-cols-2 gap-4 border-t pt-8 text-center md:grid-cols-4">
 			<div class="flex flex-col text-left">
 				<span
 					class="items-left mb-2 flex flex-col gap-2 text-sm text-foreground sm:flex-row sm:items-center"
