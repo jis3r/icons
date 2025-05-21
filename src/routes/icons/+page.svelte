@@ -148,7 +148,7 @@
 								{size}
 								{color}
 								{strokeWidth}
-								classes="flex cursor-pointer select-none items-center justify-center rounded-md p-2 transition-colors duration-200 hover:bg-accent"
+								class="flex cursor-pointer select-none items-center justify-center rounded-md p-2 transition-colors duration-200 hover:bg-accent"
 							/>
 							<p class="mb-3 mt-5 text-center text-xs text-muted-foreground">{icon.name}</p>
 							<div class="flex items-center justify-center gap-2">
