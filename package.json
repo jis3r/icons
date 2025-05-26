@@ -63,7 +63,8 @@
 		"@number-flow/svelte": "^0.3.6",
 		"@vercel/analytics": "^1.5.0",
 		"lucide-svelte": "^0.511.0",
-		"mode-watcher": "^0.5.1"
+		"mode-watcher": "^0.5.1",
+		"posthog-js": "^1.246.0"
 	},
 	"overrides": {
 		"cookie": "0.7.0"
