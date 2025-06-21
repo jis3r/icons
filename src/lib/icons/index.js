@@ -457,6 +457,7 @@ import briefcaseConveyorBelt from './briefcase-conveyor-belt.svelte';
 import briefcaseMedical from './briefcase-medical.svelte';
 import landmark from './landmark.svelte';
 import rotateCcwKey from './rotate-ccw-key.svelte';
+import heart from './heart.svelte';
 
 let ICONS_LIST = [
 	{
@@ -5289,6 +5290,12 @@ let ICONS_LIST = [
 		icon: rotateCcwKey,
 		tags: ['password', 'key', 'refresh', 'change'],
 		categories: ['security', 'account']
+	},
+	{
+		name: 'heart',
+		icon: heart,
+		tags: ['like', 'love', 'emotion', 'suit', 'playing', 'cards'],
+		categories: ['medical', 'social', 'multimedia', 'emoji', 'gaming', 'shapes']
 	}
 ];
 
