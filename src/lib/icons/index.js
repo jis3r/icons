@@ -458,6 +458,7 @@ import briefcaseMedical from './briefcase-medical.svelte';
 import landmark from './landmark.svelte';
 import rotateCcwKey from './rotate-ccw-key.svelte';
 import heart from './heart.svelte';
+import snowflake from './snowflake.svelte';
 
 let ICONS_LIST = [
 	{
@@ -5296,6 +5297,12 @@ let ICONS_LIST = [
 		icon: heart,
 		tags: ['like', 'love', 'emotion', 'suit', 'playing', 'cards'],
 		categories: ['medical', 'social', 'multimedia', 'emoji', 'gaming', 'shapes']
+	},
+	{
+		name: 'snowflake',
+		icon: snowflake,
+		tags: ['cold', 'weather', 'freeze', 'snow', 'winter'],
+		categories: ['weather', 'seasons']
 	}
 ];
 
