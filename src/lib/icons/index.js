@@ -460,6 +460,7 @@ import rotateCcwKey from './rotate-ccw-key.svelte';
 import heart from './heart.svelte';
 import snowflake from './snowflake.svelte';
 import bellRing from './bell-ring.svelte';
+import star from './star.svelte';
 
 let ICONS_LIST = [
 	{
@@ -5310,6 +5311,12 @@ let ICONS_LIST = [
 		icon: bellRing,
 		tags: ['alarm', 'notification', 'sound', 'reminder'],
 		categories: ['notifications']
+	},
+	{
+		name: 'star',
+		icon: star,
+		tags: ['bookmark', 'favorite', 'like', 'review', 'rating'],
+		categories: ['account', 'social', 'shapes', 'multimedia', 'weather', 'emoji', 'gaming']
 	}
 ];
 
