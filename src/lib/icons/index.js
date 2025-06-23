@@ -459,6 +459,7 @@ import landmark from './landmark.svelte';
 import rotateCcwKey from './rotate-ccw-key.svelte';
 import heart from './heart.svelte';
 import snowflake from './snowflake.svelte';
+import bellRing from './bell-ring.svelte';
 
 let ICONS_LIST = [
 	{
@@ -5303,6 +5304,12 @@ let ICONS_LIST = [
 		icon: snowflake,
 		tags: ['cold', 'weather', 'freeze', 'snow', 'winter'],
 		categories: ['weather', 'seasons']
+	},
+	{
+		name: 'bell-ring',
+		icon: bellRing,
+		tags: ['alarm', 'notification', 'sound', 'reminder'],
+		categories: ['notifications']
 	}
 ];
 
