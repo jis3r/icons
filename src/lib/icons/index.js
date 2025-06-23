@@ -461,6 +461,7 @@ import heart from './heart.svelte';
 import snowflake from './snowflake.svelte';
 import bellRing from './bell-ring.svelte';
 import star from './star.svelte';
+import brushCleaning from './brush-cleaning.svelte';
 
 let ICONS_LIST = [
 	{
@@ -5317,6 +5318,44 @@ let ICONS_LIST = [
 		icon: star,
 		tags: ['bookmark', 'favorite', 'like', 'review', 'rating'],
 		categories: ['account', 'social', 'shapes', 'multimedia', 'weather', 'emoji', 'gaming']
+	},
+	{
+		name: 'brush-cleaning',
+		icon: brushCleaning,
+		tags: [
+			'cleaning',
+			'utensil',
+			'housekeeping',
+			'tool',
+			'sweeping',
+			'scrubbing',
+			'hygiene',
+			'maintenance',
+			'household',
+			'cleaner',
+			'chores',
+			'equipment',
+			'sanitation',
+			'bristles',
+			'handle',
+			'home care',
+			'sanitize',
+			'purify',
+			'wash',
+			'disinfect',
+			'sterilize',
+			'scrub',
+			'polish',
+			'decontaminate',
+			'wipe',
+			'spotless',
+			'remove',
+			'empty',
+			'erase',
+			'purge',
+			'eliminate'
+		],
+		categories: ['home', 'tools', 'design']
 	}
 ];
 
