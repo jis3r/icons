@@ -462,6 +462,7 @@ import snowflake from './snowflake.svelte';
 import bellRing from './bell-ring.svelte';
 import star from './star.svelte';
 import brushCleaning from './brush-cleaning.svelte';
+import brush from './brush.svelte';
 
 let ICONS_LIST = [
 	{
@@ -5356,6 +5357,12 @@ let ICONS_LIST = [
 			'eliminate'
 		],
 		categories: ['home', 'tools', 'design']
+	},
+	{
+		name: 'brush',
+		icon: brush,
+		tags: ['clean', 'sweep', 'refactor', 'remove', 'draw', 'paint', 'color', 'artist'],
+		categories: ['text', 'design', 'tools']
 	}
 ];
 
