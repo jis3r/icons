@@ -463,6 +463,7 @@ import bellRing from './bell-ring.svelte';
 import star from './star.svelte';
 import brushCleaning from './brush-cleaning.svelte';
 import brush from './brush.svelte';
+import paintbrush from './paintbrush.svelte';
 
 let ICONS_LIST = [
 	{
@@ -5363,6 +5364,12 @@ let ICONS_LIST = [
 		icon: brush,
 		tags: ['clean', 'sweep', 'refactor', 'remove', 'draw', 'paint', 'color', 'artist'],
 		categories: ['text', 'design', 'tools']
+	},
+	{
+		name: 'paintbrush',
+		icon: paintbrush,
+		tags: ['brush', 'paintbrush', 'design', 'color', 'colour', 'decoration', 'diy'],
+		categories: ['text', 'design', 'photography', 'home', 'tools']
 	}
 ];
 
