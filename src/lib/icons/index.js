@@ -464,6 +464,7 @@ import star from './star.svelte';
 import brushCleaning from './brush-cleaning.svelte';
 import brush from './brush.svelte';
 import paintbrush from './paintbrush.svelte';
+import cherry from './cherry.svelte';
 
 let ICONS_LIST = [
 	{
@@ -5370,6 +5371,12 @@ let ICONS_LIST = [
 		icon: paintbrush,
 		tags: ['brush', 'paintbrush', 'design', 'color', 'colour', 'decoration', 'diy'],
 		categories: ['text', 'design', 'photography', 'home', 'tools']
+	},
+	{
+		name: 'cherry',
+		icon: cherry,
+		tags: ['fruit', 'food'],
+		categories: ['food-beverage']
 	}
 ];
 

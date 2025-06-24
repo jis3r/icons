@@ -13,7 +13,8 @@
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
 		"test:unit": "vitest",
-		"test": "npm run test:unit -- --run"
+		"test": "npm run test:unit -- --run",
+		"index": "node scripts/indexIcons.js"
 	},
 	"files": [
 		"dist",
@@ -62,6 +63,7 @@
 	"dependencies": {
 		"@number-flow/svelte": "^0.3.6",
 		"@vercel/analytics": "^1.5.0",
+		"iflog": "^0.0.4",
 		"lucide-svelte": "^0.511.0",
 		"mode-watcher": "^0.5.1",
 		"posthog-js": "^1.246.0"
