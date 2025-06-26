@@ -22,7 +22,7 @@
 
 		setTimeout(() => {
 			isHovered = false;
-		}, 400);
+		}, 600);
 	}
 </script>
 
@@ -40,7 +40,7 @@
 		class="mic-off"
 		class:animate={isHovered}
 	>
-		<line x1="2" x2="22" y1="2" y2="22" class="line" />
+		<line x1="2" x2="22" y1="2" y2="22" />
 		<path d="M18.89 13.23A7.12 7.12 0 0 0 19 12v-2" />
 		<path d="M5 10v2a7 7 0 0 0 12 5" />
 		<path d="M15 9.34V5a3 3 0 0 0-5.68-1.33" />
@@ -54,29 +54,34 @@
 		overflow: visible;
 	}
 
-	.line {
-		stroke-dasharray: 29;
-		stroke-dashoffset: 0;
-		transition: stroke-dashoffset 0.15s ease-out;
+	.mic-off {
+		overflow: visible;
+		transform: translateX(0);
+		transition: transform 0.6s ease-in-out;
 	}
 
-	.mic-off.animate .line {
-		opacity: 0;
-		animation: lineAnimation 0.3s ease-out 0.1s forwards;
+	.mic-off.animate {
+		animation: groupShake 0.6s ease-in-out;
 	}
 
-	@keyframes lineAnimation {
+	@keyframes groupShake {
 		0% {
-			opacity: 0;
-			stroke-dashoffset: 29;
+			transform: translateX(0);
 		}
-		15% {
-			opacity: 1;
-			stroke-dashoffset: 29;
+		16.67% {
+			transform: translateX(-7%);
+		}
+		33.33% {
+			transform: translateX(7%);
+		}
+		50% {
+			transform: translateX(-7%);
+		}
+		66.67% {
+			transform: translateX(7%);
 		}
 		100% {
-			opacity: 1;
-			stroke-dashoffset: 0;
+			transform: translateX(0);
 		}
 	}
 </style>

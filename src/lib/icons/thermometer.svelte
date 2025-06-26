@@ -18,15 +18,15 @@
 	} = $props();
 
 	function handleMouseEnter() {
+		if (isHovered) return;
 		isHovered = true;
-
 		setTimeout(() => {
 			isHovered = false;
-		}, 500);
+		}, 400);
 	}
 </script>
 
-<div class={className} aria-label="badge-help" role="img" onmouseenter={handleMouseEnter}>
+<div class={className} aria-label="thermometer" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
@@ -37,41 +37,37 @@
 		stroke-width={strokeWidth}
 		stroke-linecap="round"
 		stroke-linejoin="round"
-		class:animate-icon={isHovered}
+		class="thermometer-icon"
+		class:animate={isHovered}
 	>
-		<path
-			d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"
-		/>
-		<g class:animate-path={isHovered}>
-			<path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
-			<line x1="12" x2="12.01" y1="17" y2="17" />
-		</g>
+		<path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z" class="thermometer-path" />
 	</svg>
 </div>
 
 <style>
-	.animate-icon {
-		transition: transform 0.5s ease-in-out;
-	}
-
-	.animate-path {
-		transition: transform 0.5s ease-in-out;
+	.thermometer-icon {
 		transform-origin: center;
-		animation: rotateAnimation 0.5s ease-in-out;
 	}
 
-	@keyframes rotateAnimation {
+	.thermometer-icon.animate {
+		animation: shake 0.4s ease-in-out;
+	}
+
+	@keyframes shake {
 		0% {
 			transform: rotate(0deg);
 		}
 		20% {
-			transform: rotate(-10deg);
+			transform: rotate(-5deg);
 		}
 		40% {
-			transform: rotate(10deg);
+			transform: rotate(5deg);
 		}
 		60% {
-			transform: rotate(-10deg);
+			transform: rotate(-5deg);
+		}
+		80% {
+			transform: rotate(5deg);
 		}
 		100% {
 			transform: rotate(0deg);

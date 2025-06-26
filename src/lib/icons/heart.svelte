@@ -19,14 +19,13 @@
 
 	function handleMouseEnter() {
 		isHovered = true;
-
 		setTimeout(() => {
 			isHovered = false;
-		}, 500);
+		}, 1200);
 	}
 </script>
 
-<div class={className} aria-label="file-question" role="img" onmouseenter={handleMouseEnter}>
+<div class={className} aria-label="heart" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
@@ -37,43 +36,51 @@
 		stroke-width={strokeWidth}
 		stroke-linecap="round"
 		stroke-linejoin="round"
-		class="file-question-icon"
-		class:animate-icon={isHovered}
+		class="heart-icon"
+		class:animate={isHovered}
 	>
-		<path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z" />
-		<g class:animate-path={isHovered}>
-			<path d="M9.1 9a3 3 0 0 1 5.82 1c0 2-3 3-3 3" />
-			<path d="M12 17h.01" />
-		</g>
+		<path
+			d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+			class="heart-path"
+		/>
 	</svg>
 </div>
 
 <style>
-	.animate-icon {
-		transition: transform 0.5s ease-in-out;
+	.heart-icon {
+		overflow: visible;
 	}
 
-	.animate-path {
-		transition: transform 0.5s ease-in-out;
+	.heart-path {
 		transform-origin: center;
-		animation: rotateAnimation 0.5s ease-in-out;
+		transition: transform 0.3s ease;
 	}
 
-	@keyframes rotateAnimation {
+	.heart-icon.animate .heart-path {
+		animation: heartBeat 1.2s ease-in-out;
+	}
+
+	@keyframes heartBeat {
 		0% {
-			transform: rotate(0deg);
+			transform: scale(1);
 		}
-		20% {
-			transform: rotate(-10deg);
+		16.67% {
+			transform: scale(1.1);
 		}
-		40% {
-			transform: rotate(10deg);
+		33.33% {
+			transform: scale(1);
 		}
-		60% {
-			transform: rotate(-10deg);
+		50% {
+			transform: scale(1.1);
+		}
+		66.67% {
+			transform: scale(1);
+		}
+		83.33% {
+			transform: scale(1.1);
 		}
 		100% {
-			transform: rotate(0deg);
+			transform: scale(1);
 		}
 	}
 </style>

@@ -22,11 +22,11 @@
 
 		setTimeout(() => {
 			isHovered = false;
-		}, 500);
+		}, 600);
 	}
 </script>
 
-<div class={className} aria-label="shield-question" role="img" onmouseenter={handleMouseEnter}>
+<div class={className} aria-label="brush" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
@@ -37,41 +37,33 @@
 		stroke-width={strokeWidth}
 		stroke-linecap="round"
 		stroke-linejoin="round"
-		class:animate-icon={isHovered}
+		class="brush-icon"
+		class:animate={isHovered}
 	>
-		<path
-			d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
-		/>
-		<g class:animate-path={isHovered}>
-			<path d="M9.1 9a3 3 0 0 1 5.82 1c0 2-3 3-3 3" />
-			<path d="M12 17h.01" />
-		</g>
+		<path d="m11 10 3 3" />
+		<path d="M6.5 21A3.5 3.5 0 1 0 3 17.5a2.62 2.62 0 0 1-.708 1.792A1 1 0 0 0 3 21z" />
+		<path d="M9.969 17.031 21.378 5.624a1 1 0 0 0-3.002-3.002L6.967 14.031" />
 	</svg>
 </div>
 
 <style>
-	.animate-icon {
-		transition: transform 0.5s ease-in-out;
+	.brush-icon {
+		transform-origin: top right;
 	}
 
-	.animate-path {
-		transition: transform 0.5s ease-in-out;
-		transform-origin: center;
-		animation: rotateAnimation 0.5s ease-in-out;
+	.brush-icon.animate {
+		animation: brushRotation 0.6s ease-in-out;
 	}
 
-	@keyframes rotateAnimation {
+	@keyframes brushRotation {
 		0% {
 			transform: rotate(0deg);
 		}
-		20% {
-			transform: rotate(-10deg);
+		33% {
+			transform: rotate(-6deg);
 		}
-		40% {
-			transform: rotate(10deg);
-		}
-		60% {
-			transform: rotate(-10deg);
+		66% {
+			transform: rotate(6deg);
 		}
 		100% {
 			transform: rotate(0deg);

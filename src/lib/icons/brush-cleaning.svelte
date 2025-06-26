@@ -22,11 +22,11 @@
 
 		setTimeout(() => {
 			isHovered = false;
-		}, 500);
+		}, 600);
 	}
 </script>
 
-<div class={className} aria-label="circle-help" role="img" onmouseenter={handleMouseEnter}>
+<div class={className} aria-label="brush-cleaning" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
@@ -37,39 +37,37 @@
 		stroke-width={strokeWidth}
 		stroke-linecap="round"
 		stroke-linejoin="round"
-		class:animate-icon={isHovered}
+		class="brush-cleaning-icon"
+		class:animate={isHovered}
 	>
-		<circle cx="12" cy="12" r="10" />
-		<g class:animate-path={isHovered}>
-			<path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
-			<path d="M12 17h.01" />
-		</g>
+		<path d="m16 22-1-4" />
+		<path
+			d="M19 13.99a1 1 0 0 0 1-1V12a2 2 0 0 0-2-2h-3a1 1 0 0 1-1-1V4a2 2 0 0 0-4 0v5a1 1 0 0 1-1 1H6a2 2 0 0 0-2 2v.99a1 1 0 0 0 1 1"
+		/>
+		<path d="M5 14h14l1.973 6.767A1 1 0 0 1 20 22H4a1 1 0 0 1-.973-1.233z" />
+		<path d="m8 22 1-4" />
 	</svg>
 </div>
 
 <style>
-	.animate-icon {
-		transition: transform 0.5s ease-in-out;
+	.brush-cleaning-icon {
+		transform-origin: top center;
+		transition: transform 0.6s ease-in-out;
 	}
 
-	.animate-path {
-		transition: transform 0.5s ease-in-out;
-		transform-origin: center;
-		animation: rotateAnimation 0.5s ease-in-out;
+	.brush-cleaning-icon.animate {
+		animation: brushCleaningAnimation 0.6s ease-in-out;
 	}
 
-	@keyframes rotateAnimation {
+	@keyframes brushCleaningAnimation {
 		0% {
 			transform: rotate(0deg);
 		}
-		20% {
+		25% {
 			transform: rotate(-10deg);
 		}
-		40% {
+		50% {
 			transform: rotate(10deg);
-		}
-		60% {
-			transform: rotate(-10deg);
 		}
 		100% {
 			transform: rotate(0deg);

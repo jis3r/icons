@@ -19,13 +19,14 @@
 
 	function handleMouseEnter() {
 		isHovered = true;
+
 		setTimeout(() => {
 			isHovered = false;
-		}, 600);
+		}, 800);
 	}
 </script>
 
-<div class={className} aria-label="camera-off" role="img" onmouseenter={handleMouseEnter}>
+<div class={className} aria-label="cherry" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
@@ -36,49 +37,42 @@
 		stroke-width={strokeWidth}
 		stroke-linecap="round"
 		stroke-linejoin="round"
-		class="camera-off"
-		class:animate={isHovered}
+		class="cherry-icon"
 	>
-		<path d="m2 2 20 20" />
-		<path d="M7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16" />
-		<path d="M9.5 4h5L17 7h3a2 2 0 0 1 2 2v7.5" />
-		<path d="M14.121 15.121A3 3 0 1 1 9.88 10.88" />
+		<g class:animate-group={isHovered}>
+			<path d="M2 17a5 5 0 0 0 10 0c0-2.76-2.5-5-5-3-2.5-2-5 .24-5 3Z" />
+			<path d="M12 17a5 5 0 0 0 10 0c0-2.76-2.5-5-5-3-2.5-2-5 .24-5 3Z" />
+			<path d="M7 14c3.22-2.91 4.29-8.75 5-12 1.66 2.38 4.94 9 5 12" />
+			<path d="M22 9c-4.29 0-7.14-2.33-10-7 5.71 0 10 4.67 10 7Z" />
+		</g>
 	</svg>
 </div>
 
 <style>
-	.camera-off {
+	.cherry-icon {
 		overflow: visible;
 	}
 
-	.camera-off {
-		overflow: visible;
-		transform: translateX(0);
-		transition: transform 0.6s ease-in-out;
+	.animate-group {
+		animation: cherrySwing 0.8s ease-in-out;
+		transform-origin: top center;
 	}
 
-	.camera-off.animate {
-		animation: groupShake 0.6s ease-in-out;
-	}
-
-	@keyframes groupShake {
+	@keyframes cherrySwing {
 		0% {
-			transform: translateX(0);
+			transform: rotate(0deg);
 		}
-		16.67% {
-			transform: translateX(-7%);
-		}
-		33.33% {
-			transform: translateX(7%);
+		25% {
+			transform: rotate(-12deg);
 		}
 		50% {
-			transform: translateX(-7%);
+			transform: rotate(7deg);
 		}
-		66.67% {
-			transform: translateX(7%);
+		75% {
+			transform: rotate(-4deg);
 		}
 		100% {
-			transform: translateX(0);
+			transform: rotate(0deg);
 		}
 	}
 </style>

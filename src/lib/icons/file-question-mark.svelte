@@ -19,13 +19,14 @@
 
 	function handleMouseEnter() {
 		isHovered = true;
+
 		setTimeout(() => {
 			isHovered = false;
-		}, 600);
+		}, 500);
 	}
 </script>
 
-<div class={className} aria-label="navigation-off" role="img" onmouseenter={handleMouseEnter}>
+<div class={className} aria-label="file-question-mark" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
@@ -36,48 +37,42 @@
 		stroke-width={strokeWidth}
 		stroke-linecap="round"
 		stroke-linejoin="round"
-		class="navigation-off"
-		class:animate={isHovered}
+		class:animate-icon={isHovered}
 	>
-		<path d="M8.43 8.43 3 11l8 2 2 8 2.57-5.43" />
-		<path d="M17.39 11.73 22 2l-9.73 4.61" />
-		<path d="m2 2 20 20" />
+		<path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z" />
+		<g class:animate-path={isHovered}>
+			<path d="M9.1 9a3 3 0 0 1 5.82 1c0 2-3 3-3 3" />
+			<path d="M12 17h.01" />
+		</g>
 	</svg>
 </div>
 
 <style>
-	.navigation-off {
-		overflow: visible;
+	.animate-icon {
+		transition: transform 0.5s ease-in-out;
 	}
 
-	.navigation-off {
-		overflow: visible;
-		transform: translateX(0);
-		transition: transform 0.6s ease-in-out;
+	.animate-path {
+		transition: transform 0.5s ease-in-out;
+		transform-origin: center;
+		animation: rotateAnimation 0.5s ease-in-out;
 	}
 
-	.navigation-off.animate {
-		animation: groupShake 0.6s ease-in-out;
-	}
-
-	@keyframes groupShake {
+	@keyframes rotateAnimation {
 		0% {
-			transform: translateX(0);
+			transform: rotate(0deg);
 		}
-		16.67% {
-			transform: translateX(-7%);
+		20% {
+			transform: rotate(-10deg);
 		}
-		33.33% {
-			transform: translateX(7%);
+		40% {
+			transform: rotate(10deg);
 		}
-		50% {
-			transform: translateX(-7%);
-		}
-		66.67% {
-			transform: translateX(7%);
+		60% {
+			transform: rotate(-10deg);
 		}
 		100% {
-			transform: translateX(0);
+			transform: rotate(0deg);
 		}
 	}
 </style>

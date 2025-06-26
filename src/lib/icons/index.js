@@ -38,7 +38,6 @@ import award from './award.svelte';
 import axe from './axe.svelte';
 import badgeAlert from './badge-alert.svelte';
 import badgeCheck from './badge-check.svelte';
-import badgeHelp from './badge-help.svelte';
 import batteryCharging from './battery-charging.svelte';
 import batteryFull from './battery-full.svelte';
 import batteryLow from './battery-low.svelte';
@@ -141,7 +140,6 @@ import circleChevronDown from './circle-chevron-down.svelte';
 import circleChevronLeft from './circle-chevron-left.svelte';
 import circleChevronRight from './circle-chevron-right.svelte';
 import circleChevronUp from './circle-chevron-up.svelte';
-import circleHelp from './circle-help.svelte';
 import circleOff from './circle-off.svelte';
 import circleParkingOff from './circle-parking-off.svelte';
 import circlePlus from './circle-plus.svelte';
@@ -201,7 +199,7 @@ import fileMinus from './file-minus.svelte';
 import filePenLine from './file-pen-line.svelte';
 import filePen from './file-pen.svelte';
 import filePlus from './file-plus.svelte';
-import fileQuestion from './file-question.svelte';
+import fileQuestion from './file-question-mark.svelte';
 import fileStack from './file-stack.svelte';
 import fileTerminal from './file-terminal.svelte';
 import fileUp from './file-up.svelte';
@@ -271,7 +269,6 @@ import maximize from './maximize.svelte';
 import megaphoneOff from './megaphone-off.svelte';
 import messageCircleMore from './message-circle-more.svelte';
 import messageCircleOff from './message-circle-off.svelte';
-import messageCircleQuestion from './message-circle-question.svelte';
 import messageCircleWarning from './message-circle-warning.svelte';
 import messageCircle from './message-circle.svelte';
 import messageSquareMore from './message-square-more.svelte';
@@ -355,7 +352,6 @@ import shieldAlert from './shield-alert.svelte';
 import shieldCheck from './shield-check.svelte';
 import shieldOff from './shield-off.svelte';
 import shieldPlus from './shield-plus.svelte';
-import shieldQuestion from './shield-question.svelte';
 import shipWheel from './ship-wheel.svelte';
 import ship from './ship.svelte';
 import shoppingCart from './shopping-cart.svelte';
@@ -457,6 +453,22 @@ import briefcaseConveyorBelt from './briefcase-conveyor-belt.svelte';
 import briefcaseMedical from './briefcase-medical.svelte';
 import landmark from './landmark.svelte';
 import rotateCcwKey from './rotate-ccw-key.svelte';
+import heart from './heart.svelte';
+import snowflake from './snowflake.svelte';
+import bellRing from './bell-ring.svelte';
+import star from './star.svelte';
+import brushCleaning from './brush-cleaning.svelte';
+import brush from './brush.svelte';
+import paintbrush from './paintbrush.svelte';
+import cherry from './cherry.svelte';
+import badgeQuestionMark from './badge-question-mark.svelte';
+import fileQuestionMark from './file-question-mark.svelte';
+import circleQuestionMark from './circle-question-mark.svelte';
+import messageCircleQuestionMark from './message-circle-question-mark.svelte';
+import shieldQuestionMark from './shield-question-mark.svelte';
+import dropletOff from './droplet-off.svelte';
+import serverOff from './server-off.svelte';
+import thermometer from './thermometer.svelte';
 
 let ICONS_LIST = [
 	{
@@ -889,12 +901,6 @@ let ICONS_LIST = [
 		icon: badgeCheck,
 		tags: ['verified', 'check'],
 		categories: ['social']
-	},
-	{
-		name: 'badge-help',
-		icon: badgeHelp,
-		tags: ['verified', 'unverified', 'help'],
-		categories: ['accessibility', 'social']
 	},
 	{
 		name: 'battery-charging',
@@ -2196,12 +2202,6 @@ let ICONS_LIST = [
 		categories: ['arrows', 'navigation']
 	},
 	{
-		name: 'circle-help',
-		icon: circleHelp,
-		tags: ['question mark'],
-		categories: ['accessibility', 'text', 'notifications']
-	},
-	{
 		name: 'circle-off',
 		icon: circleOff,
 		tags: [
@@ -3313,12 +3313,6 @@ let ICONS_LIST = [
 		categories: ['social']
 	},
 	{
-		name: 'message-circle-question',
-		icon: messageCircleQuestion,
-		tags: ['comment', 'chat', 'conversation', 'dialog', 'feedback', 'speech bubble', 'help'],
-		categories: ['social']
-	},
-	{
 		name: 'message-circle-warning',
 		icon: messageCircleWarning,
 		tags: [
@@ -4375,57 +4369,6 @@ let ICONS_LIST = [
 		categories: ['account', 'security', 'development', 'gaming', 'medical']
 	},
 	{
-		name: 'shield-question',
-		icon: shieldQuestion,
-		tags: [
-			'unshielded',
-			'cybersecurity',
-			'insecure',
-			'unsecured',
-			'safety',
-			'unsafe',
-			'protection',
-			'unprotected',
-			'guardian',
-			'unguarded',
-			'unarmored',
-			'unarmoured',
-			'defenseless',
-			'defenceless',
-			'undefended',
-			'defender',
-			'threat',
-			'prevention',
-			'unprevented',
-			'antivirus',
-			'vigilance',
-			'vigilant',
-			'detection',
-			'undetected',
-			'scan',
-			'find',
-			'exploit',
-			'vulnerability',
-			'vulnerable',
-			'weakness',
-			'infection',
-			'comprimised',
-			'data leak',
-			'audit',
-			'admin',
-			'verification',
-			'unverified',
-			'uncertified',
-			'uncertain',
-			'unknown',
-			'inactive',
-			'crest',
-			'question mark',
-			'?'
-		],
-		categories: ['account', 'security', 'development', 'gaming']
-	},
-	{
 		name: 'ship-wheel',
 		icon: shipWheel,
 		tags: [
@@ -5289,6 +5232,179 @@ let ICONS_LIST = [
 		icon: rotateCcwKey,
 		tags: ['password', 'key', 'refresh', 'change'],
 		categories: ['security', 'account']
+	},
+	{
+		name: 'heart',
+		icon: heart,
+		tags: ['like', 'love', 'emotion', 'suit', 'playing', 'cards'],
+		categories: ['medical', 'social', 'multimedia', 'emoji', 'gaming', 'shapes']
+	},
+	{
+		name: 'snowflake',
+		icon: snowflake,
+		tags: ['cold', 'weather', 'freeze', 'snow', 'winter'],
+		categories: ['weather', 'seasons']
+	},
+	{
+		name: 'bell-ring',
+		icon: bellRing,
+		tags: ['alarm', 'notification', 'sound', 'reminder'],
+		categories: ['notifications']
+	},
+	{
+		name: 'star',
+		icon: star,
+		tags: ['bookmark', 'favorite', 'like', 'review', 'rating'],
+		categories: ['account', 'social', 'shapes', 'multimedia', 'weather', 'emoji', 'gaming']
+	},
+	{
+		name: 'brush-cleaning',
+		icon: brushCleaning,
+		tags: [
+			'cleaning',
+			'utensil',
+			'housekeeping',
+			'tool',
+			'sweeping',
+			'scrubbing',
+			'hygiene',
+			'maintenance',
+			'household',
+			'cleaner',
+			'chores',
+			'equipment',
+			'sanitation',
+			'bristles',
+			'handle',
+			'home care',
+			'sanitize',
+			'purify',
+			'wash',
+			'disinfect',
+			'sterilize',
+			'scrub',
+			'polish',
+			'decontaminate',
+			'wipe',
+			'spotless',
+			'remove',
+			'empty',
+			'erase',
+			'purge',
+			'eliminate'
+		],
+		categories: ['home', 'tools', 'design']
+	},
+	{
+		name: 'brush',
+		icon: brush,
+		tags: ['clean', 'sweep', 'refactor', 'remove', 'draw', 'paint', 'color', 'artist'],
+		categories: ['text', 'design', 'tools']
+	},
+	{
+		name: 'paintbrush',
+		icon: paintbrush,
+		tags: ['brush', 'paintbrush', 'design', 'color', 'colour', 'decoration', 'diy'],
+		categories: ['text', 'design', 'photography', 'home', 'tools']
+	},
+	{
+		name: 'cherry',
+		icon: cherry,
+		tags: ['fruit', 'food'],
+		categories: ['food-beverage']
+	},
+	{
+		name: 'badge-question-mark',
+		icon: badgeQuestionMark,
+		tags: ['verified', 'unverified', 'help'],
+		categories: ['accessibility', 'social', 'shapes']
+	},
+	{
+		name: 'file-question-mark',
+		icon: fileQuestionMark,
+		tags: ['readme', 'help', 'question'],
+		categories: ['files']
+	},
+	{
+		name: 'circle-question-mark',
+		icon: circleQuestionMark,
+		tags: ['question mark'],
+		categories: ['accessibility', 'text', 'notifications']
+	},
+	{
+		name: 'message-circle-question-mark',
+		icon: messageCircleQuestionMark,
+		tags: ['comment', 'chat', 'conversation', 'dialog', 'feedback', 'speech bubble', 'help'],
+		categories: ['social']
+	},
+	{
+		name: 'shield-question-mark',
+		icon: shieldQuestionMark,
+		tags: [
+			'unshielded',
+			'cybersecurity',
+			'insecure',
+			'unsecured',
+			'safety',
+			'unsafe',
+			'protection',
+			'unprotected',
+			'guardian',
+			'unguarded',
+			'unarmored',
+			'unarmoured',
+			'defenseless',
+			'defenceless',
+			'undefended',
+			'defender',
+			'threat',
+			'prevention',
+			'unprevented',
+			'antivirus',
+			'vigilance',
+			'vigilant',
+			'detection',
+			'undetected',
+			'scan',
+			'find',
+			'exploit',
+			'vulnerability',
+			'vulnerable',
+			'weakness',
+			'infection',
+			'comprimised',
+			'data leak',
+			'audit',
+			'admin',
+			'verification',
+			'unverified',
+			'uncertified',
+			'uncertain',
+			'unknown',
+			'inactive',
+			'crest',
+			'question mark',
+			'?'
+		],
+		categories: ['account', 'security', 'development', 'gaming']
+	},
+	{
+		name: 'droplet-off',
+		icon: dropletOff,
+		tags: ['water', 'weather', 'liquid', 'fluid', 'wet', 'moisture', 'damp', 'bead', 'globule'],
+		categories: ['weather', 'gaming']
+	},
+	{
+		name: 'server-off',
+		icon: serverOff,
+		tags: ['cloud', 'storage'],
+		categories: ['development', 'devices']
+	},
+	{
+		name: 'thermometer',
+		icon: thermometer,
+		tags: ['temperature', 'celsius', 'fahrenheit', 'weather'],
+		categories: ['weather']
 	}
 ];
 

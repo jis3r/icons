@@ -25,7 +25,7 @@
 	}
 </script>
 
-<div class={className} aria-label="camera-off" role="img" onmouseenter={handleMouseEnter}>
+<div class={className} aria-label="droplet-off" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
@@ -36,28 +36,29 @@
 		stroke-width={strokeWidth}
 		stroke-linecap="round"
 		stroke-linejoin="round"
-		class="camera-off"
+		class="droplet-off"
 		class:animate={isHovered}
 	>
+		<path
+			d="M18.715 13.186C18.29 11.858 17.384 10.607 16 9.5c-2-1.6-3.5-4-4-6.5a10.7 10.7 0 0 1-.884 2.586"
+		/>
 		<path d="m2 2 20 20" />
-		<path d="M7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16" />
-		<path d="M9.5 4h5L17 7h3a2 2 0 0 1 2 2v7.5" />
-		<path d="M14.121 15.121A3 3 0 1 1 9.88 10.88" />
+		<path d="M8.795 8.797A11 11 0 0 1 8 9.5C6 11.1 5 13 5 15a7 7 0 0 0 13.222 3.208" />
 	</svg>
 </div>
 
 <style>
-	.camera-off {
+	.droplet-off {
 		overflow: visible;
 	}
 
-	.camera-off {
+	.droplet-off {
 		overflow: visible;
 		transform: translateX(0);
 		transition: transform 0.6s ease-in-out;
 	}
 
-	.camera-off.animate {
+	.droplet-off.animate {
 		animation: groupShake 0.6s ease-in-out;
 	}
 
