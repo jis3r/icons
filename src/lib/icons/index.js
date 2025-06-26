@@ -468,6 +468,7 @@ import messageCircleQuestionMark from './message-circle-question-mark.svelte';
 import shieldQuestionMark from './shield-question-mark.svelte';
 import dropletOff from './droplet-off.svelte';
 import serverOff from './server-off.svelte';
+import thermometer from './thermometer.svelte';
 
 let ICONS_LIST = [
 	{
@@ -5398,6 +5399,12 @@ let ICONS_LIST = [
 		icon: serverOff,
 		tags: ['cloud', 'storage'],
 		categories: ['development', 'devices']
+	},
+	{
+		name: 'thermometer',
+		icon: thermometer,
+		tags: ['temperature', 'celsius', 'fahrenheit', 'weather'],
+		categories: ['weather']
 	}
 ];
 
