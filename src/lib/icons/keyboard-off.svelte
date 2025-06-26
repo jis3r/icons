@@ -45,7 +45,7 @@
 		<path d="M 9.69 4 L 20 4" />
 		<path d="M14 8h.01" />
 		<path d="M18 8h.01" />
-		<path  d="m2 2 20 20" />
+		<path d="m2 2 20 20" />
 		<path d="M20 20H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2" />
 		<path d="M6 8h.01" />
 		<path d="M8 12h.01" />
@@ -57,7 +57,7 @@
 		overflow: visible;
 	}
 
-		.keyboard-off {
+	.keyboard-off {
 		overflow: visible;
 		transform: translateX(0);
 		transition: transform 0.6s ease-in-out;

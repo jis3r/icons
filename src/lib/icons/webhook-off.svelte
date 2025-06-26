@@ -45,7 +45,7 @@
 		<path d="M20.3 20.3a4 4 0 0 1-2.3.7" />
 		<path d="M18.6 13a4 4 0 0 1 3.357 3.414" />
 		<path d="m12 6 .6 1" />
-		<path  d="m2 2 20 20" />
+		<path d="m2 2 20 20" />
 	</svg>
 </div>
 
@@ -54,7 +54,7 @@
 		overflow: visible;
 	}
 
-		.webhook-off {
+	.webhook-off {
 		overflow: visible;
 		transform: translateX(0);
 		transition: transform 0.6s ease-in-out;

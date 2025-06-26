@@ -52,7 +52,7 @@
 		/>
 		<path d="m16 16-.53.53a3.5 3.5 0 0 1-4.94 0L9 15l1.53-1.53a3.49 3.49 0 0 1 1.97-.98" />
 		<path d="M18.74 13.09c.26-.15.51-.34.73-.56L21 11l-1.53-1.53a3.5 3.5 0 0 0-4.62-.28" />
-		<line  x1="2" x2="22" y1="2" y2="22" />
+		<line x1="2" x2="22" y1="2" y2="22" />
 	</svg>
 </div>
 
@@ -61,7 +61,7 @@
 		overflow: visible;
 	}
 
-		.wheat-off {
+	.wheat-off {
 		overflow: visible;
 		transform: translateX(0);
 		transition: transform 0.6s ease-in-out;

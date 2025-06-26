@@ -48,7 +48,7 @@
 		<path
 			d="m16.01 17.93-.23 1.4A2 2 0 0 1 13.8 21H9.5a5.96 5.96 0 0 0 1.49-3.98M8.53 3h5.27a2 2 0 0 1 1.98 1.67l.23 1.4"
 		/>
-		<path  d="m2 2 20 20" />
+		<path d="m2 2 20 20" />
 	</svg>
 </div>
 
@@ -57,7 +57,7 @@
 		overflow: visible;
 	}
 
-		.fish-off {
+	.fish-off {
 		overflow: visible;
 		transform: translateX(0);
 		transition: transform 0.6s ease-in-out;

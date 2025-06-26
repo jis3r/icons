@@ -46,7 +46,7 @@
 		<path d="M10 10v7.5" />
 		<path d="m16 7 1-5 1.367.683A3 3 0 0 0 19.708 3H21v1.292a3 3 0 0 0 .317 1.341L22 7l-5 1" />
 		<path d="m8 17-1 5-1.367-.683A3 3 0 0 0 4.292 21H3v-1.292a3 3 0 0 0-.317-1.341L2 17l5-1" />
-		<path  d="m2 2 20 20" />
+		<path d="m2 2 20 20" />
 	</svg>
 </div>
 
@@ -55,7 +55,7 @@
 		overflow: visible;
 	}
 
-		.candy-off {
+	.candy-off {
 		overflow: visible;
 		transform: translateX(0);
 		transition: transform 0.6s ease-in-out;

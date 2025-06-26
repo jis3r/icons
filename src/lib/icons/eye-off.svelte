@@ -47,7 +47,7 @@
 		<path
 			d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143"
 		/>
-		<path d="m2 2 20 20"  />
+		<path d="m2 2 20 20" />
 	</svg>
 </div>
 
@@ -56,7 +56,7 @@
 		overflow: visible;
 	}
 
-		.eye-off {
+	.eye-off {
 		overflow: visible;
 		transform: translateX(0);
 		transition: transform 0.6s ease-in-out;

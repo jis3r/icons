@@ -43,7 +43,7 @@
 		<path d="M19.9 14.25a8 8 0 0 0-9.15-9.15" />
 		<path d="m22 6-3-3" />
 		<path d="M6.26 18.67 4 21" />
-		<path d="m2 2 20 20"  />
+		<path d="m2 2 20 20" />
 		<path d="M4 4 2 6" />
 	</svg>
 </div>
@@ -53,7 +53,7 @@
 		overflow: visible;
 	}
 
-		.alarm-clock-off {
+	.alarm-clock-off {
 		overflow: visible;
 		transform: translateX(0);
 		transition: transform 0.6s ease-in-out;

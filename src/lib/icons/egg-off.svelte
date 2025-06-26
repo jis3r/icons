@@ -46,7 +46,7 @@
 		<path
 			d="M19.532 13.875A14.07 14.07 0 0 0 19.5 12c-.36-4.34-3.95-9.96-7.5-10-1.04.012-2.082.502-3.046 1.297"
 		/>
-		<line x1="2" x2="22" y1="2" y2="22"  />
+		<line x1="2" x2="22" y1="2" y2="22" />
 	</svg>
 </div>
 
@@ -55,7 +55,7 @@
 		overflow: visible;
 	}
 
-		.egg-off {
+	.egg-off {
 		overflow: visible;
 		transform: translateX(0);
 		transition: transform 0.6s ease-in-out;

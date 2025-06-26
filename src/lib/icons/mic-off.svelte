@@ -40,7 +40,7 @@
 		class="mic-off"
 		class:animate={isHovered}
 	>
-		<line x1="2" x2="22" y1="2" y2="22"  />
+		<line x1="2" x2="22" y1="2" y2="22" />
 		<path d="M18.89 13.23A7.12 7.12 0 0 0 19 12v-2" />
 		<path d="M5 10v2a7 7 0 0 0 12 5" />
 		<path d="M15 9.34V5a3 3 0 0 0-5.68-1.33" />
@@ -54,7 +54,7 @@
 		overflow: visible;
 	}
 
-		.mic-off {
+	.mic-off {
 		overflow: visible;
 		transform: translateX(0);
 		transition: transform 0.6s ease-in-out;

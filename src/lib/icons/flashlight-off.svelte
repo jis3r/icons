@@ -42,7 +42,7 @@
 		<path d="M16 16v4a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2V10c0-2-2-2-2-4" />
 		<path d="M7 2h11v4c0 2-2 2-2 4v1" />
 		<path d="M11 6h7" />
-		<path  d="m2 2 20 20" />
+		<path d="m2 2 20 20" />
 	</svg>
 </div>
 
@@ -51,7 +51,7 @@
 		overflow: visible;
 	}
 
-		.flashlight-off {
+	.flashlight-off {
 		overflow: visible;
 		transform: translateX(0);
 		transition: transform 0.6s ease-in-out;

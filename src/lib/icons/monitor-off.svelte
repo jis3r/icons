@@ -43,7 +43,7 @@
 		<path d="M22 15V5a2 2 0 0 0-2-2H9" />
 		<path d="M8 21h8" />
 		<path d="M12 17v4" />
-		<path  d="m2 2 20 20" />
+		<path d="m2 2 20 20" />
 	</svg>
 </div>
 
@@ -52,7 +52,7 @@
 		overflow: visible;
 	}
 
-		.monitor-off {
+	.monitor-off {
 		overflow: visible;
 		transform: translateX(0);
 		transition: transform 0.6s ease-in-out;

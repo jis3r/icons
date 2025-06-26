@@ -41,7 +41,7 @@
 	>
 		<path d="M8.43 8.43 3 11l8 2 2 8 2.57-5.43" />
 		<path d="M17.39 11.73 22 2l-9.73 4.61" />
-		<path  d="m2 2 20 20" />
+		<path d="m2 2 20 20" />
 	</svg>
 </div>
 
@@ -50,7 +50,7 @@
 		overflow: visible;
 	}
 
-		.navigation-off {
+	.navigation-off {
 		overflow: visible;
 		transform: translateX(0);
 		transition: transform 0.6s ease-in-out;

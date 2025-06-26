@@ -44,7 +44,7 @@
 		<path d="M14 2v6.343" />
 		<path d="M8.5 2h7" />
 		<path d="M7 16h9" />
-		<path  d="m2 2 20 20" />
+		<path d="m2 2 20 20" />
 	</svg>
 </div>
 
@@ -53,7 +53,7 @@
 		overflow: visible;
 	}
 
-		.flask-conical-off {
+	.flask-conical-off {
 		overflow: visible;
 		transform: translateX(0);
 		transition: transform 0.6s ease-in-out;

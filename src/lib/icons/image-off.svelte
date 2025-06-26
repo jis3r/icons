@@ -39,7 +39,7 @@
 		class="image-off"
 		class:animate={isHovered}
 	>
-		<path  d="m2 2 20 20" />
+		<path d="m2 2 20 20" />
 		<path d="M10.41 10.41a2 2 0 1 1-2.83-2.83" />
 		<line x1="13.5" x2="6" y1="13.5" y2="21" />
 		<line x1="18" x2="21" y1="12" y2="15" />
@@ -53,7 +53,7 @@
 		overflow: visible;
 	}
 
-		.image-off {
+	.image-off {
 		overflow: visible;
 		transform: translateX(0);
 		transition: transform 0.6s ease-in-out;

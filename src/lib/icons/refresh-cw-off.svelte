@@ -45,7 +45,7 @@
 		<path d="m3 16 2.26 2.26A9.75 9.75 0 0 0 12 21c2.49 0 4.74-1 6.36-2.64" />
 		<path d="M21 12c0 1-.16 1.97-.47 2.87" />
 		<path d="M21 3v5h-5" />
-		<path  d="M22 22 2 2" />
+		<path d="M22 22 2 2" />
 	</svg>
 </div>
 
@@ -54,7 +54,7 @@
 		overflow: visible;
 	}
 
-		.refresh-cw-off {
+	.refresh-cw-off {
 		overflow: visible;
 		transform: translateX(0);
 		transition: transform 0.6s ease-in-out;

@@ -43,7 +43,7 @@
 		<path d="M2 14h12" />
 		<path d="M22 14h-2" />
 		<path d="M12 20v-6" />
-		<path  d="m2 2 20 20" />
+		<path d="m2 2 20 20" />
 		<path d="M22 16V6a2 2 0 0 0-2-2H10" />
 	</svg>
 </div>
@@ -53,7 +53,7 @@
 		overflow: visible;
 	}
 
-		.touchpad-off {
+	.touchpad-off {
 		overflow: visible;
 		transform: translateX(0);
 		transition: transform 0.6s ease-in-out;

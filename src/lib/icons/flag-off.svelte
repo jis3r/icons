@@ -42,7 +42,7 @@
 		<path d="M8 2c3 0 5 2 8 2s4-1 4-1v11" />
 		<path d="M4 22V4" />
 		<path d="M4 15s1-1 4-1 5 2 8 2" />
-		<path  d="m2 2 20 20" />
+		<path d="m2 2 20 20" />
 	</svg>
 </div>
 
@@ -51,7 +51,7 @@
 		overflow: visible;
 	}
 
-		.flag-off {
+	.flag-off {
 		overflow: visible;
 		transform: translateX(0);
 		transition: transform 0.6s ease-in-out;

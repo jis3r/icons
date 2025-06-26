@@ -52,7 +52,7 @@
 			d="M5.52 17.99c1.05.95 2.91 2.42 4.5 3.15a.8.8 0 0 0 1.13-.68c.2-2.34-.33-5.3-1.57-8.28"
 		/>
 		<path d="M8.35 2.68a10 10 0 0 1 9.98 1.58c.43.35.4.96-.12 1.17-1.5.6-4.3.98-6.07 1.05" />
-		<path d="M2 2L22 22"  />
+		<path d="M2 2L22 22" />
 	</svg>
 </div>
 
@@ -61,7 +61,7 @@
 		overflow: visible;
 	}
 
-		.hop-off {
+	.hop-off {
 		overflow: visible;
 		transform: translateX(0);
 		transition: transform 0.6s ease-in-out;

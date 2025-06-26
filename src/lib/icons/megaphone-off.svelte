@@ -42,7 +42,7 @@
 		<path d="M9.26 9.26 3 11v3l14.14 3.14" />
 		<path d="M21 15.34V6l-7.31 2.03" />
 		<path d="M11.6 16.8a3 3 0 1 1-5.8-1.6" />
-		<path  d="m2 2 20 20" />
+		<path d="m2 2 20 20" />
 	</svg>
 </div>
 
@@ -51,7 +51,7 @@
 		overflow: visible;
 	}
 
-		.megaphone-off {
+	.megaphone-off {
 		overflow: visible;
 		transform: translateX(0);
 		transition: transform 0.6s ease-in-out;

@@ -44,7 +44,7 @@
 		/>
 		<path d="m12.829 7.172 4.359-4.346a1 1 0 1 1 3.986 3.986l-4.353 4.353" />
 		<path d="m15 5 4 4" />
-		<path  d="m2 2 20 20" />
+		<path d="m2 2 20 20" />
 	</svg>
 </div>
 
@@ -53,7 +53,7 @@
 		overflow: visible;
 	}
 
-		.pencil-off {
+	.pencil-off {
 		overflow: visible;
 		transform: translateX(0);
 		transition: transform 0.6s ease-in-out;

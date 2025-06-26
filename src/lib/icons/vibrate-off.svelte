@@ -43,7 +43,7 @@
 		<path d="m22 8-2 2 2 2-2 2 2 2" />
 		<path d="M8 8v10c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2" />
 		<path d="M16 10.34V6c0-.55-.45-1-1-1h-4.34" />
-		<path  d="m2 2 20 20" />
+		<path d="m2 2 20 20" />
 	</svg>
 </div>
 
@@ -52,7 +52,7 @@
 		overflow: visible;
 	}
 
-		.vibrate-off {
+	.vibrate-off {
 		overflow: visible;
 		transform: translateX(0);
 		transition: transform 0.6s ease-in-out;

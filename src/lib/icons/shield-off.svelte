@@ -39,7 +39,7 @@
 		class="shield-off"
 		class:animate={isHovered}
 	>
-		<path  d="m2 2 20 20" />
+		<path d="m2 2 20 20" />
 		<path
 			d="M5 5a1 1 0 0 0-1 1v7c0 5 3.5 7.5 7.67 8.94a1 1 0 0 0 .67.01c2.35-.82 4.48-1.97 5.9-3.71"
 		/>
@@ -54,7 +54,7 @@
 		overflow: visible;
 	}
 
-		.shield-off {
+	.shield-off {
 		overflow: visible;
 		transform: translateX(0);
 		transition: transform 0.6s ease-in-out;
