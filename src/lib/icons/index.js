@@ -467,6 +467,7 @@ import circleQuestionMark from './circle-question-mark.svelte';
 import messageCircleQuestionMark from './message-circle-question-mark.svelte';
 import shieldQuestionMark from './shield-question-mark.svelte';
 import dropletOff from './droplet-off.svelte';
+import serverOff from './server-off.svelte';
 
 let ICONS_LIST = [
 	{
@@ -5391,6 +5392,12 @@ let ICONS_LIST = [
 		icon: dropletOff,
 		tags: ['water', 'weather', 'liquid', 'fluid', 'wet', 'moisture', 'damp', 'bead', 'globule'],
 		categories: ['weather', 'gaming']
+	},
+	{
+		name: 'server-off',
+		icon: serverOff,
+		tags: ['cloud', 'storage'],
+		categories: ['development', 'devices']
 	}
 ];
 
