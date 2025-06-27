@@ -472,6 +472,7 @@ import thermometer from './thermometer.svelte';
 import toggleLeft from './toggle-left.svelte';
 import toggleRight from './toggle-right.svelte';
 import send from './send.svelte';
+import sendHorizontal from './send-horizontal.svelte';
 
 let ICONS_LIST = [
 	{
@@ -5424,6 +5425,12 @@ let ICONS_LIST = [
 {
   name: "send",
   icon: send,
+  tags: ["email","message","mail","paper airplane","paper aeroplane","submit"],
+  categories: ["mail","communication","connectivity"]
+},
+{
+  name: "send-horizontal",
+  icon: sendHorizontal,
   tags: ["email","message","mail","paper airplane","paper aeroplane","submit"],
   categories: ["mail","communication","connectivity"]
 }
