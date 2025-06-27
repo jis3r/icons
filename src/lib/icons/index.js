@@ -5408,18 +5408,18 @@ let ICONS_LIST = [
 		tags: ['temperature', 'celsius', 'fahrenheit', 'weather'],
 		categories: ['weather']
 	},
-{
-  name: "toggle-left",
-  icon: toggleLeft,
-  tags: ["on","off","switch","boolean"],
-  categories: ["layout","account","development"]
-},
-{
-  name: "toggle-right",
-  icon: toggleRight,
-  tags: ["on","off","switch","boolean"],
-  categories: ["layout","account","development"]
-}
+	{
+		name: 'toggle-left',
+		icon: toggleLeft,
+		tags: ['on', 'off', 'switch', 'boolean'],
+		categories: ['layout', 'account', 'development']
+	},
+	{
+		name: 'toggle-right',
+		icon: toggleRight,
+		tags: ['on', 'off', 'switch', 'boolean'],
+		categories: ['layout', 'account', 'development']
+	}
 ];
 
 export default ICONS_LIST;
