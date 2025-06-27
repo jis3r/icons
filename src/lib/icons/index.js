@@ -471,6 +471,7 @@ import serverOff from './server-off.svelte';
 import thermometer from './thermometer.svelte';
 import toggleLeft from './toggle-left.svelte';
 import toggleRight from './toggle-right.svelte';
+import send from './send.svelte';
 
 let ICONS_LIST = [
 	{
@@ -5419,7 +5420,13 @@ let ICONS_LIST = [
 		icon: toggleRight,
 		tags: ['on', 'off', 'switch', 'boolean'],
 		categories: ['layout', 'account', 'development']
-	}
+	},
+{
+  name: "send",
+  icon: send,
+  tags: ["email","message","mail","paper airplane","paper aeroplane","submit"],
+  categories: ["mail","communication","connectivity"]
+}
 ];
 
 export default ICONS_LIST;
