@@ -469,6 +469,8 @@ import shieldQuestionMark from './shield-question-mark.svelte';
 import dropletOff from './droplet-off.svelte';
 import serverOff from './server-off.svelte';
 import thermometer from './thermometer.svelte';
+import toggleLeft from './toggle-left.svelte';
+import toggleRight from './toggle-right.svelte';
 
 let ICONS_LIST = [
 	{
@@ -5405,7 +5407,19 @@ let ICONS_LIST = [
 		icon: thermometer,
 		tags: ['temperature', 'celsius', 'fahrenheit', 'weather'],
 		categories: ['weather']
-	}
+	},
+{
+  name: "toggle-left",
+  icon: toggleLeft,
+  tags: ["on","off","switch","boolean"],
+  categories: ["layout","account","development"]
+},
+{
+  name: "toggle-right",
+  icon: toggleRight,
+  tags: ["on","off","switch","boolean"],
+  categories: ["layout","account","development"]
+}
 ];
 
 export default ICONS_LIST;
