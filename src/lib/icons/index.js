@@ -473,6 +473,14 @@ import toggleLeft from './toggle-left.svelte';
 import toggleRight from './toggle-right.svelte';
 import send from './send.svelte';
 import sendHorizontal from './send-horizontal.svelte';
+import panelLeftOpen from './panel-left-open.svelte';
+import panelBottomClose from './panel-bottom-close.svelte';
+import panelBottomOpen from './panel-bottom-open.svelte';
+import panelLeftClose from './panel-left-close.svelte';
+import panelRightClose from './panel-right-close.svelte';
+import panelRightOpen from './panel-right-open.svelte';
+import panelTopClose from './panel-top-close.svelte';
+import panelTopOpen from './panel-top-open.svelte';
 
 let ICONS_LIST = [
 	{
@@ -5433,6 +5441,54 @@ let ICONS_LIST = [
   icon: sendHorizontal,
   tags: ["email","message","mail","paper airplane","paper aeroplane","submit"],
   categories: ["mail","communication","connectivity"]
+},
+{
+  name: "panel-left-open",
+  icon: panelLeftOpen,
+  tags: ["primary","drawer","show","reveal","chevron","right",">"],
+  categories: ["layout","arrows"]
+},
+{
+  name: "panel-bottom-close",
+  icon: panelBottomClose,
+  tags: ["drawer","dock","hide","chevron","down"],
+  categories: ["layout","arrows"]
+},
+{
+  name: "panel-bottom-open",
+  icon: panelBottomOpen,
+  tags: ["drawer","dock","show","reveal","chevron","up"],
+  categories: ["layout","arrows"]
+},
+{
+  name: "panel-left-close",
+  icon: panelLeftClose,
+  tags: ["primary","drawer","hide","chevron","<"],
+  categories: ["layout","arrows"]
+},
+{
+  name: "panel-right-close",
+  icon: panelRightClose,
+  tags: ["sidebar","secondary","drawer","hide","chevron",">"],
+  categories: ["layout","arrows"]
+},
+{
+  name: "panel-right-open",
+  icon: panelRightOpen,
+  tags: ["sidebar","secondary","drawer","show","reveal","chevron","left","<"],
+  categories: ["layout","arrows"]
+},
+{
+  name: "panel-top-close",
+  icon: panelTopClose,
+  tags: ["menu bar","drawer","hide","chevron","up"],
+  categories: ["layout","arrows"]
+},
+{
+  name: "panel-top-open",
+  icon: panelTopOpen,
+  tags: ["menu bar","drawer","show","reveal","chevron","down"],
+  categories: ["layout","arrows"]
 }
 ];
 
