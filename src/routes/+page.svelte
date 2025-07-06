@@ -2,7 +2,7 @@
 	import { Button } from '$lib/components/ui/button';
 	import { Input } from '$lib/components/ui/input';
 	import { Badge } from '$lib/components/ui/badge';
-	import { Sun, Moon, Download, Copy, ExternalLink, Check } from 'lucide-svelte';
+	import { Sun, Moon, Download, Copy, ExternalLink, Check } from '@lucide/svelte';
 	import { toggleMode } from 'mode-watcher';
 	import { onMount } from 'svelte';
 	import { downloadIcon, preloadIconSources } from '$lib/utils/icons.js';

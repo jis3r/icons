@@ -1,6 +1,6 @@
 {
-	"name": "movingicons",
-	"version": "0.0.1",
+	"name": "@jis3r/icons",
+	"version": "1.0.1",
 	"description": "beautifully crafted, moving icons. for svelte.",
 	"author": "jis3r",
 	"license": "MIT",
@@ -14,7 +14,8 @@
 		"lint": "prettier --check . && eslint .",
 		"test:unit": "vitest",
 		"test": "npm run test:unit -- --run",
-		"index": "node scripts/indexIcons.js"
+		"index": "node scripts/indexIcons.js",
+		"reexport": "node scripts/generateIconExports.js"
 	},
 	"files": [
 		"dist",
@@ -61,10 +62,10 @@
 		"vitest": "^3.1.1"
 	},
 	"dependencies": {
+		"@lucide/svelte": "^0.525.0",
 		"@number-flow/svelte": "^0.3.6",
 		"@vercel/analytics": "^1.5.0",
 		"iflog": "^0.0.4",
-		"lucide-svelte": "^0.511.0",
 		"mode-watcher": "^0.5.1",
 		"posthog-js": "^1.246.0"
 	},
