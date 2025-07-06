@@ -47,6 +47,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.power-off {
 		overflow: visible;
 		transform: translateX(0);

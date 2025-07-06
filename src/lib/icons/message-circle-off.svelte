@@ -46,6 +46,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.message-circle-off {
 		overflow: visible;
 	}

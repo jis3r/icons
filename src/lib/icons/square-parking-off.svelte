@@ -48,6 +48,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.square-parking-off {
 		overflow: visible;
 	}

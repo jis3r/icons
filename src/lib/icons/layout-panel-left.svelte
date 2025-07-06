@@ -47,6 +47,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.layout-panel-left-icon {
 		overflow: visible;
 	}

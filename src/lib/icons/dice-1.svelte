@@ -45,6 +45,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.dice-1-icon {
 		overflow: visible;
 	}

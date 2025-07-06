@@ -50,6 +50,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.animate-svg {
 		transform-origin: top center;
 		animation: bellRing 0.9s ease-in-out;

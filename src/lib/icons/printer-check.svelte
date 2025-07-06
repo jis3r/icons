@@ -47,6 +47,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.printer-check-icon {
 		overflow: visible;
 	}

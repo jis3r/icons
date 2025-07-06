@@ -63,6 +63,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.grip-horizontal-icon {
 		overflow: visible;
 	}

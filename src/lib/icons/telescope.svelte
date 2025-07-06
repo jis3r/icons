@@ -62,6 +62,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.telescope-icon {
 		transform-origin: center;
 		transition: transform 0.3s ease-in-out;

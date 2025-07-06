@@ -47,6 +47,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.map-pin-check-inside-icon {
 		overflow: visible;
 	}

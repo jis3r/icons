@@ -54,6 +54,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.cpu-icon {
 		overflow: visible;
 	}

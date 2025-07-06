@@ -50,6 +50,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.briefcase-medical-icon {
 		transform-origin: top center;
 		transform-box: fill-box;

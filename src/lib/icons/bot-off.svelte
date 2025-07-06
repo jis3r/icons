@@ -50,6 +50,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.bot-off {
 		overflow: visible;
 		transform: translateX(0);

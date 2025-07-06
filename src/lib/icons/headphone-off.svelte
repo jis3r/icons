@@ -48,6 +48,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.headphone-off {
 		overflow: visible;
 		transform: translateX(0);

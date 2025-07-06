@@ -59,6 +59,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.rocket-icon {
 		overflow: visible;
 		transition: transform 6s ease-in-out;

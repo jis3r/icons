@@ -63,6 +63,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.cog-group {
 		transform-origin: 12px 12px;
 		transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);

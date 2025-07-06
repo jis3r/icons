@@ -48,6 +48,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.list-check-icon {
 		overflow: visible;
 	}

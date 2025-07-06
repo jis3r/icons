@@ -51,6 +51,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.key-square-icon {
 		overflow: visible;
 	}

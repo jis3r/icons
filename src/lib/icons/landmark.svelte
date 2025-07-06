@@ -50,6 +50,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.landmark-icon {
 		overflow: visible;
 	}

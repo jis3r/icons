@@ -58,6 +58,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.clipboard-pen-line-icon {
 		overflow: visible;
 	}

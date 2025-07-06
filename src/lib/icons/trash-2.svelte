@@ -55,6 +55,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.is-animated {
 		transform: translateY(-1px);
 		transition: transform 0.2s ease-in;

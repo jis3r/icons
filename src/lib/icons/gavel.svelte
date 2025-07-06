@@ -49,6 +49,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.gavel-icon {
 		transform-origin: bottom left;
 		transition: transform 0.3s ease;

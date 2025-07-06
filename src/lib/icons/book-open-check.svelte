@@ -48,6 +48,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.book-open-check-icon {
 		overflow: visible;
 	}

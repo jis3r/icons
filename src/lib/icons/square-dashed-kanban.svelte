@@ -58,6 +58,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.square-dashed-kanban-icon {
 		overflow: visible;
 	}

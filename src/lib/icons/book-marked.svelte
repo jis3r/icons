@@ -47,6 +47,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.book-marked-icon {
 		overflow: visible;
 	}

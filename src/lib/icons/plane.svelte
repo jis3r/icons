@@ -72,6 +72,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.plane-icon {
 		--x: 0px;
 		--y: 0px;

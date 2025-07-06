@@ -54,6 +54,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.compass-icon polygon {
 		transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 		transform-origin: center;

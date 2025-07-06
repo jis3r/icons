@@ -48,6 +48,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.book-up-2-icon {
 		overflow: visible;
 	}

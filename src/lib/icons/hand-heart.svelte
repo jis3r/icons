@@ -59,6 +59,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.hand-heart-path {
 		transform-origin: center;
 		transition: transform 0.3s ease;

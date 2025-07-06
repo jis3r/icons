@@ -50,6 +50,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.user-round-pen-icon {
 		overflow: visible;
 	}

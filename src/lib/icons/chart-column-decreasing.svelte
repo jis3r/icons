@@ -53,6 +53,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.chart-column-decreasing-icon {
 		overflow: visible;
 	}

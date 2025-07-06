@@ -45,6 +45,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.check-icon {
 		overflow: visible;
 	}

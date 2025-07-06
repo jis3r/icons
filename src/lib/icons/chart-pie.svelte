@@ -55,6 +55,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.chart-pie-icon {
 		overflow: visible;
 	}

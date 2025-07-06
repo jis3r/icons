@@ -50,6 +50,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.dice-6-icon {
 		overflow: visible;
 	}

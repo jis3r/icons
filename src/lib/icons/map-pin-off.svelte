@@ -50,6 +50,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.map-pin-off {
 		overflow: visible;
 	}

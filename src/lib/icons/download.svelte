@@ -53,6 +53,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	g.animate polyline,
 	g.animate line {
 		transform: translateY(2px);

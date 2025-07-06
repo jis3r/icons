@@ -51,6 +51,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	rect {
 		transition: transform 0.2s ease-in;
 	}

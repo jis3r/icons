@@ -49,6 +49,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.pen-line-icon {
 		overflow: visible;
 	}

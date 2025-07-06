@@ -47,6 +47,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.book-lock-icon {
 		overflow: visible;
 	}

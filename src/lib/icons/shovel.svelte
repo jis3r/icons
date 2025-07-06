@@ -47,6 +47,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.shovel-icon {
 		transition: transform 0.3s ease;
 	}

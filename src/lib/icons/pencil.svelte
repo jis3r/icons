@@ -49,6 +49,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.pencil-icon {
 		overflow: visible;
 		transform: rotate(0deg);

@@ -55,6 +55,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.swap-group-up,
 	.swap-group-down {
 		transform: translateY(0);

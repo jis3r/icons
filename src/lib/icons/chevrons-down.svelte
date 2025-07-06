@@ -46,6 +46,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.chevrons-down-icon {
 		overflow: visible;
 		transition: all 0.2s ease-in;

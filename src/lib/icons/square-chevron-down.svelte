@@ -46,6 +46,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.square-chevron-down {
 		overflow: visible;
 	}

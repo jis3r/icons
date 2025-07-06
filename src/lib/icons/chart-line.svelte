@@ -46,6 +46,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.chart-line-icon {
 		overflow: visible;
 	}

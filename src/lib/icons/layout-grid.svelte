@@ -48,6 +48,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.layout-grid-icon {
 		overflow: visible;
 	}

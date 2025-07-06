@@ -47,6 +47,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.shopping-cart-icon {
 		transition: transform 0.2s ease-in-out;
 		transform-origin: center;

@@ -63,6 +63,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.copy-rect,
 	.copy-path {
 		transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);

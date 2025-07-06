@@ -47,6 +47,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.line {
 		stroke-dasharray: 50;
 		stroke-dashoffset: 0;

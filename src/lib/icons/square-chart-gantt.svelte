@@ -47,6 +47,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.square-chart-gantt-icon {
 		overflow: visible;
 	}

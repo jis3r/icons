@@ -50,6 +50,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.rabbit-icon.animate {
 		animation: rabbitHop 0.8s ease-in-out;
 	}

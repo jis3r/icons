@@ -51,6 +51,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.paintbrush-icon {
 		transform-origin: top right;
 	}

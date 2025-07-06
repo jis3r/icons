@@ -52,6 +52,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.send-horizontal-icon {
 		overflow: hidden;
 	}

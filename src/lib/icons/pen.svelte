@@ -48,6 +48,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.pen-icon {
 		overflow: visible;
 		transform: rotate(0deg);

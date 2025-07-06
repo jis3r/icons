@@ -59,6 +59,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.rotate-ccw-key-icon,
 	.arrow,
 	.key {

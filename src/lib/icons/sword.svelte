@@ -48,6 +48,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.sword-icon {
 		transform-origin: bottom right;
 		transition: transform 0.3s ease;

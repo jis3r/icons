@@ -50,6 +50,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	path {
 		transition: transform 0.3s ease;
 	}

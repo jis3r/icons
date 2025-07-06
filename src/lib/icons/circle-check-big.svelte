@@ -45,6 +45,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.circle-check-big-icon {
 		overflow: visible;
 	}

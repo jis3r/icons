@@ -48,6 +48,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.calendar-check-2-icon {
 		overflow: visible;
 	}

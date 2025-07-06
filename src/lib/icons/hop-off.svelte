@@ -57,6 +57,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.hop-off {
 		overflow: visible;
 	}

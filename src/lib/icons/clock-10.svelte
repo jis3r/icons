@@ -51,6 +51,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.minute-hand,
 	.hour-hand {
 		transform-origin: center;

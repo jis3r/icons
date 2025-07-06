@@ -46,6 +46,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.spell-check-icon {
 		overflow: visible;
 	}

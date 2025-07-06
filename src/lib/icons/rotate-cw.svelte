@@ -52,6 +52,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.rotate-cw-icon {
 		transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 		transform-origin: center;

@@ -50,6 +50,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.package-check-icon {
 		overflow: visible;
 	}

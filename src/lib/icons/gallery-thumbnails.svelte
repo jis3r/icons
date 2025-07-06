@@ -48,6 +48,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.gallery-thumbnails-icon {
 		overflow: visible;
 	}

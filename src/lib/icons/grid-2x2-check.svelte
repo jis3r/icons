@@ -47,6 +47,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.grid-2x2-check-icon {
 		overflow: visible;
 	}

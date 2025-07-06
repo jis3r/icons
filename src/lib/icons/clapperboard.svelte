@@ -52,6 +52,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.clapperboard-icon {
 		overflow: visible;
 	}

@@ -48,6 +48,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.file-chart-column-icon {
 		overflow: visible;
 	}

@@ -66,6 +66,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.grip-icon {
 		overflow: visible;
 	}

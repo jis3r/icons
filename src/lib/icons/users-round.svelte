@@ -58,6 +58,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.users-round-icon {
 		overflow: hidden;
 	}

@@ -53,6 +53,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.file-chart-column-increasing-icon {
 		overflow: visible;
 	}

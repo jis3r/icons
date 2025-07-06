@@ -47,6 +47,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.monitor-check-icon {
 		overflow: visible;
 	}

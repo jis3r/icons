@@ -57,6 +57,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.wheat-off {
 		overflow: visible;
 	}

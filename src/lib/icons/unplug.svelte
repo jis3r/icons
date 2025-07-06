@@ -62,6 +62,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	svg {
 		overflow: visible;
 	}

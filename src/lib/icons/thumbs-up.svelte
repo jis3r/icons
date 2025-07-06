@@ -53,6 +53,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.animate {
 		transform: translate(-1px, -2px) rotate(-12deg);
 		transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);

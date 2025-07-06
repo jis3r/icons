@@ -54,6 +54,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.message-circle-more-icon {
 		overflow: visible;
 	}

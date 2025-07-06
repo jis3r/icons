@@ -58,6 +58,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.unfold-horizontal-icon {
 		overflow: visible;
 	}

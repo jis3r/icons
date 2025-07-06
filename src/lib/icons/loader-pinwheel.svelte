@@ -49,6 +49,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.loader-pinwheel-icon {
 		overflow: visible;
 	}

@@ -49,6 +49,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.list-checks-icon {
 		overflow: visible;
 	}

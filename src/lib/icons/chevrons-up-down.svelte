@@ -45,6 +45,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.chevrons-up-down-icon {
 		overflow: visible;
 	}

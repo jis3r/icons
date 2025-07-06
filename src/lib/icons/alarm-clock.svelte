@@ -62,6 +62,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.alarm-clock-icon {
 		overflow: visible;
 	}

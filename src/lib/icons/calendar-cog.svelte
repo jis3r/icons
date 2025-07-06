@@ -64,6 +64,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.calendar-cog-icon {
 		overflow: visible;
 	}

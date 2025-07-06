@@ -51,6 +51,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.hand-coins-icon {
 		overflow: visible;
 	}

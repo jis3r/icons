@@ -54,6 +54,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.wave {
 		fill: none;
 		stroke-dasharray: 23;

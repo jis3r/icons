@@ -46,6 +46,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.search-check-icon {
 		overflow: visible;
 	}

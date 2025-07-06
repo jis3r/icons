@@ -67,6 +67,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.dot {
 		opacity: 1;
 		transition: opacity 0.2s;

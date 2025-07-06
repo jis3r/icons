@@ -54,6 +54,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.arrow {
 		transform-origin: center;
 		transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);

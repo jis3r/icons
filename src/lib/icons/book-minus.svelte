@@ -47,6 +47,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.book-minus-icon {
 		overflow: visible;
 	}

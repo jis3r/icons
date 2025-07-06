@@ -52,6 +52,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.toggle-left-icon {
 		overflow: visible;
 	}

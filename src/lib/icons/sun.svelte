@@ -59,6 +59,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.sun-icon {
 		overflow: visible;
 	}

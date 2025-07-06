@@ -46,6 +46,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.user-round-check-icon {
 		overflow: visible;
 	}

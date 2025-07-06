@@ -45,6 +45,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.vibrate-rect {
 		transform: rotate(0deg);
 		transition: transform 0.4s ease;

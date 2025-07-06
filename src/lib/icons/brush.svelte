@@ -47,6 +47,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.brush-icon {
 		transform-origin: top right;
 	}

@@ -47,6 +47,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.bolt-icon.animate {
 		animation: screw 1s ease 3;
 	}

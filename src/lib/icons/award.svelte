@@ -48,6 +48,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.award-icon {
 		transform-origin: center;
 		transition: all 0.5s ease-in-out;

@@ -47,6 +47,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.satellite-dish-icon {
 		overflow: visible;
 	}

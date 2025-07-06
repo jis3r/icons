@@ -51,6 +51,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.orbit-icon {
 		transform-origin: center center;
 		transition: transform 1s ease-in-out;

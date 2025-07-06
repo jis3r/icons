@@ -48,6 +48,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.line {
 		transition: transform 0.3s ease;
 		transform-origin: center;

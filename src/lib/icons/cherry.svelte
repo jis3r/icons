@@ -49,6 +49,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.cherry-icon {
 		overflow: visible;
 	}

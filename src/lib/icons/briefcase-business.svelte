@@ -48,6 +48,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.briefcase-business-icon {
 		transform-origin: top center;
 		transform-box: fill-box;

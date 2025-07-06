@@ -53,6 +53,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.redo-dot-icon {
 		transform-origin: 14px 20px;
 		transition: transform 0.3s ease;

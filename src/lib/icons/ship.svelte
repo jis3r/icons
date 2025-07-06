@@ -60,6 +60,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.ship-icon {
 		overflow: visible;
 	}

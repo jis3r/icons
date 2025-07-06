@@ -45,6 +45,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.arc-1 {
 		fill: none;
 		stroke-dasharray: 32;

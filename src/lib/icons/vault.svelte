@@ -62,6 +62,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.vault-icon {
 		overflow: visible;
 	}

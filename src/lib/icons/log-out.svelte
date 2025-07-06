@@ -45,6 +45,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.animate {
 		animation: bounce 0.4s forwards;
 	}

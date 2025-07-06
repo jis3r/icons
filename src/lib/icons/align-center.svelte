@@ -45,6 +45,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.animate-path {
 		animation: translateAnimation 1s linear;
 	}

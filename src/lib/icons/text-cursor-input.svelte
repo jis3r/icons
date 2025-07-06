@@ -56,6 +56,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.text-cursor-input-icon {
 		overflow: visible;
 	}

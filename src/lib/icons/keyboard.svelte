@@ -64,6 +64,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.keyboard-icon {
 		overflow: visible;
 	}

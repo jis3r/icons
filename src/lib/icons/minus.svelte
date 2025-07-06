@@ -44,6 +44,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.minus {
 		overflow: visible;
 	}

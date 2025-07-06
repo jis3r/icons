@@ -48,6 +48,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.book-image-icon {
 		overflow: visible;
 	}

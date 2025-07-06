@@ -61,6 +61,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.eclipse-icon {
 		overflow: visible;
 	}

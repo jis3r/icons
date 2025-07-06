@@ -47,6 +47,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.square-stack-icon {
 		overflow: visible;
 	}

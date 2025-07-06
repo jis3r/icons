@@ -48,6 +48,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.drum {
 		transform-origin: center 13px;
 		transition: transform 1s ease-in-out;

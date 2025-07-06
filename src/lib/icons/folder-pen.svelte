@@ -51,6 +51,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.folder-pen-icon {
 		overflow: visible;
 	}

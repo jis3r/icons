@@ -45,6 +45,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.square-check-big-icon {
 		overflow: visible;
 	}

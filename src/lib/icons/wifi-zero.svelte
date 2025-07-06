@@ -45,6 +45,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.wifi-icon {
 		overflow: visible;
 	}

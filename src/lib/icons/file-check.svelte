@@ -46,6 +46,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.file-check-icon {
 		overflow: visible;
 	}

@@ -56,6 +56,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.audio-lines-icon {
 		overflow: visible;
 	}

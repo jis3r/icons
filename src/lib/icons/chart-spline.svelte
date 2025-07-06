@@ -46,6 +46,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.chart-spline-icon {
 		overflow: visible;
 	}

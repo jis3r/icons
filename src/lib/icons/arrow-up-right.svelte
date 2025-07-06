@@ -44,6 +44,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	path {
 		transition: all 0.2s ease-out;
 	}

@@ -48,6 +48,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.chart-bar-decreasing-icon {
 		overflow: visible;
 	}

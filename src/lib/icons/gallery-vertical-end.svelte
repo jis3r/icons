@@ -45,6 +45,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	path {
 		transition:
 			transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),

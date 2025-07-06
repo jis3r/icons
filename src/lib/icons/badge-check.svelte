@@ -48,6 +48,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.badge-check-icon {
 		overflow: visible;
 	}

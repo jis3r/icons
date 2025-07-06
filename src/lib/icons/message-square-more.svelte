@@ -54,6 +54,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.message-square-more-icon {
 		overflow: visible;
 	}

@@ -46,6 +46,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.navigation-2-off {
 		overflow: visible;
 	}

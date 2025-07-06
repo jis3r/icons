@@ -56,6 +56,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.users-icon {
 		overflow: visible;
 	}

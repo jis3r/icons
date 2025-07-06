@@ -48,6 +48,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.shield-check-icon {
 		overflow: visible;
 	}

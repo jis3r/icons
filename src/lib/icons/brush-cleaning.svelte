@@ -50,6 +50,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.brush-cleaning-icon {
 		transform-origin: top center;
 		transition: transform 0.6s ease-in-out;

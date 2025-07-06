@@ -47,6 +47,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.circle-parking-off {
 		overflow: visible;
 	}

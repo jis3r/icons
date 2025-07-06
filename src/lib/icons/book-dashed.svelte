@@ -54,6 +54,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.book-dashed-icon {
 		overflow: visible;
 	}

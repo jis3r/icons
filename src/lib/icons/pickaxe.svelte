@@ -54,6 +54,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.pickaxe-icon {
 		transform-origin: bottom left;
 		transition: transform 0.3s ease;

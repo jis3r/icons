@@ -48,6 +48,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.layout-dashboard-icon {
 		overflow: visible;
 	}

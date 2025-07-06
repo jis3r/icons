@@ -58,6 +58,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.sync-arrows {
 		transform-origin: center;
 		transform-box: fill-box;

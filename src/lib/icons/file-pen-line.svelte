@@ -58,6 +58,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.file-pen-line-icon {
 		overflow: visible;
 	}

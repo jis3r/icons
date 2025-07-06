@@ -53,6 +53,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.text-cursor-icon {
 		overflow: visible;
 	}

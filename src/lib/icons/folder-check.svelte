@@ -47,6 +47,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.folder-check-icon {
 		overflow: visible;
 	}

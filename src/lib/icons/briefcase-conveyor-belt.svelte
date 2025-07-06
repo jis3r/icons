@@ -58,6 +58,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.briefcase-group {
 		transform-origin: top center;
 		transform-box: fill-box;

@@ -48,6 +48,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.key-round-icon {
 		transform-origin: center;
 		transition: transform 0.3s ease;

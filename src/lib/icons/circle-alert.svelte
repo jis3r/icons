@@ -48,6 +48,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.animate-icon {
 		animation: primaryAnimation 0.5s ease-in-out;
 	}

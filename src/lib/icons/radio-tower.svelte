@@ -51,6 +51,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.radio-tower-icon {
 		overflow: visible;
 	}

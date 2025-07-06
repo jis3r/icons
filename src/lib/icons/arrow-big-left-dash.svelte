@@ -41,6 +41,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	svg path {
 		transition: transform 0.2s ease-out;
 	}

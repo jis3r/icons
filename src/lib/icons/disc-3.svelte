@@ -48,6 +48,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.disc3-icon {
 		transform-origin: center center;
 		transition: transform 1s ease-in-out;

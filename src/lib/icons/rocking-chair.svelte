@@ -48,6 +48,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.rocking-chair-icon {
 		overflow: visible;
 		transform-origin: bottom;

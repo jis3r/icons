@@ -47,6 +47,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.rotate-animation {
 		transform-origin: top left;
 		animation: rotateAnimation 0.5s ease-in-out;

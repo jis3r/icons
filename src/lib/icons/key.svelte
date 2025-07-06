@@ -52,6 +52,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	svg {
 		transform-origin: center;
 		transform: rotate(0deg);

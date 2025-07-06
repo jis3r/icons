@@ -58,6 +58,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.unfold-vertical-icon {
 		overflow: visible;
 	}

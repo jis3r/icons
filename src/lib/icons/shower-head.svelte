@@ -68,6 +68,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.shower-head-icon {
 		overflow: visible;
 	}
