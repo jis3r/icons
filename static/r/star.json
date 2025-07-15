@@ -1,0 +1,15 @@
+{
+	"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+	"name": "star",
+	"title": "star",
+	"type": "registry:component",
+	"author": "jis3r <jis3r@protonmail.com>",
+	"description": "The animated star icon component.",
+	"files": [
+		{
+			"content": "<script>\n\t/**\n\t * @typedef {Object} Props\n\t * @property {string} [color]\n\t * @property {number} [size]\n\t * @property {number} [strokeWidth]\n\t * @property {boolean} [isHovered]\n\t * @property {string} [class]\n\t */\n\n\t/** @type {Props} */\n\tlet {\n\t\tcolor = 'currentColor',\n\t\tsize = 24,\n\t\tstrokeWidth = 2,\n\t\tisHovered = false,\n\t\tclass: className = ''\n\t} = $props();\n\n\tfunction handleMouseEnter() {\n\t\tisHovered = true;\n\n\t\tsetTimeout(() => {\n\t\t\tisHovered = false;\n\t\t}, 600);\n\t}\n</script>\n\n<div class={className} aria-label=\"star\" role=\"img\" onmouseenter={handleMouseEnter}>\n\t<svg\n\t\txmlns=\"http://www.w3.org/2000/svg\"\n\t\twidth={size}\n\t\theight={size}\n\t\tviewBox=\"0 0 24 24\"\n\t\tfill=\"none\"\n\t\tstroke={color}\n\t\tstroke-width={strokeWidth}\n\t\tstroke-linecap=\"round\"\n\t\tstroke-linejoin=\"round\"\n\t\tclass=\"star-icon\"\n\t>\n\t\t<g class:animate-group={isHovered}>\n\t\t\t<path\n\t\t\t\td=\"M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z\"\n\t\t\t/>\n\t\t</g>\n\t</svg>\n</div>\n\n<style>\n\tdiv {\n\t\tdisplay: inline-block;\n\t}\n\t.star-icon {\n\t\toverflow: visible;\n\t}\n\n\t.animate-group {\n\t\ttransform-origin: center;\n\t\tanimation: groupAnimation 0.6s ease-in-out;\n\t}\n\n\t@keyframes groupAnimation {\n\t\t0% {\n\t\t\ttransform: scale(1);\n\t\t}\n\t\t33% {\n\t\t\ttransform: scale(0.9);\n\t\t}\n\t\t66% {\n\t\t\ttransform: scale(1.2);\n\t\t}\n\t\t100% {\n\t\t\ttransform: scale(1);\n\t\t}\n\t}\n</style>\n",
+			"type": "registry:component",
+			"target": "~/src/lib/components/movingicons/star.svelte"
+		}
+	]
+}

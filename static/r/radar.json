@@ -1,0 +1,15 @@
+{
+	"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+	"name": "radar",
+	"title": "radar",
+	"type": "registry:component",
+	"author": "jis3r <jis3r@protonmail.com>",
+	"description": "The animated radar icon component.",
+	"files": [
+		{
+			"content": "<script>\n\t/**\n\t * @typedef {Object} Props\n\t * @property {string} [color]\n\t * @property {number} [size]\n\t * @property {number} [strokeWidth]\n\t * @property {boolean} [isHovered]\n\t * @property {string} [class]\n\t */\n\n\t/** @type {Props} */\n\tlet {\n\t\tcolor = 'currentColor',\n\t\tsize = 24,\n\t\tstrokeWidth = 2,\n\t\tisHovered = false,\n\t\tclass: className = ''\n\t} = $props();\n\n\tfunction handleMouseEnter() {\n\t\tisHovered = true;\n\n\t\tsetTimeout(() => {\n\t\t\tisHovered = false;\n\t\t}, 2000);\n\t}\n</script>\n\n<div class={className} aria-label=\"radar\" role=\"img\" onmouseenter={handleMouseEnter}>\n\t<svg\n\t\txmlns=\"http://www.w3.org/2000/svg\"\n\t\twidth={size}\n\t\theight={size}\n\t\tviewBox=\"0 0 24 24\"\n\t\tfill=\"none\"\n\t\tstroke={color}\n\t\tstroke-width={strokeWidth}\n\t\tstroke-linecap=\"round\"\n\t\tstroke-linejoin=\"round\"\n\t>\n\t\t<path d=\"M19.07 4.93A10 10 0 0 0 6.99 3.34\" />\n\t\t<path d=\"M4 6h.01\" />\n\t\t<path d=\"M2.29 9.62A10 10 0 1 0 21.31 8.35\" />\n\t\t<path d=\"M16.24 7.76A6 6 0 1 0 8.23 16.67\" />\n\t\t<path d=\"M12 18h.01\" />\n\t\t<path d=\"M17.99 11.66A6 6 0 0 1 15.77 16.67\" />\n\t\t<circle cx=\"12\" cy=\"12\" r=\"2\" />\n\t\t<path d=\"m13.41 10.59 5.66-5.66\" class=\"radar-icon\" class:animate={isHovered} />\n\t</svg>\n</div>\n\n<style>\n\tdiv {\n\t\tdisplay: inline-block;\n\t}\n\t.radar-icon {\n\t\ttransform-origin: center center;\n\t\ttransition: transform 1s ease-in-out;\n\t}\n\n\t.radar-icon.animate {\n\t\tanimation: rotate-path 2s linear;\n\t}\n\n\t@keyframes rotate-path {\n\t\t0% {\n\t\t\ttransform: rotate(0deg);\n\t\t}\n\t\t100% {\n\t\t\ttransform: rotate(720deg);\n\t\t}\n\t}\n</style>\n",
+			"type": "registry:component",
+			"target": "~/src/lib/components/movingicons/radar.svelte"
+		}
+	]
+}

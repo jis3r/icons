@@ -1,6 +1,6 @@
 {
 	"name": "@jis3r/icons",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "beautifully crafted, moving icons. for svelte.",
 	"author": "jis3r",
 	"license": "MIT",
@@ -15,7 +15,8 @@
 		"test:unit": "vitest",
 		"test": "npm run test:unit -- --run",
 		"index": "node scripts/indexIcons.js",
-		"reexport": "node scripts/generateIconExports.js"
+		"reexport": "node scripts/generateIconExports.js",
+		"registry:build": "node scripts/updateRegistry.js && shadcn-svelte registry build"
 	},
 	"files": [
 		"dist",
@@ -67,7 +68,8 @@
 		"@vercel/analytics": "^1.5.0",
 		"iflog": "^0.0.4",
 		"mode-watcher": "^0.5.1",
-		"posthog-js": "^1.246.0"
+		"posthog-js": "^1.246.0",
+		"shadcn-svelte": "^1.0.6"
 	},
 	"overrides": {
 		"cookie": "0.7.0"

@@ -7,9 +7,23 @@
 
 ## Installation
 
+### 1. Install via npm
+
 ```bash
-npm install @jis3r/icons
+npm i @jis3r/icons
 ```
+
+### 2. Add via shadcn-svelte registry
+
+You can add icons to your project using the [shadcn registry](https://www.shadcn-svelte.com). Ensure shadcn-svelte is installed. To add an icon, simply copy the command from the website and run it in your terminal. Icons will be added to your project in the `src/lib/components/movingicons` directory.
+
+```bash
+npm npx shadcn-svelte@latest add https://movingicons.dev/r/[icon-name]
+```
+
+### 3. Copy from Website
+
+You can download or copy icon components directly from [https://movingicons.dev](https://movingicons.dev) and paste them into your Svelte project.
 
 ## Usage
 
@@ -50,4 +64,4 @@ This project is a work in progress, and i'm continuously working to improve and 
 
 ## Credits
 
-Thank you to the awesome [Dmytro](https://twitter.com/pqoqubbw) 💜 for the idea and inspiration to animated lucide-icons! I loved his project so much that I wanted to make it available for the svelte ecosystem, so here we go! :)
+Thank you to the awesome [Dmytro](https://twitter.com/pqoqubbw) 💜 for the idea and inspiration to animated lucide-icons! I loved his project so much that I wanted to make it available for the Svelte ecosystem, so here we go! :)

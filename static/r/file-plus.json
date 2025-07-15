@@ -1,0 +1,15 @@
+{
+	"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+	"name": "file-plus",
+	"title": "file-plus",
+	"type": "registry:component",
+	"author": "jis3r <jis3r@protonmail.com>",
+	"description": "The animated file-plus icon component.",
+	"files": [
+		{
+			"content": "<script>\n\t/**\n\t * @typedef {Object} Props\n\t * @property {string} [color]\n\t * @property {number} [size]\n\t * @property {number} [strokeWidth]\n\t * @property {boolean} [isHovered]\n\t * @property {string} [class]\n\t */\n\n\t/** @type {Props} */\n\tlet {\n\t\tcolor = 'currentColor',\n\t\tsize = 24,\n\t\tstrokeWidth = 2,\n\t\tisHovered = false,\n\t\tclass: className = ''\n\t} = $props();\n\n\tfunction handleMouseEnter() {\n\t\tisHovered = true;\n\t\tsetTimeout(() => {\n\t\t\tisHovered = false;\n\t\t}, 500);\n\t}\n</script>\n\n<div class={className} aria-label=\"file-plus\" role=\"img\" onmouseenter={handleMouseEnter}>\n\t<svg\n\t\txmlns=\"http://www.w3.org/2000/svg\"\n\t\twidth={size}\n\t\theight={size}\n\t\tviewBox=\"0 0 24 24\"\n\t\tfill=\"none\"\n\t\tstroke={color}\n\t\tstroke-width={strokeWidth}\n\t\tstroke-linecap=\"round\"\n\t\tstroke-linejoin=\"round\"\n\t\tclass=\"file-plus\"\n\t\tclass:animate={isHovered}\n\t>\n\t\t<path d=\"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z\" class=\"file\" />\n\t\t<path d=\"M14 2v4a2 2 0 0 0 2 2h4\" class=\"file\" />\n\t\t<path d=\"M9 15h6\" class=\"horizontal\" />\n\t\t<path d=\"M12 12v6\" class=\"vertical\" />\n\t</svg>\n</div>\n\n<style>\n\tdiv {\n\t\tdisplay: inline-block;\n\t}\n\t.file-plus {\n\t\toverflow: visible;\n\t}\n\n\t.horizontal,\n\t.vertical {\n\t\tstroke-dasharray: 8;\n\t\tstroke-dashoffset: 0;\n\t\ttransition: stroke-dashoffset 0.15s ease-out;\n\t}\n\n\t.file-plus.animate .horizontal {\n\t\topacity: 0;\n\t\tanimation: lineAnimation 0.3s ease-out forwards;\n\t}\n\n\t.file-plus.animate .vertical {\n\t\topacity: 0;\n\t\tanimation: lineAnimation 0.3s ease-out 0.25s forwards;\n\t}\n\n\t@keyframes lineAnimation {\n\t\t0% {\n\t\t\topacity: 0;\n\t\t\tstroke-dashoffset: 8;\n\t\t}\n\t\t15% {\n\t\t\topacity: 1;\n\t\t\tstroke-dashoffset: 8;\n\t\t}\n\t\t100% {\n\t\t\topacity: 1;\n\t\t\tstroke-dashoffset: 0;\n\t\t}\n\t}\n</style>\n",
+			"type": "registry:component",
+			"target": "~/src/lib/components/movingicons/file-plus.svelte"
+		}
+	]
+}
