@@ -68,6 +68,7 @@
 		"@vercel/analytics": "^1.5.0",
 		"iflog": "^0.0.4",
 		"mode-watcher": "^0.5.1",
+		"motion": "^12.23.6",
 		"posthog-js": "^1.246.0",
 		"shadcn-svelte": "^1.0.6"
 	},

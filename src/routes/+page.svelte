@@ -8,9 +8,9 @@
 	import { downloadIcon, preloadIconSources } from '$lib/utils/icons.js';
 	import ICONS_LIST from '$lib/icons/index.js';
 	import Github from '$lib/components/github.svelte';
-	import { fade } from 'svelte/transition';
 	import NumberFlow from '@number-flow/svelte';
 	import { debounce } from '$lib/utils/debounce';
+	import { animate } from 'motion';
 
 	let stars = $state(0);
 	let iconsAdded = $state(0);
@@ -67,6 +67,37 @@
 				console.error('Failed to download icon:', err);
 			});
 	};
+
+	function animateIcon(node, { visible }) {
+		let animation;
+		const show = () => {
+			animation = animate(
+				node,
+				{ opacity: [0, 1], scale: [0, 1] },
+				{ duration: 0.25, easing: 'ease-out' }
+			);
+		};
+		const hide = () => {
+			animation = animate(
+				node,
+				{ opacity: [1, 0], scale: [1, 0] },
+				{ duration: 0.25, easing: 'ease-in' }
+			);
+		};
+
+		if (visible) show();
+		else hide();
+
+		return {
+			update({ visible }) {
+				if (visible) show();
+				else hide();
+			},
+			destroy() {
+				if (animation) animation.cancel();
+			}
+		};
+	}
 
 	onMount(async () => {
 		try {
@@ -212,46 +243,46 @@
 								{size}
 								{color}
 								{strokeWidth}
-								class="flex cursor-pointer select-none items-center justify-center rounded-md p-2 transition-colors duration-200 hover:bg-accent"
+								class="flex select-none items-center justify-center rounded-md p-2 transition-colors duration-200 hover:bg-accent"
 							/>
 							<p class="mb-3 mt-5 text-center text-xs text-muted-foreground">{icon.name}</p>
 							<div class="flex items-center justify-center gap-2">
 								<Button
 									onclick={() => handleCopy(icon)}
 									variant="ghost"
-									class="size-8 cursor-pointer rounded-md p-2 transition-colors duration-200 hover:bg-accent"
+									class="size-8 rounded-md p-2 transition-colors duration-200 hover:bg-accent"
 								>
-									{#if icon.copied}
-										<div in:fade={{ duration: 150 }}>
-											<Check class="h-4 w-4" />
-										</div>
-									{:else}
-										<div in:fade={{ duration: 150 }}>
-											<Copy class="h-4 w-4" />
-										</div>
-									{/if}
+									{#key icon.copied}
+										<span use:animateIcon={{ visible: true }} style="display: inline-block;">
+											{#if icon.copied}
+												<Check class="h-4 w-4" />
+											{:else}
+												<Copy class="h-4 w-4" />
+											{/if}
+										</span>
+									{/key}
 								</Button>
 								<Button
 									onclick={() => handleDownload(icon)}
 									variant="ghost"
-									class="size-8 cursor-pointer rounded-md p-2 transition-colors duration-200 hover:bg-accent"
+									class="size-8 rounded-md p-2 transition-colors duration-200 hover:bg-accent"
 								>
-									{#if icon.downloaded}
-										<div in:fade={{ duration: 150 }}>
-											<Check class="h-4 w-4" />
-										</div>
-									{:else}
-										<div in:fade={{ duration: 150 }}>
-											<Download class="h-4 w-4" />
-										</div>
-									{/if}
+									{#key icon.downloaded}
+										<span use:animateIcon={{ visible: true }} style="display: inline-block;">
+											{#if icon.downloaded}
+												<Check class="h-4 w-4" />
+											{:else}
+												<Download class="h-4 w-4" />
+											{/if}
+										</span>
+									{/key}
 								</Button>
 								<Button
 									href={'https://github.com/jis3r/icons/blob/master/src/lib/icons/' +
 										icon.name +
 										'.svelte'}
 									variant="ghost"
-									class="size-8 cursor-pointer rounded-md p-2 transition-colors duration-200 hover:bg-accent"
+									class="size-8 rounded-md p-2 transition-colors duration-200 hover:bg-accent"
 								>
 									<ExternalLink class="h-4 w-4" />
 								</Button>
