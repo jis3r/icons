@@ -9,41 +9,41 @@ const REGISTRY_NAME = '@jis3r/icons';
 const REGISTRY_HOMEPAGE = 'https://movingicons.dev';
 
 async function main() {
-  const files = await fs.readdir(ICONS_DIR);
-  const iconFiles = files.filter(f => f.endsWith('.svelte'));
+	const files = await fs.readdir(ICONS_DIR);
+	const iconFiles = files.filter((f) => f.endsWith('.svelte'));
 
-  const items = iconFiles.map(filename => {
-    const name = filename.replace(/\.svelte$/, '');
-    return {
-      $schema: REGISTRY_ITEM_SCHEMA,
-      name,
-      title: name,
-      type: 'registry:component',
-      description: `The animated ${name} icon component.`,
-      author: "jis3r <jis3r@protonmail.com>",
-      files: [
-        {
-          path: `./${ICONS_DIR}/${filename}`,
-          type: 'registry:component',
-          target: `~/src/lib/components/movingicons/${filename}`
-        }
-      ],
-      registryDependencies: []
-    };
-  });
+	const items = iconFiles.map((filename) => {
+		const name = filename.replace(/\.svelte$/, '');
+		return {
+			$schema: REGISTRY_ITEM_SCHEMA,
+			name,
+			title: name,
+			type: 'registry:component',
+			description: `The animated ${name} icon component.`,
+			author: 'jis3r <jis3r@protonmail.com>',
+			files: [
+				{
+					path: `./${ICONS_DIR}/${filename}`,
+					type: 'registry:component',
+					target: `~/src/lib/components/movingicons/${filename}`
+				}
+			],
+			registryDependencies: []
+		};
+	});
 
-  const registry = {
-    $schema: REGISTRY_SCHEMA,
-    name: REGISTRY_NAME,
-    homepage: REGISTRY_HOMEPAGE,
-    items
-  };
+	const registry = {
+		$schema: REGISTRY_SCHEMA,
+		name: REGISTRY_NAME,
+		homepage: REGISTRY_HOMEPAGE,
+		items
+	};
 
-  await fs.writeFile(REGISTRY_PATH, JSON.stringify(registry, null, 2));
-  console.log(`registry.json updated with ${items.length} icons.`);
+	await fs.writeFile(REGISTRY_PATH, JSON.stringify(registry, null, 2));
+	console.log(`registry.json updated with ${items.length} icons.`);
 }
 
-main().catch(e => {
-  console.error(e);
-  process.exit(1);
-}); 
+main().catch((e) => {
+	console.error(e);
+	process.exit(1);
+});
