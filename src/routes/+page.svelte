@@ -2,7 +2,7 @@
 	import { Button } from '$lib/components/ui/button';
 	import { Input } from '$lib/components/ui/input';
 	import { Badge } from '$lib/components/ui/badge';
-	import { Sun, Moon, Download, Copy, ExternalLink, Check } from '@lucide/svelte';
+	import { Sun, Moon, Download, Copy, ExternalLink, Check, Terminal } from '@lucide/svelte';
 	import { toggleMode } from 'mode-watcher';
 	import { onMount } from 'svelte';
 	import { downloadIcon, preloadIconSources } from '$lib/utils/icons.js';
@@ -66,6 +66,27 @@
 			.catch((err) => {
 				console.error('Failed to download icon:', err);
 			});
+	};
+
+	const handleTerminalCopy = (icon) => {
+		try {
+			if (!icon.source) {
+				console.error('Icon source not available:', icon.name);
+				return;
+			}
+
+			const command = `npx shadcn-svelte@latest add https://movingicons.dev/r/${icon.name}.json`;
+			navigator.clipboard.writeText(command).catch((err) => {
+				console.error('Failed to copy terminal command to clipboard:', err);
+			});
+
+			icon.terminalCopied = true;
+			setTimeout(() => {
+				icon.terminalCopied = false;
+			}, 1500);
+		} catch (err) {
+			console.error('Failed to copy terminal command:', err);
+		}
 	};
 
 	function animateIcon(node, { visible }) {
@@ -277,14 +298,31 @@
 										</span>
 									{/key}
 								</Button>
+								{#if false}
+									<Button
+										href={'https://github.com/jis3r/icons/blob/master/src/lib/icons/' +
+											icon.name +
+											'.svelte'}
+										variant="ghost"
+										class="size-8 rounded-md p-2 transition-colors duration-200 hover:bg-accent"
+									>
+										<ExternalLink class="h-4 w-4" />
+									</Button>
+								{/if}
 								<Button
-									href={'https://github.com/jis3r/icons/blob/master/src/lib/icons/' +
-										icon.name +
-										'.svelte'}
+									onclick={() => handleTerminalCopy(icon)}
 									variant="ghost"
 									class="size-8 rounded-md p-2 transition-colors duration-200 hover:bg-accent"
 								>
-									<ExternalLink class="h-4 w-4" />
+									{#key icon.terminalCopied}
+										<span use:animateIcon={{ visible: true }} style="display: inline-block;">
+											{#if icon.terminalCopied}
+												<Check class="h-4 w-4" />
+											{:else}
+												<Terminal class="h-4 w-4" />
+											{/if}
+										</span>
+									{/key}
 								</Button>
 							</div>
 						</div>
