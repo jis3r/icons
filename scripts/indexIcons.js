@@ -11,8 +11,9 @@
  *    (the imported Svelte component), tags, and categories.
  *  - The icon property is inserted as the second property in the object.
  *  - The script then reads "src/lib/icons/index.js" and checks whether the icon already exists.
- *  - If the icon does not exist, it appends the new icon object to the ICONS_LIST array,
- *    and also adds an import statement at the top of the file for the corresponding Svelte component.
+ *  - If the icon does not exist, it adds the new icon object to the ICONS_LIST array,
+ *    maintaining alphabetical order by name.
+ *  - The script also adds an import statement at the top of the file for the corresponding Svelte component.
  *
  * Import variable names are converted to camelCase.
  */
@@ -158,37 +159,61 @@ function updateIconsIndex() {
 			indexContent = lines.join('\n');
 		}
 
-		// Now, append new icon entries to the ICONS_LIST array.
-		const lastBracketIndex = indexContent.lastIndexOf(']');
-		if (lastBracketIndex === -1) {
-			console.error('Error: Could not find closing bracket in index file.');
+		// Parse the existing ICONS_LIST to extract all icons
+		const iconsListMatch = indexContent.match(/let ICONS_LIST = \[([\s\S]*?)\];/);
+		if (!iconsListMatch) {
+			console.error('Error: Could not find ICONS_LIST in index file.');
 			process.exit(1);
 		}
-		let beforePart = indexContent.substring(0, lastBracketIndex).trimRight();
-		const afterPart = indexContent.substring(lastBracketIndex);
 
-		// Ensure proper comma if the array isn't empty.
-		if (!beforePart.endsWith('[')) {
-			beforePart += ',\n';
-		} else {
-			beforePart += '\n';
+		const iconsListContent = iconsListMatch[1];
+		
+		// Parse existing icons from the ICONS_LIST
+		const existingIcons = [];
+		const iconRegex = /\{\s*name:\s*['"`]([^'"`]+)['"`],\s*icon:\s*([^,]+),\s*tags:\s*(\[[^\]]*\]),\s*categories:\s*(\[[^\]]*\])\s*\}/g;
+		let match;
+		
+		while ((match = iconRegex.exec(iconsListContent)) !== null) {
+			existingIcons.push({
+				name: match[1],
+				icon: match[2].trim(),
+				tags: JSON.parse(match[3]),
+				categories: JSON.parse(match[4])
+			});
 		}
 
-		// Create new entries with properties in the desired order: name, icon, tags, categories.
-		const newEntriesStrs = newIcons
-			.map((icon) => {
-				return `{
-  name: "${icon.iconName}",
-  icon: ${icon.importVar},
-  tags: ${JSON.stringify(icon.tags)},
-  categories: ${JSON.stringify(icon.categories)}
-}`;
-			})
-			.join(',\n');
+		// Add new icons to the existing icons array
+		newIcons.forEach((icon) => {
+			existingIcons.push({
+				name: icon.iconName,
+				icon: icon.importVar,
+				tags: icon.tags,
+				categories: icon.categories
+			});
+		});
 
-		indexContent = beforePart + newEntriesStrs + '\n' + afterPart;
+		// Sort all icons alphabetically by name
+		existingIcons.sort((a, b) => a.name.localeCompare(b.name));
+
+		// Reconstruct the ICONS_LIST content
+		const newIconsListContent = existingIcons.map((icon) => {
+			return `	{
+		name: '${icon.name}',
+		icon: ${icon.icon},
+		tags: ${JSON.stringify(icon.tags)},
+		categories: ${JSON.stringify(icon.categories)}
+	}`;
+		}).join(',\n');
+
+		// Replace the ICONS_LIST content in the file
+		const newIconsList = `let ICONS_LIST = [
+${newIconsListContent}
+];`;
+		
+		indexContent = indexContent.replace(/let ICONS_LIST = \[[\s\S]*?\];/, newIconsList);
+		
 		iconsAddedCount = newIcons.length;
-		console.log(`✅ Added ${iconsAddedCount} new icon(s)`);
+		console.log(`✅ Added ${iconsAddedCount} new icon(s) in alphabetical order`);
 	} else {
 		console.log('No new icons to add.');
 	}
