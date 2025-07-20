@@ -38,6 +38,7 @@ import award from './award.svelte';
 import axe from './axe.svelte';
 import badgeAlert from './badge-alert.svelte';
 import badgeCheck from './badge-check.svelte';
+import badgeQuestionMark from './badge-question-mark.svelte';
 import batteryCharging from './battery-charging.svelte';
 import batteryFull from './battery-full.svelte';
 import batteryLow from './battery-low.svelte';
@@ -47,6 +48,7 @@ import battery from './battery.svelte';
 import beanOff from './bean-off.svelte';
 import beerOff from './beer-off.svelte';
 import bellOff from './bell-off.svelte';
+import bellRing from './bell-ring.svelte';
 import bell from './bell.svelte';
 import betweenHorizontalEnd from './between-horizontal-end.svelte';
 import betweenHorizontalStart from './between-horizontal-start.svelte';
@@ -82,6 +84,12 @@ import bookmarkCheck from './bookmark-check.svelte';
 import botOff from './bot-off.svelte';
 import boxes from './boxes.svelte';
 import brainCog from './brain-cog.svelte';
+import briefcaseBusiness from './briefcase-business.svelte';
+import briefcaseConveyorBelt from './briefcase-conveyor-belt.svelte';
+import briefcaseMedical from './briefcase-medical.svelte';
+import briefcase from './briefcase.svelte';
+import brushCleaning from './brush-cleaning.svelte';
+import brush from './brush.svelte';
 import bugOff from './bug-off.svelte';
 import calendarCheck2 from './calendar-check-2.svelte';
 import calendarCheck from './calendar-check.svelte';
@@ -112,6 +120,7 @@ import chartScatter from './chart-scatter.svelte';
 import chartSpline from './chart-spline.svelte';
 import checkCheck from './check-check.svelte';
 import check from './check.svelte';
+import cherry from './cherry.svelte';
 import chevronDown from './chevron-down.svelte';
 import chevronLeft from './chevron-left.svelte';
 import chevronRight from './chevron-right.svelte';
@@ -143,6 +152,7 @@ import circleChevronUp from './circle-chevron-up.svelte';
 import circleOff from './circle-off.svelte';
 import circleParkingOff from './circle-parking-off.svelte';
 import circlePlus from './circle-plus.svelte';
+import circleQuestionMark from './circle-question-mark.svelte';
 import clapperboard from './clapperboard.svelte';
 import clipboardCheck from './clipboard-check.svelte';
 import clipboardPenLine from './clipboard-pen-line.svelte';
@@ -182,6 +192,7 @@ import diff from './diff.svelte';
 import disc3 from './disc-3.svelte';
 import dnaOff from './dna-off.svelte';
 import download from './download.svelte';
+import dropletOff from './droplet-off.svelte';
 import drum from './drum.svelte';
 import earOff from './ear-off.svelte';
 import eclipse from './eclipse.svelte';
@@ -199,7 +210,7 @@ import fileMinus from './file-minus.svelte';
 import filePenLine from './file-pen-line.svelte';
 import filePen from './file-pen.svelte';
 import filePlus from './file-plus.svelte';
-import fileQuestion from './file-question-mark.svelte';
+import fileQuestionMark from './file-question-mark.svelte';
 import fileStack from './file-stack.svelte';
 import fileTerminal from './file-terminal.svelte';
 import fileUp from './file-up.svelte';
@@ -233,8 +244,10 @@ import hardDriveDownload from './hard-drive-download.svelte';
 import hardDriveUpload from './hard-drive-upload.svelte';
 import headphoneOff from './headphone-off.svelte';
 import heartOff from './heart-off.svelte';
+import heart from './heart.svelte';
 import history from './history.svelte';
 import hopOff from './hop-off.svelte';
+import houseWifi from './house-wifi.svelte';
 import house from './house.svelte';
 import imageDown from './image-down.svelte';
 import imageOff from './image-off.svelte';
@@ -246,6 +259,7 @@ import keySquare from './key-square.svelte';
 import key from './key.svelte';
 import keyboardOff from './keyboard-off.svelte';
 import keyboard from './keyboard.svelte';
+import landmark from './landmark.svelte';
 import layers from './layers.svelte';
 import layoutDashboard from './layout-dashboard.svelte';
 import layoutGrid from './layout-grid.svelte';
@@ -269,6 +283,7 @@ import maximize from './maximize.svelte';
 import megaphoneOff from './megaphone-off.svelte';
 import messageCircleMore from './message-circle-more.svelte';
 import messageCircleOff from './message-circle-off.svelte';
+import messageCircleQuestionMark from './message-circle-question-mark.svelte';
 import messageCircleWarning from './message-circle-warning.svelte';
 import messageCircle from './message-circle.svelte';
 import messageSquareMore from './message-square-more.svelte';
@@ -308,6 +323,15 @@ import nutOff from './nut-off.svelte';
 import octagonAlert from './octagon-alert.svelte';
 import orbit from './orbit.svelte';
 import packageCheck from './package-check.svelte';
+import paintbrush from './paintbrush.svelte';
+import panelBottomClose from './panel-bottom-close.svelte';
+import panelBottomOpen from './panel-bottom-open.svelte';
+import panelLeftClose from './panel-left-close.svelte';
+import panelLeftOpen from './panel-left-open.svelte';
+import panelRightClose from './panel-right-close.svelte';
+import panelRightOpen from './panel-right-open.svelte';
+import panelTopClose from './panel-top-close.svelte';
+import panelTopOpen from './panel-top-open.svelte';
 import penLine from './pen-line.svelte';
 import penOff from './pen-off.svelte';
 import pen from './pen.svelte';
@@ -335,6 +359,7 @@ import refreshCwOff from './refresh-cw-off.svelte';
 import refreshCw from './refresh-cw.svelte';
 import rocket from './rocket.svelte';
 import rockingChair from './rocking-chair.svelte';
+import rotateCcwKey from './rotate-ccw-key.svelte';
 import rotateCcw from './rotate-ccw.svelte';
 import rotateCw from './rotate-cw.svelte';
 import routeOff from './route-off.svelte';
@@ -346,12 +371,16 @@ import scanText from './scan-text.svelte';
 import scissors from './scissors.svelte';
 import searchCheck from './search-check.svelte';
 import search from './search.svelte';
+import sendHorizontal from './send-horizontal.svelte';
+import send from './send.svelte';
 import serverCog from './server-cog.svelte';
+import serverOff from './server-off.svelte';
 import settings from './settings.svelte';
 import shieldAlert from './shield-alert.svelte';
 import shieldCheck from './shield-check.svelte';
 import shieldOff from './shield-off.svelte';
 import shieldPlus from './shield-plus.svelte';
+import shieldQuestionMark from './shield-question-mark.svelte';
 import shipWheel from './ship-wheel.svelte';
 import ship from './ship.svelte';
 import shoppingCart from './shopping-cart.svelte';
@@ -365,6 +394,7 @@ import signalZero from './signal-zero.svelte';
 import signal from './signal.svelte';
 import signature from './signature.svelte';
 import smartphoneNfc from './smartphone-nfc.svelte';
+import snowflake from './snowflake.svelte';
 import speech from './speech.svelte';
 import spellCheck from './spell-check.svelte';
 import squareArrowDownLeft from './square-arrow-down-left.svelte';
@@ -395,6 +425,7 @@ import squareScissors from './square-scissors.svelte';
 import squareStack from './square-stack.svelte';
 import squareTerminal from './square-terminal.svelte';
 import starOff from './star-off.svelte';
+import star from './star.svelte';
 import sun from './sun.svelte';
 import sword from './sword.svelte';
 import tag from './tag.svelte';
@@ -402,11 +433,14 @@ import telescope from './telescope.svelte';
 import terminal from './terminal.svelte';
 import textCursorInput from './text-cursor-input.svelte';
 import textCursor from './text-cursor.svelte';
+import thermometer from './thermometer.svelte';
 import thumbsDown from './thumbs-down.svelte';
 import thumbsUp from './thumbs-up.svelte';
 import ticketCheck from './ticket-check.svelte';
 import timerOff from './timer-off.svelte';
 import timer from './timer.svelte';
+import toggleLeft from './toggle-left.svelte';
+import toggleRight from './toggle-right.svelte';
 import tornado from './tornado.svelte';
 import touchpadOff from './touchpad-off.svelte';
 import trash2 from './trash-2.svelte';
@@ -440,47 +474,12 @@ import wheatOff from './wheat-off.svelte';
 import wifiHigh from './wifi-high.svelte';
 import wifiLow from './wifi-low.svelte';
 import wifiOff from './wifi-off.svelte';
+import wifiPen from './wifi-pen.svelte';
 import wifiZero from './wifi-zero.svelte';
 import wifi from './wifi.svelte';
 import wineOff from './wine-off.svelte';
 import x from './x.svelte';
 import zapOff from './zap-off.svelte';
-import wifiPen from './wifi-pen.svelte';
-import houseWifi from './house-wifi.svelte';
-import briefcase from './briefcase.svelte';
-import briefcaseBusiness from './briefcase-business.svelte';
-import briefcaseConveyorBelt from './briefcase-conveyor-belt.svelte';
-import briefcaseMedical from './briefcase-medical.svelte';
-import landmark from './landmark.svelte';
-import rotateCcwKey from './rotate-ccw-key.svelte';
-import heart from './heart.svelte';
-import snowflake from './snowflake.svelte';
-import bellRing from './bell-ring.svelte';
-import star from './star.svelte';
-import brushCleaning from './brush-cleaning.svelte';
-import brush from './brush.svelte';
-import paintbrush from './paintbrush.svelte';
-import cherry from './cherry.svelte';
-import badgeQuestionMark from './badge-question-mark.svelte';
-import fileQuestionMark from './file-question-mark.svelte';
-import circleQuestionMark from './circle-question-mark.svelte';
-import messageCircleQuestionMark from './message-circle-question-mark.svelte';
-import shieldQuestionMark from './shield-question-mark.svelte';
-import dropletOff from './droplet-off.svelte';
-import serverOff from './server-off.svelte';
-import thermometer from './thermometer.svelte';
-import toggleLeft from './toggle-left.svelte';
-import toggleRight from './toggle-right.svelte';
-import send from './send.svelte';
-import sendHorizontal from './send-horizontal.svelte';
-import panelLeftOpen from './panel-left-open.svelte';
-import panelBottomClose from './panel-bottom-close.svelte';
-import panelBottomOpen from './panel-bottom-open.svelte';
-import panelLeftClose from './panel-left-close.svelte';
-import panelRightClose from './panel-right-close.svelte';
-import panelRightOpen from './panel-right-open.svelte';
-import panelTopClose from './panel-top-close.svelte';
-import panelTopOpen from './panel-top-open.svelte';
 
 let ICONS_LIST = [
 	{
@@ -915,6 +914,12 @@ let ICONS_LIST = [
 		categories: ['social']
 	},
 	{
+		name: 'badge-question-mark',
+		icon: badgeQuestionMark,
+		tags: ['verified', 'unverified', 'help'],
+		categories: ['accessibility', 'social', 'shapes']
+	},
+	{
 		name: 'battery-charging',
 		icon: batteryCharging,
 		tags: ['power', 'electricity', 'energy', 'accumulator', 'charge'],
@@ -966,6 +971,12 @@ let ICONS_LIST = [
 		name: 'bell-off',
 		icon: bellOff,
 		tags: ['alarm', 'notification', 'silent', 'reminder'],
+		categories: ['notifications']
+	},
+	{
+		name: 'bell-ring',
+		icon: bellRing,
+		tags: ['alarm', 'notification', 'sound', 'reminder'],
 		categories: ['notifications']
 	},
 	{
@@ -1119,9 +1130,11 @@ let ICONS_LIST = [
 			'toys',
 			'kids',
 			'children',
-			'learning'
+			'learning',
+			'squares',
+			'corner'
 		],
-		categories: ['development', 'shapes']
+		categories: ['development', 'layout', 'shapes']
 	},
 	{
 		name: 'bluetooth-off',
@@ -1758,6 +1771,74 @@ let ICONS_LIST = [
 		categories: ['science', 'development']
 	},
 	{
+		name: 'briefcase-business',
+		icon: briefcaseBusiness,
+		tags: ['work', 'bag', 'baggage', 'folder', 'portfolio'],
+		categories: ['transportation']
+	},
+	{
+		name: 'briefcase-conveyor-belt',
+		icon: briefcaseConveyorBelt,
+		tags: ['baggage', 'luggage', 'travel', 'suitcase', 'conveyor', 'carousel'],
+		categories: ['travel', 'transportation']
+	},
+	{
+		name: 'briefcase-medical',
+		icon: briefcaseMedical,
+		tags: ['doctor', 'medicine', 'first aid'],
+		categories: ['medical', 'transportation']
+	},
+	{
+		name: 'briefcase',
+		icon: briefcase,
+		tags: ['work', 'bag', 'baggage', 'folder'],
+		categories: ['transportation']
+	},
+	{
+		name: 'brush-cleaning',
+		icon: brushCleaning,
+		tags: [
+			'cleaning',
+			'utensil',
+			'housekeeping',
+			'tool',
+			'sweeping',
+			'scrubbing',
+			'hygiene',
+			'maintenance',
+			'household',
+			'cleaner',
+			'chores',
+			'equipment',
+			'sanitation',
+			'bristles',
+			'handle',
+			'home care',
+			'sanitize',
+			'purify',
+			'wash',
+			'disinfect',
+			'sterilize',
+			'scrub',
+			'polish',
+			'decontaminate',
+			'wipe',
+			'spotless',
+			'remove',
+			'empty',
+			'erase',
+			'purge',
+			'eliminate'
+		],
+		categories: ['home', 'tools', 'design']
+	},
+	{
+		name: 'brush',
+		icon: brush,
+		tags: ['clean', 'sweep', 'refactor', 'remove', 'draw', 'paint', 'color', 'artist'],
+		categories: ['text', 'design', 'tools']
+	},
+	{
 		name: 'bug-off',
 		icon: bugOff,
 		tags: ['debug', 'code', 'insect', 'kill', 'exterminate', 'pest control'],
@@ -2020,6 +2101,12 @@ let ICONS_LIST = [
 		categories: ['notifications']
 	},
 	{
+		name: 'cherry',
+		icon: cherry,
+		tags: ['fruit', 'food'],
+		categories: ['food-beverage']
+	},
+	{
 		name: 'chevron-down',
 		icon: chevronDown,
 		tags: ['backwards', 'reverse', 'slow', 'dropdown'],
@@ -2270,6 +2357,12 @@ let ICONS_LIST = [
 			'+'
 		],
 		categories: ['math', 'development', 'cursors', 'gaming']
+	},
+	{
+		name: 'circle-question-mark',
+		icon: circleQuestionMark,
+		tags: ['question mark'],
+		categories: ['accessibility', 'text', 'notifications']
 	},
 	{
 		name: 'clapperboard',
@@ -2574,6 +2667,12 @@ let ICONS_LIST = [
 		categories: ['arrows', 'files']
 	},
 	{
+		name: 'droplet-off',
+		icon: dropletOff,
+		tags: ['water', 'weather', 'liquid', 'fluid', 'wet', 'moisture', 'damp', 'bead', 'globule'],
+		categories: ['weather', 'gaming']
+	},
+	{
 		name: 'drum',
 		icon: drum,
 		tags: [
@@ -2728,8 +2827,8 @@ let ICONS_LIST = [
 		categories: ['files']
 	},
 	{
-		name: 'file-question',
-		icon: fileQuestion,
+		name: 'file-question-mark',
+		icon: fileQuestionMark,
 		tags: ['readme', 'help', 'question'],
 		categories: ['files']
 	},
@@ -2780,7 +2879,20 @@ let ICONS_LIST = [
 	{
 		name: 'flag-off',
 		icon: flagOff,
-		tags: ['unflag'],
+		tags: [
+			'unflag',
+			'unmark',
+			'report',
+			'marker',
+			'notification',
+			'warning',
+			'milestone',
+			'goal',
+			'notice',
+			'signal',
+			'attention',
+			'banner'
+		],
 		categories: ['account', 'social']
 	},
 	{
@@ -3020,6 +3132,12 @@ let ICONS_LIST = [
 		categories: ['social', 'multimedia']
 	},
 	{
+		name: 'heart',
+		icon: heart,
+		tags: ['like', 'love', 'emotion', 'suit', 'playing', 'cards'],
+		categories: ['medical', 'social', 'multimedia', 'emoji', 'gaming', 'shapes']
+	},
+	{
 		name: 'history',
 		icon: history,
 		tags: [
@@ -3041,6 +3159,12 @@ let ICONS_LIST = [
 		icon: hopOff,
 		tags: ['beer', 'brewery', 'drink', 'hop free', 'allergy', 'intolerance', 'diet'],
 		categories: ['food-beverage']
+	},
+	{
+		name: 'house-wifi',
+		icon: houseWifi,
+		tags: ['home', 'living', 'building', 'wifi', 'connectivity'],
+		categories: ['home', 'buildings', 'connectivity']
 	},
 	{
 		name: 'house',
@@ -3131,6 +3255,30 @@ let ICONS_LIST = [
 		icon: keyboard,
 		tags: ['layout', 'spell', 'settings', 'mouse'],
 		categories: ['text', 'devices', 'development']
+	},
+	{
+		name: 'landmark',
+		icon: landmark,
+		tags: [
+			'bank',
+			'building',
+			'capitol',
+			'finance',
+			'money',
+			'museum',
+			'art gallery',
+			'hall',
+			'institute',
+			'pediment',
+			'portico',
+			'columns',
+			'pillars',
+			'classical',
+			'architecture',
+			'government',
+			'institution'
+		],
+		categories: ['finance', 'navigation', 'buildings']
 	},
 	{
 		name: 'layers',
@@ -3279,7 +3427,17 @@ let ICONS_LIST = [
 	{
 		name: 'megaphone-off',
 		icon: megaphoneOff,
-		tags: ['advertisement', 'attention', 'alert', 'notification', 'disable', 'silent'],
+		tags: [
+			'advertisement',
+			'announcement',
+			'attention',
+			'alert',
+			'loudspeaker',
+			'megaphone',
+			'notification',
+			'disable',
+			'silent'
+		],
 		categories: ['multimedia', 'notifications']
 	},
 	{
@@ -3322,6 +3480,12 @@ let ICONS_LIST = [
 			'mute',
 			'moderate'
 		],
+		categories: ['social']
+	},
+	{
+		name: 'message-circle-question-mark',
+		icon: messageCircleQuestionMark,
+		tags: ['comment', 'chat', 'conversation', 'dialog', 'feedback', 'speech bubble', 'help'],
 		categories: ['social']
 	},
 	{
@@ -3694,6 +3858,60 @@ let ICONS_LIST = [
 		categories: ['development']
 	},
 	{
+		name: 'paintbrush',
+		icon: paintbrush,
+		tags: ['brush', 'paintbrush', 'design', 'color', 'colour', 'decoration', 'diy'],
+		categories: ['text', 'design', 'photography', 'home', 'tools']
+	},
+	{
+		name: 'panel-bottom-close',
+		icon: panelBottomClose,
+		tags: ['drawer', 'dock', 'hide', 'chevron', 'down'],
+		categories: ['layout', 'arrows']
+	},
+	{
+		name: 'panel-bottom-open',
+		icon: panelBottomOpen,
+		tags: ['drawer', 'dock', 'show', 'reveal', 'chevron', 'up'],
+		categories: ['layout', 'arrows']
+	},
+	{
+		name: 'panel-left-close',
+		icon: panelLeftClose,
+		tags: ['primary', 'drawer', 'hide', 'chevron', '<'],
+		categories: ['layout', 'arrows']
+	},
+	{
+		name: 'panel-left-open',
+		icon: panelLeftOpen,
+		tags: ['primary', 'drawer', 'show', 'reveal', 'chevron', 'right', '>'],
+		categories: ['layout', 'arrows']
+	},
+	{
+		name: 'panel-right-close',
+		icon: panelRightClose,
+		tags: ['sidebar', 'secondary', 'drawer', 'hide', 'chevron', '>'],
+		categories: ['layout', 'arrows']
+	},
+	{
+		name: 'panel-right-open',
+		icon: panelRightOpen,
+		tags: ['sidebar', 'secondary', 'drawer', 'show', 'reveal', 'chevron', 'left', '<'],
+		categories: ['layout', 'arrows']
+	},
+	{
+		name: 'panel-top-close',
+		icon: panelTopClose,
+		tags: ['menu bar', 'drawer', 'hide', 'chevron', 'up'],
+		categories: ['layout', 'arrows']
+	},
+	{
+		name: 'panel-top-open',
+		icon: panelTopOpen,
+		tags: ['menu bar', 'drawer', 'show', 'reveal', 'chevron', 'down'],
+		categories: ['layout', 'arrows']
+	},
+	{
 		name: 'pen-line',
 		icon: penLine,
 		tags: [
@@ -4023,6 +4241,12 @@ let ICONS_LIST = [
 		categories: ['home']
 	},
 	{
+		name: 'rotate-ccw-key',
+		icon: rotateCcwKey,
+		tags: ['password', 'key', 'refresh', 'change'],
+		categories: ['security', 'account']
+	},
+	{
 		name: 'rotate-ccw',
 		icon: rotateCcw,
 		tags: [
@@ -4128,19 +4352,47 @@ let ICONS_LIST = [
 	{
 		name: 'search-check',
 		icon: searchCheck,
-		tags: ['find', 'scan', 'magnifier', 'magnifying glass', 'found', 'correct', 'complete', 'tick'],
+		tags: [
+			'find',
+			'scan',
+			'magnifier',
+			'magnifying glass',
+			'found',
+			'correct',
+			'complete',
+			'tick',
+			'lens'
+		],
 		categories: ['text', 'social']
 	},
 	{
 		name: 'search',
 		icon: search,
-		tags: ['find', 'scan', 'magnifier', 'magnifying glass'],
+		tags: ['find', 'scan', 'magnifier', 'magnifying glass', 'lens'],
 		categories: ['text', 'social']
+	},
+	{
+		name: 'send-horizontal',
+		icon: sendHorizontal,
+		tags: ['email', 'message', 'mail', 'paper airplane', 'paper aeroplane', 'submit'],
+		categories: ['mail', 'communication', 'connectivity']
+	},
+	{
+		name: 'send',
+		icon: send,
+		tags: ['email', 'message', 'mail', 'paper airplane', 'paper aeroplane', 'submit'],
+		categories: ['mail', 'communication', 'connectivity']
 	},
 	{
 		name: 'server-cog',
 		icon: serverCog,
 		tags: ['cloud', 'storage', 'computing', 'cog', 'gear'],
+		categories: ['development', 'devices']
+	},
+	{
+		name: 'server-off',
+		icon: serverOff,
+		tags: ['cloud', 'storage'],
 		categories: ['development', 'devices']
 	},
 	{
@@ -4381,6 +4633,57 @@ let ICONS_LIST = [
 		categories: ['account', 'security', 'development', 'gaming', 'medical']
 	},
 	{
+		name: 'shield-question-mark',
+		icon: shieldQuestionMark,
+		tags: [
+			'unshielded',
+			'cybersecurity',
+			'insecure',
+			'unsecured',
+			'safety',
+			'unsafe',
+			'protection',
+			'unprotected',
+			'guardian',
+			'unguarded',
+			'unarmored',
+			'unarmoured',
+			'defenseless',
+			'defenceless',
+			'undefended',
+			'defender',
+			'threat',
+			'prevention',
+			'unprevented',
+			'antivirus',
+			'vigilance',
+			'vigilant',
+			'detection',
+			'undetected',
+			'scan',
+			'find',
+			'exploit',
+			'vulnerability',
+			'vulnerable',
+			'weakness',
+			'infection',
+			'comprimised',
+			'data leak',
+			'audit',
+			'admin',
+			'verification',
+			'unverified',
+			'uncertified',
+			'uncertain',
+			'unknown',
+			'inactive',
+			'crest',
+			'question mark',
+			'?'
+		],
+		categories: ['account', 'security', 'development', 'gaming']
+	},
+	{
 		name: 'ship-wheel',
 		icon: shipWheel,
 		tags: [
@@ -4516,6 +4819,12 @@ let ICONS_LIST = [
 		icon: smartphoneNfc,
 		tags: ['contactless', 'payment', 'near-field communication', 'screen'],
 		categories: ['communication', 'finance', 'devices']
+	},
+	{
+		name: 'snowflake',
+		icon: snowflake,
+		tags: ['cold', 'weather', 'freeze', 'snow', 'winter'],
+		categories: ['weather', 'seasons']
 	},
 	{
 		name: 'speech',
@@ -4760,6 +5069,7 @@ let ICONS_LIST = [
 		icon: squarePen,
 		tags: [
 			'pencil',
+			'edit',
 			'change',
 			'create',
 			'draw',
@@ -4837,6 +5147,12 @@ let ICONS_LIST = [
 		categories: ['multimedia', 'social']
 	},
 	{
+		name: 'star',
+		icon: star,
+		tags: ['bookmark', 'favorite', 'like', 'review', 'rating'],
+		categories: ['account', 'social', 'shapes', 'multimedia', 'weather', 'emoji', 'gaming']
+	},
+	{
 		name: 'sun',
 		icon: sun,
 		tags: ['brightness', 'weather', 'light', 'summer'],
@@ -4891,6 +5207,12 @@ let ICONS_LIST = [
 		categories: ['text', 'cursors']
 	},
 	{
+		name: 'thermometer',
+		icon: thermometer,
+		tags: ['temperature', 'celsius', 'fahrenheit', 'weather'],
+		categories: ['weather']
+	},
+	{
 		name: 'thumbs-down',
 		icon: thumbsDown,
 		tags: ['dislike', 'bad', 'emotion'],
@@ -4937,6 +5259,18 @@ let ICONS_LIST = [
 		categories: ['time']
 	},
 	{
+		name: 'toggle-left',
+		icon: toggleLeft,
+		tags: ['on', 'off', 'switch', 'boolean'],
+		categories: ['layout', 'account', 'development']
+	},
+	{
+		name: 'toggle-right',
+		icon: toggleRight,
+		tags: ['on', 'off', 'switch', 'boolean'],
+		categories: ['layout', 'account', 'development']
+	},
+	{
 		name: 'tornado',
 		icon: tornado,
 		tags: ['weather', 'wind', 'storm', 'hurricane'],
@@ -4957,7 +5291,22 @@ let ICONS_LIST = [
 	{
 		name: 'trash',
 		icon: trash,
-		tags: ['garbage', 'delete', 'remove', 'bin'],
+		tags: [
+			'empty',
+			'deletion',
+			'cleanup',
+			'junk',
+			'clear',
+			'garbage',
+			'delete',
+			'remove',
+			'bin',
+			'waste',
+			'recycle',
+			'discard',
+			'binoculars',
+			'rubbish'
+		],
 		categories: ['files', 'mail']
 	},
 	{
@@ -5147,6 +5496,12 @@ let ICONS_LIST = [
 		categories: ['connectivity', 'devices']
 	},
 	{
+		name: 'wifi-pen',
+		icon: wifiPen,
+		tags: ['edit', 'wifi', 'pen', 'change', 'network'],
+		categories: ['connectivity', 'devices']
+	},
+	{
 		name: 'wifi-zero',
 		icon: wifiZero,
 		tags: ['connection', 'signal', 'wireless'],
@@ -5196,299 +5551,6 @@ let ICONS_LIST = [
 		icon: zapOff,
 		tags: ['flash', 'camera', 'lightning', 'electricity', 'energy'],
 		categories: ['connectivity', 'devices', 'photography', 'weather']
-	},
-	{
-		name: 'wifi-pen',
-		icon: wifiPen,
-		tags: ['edit', 'wifi', 'pen', 'change', 'network'],
-		categories: ['connectivity', 'devices']
-	},
-	{
-		name: 'house-wifi',
-		icon: houseWifi,
-		tags: ['home', 'living', 'building', 'wifi', 'connectivity'],
-		categories: ['home', 'buildings', 'connectivity']
-	},
-	{
-		name: 'briefcase',
-		icon: briefcase,
-		tags: ['work', 'bag', 'baggage', 'folder'],
-		categories: ['transportation']
-	},
-	{
-		name: 'briefcase-business',
-		icon: briefcaseBusiness,
-		tags: ['work', 'bag', 'baggage', 'folder', 'portfolio'],
-		categories: ['transportation']
-	},
-	{
-		name: 'briefcase-conveyor-belt',
-		icon: briefcaseConveyorBelt,
-		tags: ['baggage', 'luggage', 'travel', 'suitcase', 'conveyor', 'carousel'],
-		categories: ['travel', 'transportation']
-	},
-	{
-		name: 'briefcase-medical',
-		icon: briefcaseMedical,
-		tags: ['doctor', 'medicine', 'first aid'],
-		categories: ['medical', 'transportation']
-	},
-	{
-		name: 'landmark',
-		icon: landmark,
-		tags: ['bank', 'building', 'capitol', 'finance', 'money', 'government', 'institution'],
-		categories: ['finance', 'navigation', 'buildings']
-	},
-	{
-		name: 'rotate-ccw-key',
-		icon: rotateCcwKey,
-		tags: ['password', 'key', 'refresh', 'change'],
-		categories: ['security', 'account']
-	},
-	{
-		name: 'heart',
-		icon: heart,
-		tags: ['like', 'love', 'emotion', 'suit', 'playing', 'cards'],
-		categories: ['medical', 'social', 'multimedia', 'emoji', 'gaming', 'shapes']
-	},
-	{
-		name: 'snowflake',
-		icon: snowflake,
-		tags: ['cold', 'weather', 'freeze', 'snow', 'winter'],
-		categories: ['weather', 'seasons']
-	},
-	{
-		name: 'bell-ring',
-		icon: bellRing,
-		tags: ['alarm', 'notification', 'sound', 'reminder'],
-		categories: ['notifications']
-	},
-	{
-		name: 'star',
-		icon: star,
-		tags: ['bookmark', 'favorite', 'like', 'review', 'rating'],
-		categories: ['account', 'social', 'shapes', 'multimedia', 'weather', 'emoji', 'gaming']
-	},
-	{
-		name: 'brush-cleaning',
-		icon: brushCleaning,
-		tags: [
-			'cleaning',
-			'utensil',
-			'housekeeping',
-			'tool',
-			'sweeping',
-			'scrubbing',
-			'hygiene',
-			'maintenance',
-			'household',
-			'cleaner',
-			'chores',
-			'equipment',
-			'sanitation',
-			'bristles',
-			'handle',
-			'home care',
-			'sanitize',
-			'purify',
-			'wash',
-			'disinfect',
-			'sterilize',
-			'scrub',
-			'polish',
-			'decontaminate',
-			'wipe',
-			'spotless',
-			'remove',
-			'empty',
-			'erase',
-			'purge',
-			'eliminate'
-		],
-		categories: ['home', 'tools', 'design']
-	},
-	{
-		name: 'brush',
-		icon: brush,
-		tags: ['clean', 'sweep', 'refactor', 'remove', 'draw', 'paint', 'color', 'artist'],
-		categories: ['text', 'design', 'tools']
-	},
-	{
-		name: 'paintbrush',
-		icon: paintbrush,
-		tags: ['brush', 'paintbrush', 'design', 'color', 'colour', 'decoration', 'diy'],
-		categories: ['text', 'design', 'photography', 'home', 'tools']
-	},
-	{
-		name: 'cherry',
-		icon: cherry,
-		tags: ['fruit', 'food'],
-		categories: ['food-beverage']
-	},
-	{
-		name: 'badge-question-mark',
-		icon: badgeQuestionMark,
-		tags: ['verified', 'unverified', 'help'],
-		categories: ['accessibility', 'social', 'shapes']
-	},
-	{
-		name: 'file-question-mark',
-		icon: fileQuestionMark,
-		tags: ['readme', 'help', 'question'],
-		categories: ['files']
-	},
-	{
-		name: 'circle-question-mark',
-		icon: circleQuestionMark,
-		tags: ['question mark'],
-		categories: ['accessibility', 'text', 'notifications']
-	},
-	{
-		name: 'message-circle-question-mark',
-		icon: messageCircleQuestionMark,
-		tags: ['comment', 'chat', 'conversation', 'dialog', 'feedback', 'speech bubble', 'help'],
-		categories: ['social']
-	},
-	{
-		name: 'shield-question-mark',
-		icon: shieldQuestionMark,
-		tags: [
-			'unshielded',
-			'cybersecurity',
-			'insecure',
-			'unsecured',
-			'safety',
-			'unsafe',
-			'protection',
-			'unprotected',
-			'guardian',
-			'unguarded',
-			'unarmored',
-			'unarmoured',
-			'defenseless',
-			'defenceless',
-			'undefended',
-			'defender',
-			'threat',
-			'prevention',
-			'unprevented',
-			'antivirus',
-			'vigilance',
-			'vigilant',
-			'detection',
-			'undetected',
-			'scan',
-			'find',
-			'exploit',
-			'vulnerability',
-			'vulnerable',
-			'weakness',
-			'infection',
-			'comprimised',
-			'data leak',
-			'audit',
-			'admin',
-			'verification',
-			'unverified',
-			'uncertified',
-			'uncertain',
-			'unknown',
-			'inactive',
-			'crest',
-			'question mark',
-			'?'
-		],
-		categories: ['account', 'security', 'development', 'gaming']
-	},
-	{
-		name: 'droplet-off',
-		icon: dropletOff,
-		tags: ['water', 'weather', 'liquid', 'fluid', 'wet', 'moisture', 'damp', 'bead', 'globule'],
-		categories: ['weather', 'gaming']
-	},
-	{
-		name: 'server-off',
-		icon: serverOff,
-		tags: ['cloud', 'storage'],
-		categories: ['development', 'devices']
-	},
-	{
-		name: 'thermometer',
-		icon: thermometer,
-		tags: ['temperature', 'celsius', 'fahrenheit', 'weather'],
-		categories: ['weather']
-	},
-	{
-		name: 'toggle-left',
-		icon: toggleLeft,
-		tags: ['on', 'off', 'switch', 'boolean'],
-		categories: ['layout', 'account', 'development']
-	},
-	{
-		name: 'toggle-right',
-		icon: toggleRight,
-		tags: ['on', 'off', 'switch', 'boolean'],
-		categories: ['layout', 'account', 'development']
-	},
-	{
-		name: 'send',
-		icon: send,
-		tags: ['email', 'message', 'mail', 'paper airplane', 'paper aeroplane', 'submit'],
-		categories: ['mail', 'communication', 'connectivity']
-	},
-	{
-		name: 'send-horizontal',
-		icon: sendHorizontal,
-		tags: ['email', 'message', 'mail', 'paper airplane', 'paper aeroplane', 'submit'],
-		categories: ['mail', 'communication', 'connectivity']
-	},
-	{
-		name: 'panel-left-open',
-		icon: panelLeftOpen,
-		tags: ['primary', 'drawer', 'show', 'reveal', 'chevron', 'right', '>'],
-		categories: ['layout', 'arrows']
-	},
-	{
-		name: 'panel-bottom-close',
-		icon: panelBottomClose,
-		tags: ['drawer', 'dock', 'hide', 'chevron', 'down'],
-		categories: ['layout', 'arrows']
-	},
-	{
-		name: 'panel-bottom-open',
-		icon: panelBottomOpen,
-		tags: ['drawer', 'dock', 'show', 'reveal', 'chevron', 'up'],
-		categories: ['layout', 'arrows']
-	},
-	{
-		name: 'panel-left-close',
-		icon: panelLeftClose,
-		tags: ['primary', 'drawer', 'hide', 'chevron', '<'],
-		categories: ['layout', 'arrows']
-	},
-	{
-		name: 'panel-right-close',
-		icon: panelRightClose,
-		tags: ['sidebar', 'secondary', 'drawer', 'hide', 'chevron', '>'],
-		categories: ['layout', 'arrows']
-	},
-	{
-		name: 'panel-right-open',
-		icon: panelRightOpen,
-		tags: ['sidebar', 'secondary', 'drawer', 'show', 'reveal', 'chevron', 'left', '<'],
-		categories: ['layout', 'arrows']
-	},
-	{
-		name: 'panel-top-close',
-		icon: panelTopClose,
-		tags: ['menu bar', 'drawer', 'hide', 'chevron', 'up'],
-		categories: ['layout', 'arrows']
-	},
-	{
-		name: 'panel-top-open',
-		icon: panelTopOpen,
-		tags: ['menu bar', 'drawer', 'show', 'reveal', 'chevron', 'down'],
-		categories: ['layout', 'arrows']
 	}
 ];
 
