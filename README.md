@@ -2,8 +2,10 @@
 
 **Demo** → [https://movingicons.dev](https://movingicons.dev)
 
-<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg"/></a>
-<a href="https://madewithsvelte.com/p/moving-icons/shield-link"><img src="https://madewithsvelte.com/storage/repo-shields/5371-shield.svg"/></a>
+<a href="https://madewithsvelte.com/p/moving-icons/shield-link"><img src="https://madewithsvelte.com/storage/repo-shields/5371-shield.svg" alt="Made with Svelte" /></a>
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT License"/></a>
+<a href="https://www.npmjs.com/package/@jis3r/icons" title="View this project on NPM"><img src="https://img.shields.io/npm/v/%40jis3r%2Ficons" alt="NPM version" /></a>
+<a href="https://www.npmjs.com/package/@jis3r/icons" title="View this project on NPM"><img src="https://img.shields.io/npm/dm/%40jis3r%2Ficons" alt="NPM downloads" /></a>
 
 ## Installation
 
