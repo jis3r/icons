@@ -23,6 +23,8 @@ You can add icons to your project using the [shadcn registry](https://www.shadcn
 npx shadcn-svelte@latest add https://movingicons.dev/r/[icon-name]
 ```
 
+You will find the commands for each icon on the [website](https://movingicons.dev).
+
 ### 3. Copy from Website
 
 You can download or copy icon components directly from [https://movingicons.dev](https://movingicons.dev) and paste them into your Svelte project.
