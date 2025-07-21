@@ -20,7 +20,7 @@ npm i @jis3r/icons
 You can add icons to your project using the [shadcn registry](https://www.shadcn-svelte.com). Ensure shadcn-svelte is installed. To add an icon, simply copy the command from the website and run it in your terminal. Icons will be added to your project in the `src/lib/components/movingicons` directory.
 
 ```bash
-npm npx shadcn-svelte@latest add https://movingicons.dev/r/[icon-name]
+npx shadcn-svelte@latest add https://movingicons.dev/r/[icon-name]
 ```
 
 ### 3. Copy from Website
