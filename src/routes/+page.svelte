@@ -268,8 +268,8 @@
 								class="flex select-none items-center justify-center rounded-md p-2 transition-colors duration-200 hover:bg-accent"
 							/>
 							<p class="mb-3 mt-5 text-center text-xs text-muted-foreground">{icon.name}</p>
-							<Tooltip.Provider delayDuration={100}>
-								<div class="flex items-center justify-center gap-2">
+							<div class="flex items-center justify-center gap-2">
+								<Tooltip.Provider delayDuration={100}>
 									<Tooltip.Root>
 										<Tooltip.Trigger asChild>
 											<Button
@@ -292,6 +292,9 @@
 											<p class="text-xs">Copy code</p>
 										</Tooltip.Content>
 									</Tooltip.Root>
+								</Tooltip.Provider>
+
+								<Tooltip.Provider delayDuration={100}>
 									<Tooltip.Root>
 										<Tooltip.Trigger asChild>
 											<Button
@@ -314,17 +317,21 @@
 											<p class="text-xs">Download .svelte</p>
 										</Tooltip.Content>
 									</Tooltip.Root>
-									{#if false}
-										<Button
-											href={'https://github.com/jis3r/icons/blob/master/src/lib/icons/' +
-												icon.name +
-												'.svelte'}
-											variant="ghost"
-											class="size-8 rounded-md p-2 transition-colors duration-200 hover:bg-accent"
-										>
-											<ExternalLink class="h-4 w-4" />
-										</Button>
-									{/if}
+								</Tooltip.Provider>
+
+								{#if false}
+									<Button
+										href={'https://github.com/jis3r/icons/blob/master/src/lib/icons/' +
+											icon.name +
+											'.svelte'}
+										variant="ghost"
+										class="size-8 rounded-md p-2 transition-colors duration-200 hover:bg-accent"
+									>
+										<ExternalLink class="h-4 w-4" />
+									</Button>
+								{/if}
+
+								<Tooltip.Provider delayDuration={100}>
 									<Tooltip.Root>
 										<Tooltip.Trigger asChild>
 											<Button
@@ -347,8 +354,8 @@
 											<p class="text-xs">Copy shadcn-svelte/cli command</p>
 										</Tooltip.Content>
 									</Tooltip.Root>
-								</div>
-							</Tooltip.Provider>
+								</Tooltip.Provider>
+							</div>
 						</div>
 					{/each}
 				</div>

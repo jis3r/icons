@@ -167,12 +167,13 @@ function updateIconsIndex() {
 		}
 
 		const iconsListContent = iconsListMatch[1];
-		
+
 		// Parse existing icons from the ICONS_LIST
 		const existingIcons = [];
-		const iconRegex = /\{\s*name:\s*['"`]([^'"`]+)['"`],\s*icon:\s*([^,]+),\s*tags:\s*(\[[^\]]*\]),\s*categories:\s*(\[[^\]]*\])\s*\}/g;
+		const iconRegex =
+			/\{\s*name:\s*['"`]([^'"`]+)['"`],\s*icon:\s*([^,]+),\s*tags:\s*(\[[^\]]*\]),\s*categories:\s*(\[[^\]]*\])\s*\}/g;
 		let match;
-		
+
 		while ((match = iconRegex.exec(iconsListContent)) !== null) {
 			existingIcons.push({
 				name: match[1],
@@ -196,22 +197,24 @@ function updateIconsIndex() {
 		existingIcons.sort((a, b) => a.name.localeCompare(b.name));
 
 		// Reconstruct the ICONS_LIST content
-		const newIconsListContent = existingIcons.map((icon) => {
-			return `	{
+		const newIconsListContent = existingIcons
+			.map((icon) => {
+				return `	{
 		name: '${icon.name}',
 		icon: ${icon.icon},
 		tags: ${JSON.stringify(icon.tags)},
 		categories: ${JSON.stringify(icon.categories)}
 	}`;
-		}).join(',\n');
+			})
+			.join(',\n');
 
 		// Replace the ICONS_LIST content in the file
 		const newIconsList = `let ICONS_LIST = [
 ${newIconsListContent}
 ];`;
-		
+
 		indexContent = indexContent.replace(/let ICONS_LIST = \[[\s\S]*?\];/, newIconsList);
-		
+
 		iconsAddedCount = newIcons.length;
 		console.log(`✅ Added ${iconsAddedCount} new icon(s) in alphabetical order`);
 	} else {
