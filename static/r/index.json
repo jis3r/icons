@@ -2448,6 +2448,15 @@
 		"relativeUrl": "list-checks.json"
 	},
 	{
+		"name": "list-restart",
+		"title": "list-restart",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated list-restart icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "list-restart.json"
+	},
+	{
 		"name": "list-todo",
 		"title": "list-todo",
 		"type": "registry:component",

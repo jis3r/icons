@@ -4357,6 +4357,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "list-restart",
+			"title": "list-restart",
+			"type": "registry:component",
+			"description": "The animated list-restart icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/list-restart.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/list-restart.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "list-todo",
 			"title": "list-todo",
 			"type": "registry:component",
