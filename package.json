@@ -1,6 +1,6 @@
 {
 	"name": "@jis3r/icons",
-	"version": "1.0.2",
+	"version": "1.1.0",
 	"description": "beautifully crafted, moving icons. for svelte.",
 	"author": "jis3r",
 	"license": "MIT",
@@ -16,7 +16,8 @@
 		"test": "npm run test:unit -- --run",
 		"index": "node scripts/indexIcons.js",
 		"reexport": "node scripts/generateIconExports.js",
-		"registry:build": "node scripts/updateRegistry.js && shadcn-svelte registry build"
+		"registry:build": "node scripts/updateRegistry.js && shadcn-svelte registry build",
+		"prepare": "npm run index && npm run reexport && npm run registry:build && npm run build && npm run format"
 	},
 	"files": [
 		"dist",
