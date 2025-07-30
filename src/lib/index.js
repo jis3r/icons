@@ -270,6 +270,7 @@ export { default as LightbulbOff } from './icons/lightbulb-off.svelte';
 export { default as Link2Off } from './icons/link-2-off.svelte';
 export { default as ListCheck } from './icons/list-check.svelte';
 export { default as ListChecks } from './icons/list-checks.svelte';
+export { default as ListRestart } from './icons/list-restart.svelte';
 export { default as ListTodo } from './icons/list-todo.svelte';
 export { default as LoaderPinwheel } from './icons/loader-pinwheel.svelte';
 export { default as LocateOff } from './icons/locate-off.svelte';

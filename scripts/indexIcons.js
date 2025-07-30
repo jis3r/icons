@@ -128,37 +128,71 @@ function updateIconsIndex() {
 		}
 	});
 
-	// If new icons were found, update the indexContent.
-	if (newIcons.length > 0) {
-		// First, add import statements for each new icon if they don't already exist.
-		const importLinesToAdd = [];
-		newIcons.forEach((icon) => {
-			// Check if an import line exists for this icon.
-			const importRegex = new RegExp(
-				`import\\s+${icon.importVar}\\s+from\\s+['"]\\./${icon.fileName}['"]`
-			);
-			if (!importRegex.test(indexContent)) {
-				importLinesToAdd.push(`import ${icon.importVar} from './${icon.fileName}';`);
-			}
-		});
+	// First, add import statements for each new icon if they don't already exist.
+	const importLinesToAdd = [];
+	newIcons.forEach((icon) => {
+		// Check if an import line exists for this icon.
+		const importRegex = new RegExp(
+			`import\\s+${icon.importVar}\\s+from\\s+['"]\\./${icon.fileName}['"]`
+		);
+		if (!importRegex.test(indexContent)) {
+			importLinesToAdd.push(`import ${icon.importVar} from './${icon.fileName}';`);
+		}
+	});
 
-		if (importLinesToAdd.length > 0) {
-			// Split the file into lines.
-			const lines = indexContent.split('\n');
-			let insertIndex = 0;
-			// If the file starts with a shebang, skip the first line.
-			if (lines[0].startsWith('#!')) {
-				insertIndex = 1;
-			}
-			// Advance past any existing import lines.
-			while (insertIndex < lines.length && lines[insertIndex].trim().startsWith('import')) {
-				insertIndex++;
-			}
-			// Insert new import lines at the determined index.
-			lines.splice(insertIndex, 0, ...importLinesToAdd);
-			indexContent = lines.join('\n');
+	// Always sort imports alphabetically, even if no new imports are added
+	if (importLinesToAdd.length > 0 || true) {
+		// Split the file into lines.
+		const lines = indexContent.split('\n');
+		let shebangLine = null;
+		let importLines = [];
+		let nonImportLines = [];
+
+		// Separate shebang, imports, and non-imports
+		let i = 0;
+		if (lines[0].startsWith('#!')) {
+			shebangLine = lines[0];
+			i = 1;
 		}
 
+		// Collect all existing import lines
+		while (i < lines.length && lines[i].trim().startsWith('import')) {
+			importLines.push(lines[i]);
+			i++;
+		}
+
+		// Collect remaining non-import lines
+		while (i < lines.length) {
+			nonImportLines.push(lines[i]);
+			i++;
+		}
+
+		// Add new import lines to the existing ones
+		importLines.push(...importLinesToAdd);
+
+		// Sort all import lines alphabetically by the import name
+		importLines.sort((a, b) => {
+			const aMatch = a.match(/import\s+(\w+)\s+from/);
+			const bMatch = b.match(/import\s+(\w+)\s+from/);
+			if (aMatch && bMatch) {
+				return aMatch[1].localeCompare(bMatch[1]);
+			}
+			return a.localeCompare(b);
+		});
+
+		// Reconstruct the file
+		const newLines = [];
+		if (shebangLine) {
+			newLines.push(shebangLine);
+		}
+		newLines.push(...importLines);
+		newLines.push(...nonImportLines);
+
+		indexContent = newLines.join('\n');
+	}
+
+	// If new icons were found, update the ICONS_LIST
+	if (newIcons.length > 0) {
 		// Parse the existing ICONS_LIST to extract all icons
 		const iconsListMatch = indexContent.match(/let ICONS_LIST = \[([\s\S]*?)\];/);
 		if (!iconsListMatch) {
@@ -175,11 +209,20 @@ function updateIconsIndex() {
 		let match;
 
 		while ((match = iconRegex.exec(iconsListContent)) !== null) {
+			// Convert JavaScript array syntax to JSON format for parsing if needed
+			const tagsStr = match[3];
+			const categoriesStr = match[4];
+
+			const tagsJson = tagsStr.includes("'") ? tagsStr.replace(/'/g, '"') : tagsStr;
+			const categoriesJson = categoriesStr.includes("'")
+				? categoriesStr.replace(/'/g, '"')
+				: categoriesStr;
+
 			existingIcons.push({
 				name: match[1],
 				icon: match[2].trim(),
-				tags: JSON.parse(match[3]),
-				categories: JSON.parse(match[4])
+				tags: JSON.parse(tagsJson),
+				categories: JSON.parse(categoriesJson)
 			});
 		}
 
