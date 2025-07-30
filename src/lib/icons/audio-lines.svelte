@@ -24,6 +24,14 @@
 	function handleMouseLeave() {
 		isHovered = false;
 	}
+
+	function handleTouchStart() {
+		isHovered = true;
+	}
+
+	function handleTouchEnd() {
+		isHovered = false;
+	}
 </script>
 
 <div
@@ -32,6 +40,8 @@
 	role="img"
 	onmouseenter={handleMouseEnter}
 	onmouseleave={handleMouseLeave}
+	ontouchstart={handleTouchStart}
+	ontouchend={handleTouchEnd}
 >
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
@@ -63,67 +73,83 @@
 		overflow: visible;
 	}
 
+	/* Base transitions for smooth hover effects */
 	.line {
-		transition: d 0.3s ease;
+		transition: all 0.3s ease;
 	}
 
-	.audio-lines-icon.animate .line {
-		animation-play-state: running;
-	}
-
+	/* Default state - original line lengths */
 	.line1 {
-		animation: line1Animation 1.5s infinite ease-in-out paused;
+		d: path('M6 6v11');
 	}
 
 	.line2 {
-		animation: line2Animation 1s infinite ease-in-out paused;
+		d: path('M10 3v18');
 	}
 
 	.line3 {
-		animation: line3Animation 0.8s infinite ease-in-out paused;
+		d: path('M14 8v7');
 	}
 
 	.line4 {
-		animation: line4Animation 1.5s infinite ease-in-out paused;
+		d: path('M18 5v13');
 	}
 
-	@keyframes line1Animation {
-		0%,
-		100% {
-			d: path('M6 6v11');
+	/* Animated state when hovered - shorter line lengths with smooth animation */
+	.audio-lines-icon.animate .line1 {
+		d: path('M6 10v3');
+		animation: line1Pulse 1.5s infinite ease-in-out;
+	}
+
+	.audio-lines-icon.animate .line2 {
+		d: path('M10 9v5');
+		animation: line2Pulse 1s infinite ease-in-out;
+	}
+
+	.audio-lines-icon.animate .line3 {
+		d: path('M14 6v11');
+		animation: line3Pulse 0.8s infinite ease-in-out;
+	}
+
+	.audio-lines-icon.animate .line4 {
+		d: path('M18 7v9');
+		animation: line4Pulse 1.5s infinite ease-in-out;
+	}
+
+	/* Subtle pulsing animations during hover */
+	@keyframes line1Pulse {
+		0%, 100% {
+			opacity: 0.7;
 		}
 		50% {
-			d: path('M6 10v3');
+			opacity: 1;
 		}
 	}
 
-	@keyframes line2Animation {
-		0%,
-		100% {
-			d: path('M10 3v18');
+	@keyframes line2Pulse {
+		0%, 100% {
+			opacity: 0.8;
 		}
 		50% {
-			d: path('M10 9v5');
+			opacity: 1;
 		}
 	}
 
-	@keyframes line3Animation {
-		0%,
-		100% {
-			d: path('M14 8v7');
+	@keyframes line3Pulse {
+		0%, 100% {
+			opacity: 0.6;
 		}
 		50% {
-			d: path('M14 6v11');
+			opacity: 1;
 		}
 	}
 
-	@keyframes line4Animation {
-		0%,
-		100% {
-			d: path('M18 5v13');
+	@keyframes line4Pulse {
+		0%, 100% {
+			opacity: 0.75;
 		}
 		50% {
-			d: path('M18 7v9');
+			opacity: 1;
 		}
 	}
 </style>
