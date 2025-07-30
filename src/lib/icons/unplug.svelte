@@ -75,14 +75,17 @@
 	.spark-1,
 	.spark-2 {
 		transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+		transform-origin: center;
 	}
 
 	.line-1.animate {
-		d: path('M17 7l5 -5');
+		transform: translate(2px, -2px) scale(1.4);
+		opacity: 0.7;
 	}
 
 	.line-2.animate {
-		d: path('m2 22 6-6');
+		transform: translate(-2px, 2px) scale(1.4);
+		opacity: 0.7;
 	}
 
 	.socket.animate {
@@ -94,10 +97,12 @@
 	}
 
 	.spark-1.animate {
-		d: path('M10.43 10.57l0.10 -0.10');
+		transform: translate(-2px, 2px) scale(0.3);
+		opacity: 0.3;
 	}
 
 	.spark-2.animate {
-		d: path('M13.43 13.57l0.10 -0.10');
+		transform: translate(-2px, 2px) scale(0.3);
+		opacity: 0.3;
 	}
 </style>
