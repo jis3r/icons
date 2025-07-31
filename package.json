@@ -37,6 +37,7 @@
 		}
 	},
 	"devDependencies": {
+		"@lucide/svelte": "^0.534.0",
 		"@sveltejs/adapter-auto": "^6.0.1",
 		"@sveltejs/kit": "^2.26.1",
 		"@sveltejs/package": "^2.0.0",
@@ -60,18 +61,16 @@
 		"typescript": "^5.3.2",
 		"vite": "^6.3.5",
 		"vite-plugin-raw": "^1.0.3",
-		"vitest": "^3.1.1",
-		"@lucide/svelte": "^0.534.0"
+		"vitest": "^3.1.1"
 	},
 	"dependencies": {
-		"svelte": "^5.0.0",
 		"@number-flow/svelte": "^0.3.6",
-		"@vercel/analytics": "^1.5.0",
 		"iflog": "^0.3.0",
 		"mode-watcher": "^0.5.1",
 		"motion": "^12.23.6",
 		"posthog-js": "^1.246.0",
-		"shadcn-svelte": "^1.0.6"
+		"shadcn-svelte": "^1.0.6",
+		"svelte": "^5.0.0"
 	},
 	"overrides": {
 		"cookie": "0.7.0"
