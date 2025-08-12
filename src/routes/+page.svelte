@@ -11,7 +11,6 @@
 	import NumberFlow from '@number-flow/svelte';
 	import { debounce } from '$lib/utils/debounce';
 	import { animate } from 'motion';
-	import * as Tooltip from '$lib/components/ui/tooltip/index.js';
 
 	let stars = $state(0);
 	let iconsAdded = $state(0);
@@ -269,55 +268,37 @@
 							/>
 							<p class="mb-3 mt-5 text-center text-xs text-muted-foreground">{icon.name}</p>
 							<div class="flex items-center justify-center gap-2">
-								<Tooltip.Provider delayDuration={100}>
-									<Tooltip.Root>
-										<Tooltip.Trigger asChild>
-											<Button
-												onclick={() => handleCopy(icon)}
-												variant="ghost"
-												class="size-8 rounded-md p-2 transition-colors duration-200 hover:bg-accent"
-											>
-												{#key icon.copied}
-													<span use:animateIcon={{ visible: true }} style="display: inline-block;">
-														{#if icon.copied}
-															<Check class="h-4 w-4" />
-														{:else}
-															<Copy class="h-4 w-4" />
-														{/if}
-													</span>
-												{/key}
-											</Button>
-										</Tooltip.Trigger>
-										<Tooltip.Content side="bottom">
-											<p class="text-xs">Copy code</p>
-										</Tooltip.Content>
-									</Tooltip.Root>
-								</Tooltip.Provider>
+								<Button
+									onclick={() => handleCopy(icon)}
+									variant="ghost"
+									class="size-8 rounded-md p-2 transition-colors duration-200 hover:bg-accent"
+								>
+									{#key icon.copied}
+										<span use:animateIcon={{ visible: true }} style="display: inline-block;">
+											{#if icon.copied}
+												<Check class="h-4 w-4" />
+											{:else}
+												<Copy class="h-4 w-4" />
+											{/if}
+										</span>
+									{/key}
+								</Button>
 
-								<Tooltip.Provider delayDuration={100}>
-									<Tooltip.Root>
-										<Tooltip.Trigger asChild>
-											<Button
-												onclick={() => handleDownload(icon)}
-												variant="ghost"
-												class="size-8 rounded-md p-2 transition-colors duration-200 hover:bg-accent"
-											>
-												{#key icon.downloaded}
-													<span use:animateIcon={{ visible: true }} style="display: inline-block;">
-														{#if icon.downloaded}
-															<Check class="h-4 w-4" />
-														{:else}
-															<Download class="h-4 w-4" />
-														{/if}
-													</span>
-												{/key}
-											</Button>
-										</Tooltip.Trigger>
-										<Tooltip.Content side="bottom">
-											<p class="text-xs">Download .svelte</p>
-										</Tooltip.Content>
-									</Tooltip.Root>
-								</Tooltip.Provider>
+								<Button
+									onclick={() => handleDownload(icon)}
+									variant="ghost"
+									class="size-8 rounded-md p-2 transition-colors duration-200 hover:bg-accent"
+								>
+									{#key icon.downloaded}
+										<span use:animateIcon={{ visible: true }} style="display: inline-block;">
+											{#if icon.downloaded}
+												<Check class="h-4 w-4" />
+											{:else}
+												<Download class="h-4 w-4" />
+											{/if}
+										</span>
+									{/key}
+								</Button>
 
 								{#if false}
 									<Button
@@ -331,30 +312,21 @@
 									</Button>
 								{/if}
 
-								<Tooltip.Provider delayDuration={100}>
-									<Tooltip.Root>
-										<Tooltip.Trigger asChild>
-											<Button
-												onclick={() => handleTerminalCopy(icon)}
-												variant="ghost"
-												class="size-8 rounded-md p-2 transition-colors duration-200 hover:bg-accent"
-											>
-												{#key icon.terminalCopied}
-													<span use:animateIcon={{ visible: true }} style="display: inline-block;">
-														{#if icon.terminalCopied}
-															<Check class="h-4 w-4" />
-														{:else}
-															<Terminal class="h-4 w-4" />
-														{/if}
-													</span>
-												{/key}
-											</Button>
-										</Tooltip.Trigger>
-										<Tooltip.Content side="bottom">
-											<p class="text-xs">Copy shadcn-svelte/cli command</p>
-										</Tooltip.Content>
-									</Tooltip.Root>
-								</Tooltip.Provider>
+								<Button
+									onclick={() => handleTerminalCopy(icon)}
+									variant="ghost"
+									class="size-8 rounded-md p-2 transition-colors duration-200 hover:bg-accent"
+								>
+									{#key icon.terminalCopied}
+										<span use:animateIcon={{ visible: true }} style="display: inline-block;">
+											{#if icon.terminalCopied}
+												<Check class="h-4 w-4" />
+											{:else}
+												<Terminal class="h-4 w-4" />
+											{/if}
+										</span>
+									{/key}
+								</Button>
 							</div>
 						</div>
 					{/each}
