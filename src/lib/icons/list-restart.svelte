@@ -11,10 +11,10 @@
 	/** @type {Props} */
 	let {
 		color = 'currentColor',
-		size = 28,
+		size = 24,
 		strokeWidth = 2,
 		isHovered = false,
-		classes = ''
+		class: className = ''
 	} = $props();
 
 	function handleMouseEnter() {
@@ -27,7 +27,7 @@
 </script>
 
 <div
-	class={classes}
+	class={className}
 	aria-label="list-restart"
 	role="img"
 	onmouseenter={handleMouseEnter}
