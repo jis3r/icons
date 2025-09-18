@@ -11,12 +11,13 @@
 	import NumberFlow from '@number-flow/svelte';
 	import { debounce } from '$lib/utils/debounce';
 	import { animate } from 'motion';
+	import { page } from '$app/state';
 
 	let stars = $state(0);
 	let iconsAdded = $state(0);
 	let icons = [];
 	let searchQuery = $state('');
-	let filteredIcons = $state(icons);
+	let filteredIcons = $state([]);
 	let size = $state(28);
 	let color = $state('currentColor');
 	let strokeWidth = $state(2);
@@ -123,7 +124,14 @@
 	onMount(async () => {
 		try {
 			icons = ICONS_LIST;
-			filteredIcons = icons;
+
+			if (page.url.searchParams.has('search')) {
+				const searchParam = page.url.searchParams.get('search');
+				searchQuery = searchParam;
+				updateFilteredIcons(searchParam);
+			} else {
+				filteredIcons = icons;
+			}
 
 			const res = await fetch('https://api.github.com/repos/jis3r/icons');
 			if (!res.ok) throw new Error('Failed to fetch GitHub stars');
@@ -146,7 +154,12 @@
 			preloadIconSources(icons)
 				.then((updatedIcons) => {
 					icons = updatedIcons;
-					filteredIcons = icons;
+
+					if (searchQuery) {
+						updateFilteredIcons(searchQuery);
+					} else {
+						filteredIcons = icons;
+					}
 				})
 				.catch((err) => {
 					console.error('Failed to preload icons:', err);
