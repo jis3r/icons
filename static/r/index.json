@@ -3924,6 +3924,15 @@
 		"relativeUrl": "text-cursor.json"
 	},
 	{
+		"name": "text-search",
+		"title": "text-search",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated text-search icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "text-search.json"
+	},
+	{
 		"name": "thermometer",
 		"title": "thermometer",
 		"type": "registry:component",

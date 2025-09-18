@@ -434,6 +434,7 @@ export { default as Telescope } from './icons/telescope.svelte';
 export { default as Terminal } from './icons/terminal.svelte';
 export { default as TextCursorInput } from './icons/text-cursor-input.svelte';
 export { default as TextCursor } from './icons/text-cursor.svelte';
+export { default as TextSearch } from './icons/text-search.svelte';
 export { default as Thermometer } from './icons/thermometer.svelte';
 export { default as ThumbsDown } from './icons/thumbs-down.svelte';
 export { default as ThumbsUp } from './icons/thumbs-up.svelte';

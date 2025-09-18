@@ -434,6 +434,7 @@ import telescope from './telescope.svelte';
 import terminal from './terminal.svelte';
 import textCursor from './text-cursor.svelte';
 import textCursorInput from './text-cursor-input.svelte';
+import textSearch from './text-search.svelte';
 import thermometer from './thermometer.svelte';
 import thumbsDown from './thumbs-down.svelte';
 import thumbsUp from './thumbs-up.svelte';
@@ -5212,6 +5213,23 @@ let ICONS_LIST = [
 		icon: textCursorInput,
 		tags: ['select'],
 		categories: ['text', 'layout']
+	},
+	{
+		name: 'text-search',
+		icon: textSearch,
+		tags: [
+			'find',
+			'data',
+			'copy',
+			'txt',
+			'pdf',
+			'document',
+			'scan',
+			'magnifier',
+			'magnifying glass',
+			'lens'
+		],
+		categories: ['text']
 	},
 	{
 		name: 'thermometer',
