@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import Marquee from 'svelte-fast-marquee';
 	import { fade } from 'svelte/transition';
+	import { animate } from 'motion';
 	import {
 		Activity,
 		AlarmClock,
@@ -192,26 +193,38 @@
 	const marquee4Icons = $state(shuffledIcons.slice(chunkSize * 3));
 
 	onMount(() => {
-		// Set mounted after a brief delay to trigger transitions
+		animate(
+			'.hero-logo',
+			{
+				opacity: 1,
+				transform: ['translate(calc(-50% + 2px), calc(-50% + 20px))', 'translate(-50%, -50%)'],
+				filter: ['blur(10px)', 'blur(0px)']
+			},
+			{ delay: 0.25, duration: 0.8, easing: [0.16, 1, 0.3, 1] }
+		);
+
 		setTimeout(() => {
 			mounted = true;
-		}, 100);
+		}, 400);
+
+		animate(
+			'.hero-title span, .hero-description',
+			{ opacity: 1, y: [20, 0], x: [2, 0], filter: ['blur(10px)', 'blur(0px)'] },
+			{ delay: (i) => 0.9 + i * 0.05, duration: 0.8, easing: [0.16, 1, 0.3, 1] }
+		);
 	});
 </script>
 
 <main class="flex min-h-screen w-full items-center">
 	<div class="container max-w-7xl">
 		<div class="relative mx-auto grid max-w-6xl gap-4">
-			{#if mounted}
-				<div
-					in:fade={{ duration: 500 }}
-					class="border-800 pointer-events-none absolute left-1/2 top-1/2 z-20 flex h-36 min-h-36 w-36 min-w-36 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-3xl border bg-opacity-50 backdrop-blur-lg"
-				>
-					<div>
-						<Feather size={96} class="text-foreground" />
-					</div>
+			<div
+				class="hero-logo border-800 pointer-events-none absolute left-1/2 top-1/2 z-20 flex h-36 min-h-36 w-36 min-w-36 items-center justify-center rounded-3xl border bg-opacity-50 backdrop-blur-lg"
+			>
+				<div>
+					<Feather size={96} class="text-foreground" />
 				</div>
-			{/if}
+			</div>
 			<div
 				class="pointer-events-none absolute left-0 z-10 h-full w-16 bg-gradient-to-r from-background to-transparent sm:w-32 md:w-64"
 			></div>
@@ -280,24 +293,21 @@
 			</Marquee>
 		</div>
 
-		{#if mounted}
-			<h1
-				in:fade={{ delay: 500, duration: 1000 }}
-				class="mx-auto mt-8 w-fit max-w-5xl text-balance text-center text-3xl font-semibold sm:text-4xl md:text-5xl"
-			>
-				beautifully crafted, moving icons. for <span
-					class="bg-gradient-to-br from-svelte to-orange-400 bg-clip-text text-transparent"
-					>svelte</span
-				>.
-			</h1>
-			<p
-				in:fade={{ delay: 750, duration: 1000 }}
-				class="mx-auto mt-5 w-fit max-w-2xl text-pretty text-center text-sm leading-relaxed text-muted-foreground sm:mt-4 sm:text-base"
-			>
-				a collection of animated icons for your projects. feel free to use them, share your
-				feedback, and let's make this library awesome together!
-			</p>
-		{/if}
+		<h1
+			class="hero-title mx-auto mt-8 w-fit max-w-5xl text-balance text-center text-3xl font-semibold sm:text-4xl md:text-5xl"
+		>
+			<span>beautifully</span> <span>crafted,</span> <span>moving</span> <span>icons.</span>
+			<span>for</span>
+			<span class="bg-gradient-to-br from-svelte to-orange-400 bg-clip-text text-transparent"
+				>svelte</span
+			><span>.</span>
+		</h1>
+		<p
+			class="hero-description mx-auto mt-5 w-fit max-w-2xl text-pretty text-center text-sm leading-relaxed text-muted-foreground sm:mt-4 sm:text-base"
+		>
+			a collection of animated icons for your projects. feel free to use them, share your feedback,
+			and let's make this library awesome together!
+		</p>
 	</div>
 </main>
 
@@ -306,3 +316,21 @@
 		built with ❤️ by <a href="https://github.com/jis3r" class="underline">@jis3r</a>
 	</p>
 </footer>
+
+<style>
+	.hero-logo {
+		opacity: 0;
+		filter: blur(10px);
+	}
+
+	.hero-title span {
+		display: inline-block;
+		opacity: 0;
+		filter: blur(10px);
+	}
+
+	.hero-description {
+		opacity: 0;
+		filter: blur(10px);
+	}
+</style>

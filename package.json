@@ -75,7 +75,7 @@
 		"@number-flow/svelte": "^0.3.6",
 		"iflog": "^0.3.0",
 		"mode-watcher": "^0.5.1",
-		"motion": "^12.23.6",
+		"motion": "^12.23.24",
 		"posthog-js": "^1.246.0",
 		"shadcn-svelte": "^1.0.6",
 		"svelte": "^5.0.0",
