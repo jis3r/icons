@@ -19,7 +19,7 @@
 	class="border-text-muted-foreground fixed top-0 z-50 h-[72px] w-full border-b bg-background bg-opacity-40 backdrop-blur-xl"
 >
 	<nav class="container flex items-center justify-between py-4">
-		<h1 class="text-base">jis3r/icons</h1>
+		<h1 class="text-base">moving icons</h1>
 		<div class="flex gap-1">
 			<Button variant="outline" class="flex gap-2" href="https://github.com/jis3r/icons">
 				<Github size="20" />

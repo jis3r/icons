@@ -1,7 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
 	import Marquee from 'svelte-fast-marquee';
-	import { fade } from 'svelte/transition';
 	import { animate } from 'motion';
 	import {
 		Activity,
@@ -85,11 +84,6 @@
 		Undo,
 		PrinterCheck
 	} from '@lucide/svelte';
-
-	let iconsAdded = $state(0);
-	let icons = [];
-	let filteredIcons = $state(icons);
-	let mounted = $state(false);
 
 	const allIcons = [
 		Activity,
@@ -193,25 +187,51 @@
 	const marquee4Icons = $state(shuffledIcons.slice(chunkSize * 3));
 
 	onMount(() => {
-		animate(
-			'.hero-logo',
-			{
-				opacity: 1,
-				transform: ['translate(calc(-50% + 2px), calc(-50% + 20px))', 'translate(-50%, -50%)'],
-				filter: ['blur(10px)', 'blur(0px)']
-			},
-			{ delay: 0.25, duration: 0.8, easing: [0.16, 1, 0.3, 1] }
-		);
+		const allMarqueeIcons = document.querySelectorAll('.marquee-icon');
+		const delays = Array.from(allMarqueeIcons).map(() => Math.random() * 1500);
+
+		const sortedDelays = [...delays].sort((a, b) => a - b);
+		const medianDelay = sortedDelays[Math.floor(sortedDelays.length / 6)];
+
+		allMarqueeIcons.forEach((icon, i) => {
+			animate(
+				icon,
+				{ opacity: [0, 1] },
+				{ delay: delays[i] / 1000, duration: 0.4, easing: [0.42, 0, 0.58, 1] }
+			);
+		});
 
 		setTimeout(() => {
-			mounted = true;
-		}, 400);
+			const logo = document.querySelector('.hero-logo');
+			const titleSpans = document.querySelectorAll('.hero-title span');
+			const description = document.querySelector('.hero-description');
 
-		animate(
-			'.hero-title span, .hero-description',
-			{ opacity: 1, y: [20, 0], x: [2, 0], filter: ['blur(10px)', 'blur(0px)'] },
-			{ delay: (i) => 0.9 + i * 0.05, duration: 0.8, easing: [0.16, 1, 0.3, 1] }
-		);
+			const allElements = [logo, ...Array.from(titleSpans), description].filter(Boolean);
+
+			allElements.forEach((element, i) => {
+				if (i === 0) {
+					animate(
+						element,
+						{
+							opacity: 1,
+							transform: [
+								'translate(calc(-50% + 2px), calc(-50% + 20px))',
+								'translate(-50%, -50%)'
+							],
+							filter: ['blur(10px)', 'blur(0px)']
+						},
+						{ delay: 0.125, duration: 0.8, easing: [0.16, 1, 0.3, 1] }
+					);
+				} else {
+					const startDelay = 0.125 + 0.4 + (i - 1) * 0.05; // Logo delay + half duration + stagger
+					animate(
+						element,
+						{ opacity: 1, y: [20, 0], x: [2, 0], filter: ['blur(10px)', 'blur(0px)'] },
+						{ delay: startDelay, duration: 0.8, easing: [0.16, 1, 0.3, 1] }
+					);
+				}
+			});
+		}, medianDelay);
 	});
 </script>
 
@@ -242,53 +262,41 @@
 
 			<Marquee gap="24px" speed={20} class="min-h-14">
 				{#each marquee1Icons as Icon, i}
-					{#if mounted}
-						<div
-							in:fade={{ delay: Math.random() * 1500, duration: 400 }}
-							class="flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-900"
-						>
-							<Icon size={24} class="text-muted-foreground" />
-						</div>
-					{/if}
+					<div
+						class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-900"
+					>
+						<Icon size={24} class="text-muted-foreground" />
+					</div>
 				{/each}
 			</Marquee>
 
 			<Marquee gap="24px" speed={24} class="min-h-14">
 				{#each marquee2Icons as Icon, i}
-					{#if mounted}
-						<div
-							in:fade={{ delay: Math.random() * 1500, duration: 400 }}
-							class="flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-900"
-						>
-							<Icon size={24} class="text-muted-foreground" />
-						</div>
-					{/if}
+					<div
+						class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-900"
+					>
+						<Icon size={24} class="text-muted-foreground" />
+					</div>
 				{/each}
 			</Marquee>
 
 			<Marquee gap="24px" speed={16} class="min-h-14">
 				{#each marquee3Icons as Icon, i}
-					{#if mounted}
-						<div
-							in:fade={{ delay: Math.random() * 1500, duration: 400 }}
-							class="flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-900"
-						>
-							<Icon size={24} class="text-muted-foreground" />
-						</div>
-					{/if}
+					<div
+						class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-900"
+					>
+						<Icon size={24} class="text-muted-foreground" />
+					</div>
 				{/each}
 			</Marquee>
 
 			<Marquee gap="24px" speed={28} class="min-h-14">
 				{#each marquee4Icons as Icon, i}
-					{#if mounted}
-						<div
-							in:fade={{ delay: Math.random() * 1500, duration: 400 }}
-							class="flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-900"
-						>
-							<Icon size={24} class="text-muted-foreground" />
-						</div>
-					{/if}
+					<div
+						class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-900"
+					>
+						<Icon size={24} class="text-muted-foreground" />
+					</div>
 				{/each}
 			</Marquee>
 		</div>
@@ -332,5 +340,9 @@
 	.hero-description {
 		opacity: 0;
 		filter: blur(10px);
+	}
+
+	.marquee-icon {
+		opacity: 0;
 	}
 </style>
