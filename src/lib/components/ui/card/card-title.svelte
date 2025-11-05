@@ -1,14 +1,15 @@
 <script>
-	import { cn } from "$lib/utils.js";
-	let className = undefined;
-	export let tag = "h3";
-	export { className as class };
+	import { cn } from '$lib/utils.js';
+
+	let { ref = $bindable(null), class: className, level = 3, children, ...restProps } = $props();
 </script>
 
-<svelte:element
-	this={tag}
-	class={cn("text-lg font-semibold leading-none tracking-tight", className)}
-	{...$$restProps}
+<div
+	role="heading"
+	aria-level={level}
+	bind:this={ref}
+	class={cn('text-2xl font-semibold leading-none tracking-tight', className)}
+	{...restProps}
 >
-	<slot />
-</svelte:element>
+	{@render children?.()}
+</div>

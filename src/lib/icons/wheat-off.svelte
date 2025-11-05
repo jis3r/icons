@@ -1,21 +1,31 @@
 <script>
+	/**
+	 * @typedef {Object} Props
+	 * @property {string} [color]
+	 * @property {number} [size]
+	 * @property {number} [strokeWidth]
+	 * @property {boolean} [isHovered]
+	 * @property {string} [class]
+	 */
+
+	/** @type {Props} */
 	let {
 		color = 'currentColor',
-		size = 28,
+		size = 24,
 		strokeWidth = 2,
 		isHovered = false,
-		classes = ''
+		class: className = ''
 	} = $props();
 
 	function handleMouseEnter() {
 		isHovered = true;
 		setTimeout(() => {
 			isHovered = false;
-		}, 400);
+		}, 600);
 	}
 </script>
 
-<div class={classes} aria-label="wheat-off" role="img" onmouseenter={handleMouseEnter}>
+<div class={className} aria-label="wheat-off" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
@@ -42,38 +52,46 @@
 		/>
 		<path d="m16 16-.53.53a3.5 3.5 0 0 1-4.94 0L9 15l1.53-1.53a3.49 3.49 0 0 1 1.97-.98" />
 		<path d="M18.74 13.09c.26-.15.51-.34.73-.56L21 11l-1.53-1.53a3.5 3.5 0 0 0-4.62-.28" />
-		<line class="line" x1="2" x2="22" y1="2" y2="22" />
+		<line x1="2" x2="22" y1="2" y2="22" />
 	</svg>
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.wheat-off {
 		overflow: visible;
 	}
 
-	.line {
-		stroke-dasharray: 29;
-		stroke-dashoffset: 0;
-		transition: stroke-dashoffset 0.15s ease-out;
+	.wheat-off {
+		overflow: visible;
+		transform: translateX(0);
+		transition: transform 0.6s ease-in-out;
 	}
 
-	.wheat-off.animate .line {
-		opacity: 0;
-		animation: lineAnimation 0.3s ease-out 0.1s forwards;
+	.wheat-off.animate {
+		animation: groupShake 0.6s ease-in-out;
 	}
 
-	@keyframes lineAnimation {
+	@keyframes groupShake {
 		0% {
-			opacity: 0;
-			stroke-dashoffset: 29;
+			transform: translateX(0);
 		}
-		15% {
-			opacity: 1;
-			stroke-dashoffset: 29;
+		16.67% {
+			transform: translateX(-7%);
+		}
+		33.33% {
+			transform: translateX(7%);
+		}
+		50% {
+			transform: translateX(-7%);
+		}
+		66.67% {
+			transform: translateX(7%);
 		}
 		100% {
-			opacity: 1;
-			stroke-dashoffset: 0;
+			transform: translateX(0);
 		}
 	}
 </style>

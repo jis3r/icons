@@ -1,10 +1,20 @@
 <script>
+	/**
+	 * @typedef {Object} Props
+	 * @property {string} [color]
+	 * @property {number} [size]
+	 * @property {number} [strokeWidth]
+	 * @property {boolean} [isHovered]
+	 * @property {string} [class]
+	 */
+
+	/** @type {Props} */
 	let {
 		color = 'currentColor',
-		size = 28,
+		size = 24,
 		strokeWidth = 2,
 		isHovered = false,
-		classes = ''
+		class: className = ''
 	} = $props();
 
 	function handleMouseEnter() {
@@ -17,7 +27,7 @@
 </script>
 
 <div
-	class={classes}
+	class={className}
 	aria-label="blocks"
 	role="img"
 	onmouseenter={handleMouseEnter}
@@ -42,6 +52,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	rect {
 		transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	}

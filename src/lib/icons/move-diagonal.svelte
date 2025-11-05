@@ -1,28 +1,32 @@
 <script>
+	/**
+	 * @typedef {Object} Props
+	 * @property {string} [color]
+	 * @property {number} [size]
+	 * @property {number} [strokeWidth]
+	 * @property {boolean} [isHovered]
+	 * @property {string} [class]
+	 */
+
+	/** @type {Props} */
 	let {
 		color = 'currentColor',
-		size = 28,
+		size = 24,
 		strokeWidth = 2,
 		isHovered = false,
-		classes = ''
+		class: className = ''
 	} = $props();
 
 	function handleMouseEnter() {
 		isHovered = true;
-	}
 
-	function handleMouseLeave() {
-		isHovered = false;
+		setTimeout(() => {
+			isHovered = false;
+		}, 1000);
 	}
 </script>
 
-<div
-	class={classes}
-	aria-label="move-diagonal"
-	role="img"
-	onmouseenter={handleMouseEnter}
-	onmouseleave={handleMouseLeave}
->
+<div class={className} aria-label="move-diagonal" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
@@ -42,6 +46,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	path {
 		transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	}

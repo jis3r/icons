@@ -1,6 +1,5 @@
 <script>
 	import { onMount } from 'svelte';
-	import { getIcons } from '$lib/utils/icons.js';
 	import Marquee from 'svelte-fast-marquee';
 	import { fade } from 'svelte/transition';
 	import {
@@ -84,7 +83,7 @@
 		Redo,
 		Undo,
 		PrinterCheck
-	} from 'lucide-svelte';
+	} from '@lucide/svelte';
 
 	let iconsAdded = $state(0);
 	let icons = [];
@@ -192,16 +191,7 @@
 	const marquee3Icons = $state(shuffledIcons.slice(chunkSize * 2, chunkSize * 3));
 	const marquee4Icons = $state(shuffledIcons.slice(chunkSize * 3));
 
-	onMount(async () => {
-		icons = await getIcons();
-		filteredIcons = icons;
-
-		const lastVisit = localStorage.getItem('lastVisit');
-		if (lastVisit) {
-			iconsAdded = icons.length - JSON.parse(lastVisit);
-		}
-		localStorage.setItem('lastVisit', JSON.stringify(icons.length));
-
+	onMount(() => {
 		// Set mounted after a brief delay to trigger transitions
 		setTimeout(() => {
 			mounted = true;

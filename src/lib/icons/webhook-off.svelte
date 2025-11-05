@@ -1,21 +1,31 @@
 <script>
+	/**
+	 * @typedef {Object} Props
+	 * @property {string} [color]
+	 * @property {number} [size]
+	 * @property {number} [strokeWidth]
+	 * @property {boolean} [isHovered]
+	 * @property {string} [class]
+	 */
+
+	/** @type {Props} */
 	let {
 		color = 'currentColor',
-		size = 28,
+		size = 24,
 		strokeWidth = 2,
 		isHovered = false,
-		classes = ''
+		class: className = ''
 	} = $props();
 
 	function handleMouseEnter() {
 		isHovered = true;
 		setTimeout(() => {
 			isHovered = false;
-		}, 400);
+		}, 600);
 	}
 </script>
 
-<div class={classes} aria-label="webhook-off" role="img" onmouseenter={handleMouseEnter}>
+<div class={className} aria-label="webhook-off" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
@@ -35,38 +45,46 @@
 		<path d="M20.3 20.3a4 4 0 0 1-2.3.7" />
 		<path d="M18.6 13a4 4 0 0 1 3.357 3.414" />
 		<path d="m12 6 .6 1" />
-		<path class="line" d="m2 2 20 20" />
+		<path d="m2 2 20 20" />
 	</svg>
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.webhook-off {
 		overflow: visible;
 	}
 
-	.line {
-		stroke-dasharray: 29;
-		stroke-dashoffset: 0;
-		transition: stroke-dashoffset 0.15s ease-out;
+	.webhook-off {
+		overflow: visible;
+		transform: translateX(0);
+		transition: transform 0.6s ease-in-out;
 	}
 
-	.webhook-off.animate .line {
-		opacity: 0;
-		animation: lineAnimation 0.3s ease-out 0.1s forwards;
+	.webhook-off.animate {
+		animation: groupShake 0.6s ease-in-out;
 	}
 
-	@keyframes lineAnimation {
+	@keyframes groupShake {
 		0% {
-			opacity: 0;
-			stroke-dashoffset: 29;
+			transform: translateX(0);
 		}
-		15% {
-			opacity: 1;
-			stroke-dashoffset: 29;
+		16.67% {
+			transform: translateX(-7%);
+		}
+		33.33% {
+			transform: translateX(7%);
+		}
+		50% {
+			transform: translateX(-7%);
+		}
+		66.67% {
+			transform: translateX(7%);
 		}
 		100% {
-			opacity: 1;
-			stroke-dashoffset: 0;
+			transform: translateX(0);
 		}
 	}
 </style>

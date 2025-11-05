@@ -1,0 +1,15 @@
+{
+	"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+	"name": "star-off",
+	"title": "star-off",
+	"type": "registry:component",
+	"author": "jis3r <jis3r@protonmail.com>",
+	"description": "The animated star-off icon component.",
+	"files": [
+		{
+			"content": "<script>\n\t/**\n\t * @typedef {Object} Props\n\t * @property {string} [color]\n\t * @property {number} [size]\n\t * @property {number} [strokeWidth]\n\t * @property {boolean} [isHovered]\n\t * @property {string} [class]\n\t */\n\n\t/** @type {Props} */\n\tlet {\n\t\tcolor = 'currentColor',\n\t\tsize = 24,\n\t\tstrokeWidth = 2,\n\t\tisHovered = false,\n\t\tclass: className = ''\n\t} = $props();\n\n\tfunction handleMouseEnter() {\n\t\tisHovered = true;\n\t\tsetTimeout(() => {\n\t\t\tisHovered = false;\n\t\t}, 600);\n\t}\n</script>\n\n<div class={className} aria-label=\"star-off\" role=\"img\" onmouseenter={handleMouseEnter}>\n\t<svg\n\t\txmlns=\"http://www.w3.org/2000/svg\"\n\t\twidth={size}\n\t\theight={size}\n\t\tviewBox=\"0 0 24 24\"\n\t\tfill=\"none\"\n\t\tstroke={color}\n\t\tstroke-width={strokeWidth}\n\t\tstroke-linecap=\"round\"\n\t\tstroke-linejoin=\"round\"\n\t\tclass=\"star-off\"\n\t\tclass:animate={isHovered}\n\t>\n\t\t<path d=\"M8.34 8.34 2 9.27l5 4.87L5.82 21 12 17.77 18.18 21l-.59-3.43\" />\n\t\t<path d=\"M18.42 12.76 22 9.27l-6.91-1L12 2l-1.44 2.91\" />\n\t\t<path d=\"m2 2 20 20\" />\n\t</svg>\n</div>\n\n<style>\n\tdiv {\n\t\tdisplay: inline-block;\n\t}\n\t.star-off {\n\t\toverflow: visible;\n\t}\n\n\t.star-off {\n\t\toverflow: visible;\n\t\ttransform: translateX(0);\n\t\ttransition: transform 0.6s ease-in-out;\n\t}\n\n\t.star-off.animate {\n\t\tanimation: groupShake 0.6s ease-in-out;\n\t}\n\n\t@keyframes groupShake {\n\t\t0% {\n\t\t\ttransform: translateX(0);\n\t\t}\n\t\t16.67% {\n\t\t\ttransform: translateX(-7%);\n\t\t}\n\t\t33.33% {\n\t\t\ttransform: translateX(7%);\n\t\t}\n\t\t50% {\n\t\t\ttransform: translateX(-7%);\n\t\t}\n\t\t66.67% {\n\t\t\ttransform: translateX(7%);\n\t\t}\n\t\t100% {\n\t\t\ttransform: translateX(0);\n\t\t}\n\t}\n</style>\n",
+			"type": "registry:component",
+			"target": "~/src/lib/components/movingicons/star-off.svelte"
+		}
+	]
+}

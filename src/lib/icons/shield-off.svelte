@@ -1,21 +1,31 @@
 <script>
+	/**
+	 * @typedef {Object} Props
+	 * @property {string} [color]
+	 * @property {number} [size]
+	 * @property {number} [strokeWidth]
+	 * @property {boolean} [isHovered]
+	 * @property {string} [class]
+	 */
+
+	/** @type {Props} */
 	let {
 		color = 'currentColor',
-		size = 28,
+		size = 24,
 		strokeWidth = 2,
 		isHovered = false,
-		classes = ''
+		class: className = ''
 	} = $props();
 
 	function handleMouseEnter() {
 		isHovered = true;
 		setTimeout(() => {
 			isHovered = false;
-		}, 400);
+		}, 600);
 	}
 </script>
 
-<div class={classes} aria-label="shield-off" role="img" onmouseenter={handleMouseEnter}>
+<div class={className} aria-label="shield-off" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
@@ -29,7 +39,7 @@
 		class="shield-off"
 		class:animate={isHovered}
 	>
-		<path class="line" d="m2 2 20 20" />
+		<path d="m2 2 20 20" />
 		<path
 			d="M5 5a1 1 0 0 0-1 1v7c0 5 3.5 7.5 7.67 8.94a1 1 0 0 0 .67.01c2.35-.82 4.48-1.97 5.9-3.71"
 		/>
@@ -40,33 +50,41 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.shield-off {
 		overflow: visible;
 	}
 
-	.line {
-		stroke-dasharray: 29;
-		stroke-dashoffset: 0;
-		transition: stroke-dashoffset 0.15s ease-out;
+	.shield-off {
+		overflow: visible;
+		transform: translateX(0);
+		transition: transform 0.6s ease-in-out;
 	}
 
-	.shield-off.animate .line {
-		opacity: 0;
-		animation: lineAnimation 0.3s ease-out 0.1s forwards;
+	.shield-off.animate {
+		animation: groupShake 0.6s ease-in-out;
 	}
 
-	@keyframes lineAnimation {
+	@keyframes groupShake {
 		0% {
-			opacity: 0;
-			stroke-dashoffset: 29;
+			transform: translateX(0);
 		}
-		15% {
-			opacity: 1;
-			stroke-dashoffset: 29;
+		16.67% {
+			transform: translateX(-7%);
+		}
+		33.33% {
+			transform: translateX(7%);
+		}
+		50% {
+			transform: translateX(-7%);
+		}
+		66.67% {
+			transform: translateX(7%);
 		}
 		100% {
-			opacity: 1;
-			stroke-dashoffset: 0;
+			transform: translateX(0);
 		}
 	}
 </style>

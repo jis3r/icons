@@ -1,28 +1,32 @@
 <script>
+	/**
+	 * @typedef {Object} Props
+	 * @property {string} [color]
+	 * @property {number} [size]
+	 * @property {number} [strokeWidth]
+	 * @property {boolean} [isHovered]
+	 * @property {string} [class]
+	 */
+
+	/** @type {Props} */
 	let {
 		color = 'currentColor',
-		size = 28,
+		size = 24,
 		strokeWidth = 2,
 		isHovered = false,
-		classes = ''
+		class: className = ''
 	} = $props();
 
 	function handleMouseEnter() {
 		isHovered = true;
-	}
 
-	function handleMouseLeave() {
-		isHovered = false;
+		setTimeout(() => {
+			isHovered = false;
+		}, 700);
 	}
 </script>
 
-<div
-	class={classes}
-	aria-label="sword"
-	role="img"
-	onmouseenter={handleMouseEnter}
-	onmouseleave={handleMouseLeave}
->
+<div class={className} aria-label="sword" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
@@ -44,6 +48,9 @@
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.sword-icon {
 		transform-origin: bottom right;
 		transition: transform 0.3s ease;
@@ -54,7 +61,8 @@
 	}
 
 	@keyframes swing {
-		0% {
+		0%,
+		70% {
 			transform: rotate(0deg);
 		}
 		30% {
@@ -62,9 +70,6 @@
 		}
 		50% {
 			transform: rotate(-5deg);
-		}
-		70% {
-			transform: rotate(0deg);
 		}
 	}
 </style>

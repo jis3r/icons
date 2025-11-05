@@ -1,0 +1,15 @@
+{
+	"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+	"name": "panel-bottom-open",
+	"title": "panel-bottom-open",
+	"type": "registry:component",
+	"author": "jis3r <jis3r@protonmail.com>",
+	"description": "The animated panel-bottom-open icon component.",
+	"files": [
+		{
+			"content": "<script>\n\t/**\n\t * @typedef {Object} Props\n\t * @property {string} [color]\n\t * @property {number} [size]\n\t * @property {number} [strokeWidth]\n\t * @property {boolean} [isHovered]\n\t * @property {string} [class]\n\t */\n\n\t/** @type {Props} */\n\tlet {\n\t\tcolor = 'currentColor',\n\t\tsize = 24,\n\t\tstrokeWidth = 2,\n\t\tisHovered = false,\n\t\tclass: className = ''\n\t} = $props();\n\n\tfunction handleMouseEnter() {\n\t\tif (isHovered) return;\n\t\tisHovered = true;\n\n\t\tsetTimeout(() => {\n\t\t\tisHovered = false;\n\t\t}, 300);\n\t}\n</script>\n\n<div class={className} aria-label=\"panel-bottom-open\" role=\"img\" onmouseenter={handleMouseEnter}>\n\t<svg\n\t\txmlns=\"http://www.w3.org/2000/svg\"\n\t\twidth={size}\n\t\theight={size}\n\t\tviewBox=\"0 0 24 24\"\n\t\tfill=\"none\"\n\t\tstroke={color}\n\t\tstroke-width={strokeWidth}\n\t\tstroke-linecap=\"round\"\n\t\tstroke-linejoin=\"round\"\n\t>\n\t\t<rect width=\"18\" height=\"18\" x=\"3\" y=\"3\" rx=\"2\" />\n\t\t<path d=\"M3 15h18\" class:line={isHovered} />\n\t\t<path d=\"m9 10 3-3 3 3\" class:chevron={isHovered} />\n\t</svg>\n</div>\n\n<style>\n\tdiv {\n\t\tdisplay: inline-block;\n\t}\n\tpath {\n\t\ttransition: all 0.2s ease-in-out;\n\t}\n\n\t.line {\n\t\ttransform: translateY(-2px);\n\t\ttransition-delay: 0.05s;\n\t}\n\n\t.chevron {\n\t\ttransform: translateY(-2px);\n\t}\n</style>\n",
+			"type": "registry:component",
+			"target": "~/src/lib/components/movingicons/panel-bottom-open.svelte"
+		}
+	]
+}

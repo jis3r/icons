@@ -1,10 +1,20 @@
 <script>
+	/**
+	 * @typedef {Object} Props
+	 * @property {string} [color]
+	 * @property {number} [size]
+	 * @property {number} [strokeWidth]
+	 * @property {boolean} [isHovered]
+	 * @property {string} [class]
+	 */
+
+	/** @type {Props} */
 	let {
 		color = 'currentColor',
-		size = 28,
+		size = 24,
 		strokeWidth = 2,
 		isHovered = false,
-		classes = ''
+		class: className = ''
 	} = $props();
 
 	function handleMouseEnter() {
@@ -12,11 +22,11 @@
 
 		setTimeout(() => {
 			isHovered = false;
-		}, 400);
+		}, 600);
 	}
 </script>
 
-<div class={classes} aria-label="ear-off" role="img" onmouseenter={handleMouseEnter}>
+<div class={className} aria-label="ear-off" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
@@ -34,38 +44,46 @@
 		<path d="M6 8.5c0-.75.13-1.47.36-2.14" />
 		<path d="M8.8 3.15A6.5 6.5 0 0 1 19 8.5c0 1.63-.44 2.81-1.09 3.76" />
 		<path d="M12.5 6A2.5 2.5 0 0 1 15 8.5M10 13a2 2 0 0 0 1.82-1.18" />
-		<line x1="2" x2="22" y1="2" y2="22" class="line" />
+		<line x1="2" x2="22" y1="2" y2="22" />
 	</svg>
 </div>
 
 <style>
+	div {
+		display: inline-block;
+	}
 	.ear-off {
 		overflow: visible;
 	}
 
-	.line {
-		stroke-dasharray: 29;
-		stroke-dashoffset: 0;
-		transition: stroke-dashoffset 0.15s ease-out;
+	.ear-off {
+		overflow: visible;
+		transform: translateX(0);
+		transition: transform 0.6s ease-in-out;
 	}
 
-	.ear-off.animate .line {
-		opacity: 0;
-		animation: lineAnimation 0.3s ease-out 0.1s forwards;
+	.ear-off.animate {
+		animation: groupShake 0.6s ease-in-out;
 	}
 
-	@keyframes lineAnimation {
+	@keyframes groupShake {
 		0% {
-			opacity: 0;
-			stroke-dashoffset: 29;
+			transform: translateX(0);
 		}
-		15% {
-			opacity: 1;
-			stroke-dashoffset: 29;
+		16.67% {
+			transform: translateX(-7%);
+		}
+		33.33% {
+			transform: translateX(7%);
+		}
+		50% {
+			transform: translateX(-7%);
+		}
+		66.67% {
+			transform: translateX(7%);
 		}
 		100% {
-			opacity: 1;
-			stroke-dashoffset: 0;
+			transform: translateX(0);
 		}
 	}
 </style>

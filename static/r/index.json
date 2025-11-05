@@ -1,0 +1,4358 @@
+[
+	{
+		"name": "activity",
+		"title": "activity",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated activity icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "activity.json"
+	},
+	{
+		"name": "alarm-clock-check",
+		"title": "alarm-clock-check",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated alarm-clock-check icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "alarm-clock-check.json"
+	},
+	{
+		"name": "alarm-clock-off",
+		"title": "alarm-clock-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated alarm-clock-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "alarm-clock-off.json"
+	},
+	{
+		"name": "alarm-clock",
+		"title": "alarm-clock",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated alarm-clock icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "alarm-clock.json"
+	},
+	{
+		"name": "align-center",
+		"title": "align-center",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated align-center icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "align-center.json"
+	},
+	{
+		"name": "align-horizontal-space-around",
+		"title": "align-horizontal-space-around",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated align-horizontal-space-around icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "align-horizontal-space-around.json"
+	},
+	{
+		"name": "align-vertical-space-around",
+		"title": "align-vertical-space-around",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated align-vertical-space-around icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "align-vertical-space-around.json"
+	},
+	{
+		"name": "anvil",
+		"title": "anvil",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated anvil icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "anvil.json"
+	},
+	{
+		"name": "archive",
+		"title": "archive",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated archive icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "archive.json"
+	},
+	{
+		"name": "arrow-big-down-dash",
+		"title": "arrow-big-down-dash",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated arrow-big-down-dash icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "arrow-big-down-dash.json"
+	},
+	{
+		"name": "arrow-big-down",
+		"title": "arrow-big-down",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated arrow-big-down icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "arrow-big-down.json"
+	},
+	{
+		"name": "arrow-big-left-dash",
+		"title": "arrow-big-left-dash",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated arrow-big-left-dash icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "arrow-big-left-dash.json"
+	},
+	{
+		"name": "arrow-big-left",
+		"title": "arrow-big-left",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated arrow-big-left icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "arrow-big-left.json"
+	},
+	{
+		"name": "arrow-big-right-dash",
+		"title": "arrow-big-right-dash",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated arrow-big-right-dash icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "arrow-big-right-dash.json"
+	},
+	{
+		"name": "arrow-big-right",
+		"title": "arrow-big-right",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated arrow-big-right icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "arrow-big-right.json"
+	},
+	{
+		"name": "arrow-big-up-dash",
+		"title": "arrow-big-up-dash",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated arrow-big-up-dash icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "arrow-big-up-dash.json"
+	},
+	{
+		"name": "arrow-big-up",
+		"title": "arrow-big-up",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated arrow-big-up icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "arrow-big-up.json"
+	},
+	{
+		"name": "arrow-down-0-1",
+		"title": "arrow-down-0-1",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated arrow-down-0-1 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "arrow-down-0-1.json"
+	},
+	{
+		"name": "arrow-down-1-0",
+		"title": "arrow-down-1-0",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated arrow-down-1-0 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "arrow-down-1-0.json"
+	},
+	{
+		"name": "arrow-down-a-z",
+		"title": "arrow-down-a-z",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated arrow-down-a-z icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "arrow-down-a-z.json"
+	},
+	{
+		"name": "arrow-down-left",
+		"title": "arrow-down-left",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated arrow-down-left icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "arrow-down-left.json"
+	},
+	{
+		"name": "arrow-down-right",
+		"title": "arrow-down-right",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated arrow-down-right icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "arrow-down-right.json"
+	},
+	{
+		"name": "arrow-down-z-a",
+		"title": "arrow-down-z-a",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated arrow-down-z-a icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "arrow-down-z-a.json"
+	},
+	{
+		"name": "arrow-down",
+		"title": "arrow-down",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated arrow-down icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "arrow-down.json"
+	},
+	{
+		"name": "arrow-left-right",
+		"title": "arrow-left-right",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated arrow-left-right icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "arrow-left-right.json"
+	},
+	{
+		"name": "arrow-left",
+		"title": "arrow-left",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated arrow-left icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "arrow-left.json"
+	},
+	{
+		"name": "arrow-right-left",
+		"title": "arrow-right-left",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated arrow-right-left icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "arrow-right-left.json"
+	},
+	{
+		"name": "arrow-right",
+		"title": "arrow-right",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated arrow-right icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "arrow-right.json"
+	},
+	{
+		"name": "arrow-up-0-1",
+		"title": "arrow-up-0-1",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated arrow-up-0-1 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "arrow-up-0-1.json"
+	},
+	{
+		"name": "arrow-up-1-0",
+		"title": "arrow-up-1-0",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated arrow-up-1-0 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "arrow-up-1-0.json"
+	},
+	{
+		"name": "arrow-up-a-z",
+		"title": "arrow-up-a-z",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated arrow-up-a-z icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "arrow-up-a-z.json"
+	},
+	{
+		"name": "arrow-up-left",
+		"title": "arrow-up-left",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated arrow-up-left icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "arrow-up-left.json"
+	},
+	{
+		"name": "arrow-up-right",
+		"title": "arrow-up-right",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated arrow-up-right icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "arrow-up-right.json"
+	},
+	{
+		"name": "arrow-up-z-a",
+		"title": "arrow-up-z-a",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated arrow-up-z-a icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "arrow-up-z-a.json"
+	},
+	{
+		"name": "arrow-up",
+		"title": "arrow-up",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated arrow-up icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "arrow-up.json"
+	},
+	{
+		"name": "audio-lines",
+		"title": "audio-lines",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated audio-lines icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "audio-lines.json"
+	},
+	{
+		"name": "award",
+		"title": "award",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated award icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "award.json"
+	},
+	{
+		"name": "axe",
+		"title": "axe",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated axe icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "axe.json"
+	},
+	{
+		"name": "badge-alert",
+		"title": "badge-alert",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated badge-alert icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "badge-alert.json"
+	},
+	{
+		"name": "badge-check",
+		"title": "badge-check",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated badge-check icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "badge-check.json"
+	},
+	{
+		"name": "badge-question-mark",
+		"title": "badge-question-mark",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated badge-question-mark icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "badge-question-mark.json"
+	},
+	{
+		"name": "battery-charging",
+		"title": "battery-charging",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated battery-charging icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "battery-charging.json"
+	},
+	{
+		"name": "battery-full",
+		"title": "battery-full",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated battery-full icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "battery-full.json"
+	},
+	{
+		"name": "battery-low",
+		"title": "battery-low",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated battery-low icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "battery-low.json"
+	},
+	{
+		"name": "battery-medium",
+		"title": "battery-medium",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated battery-medium icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "battery-medium.json"
+	},
+	{
+		"name": "battery-warning",
+		"title": "battery-warning",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated battery-warning icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "battery-warning.json"
+	},
+	{
+		"name": "battery",
+		"title": "battery",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated battery icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "battery.json"
+	},
+	{
+		"name": "bean-off",
+		"title": "bean-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated bean-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "bean-off.json"
+	},
+	{
+		"name": "beer-off",
+		"title": "beer-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated beer-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "beer-off.json"
+	},
+	{
+		"name": "bell-off",
+		"title": "bell-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated bell-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "bell-off.json"
+	},
+	{
+		"name": "bell-ring",
+		"title": "bell-ring",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated bell-ring icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "bell-ring.json"
+	},
+	{
+		"name": "bell",
+		"title": "bell",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated bell icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "bell.json"
+	},
+	{
+		"name": "between-horizontal-end",
+		"title": "between-horizontal-end",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated between-horizontal-end icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "between-horizontal-end.json"
+	},
+	{
+		"name": "between-horizontal-start",
+		"title": "between-horizontal-start",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated between-horizontal-start icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "between-horizontal-start.json"
+	},
+	{
+		"name": "between-vertical-end",
+		"title": "between-vertical-end",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated between-vertical-end icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "between-vertical-end.json"
+	},
+	{
+		"name": "between-vertical-start",
+		"title": "between-vertical-start",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated between-vertical-start icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "between-vertical-start.json"
+	},
+	{
+		"name": "blend",
+		"title": "blend",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated blend icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "blend.json"
+	},
+	{
+		"name": "blocks",
+		"title": "blocks",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated blocks icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "blocks.json"
+	},
+	{
+		"name": "bluetooth-off",
+		"title": "bluetooth-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated bluetooth-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "bluetooth-off.json"
+	},
+	{
+		"name": "bolt",
+		"title": "bolt",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated bolt icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "bolt.json"
+	},
+	{
+		"name": "bone",
+		"title": "bone",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated bone icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "bone.json"
+	},
+	{
+		"name": "book-a",
+		"title": "book-a",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated book-a icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "book-a.json"
+	},
+	{
+		"name": "book-audio",
+		"title": "book-audio",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated book-audio icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "book-audio.json"
+	},
+	{
+		"name": "book-check",
+		"title": "book-check",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated book-check icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "book-check.json"
+	},
+	{
+		"name": "book-dashed",
+		"title": "book-dashed",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated book-dashed icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "book-dashed.json"
+	},
+	{
+		"name": "book-down",
+		"title": "book-down",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated book-down icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "book-down.json"
+	},
+	{
+		"name": "book-headphones",
+		"title": "book-headphones",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated book-headphones icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "book-headphones.json"
+	},
+	{
+		"name": "book-heart",
+		"title": "book-heart",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated book-heart icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "book-heart.json"
+	},
+	{
+		"name": "book-image",
+		"title": "book-image",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated book-image icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "book-image.json"
+	},
+	{
+		"name": "book-key",
+		"title": "book-key",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated book-key icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "book-key.json"
+	},
+	{
+		"name": "book-lock",
+		"title": "book-lock",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated book-lock icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "book-lock.json"
+	},
+	{
+		"name": "book-marked",
+		"title": "book-marked",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated book-marked icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "book-marked.json"
+	},
+	{
+		"name": "book-minus",
+		"title": "book-minus",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated book-minus icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "book-minus.json"
+	},
+	{
+		"name": "book-open-check",
+		"title": "book-open-check",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated book-open-check icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "book-open-check.json"
+	},
+	{
+		"name": "book-plus",
+		"title": "book-plus",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated book-plus icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "book-plus.json"
+	},
+	{
+		"name": "book-text",
+		"title": "book-text",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated book-text icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "book-text.json"
+	},
+	{
+		"name": "book-type",
+		"title": "book-type",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated book-type icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "book-type.json"
+	},
+	{
+		"name": "book-up-2",
+		"title": "book-up-2",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated book-up-2 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "book-up-2.json"
+	},
+	{
+		"name": "book-up",
+		"title": "book-up",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated book-up icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "book-up.json"
+	},
+	{
+		"name": "book-user",
+		"title": "book-user",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated book-user icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "book-user.json"
+	},
+	{
+		"name": "book-x",
+		"title": "book-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated book-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "book-x.json"
+	},
+	{
+		"name": "book",
+		"title": "book",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated book icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "book.json"
+	},
+	{
+		"name": "bookmark-check",
+		"title": "bookmark-check",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated bookmark-check icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "bookmark-check.json"
+	},
+	{
+		"name": "bot-off",
+		"title": "bot-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated bot-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "bot-off.json"
+	},
+	{
+		"name": "boxes",
+		"title": "boxes",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated boxes icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "boxes.json"
+	},
+	{
+		"name": "brain-cog",
+		"title": "brain-cog",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated brain-cog icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "brain-cog.json"
+	},
+	{
+		"name": "briefcase-business",
+		"title": "briefcase-business",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated briefcase-business icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "briefcase-business.json"
+	},
+	{
+		"name": "briefcase-conveyor-belt",
+		"title": "briefcase-conveyor-belt",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated briefcase-conveyor-belt icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "briefcase-conveyor-belt.json"
+	},
+	{
+		"name": "briefcase-medical",
+		"title": "briefcase-medical",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated briefcase-medical icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "briefcase-medical.json"
+	},
+	{
+		"name": "briefcase",
+		"title": "briefcase",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated briefcase icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "briefcase.json"
+	},
+	{
+		"name": "brush-cleaning",
+		"title": "brush-cleaning",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated brush-cleaning icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "brush-cleaning.json"
+	},
+	{
+		"name": "brush",
+		"title": "brush",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated brush icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "brush.json"
+	},
+	{
+		"name": "bug-off",
+		"title": "bug-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated bug-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "bug-off.json"
+	},
+	{
+		"name": "calendar-check-2",
+		"title": "calendar-check-2",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated calendar-check-2 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "calendar-check-2.json"
+	},
+	{
+		"name": "calendar-check",
+		"title": "calendar-check",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated calendar-check icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "calendar-check.json"
+	},
+	{
+		"name": "calendar-cog",
+		"title": "calendar-cog",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated calendar-cog icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "calendar-cog.json"
+	},
+	{
+		"name": "calendar-days",
+		"title": "calendar-days",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated calendar-days icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "calendar-days.json"
+	},
+	{
+		"name": "calendar-off",
+		"title": "calendar-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated calendar-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "calendar-off.json"
+	},
+	{
+		"name": "calendar-sync",
+		"title": "calendar-sync",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated calendar-sync icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "calendar-sync.json"
+	},
+	{
+		"name": "camera-off",
+		"title": "camera-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated camera-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "camera-off.json"
+	},
+	{
+		"name": "candy-off",
+		"title": "candy-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated candy-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "candy-off.json"
+	},
+	{
+		"name": "captions-off",
+		"title": "captions-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated captions-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "captions-off.json"
+	},
+	{
+		"name": "cast",
+		"title": "cast",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated cast icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "cast.json"
+	},
+	{
+		"name": "cctv",
+		"title": "cctv",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated cctv icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "cctv.json"
+	},
+	{
+		"name": "chart-bar-decreasing",
+		"title": "chart-bar-decreasing",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated chart-bar-decreasing icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "chart-bar-decreasing.json"
+	},
+	{
+		"name": "chart-bar-increasing",
+		"title": "chart-bar-increasing",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated chart-bar-increasing icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "chart-bar-increasing.json"
+	},
+	{
+		"name": "chart-bar",
+		"title": "chart-bar",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated chart-bar icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "chart-bar.json"
+	},
+	{
+		"name": "chart-column-decreasing",
+		"title": "chart-column-decreasing",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated chart-column-decreasing icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "chart-column-decreasing.json"
+	},
+	{
+		"name": "chart-column-increasing",
+		"title": "chart-column-increasing",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated chart-column-increasing icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "chart-column-increasing.json"
+	},
+	{
+		"name": "chart-column",
+		"title": "chart-column",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated chart-column icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "chart-column.json"
+	},
+	{
+		"name": "chart-gantt",
+		"title": "chart-gantt",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated chart-gantt icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "chart-gantt.json"
+	},
+	{
+		"name": "chart-line",
+		"title": "chart-line",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated chart-line icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "chart-line.json"
+	},
+	{
+		"name": "chart-no-axes-column-decreasing",
+		"title": "chart-no-axes-column-decreasing",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated chart-no-axes-column-decreasing icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "chart-no-axes-column-decreasing.json"
+	},
+	{
+		"name": "chart-no-axes-column-increasing",
+		"title": "chart-no-axes-column-increasing",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated chart-no-axes-column-increasing icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "chart-no-axes-column-increasing.json"
+	},
+	{
+		"name": "chart-no-axes-column",
+		"title": "chart-no-axes-column",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated chart-no-axes-column icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "chart-no-axes-column.json"
+	},
+	{
+		"name": "chart-no-axes-combined",
+		"title": "chart-no-axes-combined",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated chart-no-axes-combined icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "chart-no-axes-combined.json"
+	},
+	{
+		"name": "chart-no-axes-gantt",
+		"title": "chart-no-axes-gantt",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated chart-no-axes-gantt icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "chart-no-axes-gantt.json"
+	},
+	{
+		"name": "chart-pie",
+		"title": "chart-pie",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated chart-pie icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "chart-pie.json"
+	},
+	{
+		"name": "chart-scatter",
+		"title": "chart-scatter",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated chart-scatter icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "chart-scatter.json"
+	},
+	{
+		"name": "chart-spline",
+		"title": "chart-spline",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated chart-spline icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "chart-spline.json"
+	},
+	{
+		"name": "check-check",
+		"title": "check-check",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated check-check icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "check-check.json"
+	},
+	{
+		"name": "check",
+		"title": "check",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated check icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "check.json"
+	},
+	{
+		"name": "cherry",
+		"title": "cherry",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated cherry icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "cherry.json"
+	},
+	{
+		"name": "chevron-down",
+		"title": "chevron-down",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated chevron-down icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "chevron-down.json"
+	},
+	{
+		"name": "chevron-left",
+		"title": "chevron-left",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated chevron-left icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "chevron-left.json"
+	},
+	{
+		"name": "chevron-right",
+		"title": "chevron-right",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated chevron-right icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "chevron-right.json"
+	},
+	{
+		"name": "chevron-up",
+		"title": "chevron-up",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated chevron-up icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "chevron-up.json"
+	},
+	{
+		"name": "chevrons-down-up",
+		"title": "chevrons-down-up",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated chevrons-down-up icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "chevrons-down-up.json"
+	},
+	{
+		"name": "chevrons-down",
+		"title": "chevrons-down",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated chevrons-down icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "chevrons-down.json"
+	},
+	{
+		"name": "chevrons-left-right",
+		"title": "chevrons-left-right",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated chevrons-left-right icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "chevrons-left-right.json"
+	},
+	{
+		"name": "chevrons-left",
+		"title": "chevrons-left",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated chevrons-left icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "chevrons-left.json"
+	},
+	{
+		"name": "chevrons-right-left",
+		"title": "chevrons-right-left",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated chevrons-right-left icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "chevrons-right-left.json"
+	},
+	{
+		"name": "chevrons-right",
+		"title": "chevrons-right",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated chevrons-right icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "chevrons-right.json"
+	},
+	{
+		"name": "chevrons-up-down",
+		"title": "chevrons-up-down",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated chevrons-up-down icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "chevrons-up-down.json"
+	},
+	{
+		"name": "chevrons-up",
+		"title": "chevrons-up",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated chevrons-up icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "chevrons-up.json"
+	},
+	{
+		"name": "cigarette-off",
+		"title": "cigarette-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated cigarette-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "cigarette-off.json"
+	},
+	{
+		"name": "circle-alert",
+		"title": "circle-alert",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated circle-alert icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "circle-alert.json"
+	},
+	{
+		"name": "circle-arrow-down",
+		"title": "circle-arrow-down",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated circle-arrow-down icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "circle-arrow-down.json"
+	},
+	{
+		"name": "circle-arrow-left",
+		"title": "circle-arrow-left",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated circle-arrow-left icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "circle-arrow-left.json"
+	},
+	{
+		"name": "circle-arrow-out-down-left",
+		"title": "circle-arrow-out-down-left",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated circle-arrow-out-down-left icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "circle-arrow-out-down-left.json"
+	},
+	{
+		"name": "circle-arrow-out-down-right",
+		"title": "circle-arrow-out-down-right",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated circle-arrow-out-down-right icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "circle-arrow-out-down-right.json"
+	},
+	{
+		"name": "circle-arrow-out-up-left",
+		"title": "circle-arrow-out-up-left",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated circle-arrow-out-up-left icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "circle-arrow-out-up-left.json"
+	},
+	{
+		"name": "circle-arrow-out-up-right",
+		"title": "circle-arrow-out-up-right",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated circle-arrow-out-up-right icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "circle-arrow-out-up-right.json"
+	},
+	{
+		"name": "circle-arrow-right",
+		"title": "circle-arrow-right",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated circle-arrow-right icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "circle-arrow-right.json"
+	},
+	{
+		"name": "circle-arrow-up",
+		"title": "circle-arrow-up",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated circle-arrow-up icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "circle-arrow-up.json"
+	},
+	{
+		"name": "circle-check-big",
+		"title": "circle-check-big",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated circle-check-big icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "circle-check-big.json"
+	},
+	{
+		"name": "circle-check",
+		"title": "circle-check",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated circle-check icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "circle-check.json"
+	},
+	{
+		"name": "circle-chevron-down",
+		"title": "circle-chevron-down",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated circle-chevron-down icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "circle-chevron-down.json"
+	},
+	{
+		"name": "circle-chevron-left",
+		"title": "circle-chevron-left",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated circle-chevron-left icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "circle-chevron-left.json"
+	},
+	{
+		"name": "circle-chevron-right",
+		"title": "circle-chevron-right",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated circle-chevron-right icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "circle-chevron-right.json"
+	},
+	{
+		"name": "circle-chevron-up",
+		"title": "circle-chevron-up",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated circle-chevron-up icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "circle-chevron-up.json"
+	},
+	{
+		"name": "circle-off",
+		"title": "circle-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated circle-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "circle-off.json"
+	},
+	{
+		"name": "circle-parking-off",
+		"title": "circle-parking-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated circle-parking-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "circle-parking-off.json"
+	},
+	{
+		"name": "circle-plus",
+		"title": "circle-plus",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated circle-plus icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "circle-plus.json"
+	},
+	{
+		"name": "circle-question-mark",
+		"title": "circle-question-mark",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated circle-question-mark icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "circle-question-mark.json"
+	},
+	{
+		"name": "clapperboard",
+		"title": "clapperboard",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated clapperboard icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "clapperboard.json"
+	},
+	{
+		"name": "clipboard-check",
+		"title": "clipboard-check",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated clipboard-check icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "clipboard-check.json"
+	},
+	{
+		"name": "clipboard-pen-line",
+		"title": "clipboard-pen-line",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated clipboard-pen-line icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "clipboard-pen-line.json"
+	},
+	{
+		"name": "clipboard-pen",
+		"title": "clipboard-pen",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated clipboard-pen icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "clipboard-pen.json"
+	},
+	{
+		"name": "clock-1",
+		"title": "clock-1",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated clock-1 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "clock-1.json"
+	},
+	{
+		"name": "clock-10",
+		"title": "clock-10",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated clock-10 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "clock-10.json"
+	},
+	{
+		"name": "clock-11",
+		"title": "clock-11",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated clock-11 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "clock-11.json"
+	},
+	{
+		"name": "clock-12",
+		"title": "clock-12",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated clock-12 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "clock-12.json"
+	},
+	{
+		"name": "clock-2",
+		"title": "clock-2",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated clock-2 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "clock-2.json"
+	},
+	{
+		"name": "clock-3",
+		"title": "clock-3",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated clock-3 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "clock-3.json"
+	},
+	{
+		"name": "clock-4",
+		"title": "clock-4",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated clock-4 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "clock-4.json"
+	},
+	{
+		"name": "clock-5",
+		"title": "clock-5",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated clock-5 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "clock-5.json"
+	},
+	{
+		"name": "clock-6",
+		"title": "clock-6",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated clock-6 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "clock-6.json"
+	},
+	{
+		"name": "clock-7",
+		"title": "clock-7",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated clock-7 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "clock-7.json"
+	},
+	{
+		"name": "clock-8",
+		"title": "clock-8",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated clock-8 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "clock-8.json"
+	},
+	{
+		"name": "clock-9",
+		"title": "clock-9",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated clock-9 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "clock-9.json"
+	},
+	{
+		"name": "clock",
+		"title": "clock",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated clock icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "clock.json"
+	},
+	{
+		"name": "cloud-cog",
+		"title": "cloud-cog",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated cloud-cog icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "cloud-cog.json"
+	},
+	{
+		"name": "cloud-download",
+		"title": "cloud-download",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated cloud-download icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "cloud-download.json"
+	},
+	{
+		"name": "cloud-off",
+		"title": "cloud-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated cloud-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "cloud-off.json"
+	},
+	{
+		"name": "cloud-upload",
+		"title": "cloud-upload",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated cloud-upload icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "cloud-upload.json"
+	},
+	{
+		"name": "cog",
+		"title": "cog",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated cog icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "cog.json"
+	},
+	{
+		"name": "compass",
+		"title": "compass",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated compass icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "compass.json"
+	},
+	{
+		"name": "contrast",
+		"title": "contrast",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated contrast icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "contrast.json"
+	},
+	{
+		"name": "copy-check",
+		"title": "copy-check",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated copy-check icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "copy-check.json"
+	},
+	{
+		"name": "copy",
+		"title": "copy",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated copy icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "copy.json"
+	},
+	{
+		"name": "cpu",
+		"title": "cpu",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated cpu icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "cpu.json"
+	},
+	{
+		"name": "crop",
+		"title": "crop",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated crop icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "crop.json"
+	},
+	{
+		"name": "diamond-plus",
+		"title": "diamond-plus",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated diamond-plus icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "diamond-plus.json"
+	},
+	{
+		"name": "dice-1",
+		"title": "dice-1",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated dice-1 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "dice-1.json"
+	},
+	{
+		"name": "dice-2",
+		"title": "dice-2",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated dice-2 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "dice-2.json"
+	},
+	{
+		"name": "dice-3",
+		"title": "dice-3",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated dice-3 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "dice-3.json"
+	},
+	{
+		"name": "dice-4",
+		"title": "dice-4",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated dice-4 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "dice-4.json"
+	},
+	{
+		"name": "dice-5",
+		"title": "dice-5",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated dice-5 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "dice-5.json"
+	},
+	{
+		"name": "dice-6",
+		"title": "dice-6",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated dice-6 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "dice-6.json"
+	},
+	{
+		"name": "diff",
+		"title": "diff",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated diff icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "diff.json"
+	},
+	{
+		"name": "disc-3",
+		"title": "disc-3",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated disc-3 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "disc-3.json"
+	},
+	{
+		"name": "dna-off",
+		"title": "dna-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated dna-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "dna-off.json"
+	},
+	{
+		"name": "download",
+		"title": "download",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated download icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "download.json"
+	},
+	{
+		"name": "droplet-off",
+		"title": "droplet-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated droplet-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "droplet-off.json"
+	},
+	{
+		"name": "drum",
+		"title": "drum",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated drum icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "drum.json"
+	},
+	{
+		"name": "ear-off",
+		"title": "ear-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated ear-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "ear-off.json"
+	},
+	{
+		"name": "eclipse",
+		"title": "eclipse",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated eclipse icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "eclipse.json"
+	},
+	{
+		"name": "egg-off",
+		"title": "egg-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated egg-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "egg-off.json"
+	},
+	{
+		"name": "expand",
+		"title": "expand",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated expand icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "expand.json"
+	},
+	{
+		"name": "eye-off",
+		"title": "eye-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated eye-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "eye-off.json"
+	},
+	{
+		"name": "file-chart-column-increasing",
+		"title": "file-chart-column-increasing",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated file-chart-column-increasing icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "file-chart-column-increasing.json"
+	},
+	{
+		"name": "file-chart-column",
+		"title": "file-chart-column",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated file-chart-column icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "file-chart-column.json"
+	},
+	{
+		"name": "file-chart-line",
+		"title": "file-chart-line",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated file-chart-line icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "file-chart-line.json"
+	},
+	{
+		"name": "file-check-2",
+		"title": "file-check-2",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated file-check-2 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "file-check-2.json"
+	},
+	{
+		"name": "file-check",
+		"title": "file-check",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated file-check icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "file-check.json"
+	},
+	{
+		"name": "file-cog",
+		"title": "file-cog",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated file-cog icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "file-cog.json"
+	},
+	{
+		"name": "file-down",
+		"title": "file-down",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated file-down icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "file-down.json"
+	},
+	{
+		"name": "file-minus",
+		"title": "file-minus",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated file-minus icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "file-minus.json"
+	},
+	{
+		"name": "file-pen-line",
+		"title": "file-pen-line",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated file-pen-line icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "file-pen-line.json"
+	},
+	{
+		"name": "file-pen",
+		"title": "file-pen",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated file-pen icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "file-pen.json"
+	},
+	{
+		"name": "file-plus",
+		"title": "file-plus",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated file-plus icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "file-plus.json"
+	},
+	{
+		"name": "file-question-mark",
+		"title": "file-question-mark",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated file-question-mark icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "file-question-mark.json"
+	},
+	{
+		"name": "file-stack",
+		"title": "file-stack",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated file-stack icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "file-stack.json"
+	},
+	{
+		"name": "file-terminal",
+		"title": "file-terminal",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated file-terminal icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "file-terminal.json"
+	},
+	{
+		"name": "file-up",
+		"title": "file-up",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated file-up icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "file-up.json"
+	},
+	{
+		"name": "file-warning",
+		"title": "file-warning",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated file-warning icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "file-warning.json"
+	},
+	{
+		"name": "fish-off",
+		"title": "fish-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated fish-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "fish-off.json"
+	},
+	{
+		"name": "flag-off",
+		"title": "flag-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated flag-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "flag-off.json"
+	},
+	{
+		"name": "flashlight-off",
+		"title": "flashlight-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated flashlight-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "flashlight-off.json"
+	},
+	{
+		"name": "flask-conical-off",
+		"title": "flask-conical-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated flask-conical-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "flask-conical-off.json"
+	},
+	{
+		"name": "folder-check",
+		"title": "folder-check",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated folder-check icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "folder-check.json"
+	},
+	{
+		"name": "folder-cog",
+		"title": "folder-cog",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated folder-cog icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "folder-cog.json"
+	},
+	{
+		"name": "folder-down",
+		"title": "folder-down",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated folder-down icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "folder-down.json"
+	},
+	{
+		"name": "folder-kanban",
+		"title": "folder-kanban",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated folder-kanban icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "folder-kanban.json"
+	},
+	{
+		"name": "folder-pen",
+		"title": "folder-pen",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated folder-pen icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "folder-pen.json"
+	},
+	{
+		"name": "folder-plus",
+		"title": "folder-plus",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated folder-plus icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "folder-plus.json"
+	},
+	{
+		"name": "folder-sync",
+		"title": "folder-sync",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated folder-sync icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "folder-sync.json"
+	},
+	{
+		"name": "folder-up",
+		"title": "folder-up",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated folder-up icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "folder-up.json"
+	},
+	{
+		"name": "frame",
+		"title": "frame",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated frame icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "frame.json"
+	},
+	{
+		"name": "gallery-horizontal-end",
+		"title": "gallery-horizontal-end",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated gallery-horizontal-end icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "gallery-horizontal-end.json"
+	},
+	{
+		"name": "gallery-thumbnails",
+		"title": "gallery-thumbnails",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated gallery-thumbnails icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "gallery-thumbnails.json"
+	},
+	{
+		"name": "gallery-vertical-end",
+		"title": "gallery-vertical-end",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated gallery-vertical-end icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "gallery-vertical-end.json"
+	},
+	{
+		"name": "gauge",
+		"title": "gauge",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated gauge icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "gauge.json"
+	},
+	{
+		"name": "gavel",
+		"title": "gavel",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated gavel icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "gavel.json"
+	},
+	{
+		"name": "grid-2x2-check",
+		"title": "grid-2x2-check",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated grid-2x2-check icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "grid-2x2-check.json"
+	},
+	{
+		"name": "grip-horizontal",
+		"title": "grip-horizontal",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated grip-horizontal icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "grip-horizontal.json"
+	},
+	{
+		"name": "grip-vertical",
+		"title": "grip-vertical",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated grip-vertical icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "grip-vertical.json"
+	},
+	{
+		"name": "grip",
+		"title": "grip",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated grip icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "grip.json"
+	},
+	{
+		"name": "hammer",
+		"title": "hammer",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated hammer icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "hammer.json"
+	},
+	{
+		"name": "hand-coins",
+		"title": "hand-coins",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated hand-coins icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "hand-coins.json"
+	},
+	{
+		"name": "hand-heart",
+		"title": "hand-heart",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated hand-heart icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "hand-heart.json"
+	},
+	{
+		"name": "hard-drive-download",
+		"title": "hard-drive-download",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated hard-drive-download icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "hard-drive-download.json"
+	},
+	{
+		"name": "hard-drive-upload",
+		"title": "hard-drive-upload",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated hard-drive-upload icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "hard-drive-upload.json"
+	},
+	{
+		"name": "headphone-off",
+		"title": "headphone-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated headphone-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "headphone-off.json"
+	},
+	{
+		"name": "heart-off",
+		"title": "heart-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated heart-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "heart-off.json"
+	},
+	{
+		"name": "heart",
+		"title": "heart",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated heart icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "heart.json"
+	},
+	{
+		"name": "history",
+		"title": "history",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated history icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "history.json"
+	},
+	{
+		"name": "hop-off",
+		"title": "hop-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated hop-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "hop-off.json"
+	},
+	{
+		"name": "house-wifi",
+		"title": "house-wifi",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated house-wifi icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "house-wifi.json"
+	},
+	{
+		"name": "house",
+		"title": "house",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated house icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "house.json"
+	},
+	{
+		"name": "image-down",
+		"title": "image-down",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated image-down icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "image-down.json"
+	},
+	{
+		"name": "image-off",
+		"title": "image-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated image-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "image-off.json"
+	},
+	{
+		"name": "image-up",
+		"title": "image-up",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated image-up icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "image-up.json"
+	},
+	{
+		"name": "infinity",
+		"title": "infinity",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated infinity icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "infinity.json"
+	},
+	{
+		"name": "kanban",
+		"title": "kanban",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated kanban icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "kanban.json"
+	},
+	{
+		"name": "key-round",
+		"title": "key-round",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated key-round icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "key-round.json"
+	},
+	{
+		"name": "key-square",
+		"title": "key-square",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated key-square icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "key-square.json"
+	},
+	{
+		"name": "key",
+		"title": "key",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated key icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "key.json"
+	},
+	{
+		"name": "keyboard-off",
+		"title": "keyboard-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated keyboard-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "keyboard-off.json"
+	},
+	{
+		"name": "keyboard",
+		"title": "keyboard",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated keyboard icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "keyboard.json"
+	},
+	{
+		"name": "landmark",
+		"title": "landmark",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated landmark icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "landmark.json"
+	},
+	{
+		"name": "layers",
+		"title": "layers",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated layers icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "layers.json"
+	},
+	{
+		"name": "layout-dashboard",
+		"title": "layout-dashboard",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated layout-dashboard icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "layout-dashboard.json"
+	},
+	{
+		"name": "layout-grid",
+		"title": "layout-grid",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated layout-grid icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "layout-grid.json"
+	},
+	{
+		"name": "layout-panel-left",
+		"title": "layout-panel-left",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated layout-panel-left icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "layout-panel-left.json"
+	},
+	{
+		"name": "layout-panel-top",
+		"title": "layout-panel-top",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated layout-panel-top icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "layout-panel-top.json"
+	},
+	{
+		"name": "layout-template",
+		"title": "layout-template",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated layout-template icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "layout-template.json"
+	},
+	{
+		"name": "lightbulb-off",
+		"title": "lightbulb-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated lightbulb-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "lightbulb-off.json"
+	},
+	{
+		"name": "link-2-off",
+		"title": "link-2-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated link-2-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "link-2-off.json"
+	},
+	{
+		"name": "list-check",
+		"title": "list-check",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated list-check icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "list-check.json"
+	},
+	{
+		"name": "list-checks",
+		"title": "list-checks",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated list-checks icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "list-checks.json"
+	},
+	{
+		"name": "list-restart",
+		"title": "list-restart",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated list-restart icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "list-restart.json"
+	},
+	{
+		"name": "list-todo",
+		"title": "list-todo",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated list-todo icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "list-todo.json"
+	},
+	{
+		"name": "loader-pinwheel",
+		"title": "loader-pinwheel",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated loader-pinwheel icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "loader-pinwheel.json"
+	},
+	{
+		"name": "locate-off",
+		"title": "locate-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated locate-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "locate-off.json"
+	},
+	{
+		"name": "log-out",
+		"title": "log-out",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated log-out icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "log-out.json"
+	},
+	{
+		"name": "mail-check",
+		"title": "mail-check",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated mail-check icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "mail-check.json"
+	},
+	{
+		"name": "map-pin-check-inside",
+		"title": "map-pin-check-inside",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated map-pin-check-inside icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "map-pin-check-inside.json"
+	},
+	{
+		"name": "map-pin-check",
+		"title": "map-pin-check",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated map-pin-check icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "map-pin-check.json"
+	},
+	{
+		"name": "map-pin-off",
+		"title": "map-pin-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated map-pin-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "map-pin-off.json"
+	},
+	{
+		"name": "maximize-2",
+		"title": "maximize-2",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated maximize-2 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "maximize-2.json"
+	},
+	{
+		"name": "maximize",
+		"title": "maximize",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated maximize icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "maximize.json"
+	},
+	{
+		"name": "megaphone-off",
+		"title": "megaphone-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated megaphone-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "megaphone-off.json"
+	},
+	{
+		"name": "message-circle-more",
+		"title": "message-circle-more",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-circle-more icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-circle-more.json"
+	},
+	{
+		"name": "message-circle-off",
+		"title": "message-circle-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-circle-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-circle-off.json"
+	},
+	{
+		"name": "message-circle-question-mark",
+		"title": "message-circle-question-mark",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-circle-question-mark icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-circle-question-mark.json"
+	},
+	{
+		"name": "message-circle-warning",
+		"title": "message-circle-warning",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-circle-warning icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-circle-warning.json"
+	},
+	{
+		"name": "message-circle",
+		"title": "message-circle",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-circle icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-circle.json"
+	},
+	{
+		"name": "message-square-more",
+		"title": "message-square-more",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-square-more icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-square-more.json"
+	},
+	{
+		"name": "message-square-off",
+		"title": "message-square-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-square-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-square-off.json"
+	},
+	{
+		"name": "message-square-warning",
+		"title": "message-square-warning",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-square-warning icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-square-warning.json"
+	},
+	{
+		"name": "message-square",
+		"title": "message-square",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-square icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-square.json"
+	},
+	{
+		"name": "mic-off",
+		"title": "mic-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated mic-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "mic-off.json"
+	},
+	{
+		"name": "milk-off",
+		"title": "milk-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated milk-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "milk-off.json"
+	},
+	{
+		"name": "minimize-2",
+		"title": "minimize-2",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated minimize-2 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "minimize-2.json"
+	},
+	{
+		"name": "minimize",
+		"title": "minimize",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated minimize icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "minimize.json"
+	},
+	{
+		"name": "minus",
+		"title": "minus",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated minus icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "minus.json"
+	},
+	{
+		"name": "monitor-check",
+		"title": "monitor-check",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated monitor-check icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "monitor-check.json"
+	},
+	{
+		"name": "monitor-cog",
+		"title": "monitor-cog",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated monitor-cog icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "monitor-cog.json"
+	},
+	{
+		"name": "monitor-down",
+		"title": "monitor-down",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated monitor-down icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "monitor-down.json"
+	},
+	{
+		"name": "monitor-off",
+		"title": "monitor-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated monitor-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "monitor-off.json"
+	},
+	{
+		"name": "monitor-up",
+		"title": "monitor-up",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated monitor-up icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "monitor-up.json"
+	},
+	{
+		"name": "mouse-off",
+		"title": "mouse-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated mouse-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "mouse-off.json"
+	},
+	{
+		"name": "mouse-pointer-2",
+		"title": "mouse-pointer-2",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated mouse-pointer-2 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "mouse-pointer-2.json"
+	},
+	{
+		"name": "mouse-pointer",
+		"title": "mouse-pointer",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated mouse-pointer icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "mouse-pointer.json"
+	},
+	{
+		"name": "move-diagonal-2",
+		"title": "move-diagonal-2",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated move-diagonal-2 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "move-diagonal-2.json"
+	},
+	{
+		"name": "move-diagonal",
+		"title": "move-diagonal",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated move-diagonal icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "move-diagonal.json"
+	},
+	{
+		"name": "move-down-left",
+		"title": "move-down-left",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated move-down-left icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "move-down-left.json"
+	},
+	{
+		"name": "move-down-right",
+		"title": "move-down-right",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated move-down-right icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "move-down-right.json"
+	},
+	{
+		"name": "move-down",
+		"title": "move-down",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated move-down icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "move-down.json"
+	},
+	{
+		"name": "move-horizontal",
+		"title": "move-horizontal",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated move-horizontal icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "move-horizontal.json"
+	},
+	{
+		"name": "move-left",
+		"title": "move-left",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated move-left icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "move-left.json"
+	},
+	{
+		"name": "move-right",
+		"title": "move-right",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated move-right icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "move-right.json"
+	},
+	{
+		"name": "move-up-left",
+		"title": "move-up-left",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated move-up-left icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "move-up-left.json"
+	},
+	{
+		"name": "move-up-right",
+		"title": "move-up-right",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated move-up-right icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "move-up-right.json"
+	},
+	{
+		"name": "move-up",
+		"title": "move-up",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated move-up icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "move-up.json"
+	},
+	{
+		"name": "move-vertical",
+		"title": "move-vertical",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated move-vertical icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "move-vertical.json"
+	},
+	{
+		"name": "navigation-2-off",
+		"title": "navigation-2-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated navigation-2-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "navigation-2-off.json"
+	},
+	{
+		"name": "navigation-off",
+		"title": "navigation-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated navigation-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "navigation-off.json"
+	},
+	{
+		"name": "nfc",
+		"title": "nfc",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated nfc icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "nfc.json"
+	},
+	{
+		"name": "notebook-pen",
+		"title": "notebook-pen",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated notebook-pen icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "notebook-pen.json"
+	},
+	{
+		"name": "nut-off",
+		"title": "nut-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated nut-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "nut-off.json"
+	},
+	{
+		"name": "octagon-alert",
+		"title": "octagon-alert",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated octagon-alert icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "octagon-alert.json"
+	},
+	{
+		"name": "orbit",
+		"title": "orbit",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated orbit icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "orbit.json"
+	},
+	{
+		"name": "package-check",
+		"title": "package-check",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated package-check icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "package-check.json"
+	},
+	{
+		"name": "paintbrush",
+		"title": "paintbrush",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated paintbrush icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "paintbrush.json"
+	},
+	{
+		"name": "panel-bottom-close",
+		"title": "panel-bottom-close",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated panel-bottom-close icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "panel-bottom-close.json"
+	},
+	{
+		"name": "panel-bottom-open",
+		"title": "panel-bottom-open",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated panel-bottom-open icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "panel-bottom-open.json"
+	},
+	{
+		"name": "panel-left-close",
+		"title": "panel-left-close",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated panel-left-close icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "panel-left-close.json"
+	},
+	{
+		"name": "panel-left-open",
+		"title": "panel-left-open",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated panel-left-open icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "panel-left-open.json"
+	},
+	{
+		"name": "panel-right-close",
+		"title": "panel-right-close",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated panel-right-close icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "panel-right-close.json"
+	},
+	{
+		"name": "panel-right-open",
+		"title": "panel-right-open",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated panel-right-open icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "panel-right-open.json"
+	},
+	{
+		"name": "panel-top-close",
+		"title": "panel-top-close",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated panel-top-close icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "panel-top-close.json"
+	},
+	{
+		"name": "panel-top-open",
+		"title": "panel-top-open",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated panel-top-open icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "panel-top-open.json"
+	},
+	{
+		"name": "pen-line",
+		"title": "pen-line",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated pen-line icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "pen-line.json"
+	},
+	{
+		"name": "pen-off",
+		"title": "pen-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated pen-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "pen-off.json"
+	},
+	{
+		"name": "pen",
+		"title": "pen",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated pen icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "pen.json"
+	},
+	{
+		"name": "pencil-line",
+		"title": "pencil-line",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated pencil-line icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "pencil-line.json"
+	},
+	{
+		"name": "pencil-off",
+		"title": "pencil-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated pencil-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "pencil-off.json"
+	},
+	{
+		"name": "pencil",
+		"title": "pencil",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated pencil icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "pencil.json"
+	},
+	{
+		"name": "phone-off",
+		"title": "phone-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated phone-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "phone-off.json"
+	},
+	{
+		"name": "pickaxe",
+		"title": "pickaxe",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated pickaxe icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "pickaxe.json"
+	},
+	{
+		"name": "pin-off",
+		"title": "pin-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated pin-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "pin-off.json"
+	},
+	{
+		"name": "plane",
+		"title": "plane",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated plane icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "plane.json"
+	},
+	{
+		"name": "plus",
+		"title": "plus",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated plus icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "plus.json"
+	},
+	{
+		"name": "pointer-off",
+		"title": "pointer-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated pointer-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "pointer-off.json"
+	},
+	{
+		"name": "power-off",
+		"title": "power-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated power-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "power-off.json"
+	},
+	{
+		"name": "printer-check",
+		"title": "printer-check",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated printer-check icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "printer-check.json"
+	},
+	{
+		"name": "rabbit",
+		"title": "rabbit",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated rabbit icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "rabbit.json"
+	},
+	{
+		"name": "radar",
+		"title": "radar",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated radar icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "radar.json"
+	},
+	{
+		"name": "radio-tower",
+		"title": "radio-tower",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated radio-tower icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "radio-tower.json"
+	},
+	{
+		"name": "radio",
+		"title": "radio",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated radio icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "radio.json"
+	},
+	{
+		"name": "rainbow",
+		"title": "rainbow",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated rainbow icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "rainbow.json"
+	},
+	{
+		"name": "redo-dot",
+		"title": "redo-dot",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated redo-dot icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "redo-dot.json"
+	},
+	{
+		"name": "redo",
+		"title": "redo",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated redo icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "redo.json"
+	},
+	{
+		"name": "refresh-ccw-dot",
+		"title": "refresh-ccw-dot",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated refresh-ccw-dot icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "refresh-ccw-dot.json"
+	},
+	{
+		"name": "refresh-ccw",
+		"title": "refresh-ccw",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated refresh-ccw icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "refresh-ccw.json"
+	},
+	{
+		"name": "refresh-cw-off",
+		"title": "refresh-cw-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated refresh-cw-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "refresh-cw-off.json"
+	},
+	{
+		"name": "refresh-cw",
+		"title": "refresh-cw",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated refresh-cw icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "refresh-cw.json"
+	},
+	{
+		"name": "rocket",
+		"title": "rocket",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated rocket icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "rocket.json"
+	},
+	{
+		"name": "rocking-chair",
+		"title": "rocking-chair",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated rocking-chair icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "rocking-chair.json"
+	},
+	{
+		"name": "rotate-ccw-key",
+		"title": "rotate-ccw-key",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated rotate-ccw-key icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "rotate-ccw-key.json"
+	},
+	{
+		"name": "rotate-ccw",
+		"title": "rotate-ccw",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated rotate-ccw icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "rotate-ccw.json"
+	},
+	{
+		"name": "rotate-cw",
+		"title": "rotate-cw",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated rotate-cw icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "rotate-cw.json"
+	},
+	{
+		"name": "route-off",
+		"title": "route-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated route-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "route-off.json"
+	},
+	{
+		"name": "route",
+		"title": "route",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated route icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "route.json"
+	},
+	{
+		"name": "rss",
+		"title": "rss",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated rss icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "rss.json"
+	},
+	{
+		"name": "satellite-dish",
+		"title": "satellite-dish",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated satellite-dish icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "satellite-dish.json"
+	},
+	{
+		"name": "save-off",
+		"title": "save-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated save-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "save-off.json"
+	},
+	{
+		"name": "scan-text",
+		"title": "scan-text",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated scan-text icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "scan-text.json"
+	},
+	{
+		"name": "scissors",
+		"title": "scissors",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated scissors icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "scissors.json"
+	},
+	{
+		"name": "search-check",
+		"title": "search-check",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated search-check icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "search-check.json"
+	},
+	{
+		"name": "search",
+		"title": "search",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated search icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "search.json"
+	},
+	{
+		"name": "send-horizontal",
+		"title": "send-horizontal",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated send-horizontal icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "send-horizontal.json"
+	},
+	{
+		"name": "send",
+		"title": "send",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated send icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "send.json"
+	},
+	{
+		"name": "server-cog",
+		"title": "server-cog",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated server-cog icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "server-cog.json"
+	},
+	{
+		"name": "server-off",
+		"title": "server-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated server-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "server-off.json"
+	},
+	{
+		"name": "settings",
+		"title": "settings",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated settings icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "settings.json"
+	},
+	{
+		"name": "shield-alert",
+		"title": "shield-alert",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated shield-alert icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "shield-alert.json"
+	},
+	{
+		"name": "shield-check",
+		"title": "shield-check",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated shield-check icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "shield-check.json"
+	},
+	{
+		"name": "shield-off",
+		"title": "shield-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated shield-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "shield-off.json"
+	},
+	{
+		"name": "shield-plus",
+		"title": "shield-plus",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated shield-plus icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "shield-plus.json"
+	},
+	{
+		"name": "shield-question-mark",
+		"title": "shield-question-mark",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated shield-question-mark icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "shield-question-mark.json"
+	},
+	{
+		"name": "ship-wheel",
+		"title": "ship-wheel",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated ship-wheel icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "ship-wheel.json"
+	},
+	{
+		"name": "ship",
+		"title": "ship",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated ship icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "ship.json"
+	},
+	{
+		"name": "shopping-cart",
+		"title": "shopping-cart",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated shopping-cart icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "shopping-cart.json"
+	},
+	{
+		"name": "shovel",
+		"title": "shovel",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated shovel icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "shovel.json"
+	},
+	{
+		"name": "shower-head",
+		"title": "shower-head",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated shower-head icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "shower-head.json"
+	},
+	{
+		"name": "shrink",
+		"title": "shrink",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated shrink icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "shrink.json"
+	},
+	{
+		"name": "signal-high",
+		"title": "signal-high",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated signal-high icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "signal-high.json"
+	},
+	{
+		"name": "signal-low",
+		"title": "signal-low",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated signal-low icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "signal-low.json"
+	},
+	{
+		"name": "signal-medium",
+		"title": "signal-medium",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated signal-medium icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "signal-medium.json"
+	},
+	{
+		"name": "signal-zero",
+		"title": "signal-zero",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated signal-zero icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "signal-zero.json"
+	},
+	{
+		"name": "signal",
+		"title": "signal",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated signal icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "signal.json"
+	},
+	{
+		"name": "signature",
+		"title": "signature",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated signature icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "signature.json"
+	},
+	{
+		"name": "smartphone-nfc",
+		"title": "smartphone-nfc",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated smartphone-nfc icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "smartphone-nfc.json"
+	},
+	{
+		"name": "snowflake",
+		"title": "snowflake",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated snowflake icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "snowflake.json"
+	},
+	{
+		"name": "speech",
+		"title": "speech",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated speech icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "speech.json"
+	},
+	{
+		"name": "spell-check",
+		"title": "spell-check",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated spell-check icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "spell-check.json"
+	},
+	{
+		"name": "square-arrow-down-left",
+		"title": "square-arrow-down-left",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated square-arrow-down-left icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "square-arrow-down-left.json"
+	},
+	{
+		"name": "square-arrow-down-right",
+		"title": "square-arrow-down-right",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated square-arrow-down-right icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "square-arrow-down-right.json"
+	},
+	{
+		"name": "square-arrow-down",
+		"title": "square-arrow-down",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated square-arrow-down icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "square-arrow-down.json"
+	},
+	{
+		"name": "square-arrow-left",
+		"title": "square-arrow-left",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated square-arrow-left icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "square-arrow-left.json"
+	},
+	{
+		"name": "square-arrow-out-down-left",
+		"title": "square-arrow-out-down-left",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated square-arrow-out-down-left icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "square-arrow-out-down-left.json"
+	},
+	{
+		"name": "square-arrow-out-down-right",
+		"title": "square-arrow-out-down-right",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated square-arrow-out-down-right icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "square-arrow-out-down-right.json"
+	},
+	{
+		"name": "square-arrow-out-up-left",
+		"title": "square-arrow-out-up-left",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated square-arrow-out-up-left icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "square-arrow-out-up-left.json"
+	},
+	{
+		"name": "square-arrow-out-up-right",
+		"title": "square-arrow-out-up-right",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated square-arrow-out-up-right icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "square-arrow-out-up-right.json"
+	},
+	{
+		"name": "square-arrow-right",
+		"title": "square-arrow-right",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated square-arrow-right icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "square-arrow-right.json"
+	},
+	{
+		"name": "square-arrow-up-left",
+		"title": "square-arrow-up-left",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated square-arrow-up-left icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "square-arrow-up-left.json"
+	},
+	{
+		"name": "square-arrow-up-right",
+		"title": "square-arrow-up-right",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated square-arrow-up-right icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "square-arrow-up-right.json"
+	},
+	{
+		"name": "square-arrow-up",
+		"title": "square-arrow-up",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated square-arrow-up icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "square-arrow-up.json"
+	},
+	{
+		"name": "square-chart-gantt",
+		"title": "square-chart-gantt",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated square-chart-gantt icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "square-chart-gantt.json"
+	},
+	{
+		"name": "square-check-big",
+		"title": "square-check-big",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated square-check-big icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "square-check-big.json"
+	},
+	{
+		"name": "square-check",
+		"title": "square-check",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated square-check icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "square-check.json"
+	},
+	{
+		"name": "square-chevron-down",
+		"title": "square-chevron-down",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated square-chevron-down icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "square-chevron-down.json"
+	},
+	{
+		"name": "square-chevron-left",
+		"title": "square-chevron-left",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated square-chevron-left icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "square-chevron-left.json"
+	},
+	{
+		"name": "square-chevron-right",
+		"title": "square-chevron-right",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated square-chevron-right icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "square-chevron-right.json"
+	},
+	{
+		"name": "square-chevron-up",
+		"title": "square-chevron-up",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated square-chevron-up icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "square-chevron-up.json"
+	},
+	{
+		"name": "square-dashed-kanban",
+		"title": "square-dashed-kanban",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated square-dashed-kanban icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "square-dashed-kanban.json"
+	},
+	{
+		"name": "square-kanban",
+		"title": "square-kanban",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated square-kanban icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "square-kanban.json"
+	},
+	{
+		"name": "square-parking-off",
+		"title": "square-parking-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated square-parking-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "square-parking-off.json"
+	},
+	{
+		"name": "square-pen",
+		"title": "square-pen",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated square-pen icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "square-pen.json"
+	},
+	{
+		"name": "square-plus",
+		"title": "square-plus",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated square-plus icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "square-plus.json"
+	},
+	{
+		"name": "square-scissors",
+		"title": "square-scissors",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated square-scissors icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "square-scissors.json"
+	},
+	{
+		"name": "square-stack",
+		"title": "square-stack",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated square-stack icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "square-stack.json"
+	},
+	{
+		"name": "square-terminal",
+		"title": "square-terminal",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated square-terminal icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "square-terminal.json"
+	},
+	{
+		"name": "star-off",
+		"title": "star-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated star-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "star-off.json"
+	},
+	{
+		"name": "star",
+		"title": "star",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated star icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "star.json"
+	},
+	{
+		"name": "sun",
+		"title": "sun",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated sun icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "sun.json"
+	},
+	{
+		"name": "sword",
+		"title": "sword",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated sword icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "sword.json"
+	},
+	{
+		"name": "tag",
+		"title": "tag",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated tag icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "tag.json"
+	},
+	{
+		"name": "telescope",
+		"title": "telescope",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated telescope icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "telescope.json"
+	},
+	{
+		"name": "terminal",
+		"title": "terminal",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated terminal icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "terminal.json"
+	},
+	{
+		"name": "text-cursor-input",
+		"title": "text-cursor-input",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated text-cursor-input icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "text-cursor-input.json"
+	},
+	{
+		"name": "text-cursor",
+		"title": "text-cursor",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated text-cursor icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "text-cursor.json"
+	},
+	{
+		"name": "text-search",
+		"title": "text-search",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated text-search icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "text-search.json"
+	},
+	{
+		"name": "thermometer",
+		"title": "thermometer",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated thermometer icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "thermometer.json"
+	},
+	{
+		"name": "thumbs-down",
+		"title": "thumbs-down",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated thumbs-down icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "thumbs-down.json"
+	},
+	{
+		"name": "thumbs-up",
+		"title": "thumbs-up",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated thumbs-up icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "thumbs-up.json"
+	},
+	{
+		"name": "ticket-check",
+		"title": "ticket-check",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated ticket-check icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "ticket-check.json"
+	},
+	{
+		"name": "timer-off",
+		"title": "timer-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated timer-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "timer-off.json"
+	},
+	{
+		"name": "timer",
+		"title": "timer",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated timer icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "timer.json"
+	},
+	{
+		"name": "toggle-left",
+		"title": "toggle-left",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated toggle-left icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "toggle-left.json"
+	},
+	{
+		"name": "toggle-right",
+		"title": "toggle-right",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated toggle-right icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "toggle-right.json"
+	},
+	{
+		"name": "tornado",
+		"title": "tornado",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated tornado icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "tornado.json"
+	},
+	{
+		"name": "touchpad-off",
+		"title": "touchpad-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated touchpad-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "touchpad-off.json"
+	},
+	{
+		"name": "trash-2",
+		"title": "trash-2",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated trash-2 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "trash-2.json"
+	},
+	{
+		"name": "trash",
+		"title": "trash",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated trash icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "trash.json"
+	},
+	{
+		"name": "triangle-alert",
+		"title": "triangle-alert",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated triangle-alert icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "triangle-alert.json"
+	},
+	{
+		"name": "umbrella-off",
+		"title": "umbrella-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated umbrella-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "umbrella-off.json"
+	},
+	{
+		"name": "undo-dot",
+		"title": "undo-dot",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated undo-dot icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "undo-dot.json"
+	},
+	{
+		"name": "undo",
+		"title": "undo",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated undo icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "undo.json"
+	},
+	{
+		"name": "unfold-horizontal",
+		"title": "unfold-horizontal",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated unfold-horizontal icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "unfold-horizontal.json"
+	},
+	{
+		"name": "unfold-vertical",
+		"title": "unfold-vertical",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated unfold-vertical icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "unfold-vertical.json"
+	},
+	{
+		"name": "unplug",
+		"title": "unplug",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated unplug icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "unplug.json"
+	},
+	{
+		"name": "upload",
+		"title": "upload",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated upload icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "upload.json"
+	},
+	{
+		"name": "user-check",
+		"title": "user-check",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated user-check icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "user-check.json"
+	},
+	{
+		"name": "user-cog",
+		"title": "user-cog",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated user-cog icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "user-cog.json"
+	},
+	{
+		"name": "user-pen",
+		"title": "user-pen",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated user-pen icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "user-pen.json"
+	},
+	{
+		"name": "user-round-check",
+		"title": "user-round-check",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated user-round-check icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "user-round-check.json"
+	},
+	{
+		"name": "user-round-cog",
+		"title": "user-round-cog",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated user-round-cog icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "user-round-cog.json"
+	},
+	{
+		"name": "user-round-pen",
+		"title": "user-round-pen",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated user-round-pen icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "user-round-pen.json"
+	},
+	{
+		"name": "users-round",
+		"title": "users-round",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated users-round icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "users-round.json"
+	},
+	{
+		"name": "users",
+		"title": "users",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated users icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "users.json"
+	},
+	{
+		"name": "vault",
+		"title": "vault",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated vault icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "vault.json"
+	},
+	{
+		"name": "vibrate-off",
+		"title": "vibrate-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated vibrate-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "vibrate-off.json"
+	},
+	{
+		"name": "vibrate",
+		"title": "vibrate",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated vibrate icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "vibrate.json"
+	},
+	{
+		"name": "video-off",
+		"title": "video-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated video-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "video-off.json"
+	},
+	{
+		"name": "volume-off",
+		"title": "volume-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated volume-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "volume-off.json"
+	},
+	{
+		"name": "vote",
+		"title": "vote",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated vote icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "vote.json"
+	},
+	{
+		"name": "washing-machine",
+		"title": "washing-machine",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated washing-machine icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "washing-machine.json"
+	},
+	{
+		"name": "waves",
+		"title": "waves",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated waves icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "waves.json"
+	},
+	{
+		"name": "webhook-off",
+		"title": "webhook-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated webhook-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "webhook-off.json"
+	},
+	{
+		"name": "wheat-off",
+		"title": "wheat-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated wheat-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "wheat-off.json"
+	},
+	{
+		"name": "wifi-high",
+		"title": "wifi-high",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated wifi-high icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "wifi-high.json"
+	},
+	{
+		"name": "wifi-low",
+		"title": "wifi-low",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated wifi-low icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "wifi-low.json"
+	},
+	{
+		"name": "wifi-off",
+		"title": "wifi-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated wifi-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "wifi-off.json"
+	},
+	{
+		"name": "wifi-pen",
+		"title": "wifi-pen",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated wifi-pen icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "wifi-pen.json"
+	},
+	{
+		"name": "wifi-zero",
+		"title": "wifi-zero",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated wifi-zero icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "wifi-zero.json"
+	},
+	{
+		"name": "wifi",
+		"title": "wifi",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated wifi icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "wifi.json"
+	},
+	{
+		"name": "wine-off",
+		"title": "wine-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated wine-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "wine-off.json"
+	},
+	{
+		"name": "x",
+		"title": "x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "x.json"
+	},
+	{
+		"name": "zap-off",
+		"title": "zap-off",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated zap-off icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "zap-off.json"
+	}
+]

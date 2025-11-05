@@ -1,0 +1,15 @@
+{
+	"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+	"name": "redo-dot",
+	"title": "redo-dot",
+	"type": "registry:component",
+	"author": "jis3r <jis3r@protonmail.com>",
+	"description": "The animated redo-dot icon component.",
+	"files": [
+		{
+			"content": "<script>\n\t/**\n\t * @typedef {Object} Props\n\t * @property {string} [color]\n\t * @property {number} [size]\n\t * @property {number} [strokeWidth]\n\t * @property {boolean} [isHovered]\n\t * @property {string} [class]\n\t */\n\n\t/** @type {Props} */\n\tlet {\n\t\tcolor = 'currentColor',\n\t\tsize = 24,\n\t\tstrokeWidth = 2,\n\t\tisHovered = false,\n\t\tclass: className = ''\n\t} = $props();\n\n\tfunction handleMouseEnter() {\n\t\tisHovered = true;\n\t}\n\n\tfunction handleMouseLeave() {\n\t\tisHovered = false;\n\t}\n</script>\n\n<div\n\tclass={className}\n\taria-label=\"redo-dot\"\n\trole=\"img\"\n\tonmouseenter={handleMouseEnter}\n\tonmouseleave={handleMouseLeave}\n>\n\t<svg\n\t\txmlns=\"http://www.w3.org/2000/svg\"\n\t\twidth={size}\n\t\theight={size}\n\t\tviewBox=\"0 0 24 24\"\n\t\tfill=\"none\"\n\t\tstroke={color}\n\t\tstroke-width={strokeWidth}\n\t\tstroke-linecap=\"round\"\n\t\tstroke-linejoin=\"round\"\n\t\tclass=\"redo-dot-icon\"\n\t\tclass:animate={isHovered}\n\t>\n\t\t<circle cx=\"12\" cy=\"17\" r=\"1\" />\n\t\t<path d=\"M21 7v6h-6\" class=\"arrow\" />\n\t\t<path d=\"M3 17a9 9 0 0 1 9-9 9 9 0 0 1 6 2.3l3 2.7\" class=\"curve\" />\n\t</svg>\n</div>\n\n<style>\n\tdiv {\n\t\tdisplay: inline-block;\n\t}\n\t.redo-dot-icon {\n\t\ttransform-origin: 14px 20px;\n\t\ttransition: transform 0.3s ease;\n\t}\n\n\t.redo-dot-icon.animate {\n\t\ttransform: rotate(13deg);\n\t}\n</style>\n",
+			"type": "registry:component",
+			"target": "~/src/lib/components/movingicons/redo-dot.svelte"
+		}
+	]
+}

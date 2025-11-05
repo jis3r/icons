@@ -1,0 +1,15 @@
+{
+	"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+	"name": "dice-6",
+	"title": "dice-6",
+	"type": "registry:component",
+	"author": "jis3r <jis3r@protonmail.com>",
+	"description": "The animated dice-6 icon component.",
+	"files": [
+		{
+			"content": "<script>\n\t/**\n\t * @typedef {Object} Props\n\t * @property {string} [color]\n\t * @property {number} [size]\n\t * @property {number} [strokeWidth]\n\t * @property {boolean} [isHovered]\n\t * @property {string} [class]\n\t */\n\n\t/** @type {Props} */\n\tlet {\n\t\tcolor = 'currentColor',\n\t\tsize = 24,\n\t\tstrokeWidth = 2,\n\t\tisHovered = false,\n\t\tclass: className = ''\n\t} = $props();\n\n\tfunction handleMouseEnter() {\n\t\tisHovered = true;\n\t\tsetTimeout(() => {\n\t\t\tisHovered = false;\n\t\t}, 1000);\n\t}\n</script>\n\n<div class={className} aria-label=\"dice-6\" role=\"img\" onmouseenter={handleMouseEnter}>\n\t<svg\n\t\txmlns=\"http://www.w3.org/2000/svg\"\n\t\twidth={size}\n\t\theight={size}\n\t\tviewBox=\"0 0 24 24\"\n\t\tfill=\"none\"\n\t\tstroke={color}\n\t\tstroke-width={strokeWidth}\n\t\tstroke-linecap=\"round\"\n\t\tstroke-linejoin=\"round\"\n\t\tclass=\"dice-6-icon\"\n\t\tclass:animate={isHovered}\n\t>\n\t\t<rect width=\"18\" height=\"18\" x=\"3\" y=\"3\" rx=\"2\" ry=\"2\" />\n\t\t<path d=\"M16 8h.01\" />\n\t\t<path d=\"M16 12h.01\" />\n\t\t<path d=\"M16 16h.01\" />\n\t\t<path d=\"M8 8h.01\" />\n\t\t<path d=\"M8 12h.01\" />\n\t\t<path d=\"M8 16h.01\" />\n\t</svg>\n</div>\n\n<style>\n\tdiv {\n\t\tdisplay: inline-block;\n\t}\n\t.dice-6-icon {\n\t\toverflow: visible;\n\t}\n\t.dice-6-icon.animate {\n\t\tanimation: diceRoll 1s ease-in-out;\n\t}\n\n\t@keyframes diceRoll {\n\t\t0% {\n\t\t\ttransform: translateX(0) rotate(0deg);\n\t\t}\n\t\t25% {\n\t\t\ttransform: translateX(-20%) rotate(45deg);\n\t\t}\n\t\t50% {\n\t\t\ttransform: translateX(0) rotate(90deg);\n\t\t}\n\t\t75% {\n\t\t\ttransform: translateX(-20%) rotate(135deg);\n\t\t}\n\t\t100% {\n\t\t\ttransform: translateX(0) rotate(180deg);\n\t\t}\n\t}\n</style>\n",
+			"type": "registry:component",
+			"target": "~/src/lib/components/movingicons/dice-6.svelte"
+		}
+	]
+}
