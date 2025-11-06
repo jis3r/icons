@@ -306,7 +306,7 @@
 		>
 			<span>beautifully</span> <span>crafted,</span> <span>moving</span> <span>icons.</span>
 			<span>for</span>
-			<span class="from-svelte bg-linear-to-br to-orange-400 bg-clip-text text-transparent"
+			<span class="bg-linear-to-br from-[#FF3E00] to-orange-400 bg-clip-text text-transparent"
 				>svelte</span
 			><span>.</span>
 		</h1>

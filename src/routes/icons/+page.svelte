@@ -201,7 +201,7 @@
 					oninput={() => debouncedUpdateFilteredIcons(searchQuery)}
 				></Input>
 				<kbd
-					class="pointer-events-none absolute right-2 top-1/2 inline-flex h-5 -translate-y-1/2 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100"
+					class="bg-muted text-muted-foreground pointer-events-none absolute top-1/2 right-2 inline-flex h-5 -translate-y-1/2 items-center gap-1 rounded border px-1.5 font-mono text-[10px] font-medium opacity-100 select-none"
 					><span class="text-xs">⌘</span>K</kbd
 				>
 			</div>
@@ -213,7 +213,7 @@
 			{:else if filteredIcons.length === 0}
 				<div class="flex flex-col items-center justify-center gap-2 py-24 text-center">
 					<h2 class="text-lg">No icons found</h2>
-					<p class="max-w-sm text-pretty text-center text-xs text-muted-foreground">
+					<p class="text-muted-foreground max-w-sm text-center text-xs text-pretty">
 						We couldn't find any icons matching your search.<br />Try different keywords.
 					</p>
 				</div>
@@ -223,20 +223,20 @@
 				>
 					{#each filteredIcons as icon}
 						<div
-							class="flex h-full w-full flex-col items-center justify-center rounded-md border border-input p-3"
+							class="border-input flex h-full w-full flex-col items-center justify-center rounded-md border p-3"
 						>
 							<icon.icon
 								{size}
 								{color}
 								{strokeWidth}
-								class="flex select-none items-center justify-center rounded-md p-2 transition-colors duration-200 hover:bg-accent"
+								class="hover:bg-accent flex items-center justify-center rounded-md p-2 transition-colors duration-200 select-none"
 							/>
-							<p class="mb-3 mt-5 text-center text-xs text-muted-foreground">{icon.name}</p>
+							<p class="text-muted-foreground mt-5 mb-3 text-center text-xs">{icon.name}</p>
 							<div class="flex items-center justify-center gap-2">
 								<Button
 									onclick={() => handleCopy(icon)}
 									variant="ghost"
-									class="size-8 rounded-md p-2 transition-colors duration-200 hover:bg-accent"
+									class="hover:bg-accent size-8 rounded-md p-2 transition-colors duration-200"
 								>
 									{#key icon.copied}
 										<span use:animateIcon={{ visible: true }} style="display: inline-block;">
@@ -252,7 +252,7 @@
 								<Button
 									onclick={() => handleDownload(icon)}
 									variant="ghost"
-									class="size-8 rounded-md p-2 transition-colors duration-200 hover:bg-accent"
+									class="hover:bg-accent size-8 rounded-md p-2 transition-colors duration-200"
 								>
 									{#key icon.downloaded}
 										<span use:animateIcon={{ visible: true }} style="display: inline-block;">
@@ -271,7 +271,7 @@
 											icon.name +
 											'.svelte'}
 										variant="ghost"
-										class="size-8 rounded-md p-2 transition-colors duration-200 hover:bg-accent"
+										class="hover:bg-accent size-8 rounded-md p-2 transition-colors duration-200"
 									>
 										<ExternalLink class="h-4 w-4" />
 									</Button>
@@ -280,7 +280,7 @@
 								<Button
 									onclick={() => handleTerminalCopy(icon)}
 									variant="ghost"
-									class="size-8 rounded-md p-2 transition-colors duration-200 hover:bg-accent"
+									class="hover:bg-accent size-8 rounded-md p-2 transition-colors duration-200"
 								>
 									{#key icon.terminalCopied}
 										<span use:animateIcon={{ visible: true }} style="display: inline-block;">
@@ -299,7 +299,7 @@
 			{/if}
 		</div>
 
-		<p class="mb-4 text-center text-xs text-muted-foreground">
+		<p class="text-muted-foreground mb-4 text-center text-xs">
 			built with ❤️ by <a href="https://github.com/jis3r" class="underline">@jis3r</a>
 		</p>
 	</div>
