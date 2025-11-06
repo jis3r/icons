@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
 	import Marquee from 'svelte-fast-marquee';
 	import { animate } from 'motion';
+	import { Button } from '$lib/components/ui/button';
 	import {
 		Activity,
 		AlarmClock,
@@ -82,7 +83,12 @@
 		Rocket,
 		Redo,
 		Undo,
-		PrinterCheck
+		PrinterCheck,
+		Zap,
+		Sparkles,
+		Code,
+		Package,
+		Sliders
 	} from '@lucide/svelte';
 
 	const allIcons = [
@@ -205,8 +211,9 @@
 			const logo = document.querySelector('.hero-logo');
 			const titleSpans = document.querySelectorAll('.hero-title span');
 			const description = document.querySelector('.hero-description');
+			const button = document.querySelector('.hero-button');
 
-			const allElements = [logo, ...Array.from(titleSpans), description].filter(Boolean);
+			const allElements = [logo, ...Array.from(titleSpans), description, button].filter(Boolean);
 
 			allElements.forEach((element, i) => {
 				if (i === 0) {
@@ -235,88 +242,126 @@
 	});
 </script>
 
-<main class="flex min-h-screen w-full items-center">
-	<div class="container max-w-7xl">
-		<div class="relative mx-auto grid max-w-6xl gap-4">
-			<div
-				class="hero-logo bg-opacity-50 pointer-events-none absolute top-1/2 left-1/2 z-20 flex h-36 max-h-36 min-h-36 w-36 max-w-36 min-w-36 items-center justify-center rounded-3xl border backdrop-blur-lg"
-			>
-				<div>
-					<Feather size={96} class="text-foreground" />
+<main>
+	<section class="flex min-h-screen w-full items-center">
+		<div class="container max-w-7xl">
+			<div class="relative mx-auto grid max-w-6xl gap-4">
+				<div
+					class="hero-logo bg-opacity-50 pointer-events-none absolute top-1/2 left-1/2 z-20 flex h-36 min-h-36 w-36 min-w-36 items-center justify-center rounded-3xl border backdrop-blur-lg"
+				>
+					<div>
+						<Feather size={96} class="text-foreground" />
+					</div>
 				</div>
+				<div
+					class="from-background pointer-events-none absolute left-0 z-10 h-full w-16 bg-linear-to-r to-transparent sm:w-32 md:w-64"
+				></div>
+				<div
+					class="from-background pointer-events-none absolute right-0 z-10 h-full w-16 bg-linear-to-l to-transparent sm:w-32 md:w-64"
+				></div>
+
+				<div
+					class="from-background pointer-events-none absolute bottom-0 z-10 h-16 w-full bg-linear-to-t to-transparent sm:h-32"
+				></div>
+
+				<div
+					class="from-background pointer-events-none absolute top-0 z-10 h-16 w-full bg-linear-to-b to-transparent sm:h-32"
+				></div>
+
+				<Marquee gap="24px" speed={20} class="min-h-14">
+					{#each marquee1Icons as Icon, i}
+						<div
+							class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-900"
+						>
+							<Icon size={24} class="text-muted-foreground" />
+						</div>
+					{/each}
+				</Marquee>
+
+				<Marquee gap="24px" speed={24} class="min-h-14">
+					{#each marquee2Icons as Icon, i}
+						<div
+							class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-900"
+						>
+							<Icon size={24} class="text-muted-foreground" />
+						</div>
+					{/each}
+				</Marquee>
+
+				<Marquee gap="24px" speed={16} class="min-h-14">
+					{#each marquee3Icons as Icon, i}
+						<div
+							class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-900"
+						>
+							<Icon size={24} class="text-muted-foreground" />
+						</div>
+					{/each}
+				</Marquee>
+
+				<Marquee gap="24px" speed={28} class="min-h-14">
+					{#each marquee4Icons as Icon, i}
+						<div
+							class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-900"
+						>
+							<Icon size={24} class="text-muted-foreground" />
+						</div>
+					{/each}
+				</Marquee>
 			</div>
-			<div
-				class="from-background pointer-events-none absolute left-0 z-10 h-full w-16 bg-linear-to-r to-transparent sm:w-32 md:w-64"
-			></div>
-			<div
-				class="from-background pointer-events-none absolute right-0 z-10 h-full w-16 bg-linear-to-l to-transparent sm:w-32 md:w-64"
-			></div>
 
-			<div
-				class="from-background pointer-events-none absolute bottom-0 z-10 h-16 w-full bg-linear-to-t to-transparent sm:h-32"
-			></div>
-
-			<div
-				class="from-background pointer-events-none absolute top-0 z-10 h-16 w-full bg-linear-to-b to-transparent sm:h-32"
-			></div>
-
-			<Marquee gap="24px" speed={20} class="min-h-14">
-				{#each marquee1Icons as Icon, i}
-					<div
-						class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-900"
-					>
-						<Icon size={24} class="text-muted-foreground" />
-					</div>
-				{/each}
-			</Marquee>
-
-			<Marquee gap="24px" speed={24} class="min-h-14">
-				{#each marquee2Icons as Icon, i}
-					<div
-						class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-900"
-					>
-						<Icon size={24} class="text-muted-foreground" />
-					</div>
-				{/each}
-			</Marquee>
-
-			<Marquee gap="24px" speed={16} class="min-h-14">
-				{#each marquee3Icons as Icon, i}
-					<div
-						class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-900"
-					>
-						<Icon size={24} class="text-muted-foreground" />
-					</div>
-				{/each}
-			</Marquee>
-
-			<Marquee gap="24px" speed={28} class="min-h-14">
-				{#each marquee4Icons as Icon, i}
-					<div
-						class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-900"
-					>
-						<Icon size={24} class="text-muted-foreground" />
-					</div>
-				{/each}
-			</Marquee>
+			<h1
+				class="hero-title mx-auto mt-8 w-fit max-w-5xl text-center text-3xl font-semibold text-balance sm:text-4xl md:text-5xl"
+			>
+				<span>Beautifully</span> <span>crafted,</span> <span>moving</span> <span>icons.</span>
+				<span>For</span>
+				<span class="bg-linear-to-br from-[#FF3E00] to-orange-400 bg-clip-text text-transparent"
+					>Svelte</span
+				><span>.</span>
+			</h1>
+			<p
+				class="hero-description text-muted-foreground mx-auto mt-5 w-fit max-w-2xl text-center text-sm leading-relaxed text-pretty sm:mt-4 sm:text-base"
+			>
+				A collection of animated icons for your projects. Feel free to use them, share your
+				feedback, and let's make this library awesome together!
+			</p>
+			<div class="hero-button mx-auto mt-6 w-fit">
+				<Button variant="outline" href="/icons">Browse icons</Button>
+			</div>
 		</div>
+	</section>
 
-		<h1
-			class="hero-title mx-auto mt-8 w-fit max-w-5xl text-center text-3xl font-semibold text-balance sm:text-4xl md:text-5xl"
-		>
-			<span>beautifully</span> <span>crafted,</span> <span>moving</span> <span>icons.</span>
-			<span>for</span>
-			<span class="bg-linear-to-br from-[#FF3E00] to-orange-400 bg-clip-text text-transparent"
-				>svelte</span
-			><span>.</span>
-		</h1>
-		<p
-			class="hero-description text-muted-foreground mx-auto mt-5 w-fit max-w-2xl text-center text-sm leading-relaxed text-pretty sm:mt-4 sm:text-base"
-		>
-			a collection of animated icons for your projects. feel free to use them, share your feedback,
-			and let's make this library awesome together!
-		</p>
-	</div>
+	<section class="container max-w-7xl">
+		<div class="relative mx-auto grid grid-cols-2 gap-x-3 gap-y-6 sm:gap-8 lg:grid-cols-4">
+			<div class="space-y-3">
+				<div class="flex items-center gap-2">
+					<Code class="size-4" />
+					<h3 class="text-sm font-medium">Open Source</h3>
+				</div>
+				<p class="text-muted-foreground text-sm">All icons licensed under the MIT license.</p>
+			</div>
+			<div class="space-y-2">
+				<div class="flex items-center gap-2">
+					<Package class="size-4" />
+					<h3 class="text-sm font-medium">Dependency Free</h3>
+				</div>
+				<p class="text-muted-foreground text-sm">Built with vanilla Svelte, JS and CSS.</p>
+			</div>
+			<div class="space-y-2">
+				<div class="flex items-center gap-2">
+					<Sliders class="size-4" />
+					<h3 class="text-sm font-medium">Customizable</h3>
+				</div>
+				<p class="text-muted-foreground text-sm">Adjust colours, size, and stroke width.</p>
+			</div>
+			<div class="space-y-2">
+				<div class="flex items-center gap-2">
+					<Feather class="size-4" />
+					<h3 class="text-sm font-medium">Lightweight</h3>
+				</div>
+				<p class="text-muted-foreground text-sm">Simply copy the icons you need.</p>
+			</div>
+		</div>
+	</section>
 </main>
 
 <footer class="mt-16">
@@ -338,6 +383,11 @@
 	}
 
 	.hero-description {
+		opacity: 0;
+		filter: blur(10px);
+	}
+
+	.hero-button {
 		opacity: 0;
 		filter: blur(10px);
 	}
