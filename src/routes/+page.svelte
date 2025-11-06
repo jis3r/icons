@@ -238,6 +238,16 @@
 					);
 				}
 			});
+
+			const lastHeroDelay = 0.125 + 0.4 + (allElements.length - 2) * 0.05 + 0.8; // Last hero element delay + duration
+			const featureCards = document.querySelectorAll('.feature-card');
+			featureCards.forEach((card, i) => {
+				animate(
+					card,
+					{ opacity: 1, y: [20, 0], filter: ['blur(10px)', 'blur(0px)'] },
+					{ delay: lastHeroDelay + 0.1 + i * 0.05, duration: 0.8, easing: [0.16, 1, 0.3, 1] }
+				);
+			});
 		}, medianDelay);
 	});
 </script>
@@ -332,28 +342,28 @@
 
 	<section class="container max-w-7xl">
 		<div class="relative mx-auto grid grid-cols-2 gap-x-3 gap-y-6 sm:gap-8 lg:grid-cols-4">
-			<div class="space-y-3">
+			<div class="feature-card space-y-3">
 				<div class="flex items-center gap-2">
 					<Code class="size-4" />
 					<h3 class="text-sm font-medium">Open Source</h3>
 				</div>
 				<p class="text-muted-foreground text-sm">All icons licensed under the MIT license.</p>
 			</div>
-			<div class="space-y-2">
+			<div class="feature-card space-y-2">
 				<div class="flex items-center gap-2">
 					<Package class="size-4" />
 					<h3 class="text-sm font-medium">Dependency Free</h3>
 				</div>
 				<p class="text-muted-foreground text-sm">Built with vanilla Svelte, JS and CSS.</p>
 			</div>
-			<div class="space-y-2">
+			<div class="feature-card space-y-2">
 				<div class="flex items-center gap-2">
 					<Sliders class="size-4" />
 					<h3 class="text-sm font-medium">Customizable</h3>
 				</div>
 				<p class="text-muted-foreground text-sm">Adjust colours, size, and stroke width.</p>
 			</div>
-			<div class="space-y-2">
+			<div class="feature-card space-y-2">
 				<div class="flex items-center gap-2">
 					<Feather class="size-4" />
 					<h3 class="text-sm font-medium">Lightweight</h3>
@@ -394,5 +404,10 @@
 
 	.marquee-icon {
 		opacity: 0;
+	}
+
+	.feature-card {
+		opacity: 0;
+		filter: blur(10px);
 	}
 </style>
