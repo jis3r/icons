@@ -239,25 +239,25 @@
 	<div class="container max-w-7xl">
 		<div class="relative mx-auto grid max-w-6xl gap-4">
 			<div
-				class="hero-logo border-800 pointer-events-none absolute left-1/2 top-1/2 z-20 flex h-36 min-h-36 w-36 min-w-36 items-center justify-center rounded-3xl border bg-opacity-50 backdrop-blur-lg"
+				class="hero-logo bg-opacity-50 pointer-events-none absolute top-1/2 left-1/2 z-20 flex h-36 max-h-36 min-h-36 w-36 max-w-36 min-w-36 items-center justify-center rounded-3xl border backdrop-blur-lg"
 			>
 				<div>
 					<Feather size={96} class="text-foreground" />
 				</div>
 			</div>
 			<div
-				class="pointer-events-none absolute left-0 z-10 h-full w-16 bg-gradient-to-r from-background to-transparent sm:w-32 md:w-64"
+				class="from-background pointer-events-none absolute left-0 z-10 h-full w-16 bg-linear-to-r to-transparent sm:w-32 md:w-64"
 			></div>
 			<div
-				class="pointer-events-none absolute right-0 z-10 h-full w-16 bg-gradient-to-l from-background to-transparent sm:w-32 md:w-64"
-			></div>
-
-			<div
-				class="pointer-events-none absolute bottom-0 z-10 h-16 w-full bg-gradient-to-t from-background to-transparent sm:h-32"
+				class="from-background pointer-events-none absolute right-0 z-10 h-full w-16 bg-linear-to-l to-transparent sm:w-32 md:w-64"
 			></div>
 
 			<div
-				class="pointer-events-none absolute top-0 z-10 h-16 w-full bg-gradient-to-b from-background to-transparent sm:h-32"
+				class="from-background pointer-events-none absolute bottom-0 z-10 h-16 w-full bg-linear-to-t to-transparent sm:h-32"
+			></div>
+
+			<div
+				class="from-background pointer-events-none absolute top-0 z-10 h-16 w-full bg-linear-to-b to-transparent sm:h-32"
 			></div>
 
 			<Marquee gap="24px" speed={20} class="min-h-14">
@@ -302,16 +302,16 @@
 		</div>
 
 		<h1
-			class="hero-title mx-auto mt-8 w-fit max-w-5xl text-balance text-center text-3xl font-semibold sm:text-4xl md:text-5xl"
+			class="hero-title mx-auto mt-8 w-fit max-w-5xl text-center text-3xl font-semibold text-balance sm:text-4xl md:text-5xl"
 		>
 			<span>beautifully</span> <span>crafted,</span> <span>moving</span> <span>icons.</span>
 			<span>for</span>
-			<span class="bg-gradient-to-br from-svelte to-orange-400 bg-clip-text text-transparent"
+			<span class="from-svelte bg-linear-to-br to-orange-400 bg-clip-text text-transparent"
 				>svelte</span
 			><span>.</span>
 		</h1>
 		<p
-			class="hero-description mx-auto mt-5 w-fit max-w-2xl text-pretty text-center text-sm leading-relaxed text-muted-foreground sm:mt-4 sm:text-base"
+			class="hero-description text-muted-foreground mx-auto mt-5 w-fit max-w-2xl text-center text-sm leading-relaxed text-pretty sm:mt-4 sm:text-base"
 		>
 			a collection of animated icons for your projects. feel free to use them, share your feedback,
 			and let's make this library awesome together!
@@ -320,7 +320,7 @@
 </main>
 
 <footer class="mt-16">
-	<p class="mb-4 text-center text-xs text-muted-foreground">
+	<p class="text-muted-foreground mb-4 text-center text-xs">
 		built with ❤️ by <a href="https://github.com/jis3r" class="underline">@jis3r</a>
 	</p>
 </footer>
