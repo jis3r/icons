@@ -2,16 +2,31 @@
 	import { Button } from '$lib/components/ui/button';
 	import { Sun, Moon } from '@lucide/svelte';
 	import { toggleMode } from 'mode-watcher';
-	import { onMount } from 'svelte';
+	import { onMount, onDestroy } from 'svelte';
 	import Github from '$lib/components/github.svelte';
 	import NumberFlow from '@number-flow/svelte';
 
 	let stars = $state(0);
 
+	let interval;
+
 	onMount(async () => {
 		const res = await fetch('https://api.github.com/repos/jis3r/icons');
 		const data = await res.json();
-		stars = data.stargazers_count;
+
+		interval = setInterval(() => {
+			if (stars < data.stargazers_count) {
+				stars += 1;
+			} else {
+				clearInterval(interval);
+			}
+		}, 1);
+	});
+
+	onDestroy(() => {
+		if (interval) {
+			clearInterval(interval);
+		}
 	});
 </script>
 
