@@ -1,3 +1,5 @@
+import iflog from 'iflog';
+
 export let getIconSource = async (iconName) => {
 	try {
 		// Create a map of all icon files at build time
@@ -42,7 +44,7 @@ export let preloadIconSources = async (icons) => {
 		// Wait for all to complete and return the updated icons array
 		return await Promise.all(loadPromises);
 	} catch (error) {
-		console.error('Failed to preload icon sources:', error);
+		iflog.error('Failed to preload icon sources:', error);
 		throw error;
 	}
 };
@@ -62,7 +64,7 @@ export let downloadIcon = async (icon) => {
 		link.click();
 		URL.revokeObjectURL(url);
 	} catch (error) {
-		console.error(`Failed to download icon ${icon.name}:`, error);
+		iflog.error(`Failed to download icon ${icon.name}:`, error);
 		throw error;
 	}
 };

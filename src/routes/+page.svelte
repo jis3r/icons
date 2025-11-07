@@ -1,354 +1,451 @@
 <script>
-	import { Button } from '$lib/components/ui/button';
-	import { Input } from '$lib/components/ui/input';
-	import { Badge } from '$lib/components/ui/badge';
-	import { Sun, Moon, Download, Copy, ExternalLink, Check, Terminal } from '@lucide/svelte';
-	import { toggleMode } from 'mode-watcher';
 	import { onMount } from 'svelte';
-	import { downloadIcon, preloadIconSources } from '$lib/utils/icons.js';
-	import ICONS_LIST from '$lib/icons/index.js';
-	import Github from '$lib/components/github.svelte';
-	import NumberFlow from '@number-flow/svelte';
-	import { debounce } from '$lib/utils/debounce';
+	import Marquee from 'svelte-fast-marquee';
 	import { animate } from 'motion';
 	import { page } from '$app/state';
+	import { goto } from '$app/navigation';
+	import { Button } from '$lib/components/ui/button';
+	import {
+		Activity,
+		AlarmClock,
+		Anvil,
+		Archive,
+		ArrowUp01,
+		Infinity,
+		RockingChair,
+		Axe,
+		BadgeAlert,
+		BadgeCheck,
+		BadgeQuestionMark,
+		BookMarked,
+		Boxes,
+		Award,
+		UserPen,
+		MailCheck,
+		Radio,
+		GalleryHorizontalEnd,
+		Landmark,
+		HandCoins,
+		BatteryCharging,
+		FileStack,
+		Bell,
+		Bone,
+		Book,
+		Cog,
+		Cctv,
+		ChartBar,
+		ChartPie,
+		CigaretteOff,
+		Clock,
+		Compass,
+		Drum,
+		WineOff,
+		Gauge,
+		Frame,
+		Nfc,
+		Orbit,
+		Plane,
+		Rainbow,
+		Tornado,
+		Scissors,
+		Feather,
+		Bolt,
+		CloudDownload,
+		BookmarkCheck,
+		CircleAlert,
+		Kanban,
+		Key,
+		ShieldCheck,
+		Diff,
+		Cpu,
+		Vote,
+		Wifi,
+		ServerCog,
+		Users,
+		Upload,
+		Download,
+		ThumbsUp,
+		ThumbsDown,
+		Telescope,
+		Terminal,
+		Sun,
+		SpellCheck,
+		SquarePen,
+		Speech,
+		Shrink,
+		ShowerHead,
+		Shovel,
+		Ship,
+		ShipWheel,
+		Search,
+		ScanText,
+		Route,
+		Rocket,
+		Redo,
+		Undo,
+		PrinterCheck,
+		Code,
+		Package,
+		SlidersHorizontal
+	} from '@lucide/svelte';
 
-	let stars = $state(0);
-	let iconsAdded = $state(0);
-	let icons = [];
-	let searchQuery = $state('');
-	let filteredIcons = $state([]);
-	let size = $state(28);
-	let color = $state('currentColor');
-	let strokeWidth = $state(2);
-	let isLoading = $state(true);
+	const allIcons = [
+		Activity,
+		AlarmClock,
+		Anvil,
+		Archive,
+		ArrowUp01,
+		Infinity,
+		RockingChair,
+		Axe,
+		BadgeAlert,
+		BadgeCheck,
+		BadgeQuestionMark,
+		BookMarked,
+		Boxes,
+		Award,
+		UserPen,
+		MailCheck,
+		Radio,
+		GalleryHorizontalEnd,
+		Landmark,
+		HandCoins,
+		BatteryCharging,
+		FileStack,
+		Bell,
+		Bone,
+		Book,
+		Cog,
+		Cctv,
+		ChartBar,
+		ChartPie,
+		CigaretteOff,
+		Clock,
+		Compass,
+		Drum,
+		WineOff,
+		Gauge,
+		Frame,
+		Nfc,
+		Orbit,
+		Plane,
+		Rainbow,
+		Tornado,
+		Scissors,
+		Bolt,
+		CloudDownload,
+		BookmarkCheck,
+		CircleAlert,
+		Kanban,
+		Key,
+		ShieldCheck,
+		Diff,
+		Cpu,
+		Vote,
+		Wifi,
+		ServerCog,
+		Users,
+		Upload,
+		Download,
+		ThumbsUp,
+		ThumbsDown,
+		Telescope,
+		Terminal,
+		Sun,
+		SpellCheck,
+		SquarePen,
+		Speech,
+		Shrink,
+		ShowerHead,
+		Shovel,
+		Ship,
+		ShipWheel,
+		Search,
+		ScanText,
+		Route,
+		Rocket,
+		Redo,
+		Undo,
+		PrinterCheck
+	];
 
-	const updateFilteredIcons = (query) => {
-		filteredIcons = icons.filter((icon) => {
-			const q = query.toLowerCase();
-			return (
-				icon.name.toLowerCase().includes(q) ||
-				icon.tags?.some((tag) => tag.toLowerCase().includes(q)) ||
-				icon.categories?.some((category) => category.toLowerCase().includes(q))
-			);
-		});
-	};
-
-	const debouncedUpdateFilteredIcons = debounce(updateFilteredIcons, 300);
-
-	const handleCopy = (icon) => {
-		try {
-			if (!icon.source) {
-				console.error('Icon source not available:', icon.name);
-				return;
-			}
-
-			navigator.clipboard.writeText(icon.source).catch((err) => {
-				console.error('Failed to copy to clipboard:', err);
-			});
-
-			icon.copied = true;
-			setTimeout(() => {
-				icon.copied = false;
-			}, 1500);
-		} catch (err) {
-			console.error('Failed to copy icon:', err);
+	function shuffleArray(array) {
+		const shuffled = [...array];
+		for (let i = shuffled.length - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			[shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
 		}
-	};
-
-	const handleDownload = (icon) => {
-		downloadIcon(icon)
-			.then(() => {
-				icon.downloaded = true;
-				setTimeout(() => {
-					icon.downloaded = false;
-				}, 1500);
-			})
-			.catch((err) => {
-				console.error('Failed to download icon:', err);
-			});
-	};
-
-	const handleTerminalCopy = (icon) => {
-		try {
-			if (!icon.source) {
-				console.error('Icon source not available:', icon.name);
-				return;
-			}
-
-			const command = `npx shadcn-svelte@latest add https://movingicons.dev/r/${icon.name}.json`;
-			navigator.clipboard.writeText(command).catch((err) => {
-				console.error('Failed to copy terminal command to clipboard:', err);
-			});
-
-			icon.terminalCopied = true;
-			setTimeout(() => {
-				icon.terminalCopied = false;
-			}, 1500);
-		} catch (err) {
-			console.error('Failed to copy terminal command:', err);
-		}
-	};
-
-	function animateIcon(node, { visible }) {
-		let animation;
-		const show = () => {
-			animation = animate(
-				node,
-				{ opacity: [0, 1], scale: [0, 1] },
-				{ duration: 0.25, easing: 'ease-out' }
-			);
-		};
-		const hide = () => {
-			animation = animate(
-				node,
-				{ opacity: [1, 0], scale: [1, 0] },
-				{ duration: 0.25, easing: 'ease-in' }
-			);
-		};
-
-		if (visible) show();
-		else hide();
-
-		return {
-			update({ visible }) {
-				if (visible) show();
-				else hide();
-			},
-			destroy() {
-				if (animation) animation.cancel();
-			}
-		};
+		return shuffled;
 	}
 
-	onMount(async () => {
-		try {
-			icons = ICONS_LIST;
+	// Shuffle all icons once and then split them evenly
+	const shuffledIcons = shuffleArray(allIcons);
+	const chunkSize = Math.ceil(shuffledIcons.length / 4);
 
-			if (page.url.searchParams.has('search')) {
-				const searchParam = page.url.searchParams.get('search');
-				searchQuery = searchParam;
-				updateFilteredIcons(searchParam);
-			} else {
-				filteredIcons = icons;
-			}
+	const marquee1Icons = $state(shuffledIcons.slice(0, chunkSize));
+	const marquee2Icons = $state(shuffledIcons.slice(chunkSize, chunkSize * 2));
+	const marquee3Icons = $state(shuffledIcons.slice(chunkSize * 2, chunkSize * 3));
+	const marquee4Icons = $state(shuffledIcons.slice(chunkSize * 3));
 
-			const res = await fetch('https://api.github.com/repos/jis3r/icons');
-			if (!res.ok) throw new Error('Failed to fetch GitHub stars');
-			const data = await res.json();
-
-			const interval = setInterval(() => {
-				if (stars < data.stargazers_count) {
-					stars += 1;
-				} else {
-					clearInterval(interval);
-				}
-			}, 10);
-
-			const lastVisit = localStorage.getItem('lastVisit');
-			if (lastVisit) {
-				iconsAdded = icons.length - JSON.parse(lastVisit);
-			}
-			localStorage.setItem('lastVisit', JSON.stringify(icons.length));
-
-			preloadIconSources(icons)
-				.then((updatedIcons) => {
-					icons = updatedIcons;
-
-					if (searchQuery) {
-						updateFilteredIcons(searchQuery);
-					} else {
-						filteredIcons = icons;
-					}
-				})
-				.catch((err) => {
-					console.error('Failed to preload icons:', err);
-				});
-		} catch (err) {
-			console.error(err);
-		} finally {
-			isLoading = false;
+	onMount(() => {
+		if (page.url.searchParams.has('search')) {
+			const searchParam = page.url.searchParams.get('search');
+			goto(`/icons?search=${encodeURIComponent(searchParam)}`, { replaceState: true });
+			return;
 		}
+
+		const allMarqueeIcons = Array.from(document.querySelectorAll('.marquee-icon'));
+		const randomDelays = Array.from(allMarqueeIcons).map(() => Math.random() * 1500);
+
+		allMarqueeIcons.forEach((icon, i) => {
+			animate(
+				icon,
+				{
+					opacity: [0, 1],
+					y: [3, 0],
+					filter: ['blur(6px)', 'blur(0px)']
+				},
+				{
+					delay: randomDelays[i] / 1000,
+					duration: 0.4,
+					easing: [0.42, 0, 0.58, 1]
+				}
+			);
+		});
+
+		const sortedDelays = [...randomDelays].sort((a, b) => a - b);
+		const oneThirdIndex = Math.floor(sortedDelays.length / 3);
+		const oneThirdDelay = sortedDelays[oneThirdIndex] || 500;
+		const heroStartTime = (oneThirdDelay + 400) / 1000;
+
+		const logo = document.querySelector('.hero-logo');
+		const titleSpans = document.querySelectorAll('.hero-title span');
+		const description = document.querySelector('.hero-description');
+		const button = document.querySelector('.hero-button');
+
+		const allElements = [logo, ...Array.from(titleSpans), description, button].filter(Boolean);
+		const heroLogoDuration = 0.7;
+
+		allElements.forEach((element, i) => {
+			if (i === 0) {
+				animate(
+					element,
+					{
+						opacity: [0, 1],
+						transform: [
+							'translate(calc(-50% + 0px), calc(-50% + 15px)) scale(0.9)',
+							'translate(-50%, -50%) scale(1)'
+						],
+						filter: ['blur(6px)', 'blur(0px)']
+					},
+					{
+						delay: heroStartTime,
+						duration: heroLogoDuration,
+						easing: [0.16, 1, 0.3, 1]
+					}
+				);
+			} else {
+				const staggerDelay = heroStartTime + 0.15 + (i - 1) * 0.04;
+				animate(
+					element,
+					{
+						opacity: [0, 1],
+						y: [15, 0],
+						filter: ['blur(6px)', 'blur(0px)']
+					},
+					{
+						delay: staggerDelay,
+						duration: 0.7,
+						easing: [0.16, 1, 0.3, 1]
+					}
+				);
+			}
+		});
+
+		const featureCards = document.querySelectorAll('.feature-card');
+		const heroCompleteTime = heroStartTime + 0.15 + (allElements.length - 1) * 0.04 + 0.7;
+
+		featureCards.forEach((card, i) => {
+			animate(
+				card,
+				{
+					opacity: [0, 1],
+					y: [12, 0],
+					filter: ['blur(4px)', 'blur(0px)']
+				},
+				{
+					delay: heroCompleteTime + 0.1 + i * 0.06,
+					duration: 0.6,
+					easing: [0.16, 1, 0.3, 1]
+				}
+			);
+		});
 	});
 </script>
 
-<svelte:window
-	onkeydown={(e) => {
-		const searchbar = document.getElementById('searchbar');
-
-		if (e.key === 'k' && e.metaKey) {
-			searchbar.focus();
-		}
-
-		if (e.key === 'Escape') {
-			searchbar.blur();
-		}
-	}}
-/>
-
-<header class="container flex h-full w-full max-w-7xl items-center justify-between py-4">
-	<h1 class="text-base">moving icons</h1>
-	<div class="flex gap-1">
-		<Button variant="outline" class="flex gap-2" href="https://github.com/jis3r/icons">
-			<Github size="20" />
-			<NumberFlow value={stars} />
-		</Button>
-
-		<Button onclick={toggleMode} variant="outline" size="icon">
-			<Sun
-				class="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0"
-			/>
-			<Moon
-				class="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"
-			/>
-			<span class="sr-only">Toggle theme</span>
-		</Button>
-	</div>
-</header>
-
-<main class="mt-8 flex w-full items-center justify-center sm:mt-16">
-	<div class="container max-w-7xl">
-		<h1 class="text-balance text-2xl sm:text-3xl">
-			beautifully crafted, moving icons. for <span
-				class="bg-gradient-to-br from-svelte to-orange-400 bg-clip-text text-transparent"
-				>svelte</span
-			>.
-		</h1>
-		<p
-			class="mt-2 max-w-lg text-pretty text-xs leading-relaxed text-muted-foreground sm:mt-4 sm:text-sm"
-		>
-			an open-source collection of smooth, animated icons for your projects. feel free to use them,
-			share your feedback, and let's make this library awesome together!
-		</p>
-
-		<p class="mt-4 text-xs text-muted-foreground sm:text-sm">
-			built with
-			<Button
-				variant="secondary"
-				class="h-[22px] px-2 text-xs font-medium text-orange-600"
-				href="https://lucide.dev">lucide</Button
-			>
-			and inspired by the awesome
-			<Button
-				variant="secondary"
-				class="h-[22px] px-2 text-xs font-medium text-purple-700"
-				href="https://github.com/pqoqubbw">@pqoqubbw</Button
-			>
-		</p>
-
-		<div class="my-10 flex flex-col gap-6 sm:my-20">
-			{#if iconsAdded > 0}
-				<Badge class="w-fit text-xs">+{iconsAdded} icons since your last visit! 🎉</Badge>
-			{/if}
-
-			<div class="relative">
-				<Input
-					id="searchbar"
-					placeholder="Search {filteredIcons.length} icons..."
-					bind:value={searchQuery}
-					oninput={() => debouncedUpdateFilteredIcons(searchQuery)}
-				></Input>
-				<kbd
-					class="pointer-events-none absolute right-2 top-1/2 inline-flex h-5 -translate-y-1/2 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100"
-					><span class="text-xs">⌘</span>K</kbd
-				>
-			</div>
-
-			{#if isLoading}
-				<div class="flex items-center justify-center py-12">
-					<div class="text-muted-foreground">Loading icons...</div>
-				</div>
-			{:else if filteredIcons.length === 0}
-				<div class="flex flex-col items-center justify-center gap-2 py-24 text-center">
-					<h2 class="text-lg">No icons found</h2>
-					<p class="max-w-sm text-pretty text-center text-xs text-muted-foreground">
-						We couldn't find any icons matching your search.<br />Try different keywords.
-					</p>
-				</div>
-			{:else}
+<main>
+	<section class="flex min-h-screen w-full items-center">
+		<div class="container max-w-7xl">
+			<div class="relative mx-auto grid max-w-6xl gap-4">
 				<div
-					class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-[repeat(auto-fill,minmax(165px,1fr))]"
+					class="hero-logo bg-opacity-50 pointer-events-none absolute top-1/2 left-1/2 z-20 flex h-36 min-h-36 w-36 min-w-36 items-center justify-center rounded-3xl border backdrop-blur-lg"
 				>
-					{#each filteredIcons as icon}
+					<div>
+						<Feather size={96} class="text-foreground" />
+					</div>
+				</div>
+				<div
+					class="from-background pointer-events-none absolute left-0 z-10 h-full w-16 bg-linear-to-r to-transparent sm:w-32 md:w-64"
+				></div>
+				<div
+					class="from-background pointer-events-none absolute right-0 z-10 h-full w-16 bg-linear-to-l to-transparent sm:w-32 md:w-64"
+				></div>
+
+				<div
+					class="from-background pointer-events-none absolute bottom-0 z-10 h-16 w-full bg-linear-to-t to-transparent sm:h-32"
+				></div>
+
+				<div
+					class="from-background pointer-events-none absolute top-0 z-10 h-16 w-full bg-linear-to-b to-transparent sm:h-32"
+				></div>
+
+				<Marquee gap="24px" speed={20} class="marquee-row-1 min-h-14">
+					{#each marquee1Icons as Icon, i}
 						<div
-							class="flex h-full w-full flex-col items-center justify-center rounded-md border border-input p-3"
+							class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-900"
 						>
-							<icon.icon
-								{size}
-								{color}
-								{strokeWidth}
-								class="flex select-none items-center justify-center rounded-md p-2 transition-colors duration-200 hover:bg-accent"
-							/>
-							<p class="mb-3 mt-5 text-center text-xs text-muted-foreground">{icon.name}</p>
-							<div class="flex items-center justify-center gap-2">
-								<Button
-									onclick={() => handleCopy(icon)}
-									variant="ghost"
-									class="size-8 rounded-md p-2 transition-colors duration-200 hover:bg-accent"
-								>
-									{#key icon.copied}
-										<span use:animateIcon={{ visible: true }} style="display: inline-block;">
-											{#if icon.copied}
-												<Check class="h-4 w-4" />
-											{:else}
-												<Copy class="h-4 w-4" />
-											{/if}
-										</span>
-									{/key}
-								</Button>
-
-								<Button
-									onclick={() => handleDownload(icon)}
-									variant="ghost"
-									class="size-8 rounded-md p-2 transition-colors duration-200 hover:bg-accent"
-								>
-									{#key icon.downloaded}
-										<span use:animateIcon={{ visible: true }} style="display: inline-block;">
-											{#if icon.downloaded}
-												<Check class="h-4 w-4" />
-											{:else}
-												<Download class="h-4 w-4" />
-											{/if}
-										</span>
-									{/key}
-								</Button>
-
-								{#if false}
-									<Button
-										href={'https://github.com/jis3r/icons/blob/master/src/lib/icons/' +
-											icon.name +
-											'.svelte'}
-										variant="ghost"
-										class="size-8 rounded-md p-2 transition-colors duration-200 hover:bg-accent"
-									>
-										<ExternalLink class="h-4 w-4" />
-									</Button>
-								{/if}
-
-								<Button
-									onclick={() => handleTerminalCopy(icon)}
-									variant="ghost"
-									class="size-8 rounded-md p-2 transition-colors duration-200 hover:bg-accent"
-								>
-									{#key icon.terminalCopied}
-										<span use:animateIcon={{ visible: true }} style="display: inline-block;">
-											{#if icon.terminalCopied}
-												<Check class="h-4 w-4" />
-											{:else}
-												<Terminal class="h-4 w-4" />
-											{/if}
-										</span>
-									{/key}
-								</Button>
-							</div>
+							<Icon size={24} class="text-muted-foreground" />
 						</div>
 					{/each}
-				</div>
-			{/if}
-		</div>
+				</Marquee>
 
-		<p class="mb-4 text-center text-xs text-muted-foreground">
-			built with ❤️ by <a href="https://github.com/jis3r" class="underline">@jis3r</a>
-		</p>
-	</div>
+				<Marquee gap="24px" speed={24} class="marquee-row-2 min-h-14">
+					{#each marquee2Icons as Icon}
+						<div
+							class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-900"
+						>
+							<Icon size={24} class="text-muted-foreground" />
+						</div>
+					{/each}
+				</Marquee>
+
+				<Marquee gap="24px" speed={16} class="marquee-row-3 min-h-14">
+					{#each marquee3Icons as Icon}
+						<div
+							class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-900"
+						>
+							<Icon size={24} class="text-muted-foreground" />
+						</div>
+					{/each}
+				</Marquee>
+
+				<Marquee gap="24px" speed={28} class="marquee-row-4 min-h-14">
+					{#each marquee4Icons as Icon}
+						<div
+							class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-900"
+						>
+							<Icon size={24} class="text-muted-foreground" />
+						</div>
+					{/each}
+				</Marquee>
+			</div>
+
+			<h1
+				class="hero-title mx-auto mt-8 w-fit max-w-5xl text-center text-3xl font-semibold text-balance sm:text-4xl md:text-5xl"
+			>
+				<span>Beautifully</span> <span>crafted,</span> <span>moving</span> <span>icons.</span>
+				<span>For</span>
+				<span class="bg-linear-to-br from-[#FF3E00] to-orange-400 bg-clip-text text-transparent"
+					>Svelte</span
+				><span>.</span>
+			</h1>
+			<p
+				class="hero-description text-muted-foreground mx-auto mt-5 w-fit max-w-2xl text-center text-sm leading-relaxed text-pretty sm:mt-4 sm:text-base"
+			>
+				A collection of animated icons for your projects. Feel free to use them, share your
+				feedback, and let's make this library awesome together!
+			</p>
+			<div class="hero-button mx-auto mt-6 w-fit">
+				<Button variant="outline" href="/icons">Browse icons</Button>
+			</div>
+		</div>
+	</section>
+
+	<section class="container max-w-7xl">
+		<div class="relative mx-auto grid grid-cols-2 gap-x-3 gap-y-6 sm:gap-8 lg:grid-cols-4">
+			<div class="feature-card space-y-3">
+				<div class="flex items-center gap-2">
+					<Code class="size-4" />
+					<h3 class="text-sm font-medium">Open Source</h3>
+				</div>
+				<p class="text-muted-foreground text-sm">All icons licensed under the MIT license.</p>
+			</div>
+			<div class="feature-card space-y-2">
+				<div class="flex items-center gap-2">
+					<Package class="size-4" />
+					<h3 class="text-sm font-medium">Dependency Free</h3>
+				</div>
+				<p class="text-muted-foreground text-sm">Built with vanilla Svelte, JS and CSS.</p>
+			</div>
+			<div class="feature-card space-y-2">
+				<div class="flex items-center gap-2">
+					<SlidersHorizontal class="size-4" />
+					<h3 class="text-sm font-medium">Customizable</h3>
+				</div>
+				<p class="text-muted-foreground text-sm">Adjust colours, size, and stroke width.</p>
+			</div>
+			<div class="feature-card space-y-2">
+				<div class="flex items-center gap-2">
+					<Feather class="size-4" />
+					<h3 class="text-sm font-medium">Lightweight</h3>
+				</div>
+				<p class="text-muted-foreground text-sm">Simply add the icons you need to your project.</p>
+			</div>
+		</div>
+	</section>
 </main>
+
+<footer class="mt-16">
+	<p class="text-muted-foreground mb-4 text-center text-xs">
+		built with ❤️ by <a href="https://github.com/jis3r" class="underline">@jis3r</a>
+	</p>
+</footer>
+
+<style>
+	.hero-logo {
+		opacity: 0;
+		filter: blur(6px);
+		transform: translate(calc(-50% + 0px), calc(-50% + 15px)) scale(0.9);
+	}
+
+	.hero-title span {
+		display: inline-block;
+		opacity: 0;
+		filter: blur(6px);
+		transform: translateY(15px);
+	}
+
+	.hero-description {
+		opacity: 0;
+		filter: blur(6px);
+		transform: translateY(15px);
+	}
+
+	.hero-button {
+		opacity: 0;
+		filter: blur(6px);
+		transform: translateY(15px);
+	}
+
+	.marquee-icon {
+		opacity: 0;
+		filter: blur(6px);
+		transform: translateY(3px);
+	}
+
+	.feature-card {
+		opacity: 0;
+		filter: blur(4px);
+		transform: translateY(12px);
+	}
+</style>

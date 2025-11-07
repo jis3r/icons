@@ -1,6 +1,7 @@
 <script>
 	import '../app.css';
 	import { ModeWatcher } from 'mode-watcher';
+	import Navbar from '$lib/components/navbar.svelte';
 	import posthog from 'posthog-js';
 	import { browser } from '$app/environment';
 	import { onMount } from 'svelte';
@@ -18,5 +19,7 @@
 </script>
 
 <ModeWatcher />
+
+<Navbar />
 
 {@render children()}
