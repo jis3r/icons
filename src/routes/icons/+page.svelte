@@ -162,7 +162,10 @@
 
 		if (e.key === 'k' && e.metaKey) {
 			e.preventDefault();
-			searchbar?.focus();
+			if (searchbar) {
+				searchbar.focus();
+				searchbar.scrollIntoView({ behavior: 'smooth', block: 'center' });
+			}
 		}
 
 		if (e.key === 'Escape') {
