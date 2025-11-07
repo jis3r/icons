@@ -219,7 +219,7 @@
 		const heroStartTime = (oneThirdDelay + 400) / 1000;
 
 		const logo = document.querySelector('.hero-logo');
-		const titleSpans = document.querySelectorAll('.hero-title span');
+		const titleSpans = document.querySelectorAll('.hero-title > span');
 		const description = document.querySelector('.hero-description');
 		const button = document.querySelector('.hero-button');
 
@@ -355,9 +355,7 @@
 			>
 				<span>Beautifully</span> <span>crafted,</span> <span>moving</span> <span>icons.</span>
 				<span>For</span>
-				<span class="bg-linear-to-br from-[#FF3E00] to-orange-400 bg-clip-text text-transparent"
-					>Svelte</span
-				><span>.</span>
+				<span class="hero-title-final whitespace-nowrap"><span class="bg-linear-to-br from-[#FF3E00] to-orange-400 bg-clip-text text-transparent inline-block">Svelte</span><span class="hero-title-dot text-foreground">.</span></span>
 			</h1>
 			<p
 				class="hero-description text-muted-foreground mx-auto mt-5 w-fit max-w-2xl text-center text-sm leading-relaxed text-pretty sm:mt-4 sm:text-base"
@@ -418,7 +416,7 @@
 		transform: translate(calc(-50% + 0px), calc(-50% + 15px)) scale(0.9);
 	}
 
-	.hero-title span {
+	.hero-title > span {
 		display: inline-block;
 		opacity: 0;
 		filter: blur(6px);
