@@ -161,11 +161,12 @@
 		const searchbar = document.getElementById('searchbar');
 
 		if (e.key === 'k' && e.metaKey) {
-			searchbar.focus();
+			e.preventDefault();
+			searchbar?.focus();
 		}
 
 		if (e.key === 'Escape') {
-			searchbar.blur();
+			searchbar?.blur();
 		}
 	}}
 />
