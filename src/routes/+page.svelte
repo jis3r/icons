@@ -194,62 +194,92 @@
 			return;
 		}
 
-		const allMarqueeIcons = document.querySelectorAll('.marquee-icon');
-		const delays = Array.from(allMarqueeIcons).map(() => Math.random() * 1500);
-
-		const sortedDelays = [...delays].sort((a, b) => a - b);
-		const medianDelay = sortedDelays[Math.floor(sortedDelays.length / 6)];
+		const allMarqueeIcons = Array.from(document.querySelectorAll('.marquee-icon'));
+		const randomDelays = Array.from(allMarqueeIcons).map(() => Math.random() * 1500);
 
 		allMarqueeIcons.forEach((icon, i) => {
 			animate(
 				icon,
-				{ opacity: [0, 1] },
-				{ delay: delays[i] / 1000, duration: 0.4, easing: [0.42, 0, 0.58, 1] }
+				{
+					opacity: [0, 1],
+					y: [3, 0],
+					filter: ['blur(6px)', 'blur(0px)']
+				},
+				{
+					delay: randomDelays[i] / 1000,
+					duration: 0.4,
+					easing: [0.42, 0, 0.58, 1]
+				}
 			);
 		});
 
-		setTimeout(() => {
-			const logo = document.querySelector('.hero-logo');
-			const titleSpans = document.querySelectorAll('.hero-title span');
-			const description = document.querySelector('.hero-description');
-			const button = document.querySelector('.hero-button');
+		const sortedDelays = [...randomDelays].sort((a, b) => a - b);
+		const oneThirdIndex = Math.floor(sortedDelays.length / 3);
+		const oneThirdDelay = sortedDelays[oneThirdIndex] || 500;
+		const heroStartTime = (oneThirdDelay + 400) / 1000;
 
-			const allElements = [logo, ...Array.from(titleSpans), description, button].filter(Boolean);
+		const logo = document.querySelector('.hero-logo');
+		const titleSpans = document.querySelectorAll('.hero-title span');
+		const description = document.querySelector('.hero-description');
+		const button = document.querySelector('.hero-button');
 
-			allElements.forEach((element, i) => {
-				if (i === 0) {
-					animate(
-						element,
-						{
-							opacity: 1,
-							transform: [
-								'translate(calc(-50% + 2px), calc(-50% + 20px))',
-								'translate(-50%, -50%)'
-							],
-							filter: ['blur(10px)', 'blur(0px)']
-						},
-						{ delay: 0.125, duration: 0.8, easing: [0.16, 1, 0.3, 1] }
-					);
-				} else {
-					const startDelay = 0.125 + 0.4 + (i - 1) * 0.05; // Logo delay + half duration + stagger
-					animate(
-						element,
-						{ opacity: 1, y: [20, 0], x: [2, 0], filter: ['blur(10px)', 'blur(0px)'] },
-						{ delay: startDelay, duration: 0.8, easing: [0.16, 1, 0.3, 1] }
-					);
-				}
-			});
+		const allElements = [logo, ...Array.from(titleSpans), description, button].filter(Boolean);
+		const heroLogoDuration = 0.7;
 
-			const lastHeroDelay = 0.125 + 0.4 + (allElements.length - 2) * 0.05 + 0.8; // Last hero element delay + duration
-			const featureCards = document.querySelectorAll('.feature-card');
-			featureCards.forEach((card, i) => {
+		allElements.forEach((element, i) => {
+			if (i === 0) {
 				animate(
-					card,
-					{ opacity: 1, y: [20, 0], filter: ['blur(10px)', 'blur(0px)'] },
-					{ delay: lastHeroDelay + 0.1 + i * 0.05, duration: 0.8, easing: [0.16, 1, 0.3, 1] }
+					element,
+					{
+						opacity: [0, 1],
+						transform: [
+							'translate(calc(-50% + 0px), calc(-50% + 15px)) scale(0.9)',
+							'translate(-50%, -50%) scale(1)'
+						],
+						filter: ['blur(6px)', 'blur(0px)']
+					},
+					{
+						delay: heroStartTime,
+						duration: heroLogoDuration,
+						easing: [0.16, 1, 0.3, 1]
+					}
 				);
-			});
-		}, medianDelay);
+			} else {
+				const staggerDelay = heroStartTime + 0.15 + (i - 1) * 0.04;
+				animate(
+					element,
+					{
+						opacity: [0, 1],
+						y: [15, 0],
+						filter: ['blur(6px)', 'blur(0px)']
+					},
+					{
+						delay: staggerDelay,
+						duration: 0.7,
+						easing: [0.16, 1, 0.3, 1]
+					}
+				);
+			}
+		});
+
+		const featureCards = document.querySelectorAll('.feature-card');
+		const heroCompleteTime = heroStartTime + 0.15 + (allElements.length - 1) * 0.04 + 0.7;
+
+		featureCards.forEach((card, i) => {
+			animate(
+				card,
+				{
+					opacity: [0, 1],
+					y: [12, 0],
+					filter: ['blur(4px)', 'blur(0px)']
+				},
+				{
+					delay: heroCompleteTime + 0.1 + i * 0.06,
+					duration: 0.6,
+					easing: [0.16, 1, 0.3, 1]
+				}
+			);
+		});
 	});
 </script>
 
@@ -279,7 +309,7 @@
 					class="from-background pointer-events-none absolute top-0 z-10 h-16 w-full bg-linear-to-b to-transparent sm:h-32"
 				></div>
 
-				<Marquee gap="24px" speed={20} class="min-h-14">
+				<Marquee gap="24px" speed={20} class="marquee-row-1 min-h-14">
 					{#each marquee1Icons as Icon, i}
 						<div
 							class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-900"
@@ -289,7 +319,7 @@
 					{/each}
 				</Marquee>
 
-				<Marquee gap="24px" speed={24} class="min-h-14">
+				<Marquee gap="24px" speed={24} class="marquee-row-2 min-h-14">
 					{#each marquee2Icons as Icon, i}
 						<div
 							class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-900"
@@ -299,7 +329,7 @@
 					{/each}
 				</Marquee>
 
-				<Marquee gap="24px" speed={16} class="min-h-14">
+				<Marquee gap="24px" speed={16} class="marquee-row-3 min-h-14">
 					{#each marquee3Icons as Icon, i}
 						<div
 							class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-900"
@@ -309,7 +339,7 @@
 					{/each}
 				</Marquee>
 
-				<Marquee gap="24px" speed={28} class="min-h-14">
+				<Marquee gap="24px" speed={28} class="marquee-row-4 min-h-14">
 					{#each marquee4Icons as Icon, i}
 						<div
 							class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-900"
@@ -384,31 +414,38 @@
 <style>
 	.hero-logo {
 		opacity: 0;
-		filter: blur(10px);
+		filter: blur(6px);
+		transform: translate(calc(-50% + 0px), calc(-50% + 15px)) scale(0.9);
 	}
 
 	.hero-title span {
 		display: inline-block;
 		opacity: 0;
-		filter: blur(10px);
+		filter: blur(6px);
+		transform: translateY(15px);
 	}
 
 	.hero-description {
 		opacity: 0;
-		filter: blur(10px);
+		filter: blur(6px);
+		transform: translateY(15px);
 	}
 
 	.hero-button {
 		opacity: 0;
-		filter: blur(10px);
+		filter: blur(6px);
+		transform: translateY(15px);
 	}
 
 	.marquee-icon {
 		opacity: 0;
+		filter: blur(6px);
+		transform: translateY(3px);
 	}
 
 	.feature-card {
 		opacity: 0;
-		filter: blur(10px);
+		filter: blur(4px);
+		transform: translateY(12px);
 	}
 </style>
