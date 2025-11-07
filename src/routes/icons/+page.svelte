@@ -161,6 +161,7 @@
 		const searchbar = document.getElementById('searchbar');
 
 		if (e.key === 'k' && e.metaKey) {
+			e.preventDefault();
 			searchbar.focus();
 		}
 
