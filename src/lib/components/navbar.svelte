@@ -5,22 +5,41 @@
 	import { onMount, onDestroy } from 'svelte';
 	import Github from '$lib/components/github.svelte';
 	import NumberFlow from '@number-flow/svelte';
+	import iflog from 'iflog';
 
 	let stars = $state(0);
-
 	let interval;
 
 	onMount(async () => {
-		const res = await fetch('https://api.github.com/repos/jis3r/icons');
-		const data = await res.json();
-
-		interval = setInterval(() => {
-			if (stars < data.stargazers_count) {
-				stars += 1;
-			} else {
-				clearInterval(interval);
+		try {
+			const res = await fetch('https://api.github.com/repos/jis3r/icons');
+			if (!res.ok) {
+				throw new Error(`GitHub API error: ${res.status}`);
 			}
-		}, 1);
+			const data = await res.json();
+
+			const targetStars = data.stargazers_count || 0;
+			if (targetStars === 0) return;
+
+			const maxIncrement = Math.max(5, Math.ceil(targetStars / 30));
+			const delay = 10;
+
+			interval = setInterval(() => {
+				if (stars < targetStars) {
+					const remaining = targetStars - stars;
+					const progress = remaining / targetStars;
+					const easeOutFactor = progress * progress;
+					const currentIncrement = Math.max(1, Math.ceil(maxIncrement * easeOutFactor));
+
+					stars = Math.min(stars + currentIncrement, targetStars);
+				} else {
+					clearInterval(interval);
+				}
+			}, delay);
+		} catch (err) {
+			iflog.error('Failed to fetch GitHub stars:', err);
+			stars = 312;
+		}
 	});
 
 	onDestroy(() => {
