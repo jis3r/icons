@@ -162,11 +162,11 @@
 
 		if (e.key === 'k' && e.metaKey) {
 			e.preventDefault();
-			searchbar.focus();
+			searchbar?.focus();
 		}
 
 		if (e.key === 'Escape') {
-			searchbar.blur();
+			searchbar?.blur();
 		}
 	}}
 />
