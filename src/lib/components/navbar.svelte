@@ -50,7 +50,7 @@
 </script>
 
 <header
-	class="border-text-muted-foreground bg-background bg-opacity-40 fixed top-0 z-50 h-[72px] w-full border-b backdrop-blur-xl"
+	class="border-muted-foreground bg-background bg-opacity-40 fixed top-0 z-50 h-[72px] w-full border-b backdrop-blur-xl"
 >
 	<nav class="container flex items-center justify-between py-4">
 		<a href="/" class="cursor-pointer text-base"> moving icons </a>
