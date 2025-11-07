@@ -399,7 +399,7 @@
 					<Feather class="size-4" />
 					<h3 class="text-sm font-medium">Lightweight</h3>
 				</div>
-				<p class="text-muted-foreground text-sm">Simply copy the icons you need.</p>
+				<p class="text-muted-foreground text-sm">Simply add the icons you need to your project.</p>
 			</div>
 		</div>
 	</section>
