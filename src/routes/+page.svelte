@@ -2,6 +2,8 @@
 	import { onMount } from 'svelte';
 	import Marquee from 'svelte-fast-marquee';
 	import { animate } from 'motion';
+	import { page } from '$app/state';
+	import { goto } from '$app/navigation';
 	import { Button } from '$lib/components/ui/button';
 	import {
 		Activity,
