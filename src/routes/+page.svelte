@@ -340,7 +340,7 @@
 				</Marquee>
 
 				<Marquee gap="24px" speed={28} class="marquee-row-4 min-h-14">
-					{#each marquee4Icons as Icon, i}
+					{#each marquee4Icons as Icon}
 						<div
 							class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-900"
 						>
