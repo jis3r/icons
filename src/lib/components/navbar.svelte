@@ -22,7 +22,7 @@
 			if (targetStars === 0) return;
 
 			const maxIncrement = Math.max(5, Math.ceil(targetStars / 30));
-			const delay = 10;
+			const delay = 50;
 
 			interval = setInterval(() => {
 				if (stars < targetStars) {
