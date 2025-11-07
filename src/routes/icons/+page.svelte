@@ -2,18 +2,14 @@
 	import { Button } from '$lib/components/ui/button';
 	import { Input } from '$lib/components/ui/input';
 	import { Badge } from '$lib/components/ui/badge';
-	import { Sun, Moon, Download, Copy, ExternalLink, Check, Terminal } from '@lucide/svelte';
-	import { toggleMode } from 'mode-watcher';
+	import { Download, Copy, ExternalLink, Check, Terminal } from '@lucide/svelte';
 	import { onMount } from 'svelte';
 	import { downloadIcon, preloadIconSources } from '$lib/utils/icons.js';
 	import ICONS_LIST from '$lib/icons/index.js';
-	import Github from '$lib/components/github.svelte';
-	import NumberFlow from '@number-flow/svelte';
 	import { debounce } from '$lib/utils/debounce';
 	import { animate } from 'motion';
 	import { page } from '$app/state';
 
-	let stars = $state(0);
 	let iconsAdded = $state(0);
 	let icons = [];
 	let searchQuery = $state('');
@@ -132,18 +128,6 @@
 			} else {
 				filteredIcons = icons;
 			}
-
-			const res = await fetch('https://api.github.com/repos/jis3r/icons');
-			if (!res.ok) throw new Error('Failed to fetch GitHub stars');
-			const data = await res.json();
-
-			const interval = setInterval(() => {
-				if (stars < data.stargazers_count) {
-					stars += 1;
-				} else {
-					clearInterval(interval);
-				}
-			}, 10);
 
 			const lastVisit = localStorage.getItem('lastVisit');
 			if (lastVisit) {

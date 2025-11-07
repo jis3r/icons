@@ -3,6 +3,8 @@
 	import Marquee from 'svelte-fast-marquee';
 	import { animate } from 'motion';
 	import { Button } from '$lib/components/ui/button';
+	import { page } from '$app/state';
+	import { goto } from '$app/navigation';
 	import {
 		Activity,
 		AlarmClock,
@@ -193,6 +195,12 @@
 	const marquee4Icons = $state(shuffledIcons.slice(chunkSize * 3));
 
 	onMount(() => {
+		if (page.url.searchParams.has('search')) {
+			const searchParam = page.url.searchParams.get('search');
+			goto(`/icons?search=${encodeURIComponent(searchParam)}`, { replaceState: true });
+			return;
+		}
+
 		const allMarqueeIcons = document.querySelectorAll('.marquee-icon');
 		const delays = Array.from(allMarqueeIcons).map(() => Math.random() * 1500);
 
