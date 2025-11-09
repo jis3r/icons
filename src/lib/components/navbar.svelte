@@ -55,17 +55,21 @@
 	<nav class="container flex items-center justify-between py-4">
 		<a href="/" class="cursor-pointer text-base"> moving icons </a>
 		<div class="flex gap-1">
-			<Button variant="outline" class="flex gap-2" href="https://github.com/jis3r/icons">
+			<Button
+				variant="outline"
+				class="flex w-[85px] justify-between gap-2"
+				href="https://github.com/jis3r/icons"
+			>
 				<Github size="20" />
 				<NumberFlow value={stars} />
 			</Button>
 
 			<Button onclick={toggleMode} variant="outline" size="icon">
 				<Sun
-					class="h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90"
+					class="h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0"
 				/>
 				<Moon
-					class="absolute h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0"
+					class="absolute h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90"
 				/>
 				<span class="sr-only">Toggle theme</span>
 			</Button>
