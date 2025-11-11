@@ -355,7 +355,12 @@
 			>
 				<span>Beautifully</span> <span>crafted,</span> <span>moving</span> <span>icons.</span>
 				<span>For</span>
-				<span class="hero-title-final whitespace-nowrap"><span class="bg-linear-to-br from-[#FF3E00] to-orange-400 bg-clip-text text-transparent inline-block">Svelte</span><span class="hero-title-dot text-foreground">.</span></span>
+				<span class="hero-title-final whitespace-nowrap"
+					><span
+						class="inline-block bg-linear-to-br from-[#FF3E00] to-orange-400 bg-clip-text text-transparent"
+						>Svelte</span
+					><span class="hero-title-dot text-foreground">.</span></span
+				>
 			</h1>
 			<p
 				class="hero-description text-muted-foreground mx-auto mt-5 w-fit max-w-2xl text-center text-sm leading-relaxed text-pretty sm:mt-4 sm:text-base"
