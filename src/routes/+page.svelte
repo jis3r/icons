@@ -374,32 +374,34 @@
 		</div>
 	</section>
 
-	<section class="container max-w-7xl">
-		<div class="relative mx-auto grid grid-cols-2 gap-x-3 gap-y-6 sm:gap-8 lg:grid-cols-4">
+	<section class="container mt-16 max-w-7xl md:mt-0">
+		<div
+			class="features-grid relative mx-auto grid grid-cols-1 gap-x-3 gap-y-6 sm:gap-8 lg:grid-cols-4"
+		>
 			<div class="feature-card space-y-3">
 				<div class="flex items-center gap-2">
-					<Code class="size-4" />
+					<Code class="size-4 min-h-4 min-w-4" />
 					<h3 class="text-sm font-medium">Open Source</h3>
 				</div>
 				<p class="text-muted-foreground text-sm">All icons licensed under the MIT license.</p>
 			</div>
 			<div class="feature-card space-y-2">
 				<div class="flex items-center gap-2">
-					<Package class="size-4" />
+					<Package class="size-4 min-h-4 min-w-4" />
 					<h3 class="text-sm font-medium">Dependency Free</h3>
 				</div>
 				<p class="text-muted-foreground text-sm">Built with vanilla Svelte, JS and CSS.</p>
 			</div>
 			<div class="feature-card space-y-2">
 				<div class="flex items-center gap-2">
-					<SlidersHorizontal class="size-4" />
+					<SlidersHorizontal class="size-4 min-h-4 min-w-4" />
 					<h3 class="text-sm font-medium">Customizable</h3>
 				</div>
 				<p class="text-muted-foreground text-sm">Adjust colours, size, and stroke width.</p>
 			</div>
 			<div class="feature-card space-y-2">
 				<div class="flex items-center gap-2">
-					<Feather class="size-4" />
+					<Feather class="size-4 min-h-4 min-w-4" />
 					<h3 class="text-sm font-medium">Lightweight</h3>
 				</div>
 				<p class="text-muted-foreground text-sm">Simply add the icons you need to your project.</p>
@@ -450,5 +452,21 @@
 		opacity: 0;
 		filter: blur(4px);
 		transform: translateY(12px);
+	}
+
+	.features-grid {
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+	}
+
+	@media (min-width: 400px) {
+		.features-grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+	}
+
+	@media (min-width: 1024px) {
+		.features-grid {
+			grid-template-columns: repeat(4, minmax(0, 1fr));
+		}
 	}
 </style>
