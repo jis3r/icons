@@ -72,6 +72,7 @@ import bookLock from './book-lock.svelte';
 import bookmark from './bookmark.svelte';
 import bookmarkCheck from './bookmark-check.svelte';
 import bookMarked from './book-marked.svelte';
+import bookmarkMinus from './bookmark-minus.svelte';
 import bookMinus from './book-minus.svelte';
 import bookOpenCheck from './book-open-check.svelte';
 import bookPlus from './book-plus.svelte';
@@ -1745,6 +1746,12 @@ let ICONS_LIST = [
 		name: 'bookmark-check',
 		icon: bookmarkCheck,
 		tags: ['read', 'finished', 'complete', 'clip', 'marker', 'tag', 'task', 'todo'],
+		categories: ['account']
+	},
+	{
+		name: 'bookmark-minus',
+		icon: bookmarkMinus,
+		tags: ['delete', 'remove'],
 		categories: ['account']
 	},
 	{
