@@ -2,7 +2,6 @@ import activity from './activity.svelte';
 import alarmClock from './alarm-clock.svelte';
 import alarmClockCheck from './alarm-clock-check.svelte';
 import alarmClockOff from './alarm-clock-off.svelte';
-import alignCenter from './align-center.svelte';
 import alignHorizontalSpaceAround from './align-horizontal-space-around.svelte';
 import alignVerticalSpaceAround from './align-vertical-space-around.svelte';
 import anvil from './anvil.svelte';
@@ -70,6 +69,7 @@ import bookHeart from './book-heart.svelte';
 import bookImage from './book-image.svelte';
 import bookKey from './book-key.svelte';
 import bookLock from './book-lock.svelte';
+import bookmark from './bookmark.svelte';
 import bookmarkCheck from './bookmark-check.svelte';
 import bookMarked from './book-marked.svelte';
 import bookMinus from './book-minus.svelte';
@@ -206,6 +206,7 @@ import fileCheck from './file-check.svelte';
 import fileCheck2 from './file-check-2.svelte';
 import fileCog from './file-cog.svelte';
 import fileDown from './file-down.svelte';
+import fileExclamationPoint from './file-exclamation-point.svelte';
 import fileMinus from './file-minus.svelte';
 import filePen from './file-pen.svelte';
 import filePenLine from './file-pen-line.svelte';
@@ -214,7 +215,6 @@ import fileQuestionMark from './file-question-mark.svelte';
 import fileStack from './file-stack.svelte';
 import fileTerminal from './file-terminal.svelte';
 import fileUp from './file-up.svelte';
-import fileWarning from './file-warning.svelte';
 import fishOff from './fish-off.svelte';
 import flagOff from './flag-off.svelte';
 import flashlightOff from './flashlight-off.svelte';
@@ -432,6 +432,7 @@ import sword from './sword.svelte';
 import tag from './tag.svelte';
 import telescope from './telescope.svelte';
 import terminal from './terminal.svelte';
+import textAlignCenter from './text-align-center.svelte';
 import textCursor from './text-cursor.svelte';
 import textCursorInput from './text-cursor-input.svelte';
 import textSearch from './text-search.svelte';
@@ -535,12 +536,6 @@ let ICONS_LIST = [
 		icon: alarmClockOff,
 		tags: ['morning', 'turn-off'],
 		categories: ['devices', 'notifications', 'time']
-	},
-	{
-		name: 'align-center',
-		icon: alignCenter,
-		tags: ['text', 'alignment', 'center'],
-		categories: ['text']
 	},
 	{
 		name: 'align-horizontal-space-around',
@@ -1741,6 +1736,12 @@ let ICONS_LIST = [
 		categories: ['text', 'gaming']
 	},
 	{
+		name: 'bookmark',
+		icon: bookmark,
+		tags: ['read', 'clip', 'marker', 'tag'],
+		categories: ['account']
+	},
+	{
 		name: 'bookmark-check',
 		icon: bookmarkCheck,
 		tags: ['read', 'finished', 'complete', 'clip', 'marker', 'tag', 'task', 'todo'],
@@ -2805,6 +2806,12 @@ let ICONS_LIST = [
 		categories: ['files', 'arrows']
 	},
 	{
+		name: 'file-exclamation-point',
+		icon: fileExclamationPoint,
+		tags: ['hidden', 'warning', 'alert', 'danger', 'protected', 'exclamation mark'],
+		categories: ['files', 'notifications']
+	},
+	{
 		name: 'file-minus',
 		icon: fileMinus,
 		tags: ['delete', 'remove', 'erase', 'document'],
@@ -2851,12 +2858,6 @@ let ICONS_LIST = [
 		icon: fileUp,
 		tags: ['upload', 'import', 'export'],
 		categories: ['files', 'arrows']
-	},
-	{
-		name: 'file-warning',
-		icon: fileWarning,
-		tags: ['hidden', 'warning', 'alert', 'danger', 'protected', 'exclamation mark'],
-		categories: ['files', 'notifications']
 	},
 	{
 		name: 'fish-off',
@@ -5201,6 +5202,12 @@ let ICONS_LIST = [
 		icon: terminal,
 		tags: ['code', 'command line', 'prompt', 'shell'],
 		categories: ['development']
+	},
+	{
+		name: 'text-align-center',
+		icon: textAlignCenter,
+		tags: ['text', 'alignment', 'center'],
+		categories: ['text']
 	},
 	{
 		name: 'text-cursor',

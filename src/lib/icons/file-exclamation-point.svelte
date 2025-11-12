@@ -26,7 +26,12 @@
 	}
 </script>
 
-<div class={className} aria-label="file-warning" role="img" onmouseenter={handleMouseEnter}>
+<div
+	class={className}
+	aria-label="file-exclamation-point"
+	role="img"
+	onmouseenter={handleMouseEnter}
+>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
