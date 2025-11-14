@@ -376,7 +376,7 @@
 
 	<section class="container mt-16 max-w-7xl md:mt-0">
 		<div
-			class="features-grid relative mx-auto grid grid-cols-1 gap-x-3 gap-y-6 sm:gap-8 lg:grid-cols-4"
+			class="features-grid relative mx-auto grid grid-cols-1 gap-x-3 gap-y-6 min-[400px]:grid-cols-2 sm:gap-8 lg:grid-cols-4"
 		>
 			<div class="feature-card space-y-3">
 				<div class="flex items-center gap-2">
@@ -452,21 +452,5 @@
 		opacity: 0;
 		filter: blur(4px);
 		transform: translateY(12px);
-	}
-
-	.features-grid {
-		grid-template-columns: repeat(1, minmax(0, 1fr));
-	}
-
-	@media (min-width: 400px) {
-		.features-grid {
-			grid-template-columns: repeat(2, minmax(0, 1fr));
-		}
-	}
-
-	@media (min-width: 1024px) {
-		.features-grid {
-			grid-template-columns: repeat(4, minmax(0, 1fr));
-		}
 	}
 </style>
