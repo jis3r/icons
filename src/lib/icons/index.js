@@ -74,6 +74,7 @@ import bookmarkCheck from './bookmark-check.svelte';
 import bookMarked from './book-marked.svelte';
 import bookmarkMinus from './bookmark-minus.svelte';
 import bookmarkPlus from './bookmark-plus.svelte';
+import bookmarkX from './bookmark-x.svelte';
 import bookMinus from './book-minus.svelte';
 import bookOpenCheck from './book-open-check.svelte';
 import bookPlus from './book-plus.svelte';
@@ -83,6 +84,7 @@ import bookUp from './book-up.svelte';
 import bookUp2 from './book-up-2.svelte';
 import bookUser from './book-user.svelte';
 import bookX from './book-x.svelte';
+import bot from './bot.svelte';
 import botOff from './bot-off.svelte';
 import boxes from './boxes.svelte';
 import brainCog from './brain-cog.svelte';
@@ -205,7 +207,7 @@ import fileChartColumn from './file-chart-column.svelte';
 import fileChartColumnIncreasing from './file-chart-column-increasing.svelte';
 import fileChartLine from './file-chart-line.svelte';
 import fileCheck from './file-check.svelte';
-import fileCheck2 from './file-check-2.svelte';
+import fileCheckCorner from './file-check-corner.svelte';
 import fileCog from './file-cog.svelte';
 import fileDown from './file-down.svelte';
 import fileExclamationPoint from './file-exclamation-point.svelte';
@@ -335,6 +337,7 @@ import panelRightClose from './panel-right-close.svelte';
 import panelRightOpen from './panel-right-open.svelte';
 import panelTopClose from './panel-top-close.svelte';
 import panelTopOpen from './panel-top-open.svelte';
+import paperclip from './paperclip.svelte';
 import pen from './pen.svelte';
 import pencil from './pencil.svelte';
 import pencilLine from './pencil-line.svelte';
@@ -1762,6 +1765,18 @@ let ICONS_LIST = [
 		categories: ['account']
 	},
 	{
+		name: 'bookmark-x',
+		icon: bookmarkX,
+		tags: ['read', 'clip', 'marker', 'tag', 'cancel', 'close', 'delete', 'remove', 'clear'],
+		categories: ['account']
+	},
+	{
+		name: 'bot',
+		icon: bot,
+		tags: ['robot', 'ai', 'chat', 'assistant'],
+		categories: ['development', 'social']
+	},
+	{
 		name: 'bot-off',
 		icon: botOff,
 		tags: ['robot', 'ai', 'chat', 'assistant'],
@@ -2802,8 +2817,8 @@ let ICONS_LIST = [
 		categories: ['files']
 	},
 	{
-		name: 'file-check-2',
-		icon: fileCheck2,
+		name: 'file-check-corner',
+		icon: fileCheckCorner,
 		tags: ['done', 'document', 'todo', 'tick', 'complete', 'task'],
 		categories: ['files']
 	},
@@ -3933,6 +3948,12 @@ let ICONS_LIST = [
 		icon: panelTopOpen,
 		tags: ['menu bar', 'drawer', 'show', 'reveal', 'chevron', 'down'],
 		categories: ['layout', 'arrows']
+	},
+	{
+		name: 'paperclip',
+		icon: paperclip,
+		tags: ['attachment', 'file'],
+		categories: ['text', 'design', 'files', 'mail']
 	},
 	{
 		name: 'pen',

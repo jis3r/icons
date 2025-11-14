@@ -1397,6 +1397,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "bot",
+			"title": "bot",
+			"type": "registry:component",
+			"description": "The animated bot icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/bot.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/bot.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "boxes",
 			"title": "boxes",
 			"type": "registry:component",
@@ -5407,6 +5423,22 @@
 					"path": "./src/lib/icons/panel-top-open.svelte",
 					"type": "registry:component",
 					"target": "~/src/lib/components/movingicons/panel-top-open.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "paperclip",
+			"title": "paperclip",
+			"type": "registry:component",
+			"description": "The animated paperclip icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/paperclip.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/paperclip.svelte"
 				}
 			],
 			"registryDependencies": []

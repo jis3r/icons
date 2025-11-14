@@ -783,6 +783,15 @@
 		"relativeUrl": "bot-off.json"
 	},
 	{
+		"name": "bot",
+		"title": "bot",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated bot icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "bot.json"
+	},
+	{
 		"name": "boxes",
 		"title": "boxes",
 		"type": "registry:component",
@@ -3040,6 +3049,15 @@
 		"description": "The animated panel-top-open icon component.",
 		"registryDependencies": [],
 		"relativeUrl": "panel-top-open.json"
+	},
+	{
+		"name": "paperclip",
+		"title": "paperclip",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated paperclip icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "paperclip.json"
 	},
 	{
 		"name": "pen-line",
