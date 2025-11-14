@@ -69,22 +69,6 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
-			"name": "align-center",
-			"title": "align-center",
-			"type": "registry:component",
-			"description": "The animated align-center icon component.",
-			"author": "jis3r <jis3r@protonmail.com>",
-			"files": [
-				{
-					"path": "./src/lib/icons/align-center.svelte",
-					"type": "registry:component",
-					"target": "~/src/lib/components/movingicons/align-center.svelte"
-				}
-			],
-			"registryDependencies": []
-		},
-		{
-			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "align-horizontal-space-around",
 			"title": "align-horizontal-space-around",
 			"type": "registry:component",
@@ -1327,6 +1311,70 @@
 					"path": "./src/lib/icons/bookmark-check.svelte",
 					"type": "registry:component",
 					"target": "~/src/lib/components/movingicons/bookmark-check.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "bookmark-minus",
+			"title": "bookmark-minus",
+			"type": "registry:component",
+			"description": "The animated bookmark-minus icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/bookmark-minus.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/bookmark-minus.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "bookmark-plus",
+			"title": "bookmark-plus",
+			"type": "registry:component",
+			"description": "The animated bookmark-plus icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/bookmark-plus.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/bookmark-plus.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "bookmark-x",
+			"title": "bookmark-x",
+			"type": "registry:component",
+			"description": "The animated bookmark-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/bookmark-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/bookmark-x.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "bookmark",
+			"title": "bookmark",
+			"type": "registry:component",
+			"description": "The animated bookmark icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/bookmark.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/bookmark.svelte"
 				}
 			],
 			"registryDependencies": []
@@ -3269,16 +3317,16 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
-			"name": "file-check-2",
-			"title": "file-check-2",
+			"name": "file-check-corner",
+			"title": "file-check-corner",
 			"type": "registry:component",
-			"description": "The animated file-check-2 icon component.",
+			"description": "The animated file-check-corner icon component.",
 			"author": "jis3r <jis3r@protonmail.com>",
 			"files": [
 				{
-					"path": "./src/lib/icons/file-check-2.svelte",
+					"path": "./src/lib/icons/file-check-corner.svelte",
 					"type": "registry:component",
-					"target": "~/src/lib/components/movingicons/file-check-2.svelte"
+					"target": "~/src/lib/components/movingicons/file-check-corner.svelte"
 				}
 			],
 			"registryDependencies": []
@@ -3327,6 +3375,22 @@
 					"path": "./src/lib/icons/file-down.svelte",
 					"type": "registry:component",
 					"target": "~/src/lib/components/movingicons/file-down.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "file-exclamation-point",
+			"title": "file-exclamation-point",
+			"type": "registry:component",
+			"description": "The animated file-exclamation-point icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/file-exclamation-point.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/file-exclamation-point.svelte"
 				}
 			],
 			"registryDependencies": []
@@ -3455,22 +3519,6 @@
 					"path": "./src/lib/icons/file-up.svelte",
 					"type": "registry:component",
 					"target": "~/src/lib/components/movingicons/file-up.svelte"
-				}
-			],
-			"registryDependencies": []
-		},
-		{
-			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
-			"name": "file-warning",
-			"title": "file-warning",
-			"type": "registry:component",
-			"description": "The animated file-warning icon component.",
-			"author": "jis3r <jis3r@protonmail.com>",
-			"files": [
-				{
-					"path": "./src/lib/icons/file-warning.svelte",
-					"type": "registry:component",
-					"target": "~/src/lib/components/movingicons/file-warning.svelte"
 				}
 			],
 			"registryDependencies": []
@@ -6943,6 +6991,22 @@
 					"path": "./src/lib/icons/terminal.svelte",
 					"type": "registry:component",
 					"target": "~/src/lib/components/movingicons/terminal.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "text-align-center",
+			"title": "text-align-center",
+			"type": "registry:component",
+			"description": "The animated text-align-center icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/text-align-center.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/text-align-center.svelte"
 				}
 			],
 			"registryDependencies": []

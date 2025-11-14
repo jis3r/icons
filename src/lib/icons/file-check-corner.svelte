@@ -25,7 +25,7 @@
 	}
 </script>
 
-<div class={className} aria-label="file-check-2" role="img" onmouseenter={handleMouseEnter}>
+<div class={className} aria-label="file-check-corner" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
@@ -36,12 +36,14 @@
 		stroke-width={strokeWidth}
 		stroke-linecap="round"
 		stroke-linejoin="round"
-		class="file-check-2-icon"
+		class="file-check-corner-icon"
 		class:animate={isHovered}
 	>
-		<path d="M4 22h14a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v4" />
-		<path d="M14 2v4a2 2 0 0 0 2 2h4" />
-		<path d="m3 15 2 2 4-4" class="check-path" />
+		<path
+			d="M10.5 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v6"
+		/>
+		<path d="M14 2v5a1 1 0 0 0 1 1h5" />
+		<path d="m14 20 2 2 4-4" class="check-path" />
 	</svg>
 </div>
 
@@ -49,7 +51,7 @@
 	div {
 		display: inline-block;
 	}
-	.file-check-2-icon {
+	.file-check-corner-icon {
 		overflow: visible;
 	}
 	.check-path {
@@ -59,7 +61,7 @@
 			stroke-dashoffset 0.125s ease-out,
 			opacity 0.125s ease-out;
 	}
-	.file-check-2-icon.animate .check-path {
+	.file-check-corner-icon.animate .check-path {
 		animation: checkAnimation 0.5s ease-out backwards;
 	}
 	@keyframes checkAnimation {

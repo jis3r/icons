@@ -36,15 +36,6 @@
 		"relativeUrl": "alarm-clock.json"
 	},
 	{
-		"name": "align-center",
-		"title": "align-center",
-		"type": "registry:component",
-		"author": "jis3r <jis3r@protonmail.com>",
-		"description": "The animated align-center icon component.",
-		"registryDependencies": [],
-		"relativeUrl": "align-center.json"
-	},
-	{
 		"name": "align-horizontal-space-around",
 		"title": "align-horizontal-space-around",
 		"type": "registry:component",
@@ -745,6 +736,42 @@
 		"description": "The animated bookmark-check icon component.",
 		"registryDependencies": [],
 		"relativeUrl": "bookmark-check.json"
+	},
+	{
+		"name": "bookmark-minus",
+		"title": "bookmark-minus",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated bookmark-minus icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "bookmark-minus.json"
+	},
+	{
+		"name": "bookmark-plus",
+		"title": "bookmark-plus",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated bookmark-plus icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "bookmark-plus.json"
+	},
+	{
+		"name": "bookmark-x",
+		"title": "bookmark-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated bookmark-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "bookmark-x.json"
+	},
+	{
+		"name": "bookmark",
+		"title": "bookmark",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated bookmark icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "bookmark.json"
 	},
 	{
 		"name": "bot-off",
@@ -1836,13 +1863,13 @@
 		"relativeUrl": "file-chart-line.json"
 	},
 	{
-		"name": "file-check-2",
-		"title": "file-check-2",
+		"name": "file-check-corner",
+		"title": "file-check-corner",
 		"type": "registry:component",
 		"author": "jis3r <jis3r@protonmail.com>",
-		"description": "The animated file-check-2 icon component.",
+		"description": "The animated file-check-corner icon component.",
 		"registryDependencies": [],
-		"relativeUrl": "file-check-2.json"
+		"relativeUrl": "file-check-corner.json"
 	},
 	{
 		"name": "file-check",
@@ -1870,6 +1897,15 @@
 		"description": "The animated file-down icon component.",
 		"registryDependencies": [],
 		"relativeUrl": "file-down.json"
+	},
+	{
+		"name": "file-exclamation-point",
+		"title": "file-exclamation-point",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated file-exclamation-point icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "file-exclamation-point.json"
 	},
 	{
 		"name": "file-minus",
@@ -1942,15 +1978,6 @@
 		"description": "The animated file-up icon component.",
 		"registryDependencies": [],
 		"relativeUrl": "file-up.json"
-	},
-	{
-		"name": "file-warning",
-		"title": "file-warning",
-		"type": "registry:component",
-		"author": "jis3r <jis3r@protonmail.com>",
-		"description": "The animated file-warning icon component.",
-		"registryDependencies": [],
-		"relativeUrl": "file-warning.json"
 	},
 	{
 		"name": "fish-off",
@@ -3904,6 +3931,15 @@
 		"description": "The animated terminal icon component.",
 		"registryDependencies": [],
 		"relativeUrl": "terminal.json"
+	},
+	{
+		"name": "text-align-center",
+		"title": "text-align-center",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated text-align-center icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "text-align-center.json"
 	},
 	{
 		"name": "text-cursor-input",
