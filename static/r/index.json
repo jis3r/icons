@@ -3609,6 +3609,24 @@
 		"relativeUrl": "signature.json"
 	},
 	{
+		"name": "sliders-horizontal",
+		"title": "sliders-horizontal",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated sliders-horizontal icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "sliders-horizontal.json"
+	},
+	{
+		"name": "sliders-vertical",
+		"title": "sliders-vertical",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated sliders-vertical icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "sliders-vertical.json"
+	},
+	{
 		"name": "smartphone-nfc",
 		"title": "smartphone-nfc",
 		"type": "registry:component",

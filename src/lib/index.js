@@ -399,6 +399,8 @@ export { default as SignalMedium } from './icons/signal-medium.svelte';
 export { default as SignalZero } from './icons/signal-zero.svelte';
 export { default as Signal } from './icons/signal.svelte';
 export { default as Signature } from './icons/signature.svelte';
+export { default as SlidersHorizontal } from './icons/sliders-horizontal.svelte';
+export { default as SlidersVertical } from './icons/sliders-vertical.svelte';
 export { default as SmartphoneNfc } from './icons/smartphone-nfc.svelte';
 export { default as Snowflake } from './icons/snowflake.svelte';
 export { default as Speech } from './icons/speech.svelte';

@@ -1,0 +1,185 @@
+<script>
+	/**
+	 * @typedef {Object} Props
+	 * @property {string} [color]
+	 * @property {number} [size]
+	 * @property {number} [strokeWidth]
+	 * @property {boolean} [isHovered]
+	 * @property {string} [class]
+	 */
+
+	/** @type {Props} */
+	let {
+		color = 'currentColor',
+		size = 28,
+		strokeWidth = 2,
+		isHovered = false,
+		class: className = ''
+	} = $props();
+
+	// Group 1 coordinates
+	let line1a_y2 = $state(14);
+	let line1b_y1 = $state(10);
+	let line1c_y1 = $state(14);
+	let line1c_y2 = $state(14);
+
+	// Group 2 coordinates
+	let line2a_y2 = $state(12);
+	let line2b_y1 = $state(8);
+	let line2c_y1 = $state(8);
+	let line2c_y2 = $state(8);
+
+	// Group 3 coordinates
+	let line3a_y2 = $state(12);
+	let line3b_y1 = $state(16);
+	let line3c_y1 = $state(16);
+	let line3c_y2 = $state(16);
+
+	function animateValue(start, end, duration, callback) {
+		return new Promise((resolve) => {
+			const startTime = performance.now();
+			const animate = (currentTime) => {
+				const elapsed = currentTime - startTime;
+				const progress = Math.min(elapsed / duration, 1);
+
+				// Spring-like easing: cubic-bezier(0.34, 1.56, 0.64, 1)
+				const eased =
+					progress < 0.5
+						? 4 * progress * progress * progress
+						: 1 - Math.pow(-2 * progress + 2, 3) / 2;
+
+				const current = start + (end - start) * eased;
+				callback(current);
+
+				if (progress < 1) {
+					requestAnimationFrame(animate);
+				} else {
+					resolve();
+				}
+			};
+			requestAnimationFrame(animate);
+		});
+	}
+
+	function handleMouseEnter() {
+		isHovered = true;
+
+		// Animate all values simultaneously
+		Promise.all([
+			animateValue(14, 10, 400, (val) => {
+				line1a_y2 = val;
+			}),
+			animateValue(10, 5, 400, (val) => {
+				line1b_y1 = val;
+			}),
+			animateValue(14, 9, 400, (val) => {
+				line1c_y1 = val;
+				line1c_y2 = val;
+			}),
+			animateValue(12, 18, 400, (val) => {
+				line2a_y2 = val;
+			}),
+			animateValue(8, 13, 400, (val) => {
+				line2b_y1 = val;
+			}),
+			animateValue(8, 14, 400, (val) => {
+				line2c_y1 = val;
+				line2c_y2 = val;
+			}),
+			animateValue(12, 4, 400, (val) => {
+				line3a_y2 = val;
+			}),
+			animateValue(16, 8, 400, (val) => {
+				line3b_y1 = val;
+			}),
+			animateValue(16, 8, 400, (val) => {
+				line3c_y1 = val;
+				line3c_y2 = val;
+			})
+		]);
+	}
+
+	function handleMouseLeave() {
+		isHovered = false;
+
+		// Reset all values to normal
+		Promise.all([
+			animateValue(line1a_y2, 14, 400, (val) => {
+				line1a_y2 = val;
+			}),
+			animateValue(line1b_y1, 10, 400, (val) => {
+				line1b_y1 = val;
+			}),
+			animateValue(line1c_y1, 14, 400, (val) => {
+				line1c_y1 = val;
+				line1c_y2 = val;
+			}),
+			animateValue(line2a_y2, 12, 400, (val) => {
+				line2a_y2 = val;
+			}),
+			animateValue(line2b_y1, 8, 400, (val) => {
+				line2b_y1 = val;
+			}),
+			animateValue(line2c_y1, 8, 400, (val) => {
+				line2c_y1 = val;
+				line2c_y2 = val;
+			}),
+			animateValue(line3a_y2, 12, 400, (val) => {
+				line3a_y2 = val;
+			}),
+			animateValue(line3b_y1, 16, 400, (val) => {
+				line3b_y1 = val;
+			}),
+			animateValue(line3c_y1, 16, 400, (val) => {
+				line3c_y1 = val;
+				line3c_y2 = val;
+			})
+		]);
+	}
+</script>
+
+<div
+	class={className}
+	aria-label="sliders-vertical"
+	role="img"
+	onmouseenter={handleMouseEnter}
+	onmouseleave={handleMouseLeave}
+>
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		width={size}
+		height={size}
+		viewBox="0 0 24 24"
+		fill="none"
+		stroke={color}
+		stroke-width={strokeWidth}
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		class="sliders-icon"
+	>
+		<!-- Group 1 -->
+		<line x1="4" x2="4" y1="21" y2={line1a_y2} />
+		<line x1="4" x2="4" y1={line1b_y1} y2="3" />
+		<line x1="2" x2="6" y1={line1c_y1} y2={line1c_y2} />
+
+		<!-- Group 2 -->
+		<line x1="12" x2="12" y1="21" y2={line2a_y2} />
+		<line x1="12" x2="12" y1={line2b_y1} y2="3" />
+		<line x1="10" x2="14" y1={line2c_y1} y2={line2c_y2} />
+
+		<!-- Group 3 -->
+		<line x1="20" x2="20" y1="3" y2={line3a_y2} />
+		<line x1="20" x2="20" y1={line3b_y1} y2="21" />
+		<line x1="18" x2="22" y1={line3c_y1} y2={line3c_y2} />
+	</svg>
+</div>
+
+<style>
+	div {
+		display: inline-block;
+	}
+
+	.sliders-icon {
+		overflow: visible;
+	}
+</style>

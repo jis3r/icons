@@ -6421,6 +6421,38 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "sliders-horizontal",
+			"title": "sliders-horizontal",
+			"type": "registry:component",
+			"description": "The animated sliders-horizontal icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/sliders-horizontal.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/sliders-horizontal.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "sliders-vertical",
+			"title": "sliders-vertical",
+			"type": "registry:component",
+			"description": "The animated sliders-vertical icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/sliders-vertical.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/sliders-vertical.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "smartphone-nfc",
 			"title": "smartphone-nfc",
 			"type": "registry:component",

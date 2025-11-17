@@ -399,6 +399,8 @@ import signalLow from './signal-low.svelte';
 import signalMedium from './signal-medium.svelte';
 import signalZero from './signal-zero.svelte';
 import signature from './signature.svelte';
+import slidersHorizontal from './sliders-horizontal.svelte';
+import slidersVertical from './sliders-vertical.svelte';
 import smartphoneNfc from './smartphone-nfc.svelte';
 import snowflake from './snowflake.svelte';
 import speech from './speech.svelte';
@@ -4857,6 +4859,18 @@ let ICONS_LIST = [
 			'unique'
 		],
 		categories: ['text']
+	},
+	{
+		name: 'sliders-horizontal',
+		icon: slidersHorizontal,
+		tags: ['settings', 'filters', 'controls'],
+		categories: ['account']
+	},
+	{
+		name: 'sliders-vertical',
+		icon: slidersVertical,
+		tags: ['settings', 'controls'],
+		categories: ['account']
 	},
 	{
 		name: 'smartphone-nfc',
