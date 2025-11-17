@@ -13,7 +13,9 @@
  *  - The script then reads "src/lib/icons/index.js" and checks whether the icon already exists.
  *  - If the icon does not exist, it adds the new icon object to the ICONS_LIST array,
  *    maintaining alphabetical order by name.
- *  - The script also adds an import statement at the top of the file for the corresponding Svelte component.
+ *  - The script also removes icons from the index that no longer have corresponding files.
+ *  - The script adds/removes import statements at the top of the file for the corresponding Svelte components.
+ *  - Unused imports are automatically removed.
  *
  * Import variable names are converted to camelCase.
  */
@@ -78,9 +80,14 @@ function updateIconsIndex() {
 	const files = readdirSync(iconsDir);
 	const svelteFiles = files.filter((file) => file.endsWith('.svelte'));
 
+	// Create a Set of all existing icon file names (without .svelte extension)
+	const existingIconFiles = new Set(svelteFiles.map((file) => basename(file, '.svelte')));
+
 	let iconsAddedCount = 0;
+	let iconsRemovedCount = 0;
 	let unmatchedIcons = [];
 	let skippedExistingIcons = [];
+	let removedIcons = [];
 	// We'll accumulate info for icons that should be added.
 	let newIcons = [];
 
@@ -128,6 +135,71 @@ function updateIconsIndex() {
 		}
 	});
 
+	// Always update the ICONS_LIST to ensure it's in sync with actual files
+	// Parse the existing ICONS_LIST to extract all icons
+	const iconsListMatch = indexContent.match(/let ICONS_LIST = \[([\s\S]*?)\];/);
+	if (!iconsListMatch) {
+		console.error('Error: Could not find ICONS_LIST in index file.');
+		process.exit(1);
+	}
+
+	const iconsListContent = iconsListMatch[1];
+
+	// Parse existing icons from the ICONS_LIST
+	const existingIcons = [];
+	const iconRegex =
+		/\{\s*name:\s*['"`]([^'"`]+)['"`],\s*icon:\s*([^,]+),\s*tags:\s*(\[[^\]]*\]),\s*categories:\s*(\[[^\]]*\])\s*\}/g;
+	let match;
+
+	while ((match = iconRegex.exec(iconsListContent)) !== null) {
+		// Convert JavaScript array syntax to JSON format for parsing if needed
+		const tagsStr = match[3];
+		const categoriesStr = match[4];
+
+		const tagsJson = tagsStr.includes("'") ? tagsStr.replace(/'/g, '"') : tagsStr;
+		const categoriesJson = categoriesStr.includes("'")
+			? categoriesStr.replace(/'/g, '"')
+			: categoriesStr;
+
+		existingIcons.push({
+			name: match[1],
+			icon: match[2].trim(),
+			tags: JSON.parse(tagsJson),
+			categories: JSON.parse(categoriesJson)
+		});
+	}
+
+	// Filter out icons that don't have corresponding files
+	const filteredIcons = existingIcons.filter((icon) => {
+		if (existingIconFiles.has(icon.name)) {
+			return true;
+		} else {
+			removedIcons.push(icon.name);
+			console.log(`🗑️  Removing icon "${icon.name}" - file no longer exists`);
+			return false;
+		}
+	});
+
+	iconsRemovedCount = removedIcons.length;
+
+	// Add new icons to the filtered icons array
+	newIcons.forEach((icon) => {
+		filteredIcons.push({
+			name: icon.iconName,
+			icon: icon.importVar,
+			tags: icon.tags,
+			categories: icon.categories
+		});
+	});
+
+	iconsAddedCount = newIcons.length;
+
+	// Create a Set of all icon variable names that should be imported (from filtered icons)
+	const requiredImportVars = new Set();
+	filteredIcons.forEach((icon) => {
+		requiredImportVars.add(icon.icon);
+	});
+
 	// First, add import statements for each new icon if they don't already exist.
 	const importLinesToAdd = [];
 	newIcons.forEach((icon) => {
@@ -140,128 +212,100 @@ function updateIconsIndex() {
 		}
 	});
 
-	// Always sort imports alphabetically, even if no new imports are added
-	if (importLinesToAdd.length > 0 || true) {
-		// Split the file into lines.
-		const lines = indexContent.split('\n');
-		let shebangLine = null;
-		let importLines = [];
-		let nonImportLines = [];
+	// Always rebuild imports to remove unused ones and sort alphabetically
+	// Split the file into lines.
+	const lines = indexContent.split('\n');
+	let shebangLine = null;
+	let importLines = [];
+	let nonImportLines = [];
 
-		// Separate shebang, imports, and non-imports
-		let i = 0;
-		if (lines[0].startsWith('#!')) {
-			shebangLine = lines[0];
-			i = 1;
-		}
-
-		// Collect all existing import lines
-		while (i < lines.length && lines[i].trim().startsWith('import')) {
-			importLines.push(lines[i]);
-			i++;
-		}
-
-		// Collect remaining non-import lines
-		while (i < lines.length) {
-			nonImportLines.push(lines[i]);
-			i++;
-		}
-
-		// Add new import lines to the existing ones
-		importLines.push(...importLinesToAdd);
-
-		// Sort all import lines alphabetically by the import name
-		importLines.sort((a, b) => {
-			const aMatch = a.match(/import\s+(\w+)\s+from/);
-			const bMatch = b.match(/import\s+(\w+)\s+from/);
-			if (aMatch && bMatch) {
-				return aMatch[1].localeCompare(bMatch[1]);
-			}
-			return a.localeCompare(b);
-		});
-
-		// Reconstruct the file
-		const newLines = [];
-		if (shebangLine) {
-			newLines.push(shebangLine);
-		}
-		newLines.push(...importLines);
-		newLines.push(...nonImportLines);
-
-		indexContent = newLines.join('\n');
+	// Separate shebang, imports, and non-imports
+	let i = 0;
+	if (lines[0].startsWith('#!')) {
+		shebangLine = lines[0];
+		i = 1;
 	}
 
-	// If new icons were found, update the ICONS_LIST
-	if (newIcons.length > 0) {
-		// Parse the existing ICONS_LIST to extract all icons
-		const iconsListMatch = indexContent.match(/let ICONS_LIST = \[([\s\S]*?)\];/);
-		if (!iconsListMatch) {
-			console.error('Error: Could not find ICONS_LIST in index file.');
-			process.exit(1);
+	// Collect all existing import lines
+	while (i < lines.length && lines[i].trim().startsWith('import')) {
+		importLines.push(lines[i]);
+		i++;
+	}
+
+	// Collect remaining non-import lines
+	while (i < lines.length) {
+		nonImportLines.push(lines[i]);
+		i++;
+	}
+
+	// Filter imports to only keep those that are still needed
+	const filteredImportLines = importLines.filter((line) => {
+		const importMatch = line.match(/import\s+(\w+)\s+from/);
+		if (importMatch) {
+			const importVar = importMatch[1];
+			if (requiredImportVars.has(importVar)) {
+				return true;
+			} else {
+				console.log(`🗑️  Removing unused import: ${importVar}`);
+				return false;
+			}
 		}
+		return true; // Keep lines that don't match the pattern (shouldn't happen)
+	});
 
-		const iconsListContent = iconsListMatch[1];
+	// Add new import lines to the filtered ones
+	filteredImportLines.push(...importLinesToAdd);
 
-		// Parse existing icons from the ICONS_LIST
-		const existingIcons = [];
-		const iconRegex =
-			/\{\s*name:\s*['"`]([^'"`]+)['"`],\s*icon:\s*([^,]+),\s*tags:\s*(\[[^\]]*\]),\s*categories:\s*(\[[^\]]*\])\s*\}/g;
-		let match;
-
-		while ((match = iconRegex.exec(iconsListContent)) !== null) {
-			// Convert JavaScript array syntax to JSON format for parsing if needed
-			const tagsStr = match[3];
-			const categoriesStr = match[4];
-
-			const tagsJson = tagsStr.includes("'") ? tagsStr.replace(/'/g, '"') : tagsStr;
-			const categoriesJson = categoriesStr.includes("'")
-				? categoriesStr.replace(/'/g, '"')
-				: categoriesStr;
-
-			existingIcons.push({
-				name: match[1],
-				icon: match[2].trim(),
-				tags: JSON.parse(tagsJson),
-				categories: JSON.parse(categoriesJson)
-			});
+	// Sort all import lines alphabetically by the import name
+	filteredImportLines.sort((a, b) => {
+		const aMatch = a.match(/import\s+(\w+)\s+from/);
+		const bMatch = b.match(/import\s+(\w+)\s+from/);
+		if (aMatch && bMatch) {
+			return aMatch[1].localeCompare(bMatch[1]);
 		}
+		return a.localeCompare(b);
+	});
 
-		// Add new icons to the existing icons array
-		newIcons.forEach((icon) => {
-			existingIcons.push({
-				name: icon.iconName,
-				icon: icon.importVar,
-				tags: icon.tags,
-				categories: icon.categories
-			});
-		});
+	// Reconstruct the file
+	const newLines = [];
+	if (shebangLine) {
+		newLines.push(shebangLine);
+	}
+	newLines.push(...filteredImportLines);
+	newLines.push(...nonImportLines);
 
-		// Sort all icons alphabetically by name
-		existingIcons.sort((a, b) => a.name.localeCompare(b.name));
+	indexContent = newLines.join('\n');
 
-		// Reconstruct the ICONS_LIST content
-		const newIconsListContent = existingIcons
-			.map((icon) => {
-				return `	{
+	// Sort all icons alphabetically by name
+	filteredIcons.sort((a, b) => a.name.localeCompare(b.name));
+
+	// Reconstruct the ICONS_LIST content
+	const newIconsListContent = filteredIcons
+		.map((icon) => {
+			return `	{
 		name: '${icon.name}',
 		icon: ${icon.icon},
 		tags: ${JSON.stringify(icon.tags)},
 		categories: ${JSON.stringify(icon.categories)}
 	}`;
-			})
-			.join(',\n');
+		})
+		.join(',\n');
 
-		// Replace the ICONS_LIST content in the file
-		const newIconsList = `let ICONS_LIST = [
+	// Replace the ICONS_LIST content in the file
+	const newIconsList = `let ICONS_LIST = [
 ${newIconsListContent}
 ];`;
 
-		indexContent = indexContent.replace(/let ICONS_LIST = \[[\s\S]*?\];/, newIconsList);
+	indexContent = indexContent.replace(/let ICONS_LIST = \[[\s\S]*?\];/, newIconsList);
 
-		iconsAddedCount = newIcons.length;
+	if (iconsAddedCount > 0) {
 		console.log(`✅ Added ${iconsAddedCount} new icon(s) in alphabetical order`);
-	} else {
-		console.log('No new icons to add.');
+	}
+	if (iconsRemovedCount > 0) {
+		console.log(`🗑️  Removed ${iconsRemovedCount} icon(s) that no longer have files`);
+	}
+	if (iconsAddedCount === 0 && iconsRemovedCount === 0) {
+		console.log('No changes to icons list.');
 	}
 
 	// Write the updated content back to the index.js file.
@@ -269,6 +313,9 @@ ${newIconsListContent}
 
 	console.log(`\nIndex update complete:`);
 	console.log(`✅ Added ${iconsAddedCount} new icon(s)`);
+	if (iconsRemovedCount > 0) {
+		console.log(`🗑️  Removed ${iconsRemovedCount} icon(s)`);
+	}
 	console.log(`⏭️  Skipped ${skippedExistingIcons.length} existing icon(s)`);
 
 	if (iconsAddedCount > 0) {
@@ -278,6 +325,13 @@ ${newIconsListContent}
 			.forEach((icon) => {
 				console.log(`  - ${icon.iconName}`);
 			});
+	}
+
+	if (iconsRemovedCount > 0) {
+		console.log('\nRemoved icons:');
+		removedIcons.sort().forEach((icon) => {
+			console.log(`  - ${icon}`);
+		});
 	}
 
 	if (unmatchedIcons.length > 0) {
