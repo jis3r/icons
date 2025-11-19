@@ -216,6 +216,7 @@ import filePen from './file-pen.svelte';
 import filePenLine from './file-pen-line.svelte';
 import filePlus from './file-plus.svelte';
 import fileQuestionMark from './file-question-mark.svelte';
+import fileSliders from './file-sliders.svelte';
 import fileStack from './file-stack.svelte';
 import fileTerminal from './file-terminal.svelte';
 import fileUp from './file-up.svelte';
@@ -2871,6 +2872,25 @@ let ICONS_LIST = [
 		icon: fileQuestionMark,
 		tags: ['readme', 'help', 'question'],
 		categories: ['files']
+	},
+	{
+		name: 'file-sliders',
+		icon: fileSliders,
+		tags: [
+			'cogged',
+			'gear',
+			'mechanical',
+			'machinery',
+			'configuration',
+			'controls',
+			'preferences',
+			'settings',
+			'system',
+			'admin',
+			'edit',
+			'executable'
+		],
+		categories: ['files', 'development']
 	},
 	{
 		name: 'file-stack',

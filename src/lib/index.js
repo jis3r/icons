@@ -216,6 +216,7 @@ export { default as FilePenLine } from './icons/file-pen-line.svelte';
 export { default as FilePen } from './icons/file-pen.svelte';
 export { default as FilePlus } from './icons/file-plus.svelte';
 export { default as FileQuestionMark } from './icons/file-question-mark.svelte';
+export { default as FileSliders } from './icons/file-sliders.svelte';
 export { default as FileStack } from './icons/file-stack.svelte';
 export { default as FileTerminal } from './icons/file-terminal.svelte';
 export { default as FileUp } from './icons/file-up.svelte';

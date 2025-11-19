@@ -3493,6 +3493,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "file-sliders",
+			"title": "file-sliders",
+			"type": "registry:component",
+			"description": "The animated file-sliders icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/file-sliders.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/file-sliders.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "file-stack",
 			"title": "file-stack",
 			"type": "registry:component",

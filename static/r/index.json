@@ -1962,6 +1962,15 @@
 		"relativeUrl": "file-question-mark.json"
 	},
 	{
+		"name": "file-sliders",
+		"title": "file-sliders",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated file-sliders icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "file-sliders.json"
+	},
+	{
 		"name": "file-stack",
 		"title": "file-stack",
 		"type": "registry:component",
