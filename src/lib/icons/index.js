@@ -158,6 +158,7 @@ import circleParkingOff from './circle-parking-off.svelte';
 import circlePlus from './circle-plus.svelte';
 import circleQuestionMark from './circle-question-mark.svelte';
 import clapperboard from './clapperboard.svelte';
+import clipboard from './clipboard.svelte';
 import clipboardCheck from './clipboard-check.svelte';
 import clipboardPen from './clipboard-pen.svelte';
 import clipboardPenLine from './clipboard-pen-line.svelte';
@@ -2416,6 +2417,12 @@ let ICONS_LIST = [
 			'entertainment'
 		],
 		categories: ['multimedia']
+	},
+	{
+		name: 'clipboard',
+		icon: clipboard,
+		tags: ['copy', 'paste'],
+		categories: ['text']
 	},
 	{
 		name: 'clipboard-check',

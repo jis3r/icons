@@ -2613,6 +2613,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "clipboard",
+			"title": "clipboard",
+			"type": "registry:component",
+			"description": "The animated clipboard icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/clipboard.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/clipboard.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "clock-1",
 			"title": "clock-1",
 			"type": "registry:component",
