@@ -160,6 +160,7 @@ import circleQuestionMark from './circle-question-mark.svelte';
 import clapperboard from './clapperboard.svelte';
 import clipboard from './clipboard.svelte';
 import clipboardCheck from './clipboard-check.svelte';
+import clipboardList from './clipboard-list.svelte';
 import clipboardPen from './clipboard-pen.svelte';
 import clipboardPenLine from './clipboard-pen-line.svelte';
 import clock from './clock.svelte';
@@ -2428,6 +2429,12 @@ let ICONS_LIST = [
 		name: 'clipboard-check',
 		icon: clipboardCheck,
 		tags: ['copied', 'pasted', 'done', 'todo', 'tick', 'complete', 'task'],
+		categories: ['text']
+	},
+	{
+		name: 'clipboard-list',
+		icon: clipboardList,
+		tags: ['copy', 'paste', 'tasks'],
 		categories: ['text']
 	},
 	{

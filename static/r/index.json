@@ -1449,6 +1449,15 @@
 		"relativeUrl": "clipboard-check.json"
 	},
 	{
+		"name": "clipboard-list",
+		"title": "clipboard-list",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated clipboard-list icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "clipboard-list.json"
+	},
+	{
 		"name": "clipboard-pen-line",
 		"title": "clipboard-pen-line",
 		"type": "registry:component",

@@ -159,6 +159,7 @@ export { default as CirclePlus } from './icons/circle-plus.svelte';
 export { default as CircleQuestionMark } from './icons/circle-question-mark.svelte';
 export { default as Clapperboard } from './icons/clapperboard.svelte';
 export { default as ClipboardCheck } from './icons/clipboard-check.svelte';
+export { default as ClipboardList } from './icons/clipboard-list.svelte';
 export { default as ClipboardPenLine } from './icons/clipboard-pen-line.svelte';
 export { default as ClipboardPen } from './icons/clipboard-pen.svelte';
 export { default as Clipboard } from './icons/clipboard.svelte';

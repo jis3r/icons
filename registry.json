@@ -2581,6 +2581,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "clipboard-list",
+			"title": "clipboard-list",
+			"type": "registry:component",
+			"description": "The animated clipboard-list icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/clipboard-list.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/clipboard-list.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "clipboard-pen-line",
 			"title": "clipboard-pen-line",
 			"type": "registry:component",
