@@ -56,6 +56,7 @@ export { default as BetweenVerticalStart } from './icons/between-vertical-start.
 export { default as Blend } from './icons/blend.svelte';
 export { default as Blocks } from './icons/blocks.svelte';
 export { default as BluetoothOff } from './icons/bluetooth-off.svelte';
+export { default as Bold } from './icons/bold.svelte';
 export { default as Bolt } from './icons/bolt.svelte';
 export { default as Bone } from './icons/bone.svelte';
 export { default as BookA } from './icons/book-a.svelte';

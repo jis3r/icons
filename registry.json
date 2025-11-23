@@ -933,6 +933,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "bold",
+			"title": "bold",
+			"type": "registry:component",
+			"description": "The animated bold icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/bold.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/bold.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "bolt",
 			"title": "bolt",
 			"type": "registry:component",

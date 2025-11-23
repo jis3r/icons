@@ -56,6 +56,7 @@ import betweenVerticalStart from './between-vertical-start.svelte';
 import blend from './blend.svelte';
 import blocks from './blocks.svelte';
 import bluetoothOff from './bluetooth-off.svelte';
+import bold from './bold.svelte';
 import bolt from './bolt.svelte';
 import bone from './bone.svelte';
 import book from './book.svelte';
@@ -1148,6 +1149,12 @@ let ICONS_LIST = [
 		icon: bluetoothOff,
 		tags: ['lost'],
 		categories: ['connectivity', 'devices']
+	},
+	{
+		name: 'bold',
+		icon: bold,
+		tags: ['text', 'strong', 'format'],
+		categories: ['text']
 	},
 	{
 		name: 'bolt',

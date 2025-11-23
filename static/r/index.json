@@ -522,6 +522,15 @@
 		"relativeUrl": "bluetooth-off.json"
 	},
 	{
+		"name": "bold",
+		"title": "bold",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated bold icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "bold.json"
+	},
+	{
 		"name": "bolt",
 		"title": "bolt",
 		"type": "registry:component",
