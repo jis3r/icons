@@ -259,6 +259,7 @@ import house from './house.svelte';
 import houseWifi from './house-wifi.svelte';
 import imageDown from './image-down.svelte';
 import imageOff from './image-off.svelte';
+import images from './images.svelte';
 import imageUp from './image-up.svelte';
 import infinity from './infinity.svelte';
 import kanban from './kanban.svelte';
@@ -3263,6 +3264,22 @@ let ICONS_LIST = [
 		name: 'image-up',
 		icon: imageUp,
 		tags: ['picture', 'photo', 'upload', 'import'],
+		categories: ['photography', 'text', 'multimedia', 'files']
+	},
+	{
+		name: 'images',
+		icon: images,
+		tags: [
+			'picture',
+			'photo',
+			'multiple',
+			'copy',
+			'gallery',
+			'album',
+			'collection',
+			'slideshow',
+			'showcase'
+		],
 		categories: ['photography', 'text', 'multimedia', 'files']
 	},
 	{

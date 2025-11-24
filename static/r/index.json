@@ -2358,6 +2358,15 @@
 		"relativeUrl": "image-up.json"
 	},
 	{
+		"name": "images",
+		"title": "images",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated images icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "images.json"
+	},
+	{
 		"name": "infinity",
 		"title": "infinity",
 		"type": "registry:component",

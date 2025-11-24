@@ -260,6 +260,7 @@ export { default as House } from './icons/house.svelte';
 export { default as ImageDown } from './icons/image-down.svelte';
 export { default as ImageOff } from './icons/image-off.svelte';
 export { default as ImageUp } from './icons/image-up.svelte';
+export { default as Images } from './icons/images.svelte';
 export { default as Infinity } from './icons/infinity.svelte';
 export { default as Kanban } from './icons/kanban.svelte';
 export { default as KeyRound } from './icons/key-round.svelte';

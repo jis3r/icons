@@ -4197,6 +4197,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "images",
+			"title": "images",
+			"type": "registry:component",
+			"description": "The animated images icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/images.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/images.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "infinity",
 			"title": "infinity",
 			"type": "registry:component",
