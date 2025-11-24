@@ -52,7 +52,7 @@
 <header
 	class="bg-background bg-opacity-40 fixed top-0 z-50 h-[72px] w-full border-b backdrop-blur-xl"
 >
-	<nav class="container flex items-center justify-between py-4">
+	<nav class="container mx-auto flex max-w-7xl items-center justify-between py-4">
 		<a href="/" class="cursor-pointer text-base"> moving icons </a>
 		<div class="flex gap-1">
 			<Button
