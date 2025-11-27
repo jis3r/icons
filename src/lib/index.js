@@ -276,6 +276,7 @@ export { default as LayoutPanelLeft } from './icons/layout-panel-left.svelte';
 export { default as LayoutPanelTop } from './icons/layout-panel-top.svelte';
 export { default as LayoutTemplate } from './icons/layout-template.svelte';
 export { default as LightbulbOff } from './icons/lightbulb-off.svelte';
+export { default as Lightbulb } from './icons/lightbulb.svelte';
 export { default as Link2Off } from './icons/link-2-off.svelte';
 export { default as ListCheck } from './icons/list-check.svelte';
 export { default as ListChecks } from './icons/list-checks.svelte';

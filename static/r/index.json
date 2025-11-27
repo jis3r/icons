@@ -2502,6 +2502,15 @@
 		"relativeUrl": "lightbulb-off.json"
 	},
 	{
+		"name": "lightbulb",
+		"title": "lightbulb",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated lightbulb icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "lightbulb.json"
+	},
+	{
 		"name": "link-2-off",
 		"title": "link-2-off",
 		"type": "registry:component",

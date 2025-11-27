@@ -275,6 +275,7 @@ import layoutGrid from './layout-grid.svelte';
 import layoutPanelLeft from './layout-panel-left.svelte';
 import layoutPanelTop from './layout-panel-top.svelte';
 import layoutTemplate from './layout-template.svelte';
+import lightbulb from './lightbulb.svelte';
 import lightbulbOff from './lightbulb-off.svelte';
 import link2Off from './link-2-off.svelte';
 import listCheck from './list-check.svelte';
@@ -3407,6 +3408,12 @@ let ICONS_LIST = [
 		icon: layoutTemplate,
 		tags: ['window', 'webpage', 'block', 'section'],
 		categories: ['layout']
+	},
+	{
+		name: 'lightbulb',
+		icon: lightbulb,
+		tags: ['idea', 'bright', 'lights'],
+		categories: ['photography']
 	},
 	{
 		name: 'lightbulb-off',

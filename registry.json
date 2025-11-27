@@ -4453,6 +4453,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "lightbulb",
+			"title": "lightbulb",
+			"type": "registry:component",
+			"description": "The animated lightbulb icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/lightbulb.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/lightbulb.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "link-2-off",
 			"title": "link-2-off",
 			"type": "registry:component",
