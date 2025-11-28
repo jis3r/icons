@@ -22,7 +22,7 @@
 
 		setTimeout(() => {
 			isHovered = false;
-		}, 500);
+		}, 1200);
 	}
 </script>
 
@@ -42,8 +42,9 @@
 	>
 		<path
 			d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"
+			class="badge-path"
 		/>
-		<path d="M9 12l2 2 4-4" class="check-path" />
+		<path d="m9 12 2 2 4-4" class="check-path" />
 	</svg>
 </div>
 
@@ -55,26 +56,48 @@
 		overflow: visible;
 	}
 
+	.badge-path {
+		transform-origin: center;
+		transition: transform 1.2s ease-in-out;
+	}
+
 	.check-path {
-		stroke-dasharray: 9;
+		stroke-dasharray: 10;
 		stroke-dashoffset: 0;
+		opacity: 1;
 		transition:
-			stroke-dashoffset 0.125s ease-out,
-			opacity 0.125s ease-out;
+			stroke-dashoffset 1.2s ease-in-out,
+			opacity 0.01s ease-in-out;
+	}
+
+	.badge-check-icon.animate .badge-path {
+		animation: scaleBadge 1.2s ease-in-out;
 	}
 
 	.badge-check-icon.animate .check-path {
-		animation: checkAnimation 0.5s ease-out backwards;
+		animation: drawCheck 1.2s ease-in-out;
 	}
 
-	@keyframes checkAnimation {
+	@keyframes scaleBadge {
 		0% {
-			stroke-dashoffset: 9;
-			opacity: 0;
+			transform: scale(1);
 		}
-		33% {
-			stroke-dashoffset: 9;
-			opacity: 0;
+		50% {
+			transform: scale(0.9);
+		}
+		100% {
+			transform: scale(1);
+		}
+	}
+
+	@keyframes drawCheck {
+		0% {
+			stroke-dashoffset: 0;
+			opacity: 1;
+		}
+		50% {
+			stroke-dashoffset: 10;
+			opacity: 1;
 		}
 		100% {
 			stroke-dashoffset: 0;
