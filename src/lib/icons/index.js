@@ -1,4 +1,5 @@
 import activity from './activity.svelte';
+import airplay from './airplay.svelte';
 import alarmClock from './alarm-clock.svelte';
 import alarmClockCheck from './alarm-clock-check.svelte';
 import alarmClockOff from './alarm-clock-off.svelte';
@@ -531,6 +532,12 @@ let ICONS_LIST = [
 			'music'
 		],
 		categories: ['medical', 'account', 'social', 'science', 'multimedia']
+	},
+	{
+		name: 'airplay',
+		icon: airplay,
+		tags: ['stream', 'cast', 'mirroring', 'screen', 'monitor', 'macos', 'osx'],
+		categories: ['multimedia', 'connectivity', 'devices', 'brands']
 	},
 	{
 		name: 'alarm-clock',

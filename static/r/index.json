@@ -9,6 +9,15 @@
 		"relativeUrl": "activity.json"
 	},
 	{
+		"name": "airplay",
+		"title": "airplay",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated airplay icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "airplay.json"
+	},
+	{
 		"name": "alarm-clock-check",
 		"title": "alarm-clock-check",
 		"type": "registry:component",

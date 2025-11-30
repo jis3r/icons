@@ -21,6 +21,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "airplay",
+			"title": "airplay",
+			"type": "registry:component",
+			"description": "The animated airplay icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/airplay.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/airplay.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "alarm-clock-check",
 			"title": "alarm-clock-check",
 			"type": "registry:component",

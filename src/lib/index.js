@@ -1,4 +1,5 @@
 export { default as Activity } from './icons/activity.svelte';
+export { default as Airplay } from './icons/airplay.svelte';
 export { default as AlarmClockCheck } from './icons/alarm-clock-check.svelte';
 export { default as AlarmClockOff } from './icons/alarm-clock-off.svelte';
 export { default as AlarmClock } from './icons/alarm-clock.svelte';
