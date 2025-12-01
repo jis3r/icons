@@ -2917,6 +2917,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "cloud-moon",
+			"title": "cloud-moon",
+			"type": "registry:component",
+			"description": "The animated cloud-moon icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/cloud-moon.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/cloud-moon.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "cloud-off",
 			"title": "cloud-off",
 			"type": "registry:component",

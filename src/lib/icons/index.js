@@ -180,6 +180,7 @@ import clock8 from './clock-8.svelte';
 import clock9 from './clock-9.svelte';
 import cloudCog from './cloud-cog.svelte';
 import cloudDownload from './cloud-download.svelte';
+import cloudMoon from './cloud-moon.svelte';
 import cloudOff from './cloud-off.svelte';
 import cloudUpload from './cloud-upload.svelte';
 import cog from './cog.svelte';
@@ -2554,6 +2555,12 @@ let ICONS_LIST = [
 		icon: cloudDownload,
 		tags: ['import'],
 		categories: ['arrows', 'files']
+	},
+	{
+		name: 'cloud-moon',
+		icon: cloudMoon,
+		tags: ['weather', 'night'],
+		categories: ['weather']
 	},
 	{
 		name: 'cloud-off',

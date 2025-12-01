@@ -180,6 +180,7 @@ export { default as Clock9 } from './icons/clock-9.svelte';
 export { default as Clock } from './icons/clock.svelte';
 export { default as CloudCog } from './icons/cloud-cog.svelte';
 export { default as CloudDownload } from './icons/cloud-download.svelte';
+export { default as CloudMoon } from './icons/cloud-moon.svelte';
 export { default as CloudOff } from './icons/cloud-off.svelte';
 export { default as CloudUpload } from './icons/cloud-upload.svelte';
 export { default as Cog } from './icons/cog.svelte';

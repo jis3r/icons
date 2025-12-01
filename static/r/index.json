@@ -1638,6 +1638,15 @@
 		"relativeUrl": "cloud-download.json"
 	},
 	{
+		"name": "cloud-moon",
+		"title": "cloud-moon",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated cloud-moon icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "cloud-moon.json"
+	},
+	{
 		"name": "cloud-off",
 		"title": "cloud-off",
 		"type": "registry:component",
