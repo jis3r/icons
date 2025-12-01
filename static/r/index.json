@@ -675,6 +675,15 @@
 		"relativeUrl": "book-open-check.json"
 	},
 	{
+		"name": "book-open-text",
+		"title": "book-open-text",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated book-open-text icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "book-open-text.json"
+	},
+	{
 		"name": "book-plus",
 		"title": "book-plus",
 		"type": "registry:component",

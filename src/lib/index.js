@@ -73,6 +73,7 @@ export { default as BookLock } from './icons/book-lock.svelte';
 export { default as BookMarked } from './icons/book-marked.svelte';
 export { default as BookMinus } from './icons/book-minus.svelte';
 export { default as BookOpenCheck } from './icons/book-open-check.svelte';
+export { default as BookOpenText } from './icons/book-open-text.svelte';
 export { default as BookPlus } from './icons/book-plus.svelte';
 export { default as BookText } from './icons/book-text.svelte';
 export { default as BookType } from './icons/book-type.svelte';

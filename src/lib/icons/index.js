@@ -79,6 +79,7 @@ import bookmarkPlus from './bookmark-plus.svelte';
 import bookmarkX from './bookmark-x.svelte';
 import bookMinus from './book-minus.svelte';
 import bookOpenCheck from './book-open-check.svelte';
+import bookOpenText from './book-open-text.svelte';
 import bookPlus from './book-plus.svelte';
 import bookText from './book-text.svelte';
 import bookType from './book-type.svelte';
@@ -1594,6 +1595,42 @@ let ICONS_LIST = [
 			'ticked'
 		],
 		categories: ['text', 'development', 'gaming']
+	},
+	{
+		name: 'book-open-text',
+		icon: bookOpenText,
+		tags: [
+			'reading',
+			'pages',
+			'booklet',
+			'magazine',
+			'leaflet',
+			'pamphlet',
+			'library',
+			'writing',
+			'written',
+			'writer',
+			'author',
+			'story',
+			'script',
+			'fiction',
+			'novel',
+			'information',
+			'knowledge',
+			'education',
+			'high school',
+			'university',
+			'college',
+			'academy',
+			'student',
+			'study',
+			'learning',
+			'homework',
+			'research',
+			'documentation',
+			'revealed'
+		],
+		categories: ['text', 'development']
 	},
 	{
 		name: 'book-plus',

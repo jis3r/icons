@@ -1205,6 +1205,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "book-open-text",
+			"title": "book-open-text",
+			"type": "registry:component",
+			"description": "The animated book-open-text icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/book-open-text.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/book-open-text.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "book-plus",
 			"title": "book-plus",
 			"type": "registry:component",
