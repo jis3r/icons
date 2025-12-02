@@ -1,5 +1,14 @@
 [
 	{
+		"name": "accessibility",
+		"title": "accessibility",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated accessibility icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "accessibility.json"
+	},
+	{
 		"name": "activity",
 		"title": "activity",
 		"type": "registry:component",

@@ -5,6 +5,22 @@
 	"items": [
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "accessibility",
+			"title": "accessibility",
+			"type": "registry:component",
+			"description": "The animated accessibility icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/accessibility.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/accessibility.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "activity",
 			"title": "activity",
 			"type": "registry:component",

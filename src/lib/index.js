@@ -1,3 +1,4 @@
+export { default as Accessibility } from './icons/accessibility.svelte';
 export { default as Activity } from './icons/activity.svelte';
 export { default as Airplay } from './icons/airplay.svelte';
 export { default as AlarmClockCheck } from './icons/alarm-clock-check.svelte';

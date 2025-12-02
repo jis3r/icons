@@ -1,3 +1,4 @@
+import accessibility from './accessibility.svelte';
 import activity from './activity.svelte';
 import airplay from './airplay.svelte';
 import alarmClock from './alarm-clock.svelte';
@@ -501,6 +502,12 @@ import x from './x.svelte';
 import zapOff from './zap-off.svelte';
 
 let ICONS_LIST = [
+	{
+		name: 'accessibility',
+		icon: accessibility,
+		tags: ['disability', 'disabled', 'dda', 'wheelchair'],
+		categories: ['accessibility', 'medical']
+	},
 	{
 		name: 'activity',
 		icon: activity,
