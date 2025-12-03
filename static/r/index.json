@@ -3735,6 +3735,15 @@
 		"relativeUrl": "snowflake.json"
 	},
 	{
+		"name": "sparkles",
+		"title": "sparkles",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated sparkles icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "sparkles.json"
+	},
+	{
 		"name": "speech",
 		"title": "speech",
 		"type": "registry:component",

@@ -413,6 +413,7 @@ import slidersHorizontal from './sliders-horizontal.svelte';
 import slidersVertical from './sliders-vertical.svelte';
 import smartphoneNfc from './smartphone-nfc.svelte';
 import snowflake from './snowflake.svelte';
+import sparkles from './sparkles.svelte';
 import speech from './speech.svelte';
 import spellCheck from './spell-check.svelte';
 import squareArrowDown from './square-arrow-down.svelte';
@@ -5006,6 +5007,12 @@ let ICONS_LIST = [
 		icon: snowflake,
 		tags: ['cold', 'weather', 'freeze', 'snow', 'winter'],
 		categories: ['weather', 'seasons']
+	},
+	{
+		name: 'sparkles',
+		icon: sparkles,
+		tags: ['stars', 'effect', 'filter', 'night', 'magic'],
+		categories: ['cursors', 'multimedia', 'gaming', 'weather']
 	},
 	{
 		name: 'speech',
