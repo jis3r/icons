@@ -917,6 +917,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "binary",
+			"title": "binary",
+			"type": "registry:component",
+			"description": "The animated binary icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/binary.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/binary.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "blend",
 			"title": "blend",
 			"type": "registry:component",

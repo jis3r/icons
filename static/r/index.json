@@ -513,6 +513,15 @@
 		"relativeUrl": "between-vertical-start.json"
 	},
 	{
+		"name": "binary",
+		"title": "binary",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated binary icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "binary.json"
+	},
+	{
 		"name": "blend",
 		"title": "blend",
 		"type": "registry:component",

@@ -55,6 +55,7 @@ import betweenHorizontalEnd from './between-horizontal-end.svelte';
 import betweenHorizontalStart from './between-horizontal-start.svelte';
 import betweenVerticalEnd from './between-vertical-end.svelte';
 import betweenVerticalStart from './between-vertical-start.svelte';
+import binary from './binary.svelte';
 import blend from './blend.svelte';
 import blocks from './blocks.svelte';
 import bluetoothOff from './bluetooth-off.svelte';
@@ -1117,6 +1118,12 @@ let ICONS_LIST = [
 			'chevron'
 		],
 		categories: ['layout', 'design', 'tools']
+	},
+	{
+		name: 'binary',
+		icon: binary,
+		tags: ['code', 'digits', 'computer', 'zero', 'one', 'boolean'],
+		categories: ['text', 'development']
 	},
 	{
 		name: 'blend',

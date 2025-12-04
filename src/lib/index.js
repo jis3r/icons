@@ -55,6 +55,7 @@ export { default as BetweenHorizontalEnd } from './icons/between-horizontal-end.
 export { default as BetweenHorizontalStart } from './icons/between-horizontal-start.svelte';
 export { default as BetweenVerticalEnd } from './icons/between-vertical-end.svelte';
 export { default as BetweenVerticalStart } from './icons/between-vertical-start.svelte';
+export { default as Binary } from './icons/binary.svelte';
 export { default as Blend } from './icons/blend.svelte';
 export { default as Blocks } from './icons/blocks.svelte';
 export { default as BluetoothOff } from './icons/bluetooth-off.svelte';
