@@ -629,6 +629,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "axis-3d",
+			"title": "axis-3d",
+			"type": "registry:component",
+			"description": "The animated axis-3d icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/axis-3d.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/axis-3d.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "badge-alert",
 			"title": "badge-alert",
 			"type": "registry:component",

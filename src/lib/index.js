@@ -37,6 +37,7 @@ export { default as ArrowUp } from './icons/arrow-up.svelte';
 export { default as AudioLines } from './icons/audio-lines.svelte';
 export { default as Award } from './icons/award.svelte';
 export { default as Axe } from './icons/axe.svelte';
+export { default as Axis3d } from './icons/axis-3d.svelte';
 export { default as BadgeAlert } from './icons/badge-alert.svelte';
 export { default as BadgeCheck } from './icons/badge-check.svelte';
 export { default as BadgeQuestionMark } from './icons/badge-question-mark.svelte';

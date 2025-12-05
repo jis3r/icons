@@ -37,6 +37,7 @@ import arrowUpZA from './arrow-up-z-a.svelte';
 import audioLines from './audio-lines.svelte';
 import award from './award.svelte';
 import axe from './axe.svelte';
+import axis3d from './axis-3d.svelte';
 import badgeAlert from './badge-alert.svelte';
 import badgeCheck from './badge-check.svelte';
 import badgeQuestionMark from './badge-question-mark.svelte';
@@ -928,6 +929,12 @@ let ICONS_LIST = [
 			'forestry'
 		],
 		categories: ['tools', 'gaming']
+	},
+	{
+		name: 'axis-3d',
+		icon: axis3d,
+		tags: ['gizmo', 'coordinates'],
+		categories: ['design']
 	},
 	{
 		name: 'badge-alert',

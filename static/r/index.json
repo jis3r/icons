@@ -351,6 +351,15 @@
 		"relativeUrl": "axe.json"
 	},
 	{
+		"name": "axis-3d",
+		"title": "axis-3d",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated axis-3d icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "axis-3d.json"
+	},
+	{
 		"name": "badge-alert",
 		"title": "badge-alert",
 		"type": "registry:component",
