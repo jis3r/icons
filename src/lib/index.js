@@ -243,6 +243,7 @@ export { default as FolderSync } from './icons/folder-sync.svelte';
 export { default as FolderUp } from './icons/folder-up.svelte';
 export { default as Frame } from './icons/frame.svelte';
 export { default as GalleryHorizontalEnd } from './icons/gallery-horizontal-end.svelte';
+export { default as GalleryHorizontal } from './icons/gallery-horizontal.svelte';
 export { default as GalleryThumbnails } from './icons/gallery-thumbnails.svelte';
 export { default as GalleryVerticalEnd } from './icons/gallery-vertical-end.svelte';
 export { default as Gauge } from './icons/gauge.svelte';

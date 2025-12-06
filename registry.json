@@ -3925,6 +3925,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "gallery-horizontal",
+			"title": "gallery-horizontal",
+			"type": "registry:component",
+			"description": "The animated gallery-horizontal icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/gallery-horizontal.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/gallery-horizontal.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "gallery-thumbnails",
 			"title": "gallery-thumbnails",
 			"type": "registry:component",

@@ -2205,6 +2205,15 @@
 		"relativeUrl": "gallery-horizontal-end.json"
 	},
 	{
+		"name": "gallery-horizontal",
+		"title": "gallery-horizontal",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated gallery-horizontal icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "gallery-horizontal.json"
+	},
+	{
 		"name": "gallery-thumbnails",
 		"title": "gallery-thumbnails",
 		"type": "registry:component",

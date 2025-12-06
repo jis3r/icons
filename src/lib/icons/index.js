@@ -242,6 +242,7 @@ import folderPlus from './folder-plus.svelte';
 import folderSync from './folder-sync.svelte';
 import folderUp from './folder-up.svelte';
 import frame from './frame.svelte';
+import galleryHorizontal from './gallery-horizontal.svelte';
 import galleryHorizontalEnd from './gallery-horizontal-end.svelte';
 import galleryThumbnails from './gallery-thumbnails.svelte';
 import galleryVerticalEnd from './gallery-vertical-end.svelte';
@@ -3128,6 +3129,12 @@ let ICONS_LIST = [
 		icon: frame,
 		tags: ['logo', 'design', 'tool'],
 		categories: ['design', 'photography']
+	},
+	{
+		name: 'gallery-horizontal',
+		icon: galleryHorizontal,
+		tags: ['carousel', 'pictures', 'images', 'scroll', 'swipe', 'album', 'portfolio'],
+		categories: ['layout', 'design', 'development', 'photography', 'multimedia']
 	},
 	{
 		name: 'gallery-horizontal-end',
