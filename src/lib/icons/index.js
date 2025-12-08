@@ -245,6 +245,7 @@ import frame from './frame.svelte';
 import galleryHorizontal from './gallery-horizontal.svelte';
 import galleryHorizontalEnd from './gallery-horizontal-end.svelte';
 import galleryThumbnails from './gallery-thumbnails.svelte';
+import galleryVertical from './gallery-vertical.svelte';
 import galleryVerticalEnd from './gallery-vertical-end.svelte';
 import gauge from './gauge.svelte';
 import gavel from './gavel.svelte';
@@ -3158,6 +3159,12 @@ let ICONS_LIST = [
 		name: 'gallery-thumbnails',
 		icon: galleryThumbnails,
 		tags: ['carousel', 'pictures', 'images', 'album', 'portfolio', 'preview'],
+		categories: ['layout', 'design', 'development', 'photography', 'multimedia']
+	},
+	{
+		name: 'gallery-vertical',
+		icon: galleryVertical,
+		tags: ['carousel', 'pictures', 'images', 'scroll', 'swipe', 'album', 'portfolio'],
 		categories: ['layout', 'design', 'development', 'photography', 'multimedia']
 	},
 	{

@@ -2232,6 +2232,15 @@
 		"relativeUrl": "gallery-vertical-end.json"
 	},
 	{
+		"name": "gallery-vertical",
+		"title": "gallery-vertical",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated gallery-vertical icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "gallery-vertical.json"
+	},
+	{
 		"name": "gauge",
 		"title": "gauge",
 		"type": "registry:component",

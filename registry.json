@@ -3973,6 +3973,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "gallery-vertical",
+			"title": "gallery-vertical",
+			"type": "registry:component",
+			"description": "The animated gallery-vertical icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/gallery-vertical.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/gallery-vertical.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "gauge",
 			"title": "gauge",
 			"type": "registry:component",

@@ -246,6 +246,7 @@ export { default as GalleryHorizontalEnd } from './icons/gallery-horizontal-end.
 export { default as GalleryHorizontal } from './icons/gallery-horizontal.svelte';
 export { default as GalleryThumbnails } from './icons/gallery-thumbnails.svelte';
 export { default as GalleryVerticalEnd } from './icons/gallery-vertical-end.svelte';
+export { default as GalleryVertical } from './icons/gallery-vertical.svelte';
 export { default as Gauge } from './icons/gauge.svelte';
 export { default as Gavel } from './icons/gavel.svelte';
 export { default as Grid2x2Check } from './icons/grid-2x2-check.svelte';
