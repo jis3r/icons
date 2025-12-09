@@ -6709,6 +6709,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "sparkle",
+			"title": "sparkle",
+			"type": "registry:component",
+			"description": "The animated sparkle icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/sparkle.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/sparkle.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "sparkles",
 			"title": "sparkles",
 			"type": "registry:component",

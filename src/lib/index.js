@@ -417,6 +417,7 @@ export { default as SlidersHorizontal } from './icons/sliders-horizontal.svelte'
 export { default as SlidersVertical } from './icons/sliders-vertical.svelte';
 export { default as SmartphoneNfc } from './icons/smartphone-nfc.svelte';
 export { default as Snowflake } from './icons/snowflake.svelte';
+export { default as Sparkle } from './icons/sparkle.svelte';
 export { default as Sparkles } from './icons/sparkles.svelte';
 export { default as Speech } from './icons/speech.svelte';
 export { default as SpellCheck } from './icons/spell-check.svelte';
