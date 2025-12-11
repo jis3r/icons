@@ -362,6 +362,7 @@ export { default as PhoneOff } from './icons/phone-off.svelte';
 export { default as Pickaxe } from './icons/pickaxe.svelte';
 export { default as PinOff } from './icons/pin-off.svelte';
 export { default as Plane } from './icons/plane.svelte';
+export { default as Play } from './icons/play.svelte';
 export { default as Plus } from './icons/plus.svelte';
 export { default as PointerOff } from './icons/pointer-off.svelte';
 export { default as PowerOff } from './icons/power-off.svelte';

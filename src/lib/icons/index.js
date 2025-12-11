@@ -362,6 +362,7 @@ import phoneOff from './phone-off.svelte';
 import pickaxe from './pickaxe.svelte';
 import pinOff from './pin-off.svelte';
 import plane from './plane.svelte';
+import play from './play.svelte';
 import plus from './plus.svelte';
 import pointerOff from './pointer-off.svelte';
 import powerOff from './power-off.svelte';
@@ -4273,6 +4274,12 @@ let ICONS_LIST = [
 		icon: plane,
 		tags: ['plane', 'trip', 'airplane'],
 		categories: ['transportation', 'travel']
+	},
+	{
+		name: 'play',
+		icon: play,
+		tags: ['music', 'audio', 'video', 'start', 'run'],
+		categories: ['arrows', 'multimedia']
 	},
 	{
 		name: 'plus',

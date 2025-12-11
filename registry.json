@@ -5829,6 +5829,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "play",
+			"title": "play",
+			"type": "registry:component",
+			"description": "The animated play icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/play.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/play.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "plus",
 			"title": "plus",
 			"type": "registry:component",

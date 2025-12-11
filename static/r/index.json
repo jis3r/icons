@@ -3276,6 +3276,15 @@
 		"relativeUrl": "plane.json"
 	},
 	{
+		"name": "play",
+		"title": "play",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated play icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "play.json"
+	},
+	{
 		"name": "plus",
 		"title": "plus",
 		"type": "registry:component",
