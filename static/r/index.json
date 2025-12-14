@@ -4392,6 +4392,15 @@
 		"relativeUrl": "user-round-pen.json"
 	},
 	{
+		"name": "user",
+		"title": "user",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated user icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "user.json"
+	},
+	{
 		"name": "users-round",
 		"title": "users-round",
 		"type": "registry:component",

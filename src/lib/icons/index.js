@@ -480,6 +480,7 @@ import unfoldHorizontal from './unfold-horizontal.svelte';
 import unfoldVertical from './unfold-vertical.svelte';
 import unplug from './unplug.svelte';
 import upload from './upload.svelte';
+import user from './user.svelte';
 import userCheck from './user-check.svelte';
 import userCog from './user-cog.svelte';
 import userPen from './user-pen.svelte';
@@ -5619,6 +5620,12 @@ let ICONS_LIST = [
 		icon: upload,
 		tags: ['file'],
 		categories: ['arrows', 'files']
+	},
+	{
+		name: 'user',
+		icon: user,
+		tags: ['person', 'account', 'contact'],
+		categories: ['account']
 	},
 	{
 		name: 'user-check',

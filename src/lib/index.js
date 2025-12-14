@@ -486,6 +486,7 @@ export { default as UserPen } from './icons/user-pen.svelte';
 export { default as UserRoundCheck } from './icons/user-round-check.svelte';
 export { default as UserRoundCog } from './icons/user-round-cog.svelte';
 export { default as UserRoundPen } from './icons/user-round-pen.svelte';
+export { default as User } from './icons/user.svelte';
 export { default as UsersRound } from './icons/users-round.svelte';
 export { default as Users } from './icons/users.svelte';
 export { default as Vault } from './icons/vault.svelte';
