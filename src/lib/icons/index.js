@@ -484,6 +484,7 @@ import user from './user.svelte';
 import userCheck from './user-check.svelte';
 import userCog from './user-cog.svelte';
 import userPen from './user-pen.svelte';
+import userRound from './user-round.svelte';
 import userRoundCheck from './user-round-check.svelte';
 import userRoundCog from './user-round-cog.svelte';
 import userRoundPen from './user-round-pen.svelte';
@@ -5643,6 +5644,12 @@ let ICONS_LIST = [
 		name: 'user-pen',
 		icon: userPen,
 		tags: ['person', 'account', 'contact', 'profile', 'edit', 'change'],
+		categories: ['account']
+	},
+	{
+		name: 'user-round',
+		icon: userRound,
+		tags: ['person', 'account', 'contact'],
 		categories: ['account']
 	},
 	{
