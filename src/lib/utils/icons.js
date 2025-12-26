@@ -1,6 +1,12 @@
 import iflog from 'iflog';
 
-export let getIconSource = async (iconName) => {
+/** @import ICONS_LIST from '$lib/icons/index.js' */
+
+/**
+ * @param {typeof ICONS_LIST[number]} iconName 
+ * @returns {Promise<typeof ICONS_LIST[number] & { source: string }>} 
+ */
+export const getIconSource = async (iconName) => {
 	try {
 		// Create a map of all icon files at build time
 		const iconModules = import.meta.glob('/src/lib/icons/*.svelte', {
@@ -22,7 +28,12 @@ export let getIconSource = async (iconName) => {
 	}
 };
 
-export let preloadIconSources = async (icons) => {
+
+/**
+ * @param {typeof ICONS_LIST} icons
+ * @returns {Promise<(typeof ICONS_LIST[number] & { source?: string })[]>}
+ */
+export const preloadIconSources = async (icons) => {
 	try {
 		// Create a map of all icon files at build time
 		const iconModules = import.meta.glob('/src/lib/icons/*.svelte', {
@@ -49,7 +60,10 @@ export let preloadIconSources = async (icons) => {
 	}
 };
 
-export let downloadIcon = async (icon) => {
+/**
+ * @param {typeof ICONS_LIST[number] & { source?: string }} icon 
+ */
+export const downloadIcon = async (icon) => {
 	try {
 		if (!icon.source) {
 			// Fetch the source if not already loaded

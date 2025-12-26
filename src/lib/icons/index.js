@@ -510,7 +510,7 @@ import wineOff from './wine-off.svelte';
 import x from './x.svelte';
 import zapOff from './zap-off.svelte';
 
-let ICONS_LIST = [
+const ICONS_LIST = [
 	{
 		name: 'accessibility',
 		icon: accessibility,

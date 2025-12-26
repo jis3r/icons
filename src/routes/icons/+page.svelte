@@ -2,6 +2,7 @@
 	import { Button } from '$lib/components/ui/button';
 	import { Input } from '$lib/components/ui/input';
 	import { Badge } from '$lib/components/ui/badge';
+	import * as Tooltip from '$lib/components/ui/tooltip';
 	import { Download, Copy, ExternalLink, Check, Terminal } from '@lucide/svelte';
 	import { onMount } from 'svelte';
 	import { downloadIcon, preloadIconSources } from '$lib/utils/icons.js';
@@ -11,14 +12,17 @@
 	import { page } from '$app/state';
 
 	let iconsAdded = $state(0);
-	let icons = [];
+	/** @type {(typeof ICONS_LIST[number] & { source?: string })[]} */
+	let icons = $state([]);
 	let searchQuery = $state('');
+	/** @type {typeof icons} */
 	let filteredIcons = $state([]);
 	let size = $state(28);
 	let color = $state('currentColor');
 	let strokeWidth = $state(2);
 	let isLoading = $state(true);
 
+	/** @param {string} query */
 	const updateFilteredIcons = (query) => {
 		filteredIcons = icons.filter((icon) => {
 			const q = query.toLowerCase();
@@ -32,6 +36,7 @@
 
 	const debouncedUpdateFilteredIcons = debounce(updateFilteredIcons, 300);
 
+	/** @param {typeof icons[number]} icon */
 	const handleCopy = (icon) => {
 		try {
 			if (!icon.source) {
@@ -52,6 +57,7 @@
 		}
 	};
 
+	/** @param {typeof icons[number]} icon */
 	const handleDownload = (icon) => {
 		downloadIcon(icon)
 			.then(() => {
@@ -65,6 +71,7 @@
 			});
 	};
 
+	/** @param {typeof icons[number]} icon */
 	const handleTerminalCopy = (icon) => {
 		try {
 			if (!icon.source) {
@@ -86,7 +93,13 @@
 		}
 	};
 
+	/**
+	 * @template {{ visible?: boolean }} T
+	 * @param {HTMLElement} node
+	 * @param {T} param
+	 */
 	function animateIcon(node, { visible }) {
+		/** @type {ReturnType<typeof animate>} */
 		let animation;
 		const show = () => {
 			animation = animate(
@@ -107,6 +120,7 @@
 		else hide();
 
 		return {
+			/** @param {T} param */
 			update({ visible }) {
 				if (visible) show();
 				else hide();
@@ -184,10 +198,10 @@
 			<div class="relative">
 				<Input
 					id="searchbar"
-					placeholder="Search {filteredIcons.length} icons..."
+					placeholder="Search {icons.length} icons..."
 					bind:value={searchQuery}
 					oninput={() => debouncedUpdateFilteredIcons(searchQuery)}
-				></Input>
+				/>
 				<kbd
 					class="bg-muted text-muted-foreground pointer-events-none absolute top-1/2 right-2 inline-flex h-5 -translate-y-1/2 items-center gap-1 rounded border px-1.5 font-mono text-[10px] font-medium opacity-100 select-none"
 					><span class="text-xs">⌘</span>K</kbd
@@ -198,16 +212,12 @@
 				<div class="flex items-center justify-center py-12">
 					<div class="text-muted-foreground">Loading icons...</div>
 				</div>
-			{:else if filteredIcons.length === 0}
-				<div class="flex flex-col items-center justify-center gap-2 py-24 text-center">
-					<h2 class="text-lg">No icons found</h2>
-					<p class="text-muted-foreground max-w-sm text-center text-xs text-pretty">
-						We couldn't find any icons matching your search.<br />Try different keywords.
-					</p>
-				</div>
 			{:else}
 				<div
-					class="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-[repeat(auto-fill,minmax(165px,1fr))]"
+					class={{
+						'grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-[repeat(auto-fill,minmax(165px,1fr))]':
+							filteredIcons.length
+					}}
 				>
 					{#each filteredIcons as icon}
 						<div
@@ -221,37 +231,57 @@
 							/>
 							<p class="text-muted-foreground mt-5 mb-3 text-center text-xs">{icon.name}</p>
 							<div class="flex items-center justify-center gap-2">
-								<Button
-									onclick={() => handleCopy(icon)}
-									variant="ghost"
-									class="hover:bg-accent size-8 rounded-md p-2 transition-colors duration-200"
-								>
-									{#key icon.copied}
-										<span use:animateIcon={{ visible: true }} style="display: inline-block;">
-											{#if icon.copied}
-												<Check class="h-4 w-4" />
-											{:else}
-												<Copy class="h-4 w-4" />
-											{/if}
-										</span>
-									{/key}
-								</Button>
+								<Tooltip.Provider>
+									<Tooltip.Root delayDuration={300}>
+										<Tooltip.Trigger>
+											{#snippet child({ props })}
+												<Button
+													{...props}
+													onclick={() => handleCopy(icon)}
+													variant="ghost"
+													class="hover:bg-accent size-8 rounded-md p-2 transition-colors duration-200"
+												>
+													{#key icon.copied}
+														<span use:animateIcon={{ visible: true }} class="inline-block">
+															{#if icon.copied}
+																<Check class="size-4" />
+															{:else}
+																<Copy class="size-4" />
+															{/if}
+														</span>
+													{/key}
+												</Button>
+											{/snippet}
+										</Tooltip.Trigger>
+										<Tooltip.Content side="bottom">Copy Svelte component</Tooltip.Content>
+									</Tooltip.Root>
+								</Tooltip.Provider>
 
-								<Button
-									onclick={() => handleDownload(icon)}
-									variant="ghost"
-									class="hover:bg-accent size-8 rounded-md p-2 transition-colors duration-200"
-								>
-									{#key icon.downloaded}
-										<span use:animateIcon={{ visible: true }} style="display: inline-block;">
-											{#if icon.downloaded}
-												<Check class="h-4 w-4" />
-											{:else}
-												<Download class="h-4 w-4" />
-											{/if}
-										</span>
-									{/key}
-								</Button>
+								<Tooltip.Provider>
+									<Tooltip.Root delayDuration={300}>
+										<Tooltip.Trigger>
+											{#snippet child({ props })}
+												<Button
+													{...props}
+													onclick={() => handleDownload(icon)}
+													variant="ghost"
+													class="hover:bg-accent size-8 rounded-md p-2 transition-colors duration-200"
+												>
+													{#key icon.downloaded}
+														<span use:animateIcon={{ visible: true }} class="inline-block">
+															{#if icon.downloaded}
+																<Check class="size-4" />
+															{:else}
+																<Download class="size-4" />
+															{/if}
+														</span>
+													{/key}
+												</Button>
+											{/snippet}
+										</Tooltip.Trigger>
+										<Tooltip.Content side="bottom">Download Svelte component</Tooltip.Content>
+									</Tooltip.Root>
+								</Tooltip.Provider>
 
 								{#if false}
 									<Button
@@ -261,26 +291,43 @@
 										variant="ghost"
 										class="hover:bg-accent size-8 rounded-md p-2 transition-colors duration-200"
 									>
-										<ExternalLink class="h-4 w-4" />
+										<ExternalLink class="size-4" />
 									</Button>
 								{/if}
 
-								<Button
-									onclick={() => handleTerminalCopy(icon)}
-									variant="ghost"
-									class="hover:bg-accent size-8 rounded-md p-2 transition-colors duration-200"
-								>
-									{#key icon.terminalCopied}
-										<span use:animateIcon={{ visible: true }} style="display: inline-block;">
-											{#if icon.terminalCopied}
-												<Check class="h-4 w-4" />
-											{:else}
-												<Terminal class="h-4 w-4" />
-											{/if}
-										</span>
-									{/key}
-								</Button>
+								<Tooltip.Provider>
+									<Tooltip.Root delayDuration={300}>
+										<Tooltip.Trigger>
+											{#snippet child({ props })}
+												<Button
+													{...props}
+													onclick={() => handleTerminalCopy(icon)}
+													variant="ghost"
+													class="hover:bg-accent size-8 rounded-md p-2 transition-colors duration-200"
+												>
+													{#key icon.terminalCopied}
+														<span use:animateIcon={{ visible: true }} class="inline-block">
+															{#if icon.terminalCopied}
+																<Check class="size-4" />
+															{:else}
+																<Terminal class="size-4" />
+															{/if}
+														</span>
+													{/key}
+												</Button>
+											{/snippet}
+										</Tooltip.Trigger>
+										<Tooltip.Content side="bottom">Copy `shadcn add` command</Tooltip.Content>
+									</Tooltip.Root>
+								</Tooltip.Provider>
 							</div>
+						</div>
+					{:else}
+						<div class="flex flex-col items-center justify-center gap-2 py-24 text-center">
+							<h2 class="text-lg">No icons found</h2>
+							<p class="text-muted-foreground max-w-sm text-center text-xs text-pretty">
+								We couldn't find any icons matching your search.<br />Try different keywords.
+							</p>
 						</div>
 					{/each}
 				</div>
