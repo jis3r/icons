@@ -8,6 +8,7 @@
 	import iflog from 'iflog';
 
 	let stars = $state(0);
+	/** @type {ReturnType<typeof setInterval>} */
 	let interval;
 
 	onMount(async () => {
@@ -16,9 +17,10 @@
 			if (!res.ok) {
 				throw new Error(`GitHub API error: ${res.status}`);
 			}
+			/** @type {{ stargazers_count?: number }} */
 			const data = await res.json();
 
-			const targetStars = data.stargazers_count || 0;
+			const targetStars = data.stargazers_count ?? 0;
 			if (targetStars === 0) return;
 
 			const maxIncrement = Math.max(5, Math.ceil(targetStars / 30));
@@ -42,11 +44,7 @@
 		}
 	});
 
-	onDestroy(() => {
-		if (interval) {
-			clearInterval(interval);
-		}
-	});
+	onDestroy(() => clearInterval(interval));
 </script>
 
 <header
