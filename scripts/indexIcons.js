@@ -137,13 +137,14 @@ function updateIconsIndex() {
 
 	// Always update the ICONS_LIST to ensure it's in sync with actual files
 	// Parse the existing ICONS_LIST to extract all icons
-	const iconsListMatch = indexContent.match(/let ICONS_LIST = \[([\s\S]*?)\];/);
+	const iconsListMatch = indexContent.match(/(let|const) ICONS_LIST = \[([\s\S]*?)\];/);
 	if (!iconsListMatch) {
 		console.error('Error: Could not find ICONS_LIST in index file.');
 		process.exit(1);
 	}
 
-	const iconsListContent = iconsListMatch[1];
+	const declarationType = iconsListMatch[1]; // 'let' or 'const'
+	const iconsListContent = iconsListMatch[2];
 
 	// Parse existing icons from the ICONS_LIST
 	const existingIcons = [];
@@ -292,11 +293,11 @@ function updateIconsIndex() {
 		.join(',\n');
 
 	// Replace the ICONS_LIST content in the file
-	const newIconsList = `let ICONS_LIST = [
+	const newIconsList = `${declarationType} ICONS_LIST = [
 ${newIconsListContent}
 ];`;
 
-	indexContent = indexContent.replace(/let ICONS_LIST = \[[\s\S]*?\];/, newIconsList);
+	indexContent = indexContent.replace(/(let|const) ICONS_LIST = \[[\s\S]*?\];/, newIconsList);
 
 	if (iconsAddedCount > 0) {
 		console.log(`✅ Added ${iconsAddedCount} new icon(s) in alphabetical order`);
