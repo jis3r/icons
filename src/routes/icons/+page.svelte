@@ -231,8 +231,8 @@
 							/>
 							<p class="text-muted-foreground mt-5 mb-3 text-center text-xs">{icon.name}</p>
 							<div class="flex items-center justify-center gap-2">
-								<Tooltip.Provider>
-									<Tooltip.Root delayDuration={300}>
+								<Tooltip.Provider delayDuration={300}>
+									<Tooltip.Root>
 										<Tooltip.Trigger>
 											{#snippet child({ props })}
 												<Button
@@ -255,10 +255,8 @@
 										</Tooltip.Trigger>
 										<Tooltip.Content side="bottom">Copy Svelte component</Tooltip.Content>
 									</Tooltip.Root>
-								</Tooltip.Provider>
 
-								<Tooltip.Provider>
-									<Tooltip.Root delayDuration={300}>
+									<Tooltip.Root>
 										<Tooltip.Trigger>
 											{#snippet child({ props })}
 												<Button
@@ -281,22 +279,26 @@
 										</Tooltip.Trigger>
 										<Tooltip.Content side="bottom">Download Svelte component</Tooltip.Content>
 									</Tooltip.Root>
-								</Tooltip.Provider>
 
-								{#if false}
-									<Button
-										href={'https://github.com/jis3r/icons/blob/master/src/lib/icons/' +
-											icon.name +
-											'.svelte'}
-										variant="ghost"
-										class="hover:bg-accent size-8 rounded-md p-2 transition-colors duration-200"
-									>
-										<ExternalLink class="size-4" />
-									</Button>
-								{/if}
+									{#if false}
+										<Tooltip.Root>
+											<Tooltip.Trigger>
+												{#snippet child({ props })}
+													<Button
+														{...props}
+														href="https://github.com/jis3r/icons/blob/master/src/lib/icons/{icon.name}.svelte"
+														variant="ghost"
+														class="hover:bg-accent size-8 rounded-md p-2 transition-colors duration-200"
+													>
+														<ExternalLink class="size-4" />
+													</Button>
+												{/snippet}
+											</Tooltip.Trigger>
+											<Tooltip.Content side="bottom">Open icon source on GitHub</Tooltip.Content>
+										</Tooltip.Root>
+									{/if}
 
-								<Tooltip.Provider>
-									<Tooltip.Root delayDuration={300}>
+									<Tooltip.Root>
 										<Tooltip.Trigger>
 											{#snippet child({ props })}
 												<Button
