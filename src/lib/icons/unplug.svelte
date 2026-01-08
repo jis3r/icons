@@ -17,12 +17,18 @@
 		class: className = ''
 	} = $props();
 
-	function handleMouseEnter() {
+	function handlePointerEnter() {
 		isHovered = true;
 	}
 
-	function handleMouseLeave() {
+	function handlePointerLeave() {
 		isHovered = false;
+	}
+
+	/** @param {TouchEvent} e */
+	function handleTouchStart(e) {
+		e.preventDefault();
+		isHovered = !isHovered;
 	}
 </script>
 
@@ -30,8 +36,9 @@
 	class={className}
 	aria-label="unplug"
 	role="img"
-	onmouseenter={handleMouseEnter}
-	onmouseleave={handleMouseLeave}
+	onpointerenter={handlePointerEnter}
+	onpointerleave={handlePointerLeave}
+	ontouchstart={handleTouchStart}
 >
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
@@ -44,15 +51,23 @@
 		stroke-linecap="round"
 		stroke-linejoin="round"
 	>
-		<path class="line-1" class:animate={isHovered} d="M19 5l3 -3" />
-		<path class="line-2" class:animate={isHovered} d="m2 22 3-3" />
+		<g class="line-1" class:animate={isHovered}>
+			<path d="M19 5l3 -3" />
+		</g>
+		<g class="line-2" class:animate={isHovered}>
+			<path d="m2 22 3-3" />
+		</g>
 		<path
 			class="socket"
 			class:animate={isHovered}
 			d="M6.3 20.3a2.4 2.4 0 0 0 3.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 0 0 0 3.4Z"
 		/>
-		<path class="spark-1" class:animate={isHovered} d="M7.5 13.5l2.5 -2.5" />
-		<path class="spark-2" class:animate={isHovered} d="M10.5 16.5l2.5 -2.5" />
+		<g class="spark-1" class:animate={isHovered}>
+			<path d="M7.5 13.5l2.5 -2.5" />
+		</g>
+		<g class="spark-2" class:animate={isHovered}>
+			<path d="M10.5 16.5l2.5 -2.5" />
+		</g>
 		<path
 			class="plug"
 			class:animate={isHovered}
@@ -64,6 +79,7 @@
 <style>
 	div {
 		display: inline-block;
+		touch-action: manipulation;
 	}
 	svg {
 		overflow: visible;
@@ -75,15 +91,16 @@
 	.plug,
 	.spark-1,
 	.spark-2 {
-		transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+		transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+			opacity 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 	}
 
 	.line-1.animate {
-		d: path('M17 7l5 -5');
+		transform: translate(-2px, 2px);
 	}
 
 	.line-2.animate {
-		d: path('m2 22 6-6');
+		transform: translate(3px, -3px);
 	}
 
 	.socket.animate {
@@ -94,11 +111,9 @@
 		transform: translate(-3px, 3px);
 	}
 
-	.spark-1.animate {
-		d: path('M10.43 10.57l0.10 -0.10');
-	}
-
+	.spark-1.animate,
 	.spark-2.animate {
-		d: path('M13.43 13.57l0.10 -0.10');
+		transform: translate(3px, -3px);
+		opacity: 0;
 	}
 </style>
