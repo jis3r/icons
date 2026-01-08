@@ -1,9 +1,9 @@
 <script>
-	import { Button } from '$lib/components/ui/button';
+	import { Button } from '$lib-docs/components/ui/button';
 	import { Sun, Moon } from '@lucide/svelte';
 	import { toggleMode } from 'mode-watcher';
 	import { onMount, onDestroy } from 'svelte';
-	import Github from '$lib/components/github.svelte';
+	import Github from '$lib-docs/components/github.svelte';
 	import NumberFlow from '@number-flow/svelte';
 	import iflog from 'iflog';
 

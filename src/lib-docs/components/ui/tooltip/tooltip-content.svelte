@@ -1,6 +1,6 @@
 <script>
 	import { Tooltip as TooltipPrimitive } from 'bits-ui';
-	import { cn } from '$lib/utils.js';
+	import { cn } from '$lib-docs/utils.js';
 
 	let { ref = $bindable(null), class: className, sideOffset = 4, ...restProps } = $props();
 </script>

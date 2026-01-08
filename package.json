@@ -1,6 +1,6 @@
 {
 	"name": "@jis3r/icons",
-	"version": "1.25.0",
+	"version": "1.25.1",
 	"description": "beautifully crafted, moving icons. for svelte.",
 	"keywords": [
 		"svelte",
@@ -12,9 +12,13 @@
 	],
 	"author": "jis3r",
 	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jis3r/icons.git"
+	},
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build && npm run package",
+		"build": "vite build",
 		"preview": "vite preview",
 		"package": "svelte-kit sync && svelte-package && publint",
 		"prepublishOnly": "npm run package",
@@ -44,8 +48,12 @@
 			"svelte": "./dist/index.js"
 		}
 	},
+	"peerDependencies": {
+		"svelte": "^5.0.0"
+	},
 	"devDependencies": {
 		"@lucide/svelte": "^0.552.0",
+		"@number-flow/svelte": "^0.3.6",
 		"@sveltejs/adapter-auto": "^6.0.1",
 		"@sveltejs/kit": "^2.26.1",
 		"@sveltejs/package": "^2.0.0",
@@ -59,10 +67,17 @@
 		"eslint-config-prettier": "^10.1.1",
 		"eslint-plugin-svelte": "^3.5.1",
 		"globals": "^16.0.0",
+		"iflog": "^0.3.0",
+		"mode-watcher": "^0.5.1",
+		"motion": "^12.23.24",
+		"posthog-js": "^1.246.0",
 		"prettier": "^3.3.2",
 		"prettier-plugin-svelte": "^3.2.6",
 		"prettier-plugin-tailwindcss": "^0.7.1",
 		"publint": "^0.3.10",
+		"shadcn-svelte": "^1.0.6",
+		"svelte": "^5.0.0",
+		"svelte-fast-marquee": "^1.0.2",
 		"tailwind-merge": "^3.3.1",
 		"tailwind-variants": "^3.1.1",
 		"tailwindcss": "^4.1.16",
@@ -72,16 +87,6 @@
 		"vite": "^6.3.5",
 		"vite-plugin-raw": "^1.0.3",
 		"vitest": "^3.1.1"
-	},
-	"dependencies": {
-		"@number-flow/svelte": "^0.3.6",
-		"iflog": "^0.3.0",
-		"mode-watcher": "^0.5.1",
-		"motion": "^12.23.24",
-		"posthog-js": "^1.246.0",
-		"shadcn-svelte": "^1.0.6",
-		"svelte": "^5.0.0",
-		"svelte-fast-marquee": "^1.0.2"
 	},
 	"overrides": {
 		"cookie": "0.7.0"
