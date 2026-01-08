@@ -27,7 +27,7 @@
 </script>
 
 <script>
-	import { cn } from '$lib/utils.js';
+	import { cn } from '$lib-docs/utils.js';
 
 	let {
 		class: className,

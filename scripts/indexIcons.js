@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Script: updateIconsIndex.js
+ * Script: indexIcons.js
  *
  * Description:
  *  - Reads every .svelte file in "src/lib/icons".
@@ -10,7 +10,7 @@
  *    and then creates an icon entry with the name (based on the filename), an icon property
  *    (the imported Svelte component), tags, and categories.
  *  - The icon property is inserted as the second property in the object.
- *  - The script then reads "src/lib/icons/index.js" and checks whether the icon already exists.
+ *  - The script then reads "src/lib-docs/icons-meta.js" and checks whether the icon already exists.
  *  - If the icon does not exist, it adds the new icon object to the ICONS_LIST array,
  *    maintaining alphabetical order by name.
  *  - The script also removes icons from the index that no longer have corresponding files.
@@ -46,7 +46,7 @@ function updateIconsIndex() {
 	// Directory containing lucide JSON files (assumes lucide folder is sibling to your package folder)
 	const lucideIconsDir = join(packageRoot, '..', 'lucide/icons');
 	// File to update
-	const indexFilePath = join(iconsDir, 'index.js');
+	const indexFilePath = join(packageRoot, 'src/lib-docs/icons-meta.js');
 
 	// Check that required folders and file exist
 	if (!existsSync(iconsDir)) {
@@ -206,10 +206,10 @@ function updateIconsIndex() {
 	newIcons.forEach((icon) => {
 		// Check if an import line exists for this icon.
 		const importRegex = new RegExp(
-			`import\\s+${icon.importVar}\\s+from\\s+['"]\\./${icon.fileName}['"]`
+			`import\\s+${icon.importVar}\\s+from\\s+['"]\\$lib/icons/${icon.fileName}['"]`
 		);
 		if (!importRegex.test(indexContent)) {
-			importLinesToAdd.push(`import ${icon.importVar} from './${icon.fileName}';`);
+			importLinesToAdd.push(`import ${icon.importVar} from '$lib/icons/${icon.fileName}';`);
 		}
 	});
 

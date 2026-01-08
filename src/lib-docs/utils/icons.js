@@ -1,10 +1,10 @@
 import iflog from 'iflog';
 
-/** @import ICONS_LIST from '$lib/icons/index.js' */
+/** @import ICONS_LIST from '$lib-docs/icons-meta.js' */
 
 /**
- * @param {typeof ICONS_LIST[number]} iconName 
- * @returns {Promise<typeof ICONS_LIST[number] & { source: string }>} 
+ * @param {typeof ICONS_LIST[number]} iconName
+ * @returns {Promise<typeof ICONS_LIST[number] & { source: string }>}
  */
 export const getIconSource = async (iconName) => {
 	try {
@@ -27,7 +27,6 @@ export const getIconSource = async (iconName) => {
 		throw new Error(`Icon ${iconName} not found: ${error.message}`);
 	}
 };
-
 
 /**
  * @param {typeof ICONS_LIST} icons
@@ -61,7 +60,7 @@ export const preloadIconSources = async (icons) => {
 };
 
 /**
- * @param {typeof ICONS_LIST[number] & { source?: string }} icon 
+ * @param {typeof ICONS_LIST[number] & { source?: string }} icon
  */
 export const downloadIcon = async (icon) => {
 	try {

@@ -1,13 +1,13 @@
 <script>
-	import { Button } from '$lib/components/ui/button';
-	import { Input } from '$lib/components/ui/input';
-	import { Badge } from '$lib/components/ui/badge';
-	import * as Tooltip from '$lib/components/ui/tooltip';
+	import { Button } from '$lib-docs/components/ui/button';
+	import { Input } from '$lib-docs/components/ui/input';
+	import { Badge } from '$lib-docs/components/ui/badge';
+	import * as Tooltip from '$lib-docs/components/ui/tooltip';
 	import { Download, Copy, ExternalLink, Check, Terminal } from '@lucide/svelte';
 	import { onMount } from 'svelte';
-	import { downloadIcon, preloadIconSources } from '$lib/utils/icons.js';
-	import ICONS_LIST from '$lib/icons/index.js';
-	import { debounce } from '$lib/utils/debounce';
+	import { downloadIcon, preloadIconSources } from '$lib-docs/utils/icons.js';
+	import ICONS_LIST from '$lib-docs/icons-meta.js';
+	import { debounce } from '$lib-docs/utils/debounce';
 	import { animate } from 'motion';
 	import { page } from '$app/state';
 

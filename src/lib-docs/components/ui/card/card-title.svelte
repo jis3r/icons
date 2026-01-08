@@ -1,5 +1,5 @@
 <script>
-	import { cn } from '$lib/utils.js';
+	import { cn } from '$lib-docs/utils.js';
 
 	let { ref = $bindable(null), class: className, level = 3, children, ...restProps } = $props();
 </script>

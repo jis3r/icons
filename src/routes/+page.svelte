@@ -4,7 +4,7 @@
 	import { animate } from 'motion';
 	import { page } from '$app/state';
 	import { goto } from '$app/navigation';
-	import { Button } from '$lib/components/ui/button';
+	import { Button } from '$lib-docs/components/ui/button';
 	import {
 		Activity,
 		AlarmClock,
