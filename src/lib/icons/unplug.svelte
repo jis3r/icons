@@ -17,18 +17,12 @@
 		class: className = ''
 	} = $props();
 
-	function handlePointerEnter() {
+	function handleMouseEnter() {
 		isHovered = true;
 	}
 
-	function handlePointerLeave() {
+	function handleMouseLeave() {
 		isHovered = false;
-	}
-
-	/** @param {TouchEvent} e */
-	function handleTouchStart(e) {
-		e.preventDefault();
-		isHovered = !isHovered;
 	}
 </script>
 
@@ -36,9 +30,8 @@
 	class={className}
 	aria-label="unplug"
 	role="img"
-	onpointerenter={handlePointerEnter}
-	onpointerleave={handlePointerLeave}
-	ontouchstart={handleTouchStart}
+	onmouseenter={handleMouseEnter}
+	onmouseleave={handleMouseLeave}
 >
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +72,6 @@
 <style>
 	div {
 		display: inline-block;
-		touch-action: manipulation;
 	}
 	svg {
 		overflow: visible;
@@ -91,7 +83,8 @@
 	.plug,
 	.spark-1,
 	.spark-2 {
-		transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+		transition:
+			transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
 			opacity 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 	}
 
