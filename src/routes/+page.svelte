@@ -428,7 +428,7 @@
 				</nav>
 			</aside>
 
-			<div class="mx-auto w-full max-w-[592px] space-y-8 mt-2">
+			<div class="mx-auto mt-2 w-full max-w-[592px] space-y-8">
 				<div class="space-y-6">
 					<div id="installation" class="scroll-mt-24 space-y-3">
 						<div class="space-y-8">
