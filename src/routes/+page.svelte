@@ -11,7 +11,6 @@
 		Anvil,
 		Archive,
 		ArrowUp01,
-		Infinity,
 		RockingChair,
 		Axe,
 		BadgeAlert,
@@ -84,9 +83,7 @@
 		Redo,
 		Undo,
 		PrinterCheck,
-		Code,
-		Package,
-		SlidersHorizontal
+		Leaf
 	} from '@lucide/svelte';
 
 	const allIcons = [
@@ -95,7 +92,7 @@
 		Anvil,
 		Archive,
 		ArrowUp01,
-		Infinity,
+		Leaf,
 		RockingChair,
 		Axe,
 		BadgeAlert,
@@ -187,6 +184,63 @@
 	const marquee3Icons = $state(shuffledIcons.slice(chunkSize * 2, chunkSize * 3));
 	const marquee4Icons = $state(shuffledIcons.slice(chunkSize * 3));
 
+	const scriptOpen = '<' + 'script' + '>';
+	const scriptClose = '<' + '/' + 'script' + '>';
+	const usageExample = [
+		scriptOpen,
+		"	import { Activity, Star } from '@jis3r/icons';",
+		scriptClose,
+		'',
+		'<Activity size={32} color="orange" strokeWidth={2.5} />',
+		'<Star size={32} color="blue" />'
+	].join('\n');
+
+	const sections = [
+		{ id: 'installation', label: 'Installation' },
+		{ id: 'usage', label: 'Usage' },
+		{ id: 'props', label: 'Props' }
+	];
+
+	let activeSection = $state('installation');
+
+	function scrollToSection(sectionId) {
+		const element = document.getElementById(sectionId);
+		if (element) {
+			element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+		}
+	}
+
+	onMount(() => {
+		const observerOptions = {
+			rootMargin: '-20% 0px -60% 0px',
+			threshold: 0
+		};
+
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					activeSection = entry.target.id;
+				}
+			});
+		}, observerOptions);
+
+		sections.forEach((section) => {
+			const element = document.getElementById(section.id);
+			if (element) {
+				observer.observe(element);
+			}
+		});
+
+		return () => {
+			sections.forEach((section) => {
+				const element = document.getElementById(section.id);
+				if (element) {
+					observer.unobserve(element);
+				}
+			});
+		};
+	});
+
 	onMount(() => {
 		if (page.url.searchParams.has('search')) {
 			const searchParam = page.url.searchParams.get('search');
@@ -261,25 +315,6 @@
 				);
 			}
 		});
-
-		const featureCards = document.querySelectorAll('.feature-card');
-		const heroCompleteTime = heroStartTime + 0.15 + (allElements.length - 1) * 0.04 + 0.7;
-
-		featureCards.forEach((card, i) => {
-			animate(
-				card,
-				{
-					opacity: [0, 1],
-					y: [12, 0],
-					filter: ['blur(4px)', 'blur(0px)']
-				},
-				{
-					delay: heroCompleteTime + 0.1 + i * 0.06,
-					duration: 0.6,
-					easing: [0.16, 1, 0.3, 1]
-				}
-			);
-		});
 	});
 </script>
 
@@ -353,8 +388,8 @@
 			<h1
 				class="hero-title mx-auto mt-8 w-fit max-w-5xl text-center text-3xl font-semibold text-balance sm:text-4xl md:text-5xl"
 			>
-				<span>Beautifully</span> <span>crafted,</span> <span>moving</span> <span>icons.</span>
-				<span>For</span>
+				<span>The</span> <span>new</span> <span>standard</span> <span>for</span>
+				<span>animated</span> <span>icons</span> <span>in</span>
 				<span class="hero-title-final whitespace-nowrap"
 					><span
 						class="inline-block bg-linear-to-br from-[#FF3E00] to-orange-400 bg-clip-text text-transparent"
@@ -365,47 +400,137 @@
 			<p
 				class="hero-description text-muted-foreground mx-auto mt-5 w-fit max-w-2xl text-center text-sm leading-relaxed text-pretty sm:mt-4 sm:text-base"
 			>
-				A collection of animated icons for your projects. Feel free to use them, share your
-				feedback, and let's make this library awesome together!
+				Over 500+ hand-crafted, interaction-ready icons. Native Svelte 5 support. Zero dependencies.
+				The fluidity of Motion, with the simplicity of Svelte.
 			</p>
-			<div class="hero-button mx-auto mt-6 w-fit">
-				<Button variant="outline" href="/icons">Browse icons</Button>
+			<div class="hero-button mx-auto mt-6 flex w-fit gap-3">
+				<Button variant="outline" href="/icons">Browse Icons</Button>
+				<!-- <Button variant="outline" onclick={() => scrollToSection('installation')}>Docs</Button> -->
 			</div>
 		</div>
 	</section>
 
-	<section class="container mt-16 max-w-7xl md:mt-0">
-		<div
-			class="features-grid relative mx-auto grid grid-cols-1 gap-x-3 gap-y-6 min-[400px]:grid-cols-2 sm:gap-8 lg:grid-cols-4"
-		>
-			<div class="feature-card space-y-3">
-				<div class="flex items-center gap-2">
-					<Code class="size-4 min-h-4 min-w-4" />
-					<h3 class="text-sm font-medium">Open Source</h3>
+	<section id="documentation" class="container max-w-7xl">
+		<div class="relative mx-auto grid grid-cols-1 gap-8 lg:grid-cols-[12rem_1fr_12rem] lg:gap-12">
+			<aside class="sticky top-24 hidden w-48 self-start lg:block">
+				<nav class="space-y-1">
+					{#each sections as section}
+						<button
+							onclick={() => scrollToSection(section.id)}
+							class="w-full rounded-md px-3 py-2 text-left text-sm transition-colors {activeSection ===
+							section.id
+								? 'text-foreground font-medium'
+								: 'text-muted-foreground hover:text-foreground'}"
+						>
+							{section.label}
+						</button>
+					{/each}
+				</nav>
+			</aside>
+
+			<div class="mx-auto w-full max-w-[592px] space-y-8 mt-2">
+				<div class="space-y-6">
+					<div id="installation" class="scroll-mt-24 space-y-3">
+						<div class="space-y-8">
+							<div class="space-y-4">
+								<h4 class="text-sm font-medium">Install via npm</h4>
+								<div class="bg-muted/50 w-full max-w-full overflow-x-auto rounded-lg border p-4">
+									<code class="text-sm whitespace-nowrap">npm i @jis3r/icons</code>
+								</div>
+							</div>
+							<div class="space-y-4">
+								<h4 class="text-sm font-medium">Add via shadcn-svelte registry</h4>
+								<p class="text-muted-foreground text-sm">
+									You can add icons to your project using the shadcn registry. Ensure shadcn-svelte
+									is installed. To add an icon, simply copy the command from the website and run it
+									in your terminal. Icons will be added to your project in the <code
+										class="bg-muted rounded px-1.5 py-0.5 text-xs"
+										>src/lib/components/movingicons</code
+									> directory.
+								</p>
+								<div class="bg-muted/50 w-full max-w-full overflow-x-auto rounded-lg border p-4">
+									<code class="text-sm whitespace-nowrap"
+										>npx shadcn-svelte@latest add https://movingicons.dev/r/[icon-name]</code
+									>
+								</div>
+							</div>
+							<div class="space-y-4">
+								<h4 class="text-sm font-medium">Or copy from Website</h4>
+								<p class="text-muted-foreground text-sm">
+									You can download or copy icon components directly from the
+									<a href="/icons" class="text-foreground underline"> icons page </a>
+
+									and paste them into your Svelte project.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<hr class="my-16" />
+
+					<div id="usage" class="scroll-mt-24 space-y-8">
+						<h2 class="flex items-center gap-2 text-2xl font-medium">Usage</h2>
+						<p class="text-muted-foreground text-sm">Import icons as named Svelte components:</p>
+						<div class="bg-muted/50 w-full max-w-full overflow-x-auto rounded-lg border p-4">
+							<pre class="text-sm whitespace-pre"><code>{usageExample}</code></pre>
+						</div>
+						<div class="mt-3 space-y-4">
+							<p class="text-muted-foreground text-sm">
+								All icons are available as named exports in PascalCase.
+							</p>
+							<p class="text-muted-foreground text-sm">
+								Compatible with SvelteKit and Svelte projects.
+							</p>
+						</div>
+					</div>
+
+					<hr class="my-16" />
+
+					<div id="props" class="scroll-mt-24 space-y-8">
+						<h2 class="flex items-center gap-2 text-xl font-medium">Props</h2>
+						<div class="w-full max-w-full overflow-hidden overflow-x-auto rounded-lg border">
+							<table class="w-full min-w-full text-sm">
+								<thead class="bg-muted/50">
+									<tr>
+										<th class="p-3 text-left font-medium">Prop</th>
+										<th class="p-3 text-left font-medium">Type</th>
+										<th class="p-3 text-left font-medium">Default</th>
+										<th class="p-3 text-left font-medium">Description</th>
+									</tr>
+								</thead>
+								<tbody class="divide-y">
+									<tr>
+										<td class="p-3 font-mono text-xs">size</td>
+										<td class="text-muted-foreground p-3">number</td>
+										<td class="text-muted-foreground p-3">24</td>
+										<td class="text-muted-foreground p-3">Icon size in pixels</td>
+									</tr>
+									<tr>
+										<td class="p-3 font-mono text-xs">color</td>
+										<td class="text-muted-foreground p-3">string</td>
+										<td class="text-muted-foreground p-3">'currentColor'</td>
+										<td class="text-muted-foreground p-3">Stroke color (CSS color value)</td>
+									</tr>
+									<tr>
+										<td class="p-3 font-mono text-xs">strokeWidth</td>
+										<td class="text-muted-foreground p-3">number</td>
+										<td class="text-muted-foreground p-3">2</td>
+										<td class="text-muted-foreground p-3">SVG stroke width</td>
+									</tr>
+									<tr>
+										<td class="p-3 font-mono text-xs">class</td>
+										<td class="text-muted-foreground p-3">string</td>
+										<td class="text-muted-foreground p-3">—</td>
+										<td class="text-muted-foreground p-3">Optional additional CSS classes</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
 				</div>
-				<p class="text-muted-foreground text-sm">All icons licensed under the MIT license.</p>
 			</div>
-			<div class="feature-card space-y-2">
-				<div class="flex items-center gap-2">
-					<Package class="size-4 min-h-4 min-w-4" />
-					<h3 class="text-sm font-medium">Dependency Free</h3>
-				</div>
-				<p class="text-muted-foreground text-sm">Built with vanilla Svelte, JS and CSS.</p>
-			</div>
-			<div class="feature-card space-y-2">
-				<div class="flex items-center gap-2">
-					<SlidersHorizontal class="size-4 min-h-4 min-w-4" />
-					<h3 class="text-sm font-medium">Customizable</h3>
-				</div>
-				<p class="text-muted-foreground text-sm">Adjust colours, size, and stroke width.</p>
-			</div>
-			<div class="feature-card space-y-2">
-				<div class="flex items-center gap-2">
-					<Feather class="size-4 min-h-4 min-w-4" />
-					<h3 class="text-sm font-medium">Lightweight</h3>
-				</div>
-				<p class="text-muted-foreground text-sm">Simply add the icons you need to your project.</p>
-			</div>
+
+			<aside class="hidden w-48 lg:block" aria-hidden="true"></aside>
 		</div>
 	</section>
 </main>
@@ -446,11 +571,5 @@
 		opacity: 0;
 		filter: blur(6px);
 		transform: translateY(3px);
-	}
-
-	.feature-card {
-		opacity: 0;
-		filter: blur(4px);
-		transform: translateY(12px);
 	}
 </style>
