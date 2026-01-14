@@ -373,24 +373,6 @@
 		});
 
 		const lastElementDelay = heroStartTime + 0.15 + (allElements.length - 2) * 0.04;
-		const heroEndTime = lastElementDelay + 0.7;
-
-		const documentation = document.querySelector('#documentation');
-		if (documentation) {
-			animate(
-				documentation,
-				{
-					opacity: [0, 1],
-					y: [20, 0],
-					filter: ['blur(6px)', 'blur(0px)']
-				},
-				{
-					delay: heroEndTime,
-					duration: 0.4,
-					easing: [0.16, 1, 0.3, 1]
-				}
-			);
-		}
 	});
 </script>
 
@@ -685,11 +667,5 @@
 		opacity: 0;
 		filter: blur(6px);
 		transform: translateY(3px);
-	}
-
-	.documentation-section {
-		opacity: 0;
-		filter: blur(6px);
-		transform: translateY(20px);
 	}
 </style>
