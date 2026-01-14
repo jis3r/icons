@@ -1,6 +1,4 @@
 <script>
-	import { spring } from 'svelte/motion';
-
 	/**
 	 * @typedef {Object} Props
 	 * @property {string} [color]
