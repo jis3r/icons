@@ -4,7 +4,7 @@
 	 * @property {string} [color]
 	 * @property {number} [size]
 	 * @property {number} [strokeWidth]
-	 * @property {boolean} [isHovered]
+	 * @property {boolean} [animate]
 	 * @property {string} [class]
 	 */
 
@@ -13,14 +13,14 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		isHovered = false,
+		animate = false,
 		class: className = ''
 	} = $props();
 
 	function handleMouseEnter() {
-		isHovered = true;
+		animate = true;
 		setTimeout(() => {
-			isHovered = false;
+			animate = false;
 		}, 500);
 	}
 </script>
@@ -37,7 +37,7 @@
 		stroke-linecap="round"
 		stroke-linejoin="round"
 		class="bookmark-plus-icon"
-		class:animate={isHovered}
+		class:animate
 	>
 		<path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" class="bookmark-path" />
 		<path d="M9 10h6" class="horizontal" />

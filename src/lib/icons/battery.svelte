@@ -4,7 +4,7 @@
 	 * @property {string} [color]
 	 * @property {number} [size]
 	 * @property {number} [strokeWidth]
-	 * @property {boolean} [isHovered]
+	 * @property {boolean} [animate]
 	 * @property {string} [class]
 	 */
 
@@ -13,15 +13,15 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		isHovered = false,
+		animate = false,
 		class: className = ''
 	} = $props();
 
 	function handleMouseEnter() {
-		isHovered = true;
+		animate = true;
 
 		setTimeout(() => {
-			isHovered = false;
+			animate = false;
 		}, 1500);
 	}
 </script>
@@ -38,7 +38,7 @@
 		stroke-linecap="round"
 		stroke-linejoin="round"
 		class="battery-icon"
-		class:animate={isHovered}
+		class:animate
 	>
 		<rect width="16" height="10" x="2" y="7" rx="2" ry="2" class="battery" />
 		<line x1="22" x2="22" y1="11" y2="13" class="battery" />

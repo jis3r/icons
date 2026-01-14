@@ -4,7 +4,7 @@
 	 * @property {string} [color]
 	 * @property {number} [size]
 	 * @property {number} [strokeWidth]
-	 * @property {boolean} [isHovered]
+	 * @property {boolean} [animate]
 	 * @property {string} [class]
 	 */
 
@@ -13,15 +13,15 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		isHovered = false,
+		animate = false,
 		class: className = ''
 	} = $props();
 
 	function handleMouseEnter() {
-		isHovered = true;
+		animate = true;
 
 		setTimeout(() => {
-			isHovered = false;
+			animate = false;
 		}, 700);
 	}
 </script>
@@ -38,7 +38,7 @@
 		stroke-linecap="round"
 		stroke-linejoin="round"
 		class="radio-tower-icon"
-		class:animate={isHovered}
+		class:animate
 	>
 		<path d="M4.9 16.1C1 12.2 1 5.8 4.9 1.9" class="radio-level radio-line-3" />
 		<path d="M7.8 4.7a6.14 6.14 0 0 0-.8 7.5" class="radio-level radio-line-2" />

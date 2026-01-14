@@ -4,7 +4,7 @@
 	 * @property {string} [color]
 	 * @property {number} [size]
 	 * @property {number} [strokeWidth]
-	 * @property {boolean} [isHovered]
+	 * @property {boolean} [animate]
 	 * @property {string} [class]
 	 */
 
@@ -13,16 +13,16 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		isHovered = false,
+		animate = false,
 		class: className = ''
 	} = $props();
 
 	function handleMouseEnter() {
-		if (isHovered) return;
-		isHovered = true;
+		if (animate) return;
+		animate = true;
 
 		setTimeout(() => {
-			isHovered = false;
+			animate = false;
 		}, 900);
 	}
 </script>
@@ -39,7 +39,7 @@
 		stroke-linecap="round"
 		stroke-linejoin="round"
 		class="axis-3d-icon"
-		class:animate={isHovered}
+		class:animate
 	>
 		<path d="M4 4v15a1 1 0 0 0 1 1h15" class="axis-3d-path1" />
 		<g class="axis-3d-group">

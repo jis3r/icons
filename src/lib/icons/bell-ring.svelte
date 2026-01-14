@@ -4,7 +4,7 @@
 	 * @property {string} [color]
 	 * @property {number} [size]
 	 * @property {number} [strokeWidth]
-	 * @property {boolean} [isHovered]
+	 * @property {boolean} [animate]
 	 * @property {string} [class]
 	 */
 
@@ -13,15 +13,15 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		isHovered = false,
+		animate = false,
 		class: className = ''
 	} = $props();
 
 	function handleMouseEnter() {
-		if (isHovered) return;
-		isHovered = true;
+		if (animate) return;
+		animate = true;
 		setTimeout(() => {
-			isHovered = false;
+			animate = false;
 		}, 1100);
 	}
 </script>
@@ -37,15 +37,15 @@
 		stroke-width={strokeWidth}
 		stroke-linecap="round"
 		stroke-linejoin="round"
-		class:animate-svg={isHovered}
+		class:animate-svg={animate}
 	>
-		<path d="M4 2C2.8 3.7 2 5.7 2 8" class:animate-bell={isHovered} />
-		<path d="M22 8c0-2.3-.8-4.3-2-6" class:animate-bell={isHovered} />
+		<path d="M4 2C2.8 3.7 2 5.7 2 8" class:animate-bell={animate} />
+		<path d="M22 8c0-2.3-.8-4.3-2-6" class:animate-bell={animate} />
 		<path
 			d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"
-			class:animate-bell={isHovered}
+			class:animate-bell={animate}
 		/>
-		<path d="M10.268 21a2 2 0 0 0 3.464 0" class:animate-clapper={isHovered} />
+		<path d="M10.268 21a2 2 0 0 0 3.464 0" class:animate-clapper={animate} />
 	</svg>
 </div>
 

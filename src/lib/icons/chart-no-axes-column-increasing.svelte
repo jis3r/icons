@@ -4,7 +4,7 @@
 	 * @property {string} [color]
 	 * @property {number} [size]
 	 * @property {number} [strokeWidth]
-	 * @property {boolean} [isHovered]
+	 * @property {boolean} [animate]
 	 * @property {string} [class]
 	 */
 
@@ -13,14 +13,14 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		isHovered = false,
+		animate = false,
 		class: className = ''
 	} = $props();
 
 	function handleMouseEnter() {
-		isHovered = true;
+		animate = true;
 		setTimeout(() => {
-			isHovered = false;
+			animate = false;
 		}, 700);
 	}
 </script>
@@ -42,7 +42,7 @@
 		stroke-linecap="round"
 		stroke-linejoin="round"
 		class="chart-no-axes-column-increasing-icon"
-		class:animate={isHovered}
+		class:animate
 	>
 		<line x1="12" y1="20" x2="12" y2="10" class="column column-1" />
 		<line x1="18" y1="20" x2="18" y2="4" class="column column-2" />

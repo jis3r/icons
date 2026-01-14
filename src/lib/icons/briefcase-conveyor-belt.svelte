@@ -4,7 +4,7 @@
 	 * @property {string} [color]
 	 * @property {number} [size]
 	 * @property {number} [strokeWidth]
-	 * @property {boolean} [isHovered]
+	 * @property {boolean} [animate]
 	 * @property {string} [class]
 	 */
 
@@ -13,15 +13,15 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		isHovered = false,
+		animate = false,
 		class: className = ''
 	} = $props();
 
 	function handleMouseEnter() {
-		if (isHovered) return;
-		isHovered = true;
+		if (animate) return;
+		animate = true;
 		setTimeout(() => {
-			isHovered = false;
+			animate = false;
 		}, 800);
 	}
 </script>
@@ -43,7 +43,7 @@
 		stroke-linecap="round"
 		stroke-linejoin="round"
 		class="briefcase-conveyor-belt-icon"
-		class:animate={isHovered}
+		class:animate
 	>
 		<g class="briefcase-group bg-red-500">
 			<path d="M8 16V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v12" class="briefcase-body" />

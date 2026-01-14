@@ -4,7 +4,7 @@
 	 * @property {string} [color]
 	 * @property {number} [size]
 	 * @property {number} [strokeWidth]
-	 * @property {boolean} [isHovered]
+	 * @property {boolean} [animate]
 	 * @property {string} [class]
 	 */
 
@@ -13,16 +13,16 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		isHovered = false,
+		animate = false,
 		class: className = ''
 	} = $props();
 
 	function handleMouseEnter() {
-		isHovered = true;
+		animate = true;
 	}
 
 	function handleMouseLeave() {
-		isHovered = false;
+		animate = false;
 	}
 </script>
 
@@ -44,18 +44,26 @@
 		stroke-linecap="round"
 		stroke-linejoin="round"
 	>
-		<path class="line-1" class:animate={isHovered} d="M19 5l3 -3" />
-		<path class="line-2" class:animate={isHovered} d="m2 22 3-3" />
+		<g class="line-1" class:animate>
+			<path d="M19 5l3 -3" />
+		</g>
+		<g class="line-2" class:animate>
+			<path d="m2 22 3-3" />
+		</g>
 		<path
 			class="socket"
-			class:animate={isHovered}
+			class:animate
 			d="M6.3 20.3a2.4 2.4 0 0 0 3.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 0 0 0 3.4Z"
 		/>
-		<path class="spark-1" class:animate={isHovered} d="M7.5 13.5l2.5 -2.5" />
-		<path class="spark-2" class:animate={isHovered} d="M10.5 16.5l2.5 -2.5" />
+		<g class="spark-1" class:animate>
+			<path d="M7.5 13.5l2.5 -2.5" />
+		</g>
+		<g class="spark-2" class:animate>
+			<path d="M10.5 16.5l2.5 -2.5" />
+		</g>
 		<path
 			class="plug"
-			class:animate={isHovered}
+			class:animate
 			d="m12 6 6 6 2.3-2.3a2.4 2.4 0 0 0 0-3.4l-2.6-2.6a2.4 2.4 0 0 0-3.4 0Z"
 		/>
 	</svg>
@@ -75,15 +83,17 @@
 	.plug,
 	.spark-1,
 	.spark-2 {
-		transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+		transition:
+			transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+			opacity 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 	}
 
 	.line-1.animate {
-		d: path('M17 7l5 -5');
+		transform: translate(-2px, 2px);
 	}
 
 	.line-2.animate {
-		d: path('m2 22 6-6');
+		transform: translate(3px, -3px);
 	}
 
 	.socket.animate {
@@ -91,14 +101,12 @@
 	}
 
 	.plug.animate {
-		transform: translate(-3px, 3px);
+		transform: translate(-2px, 2px);
 	}
 
-	.spark-1.animate {
-		d: path('M10.43 10.57l0.10 -0.10');
-	}
-
+	.spark-1.animate,
 	.spark-2.animate {
-		d: path('M13.43 13.57l0.10 -0.10');
+		transform: translate(3px, -3px);
+		opacity: 0;
 	}
 </style>

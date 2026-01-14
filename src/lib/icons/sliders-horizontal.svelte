@@ -4,7 +4,7 @@
 	 * @property {string} [color]
 	 * @property {number} [size]
 	 * @property {number} [strokeWidth]
-	 * @property {boolean} [isHovered]
+	 * @property {boolean} [animate]
 	 * @property {string} [class]
 	 */
 
@@ -13,7 +13,7 @@
 		color = 'currentColor',
 		size = 28,
 		strokeWidth = 2,
-		isHovered = false,
+		animate = false,
 		class: className = ''
 	} = $props();
 
@@ -62,7 +62,7 @@
 	}
 
 	function handleMouseEnter() {
-		isHovered = true;
+		animate = true;
 
 		// Animate all values simultaneously
 		Promise.all([
@@ -100,7 +100,7 @@
 	}
 
 	function handleMouseLeave() {
-		isHovered = false;
+		animate = false;
 
 		// Reset all values to normal
 		Promise.all([

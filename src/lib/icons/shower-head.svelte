@@ -4,7 +4,7 @@
 	 * @property {string} [color]
 	 * @property {number} [size]
 	 * @property {number} [strokeWidth]
-	 * @property {boolean} [isHovered]
+	 * @property {boolean} [animate]
 	 * @property {string} [class]
 	 */
 
@@ -13,7 +13,7 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		isHovered = false,
+		animate = false,
 		class: className = ''
 	} = $props();
 
@@ -28,12 +28,12 @@
 	];
 
 	function handleMouseEnter() {
-		if (isHovered) return;
-		isHovered = true;
+		if (animate) return;
+		animate = true;
 	}
 
 	function handleMouseLeave() {
-		isHovered = false;
+		animate = false;
 	}
 </script>
 
@@ -61,7 +61,7 @@
 		<path d="M15 5 5 15" />
 		<g class="drops">
 			{#each dropPath as { id, d, delay }}
-				<path {id} {d} class="drop" class:animate={isHovered} style="animation-delay: {delay}s;" />
+				<path {id} {d} class="drop" class:animate style="animation-delay: {delay}s;" />
 			{/each}
 		</g>
 	</svg>

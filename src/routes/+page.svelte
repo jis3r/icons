@@ -11,7 +11,6 @@
 		Anvil,
 		Archive,
 		ArrowUp01,
-		Infinity,
 		RockingChair,
 		Axe,
 		BadgeAlert,
@@ -84,9 +83,7 @@
 		Redo,
 		Undo,
 		PrinterCheck,
-		Code,
-		Package,
-		SlidersHorizontal
+		Leaf
 	} from '@lucide/svelte';
 
 	const allIcons = [
@@ -95,7 +92,7 @@
 		Anvil,
 		Archive,
 		ArrowUp01,
-		Infinity,
+		Leaf,
 		RockingChair,
 		Axe,
 		BadgeAlert,
@@ -187,6 +184,119 @@
 	const marquee3Icons = $state(shuffledIcons.slice(chunkSize * 2, chunkSize * 3));
 	const marquee4Icons = $state(shuffledIcons.slice(chunkSize * 3));
 
+	const scriptOpen = '<' + 'script' + '>';
+	const scriptClose = '<' + '/' + 'script' + '>';
+	const usageExample = [
+		scriptOpen,
+		"	import { Activity, Star } from '@jis3r/icons';",
+		scriptClose,
+		'',
+		'<Activity size={32} color="orange" strokeWidth={2.5} />',
+		'<Star size={32} color="blue" />'
+	].join('\n');
+
+	const advancedUsageExample = [
+		scriptOpen,
+		"	import { Bell } from '@jis3r/icons';",
+		'',
+		'	let animate = $state(false);',
+		scriptClose,
+		'',
+		'<button',
+		'	onmouseenter={() => animate = true}',
+		'	onmouseleave={() => animate = false}',
+		'	class="flex items-center gap-2"',
+		'>',
+		'	<Bell size={16} animate={animate} />',
+		'	<span>Notifications</span>',
+		'</button>'
+	].join('\n');
+
+	const wrapperComponentExample = [
+		'// HoverableItem.svelte',
+		scriptOpen,
+		"	let { children, class: className = '' } = $props();",
+		'	let isHovered = $state(false);',
+		scriptClose,
+		'',
+		'<div',
+		'	class={className}',
+		'	onmouseenter={() => (isHovered = true)}',
+		'	onmouseleave={() => (isHovered = false)}',
+		'>',
+		'	{@render children(isHovered)}',
+		'</div>'
+	].join('\n');
+
+	const wrapperUsageExample = [
+		scriptOpen,
+		"	import HoverableItem from './HoverableItem.svelte';",
+		"	import { Home, Settings } from '@jis3r/icons';",
+		scriptClose,
+		'',
+		'<nav class="flex flex-col gap-2">',
+		'	<HoverableItem class="flex items-center gap-2 p-2 rounded">',
+		'		{#snippet children(isHovered)}',
+		'			<Home size={16} animate={isHovered} />',
+		'			<span>Home</span>',
+		'		{/snippet}',
+		'	</HoverableItem>',
+		'	<HoverableItem class="flex items-center gap-2 p-2 rounded">',
+		'		{#snippet children(isHovered)}',
+		'			<Settings size={16} animate={isHovered} />',
+		'			<span>Settings</span>',
+		'		{/snippet}',
+		'	</HoverableItem>',
+		'</nav>'
+	].join('\n');
+
+	const sections = [
+		{ id: 'installation', label: 'Installation' },
+		{ id: 'usage', label: 'Usage' },
+		{ id: 'props', label: 'Props' },
+		{ id: 'advanced-usage', label: 'Advanced Usage' }
+	];
+
+	let activeSection = $state('installation');
+
+	function scrollToSection(sectionId) {
+		const element = document.getElementById(sectionId);
+		if (element) {
+			element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+		}
+	}
+
+	onMount(() => {
+		const observerOptions = {
+			rootMargin: '-20% 0px -60% 0px',
+			threshold: 0
+		};
+
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					activeSection = entry.target.id;
+				}
+			});
+		}, observerOptions);
+
+		sections.forEach((section) => {
+			const element = document.getElementById(section.id);
+			if (element) {
+				observer.observe(element);
+			}
+		});
+
+		return () => {
+			sections.forEach((section) => {
+				const element = document.getElementById(section.id);
+				if (element) {
+					observer.unobserve(element);
+				}
+			});
+		};
+	});
+
 	onMount(() => {
 		if (page.url.searchParams.has('search')) {
 			const searchParam = page.url.searchParams.get('search');
@@ -262,24 +372,7 @@
 			}
 		});
 
-		const featureCards = document.querySelectorAll('.feature-card');
-		const heroCompleteTime = heroStartTime + 0.15 + (allElements.length - 1) * 0.04 + 0.7;
-
-		featureCards.forEach((card, i) => {
-			animate(
-				card,
-				{
-					opacity: [0, 1],
-					y: [12, 0],
-					filter: ['blur(4px)', 'blur(0px)']
-				},
-				{
-					delay: heroCompleteTime + 0.1 + i * 0.06,
-					duration: 0.6,
-					easing: [0.16, 1, 0.3, 1]
-				}
-			);
-		});
+		const lastElementDelay = heroStartTime + 0.15 + (allElements.length - 2) * 0.04;
 	});
 </script>
 
@@ -353,8 +446,8 @@
 			<h1
 				class="hero-title mx-auto mt-8 w-fit max-w-5xl text-center text-3xl font-semibold text-balance sm:text-4xl md:text-5xl"
 			>
-				<span>Beautifully</span> <span>crafted,</span> <span>moving</span> <span>icons.</span>
-				<span>For</span>
+				<span>The</span> <span>new</span> <span>standard</span> <span>for</span>
+				<span>animated</span> <span>icons</span> <span>in</span>
 				<span class="hero-title-final whitespace-nowrap"
 					><span
 						class="inline-block bg-linear-to-br from-[#FF3E00] to-orange-400 bg-clip-text text-transparent"
@@ -365,47 +458,175 @@
 			<p
 				class="hero-description text-muted-foreground mx-auto mt-5 w-fit max-w-2xl text-center text-sm leading-relaxed text-pretty sm:mt-4 sm:text-base"
 			>
-				A collection of animated icons for your projects. Feel free to use them, share your
-				feedback, and let's make this library awesome together!
+				Over 500+ hand-crafted, interaction-ready Lucide icons. Built natively for Svelte 5 with
+				zero dependencies. Fully tree-shakeable, MIT licensed, and completely customizable.
 			</p>
-			<div class="hero-button mx-auto mt-6 w-fit">
-				<Button variant="outline" href="/icons">Browse icons</Button>
+			<div class="hero-button mx-auto mt-6 flex w-fit gap-3">
+				<Button variant="outline" href="/icons">Browse Icons</Button>
+				<!-- <Button variant="outline" onclick={() => scrollToSection('installation')}>Docs</Button> -->
 			</div>
 		</div>
 	</section>
 
-	<section class="container mt-16 max-w-7xl md:mt-0">
-		<div
-			class="features-grid relative mx-auto grid grid-cols-1 gap-x-3 gap-y-6 min-[400px]:grid-cols-2 sm:gap-8 lg:grid-cols-4"
-		>
-			<div class="feature-card space-y-3">
-				<div class="flex items-center gap-2">
-					<Code class="size-4 min-h-4 min-w-4" />
-					<h3 class="text-sm font-medium">Open Source</h3>
+	<section id="documentation" class="documentation-section container max-w-7xl">
+		<div class="relative mx-auto grid grid-cols-1 gap-8 lg:grid-cols-[12rem_1fr_12rem] lg:gap-12">
+			<aside class="sticky top-24 hidden w-48 self-start lg:block">
+				<nav class="space-y-1">
+					{#each sections as section}
+						<button
+							onclick={() => scrollToSection(section.id)}
+							class="w-full rounded-md py-2 pr-3 text-left text-sm transition-colors {activeSection ===
+							section.id
+								? 'text-foreground font-medium'
+								: 'text-muted-foreground hover:text-foreground'}"
+						>
+							{section.label}
+						</button>
+					{/each}
+				</nav>
+			</aside>
+
+			<div class="mx-auto mt-2 w-full max-w-[592px] space-y-8">
+				<div class="space-y-6">
+					<div id="installation" class="scroll-mt-24 space-y-8">
+						<h2 class="flex items-center gap-2 text-2xl font-medium">Installation</h2>
+						<p class="text-muted-foreground text-sm">
+							There are three ways to install icons into your project:
+						</p>
+						<div class="space-y-4">
+							<h4 class="text-sm font-medium">Install via npm</h4>
+							<div class="bg-muted/50 w-full max-w-full overflow-x-auto rounded-lg border p-4">
+								<code class="text-sm whitespace-nowrap">npm i @jis3r/icons</code>
+							</div>
+						</div>
+						<div class="space-y-4">
+							<h4 class="text-sm font-medium">Add via shadcn-svelte registry</h4>
+							<p class="text-muted-foreground text-sm">
+								You can add icons to your project using the shadcn registry. Ensure shadcn-svelte is
+								installed. To add an icon, simply copy the command from the website and run it in
+								your terminal. Icons will be added to your project in the <code
+									class="bg-muted rounded px-1.5 py-0.5 text-xs"
+									>src/lib/components/movingicons</code
+								> directory.
+							</p>
+							<div class="bg-muted/50 w-full max-w-full overflow-x-auto rounded-lg border p-4">
+								<code class="text-sm whitespace-nowrap"
+									>npx shadcn-svelte@latest add https://movingicons.dev/r/[icon-name]</code
+								>
+							</div>
+						</div>
+						<div class="space-y-4">
+							<h4 class="text-sm font-medium">Copy from website</h4>
+							<p class="text-muted-foreground text-sm">
+								You can download or copy icon components directly from the
+								<a href="/icons" class="text-foreground underline"> icons page </a>
+
+								and paste them into your Svelte project.
+							</p>
+						</div>
+					</div>
+
+					<hr class="my-16" />
+
+					<div id="usage" class="scroll-mt-24 space-y-8">
+						<h2 class="flex items-center gap-2 text-2xl font-medium">Usage</h2>
+						<p class="text-muted-foreground text-sm">Import icons as named Svelte components:</p>
+						<div class="bg-muted/50 w-full max-w-full overflow-x-auto rounded-lg border p-4">
+							<pre class="text-sm whitespace-pre"><code>{usageExample}</code></pre>
+						</div>
+						<div class="mt-3 space-y-4">
+							<p class="text-muted-foreground text-sm">
+								All icons are available as named exports in PascalCase and are identical to the
+								respective Lucide icon names.
+							</p>
+							<p class="text-muted-foreground text-sm">
+								Compatible with SvelteKit and Svelte projects.
+							</p>
+						</div>
+					</div>
+
+					<hr class="my-16" />
+
+					<div id="props" class="scroll-mt-24 space-y-8">
+						<h2 class="flex items-center gap-2 text-xl font-medium">Props</h2>
+						<div class="w-full max-w-full overflow-hidden overflow-x-auto rounded-lg border">
+							<table class="w-full min-w-full text-sm">
+								<thead class="bg-muted/50">
+									<tr>
+										<th class="p-3 text-left font-medium">Prop</th>
+										<th class="p-3 text-left font-medium">Type</th>
+										<th class="p-3 text-left font-medium">Default</th>
+										<th class="p-3 text-left font-medium">Description</th>
+									</tr>
+								</thead>
+								<tbody class="divide-y">
+									<tr>
+										<td class="p-3 font-mono text-xs">size</td>
+										<td class="text-muted-foreground p-3">number</td>
+										<td class="text-muted-foreground p-3">24</td>
+										<td class="text-muted-foreground p-3">Icon size in pixels</td>
+									</tr>
+									<tr>
+										<td class="p-3 font-mono text-xs">color</td>
+										<td class="text-muted-foreground p-3">string</td>
+										<td class="text-muted-foreground p-3">'currentColor'</td>
+										<td class="text-muted-foreground p-3">Stroke color (CSS color value)</td>
+									</tr>
+									<tr>
+										<td class="p-3 font-mono text-xs">strokeWidth</td>
+										<td class="text-muted-foreground p-3">number</td>
+										<td class="text-muted-foreground p-3">2</td>
+										<td class="text-muted-foreground p-3">SVG stroke width</td>
+									</tr>
+									<tr>
+										<td class="p-3 font-mono text-xs">class</td>
+										<td class="text-muted-foreground p-3">string</td>
+										<td class="text-muted-foreground p-3">—</td>
+										<td class="text-muted-foreground p-3">Optional additional CSS classes</td>
+									</tr>
+									<tr>
+										<td class="p-3 font-mono text-xs">animate</td>
+										<td class="text-muted-foreground p-3">boolean</td>
+										<td class="text-muted-foreground p-3">false</td>
+										<td class="text-muted-foreground p-3">Controls icon animation state</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<hr class="my-16" />
+
+					<div id="advanced-usage" class="scroll-mt-24 space-y-8">
+						<h2 class="flex items-center gap-2 text-xl font-medium">Advanced Usage</h2>
+						<p class="text-muted-foreground text-sm">
+							Control icon animations from parent elements by binding the <code
+								class="bg-muted rounded px-1.5 py-0.5 text-xs">animate</code
+							>
+							prop to your own hover state:
+						</p>
+						<div class="bg-muted/50 w-full max-w-full overflow-x-auto rounded-lg border p-4">
+							<pre class="text-sm whitespace-pre"><code>{advancedUsageExample}</code></pre>
+						</div>
+						<p class="text-muted-foreground text-sm">
+							When building navigation or sidebar components, it might come in handy to create a
+							reusable wrapper component. With snippets, you can pass the hover state to the
+							children, allowing icons to animate on hover.
+						</p>
+						<div class="bg-muted/50 w-full max-w-full overflow-x-auto rounded-lg border p-4">
+							<pre class="text-sm whitespace-pre"><code>{wrapperComponentExample}</code></pre>
+						</div>
+						<p class="text-muted-foreground text-sm">
+							Use the wrapper component in your navigation:
+						</p>
+						<div class="bg-muted/50 w-full max-w-full overflow-x-auto rounded-lg border p-4">
+							<pre class="text-sm whitespace-pre"><code>{wrapperUsageExample}</code></pre>
+						</div>
+					</div>
 				</div>
-				<p class="text-muted-foreground text-sm">All icons licensed under the MIT license.</p>
 			</div>
-			<div class="feature-card space-y-2">
-				<div class="flex items-center gap-2">
-					<Package class="size-4 min-h-4 min-w-4" />
-					<h3 class="text-sm font-medium">Dependency Free</h3>
-				</div>
-				<p class="text-muted-foreground text-sm">Built with vanilla Svelte, JS and CSS.</p>
-			</div>
-			<div class="feature-card space-y-2">
-				<div class="flex items-center gap-2">
-					<SlidersHorizontal class="size-4 min-h-4 min-w-4" />
-					<h3 class="text-sm font-medium">Customizable</h3>
-				</div>
-				<p class="text-muted-foreground text-sm">Adjust colours, size, and stroke width.</p>
-			</div>
-			<div class="feature-card space-y-2">
-				<div class="flex items-center gap-2">
-					<Feather class="size-4 min-h-4 min-w-4" />
-					<h3 class="text-sm font-medium">Lightweight</h3>
-				</div>
-				<p class="text-muted-foreground text-sm">Simply add the icons you need to your project.</p>
-			</div>
+
+			<aside class="hidden w-48 lg:block" aria-hidden="true"></aside>
 		</div>
 	</section>
 </main>
@@ -446,11 +667,5 @@
 		opacity: 0;
 		filter: blur(6px);
 		transform: translateY(3px);
-	}
-
-	.feature-card {
-		opacity: 0;
-		filter: blur(4px);
-		transform: translateY(12px);
 	}
 </style>

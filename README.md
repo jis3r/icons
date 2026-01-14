@@ -9,23 +9,25 @@
 
 ## Installation
 
-### 1. Install via npm
+There are three ways to install icons into your project:
+
+### Install via npm
 
 ```bash
 npm i @jis3r/icons
 ```
 
-### 2. Add via shadcn-svelte registry
+### Add via shadcn-svelte registry
 
-You can add icons to your project using the [shadcn registry](https://www.shadcn-svelte.com). Ensure shadcn-svelte is installed. To add an icon, simply copy the command from the website and run it in your terminal. Icons will be added to your project in the `src/lib/components/movingicons` directory.
+You can add icons to your project using the shadcn registry. Ensure shadcn-svelte is installed. To add an icon, simply copy the command from the website and run it in your terminal. Icons will be added to your project in the `src/lib/components/movingicons` directory.
 
 ```bash
 npx shadcn-svelte@latest add https://movingicons.dev/r/[icon-name]
 ```
 
-### 3. Copy from Website
+### Copy from website
 
-You can download or copy icon components directly from [https://movingicons.dev](https://movingicons.dev) and paste them into your Svelte project.
+You can download or copy icon components directly from the [icons page](https://movingicons.dev/icons) and paste them into your Svelte project.
 
 ## Usage
 
@@ -40,15 +42,81 @@ Import icons as named Svelte components:
 <Star size={32} color="blue" />
 ```
 
-- All icons are available as named exports in PascalCase.
+- All icons are available as named exports in PascalCase and are identical to the respective Lucide icon names.
 - Compatible with SvelteKit and Svelte projects.
 
 ## Props
 
-- `size` (number, default: 24)
-- `color` (string, default: 'currentColor')
-- `strokeWidth` (number, default: 2)
-- `class` (string, optional)
+| Prop | Type | Default | Description |
+|------|------|---------|-------------|
+| `size` | number | 24 | Icon size in pixels |
+| `color` | string | 'currentColor' | Stroke color (CSS color value) |
+| `strokeWidth` | number | 2 | SVG stroke width |
+| `class` | string | — | Optional additional CSS classes |
+| `animate` | boolean | false | Controls icon animation state |
+
+## Advanced Usage
+
+Control icon animations from parent elements by binding the `animate` prop to your own hover state:
+
+```svelte
+<script>
+	import { Bell } from '@jis3r/icons';
+
+	let animate = $state(false);
+</script>
+
+<button
+	onmouseenter={() => animate = true}
+	onmouseleave={() => animate = false}
+	class="flex items-center gap-2"
+>
+	<Bell size={16} animate={animate} />
+	<span>Notifications</span>
+</button>
+```
+
+When building navigation or sidebar components, it might come in handy to create a reusable wrapper component. With snippets, you can pass the hover state to the children, allowing icons to animate on hover:
+
+```svelte
+<!-- HoverableItem.svelte -->
+<script>
+	let { children, class: className = '' } = $props();
+	let isHovered = $state(false);
+</script>
+
+<div
+	class={className}
+	onmouseenter={() => (isHovered = true)}
+	onmouseleave={() => (isHovered = false)}
+>
+	{@render children(isHovered)}
+</div>
+```
+
+Use the wrapper component in your navigation:
+
+```svelte
+<script>
+	import HoverableItem from './HoverableItem.svelte';
+	import { Home, Settings } from '@jis3r/icons';
+</script>
+
+<nav class="flex flex-col gap-2">
+	<HoverableItem class="flex items-center gap-2 p-2 rounded">
+		{#snippet children(isHovered)}
+			<Home size={16} animate={isHovered} />
+			<span>Home</span>
+		{/snippet}
+	</HoverableItem>
+	<HoverableItem class="flex items-center gap-2 p-2 rounded">
+		{#snippet children(isHovered)}
+			<Settings size={16} animate={isHovered} />
+			<span>Settings</span>
+		{/snippet}
+	</HoverableItem>
+</nav>
+```
 
 ## Contributing
 

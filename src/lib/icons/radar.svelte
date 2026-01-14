@@ -4,7 +4,7 @@
 	 * @property {string} [color]
 	 * @property {number} [size]
 	 * @property {number} [strokeWidth]
-	 * @property {boolean} [isHovered]
+	 * @property {boolean} [animate]
 	 * @property {string} [class]
 	 */
 
@@ -13,15 +13,15 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		isHovered = false,
+		animate = false,
 		class: className = ''
 	} = $props();
 
 	function handleMouseEnter() {
-		isHovered = true;
+		animate = true;
 
 		setTimeout(() => {
-			isHovered = false;
+			animate = false;
 		}, 2000);
 	}
 </script>
@@ -45,7 +45,7 @@
 		<path d="M12 18h.01" />
 		<path d="M17.99 11.66A6 6 0 0 1 15.77 16.67" />
 		<circle cx="12" cy="12" r="2" />
-		<path d="m13.41 10.59 5.66-5.66" class="radar-icon" class:animate={isHovered} />
+		<path d="m13.41 10.59 5.66-5.66" class="radar-icon" class:animate />
 	</svg>
 </div>
 

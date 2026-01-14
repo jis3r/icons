@@ -4,7 +4,7 @@
 	 * @property {string} [color]
 	 * @property {number} [size]
 	 * @property {number} [strokeWidth]
-	 * @property {boolean} [isHovered]
+	 * @property {boolean} [animate]
 	 * @property {string} [class]
 	 */
 
@@ -13,16 +13,16 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		isHovered = false,
+		animate = false,
 		class: className = ''
 	} = $props();
 
 	function handleMouseEnter() {
-		isHovered = true;
+		animate = true;
 	}
 
 	function handleMouseLeave() {
-		isHovered = false;
+		animate = false;
 	}
 </script>
 
@@ -44,10 +44,10 @@
 		stroke-linecap="round"
 		stroke-linejoin="round"
 	>
-		<path d="m15 15 6 6m-6-6v4.8m0-4.8h4.8" class:animate3={isHovered} />
-		<path d="M9 19.8V15m0 0H4.2M9 15l-6 6" class:animate2={isHovered} />
-		<path d="M15 4.2V9m0 0h4.8M15 9l6-6" class:animate1={isHovered} />
-		<path d="M9 4.2V9m0 0H4.2M9 9 3 3" class:animate0={isHovered} />
+		<path d="m15 15 6 6m-6-6v4.8m0-4.8h4.8" class:animate3={animate} />
+		<path d="M9 19.8V15m0 0H4.2M9 15l-6 6" class:animate2={animate} />
+		<path d="M15 4.2V9m0 0h4.8M15 9l6-6" class:animate1={animate} />
+		<path d="M9 4.2V9m0 0H4.2M9 9 3 3" class:animate0={animate} />
 	</svg>
 </div>
 

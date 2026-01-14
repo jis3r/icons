@@ -4,7 +4,7 @@
 	 * @property {string} [color]
 	 * @property {number} [size]
 	 * @property {number} [strokeWidth]
-	 * @property {boolean} [isHovered]
+	 * @property {boolean} [animate]
 	 * @property {string} [class]
 	 */
 
@@ -13,7 +13,7 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		isHovered = false,
+		animate = false,
 		class: className = ''
 	} = $props();
 
@@ -27,10 +27,10 @@
 	];
 
 	function handleMouseEnter() {
-		isHovered = true;
+		animate = true;
 
 		setTimeout(() => {
-			isHovered = false;
+			animate = false;
 		}, 1400);
 	}
 </script>
@@ -59,7 +59,7 @@
 				fill={color}
 				stroke="none"
 				class="dot"
-				class:animate={isHovered}
+				class:animate
 				style="animation-delay: {index * 0.17}s"
 			/>
 		{/each}
