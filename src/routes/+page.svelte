@@ -195,10 +195,28 @@
 		'<Star size={32} color="blue" />'
 	].join('\n');
 
+	const advancedUsageExample = [
+		scriptOpen,
+		"	import { Bell } from '@jis3r/icons';",
+		'',
+		'	let isHovered = $state(false);',
+		scriptClose,
+		'',
+		'<button',
+		'	onmouseenter={() => isHovered = true}',
+		'	onmouseleave={() => isHovered = false}',
+		'	class="flex items-center gap-2"',
+		'>',
+		'	<Bell size={16} isHovered={isHovered} />',
+		'	<span>Notifications</span>',
+		'</button>'
+	].join('\n');
+
 	const sections = [
 		{ id: 'installation', label: 'Installation' },
 		{ id: 'usage', label: 'Usage' },
-		{ id: 'props', label: 'Props' }
+		{ id: 'props', label: 'Props' },
+		{ id: 'advanced-usage', label: 'Advanced Usage' }
 	];
 
 	let activeSection = $state('installation');
@@ -315,6 +333,26 @@
 				);
 			}
 		});
+
+		const lastElementDelay = heroStartTime + 0.15 + (allElements.length - 2) * 0.04;
+		const heroEndTime = lastElementDelay + 0.7;
+
+		const documentation = document.querySelector('#documentation');
+		if (documentation) {
+			animate(
+				documentation,
+				{
+					opacity: [0, 1],
+					y: [20, 0],
+					filter: ['blur(6px)', 'blur(0px)']
+				},
+				{
+					delay: heroEndTime,
+					duration: 0.4,
+					easing: [0.16, 1, 0.3, 1]
+				}
+			);
+		}
 	});
 </script>
 
@@ -400,8 +438,8 @@
 			<p
 				class="hero-description text-muted-foreground mx-auto mt-5 w-fit max-w-2xl text-center text-sm leading-relaxed text-pretty sm:mt-4 sm:text-base"
 			>
-				Over 500+ hand-crafted, interaction-ready icons. Native Svelte 5 support. Zero dependencies.
-				The fluidity of Motion, with the simplicity of Svelte.
+				Over 500+ hand-crafted, interaction-ready icons. Built natively for Svelte 5 with zero
+				dependencies. Fully tree-shakeable, MIT licensed, and completely customizable.
 			</p>
 			<div class="hero-button mx-auto mt-6 flex w-fit gap-3">
 				<Button variant="outline" href="/icons">Browse Icons</Button>
@@ -410,7 +448,7 @@
 		</div>
 	</section>
 
-	<section id="documentation" class="container max-w-7xl">
+	<section id="documentation" class="documentation-section container max-w-7xl">
 		<div class="relative mx-auto grid grid-cols-1 gap-8 lg:grid-cols-[12rem_1fr_12rem] lg:gap-12">
 			<aside class="sticky top-24 hidden w-48 self-start lg:block">
 				<nav class="space-y-1">
@@ -523,8 +561,29 @@
 										<td class="text-muted-foreground p-3">—</td>
 										<td class="text-muted-foreground p-3">Optional additional CSS classes</td>
 									</tr>
+									<tr>
+										<td class="p-3 font-mono text-xs">isHovered</td>
+										<td class="text-muted-foreground p-3">boolean</td>
+										<td class="text-muted-foreground p-3">false</td>
+										<td class="text-muted-foreground p-3">Controls icon animation state</td>
+									</tr>
 								</tbody>
 							</table>
+						</div>
+					</div>
+
+					<hr class="my-16" />
+
+					<div id="advanced-usage" class="scroll-mt-24 space-y-8">
+						<h2 class="flex items-center gap-2 text-xl font-medium">Advanced Usage</h2>
+						<p class="text-muted-foreground text-sm">
+							Control icon animations from parent elements by binding the <code
+								class="bg-muted rounded px-1.5 py-0.5 text-xs">isHovered</code
+							>
+							prop to your own hover state:
+						</p>
+						<div class="bg-muted/50 w-full max-w-full overflow-x-auto rounded-lg border p-4">
+							<pre class="text-sm whitespace-pre"><code>{advancedUsageExample}</code></pre>
 						</div>
 					</div>
 				</div>
@@ -571,5 +630,11 @@
 		opacity: 0;
 		filter: blur(6px);
 		transform: translateY(3px);
+	}
+
+	.documentation-section {
+		opacity: 0;
+		filter: blur(6px);
+		transform: translateY(20px);
 	}
 </style>
