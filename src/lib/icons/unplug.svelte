@@ -101,7 +101,7 @@
 	}
 
 	.plug.animate {
-		transform: translate(-3px, 3px);
+		transform: translate(-2px, 2px);
 	}
 
 	.spark-1.animate,
