@@ -212,6 +212,44 @@
 		'</button>'
 	].join('\n');
 
+	const wrapperComponentExample = [
+		'// HoverableItem.svelte',
+		scriptOpen,
+		"	let { children, class: className = '' } = $props();",
+		'	let isHovered = $state(false);',
+		scriptClose,
+		'',
+		'<div',
+		'	class={className}',
+		'	onmouseenter={() => (isHovered = true)}',
+		'	onmouseleave={() => (isHovered = false)}',
+		'>',
+		'	{@render children(isHovered)}',
+		'</div>'
+	].join('\n');
+
+	const wrapperUsageExample = [
+		scriptOpen,
+		"	import HoverableItem from './HoverableItem.svelte';",
+		"	import { Home, Settings } from '@jis3r/icons';",
+		scriptClose,
+		'',
+		'<nav class="flex flex-col gap-2">',
+		'	<HoverableItem class="flex items-center gap-2 p-2 rounded">',
+		'		{#snippet children(isHovered)}',
+		'			<Home size={16} animate={isHovered} />',
+		'			<span>Home</span>',
+		'		{/snippet}',
+		'	</HoverableItem>',
+		'	<HoverableItem class="flex items-center gap-2 p-2 rounded">',
+		'		{#snippet children(isHovered)}',
+		'			<Settings size={16} animate={isHovered} />',
+		'			<span>Settings</span>',
+		'		{/snippet}',
+		'	</HoverableItem>',
+		'</nav>'
+	].join('\n');
+
 	const sections = [
 		{ id: 'installation', label: 'Installation' },
 		{ id: 'usage', label: 'Usage' },
@@ -438,8 +476,8 @@
 			<p
 				class="hero-description text-muted-foreground mx-auto mt-5 w-fit max-w-2xl text-center text-sm leading-relaxed text-pretty sm:mt-4 sm:text-base"
 			>
-				Over 500+ hand-crafted, interaction-ready icons. Built natively for Svelte 5 with zero
-				dependencies. Fully tree-shakeable, MIT licensed, and completely customizable.
+				Over 500+ hand-crafted, interaction-ready Lucide icons. Built natively for Svelte 5 with
+				zero dependencies. Fully tree-shakeable, MIT licensed, and completely customizable.
 			</p>
 			<div class="hero-button mx-auto mt-6 flex w-fit gap-3">
 				<Button variant="outline" href="/icons">Browse Icons</Button>
@@ -455,7 +493,7 @@
 					{#each sections as section}
 						<button
 							onclick={() => scrollToSection(section.id)}
-							class="w-full rounded-md px-3 py-2 text-left text-sm transition-colors {activeSection ===
+							class="w-full rounded-md py-2 pr-3 text-left text-sm transition-colors {activeSection ===
 							section.id
 								? 'text-foreground font-medium'
 								: 'text-muted-foreground hover:text-foreground'}"
@@ -468,39 +506,41 @@
 
 			<div class="mx-auto mt-2 w-full max-w-[592px] space-y-8">
 				<div class="space-y-6">
-					<div id="installation" class="scroll-mt-24 space-y-3">
-						<div class="space-y-8">
-							<div class="space-y-4">
-								<h4 class="text-sm font-medium">Install via npm</h4>
-								<div class="bg-muted/50 w-full max-w-full overflow-x-auto rounded-lg border p-4">
-									<code class="text-sm whitespace-nowrap">npm i @jis3r/icons</code>
-								</div>
+					<div id="installation" class="scroll-mt-24 space-y-8">
+						<h2 class="flex items-center gap-2 text-2xl font-medium">Installation</h2>
+						<p class="text-muted-foreground text-sm">
+							There are three ways to install icons into your project:
+						</p>
+						<div class="space-y-4">
+							<h4 class="text-sm font-medium">Install via npm</h4>
+							<div class="bg-muted/50 w-full max-w-full overflow-x-auto rounded-lg border p-4">
+								<code class="text-sm whitespace-nowrap">npm i @jis3r/icons</code>
 							</div>
-							<div class="space-y-4">
-								<h4 class="text-sm font-medium">Add via shadcn-svelte registry</h4>
-								<p class="text-muted-foreground text-sm">
-									You can add icons to your project using the shadcn registry. Ensure shadcn-svelte
-									is installed. To add an icon, simply copy the command from the website and run it
-									in your terminal. Icons will be added to your project in the <code
-										class="bg-muted rounded px-1.5 py-0.5 text-xs"
-										>src/lib/components/movingicons</code
-									> directory.
-								</p>
-								<div class="bg-muted/50 w-full max-w-full overflow-x-auto rounded-lg border p-4">
-									<code class="text-sm whitespace-nowrap"
-										>npx shadcn-svelte@latest add https://movingicons.dev/r/[icon-name]</code
-									>
-								</div>
+						</div>
+						<div class="space-y-4">
+							<h4 class="text-sm font-medium">Add via shadcn-svelte registry</h4>
+							<p class="text-muted-foreground text-sm">
+								You can add icons to your project using the shadcn registry. Ensure shadcn-svelte is
+								installed. To add an icon, simply copy the command from the website and run it in
+								your terminal. Icons will be added to your project in the <code
+									class="bg-muted rounded px-1.5 py-0.5 text-xs"
+									>src/lib/components/movingicons</code
+								> directory.
+							</p>
+							<div class="bg-muted/50 w-full max-w-full overflow-x-auto rounded-lg border p-4">
+								<code class="text-sm whitespace-nowrap"
+									>npx shadcn-svelte@latest add https://movingicons.dev/r/[icon-name]</code
+								>
 							</div>
-							<div class="space-y-4">
-								<h4 class="text-sm font-medium">Or copy from Website</h4>
-								<p class="text-muted-foreground text-sm">
-									You can download or copy icon components directly from the
-									<a href="/icons" class="text-foreground underline"> icons page </a>
+						</div>
+						<div class="space-y-4">
+							<h4 class="text-sm font-medium">Copy from website</h4>
+							<p class="text-muted-foreground text-sm">
+								You can download or copy icon components directly from the
+								<a href="/icons" class="text-foreground underline"> icons page </a>
 
-									and paste them into your Svelte project.
-								</p>
-							</div>
+								and paste them into your Svelte project.
+							</p>
 						</div>
 					</div>
 
@@ -514,7 +554,8 @@
 						</div>
 						<div class="mt-3 space-y-4">
 							<p class="text-muted-foreground text-sm">
-								All icons are available as named exports in PascalCase.
+								All icons are available as named exports in PascalCase and are identical to the
+								respective Lucide icon names.
 							</p>
 							<p class="text-muted-foreground text-sm">
 								Compatible with SvelteKit and Svelte projects.
@@ -584,6 +625,20 @@
 						</p>
 						<div class="bg-muted/50 w-full max-w-full overflow-x-auto rounded-lg border p-4">
 							<pre class="text-sm whitespace-pre"><code>{advancedUsageExample}</code></pre>
+						</div>
+						<p class="text-muted-foreground text-sm">
+							When building navigation or sidebar components, it might come in handy to create a
+							reusable wrapper component. With snippets, you can pass the hover state to the
+							children, allowing icons to animate on hover.
+						</p>
+						<div class="bg-muted/50 w-full max-w-full overflow-x-auto rounded-lg border p-4">
+							<pre class="text-sm whitespace-pre"><code>{wrapperComponentExample}</code></pre>
+						</div>
+						<p class="text-muted-foreground text-sm">
+							Use the wrapper component in your navigation:
+						</p>
+						<div class="bg-muted/50 w-full max-w-full overflow-x-auto rounded-lg border p-4">
+							<pre class="text-sm whitespace-pre"><code>{wrapperUsageExample}</code></pre>
 						</div>
 					</div>
 				</div>
