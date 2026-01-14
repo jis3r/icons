@@ -4,7 +4,7 @@
 	 * @property {string} [color]
 	 * @property {number} [size]
 	 * @property {number} [strokeWidth]
-	 * @property {boolean} [isHovered]
+	 * @property {boolean} [animate]
 	 * @property {string} [class]
 	 */
 
@@ -13,7 +13,7 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		isHovered = false,
+		animate = false,
 		class: className = ''
 	} = $props();
 
@@ -46,11 +46,11 @@
 	}
 
 	function handleMouseEnter() {
-		isHovered = true;
+		animate = true;
 
 		animateEyes(13, 15, 14, 14, 250, 200).then(() => {
 			animateEyes(14, 14, 13, 15, 250).then(() => {
-				isHovered = false;
+				animate = false;
 			});
 		});
 	}
@@ -68,7 +68,7 @@
 		stroke-linecap="round"
 		stroke-linejoin="round"
 		class="bot-icon"
-		class:animate={isHovered}
+		class:animate
 	>
 		<path d="M12 8V4H8" />
 		<rect width="16" height="12" x="4" y="8" rx="2" />

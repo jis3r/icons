@@ -3,13 +3,14 @@
 	"name": "rotate-cw",
 	"title": "rotate-cw",
 	"type": "registry:component",
-	"author": "jis3r <jis3r@protonmail.com>",
 	"description": "The animated rotate-cw icon component.",
+	"author": "jis3r <jis3r@protonmail.com>",
 	"files": [
 		{
-			"content": "<script>\n\t/**\n\t * @typedef {Object} Props\n\t * @property {string} [color]\n\t * @property {number} [size]\n\t * @property {number} [strokeWidth]\n\t * @property {boolean} [isHovered]\n\t * @property {string} [class]\n\t */\n\n\t/** @type {Props} */\n\tlet {\n\t\tcolor = 'currentColor',\n\t\tsize = 24,\n\t\tstrokeWidth = 2,\n\t\tisHovered = false,\n\t\tclass: className = ''\n\t} = $props();\n\n\tfunction handleMouseEnter() {\n\t\tisHovered = true;\n\t}\n\n\tfunction handleMouseLeave() {\n\t\tisHovered = false;\n\t}\n</script>\n\n<div\n\tclass={className}\n\taria-label=\"rotate-cw\"\n\trole=\"img\"\n\tonmouseenter={handleMouseEnter}\n\tonmouseleave={handleMouseLeave}\n>\n\t<svg\n\t\txmlns=\"http://www.w3.org/2000/svg\"\n\t\twidth={size}\n\t\theight={size}\n\t\tviewBox=\"0 0 24 24\"\n\t\tfill=\"none\"\n\t\tstroke={color}\n\t\tstroke-width={strokeWidth}\n\t\tstroke-linecap=\"round\"\n\t\tstroke-linejoin=\"round\"\n\t\tclass=\"rotate-cw-icon\"\n\t\tclass:animate={isHovered}\n\t>\n\t\t<path d=\"M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8\" />\n\t\t<path d=\"M21 3v5h-5\" />\n\t</svg>\n</div>\n\n<style>\n\tdiv {\n\t\tdisplay: inline-block;\n\t}\n\t.rotate-cw-icon {\n\t\ttransition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);\n\t\ttransform-origin: center;\n\t}\n\t.rotate-cw-icon.animate {\n\t\ttransform: rotate(50deg);\n\t}\n\n\tsvg {\n\t\toverflow: visible;\n\t}\n</style>\n",
 			"type": "registry:component",
-			"target": "~/src/lib/components/movingicons/rotate-cw.svelte"
+			"target": "~/src/lib/components/movingicons/rotate-cw.svelte",
+			"content": "<script>\n\t/**\n\t * @typedef {Object} Props\n\t * @property {string} [color]\n\t * @property {number} [size]\n\t * @property {number} [strokeWidth]\n\t * @property {boolean} [animate]\n\t * @property {string} [class]\n\t */\n\n\t/** @type {Props} */\n\tlet {\n\t\tcolor = 'currentColor',\n\t\tsize = 24,\n\t\tstrokeWidth = 2,\n\t\tanimate = false,\n\t\tclass: className = ''\n\t} = $props();\n\n\tfunction handleMouseEnter() {\n\t\tanimate = true;\n\t}\n\n\tfunction handleMouseLeave() {\n\t\tanimate = false;\n\t}\n</script>\n\n<div\n\tclass={className}\n\taria-label=\"rotate-cw\"\n\trole=\"img\"\n\tonmouseenter={handleMouseEnter}\n\tonmouseleave={handleMouseLeave}\n>\n\t<svg\n\t\txmlns=\"http://www.w3.org/2000/svg\"\n\t\twidth={size}\n\t\theight={size}\n\t\tviewBox=\"0 0 24 24\"\n\t\tfill=\"none\"\n\t\tstroke={color}\n\t\tstroke-width={strokeWidth}\n\t\tstroke-linecap=\"round\"\n\t\tstroke-linejoin=\"round\"\n\t\tclass=\"rotate-cw-icon\"\n\t\tclass:animate={animate}\n\t>\n\t\t<path d=\"M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8\" />\n\t\t<path d=\"M21 3v5h-5\" />\n\t</svg>\n</div>\n\n<style>\n\tdiv {\n\t\tdisplay: inline-block;\n\t}\n\t.rotate-cw-icon {\n\t\ttransition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);\n\t\ttransform-origin: center;\n\t}\n\t.rotate-cw-icon.animate {\n\t\ttransform: rotate(50deg);\n\t}\n\n\tsvg {\n\t\toverflow: visible;\n\t}\n</style>\n"
 		}
-	]
+	],
+	"registryDependencies": []
 }

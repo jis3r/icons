@@ -199,15 +199,15 @@
 		scriptOpen,
 		"	import { Bell } from '@jis3r/icons';",
 		'',
-		'	let isHovered = $state(false);',
+		'	let animate = $state(false);',
 		scriptClose,
 		'',
 		'<button',
-		'	onmouseenter={() => isHovered = true}',
-		'	onmouseleave={() => isHovered = false}',
+		'	onmouseenter={() => animate = true}',
+		'	onmouseleave={() => animate = false}',
 		'	class="flex items-center gap-2"',
 		'>',
-		'	<Bell size={16} isHovered={isHovered} />',
+		'	<Bell size={16} animate={animate} />',
 		'	<span>Notifications</span>',
 		'</button>'
 	].join('\n');
@@ -562,7 +562,7 @@
 										<td class="text-muted-foreground p-3">Optional additional CSS classes</td>
 									</tr>
 									<tr>
-										<td class="p-3 font-mono text-xs">isHovered</td>
+										<td class="p-3 font-mono text-xs">animate</td>
 										<td class="text-muted-foreground p-3">boolean</td>
 										<td class="text-muted-foreground p-3">false</td>
 										<td class="text-muted-foreground p-3">Controls icon animation state</td>
@@ -578,7 +578,7 @@
 						<h2 class="flex items-center gap-2 text-xl font-medium">Advanced Usage</h2>
 						<p class="text-muted-foreground text-sm">
 							Control icon animations from parent elements by binding the <code
-								class="bg-muted rounded px-1.5 py-0.5 text-xs">isHovered</code
+								class="bg-muted rounded px-1.5 py-0.5 text-xs">animate</code
 							>
 							prop to your own hover state:
 						</p>

@@ -4,7 +4,7 @@
 	 * @property {string} [color]
 	 * @property {number} [size]
 	 * @property {number} [strokeWidth]
-	 * @property {boolean} [isHovered]
+	 * @property {boolean} [animate]
 	 * @property {string} [class]
 	 */
 
@@ -13,7 +13,7 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		isHovered = false,
+		animate = false,
 		class: className = ''
 	} = $props();
 
@@ -110,7 +110,7 @@
 		};
 	}
 
-	function animate(timestamp) {
+	function animateFrame(timestamp) {
 		if (!startTime) startTime = timestamp;
 		const elapsed = (timestamp - startTime) / 1000;
 
@@ -157,7 +157,7 @@
 				(originalPositions.line6.y2 - startPositions.line6.y2) * easedProgress;
 
 			if (progress < 1) {
-				animationFrameId = requestAnimationFrame(animate);
+				animationFrameId = requestAnimationFrame(animateFrame);
 			} else {
 				line1Y1 = originalPositions.line1.y1;
 				line1Y2 = originalPositions.line1.y2;
@@ -203,21 +203,21 @@
 			line6Y1 = line6.y1;
 			line6Y2 = line6.y2;
 
-			if (isHovered) {
-				animationFrameId = requestAnimationFrame(animate);
+			if (animate) {
+				animationFrameId = requestAnimationFrame(animateFrame);
 			}
 		}
 	}
 
 	function handleMouseEnter() {
-		isHovered = true;
+		animate = true;
 		isAnimatingBack = false;
 		startTime = null;
-		animationFrameId = requestAnimationFrame(animate);
+		animationFrameId = requestAnimationFrame(animateFrame);
 	}
 
 	function handleMouseLeave() {
-		isHovered = false;
+		animate = false;
 		startPositions = {
 			line1: { y1: line1Y1, y2: line1Y2 },
 			line2: { y1: line2Y1, y2: line2Y2 },
@@ -229,7 +229,7 @@
 		isAnimatingBack = true;
 		startTime = null;
 		if (!animationFrameId) {
-			animationFrameId = requestAnimationFrame(animate);
+			animationFrameId = requestAnimationFrame(animateFrame);
 		}
 	}
 </script>
@@ -252,7 +252,7 @@
 		stroke-linecap="round"
 		stroke-linejoin="round"
 		class="audio-lines-icon"
-		class:animate={isHovered}
+		class:animate
 	>
 		<line x1="2" y1={line1Y1} x2="2" y2={line1Y2} />
 		<line x1="6" y1={line2Y1} x2="6" y2={line2Y2} />

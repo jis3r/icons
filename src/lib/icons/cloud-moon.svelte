@@ -4,7 +4,7 @@
 	 * @property {string} [color]
 	 * @property {number} [size]
 	 * @property {number} [strokeWidth]
-	 * @property {boolean} [isHovered]
+	 * @property {boolean} [animate]
 	 * @property {string} [class]
 	 */
 
@@ -13,16 +13,16 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		isHovered = false,
+		animate = false,
 		class: className = ''
 	} = $props();
 
 	function handleMouseEnter() {
-		if (isHovered) return;
-		isHovered = true;
+		if (animate) return;
+		animate = true;
 
 		setTimeout(() => {
-			isHovered = false;
+			animate = false;
 		}, 1400);
 	}
 </script>
@@ -39,7 +39,7 @@
 		stroke-linecap="round"
 		stroke-linejoin="round"
 		class="cloud-moon-icon"
-		class:animate={isHovered}
+		class:animate
 	>
 		<path d="M13 16a3 3 0 0 1 0 6H7a5 5 0 1 1 4.9-6z" class="cloud-moon-path1" />
 		<path

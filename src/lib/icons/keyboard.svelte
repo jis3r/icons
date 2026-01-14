@@ -4,7 +4,7 @@
 	 * @property {string} [color]
 	 * @property {number} [size]
 	 * @property {number} [strokeWidth]
-	 * @property {boolean} [isHovered]
+	 * @property {boolean} [animate]
 	 * @property {string} [class]
 	 */
 
@@ -13,7 +13,7 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		isHovered = false,
+		animate = false,
 		class: className = ''
 	} = $props();
 
@@ -29,10 +29,10 @@
 	];
 
 	function handleMouseEnter() {
-		isHovered = true;
+		animate = true;
 
 		setTimeout(() => {
-			isHovered = false;
+			animate = false;
 		}, 1500);
 	}
 </script>
@@ -52,13 +52,7 @@
 	>
 		<rect width="20" height="16" x="2" y="4" rx="2" />
 		{#each keyboardPaths as { id, d, delay }}
-			<path
-				{id}
-				{d}
-				class="keyboard-key"
-				class:animate={isHovered}
-				style="animation-delay: {delay}s;"
-			/>
+			<path {id} {d} class="keyboard-key" class:animate style="animation-delay: {delay}s;" />
 		{/each}
 	</svg>
 </div>

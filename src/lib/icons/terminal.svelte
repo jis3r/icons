@@ -4,7 +4,7 @@
 	 * @property {string} [color]
 	 * @property {number} [size]
 	 * @property {number} [strokeWidth]
-	 * @property {boolean} [isHovered]
+	 * @property {boolean} [animate]
 	 * @property {string} [class]
 	 */
 
@@ -13,16 +13,16 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		isHovered = false,
+		animate = false,
 		class: className = ''
 	} = $props();
 
 	function handleMouseEnter() {
-		isHovered = true;
+		animate = true;
 	}
 
 	function handleMouseLeave() {
-		isHovered = false;
+		animate = false;
 	}
 </script>
 
@@ -46,7 +46,7 @@
 		class="terminal-icon"
 	>
 		<polyline points="4 17 10 11 4 5" />
-		<line x1="12" x2="20" y1="19" y2="19" class="cursor-line" class:animate={isHovered} />
+		<line x1="12" x2="20" y1="19" y2="19" class="cursor-line" class:animate />
 	</svg>
 </div>
 

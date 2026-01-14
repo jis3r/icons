@@ -4,7 +4,7 @@
 	 * @property {string} [color]
 	 * @property {number} [size]
 	 * @property {number} [strokeWidth]
-	 * @property {boolean} [isHovered]
+	 * @property {boolean} [animate]
 	 * @property {string} [class]
 	 */
 
@@ -13,20 +13,20 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		isHovered = false,
+		animate = false,
 		class: className = ''
 	} = $props();
 
 	function handleMouseEnter() {
-		isHovered = true;
-		setTimeout(() => (isHovered = false), 200);
+		animate = true;
+		setTimeout(() => (animate = false), 200);
 	}
 </script>
 
 <div class={className} aria-label="arrow-big-right" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
-		class:animate={isHovered}
+		class:animate
 		width={size}
 		height={size}
 		viewBox="0 0 24 24"

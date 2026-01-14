@@ -4,7 +4,7 @@
 	 * @property {string} [color]
 	 * @property {number} [size]
 	 * @property {number} [strokeWidth]
-	 * @property {boolean} [isHovered]
+	 * @property {boolean} [animate]
 	 * @property {string} [class]
 	 */
 
@@ -13,16 +13,16 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		isHovered = false,
+		animate = false,
 		class: className = ''
 	} = $props();
 
 	function handleMouseEnter() {
-		isHovered = true;
+		animate = true;
 	}
 
 	function handleMouseLeave() {
-		isHovered = false;
+		animate = false;
 	}
 </script>
 
@@ -46,8 +46,8 @@
 	>
 		<path d="m3 16 4 4 4-4" />
 		<path d="M7 20V4" />
-		<path class="swap-group-up" class:animate={isHovered} d="M15 4h5l-5 6h5" />
-		<g class="swap-group-down" class:animate={isHovered}>
+		<path class="swap-group-up" class:animate d="M15 4h5l-5 6h5" />
+		<g class="swap-group-down" class:animate>
 			<path d="M20 18h-5" />
 			<path d="M15 20v-3.5a2.5 2.5 0 0 1 5 0V20" />
 		</g>

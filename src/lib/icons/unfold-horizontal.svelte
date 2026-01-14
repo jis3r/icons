@@ -4,7 +4,7 @@
 	 * @property {string} [color]
 	 * @property {number} [size]
 	 * @property {number} [strokeWidth]
-	 * @property {boolean} [isHovered]
+	 * @property {boolean} [animate]
 	 * @property {string} [class]
 	 */
 
@@ -13,16 +13,16 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		isHovered = false,
+		animate = false,
 		class: className = ''
 	} = $props();
 
 	function handleMouseEnter() {
-		isHovered = true;
+		animate = true;
 	}
 
 	function handleMouseLeave() {
-		isHovered = false;
+		animate = false;
 	}
 </script>
 
@@ -46,11 +46,11 @@
 		class="unfold-horizontal-icon"
 	>
 		<path d="M12 2v2 M12 8v2 M12 14v2 M12 20v2" />
-		<g class:move-left={isHovered}>
+		<g class:move-left={animate}>
 			<path d="M8 12H2" />
 			<path d="m5 9-3 3 3 3" />
 		</g>
-		<g class:move-right={isHovered}>
+		<g class:move-right={animate}>
 			<path d="M16 12h6" />
 			<path d="m19 15 3-3-3-3" />
 		</g>

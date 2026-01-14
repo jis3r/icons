@@ -3,13 +3,14 @@
 	"name": "pencil",
 	"title": "pencil",
 	"type": "registry:component",
-	"author": "jis3r <jis3r@protonmail.com>",
 	"description": "The animated pencil icon component.",
+	"author": "jis3r <jis3r@protonmail.com>",
 	"files": [
 		{
-			"content": "<script>\n\t/**\n\t * @typedef {Object} Props\n\t * @property {string} [color]\n\t * @property {number} [size]\n\t * @property {number} [strokeWidth]\n\t * @property {boolean} [isHovered]\n\t * @property {string} [class]\n\t */\n\n\t/** @type {Props} */\n\tlet {\n\t\tcolor = 'currentColor',\n\t\tsize = 24,\n\t\tstrokeWidth = 2,\n\t\tisHovered = false,\n\t\tclass: className = ''\n\t} = $props();\n\n\tfunction handleMouseEnter() {\n\t\tisHovered = true;\n\n\t\tsetTimeout(() => {\n\t\t\tisHovered = false;\n\t\t}, 800);\n\t}\n</script>\n\n<div class={className} aria-label=\"pencil\" role=\"img\" onmouseenter={handleMouseEnter}>\n\t<svg\n\t\txmlns=\"http://www.w3.org/2000/svg\"\n\t\twidth={size}\n\t\theight={size}\n\t\tviewBox=\"0 0 24 24\"\n\t\tfill=\"none\"\n\t\tstroke={color}\n\t\tstroke-width={strokeWidth}\n\t\tstroke-linecap=\"round\"\n\t\tstroke-linejoin=\"round\"\n\t\tclass=\"pencil-icon\"\n\t\tclass:animate={isHovered}\n\t>\n\t\t<path\n\t\t\td=\"M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z\"\n\t\t\tclass=\"\"\n\t\t/>\n\t\t<path d=\"m15 5 4 4\" class=\"\" />\n\t</svg>\n</div>\n\n<style>\n\tdiv {\n\t\tdisplay: inline-block;\n\t}\n\t.pencil-icon {\n\t\toverflow: visible;\n\t\ttransform: rotate(0deg);\n\t\ttransform-origin: center;\n\t}\n\n\t.pencil-icon.animate {\n\t\tanimation: jiggleAnimation 0.4s ease-in-out 2;\n\t}\n\n\t@keyframes jiggleAnimation {\n\t\t25% {\n\t\t\ttransform: rotate(-15deg);\n\t\t}\n\t\t75% {\n\t\t\ttransform: rotate(15deg);\n\t\t}\n\t}\n</style>\n",
 			"type": "registry:component",
-			"target": "~/src/lib/components/movingicons/pencil.svelte"
+			"target": "~/src/lib/components/movingicons/pencil.svelte",
+			"content": "<script>\n\t/**\n\t * @typedef {Object} Props\n\t * @property {string} [color]\n\t * @property {number} [size]\n\t * @property {number} [strokeWidth]\n\t * @property {boolean} [animate]\n\t * @property {string} [class]\n\t */\n\n\t/** @type {Props} */\n\tlet {\n\t\tcolor = 'currentColor',\n\t\tsize = 24,\n\t\tstrokeWidth = 2,\n\t\tanimate = false,\n\t\tclass: className = ''\n\t} = $props();\n\n\tfunction handleMouseEnter() {\n\t\tanimate = true;\n\n\t\tsetTimeout(() => {\n\t\t\tanimate = false;\n\t\t}, 800);\n\t}\n</script>\n\n<div class={className} aria-label=\"pencil\" role=\"img\" onmouseenter={handleMouseEnter}>\n\t<svg\n\t\txmlns=\"http://www.w3.org/2000/svg\"\n\t\twidth={size}\n\t\theight={size}\n\t\tviewBox=\"0 0 24 24\"\n\t\tfill=\"none\"\n\t\tstroke={color}\n\t\tstroke-width={strokeWidth}\n\t\tstroke-linecap=\"round\"\n\t\tstroke-linejoin=\"round\"\n\t\tclass=\"pencil-icon\"\n\t\tclass:animate={animate}\n\t>\n\t\t<path\n\t\t\td=\"M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z\"\n\t\t\tclass=\"\"\n\t\t/>\n\t\t<path d=\"m15 5 4 4\" class=\"\" />\n\t</svg>\n</div>\n\n<style>\n\tdiv {\n\t\tdisplay: inline-block;\n\t}\n\t.pencil-icon {\n\t\toverflow: visible;\n\t\ttransform: rotate(0deg);\n\t\ttransform-origin: center;\n\t}\n\n\t.pencil-icon.animate {\n\t\tanimation: jiggleAnimation 0.4s ease-in-out 2;\n\t}\n\n\t@keyframes jiggleAnimation {\n\t\t25% {\n\t\t\ttransform: rotate(-15deg);\n\t\t}\n\t\t75% {\n\t\t\ttransform: rotate(15deg);\n\t\t}\n\t}\n</style>\n"
 		}
-	]
+	],
+	"registryDependencies": []
 }
