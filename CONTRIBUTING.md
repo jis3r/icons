@@ -26,7 +26,7 @@ Guidelines for pull requests:
 
 - **Icon names should be in kebab-case.** For example, `arrow-up` or `chevron-left`.
 
-- **Icon names must be dentical to their lucide counterpart.**
+- **Icon names must be identical to their lucide counterpart.**
 
 - **Icons must be added as .svelte components.**
 
@@ -68,33 +68,43 @@ git checkout -b your-branch-name
 npm i
 ```
 
-6. Make your changes to the codebase.
+6. Make your changes to the codebase. If you are not adding an icon, you can skip the next step.
 
-7. Build the project:
+7. If you want to test an icon addition, you must make sure you have cloned the lucide repository and have it in the same directory as this repository. Then use the index script to add the icon and test it locally:
 
 ```
-npm run build
+npm run index
+
+npm run dev
 ```
 
-8. Test the application to ensure your changes work as expected.
+8. Once you finished testing, build the project:
+
+```
+npm run prep
+```
+
+This script reexports icons for npm, creates registry for shadcn-svelte, builds and formats the project.
+
+9. Test the application to ensure your changes work as expected.
 
 ```
 npm run build
 npm run preview
 ```
 
-9. Commit your changes:
+10. Commit your changes:
 
 ```
 git commit -m "Your commit message"
 ```
 
-10. Push your changes to your fork:
+11. Push your changes to your fork:
 
 ```
 git push origin your-branch-name
 ```
 
-11. Open a pull request on the original repository.
+12. Open a pull request on the original repository.
 
 Thank you for contributing to the project!
