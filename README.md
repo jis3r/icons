@@ -1,4 +1,6 @@
-# `jis3r/icons` is beautifully crafted, moving icons. for svelte. 🧡
+# `moving icons` - the standard for animated icons in Svelte. 🧡
+
+A collection of 500+ hand-crafted, interaction-ready [Lucide](https://lucide.dev) icons. Built natively for Svelte 5 with zero dependencies. Fully tree-shakeable, MIT licensed, and completely customizable.
 
 **Demo** → [https://movingicons.dev](https://movingicons.dev)
 
@@ -47,13 +49,13 @@ Import icons as named Svelte components:
 
 ## Props
 
-| Prop | Type | Default | Description |
-|------|------|---------|-------------|
-| `size` | number | 24 | Icon size in pixels |
-| `color` | string | 'currentColor' | Stroke color (CSS color value) |
-| `strokeWidth` | number | 2 | SVG stroke width |
-| `class` | string | — | Optional additional CSS classes |
-| `animate` | boolean | false | Controls icon animation state |
+| Prop          | Type    | Default        | Description                     |
+| ------------- | ------- | -------------- | ------------------------------- |
+| `size`        | number  | 24             | Icon size in pixels             |
+| `color`       | string  | 'currentColor' | Stroke color (CSS color value)  |
+| `strokeWidth` | number  | 2              | SVG stroke width                |
+| `class`       | string  | —              | Optional additional CSS classes |
+| `animate`     | boolean | false          | Controls icon animation state   |
 
 ## Advanced Usage
 
@@ -67,11 +69,11 @@ Control icon animations from parent elements by binding the `animate` prop to yo
 </script>
 
 <button
-	onmouseenter={() => animate = true}
-	onmouseleave={() => animate = false}
+	onmouseenter={() => (animate = true)}
+	onmouseleave={() => (animate = false)}
 	class="flex items-center gap-2"
 >
-	<Bell size={16} animate={animate} />
+	<Bell size={16} {animate} />
 	<span>Notifications</span>
 </button>
 ```
@@ -103,13 +105,13 @@ Use the wrapper component in your navigation:
 </script>
 
 <nav class="flex flex-col gap-2">
-	<HoverableItem class="flex items-center gap-2 p-2 rounded">
+	<HoverableItem class="flex items-center gap-2 rounded p-2">
 		{#snippet children(isHovered)}
 			<Home size={16} animate={isHovered} />
 			<span>Home</span>
 		{/snippet}
 	</HoverableItem>
-	<HoverableItem class="flex items-center gap-2 p-2 rounded">
+	<HoverableItem class="flex items-center gap-2 rounded p-2">
 		{#snippet children(isHovered)}
 			<Settings size={16} animate={isHovered} />
 			<span>Settings</span>
