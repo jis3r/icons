@@ -18,12 +18,11 @@
 	} = $props();
 
 	function handleMouseEnter() {
-		if (!animate) {
-			animate = true;
-			setTimeout(() => {
-				animate = false;
-			}, 1000);
-		}
+		if (animate) return;
+		animate = true;
+		setTimeout(() => {
+			animate = false;
+		}, 1000);
 	}
 </script>
 

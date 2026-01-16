@@ -20,7 +20,6 @@
 	function handleMouseEnter() {
 		if (animate) return;
 		animate = true;
-
 		setTimeout(() => {
 			animate = false;
 		}, 900);
