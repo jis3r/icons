@@ -38,9 +38,10 @@
 		stroke-linecap="round"
 		stroke-linejoin="round"
 		class="clipboard-pen-icon"
+		class:animate
 	>
-		<rect width="8" height="4" x="8" y="2" rx="1" />
-		<path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-5.5" />
+		<rect width="8" height="4" x="8" y="2" rx="1" class="clip" />
+		<path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-5.5" class="board" />
 		<path d="M4 13.5V6a2 2 0 0 1 2-2h2" />
 		<path
 			d="M13.378 15.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"
@@ -56,6 +57,19 @@
 	}
 	.clipboard-pen-icon {
 		overflow: visible;
+	}
+
+	.clip,
+	.board {
+		transition: transform 0.3s ease;
+	}
+
+	.clipboard-pen-icon.animate .clip {
+		animation: clipBounce 0.5s ease-in-out;
+	}
+
+	.clipboard-pen-icon.animate .board {
+		animation: boardShake 0.5s ease-in-out;
 	}
 
 	.pen {
@@ -77,6 +91,36 @@
 		}
 		75% {
 			transform: rotate(0.5deg) translate(1.5px, -1px);
+		}
+	}
+
+	@keyframes clipBounce {
+		0% {
+			transform: translateY(0);
+		}
+		25% {
+			transform: translateY(-2px);
+		}
+		50% {
+			transform: translateY(1px);
+		}
+		100% {
+			transform: translateY(0);
+		}
+	}
+
+	@keyframes boardShake {
+		0% {
+			transform: rotate(0deg);
+		}
+		25% {
+			transform: rotate(-1deg);
+		}
+		75% {
+			transform: rotate(1deg);
+		}
+		100% {
+			transform: rotate(0deg);
 		}
 	}
 </style>
