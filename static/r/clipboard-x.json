@@ -1,0 +1,16 @@
+{
+	"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+	"name": "clipboard-x",
+	"title": "clipboard-x",
+	"type": "registry:component",
+	"description": "The animated clipboard-x icon component.",
+	"author": "jis3r <jis3r@protonmail.com>",
+	"files": [
+		{
+			"type": "registry:component",
+			"target": "~/src/lib/components/movingicons/clipboard-x.svelte",
+			"content": "<script>\n\t/**\n\t * @typedef {Object} Props\n\t * @property {string} [color]\n\t * @property {number} [size]\n\t * @property {number} [strokeWidth]\n\t * @property {boolean} [animate]\n\t * @property {string} [class]\n\t */\n\n\t/** @type {Props} */\n\tlet {\n\t\tcolor = 'currentColor',\n\t\tsize = 24,\n\t\tstrokeWidth = 2,\n\t\tanimate = false,\n\t\tclass: className = ''\n\t} = $props();\n\n\tfunction handleMouseEnter() {\n\t\tif (animate) return;\n\t\tanimate = true;\n\t\tsetTimeout(() => {\n\t\t\tanimate = false;\n\t\t}, 600);\n\t}\n</script>\n\n<div class={className} aria-label=\"clipboard-x\" role=\"img\" onmouseenter={handleMouseEnter}>\n\t<svg\n\t\txmlns=\"http://www.w3.org/2000/svg\"\n\t\twidth={size}\n\t\theight={size}\n\t\tviewBox=\"0 0 24 24\"\n\t\tfill=\"none\"\n\t\tstroke={color}\n\t\tstroke-width={strokeWidth}\n\t\tstroke-linecap=\"round\"\n\t\tstroke-linejoin=\"round\"\n\t\tclass=\"clipboard-x-icon\"\n\t\tclass:animate\n\t>\n\t\t<rect width=\"8\" height=\"4\" x=\"8\" y=\"2\" rx=\"1\" ry=\"1\" class=\"clip\" />\n\t\t<path\n\t\t\td=\"M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2\"\n\t\t\tclass=\"board\"\n\t\t/>\n\t\t<path d=\"m15 11-6 6\" class=\"diagonal-1\" />\n\t\t<path d=\"m9 11 6 6\" class=\"diagonal-2\" />\n\t</svg>\n</div>\n\n<style>\n\tdiv {\n\t\tdisplay: inline-block;\n\t}\n\t.clipboard-x-icon {\n\t\toverflow: visible;\n\t}\n\n\t.clip,\n\t.board {\n\t\ttransition: transform 0.3s ease;\n\t}\n\n\t.diagonal-1,\n\t.diagonal-2 {\n\t\tstroke-dasharray: 8.5;\n\t\tstroke-dashoffset: 0;\n\t\ttransition: stroke-dashoffset 0.15s ease-out;\n\t}\n\n\t.clipboard-x-icon.animate .clip {\n\t\tanimation: clipBounce 0.5s ease-in-out;\n\t}\n\n\t.clipboard-x-icon.animate .board {\n\t\tanimation: boardShake 0.5s ease-in-out;\n\t}\n\n\t.clipboard-x-icon.animate .diagonal-1 {\n\t\topacity: 0;\n\t\tanimation: lineAnimation 0.3s ease-out forwards;\n\t}\n\n\t.clipboard-x-icon.animate .diagonal-2 {\n\t\topacity: 0;\n\t\tanimation: lineAnimation 0.3s ease-out 0.25s forwards;\n\t}\n\n\t@keyframes lineAnimation {\n\t\t0% {\n\t\t\topacity: 0;\n\t\t\tstroke-dashoffset: 8.5;\n\t\t}\n\t\t15% {\n\t\t\topacity: 1;\n\t\t\tstroke-dashoffset: 8.5;\n\t\t}\n\t\t100% {\n\t\t\topacity: 1;\n\t\t\tstroke-dashoffset: 0;\n\t\t}\n\t}\n\n\t@keyframes clipBounce {\n\t\t0% {\n\t\t\ttransform: translateY(0);\n\t\t}\n\t\t25% {\n\t\t\ttransform: translateY(-2px);\n\t\t}\n\t\t50% {\n\t\t\ttransform: translateY(1px);\n\t\t}\n\t\t100% {\n\t\t\ttransform: translateY(0);\n\t\t}\n\t}\n\n\t@keyframes boardShake {\n\t\t0% {\n\t\t\ttransform: rotate(0deg);\n\t\t}\n\t\t25% {\n\t\t\ttransform: rotate(-1deg);\n\t\t}\n\t\t75% {\n\t\t\ttransform: rotate(1deg);\n\t\t}\n\t\t100% {\n\t\t\ttransform: rotate(0deg);\n\t\t}\n\t}\n</style>\n"
+		}
+	],
+	"registryDependencies": []
+}

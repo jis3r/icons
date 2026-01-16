@@ -168,6 +168,7 @@ export { default as ClipboardCheck } from './icons/clipboard-check.svelte';
 export { default as ClipboardList } from './icons/clipboard-list.svelte';
 export { default as ClipboardPenLine } from './icons/clipboard-pen-line.svelte';
 export { default as ClipboardPen } from './icons/clipboard-pen.svelte';
+export { default as ClipboardX } from './icons/clipboard-x.svelte';
 export { default as Clipboard } from './icons/clipboard.svelte';
 export { default as Clock1 } from './icons/clock-1.svelte';
 export { default as Clock10 } from './icons/clock-10.svelte';

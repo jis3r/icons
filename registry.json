@@ -2725,6 +2725,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "clipboard-x",
+			"title": "clipboard-x",
+			"type": "registry:component",
+			"description": "The animated clipboard-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/clipboard-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/clipboard-x.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "clipboard",
 			"title": "clipboard",
 			"type": "registry:component",

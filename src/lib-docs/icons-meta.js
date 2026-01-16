@@ -169,6 +169,7 @@ import clipboardCheck from '$lib/icons/clipboard-check.svelte';
 import clipboardList from '$lib/icons/clipboard-list.svelte';
 import clipboardPen from '$lib/icons/clipboard-pen.svelte';
 import clipboardPenLine from '$lib/icons/clipboard-pen-line.svelte';
+import clipboardX from '$lib/icons/clipboard-x.svelte';
 import clock from '$lib/icons/clock.svelte';
 import clock1 from '$lib/icons/clock-1.svelte';
 import clock10 from '$lib/icons/clock-10.svelte';
@@ -2529,6 +2530,12 @@ const ICONS_LIST = [
 		name: 'clipboard-pen-line',
 		icon: clipboardPenLine,
 		tags: ['paste'],
+		categories: ['text']
+	},
+	{
+		name: 'clipboard-x',
+		icon: clipboardX,
+		tags: ['copy', 'paste', 'discard', 'remove'],
 		categories: ['text']
 	},
 	{
