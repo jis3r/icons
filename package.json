@@ -26,7 +26,7 @@
 		"lint": "prettier --check . && eslint .",
 		"test:unit": "vitest",
 		"test": "npm run test:unit -- --run",
-		"index": "node scripts/indexIcons.js",
+		"index": "node scripts/indexIcons.js && prettier --write src/lib-docs/icons-meta.js",
 		"reexport": "node scripts/generateIconExports.js",
 		"registry:build": "node scripts/updateRegistry.js && node scripts/buildRegistry.js",
 		"prep": "npm run index && npm run reexport && npm run registry:build && npm run build && npm run package && npm run format"
