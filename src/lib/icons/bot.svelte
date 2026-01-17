@@ -46,8 +46,8 @@
 	}
 
 	function handleMouseEnter() {
+		if (animate) return;
 		animate = true;
-
 		animateEyes(13, 15, 14, 14, 250, 200).then(() => {
 			animateEyes(14, 14, 13, 15, 250).then(() => {
 				animate = false;

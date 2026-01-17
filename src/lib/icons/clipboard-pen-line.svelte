@@ -46,8 +46,8 @@
 		class="clipboard-pen-line-icon"
 		class:animate
 	>
-		<rect width="8" height="4" x="8" y="2" rx="1" />
-		<path d="M8 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-.5" />
+		<rect width="8" height="4" x="8" y="2" rx="1" class="clip" />
+		<path d="M8 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-.5" class="board" />
 		<path d="M16 4h2a2 2 0 0 1 1.73 1" />
 		<path d="M8 18h1" class="line" />
 		<path
@@ -63,6 +63,19 @@
 	}
 	.clipboard-pen-line-icon {
 		overflow: visible;
+	}
+
+	.clip,
+	.board {
+		transition: transform 0.3s ease;
+	}
+
+	.clipboard-pen-line-icon.animate .clip {
+		animation: clipBounce 0.5s ease-in-out;
+	}
+
+	.clipboard-pen-line-icon.animate .board {
+		animation: boardShake 0.5s ease-in-out;
 	}
 
 	.pen {
@@ -96,5 +109,35 @@
 
 	.clipboard-pen-line-icon.animate .line {
 		d: path('M8 18h5');
+	}
+
+	@keyframes clipBounce {
+		0% {
+			transform: translateY(0);
+		}
+		25% {
+			transform: translateY(-2px);
+		}
+		50% {
+			transform: translateY(1px);
+		}
+		100% {
+			transform: translateY(0);
+		}
+	}
+
+	@keyframes boardShake {
+		0% {
+			transform: rotate(0deg);
+		}
+		25% {
+			transform: rotate(-1deg);
+		}
+		75% {
+			transform: rotate(1deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
 	}
 </style>

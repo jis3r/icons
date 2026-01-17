@@ -169,6 +169,7 @@ import clipboardCheck from '$lib/icons/clipboard-check.svelte';
 import clipboardList from '$lib/icons/clipboard-list.svelte';
 import clipboardPen from '$lib/icons/clipboard-pen.svelte';
 import clipboardPenLine from '$lib/icons/clipboard-pen-line.svelte';
+import clipboardX from '$lib/icons/clipboard-x.svelte';
 import clock from '$lib/icons/clock.svelte';
 import clock1 from '$lib/icons/clock-1.svelte';
 import clock10 from '$lib/icons/clock-10.svelte';
@@ -241,6 +242,7 @@ import folderPen from '$lib/icons/folder-pen.svelte';
 import folderPlus from '$lib/icons/folder-plus.svelte';
 import folderSync from '$lib/icons/folder-sync.svelte';
 import folderUp from '$lib/icons/folder-up.svelte';
+import folderX from '$lib/icons/folder-x.svelte';
 import frame from '$lib/icons/frame.svelte';
 import galleryHorizontal from '$lib/icons/gallery-horizontal.svelte';
 import galleryHorizontalEnd from '$lib/icons/gallery-horizontal-end.svelte';
@@ -2532,6 +2534,12 @@ const ICONS_LIST = [
 		categories: ['text']
 	},
 	{
+		name: 'clipboard-x',
+		icon: clipboardX,
+		tags: ['copy', 'paste', 'discard', 'remove'],
+		categories: ['text']
+	},
+	{
 		name: 'clock',
 		icon: clock,
 		tags: ['time', 'watch', 'alarm'],
@@ -3128,6 +3136,12 @@ const ICONS_LIST = [
 		icon: folderUp,
 		tags: ['directory', 'upload', 'import', 'export'],
 		categories: ['files', 'arrows']
+	},
+	{
+		name: 'folder-x',
+		icon: folderX,
+		tags: ['directory', 'remove', 'delete'],
+		categories: ['files']
 	},
 	{
 		name: 'frame',

@@ -1530,6 +1530,15 @@
 		"relativeUrl": "clipboard-pen.json"
 	},
 	{
+		"name": "clipboard-x",
+		"title": "clipboard-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated clipboard-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "clipboard-x.json"
+	},
+	{
 		"name": "clipboard",
 		"title": "clipboard",
 		"type": "registry:component",
@@ -2185,6 +2194,15 @@
 		"description": "The animated folder-up icon component.",
 		"registryDependencies": [],
 		"relativeUrl": "folder-up.json"
+	},
+	{
+		"name": "folder-x",
+		"title": "folder-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated folder-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "folder-x.json"
 	},
 	{
 		"name": "frame",
