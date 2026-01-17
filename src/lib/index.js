@@ -242,6 +242,7 @@ export { default as FolderPen } from './icons/folder-pen.svelte';
 export { default as FolderPlus } from './icons/folder-plus.svelte';
 export { default as FolderSync } from './icons/folder-sync.svelte';
 export { default as FolderUp } from './icons/folder-up.svelte';
+export { default as FolderX } from './icons/folder-x.svelte';
 export { default as Frame } from './icons/frame.svelte';
 export { default as GalleryHorizontalEnd } from './icons/gallery-horizontal-end.svelte';
 export { default as GalleryHorizontal } from './icons/gallery-horizontal.svelte';

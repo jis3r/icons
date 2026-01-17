@@ -242,6 +242,7 @@ import folderPen from '$lib/icons/folder-pen.svelte';
 import folderPlus from '$lib/icons/folder-plus.svelte';
 import folderSync from '$lib/icons/folder-sync.svelte';
 import folderUp from '$lib/icons/folder-up.svelte';
+import folderX from '$lib/icons/folder-x.svelte';
 import frame from '$lib/icons/frame.svelte';
 import galleryHorizontal from '$lib/icons/gallery-horizontal.svelte';
 import galleryHorizontalEnd from '$lib/icons/gallery-horizontal-end.svelte';
@@ -3135,6 +3136,12 @@ const ICONS_LIST = [
 		icon: folderUp,
 		tags: ['directory', 'upload', 'import', 'export'],
 		categories: ['files', 'arrows']
+	},
+	{
+		name: 'folder-x',
+		icon: folderX,
+		tags: ['directory', 'remove', 'delete'],
+		categories: ['files']
 	},
 	{
 		name: 'frame',

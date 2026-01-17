@@ -2196,6 +2196,15 @@
 		"relativeUrl": "folder-up.json"
 	},
 	{
+		"name": "folder-x",
+		"title": "folder-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated folder-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "folder-x.json"
+	},
+	{
 		"name": "frame",
 		"title": "frame",
 		"type": "registry:component",
