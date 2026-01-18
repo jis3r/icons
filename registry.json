@@ -3941,6 +3941,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "funnel-x",
+			"title": "funnel-x",
+			"type": "registry:component",
+			"description": "The animated funnel-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/funnel-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/funnel-x.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "gallery-horizontal-end",
 			"title": "gallery-horizontal-end",
 			"type": "registry:component",

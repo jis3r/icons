@@ -244,6 +244,7 @@ import folderSync from '$lib/icons/folder-sync.svelte';
 import folderUp from '$lib/icons/folder-up.svelte';
 import folderX from '$lib/icons/folder-x.svelte';
 import frame from '$lib/icons/frame.svelte';
+import funnelX from '$lib/icons/funnel-x.svelte';
 import galleryHorizontal from '$lib/icons/gallery-horizontal.svelte';
 import galleryHorizontalEnd from '$lib/icons/gallery-horizontal-end.svelte';
 import galleryThumbnails from '$lib/icons/gallery-thumbnails.svelte';
@@ -3148,6 +3149,12 @@ const ICONS_LIST = [
 		icon: frame,
 		tags: ['logo', 'design', 'tool'],
 		categories: ['design', 'photography']
+	},
+	{
+		name: 'funnel-x',
+		icon: funnelX,
+		tags: ['filter', 'hopper', 'remove', 'delete'],
+		categories: ['layout']
 	},
 	{
 		name: 'gallery-horizontal',

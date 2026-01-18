@@ -2214,6 +2214,15 @@
 		"relativeUrl": "frame.json"
 	},
 	{
+		"name": "funnel-x",
+		"title": "funnel-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated funnel-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "funnel-x.json"
+	},
+	{
 		"name": "gallery-horizontal-end",
 		"title": "gallery-horizontal-end",
 		"type": "registry:component",
