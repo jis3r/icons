@@ -5,8 +5,8 @@
 	import * as Tooltip from '$lib-docs/components/ui/tooltip';
 	import { Download, Copy, ExternalLink, Check, Terminal } from '@lucide/svelte';
 	import { onMount } from 'svelte';
-	import { downloadIcon, preloadIconSources } from '$lib-docs/utils/icons.js';
-	import ICONS_LIST from '$lib-docs/icons-meta.js';
+	import { downloadIcon, preloadIconSources } from '$lib-docs/utils/icons';
+	import ICONS_LIST from '$lib-docs/icons-meta';
 	import { debounce } from '$lib-docs/utils/debounce';
 	import { animate } from 'motion';
 	import { page } from '$app/state';
