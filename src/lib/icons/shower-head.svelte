@@ -1,21 +1,13 @@
-<script>
-	/**
-	 * @typedef {Object} Props
-	 * @property {string} [color]
-	 * @property {number} [size]
-	 * @property {number} [strokeWidth]
-	 * @property {boolean} [animate]
-	 * @property {string} [class]
-	 */
+<script lang="ts">
+	import type { IconProps } from './types.js';
 
-	/** @type {Props} */
 	let {
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
 		animate = false,
 		class: className = ''
-	} = $props();
+	}: IconProps = $props();
 
 	const dropPath = [
 		{ id: 'drop1', d: 'M14 17v.01', delay: 0 },

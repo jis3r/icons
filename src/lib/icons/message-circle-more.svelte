@@ -1,21 +1,13 @@
-<script>
-	/**
-	 * @typedef {Object} Props
-	 * @property {string} [color]
-	 * @property {number} [size]
-	 * @property {number} [strokeWidth]
-	 * @property {boolean} [animate]
-	 * @property {string} [class]
-	 */
+<script lang="ts">
+	import type { IconProps } from './types.js';
 
-	/** @type {Props} */
 	let {
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
 		animate = false,
 		class: className = ''
-	} = $props();
+	}: IconProps = $props();
 
 	let line1Y1 = $state(12);
 	let line1Y2 = $state(12);
@@ -24,14 +16,24 @@
 	let line3Y1 = $state(12);
 	let line3Y2 = $state(12);
 
-	function easeInOut(t) {
+	function easeInOut(t: number): number {
 		return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
 	}
 
-	function animateLine(startY1, startY2, midY1, midY2, endY1, endY2, duration, delay, callback) {
+	function animateLine(
+		startY1: number,
+		startY2: number,
+		midY1: number,
+		midY2: number,
+		endY1: number,
+		endY2: number,
+		duration: number,
+		delay: number,
+		callback: (y1: number, y2: number) => void
+	): void {
 		setTimeout(() => {
 			const startTime = performance.now();
-			function frame(currentTime) {
+			function frame(currentTime: number): void {
 				const elapsed = (currentTime - startTime) / 1000;
 				const progress = Math.min(elapsed / duration, 1);
 				const eased = easeInOut(progress);
