@@ -3150,6 +3150,15 @@
 		"relativeUrl": "panel-bottom-open.json"
 	},
 	{
+		"name": "panel-bottom",
+		"title": "panel-bottom",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated panel-bottom icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "panel-bottom.json"
+	},
+	{
 		"name": "panel-left-close",
 		"title": "panel-left-close",
 		"type": "registry:component",
@@ -3166,6 +3175,15 @@
 		"description": "The animated panel-left-open icon component.",
 		"registryDependencies": [],
 		"relativeUrl": "panel-left-open.json"
+	},
+	{
+		"name": "panel-left",
+		"title": "panel-left",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated panel-left icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "panel-left.json"
 	},
 	{
 		"name": "panel-right-close",
@@ -3186,6 +3204,15 @@
 		"relativeUrl": "panel-right-open.json"
 	},
 	{
+		"name": "panel-right",
+		"title": "panel-right",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated panel-right icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "panel-right.json"
+	},
+	{
 		"name": "panel-top-close",
 		"title": "panel-top-close",
 		"type": "registry:component",
@@ -3202,6 +3229,15 @@
 		"description": "The animated panel-top-open icon component.",
 		"registryDependencies": [],
 		"relativeUrl": "panel-top-open.json"
+	},
+	{
+		"name": "panel-top",
+		"title": "panel-top",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated panel-top icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "panel-top.json"
 	},
 	{
 		"name": "paperclip",
