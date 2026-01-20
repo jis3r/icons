@@ -1,21 +1,13 @@
-<script>
-	/**
-	 * @typedef {Object} Props
-	 * @property {string} [color]
-	 * @property {number} [size]
-	 * @property {number} [strokeWidth]
-	 * @property {boolean} [animate]
-	 * @property {string} [class]
-	 */
+<script lang="ts">
+	import type { IconProps } from './types.js';
 
-	/** @type {Props} */
 	let {
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
 		animate = false,
 		class: className = ''
-	} = $props();
+	}: IconProps = $props();
 
 	let line1Y1 = $state(10);
 	let line1Y2 = $state(13);
@@ -30,10 +22,17 @@
 	let line6Y1 = $state(10);
 	let line6Y2 = $state(13);
 
-	let animationFrameId = $state(null);
-	let startTime = $state(null);
+	let animationFrameId = $state<number | null>(null);
+	let startTime = $state<number | null>(null);
 	let isAnimatingBack = $state(false);
-	let startPositions = $state(null);
+	let startPositions = $state<{
+		line1: { y1: number; y2: number };
+		line2: { y1: number; y2: number };
+		line3: { y1: number; y2: number };
+		line4: { y1: number; y2: number };
+		line5: { y1: number; y2: number };
+		line6: { y1: number; y2: number };
+	} | null>(null);
 
 	const originalPositions = {
 		line1: { y1: 10, y2: 13 },
@@ -90,11 +89,14 @@
 		{ y1: 10, y2: 13 }
 	];
 
-	function easeOutCubic(t) {
+	function easeOutCubic(t: number): number {
 		return 1 - Math.pow(1 - t, 3);
 	}
 
-	function interpolateKeyframes(keyframes, progress) {
+	function interpolateKeyframes(
+		keyframes: Array<{ y1: number; y2: number }>,
+		progress: number
+	): { y1: number; y2: number } {
 		const totalFrames = keyframes.length - 1;
 		const frameIndex = progress * totalFrames;
 		const frame = Math.floor(frameIndex);
@@ -110,7 +112,7 @@
 		};
 	}
 
-	function animateFrame(timestamp) {
+	function animateFrame(timestamp: number): void {
 		if (!startTime) startTime = timestamp;
 		const elapsed = (timestamp - startTime) / 1000;
 

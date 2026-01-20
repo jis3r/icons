@@ -3941,6 +3941,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "funnel-x",
+			"title": "funnel-x",
+			"type": "registry:component",
+			"description": "The animated funnel-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/funnel-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/funnel-x.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "gallery-horizontal-end",
 			"title": "gallery-horizontal-end",
 			"type": "registry:component",
@@ -5589,6 +5605,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "panel-bottom",
+			"title": "panel-bottom",
+			"type": "registry:component",
+			"description": "The animated panel-bottom icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/panel-bottom.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/panel-bottom.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "panel-left-close",
 			"title": "panel-left-close",
 			"type": "registry:component",
@@ -5615,6 +5647,22 @@
 					"path": "./src/lib/icons/panel-left-open.svelte",
 					"type": "registry:component",
 					"target": "~/src/lib/components/movingicons/panel-left-open.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "panel-left",
+			"title": "panel-left",
+			"type": "registry:component",
+			"description": "The animated panel-left icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/panel-left.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/panel-left.svelte"
 				}
 			],
 			"registryDependencies": []
@@ -5653,6 +5701,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "panel-right",
+			"title": "panel-right",
+			"type": "registry:component",
+			"description": "The animated panel-right icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/panel-right.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/panel-right.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "panel-top-close",
 			"title": "panel-top-close",
 			"type": "registry:component",
@@ -5679,6 +5743,22 @@
 					"path": "./src/lib/icons/panel-top-open.svelte",
 					"type": "registry:component",
 					"target": "~/src/lib/components/movingicons/panel-top-open.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "panel-top",
+			"title": "panel-top",
+			"type": "registry:component",
+			"description": "The animated panel-top icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/panel-top.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/panel-top.svelte"
 				}
 			],
 			"registryDependencies": []

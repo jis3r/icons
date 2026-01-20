@@ -1,57 +1,47 @@
 import iflog from 'iflog';
+import type ICONS_LIST_TYPE from '$lib-docs/icons-meta';
 
-/** @import ICONS_LIST from '$lib-docs/icons-meta.js' */
+type Icon = (typeof ICONS_LIST_TYPE)[number];
+type IconWithSource = Icon & { source?: string };
 
-/**
- * @param {typeof ICONS_LIST[number]} iconName
- * @returns {Promise<typeof ICONS_LIST[number] & { source: string }>}
- */
-export const getIconSource = async (iconName) => {
+export const getIconSource = async (iconName: string): Promise<string> => {
 	try {
-		// Create a map of all icon files at build time
 		const iconModules = import.meta.glob('/src/lib/icons/*.svelte', {
 			query: '?raw',
 			import: 'default',
 			eager: false
 		});
 
-		// Find the matching icon module
 		const iconPath = `/src/lib/icons/${iconName}.svelte`;
 		if (!(iconPath in iconModules)) {
 			throw new Error(`Icon ${iconName} not found`);
 		}
 
-		// Import the source code
-		return await iconModules[iconPath]();
+		return (await iconModules[iconPath]()) as string;
 	} catch (error) {
-		throw new Error(`Icon ${iconName} not found: ${error.message}`);
+		throw new Error(
+			`Icon ${iconName} not found: ${error instanceof Error ? error.message : String(error)}`
+		);
 	}
 };
 
-/**
- * @param {typeof ICONS_LIST} icons
- * @returns {Promise<(typeof ICONS_LIST[number] & { source?: string })[]>}
- */
-export const preloadIconSources = async (icons) => {
+export const preloadIconSources = async (icons: Icon[]): Promise<IconWithSource[]> => {
 	try {
-		// Create a map of all icon files at build time
 		const iconModules = import.meta.glob('/src/lib/icons/*.svelte', {
 			query: '?raw',
 			import: 'default',
 			eager: false
 		});
 
-		// Start loading all icons in parallel
-		const loadPromises = icons.map(async (icon) => {
+		const loadPromises = icons.map(async (icon): Promise<IconWithSource> => {
 			const iconPath = `/src/lib/icons/${icon.name}.svelte`;
 			if (iconPath in iconModules) {
-				// Directly store the source in the icon object
-				icon.source = await iconModules[iconPath]();
+				const source = (await iconModules[iconPath]()) as string;
+				return { ...icon, source };
 			}
 			return icon;
 		});
 
-		// Wait for all to complete and return the updated icons array
 		return await Promise.all(loadPromises);
 	} catch (error) {
 		iflog.error('Failed to preload icon sources:', error);
@@ -59,13 +49,9 @@ export const preloadIconSources = async (icons) => {
 	}
 };
 
-/**
- * @param {typeof ICONS_LIST[number] & { source?: string }} icon
- */
-export const downloadIcon = async (icon) => {
+export const downloadIcon = async (icon: IconWithSource): Promise<void> => {
 	try {
 		if (!icon.source) {
-			// Fetch the source if not already loaded
 			icon.source = await getIconSource(icon.name);
 		}
 

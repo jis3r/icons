@@ -1,30 +1,29 @@
-<script>
-	/**
-	 * @typedef {Object} Props
-	 * @property {string} [color]
-	 * @property {number} [size]
-	 * @property {number} [strokeWidth]
-	 * @property {boolean} [animate]
-	 * @property {string} [class]
-	 */
+<script lang="ts">
+	import type { IconProps } from './types.js';
 
-	/** @type {Props} */
 	let {
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
 		animate = false,
 		class: className = ''
-	} = $props();
+	}: IconProps = $props();
 
 	let eyeY1 = $state(13);
 	let eyeY2 = $state(15);
 
-	function animateEyes(startY1, startY2, endY1, endY2, duration, delay = 0) {
+	function animateEyes(
+		startY1: number,
+		startY2: number,
+		endY1: number,
+		endY2: number,
+		duration: number,
+		delay: number = 0
+	): Promise<void> {
 		return new Promise((resolve) => {
 			setTimeout(() => {
 				const startTime = performance.now();
-				const animate = (currentTime) => {
+				const animate = (currentTime: number): void => {
 					const elapsed = currentTime - startTime;
 					const progress = Math.min(elapsed / duration, 1);
 

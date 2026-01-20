@@ -1,21 +1,13 @@
-<script>
-	/**
-	 * @typedef {Object} Props
-	 * @property {string} [color]
-	 * @property {number} [size]
-	 * @property {number} [strokeWidth]
-	 * @property {boolean} [animate]
-	 * @property {string} [class]
-	 */
+<script lang="ts">
+	import type { IconProps } from './types.js';
 
-	/** @type {Props} */
 	let {
 		color = 'currentColor',
 		size = 28,
 		strokeWidth = 2,
 		animate = false,
 		class: className = ''
-	} = $props();
+	}: IconProps = $props();
 
 	// Group 1 coordinates
 	let line1a_x2 = $state(14);
@@ -35,10 +27,15 @@
 	let line3c_x1 = $state(16);
 	let line3c_x2 = $state(16);
 
-	function animateValue(start, end, duration, callback) {
+	function animateValue(
+		start: number,
+		end: number,
+		duration: number,
+		callback: (value: number) => void
+	): Promise<void> {
 		return new Promise((resolve) => {
 			const startTime = performance.now();
-			const animate = (currentTime) => {
+			const animate = (currentTime: number): void => {
 				const elapsed = currentTime - startTime;
 				const progress = Math.min(elapsed / duration, 1);
 

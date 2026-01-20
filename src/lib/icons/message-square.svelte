@@ -1,28 +1,20 @@
-<script>
-	/**
-	 * @typedef {Object} Props
-	 * @property {string} [color]
-	 * @property {number} [size]
-	 * @property {number} [strokeWidth]
-	 * @property {boolean} [animate]
-	 * @property {string} [class]
-	 */
+<script lang="ts">
+	import type { IconProps } from './types.js';
 
-	/** @type {Props} */
 	let {
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
 		animate = false,
 		class: className = ''
-	} = $props();
+	}: IconProps = $props();
 
 	function handleMouseEnter() {
 		if (animate) return;
 		animate = true;
 		setTimeout(() => {
 			animate = false;
-		}, 500);
+		}, 800);
 	}
 </script>
 
@@ -37,9 +29,12 @@
 		stroke-width={strokeWidth}
 		stroke-linecap="round"
 		stroke-linejoin="round"
-		class:animate-icon={animate}
 	>
-		<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+		<path
+			d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+			class="message-square-path"
+			class:animate
+		/>
 	</svg>
 </div>
 
@@ -47,22 +42,29 @@
 	div {
 		display: inline-block;
 	}
-	.animate-icon {
-		animation: primaryAnimation 0.5s ease-in-out;
+	.message-square-path {
+		transform-origin: bottom left;
 	}
 
-	@keyframes primaryAnimation {
+	.message-square-path.animate {
+		animation: messageSquareAnimation 0.8s ease-in-out;
+	}
+
+	@keyframes messageSquareAnimation {
 		0% {
-			transform: scale(1) rotate(0deg);
-		}
-		20% {
-			transform: scale(1.05) rotate(-7deg);
+			transform: rotate(0deg);
 		}
 		40% {
-			transform: scale(1.05) rotate(7deg);
+			transform: rotate(8deg);
+		}
+		60% {
+			transform: rotate(-8deg);
+		}
+		80% {
+			transform: rotate(2deg);
 		}
 		100% {
-			transform: scale(1) rotate(0deg);
+			transform: rotate(0deg);
 		}
 	}
 </style>

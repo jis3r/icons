@@ -244,6 +244,7 @@ import folderSync from '$lib/icons/folder-sync.svelte';
 import folderUp from '$lib/icons/folder-up.svelte';
 import folderX from '$lib/icons/folder-x.svelte';
 import frame from '$lib/icons/frame.svelte';
+import funnelX from '$lib/icons/funnel-x.svelte';
 import galleryHorizontal from '$lib/icons/gallery-horizontal.svelte';
 import galleryHorizontalEnd from '$lib/icons/gallery-horizontal-end.svelte';
 import galleryThumbnails from '$lib/icons/gallery-thumbnails.svelte';
@@ -345,12 +346,16 @@ import octagonAlert from '$lib/icons/octagon-alert.svelte';
 import orbit from '$lib/icons/orbit.svelte';
 import packageCheck from '$lib/icons/package-check.svelte';
 import paintbrush from '$lib/icons/paintbrush.svelte';
+import panelBottom from '$lib/icons/panel-bottom.svelte';
 import panelBottomClose from '$lib/icons/panel-bottom-close.svelte';
 import panelBottomOpen from '$lib/icons/panel-bottom-open.svelte';
+import panelLeft from '$lib/icons/panel-left.svelte';
 import panelLeftClose from '$lib/icons/panel-left-close.svelte';
 import panelLeftOpen from '$lib/icons/panel-left-open.svelte';
+import panelRight from '$lib/icons/panel-right.svelte';
 import panelRightClose from '$lib/icons/panel-right-close.svelte';
 import panelRightOpen from '$lib/icons/panel-right-open.svelte';
+import panelTop from '$lib/icons/panel-top.svelte';
 import panelTopClose from '$lib/icons/panel-top-close.svelte';
 import panelTopOpen from '$lib/icons/panel-top-open.svelte';
 import paperclip from '$lib/icons/paperclip.svelte';
@@ -3150,6 +3155,12 @@ const ICONS_LIST = [
 		categories: ['design', 'photography']
 	},
 	{
+		name: 'funnel-x',
+		icon: funnelX,
+		tags: ['filter', 'hopper', 'remove', 'delete'],
+		categories: ['layout']
+	},
+	{
 		name: 'gallery-horizontal',
 		icon: galleryHorizontal,
 		tags: ['carousel', 'pictures', 'images', 'scroll', 'swipe', 'album', 'portfolio'],
@@ -4074,6 +4085,12 @@ const ICONS_LIST = [
 		categories: ['text', 'design', 'photography', 'home', 'tools']
 	},
 	{
+		name: 'panel-bottom',
+		icon: panelBottom,
+		tags: ['drawer', 'dock'],
+		categories: ['layout']
+	},
+	{
 		name: 'panel-bottom-close',
 		icon: panelBottomClose,
 		tags: ['drawer', 'dock', 'hide', 'chevron', 'down'],
@@ -4084,6 +4101,12 @@ const ICONS_LIST = [
 		icon: panelBottomOpen,
 		tags: ['drawer', 'dock', 'show', 'reveal', 'chevron', 'up'],
 		categories: ['layout', 'arrows']
+	},
+	{
+		name: 'panel-left',
+		icon: panelLeft,
+		tags: ['primary', 'drawer'],
+		categories: ['layout']
 	},
 	{
 		name: 'panel-left-close',
@@ -4098,6 +4121,12 @@ const ICONS_LIST = [
 		categories: ['layout', 'arrows']
 	},
 	{
+		name: 'panel-right',
+		icon: panelRight,
+		tags: ['sidebar', 'secondary', 'drawer'],
+		categories: ['layout']
+	},
+	{
 		name: 'panel-right-close',
 		icon: panelRightClose,
 		tags: ['sidebar', 'secondary', 'drawer', 'hide', 'chevron', '>'],
@@ -4108,6 +4137,12 @@ const ICONS_LIST = [
 		icon: panelRightOpen,
 		tags: ['sidebar', 'secondary', 'drawer', 'show', 'reveal', 'chevron', 'left', '<'],
 		categories: ['layout', 'arrows']
+	},
+	{
+		name: 'panel-top',
+		icon: panelTop,
+		tags: ['drawer', 'browser', 'webpage'],
+		categories: ['layout', 'design', 'development']
 	},
 	{
 		name: 'panel-top-close',

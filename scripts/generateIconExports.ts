@@ -6,10 +6,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const iconsDir = path.join(__dirname, '../src/lib/icons');
-const indexFile = path.join(__dirname, '../src/lib/index.js');
+const indexFile = path.join(__dirname, '../src/lib/index.ts');
 
-function toPascalCase(filename) {
-	// Split by dash
+function toPascalCase(filename: string): string {
 	const parts = filename.split('-');
 	let result = '';
 	let digitBuffer = '';
