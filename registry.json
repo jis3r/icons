@@ -7941,6 +7941,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "user-x",
+			"title": "user-x",
+			"type": "registry:component",
+			"description": "The animated user-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/user-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/user-x.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "user",
 			"title": "user",
 			"type": "registry:component",
