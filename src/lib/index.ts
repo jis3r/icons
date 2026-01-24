@@ -303,6 +303,7 @@ export { default as MapPinOff } from './icons/map-pin-off.svelte';
 export { default as Maximize2 } from './icons/maximize-2.svelte';
 export { default as Maximize } from './icons/maximize.svelte';
 export { default as MegaphoneOff } from './icons/megaphone-off.svelte';
+export { default as MessageCircleCode } from './icons/message-circle-code.svelte';
 export { default as MessageCircleMore } from './icons/message-circle-more.svelte';
 export { default as MessageCircleOff } from './icons/message-circle-off.svelte';
 export { default as MessageCircleQuestionMark } from './icons/message-circle-question-mark.svelte';

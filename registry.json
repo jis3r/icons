@@ -4885,6 +4885,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "message-circle-code",
+			"title": "message-circle-code",
+			"type": "registry:component",
+			"description": "The animated message-circle-code icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/message-circle-code.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/message-circle-code.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "message-circle-more",
 			"title": "message-circle-more",
 			"type": "registry:component",
