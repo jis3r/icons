@@ -2745,6 +2745,24 @@
 		"relativeUrl": "megaphone-off.json"
 	},
 	{
+		"name": "message-circle-code",
+		"title": "message-circle-code",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-circle-code icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-circle-code.json"
+	},
+	{
+		"name": "message-circle-dashed",
+		"title": "message-circle-dashed",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-circle-dashed icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-circle-dashed.json"
+	},
+	{
 		"name": "message-circle-more",
 		"title": "message-circle-more",
 		"type": "registry:component",

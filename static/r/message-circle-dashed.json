@@ -1,0 +1,16 @@
+{
+	"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+	"name": "message-circle-dashed",
+	"title": "message-circle-dashed",
+	"type": "registry:component",
+	"description": "The animated message-circle-dashed icon component.",
+	"author": "jis3r <jis3r@protonmail.com>",
+	"files": [
+		{
+			"type": "registry:component",
+			"target": "~/src/lib/components/movingicons/message-circle-dashed.svelte",
+			"content": "<script lang=\"ts\">\n\timport type { IconProps } from './types.js';\n\n\tlet {\n\t\tcolor = 'currentColor',\n\t\tsize = 24,\n\t\tstrokeWidth = 2,\n\t\tanimate = false,\n\t\tclass: className = ''\n\t}: IconProps = $props();\n\n\tfunction handleMouseEnter() {\n\t\tif (animate) return;\n\t\tanimate = true;\n\t\tsetTimeout(() => {\n\t\t\tanimate = false;\n\t\t}, 800);\n\t}\n</script>\n\n<div\n\tclass={className}\n\taria-label=\"message-circle-dashed\"\n\trole=\"img\"\n\tonmouseenter={handleMouseEnter}\n>\n\t<svg\n\t\txmlns=\"http://www.w3.org/2000/svg\"\n\t\twidth={size}\n\t\theight={size}\n\t\tviewBox=\"0 0 24 24\"\n\t\tfill=\"none\"\n\t\tstroke={color}\n\t\tstroke-width={strokeWidth}\n\t\tstroke-linecap=\"round\"\n\t\tstroke-linejoin=\"round\"\n\t\tclass:animate\n\t>\n\t\t<g class=\"message-circle-dashed-group\">\n\t\t\t<path d=\"M13.5 3.1c-.5 0-1-.1-1.5-.1s-1 .1-1.5.1\" class=\"message-circle-dashed-path1\" />\n\t\t\t<path d=\"M19.3 6.8a10.45 10.45 0 0 0-2.1-2.1\" class=\"message-circle-dashed-path2\" />\n\t\t\t<path d=\"M20.9 13.5c.1-.5.1-1 .1-1.5s-.1-1-.1-1.5\" class=\"message-circle-dashed-path3\" />\n\t\t\t<path d=\"M17.2 19.3a10.45 10.45 0 0 0 2.1-2.1\" class=\"message-circle-dashed-path4\" />\n\t\t\t<path d=\"M10.5 20.9c.5.1 1 .1 1.5.1s1-.1 1.5-.1\" class=\"message-circle-dashed-path5\" />\n\t\t\t<path d=\"M3.5 17.5 2 22l4.5-1.5\" class=\"message-circle-dashed-path6\" />\n\t\t\t<path d=\"M3.1 10.5c0 .5-.1 1-.1 1.5s.1 1 .1 1.5\" class=\"message-circle-dashed-path7\" />\n\t\t\t<path d=\"M6.8 4.7a10.45 10.45 0 0 0-2.1 2.1\" class=\"message-circle-dashed-path8\" />\n\t\t</g>\n\t</svg>\n</div>\n\n<style>\n\tdiv {\n\t\tdisplay: inline-block;\n\t}\n\t.message-circle-dashed-group {\n\t\ttransform-origin: bottom left;\n\t}\n\n\t.animate .message-circle-dashed-group {\n\t\tanimation: messageCircleDashedGroupAnimation 0.8s ease-in-out;\n\t}\n\n\t@keyframes messageCircleDashedGroupAnimation {\n\t\t0% {\n\t\t\ttransform: rotate(0deg);\n\t\t}\n\t\t40% {\n\t\t\ttransform: rotate(8deg);\n\t\t}\n\t\t60% {\n\t\t\ttransform: rotate(-8deg);\n\t\t}\n\t\t80% {\n\t\t\ttransform: rotate(2deg);\n\t\t}\n\t\t100% {\n\t\t\ttransform: rotate(0deg);\n\t\t}\n\t}\n</style>\n"
+		}
+	],
+	"registryDependencies": []
+}

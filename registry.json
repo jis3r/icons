@@ -4901,6 +4901,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "message-circle-dashed",
+			"title": "message-circle-dashed",
+			"type": "registry:component",
+			"description": "The animated message-circle-dashed icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/message-circle-dashed.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/message-circle-dashed.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "message-circle-more",
 			"title": "message-circle-more",
 			"type": "registry:component",

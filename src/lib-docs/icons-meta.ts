@@ -305,6 +305,7 @@ import maximize2 from '$lib/icons/maximize-2.svelte';
 import megaphoneOff from '$lib/icons/megaphone-off.svelte';
 import messageCircle from '$lib/icons/message-circle.svelte';
 import messageCircleCode from '$lib/icons/message-circle-code.svelte';
+import messageCircleDashed from '$lib/icons/message-circle-dashed.svelte';
 import messageCircleMore from '$lib/icons/message-circle-more.svelte';
 import messageCircleOff from '$lib/icons/message-circle-off.svelte';
 import messageCircleQuestionMark from '$lib/icons/message-circle-question-mark.svelte';
@@ -3683,6 +3684,12 @@ const ICONS_LIST = [
 			'coding'
 		],
 		categories: ['development', 'social']
+	},
+	{
+		name: 'message-circle-dashed',
+		icon: messageCircleDashed,
+		tags: ['comment', 'chat', 'conversation', 'dialog', 'feedback', 'speech bubble', 'draft'],
+		categories: ['social']
 	},
 	{
 		name: 'message-circle-more',
