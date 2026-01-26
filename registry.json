@@ -4917,6 +4917,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "message-circle-heart",
+			"title": "message-circle-heart",
+			"type": "registry:component",
+			"description": "The animated message-circle-heart icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/message-circle-heart.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/message-circle-heart.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "message-circle-more",
 			"title": "message-circle-more",
 			"type": "registry:component",

@@ -2763,6 +2763,15 @@
 		"relativeUrl": "message-circle-dashed.json"
 	},
 	{
+		"name": "message-circle-heart",
+		"title": "message-circle-heart",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-circle-heart icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-circle-heart.json"
+	},
+	{
 		"name": "message-circle-more",
 		"title": "message-circle-more",
 		"type": "registry:component",
