@@ -5013,6 +5013,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "message-square-code",
+			"title": "message-square-code",
+			"type": "registry:component",
+			"description": "The animated message-square-code icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/message-square-code.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/message-square-code.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "message-square-more",
 			"title": "message-square-more",
 			"type": "registry:component",

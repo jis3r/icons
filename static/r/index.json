@@ -2817,6 +2817,15 @@
 		"relativeUrl": "message-circle.json"
 	},
 	{
+		"name": "message-square-code",
+		"title": "message-square-code",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-square-code icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-square-code.json"
+	},
+	{
 		"name": "message-square-more",
 		"title": "message-square-more",
 		"type": "registry:component",
