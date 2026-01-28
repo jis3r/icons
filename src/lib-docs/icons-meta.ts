@@ -3805,6 +3805,12 @@ const ICONS_LIST = [
 		categories: ['development', 'social']
 	},
 	{
+		name: 'message-square-dashed',
+		icon: messageSquareDashed,
+		tags: ['comment', 'chat', 'conversation', 'dialog', 'feedback', 'speech bubble', 'draft'],
+		categories: ['social']
+	},
+	{
 		name: 'message-square-more',
 		icon: messageSquareMore,
 		tags: [

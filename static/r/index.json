@@ -2826,6 +2826,15 @@
 		"relativeUrl": "message-square-code.json"
 	},
 	{
+		"name": "message-square-dashed",
+		"title": "message-square-dashed",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-square-dashed icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-square-dashed.json"
+	},
+	{
 		"name": "message-square-more",
 		"title": "message-square-more",
 		"type": "registry:component",
@@ -4498,6 +4507,15 @@
 		"description": "The animated user-round icon component.",
 		"registryDependencies": [],
 		"relativeUrl": "user-round.json"
+	},
+	{
+		"name": "user-x",
+		"title": "user-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated user-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "user-x.json"
 	},
 	{
 		"name": "user",
