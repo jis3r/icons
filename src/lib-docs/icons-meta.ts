@@ -314,6 +314,7 @@ import messageCircleWarning from '$lib/icons/message-circle-warning.svelte';
 import messageSquare from '$lib/icons/message-square.svelte';
 import messageSquareCode from '$lib/icons/message-square-code.svelte';
 import messageSquareDashed from '$lib/icons/message-square-dashed.svelte';
+import messageSquareDot from '$lib/icons/message-square-dot.svelte';
 import messageSquareMore from '$lib/icons/message-square-more.svelte';
 import messageSquareOff from '$lib/icons/message-square-off.svelte';
 import messageSquareWarning from '$lib/icons/message-square-warning.svelte';
@@ -3809,6 +3810,21 @@ const ICONS_LIST = [
 		icon: messageSquareDashed,
 		tags: ['comment', 'chat', 'conversation', 'dialog', 'feedback', 'speech bubble', 'draft'],
 		categories: ['social']
+	},
+	{
+		name: 'message-square-dot',
+		icon: messageSquareDot,
+		tags: [
+			'unread',
+			'unresolved',
+			'comment',
+			'chat',
+			'conversation',
+			'dialog',
+			'feedback',
+			'speech bubble'
+		],
+		categories: ['social', 'notifications']
 	},
 	{
 		name: 'message-square-more',

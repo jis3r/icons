@@ -2835,6 +2835,15 @@
 		"relativeUrl": "message-square-dashed.json"
 	},
 	{
+		"name": "message-square-dot",
+		"title": "message-square-dot",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-square-dot icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-square-dot.json"
+	},
+	{
 		"name": "message-square-more",
 		"title": "message-square-more",
 		"type": "registry:component",
