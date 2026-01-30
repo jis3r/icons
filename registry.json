@@ -5061,6 +5061,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "message-square-heart",
+			"title": "message-square-heart",
+			"type": "registry:component",
+			"description": "The animated message-square-heart icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/message-square-heart.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/message-square-heart.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "message-square-more",
 			"title": "message-square-more",
 			"type": "registry:component",

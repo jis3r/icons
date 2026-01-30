@@ -314,6 +314,7 @@ export { default as MessageCircle } from './icons/message-circle.svelte';
 export { default as MessageSquareCode } from './icons/message-square-code.svelte';
 export { default as MessageSquareDashed } from './icons/message-square-dashed.svelte';
 export { default as MessageSquareDot } from './icons/message-square-dot.svelte';
+export { default as MessageSquareHeart } from './icons/message-square-heart.svelte';
 export { default as MessageSquareMore } from './icons/message-square-more.svelte';
 export { default as MessageSquareOff } from './icons/message-square-off.svelte';
 export { default as MessageSquareWarning } from './icons/message-square-warning.svelte';
