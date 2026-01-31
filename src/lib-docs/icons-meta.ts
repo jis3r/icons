@@ -318,6 +318,7 @@ import messageSquareDot from '$lib/icons/message-square-dot.svelte';
 import messageSquareHeart from '$lib/icons/message-square-heart.svelte';
 import messageSquareMore from '$lib/icons/message-square-more.svelte';
 import messageSquareOff from '$lib/icons/message-square-off.svelte';
+import messageSquareQuote from '$lib/icons/message-square-quote.svelte';
 import messageSquareWarning from '$lib/icons/message-square-warning.svelte';
 import micOff from '$lib/icons/mic-off.svelte';
 import milkOff from '$lib/icons/milk-off.svelte';
@@ -3888,6 +3889,24 @@ const ICONS_LIST = [
 			'moderate'
 		],
 		categories: ['social']
+	},
+	{
+		name: 'message-square-quote',
+		icon: messageSquareQuote,
+		tags: [
+			'comment',
+			'chat',
+			'conversation',
+			'dialog',
+			'feedback',
+			'speech bubble',
+			'blockquote',
+			'quotation',
+			'indent',
+			'reply',
+			'response'
+		],
+		categories: ['social', 'text']
 	},
 	{
 		name: 'message-square-warning',
