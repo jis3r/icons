@@ -1,0 +1,16 @@
+{
+	"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+	"name": "message-square-heart",
+	"title": "message-square-heart",
+	"type": "registry:component",
+	"description": "The animated message-square-heart icon component.",
+	"author": "jis3r <jis3r@protonmail.com>",
+	"files": [
+		{
+			"type": "registry:component",
+			"target": "~/src/lib/components/movingicons/message-square-heart.svelte",
+			"content": "<script lang=\"ts\">\n\timport type { IconProps } from './types.js';\n\n\tlet {\n\t\tcolor = 'currentColor',\n\t\tsize = 24,\n\t\tstrokeWidth = 2,\n\t\tanimate = false,\n\t\tclass: className = ''\n\t}: IconProps = $props();\n\n\tfunction handleMouseEnter() {\n\t\tif (animate) return;\n\t\tanimate = true;\n\t\tsetTimeout(() => {\n\t\t\tanimate = false;\n\t\t}, 800);\n\t}\n</script>\n\n<div class={className} aria-label=\"message-square-heart\" role=\"img\" onmouseenter={handleMouseEnter}>\n\t<svg\n\t\txmlns=\"http://www.w3.org/2000/svg\"\n\t\twidth={size}\n\t\theight={size}\n\t\tviewBox=\"0 0 24 24\"\n\t\tfill=\"none\"\n\t\tstroke={color}\n\t\tstroke-width={strokeWidth}\n\t\tstroke-linecap=\"round\"\n\t\tstroke-linejoin=\"round\"\n\t\tclass:animate\n\t>\n\t\t<g class=\"message-square-heart-group\">\n\t\t\t<path\n\t\t\t\td=\"M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z\"\n\t\t\t\tclass=\"message-square-heart-path1\"\n\t\t\t/>\n\t\t\t<path\n\t\t\t\td=\"M14.8 7.5a1.84 1.84 0 0 0-2.6 0l-.2.3-.3-.3a1.84 1.84 0 1 0-2.4 2.8L12 13l2.7-2.7c.9-.9.8-2.1.1-2.8\"\n\t\t\t\tclass=\"message-square-heart-path2\"\n\t\t\t/>\n\t\t</g>\n\t</svg>\n</div>\n\n<style>\n\tdiv {\n\t\tdisplay: inline-block;\n\t}\n\t.message-square-heart-group {\n\t\ttransform-origin: bottom left;\n\t}\n\n\t.message-square-heart-path2 {\n\t\ttransform-origin: center;\n\t}\n\n\t.animate .message-square-heart-group {\n\t\tanimation: messageSquareHeartGroupAnimation 0.8s ease-in-out;\n\t}\n\n\t.animate .message-square-heart-path2 {\n\t\tanimation: messageSquareHeartPath2Animation 0.8s ease-in-out;\n\t}\n\n\t@keyframes messageSquareHeartGroupAnimation {\n\t\t0% {\n\t\t\ttransform: rotate(0deg);\n\t\t}\n\t\t40% {\n\t\t\ttransform: rotate(8deg);\n\t\t}\n\t\t60% {\n\t\t\ttransform: rotate(-8deg);\n\t\t}\n\t\t80% {\n\t\t\ttransform: rotate(2deg);\n\t\t}\n\t\t100% {\n\t\t\ttransform: rotate(0deg);\n\t\t}\n\t}\n\n\t@keyframes messageSquareHeartPath2Animation {\n\t\t0% {\n\t\t\ttransform: scale(1);\n\t\t}\n\t\t25% {\n\t\t\ttransform: scale(0.7);\n\t\t}\n\t\t50% {\n\t\t\ttransform: scale(1.1);\n\t\t}\n\t\t100% {\n\t\t\ttransform: scale(1);\n\t\t}\n\t}\n</style>\n"
+		}
+	],
+	"registryDependencies": []
+}

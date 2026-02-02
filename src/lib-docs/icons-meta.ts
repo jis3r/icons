@@ -304,13 +304,21 @@ import maximize from '$lib/icons/maximize.svelte';
 import maximize2 from '$lib/icons/maximize-2.svelte';
 import megaphoneOff from '$lib/icons/megaphone-off.svelte';
 import messageCircle from '$lib/icons/message-circle.svelte';
+import messageCircleCode from '$lib/icons/message-circle-code.svelte';
+import messageCircleDashed from '$lib/icons/message-circle-dashed.svelte';
+import messageCircleHeart from '$lib/icons/message-circle-heart.svelte';
 import messageCircleMore from '$lib/icons/message-circle-more.svelte';
 import messageCircleOff from '$lib/icons/message-circle-off.svelte';
 import messageCircleQuestionMark from '$lib/icons/message-circle-question-mark.svelte';
 import messageCircleWarning from '$lib/icons/message-circle-warning.svelte';
 import messageSquare from '$lib/icons/message-square.svelte';
+import messageSquareCode from '$lib/icons/message-square-code.svelte';
+import messageSquareDashed from '$lib/icons/message-square-dashed.svelte';
+import messageSquareDot from '$lib/icons/message-square-dot.svelte';
+import messageSquareHeart from '$lib/icons/message-square-heart.svelte';
 import messageSquareMore from '$lib/icons/message-square-more.svelte';
 import messageSquareOff from '$lib/icons/message-square-off.svelte';
+import messageSquareQuote from '$lib/icons/message-square-quote.svelte';
 import messageSquareWarning from '$lib/icons/message-square-warning.svelte';
 import micOff from '$lib/icons/mic-off.svelte';
 import milkOff from '$lib/icons/milk-off.svelte';
@@ -497,6 +505,7 @@ import userRoundCog from '$lib/icons/user-round-cog.svelte';
 import userRoundPen from '$lib/icons/user-round-pen.svelte';
 import users from '$lib/icons/users.svelte';
 import usersRound from '$lib/icons/users-round.svelte';
+import userX from '$lib/icons/user-x.svelte';
 import vault from '$lib/icons/vault.svelte';
 import vibrate from '$lib/icons/vibrate.svelte';
 import vibrateOff from '$lib/icons/vibrate-off.svelte';
@@ -3668,6 +3677,47 @@ const ICONS_LIST = [
 		categories: ['social']
 	},
 	{
+		name: 'message-circle-code',
+		icon: messageCircleCode,
+		tags: [
+			'comment',
+			'chat',
+			'conversation',
+			'dialog',
+			'feedback',
+			'speech bubble',
+			'code review',
+			'coding'
+		],
+		categories: ['development', 'social']
+	},
+	{
+		name: 'message-circle-dashed',
+		icon: messageCircleDashed,
+		tags: ['comment', 'chat', 'conversation', 'dialog', 'feedback', 'speech bubble', 'draft'],
+		categories: ['social']
+	},
+	{
+		name: 'message-circle-heart',
+		icon: messageCircleHeart,
+		tags: [
+			'comment',
+			'chat',
+			'conversation',
+			'dialog',
+			'feedback',
+			'positive',
+			'like',
+			'love',
+			'interest',
+			'valentine',
+			'dating',
+			'date',
+			'speech bubble'
+		],
+		categories: ['social']
+	},
+	{
 		name: 'message-circle-more',
 		icon: messageCircleMore,
 		tags: [
@@ -3743,6 +3793,62 @@ const ICONS_LIST = [
 		categories: ['social']
 	},
 	{
+		name: 'message-square-code',
+		icon: messageSquareCode,
+		tags: [
+			'comment',
+			'chat',
+			'conversation',
+			'dialog',
+			'feedback',
+			'speech bubble',
+			'code review',
+			'coding'
+		],
+		categories: ['development', 'social']
+	},
+	{
+		name: 'message-square-dashed',
+		icon: messageSquareDashed,
+		tags: ['comment', 'chat', 'conversation', 'dialog', 'feedback', 'speech bubble', 'draft'],
+		categories: ['social']
+	},
+	{
+		name: 'message-square-dot',
+		icon: messageSquareDot,
+		tags: [
+			'unread',
+			'unresolved',
+			'comment',
+			'chat',
+			'conversation',
+			'dialog',
+			'feedback',
+			'speech bubble'
+		],
+		categories: ['social', 'notifications']
+	},
+	{
+		name: 'message-square-heart',
+		icon: messageSquareHeart,
+		tags: [
+			'comment',
+			'chat',
+			'conversation',
+			'dialog',
+			'feedback',
+			'positive',
+			'like',
+			'love',
+			'interest',
+			'valentine',
+			'dating',
+			'date',
+			'speech bubble'
+		],
+		categories: ['social']
+	},
+	{
 		name: 'message-square-more',
 		icon: messageSquareMore,
 		tags: [
@@ -3783,6 +3889,24 @@ const ICONS_LIST = [
 			'moderate'
 		],
 		categories: ['social']
+	},
+	{
+		name: 'message-square-quote',
+		icon: messageSquareQuote,
+		tags: [
+			'comment',
+			'chat',
+			'conversation',
+			'dialog',
+			'feedback',
+			'speech bubble',
+			'blockquote',
+			'quotation',
+			'indent',
+			'reply',
+			'response'
+		],
+		categories: ['social', 'text']
 	},
 	{
 		name: 'message-square-warning',
@@ -5717,6 +5841,12 @@ const ICONS_LIST = [
 		name: 'user-round-pen',
 		icon: userRoundPen,
 		tags: ['person', 'account', 'contact', 'profile', 'edit', 'change'],
+		categories: ['account']
+	},
+	{
+		name: 'user-x',
+		icon: userX,
+		tags: ['delete', 'remove', 'unfollow', 'unsubscribe', 'unavailable'],
 		categories: ['account']
 	},
 	{

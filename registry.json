@@ -4885,6 +4885,54 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "message-circle-code",
+			"title": "message-circle-code",
+			"type": "registry:component",
+			"description": "The animated message-circle-code icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/message-circle-code.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/message-circle-code.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "message-circle-dashed",
+			"title": "message-circle-dashed",
+			"type": "registry:component",
+			"description": "The animated message-circle-dashed icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/message-circle-dashed.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/message-circle-dashed.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "message-circle-heart",
+			"title": "message-circle-heart",
+			"type": "registry:component",
+			"description": "The animated message-circle-heart icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/message-circle-heart.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/message-circle-heart.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "message-circle-more",
 			"title": "message-circle-more",
 			"type": "registry:component",
@@ -4965,6 +5013,70 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "message-square-code",
+			"title": "message-square-code",
+			"type": "registry:component",
+			"description": "The animated message-square-code icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/message-square-code.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/message-square-code.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "message-square-dashed",
+			"title": "message-square-dashed",
+			"type": "registry:component",
+			"description": "The animated message-square-dashed icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/message-square-dashed.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/message-square-dashed.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "message-square-dot",
+			"title": "message-square-dot",
+			"type": "registry:component",
+			"description": "The animated message-square-dot icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/message-square-dot.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/message-square-dot.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "message-square-heart",
+			"title": "message-square-heart",
+			"type": "registry:component",
+			"description": "The animated message-square-heart icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/message-square-heart.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/message-square-heart.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "message-square-more",
 			"title": "message-square-more",
 			"type": "registry:component",
@@ -4991,6 +5103,22 @@
 					"path": "./src/lib/icons/message-square-off.svelte",
 					"type": "registry:component",
 					"target": "~/src/lib/components/movingicons/message-square-off.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "message-square-quote",
+			"title": "message-square-quote",
+			"type": "registry:component",
+			"description": "The animated message-square-quote icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/message-square-quote.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/message-square-quote.svelte"
 				}
 			],
 			"registryDependencies": []
@@ -7935,6 +8063,22 @@
 					"path": "./src/lib/icons/user-round.svelte",
 					"type": "registry:component",
 					"target": "~/src/lib/components/movingicons/user-round.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "user-x",
+			"title": "user-x",
+			"type": "registry:component",
+			"description": "The animated user-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/user-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/user-x.svelte"
 				}
 			],
 			"registryDependencies": []

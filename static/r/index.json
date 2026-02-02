@@ -2745,6 +2745,33 @@
 		"relativeUrl": "megaphone-off.json"
 	},
 	{
+		"name": "message-circle-code",
+		"title": "message-circle-code",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-circle-code icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-circle-code.json"
+	},
+	{
+		"name": "message-circle-dashed",
+		"title": "message-circle-dashed",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-circle-dashed icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-circle-dashed.json"
+	},
+	{
+		"name": "message-circle-heart",
+		"title": "message-circle-heart",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-circle-heart icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-circle-heart.json"
+	},
+	{
 		"name": "message-circle-more",
 		"title": "message-circle-more",
 		"type": "registry:component",
@@ -2790,6 +2817,42 @@
 		"relativeUrl": "message-circle.json"
 	},
 	{
+		"name": "message-square-code",
+		"title": "message-square-code",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-square-code icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-square-code.json"
+	},
+	{
+		"name": "message-square-dashed",
+		"title": "message-square-dashed",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-square-dashed icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-square-dashed.json"
+	},
+	{
+		"name": "message-square-dot",
+		"title": "message-square-dot",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-square-dot icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-square-dot.json"
+	},
+	{
+		"name": "message-square-heart",
+		"title": "message-square-heart",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-square-heart icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-square-heart.json"
+	},
+	{
 		"name": "message-square-more",
 		"title": "message-square-more",
 		"type": "registry:component",
@@ -2806,6 +2869,15 @@
 		"description": "The animated message-square-off icon component.",
 		"registryDependencies": [],
 		"relativeUrl": "message-square-off.json"
+	},
+	{
+		"name": "message-square-quote",
+		"title": "message-square-quote",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-square-quote icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-square-quote.json"
 	},
 	{
 		"name": "message-square-warning",
@@ -4462,6 +4534,15 @@
 		"description": "The animated user-round icon component.",
 		"registryDependencies": [],
 		"relativeUrl": "user-round.json"
+	},
+	{
+		"name": "user-x",
+		"title": "user-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated user-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "user-x.json"
 	},
 	{
 		"name": "user",
