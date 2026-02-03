@@ -31,10 +31,19 @@ function toPascalCase(filename: string): string {
 
 const files = fs.readdirSync(iconsDir).filter((f) => f.endsWith('.svelte'));
 
-const lines = files.map((file) => {
+const componentExports = files.map((file) => {
 	const base = file.replace(/\.svelte$/, '');
 	const exportName = toPascalCase(base);
 	return `export { default as ${exportName} } from "./icons/${file}";`;
 });
 
-fs.writeFileSync(indexFile, lines.join('\n') + '\n');
+const iconNames = files.map((f) => f.replace(/\.svelte$/, ''));
+const iconNameUnion = iconNames.map((name) => `'${name}'`).join(' | ');
+
+const typeExports = [
+	'',
+	"export type { IconProps } from './icons/types.js';",
+	`export type IconName = ${iconNameUnion};`
+];
+
+fs.writeFileSync(indexFile, componentExports.join('\n') + typeExports.join('\n') + '\n');

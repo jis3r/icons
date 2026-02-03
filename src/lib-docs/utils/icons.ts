@@ -1,8 +1,23 @@
 import iflog from 'iflog';
-import type ICONS_LIST_TYPE from '$lib-docs/icons-meta';
+import type ICONS_LIST_TYPE from '$lib-docs/icons-meta.ts';
 
 type Icon = (typeof ICONS_LIST_TYPE)[number];
 type IconWithSource = Icon & { source?: string };
+
+const ICON_PROPS_IMPORT = /import type \{ IconProps \} from '\.\/types\.js';\n\n?/;
+const INLINED_ICON_PROPS = `interface IconProps {
+		color?: string;
+		size?: number;
+		strokeWidth?: number;
+		animate?: boolean;
+		class?: string;
+	}
+
+	`;
+
+function toStandaloneSource(raw: string): string {
+	return raw.replace(ICON_PROPS_IMPORT, INLINED_ICON_PROPS);
+}
 
 export const getIconSource = async (iconName: string): Promise<string> => {
 	try {
@@ -17,7 +32,8 @@ export const getIconSource = async (iconName: string): Promise<string> => {
 			throw new Error(`Icon ${iconName} not found`);
 		}
 
-		return (await iconModules[iconPath]()) as string;
+		const raw = (await iconModules[iconPath]()) as string;
+		return toStandaloneSource(raw);
 	} catch (error) {
 		throw new Error(
 			`Icon ${iconName} not found: ${error instanceof Error ? error.message : String(error)}`
@@ -36,8 +52,8 @@ export const preloadIconSources = async (icons: Icon[]): Promise<IconWithSource[
 		const loadPromises = icons.map(async (icon): Promise<IconWithSource> => {
 			const iconPath = `/src/lib/icons/${icon.name}.svelte`;
 			if (iconPath in iconModules) {
-				const source = (await iconModules[iconPath]()) as string;
-				return { ...icon, source };
+				const raw = (await iconModules[iconPath]()) as string;
+				return { ...icon, source: toStandaloneSource(raw) };
 			}
 			return icon;
 		});
