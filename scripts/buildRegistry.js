@@ -1,6 +1,7 @@
 import { promises as fs } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { ICON_PROPS_IMPORT, INLINED_ICON_PROPS } from '../src/lib/icons/standalone-props.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -53,7 +54,8 @@ async function buildRegistry() {
 				fullPath = join(ROOT_DIR, filePath);
 			}
 
-			const content = await fs.readFile(fullPath, 'utf8');
+			let content = await fs.readFile(fullPath, 'utf8');
+			content = content.replace(ICON_PROPS_IMPORT, INLINED_ICON_PROPS);
 
 			const { path, ...fileItemWithoutPath } = fileItem;
 			const outputItem = {
