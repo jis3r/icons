@@ -1,19 +1,9 @@
 import iflog from 'iflog';
 import type ICONS_LIST_TYPE from '$lib-docs/icons-meta.ts';
+import { ICON_PROPS_IMPORT, INLINED_ICON_PROPS } from '$lib/icons/standalone-props.js';
 
 type Icon = (typeof ICONS_LIST_TYPE)[number];
 type IconWithSource = Icon & { source?: string };
-
-const ICON_PROPS_IMPORT = /import type \{ IconProps \} from '\.\/types\.js';\n\n?/;
-const INLINED_ICON_PROPS = `interface IconProps {
-		color?: string;
-		size?: number;
-		strokeWidth?: number;
-		animate?: boolean;
-		class?: string;
-	}
-
-	`;
 
 function toStandaloneSource(raw: string): string {
 	return raw.replace(ICON_PROPS_IMPORT, INLINED_ICON_PROPS);

@@ -1,6 +1,7 @@
 import { promises as fs } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { ICON_PROPS_IMPORT, INLINED_ICON_PROPS } from '../src/lib/icons/standalone-props.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -9,17 +10,6 @@ const ROOT_DIR = join(__dirname, '..');
 const REGISTRY_PATH = join(ROOT_DIR, 'registry.json');
 const OUTPUT_DIR = join(ROOT_DIR, 'static', 'r');
 const ICONS_DIR = join(ROOT_DIR, 'src', 'lib', 'icons');
-
-const ICON_PROPS_IMPORT = /import type \{ IconProps \} from '\.\/types\.js';\n\n?/;
-const INLINED_ICON_PROPS = `interface IconProps {
-		color?: string;
-		size?: number;
-		strokeWidth?: number;
-		animate?: boolean;
-		class?: string;
-	}
-
-	`;
 
 async function ensureDir(dir) {
 	try {
