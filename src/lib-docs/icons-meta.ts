@@ -311,6 +311,7 @@ import messageCircleMore from '$lib/icons/message-circle-more.svelte';
 import messageCircleOff from '$lib/icons/message-circle-off.svelte';
 import messageCircleQuestionMark from '$lib/icons/message-circle-question-mark.svelte';
 import messageCircleWarning from '$lib/icons/message-circle-warning.svelte';
+import messageCircleX from '$lib/icons/message-circle-x.svelte';
 import messageSquare from '$lib/icons/message-square.svelte';
 import messageSquareCode from '$lib/icons/message-square-code.svelte';
 import messageSquareDashed from '$lib/icons/message-square-dashed.svelte';
@@ -3785,6 +3786,27 @@ const ICONS_LIST = [
 			'exclamation mark'
 		],
 		categories: ['social', 'notifications']
+	},
+	{
+		name: 'message-circle-x',
+		icon: messageCircleX,
+		tags: [
+			'comment',
+			'chat',
+			'conversation',
+			'dialog',
+			'feedback',
+			'speech bubble',
+			'clear',
+			'close',
+			'delete',
+			'remove',
+			'cancel',
+			'silence',
+			'mute',
+			'moderate'
+		],
+		categories: ['account', 'social']
 	},
 	{
 		name: 'message-square',

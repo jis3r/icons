@@ -2808,6 +2808,15 @@
 		"relativeUrl": "message-circle-warning.json"
 	},
 	{
+		"name": "message-circle-x",
+		"title": "message-circle-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-circle-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-circle-x.json"
+	},
+	{
 		"name": "message-circle",
 		"title": "message-circle",
 		"type": "registry:component",

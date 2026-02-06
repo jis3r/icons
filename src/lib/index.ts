@@ -310,6 +310,7 @@ export { default as MessageCircleMore } from './icons/message-circle-more.svelte
 export { default as MessageCircleOff } from './icons/message-circle-off.svelte';
 export { default as MessageCircleQuestionMark } from './icons/message-circle-question-mark.svelte';
 export { default as MessageCircleWarning } from './icons/message-circle-warning.svelte';
+export { default as MessageCircleX } from './icons/message-circle-x.svelte';
 export { default as MessageCircle } from './icons/message-circle.svelte';
 export { default as MessageSquareCode } from './icons/message-square-code.svelte';
 export { default as MessageSquareDashed } from './icons/message-square-dashed.svelte';
@@ -839,6 +840,7 @@ export type IconName =
 	| 'message-circle-off'
 	| 'message-circle-question-mark'
 	| 'message-circle-warning'
+	| 'message-circle-x'
 	| 'message-circle'
 	| 'message-square-code'
 	| 'message-square-dashed'
