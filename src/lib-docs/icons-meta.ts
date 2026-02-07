@@ -321,6 +321,7 @@ import messageSquareMore from '$lib/icons/message-square-more.svelte';
 import messageSquareOff from '$lib/icons/message-square-off.svelte';
 import messageSquareQuote from '$lib/icons/message-square-quote.svelte';
 import messageSquareWarning from '$lib/icons/message-square-warning.svelte';
+import messageSquareX from '$lib/icons/message-square-x.svelte';
 import micOff from '$lib/icons/mic-off.svelte';
 import milkOff from '$lib/icons/milk-off.svelte';
 import minimize from '$lib/icons/minimize.svelte';
@@ -3950,6 +3951,27 @@ const ICONS_LIST = [
 			'exclamation mark'
 		],
 		categories: ['social', 'notifications']
+	},
+	{
+		name: 'message-square-x',
+		icon: messageSquareX,
+		tags: [
+			'comment',
+			'chat',
+			'conversation',
+			'dialog',
+			'feedback',
+			'speech bubble',
+			'clear',
+			'close',
+			'delete',
+			'remove',
+			'cancel',
+			'silence',
+			'mute',
+			'moderate'
+		],
+		categories: ['social']
 	},
 	{
 		name: 'mic-off',

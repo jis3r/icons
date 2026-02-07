@@ -320,6 +320,7 @@ export { default as MessageSquareMore } from './icons/message-square-more.svelte
 export { default as MessageSquareOff } from './icons/message-square-off.svelte';
 export { default as MessageSquareQuote } from './icons/message-square-quote.svelte';
 export { default as MessageSquareWarning } from './icons/message-square-warning.svelte';
+export { default as MessageSquareX } from './icons/message-square-x.svelte';
 export { default as MessageSquare } from './icons/message-square.svelte';
 export { default as MicOff } from './icons/mic-off.svelte';
 export { default as MilkOff } from './icons/milk-off.svelte';
@@ -850,6 +851,7 @@ export type IconName =
 	| 'message-square-off'
 	| 'message-square-quote'
 	| 'message-square-warning'
+	| 'message-square-x'
 	| 'message-square'
 	| 'mic-off'
 	| 'milk-off'
