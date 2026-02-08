@@ -74,6 +74,7 @@
 }
 
 @theme inline {
+	--font-mono: var(--font-geist-mono);
 	--radius-sm: calc(var(--radius) - 4px);
 	--radius-md: calc(var(--radius) - 2px);
 	--radius-lg: var(--radius);
@@ -111,18 +112,10 @@
 	--color-sidebar-ring: var(--sidebar-ring);
 }
 
-@layer utilities {
-	@font-face {
-		font-family: 'Geist';
-		font-weight: 100 900;
-		src: url(/fonts/GeistMono-Variable.woff2) format('woff2');
-	}
-}
-
 @layer base {
 	* {
 		@apply border-border outline-ring/50;
-		font-family: 'Geist', sans-serif;
+		font-family: var(--font-geist-mono);
 	}
 	body {
 		@apply bg-background text-foreground;

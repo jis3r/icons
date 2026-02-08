@@ -310,6 +310,7 @@ export { default as MessageCircleMore } from './icons/message-circle-more.svelte
 export { default as MessageCircleOff } from './icons/message-circle-off.svelte';
 export { default as MessageCircleQuestionMark } from './icons/message-circle-question-mark.svelte';
 export { default as MessageCircleWarning } from './icons/message-circle-warning.svelte';
+export { default as MessageCircleX } from './icons/message-circle-x.svelte';
 export { default as MessageCircle } from './icons/message-circle.svelte';
 export { default as MessageSquareCode } from './icons/message-square-code.svelte';
 export { default as MessageSquareDashed } from './icons/message-square-dashed.svelte';
@@ -319,6 +320,7 @@ export { default as MessageSquareMore } from './icons/message-square-more.svelte
 export { default as MessageSquareOff } from './icons/message-square-off.svelte';
 export { default as MessageSquareQuote } from './icons/message-square-quote.svelte';
 export { default as MessageSquareWarning } from './icons/message-square-warning.svelte';
+export { default as MessageSquareX } from './icons/message-square-x.svelte';
 export { default as MessageSquare } from './icons/message-square.svelte';
 export { default as MicOff } from './icons/mic-off.svelte';
 export { default as MilkOff } from './icons/milk-off.svelte';
@@ -839,6 +841,7 @@ export type IconName =
 	| 'message-circle-off'
 	| 'message-circle-question-mark'
 	| 'message-circle-warning'
+	| 'message-circle-x'
 	| 'message-circle'
 	| 'message-square-code'
 	| 'message-square-dashed'
@@ -848,6 +851,7 @@ export type IconName =
 	| 'message-square-off'
 	| 'message-square-quote'
 	| 'message-square-warning'
+	| 'message-square-x'
 	| 'message-square'
 	| 'mic-off'
 	| 'milk-off'

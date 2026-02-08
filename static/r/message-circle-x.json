@@ -1,0 +1,16 @@
+{
+	"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+	"name": "message-circle-x",
+	"title": "message-circle-x",
+	"type": "registry:component",
+	"description": "The animated message-circle-x icon component.",
+	"author": "jis3r <jis3r@protonmail.com>",
+	"files": [
+		{
+			"type": "registry:component",
+			"target": "~/src/lib/components/movingicons/message-circle-x.svelte",
+			"content": "<script lang=\"ts\">\n\tinterface IconProps {\n\t\tcolor?: string;\n\t\tsize?: number;\n\t\tstrokeWidth?: number;\n\t\tanimate?: boolean;\n\t\tclass?: string;\n\t}\n\n\tlet {\n\t\tcolor = 'currentColor',\n\t\tsize = 24,\n\t\tstrokeWidth = 2,\n\t\tanimate = false,\n\t\tclass: className = ''\n\t}: IconProps = $props();\n\n\tfunction handleMouseEnter() {\n\t\tif (animate) return;\n\t\tanimate = true;\n\t\tsetTimeout(() => {\n\t\t\tanimate = false;\n\t\t}, 800);\n\t}\n</script>\n\n<div class={className} aria-label=\"message-circle-x\" role=\"img\" onmouseenter={handleMouseEnter}>\n\t<svg\n\t\txmlns=\"http://www.w3.org/2000/svg\"\n\t\twidth={size}\n\t\theight={size}\n\t\tviewBox=\"0 0 24 24\"\n\t\tfill=\"none\"\n\t\tstroke={color}\n\t\tstroke-width={strokeWidth}\n\t\tstroke-linecap=\"round\"\n\t\tstroke-linejoin=\"round\"\n\t\tclass=\"message-circle-x-icon\"\n\t>\n\t\t<g class=\"message-circle-x-group\" class:animate>\n\t\t\t<path\n\t\t\t\td=\"M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719\"\n\t\t\t/>\n\t\t\t<path d=\"m15 9-6 6\" class=\"diagonal-1\" />\n\t\t\t<path d=\"m9 9 6 6\" class=\"diagonal-2\" />\n\t\t</g>\n\t</svg>\n</div>\n\n<style>\n\tdiv {\n\t\tdisplay: inline-block;\n\t}\n\t.message-circle-x-icon {\n\t\toverflow: visible;\n\t}\n\n\t.message-circle-x-group {\n\t\ttransform-origin: bottom left;\n\t}\n\n\t.message-circle-x-group.animate {\n\t\tanimation: messageCircleAnimation 0.8s ease-in-out;\n\t}\n\n\t.diagonal-1,\n\t.diagonal-2 {\n\t\tstroke-dasharray: 8.5;\n\t\tstroke-dashoffset: 0;\n\t\ttransition: stroke-dashoffset 0.15s ease-out;\n\t}\n\n\t.message-circle-x-group.animate .diagonal-1 {\n\t\topacity: 0;\n\t\tanimation: lineAnimation 0.3s ease-out forwards;\n\t}\n\n\t.message-circle-x-group.animate .diagonal-2 {\n\t\topacity: 0;\n\t\tanimation: lineAnimation 0.3s ease-out 0.25s forwards;\n\t}\n\n\t@keyframes messageCircleAnimation {\n\t\t0% {\n\t\t\ttransform: rotate(0deg);\n\t\t}\n\t\t40% {\n\t\t\ttransform: rotate(8deg);\n\t\t}\n\t\t60% {\n\t\t\ttransform: rotate(-8deg);\n\t\t}\n\t\t80% {\n\t\t\ttransform: rotate(2deg);\n\t\t}\n\t\t100% {\n\t\t\ttransform: rotate(0deg);\n\t\t}\n\t}\n\n\t@keyframes lineAnimation {\n\t\t0% {\n\t\t\topacity: 0;\n\t\t\tstroke-dashoffset: 8.5;\n\t\t}\n\t\t15% {\n\t\t\topacity: 1;\n\t\t\tstroke-dashoffset: 8.5;\n\t\t}\n\t\t100% {\n\t\t\topacity: 1;\n\t\t\tstroke-dashoffset: 0;\n\t\t}\n\t}\n</style>\n"
+		}
+	],
+	"registryDependencies": []
+}

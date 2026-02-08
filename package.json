@@ -1,6 +1,6 @@
 {
 	"name": "@jis3r/icons",
-	"version": "2.3.1",
+	"version": "2.4.0",
 	"description": "beautifully crafted, moving icons. for svelte.",
 	"keywords": [
 		"svelte",
@@ -66,6 +66,7 @@
 		"eslint": "^9.7.0",
 		"eslint-config-prettier": "^10.1.1",
 		"eslint-plugin-svelte": "^3.5.1",
+		"geist-svelte": "^1.0.0",
 		"globals": "^16.0.0",
 		"iflog": "^0.3.0",
 		"mode-watcher": "^0.5.1",

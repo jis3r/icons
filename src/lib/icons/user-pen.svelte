@@ -30,14 +30,15 @@
 		stroke-linecap="round"
 		stroke-linejoin="round"
 		class="user-pen-icon"
+		class:animate
 	>
-		<path d="M11.5 15H7a4 4 0 0 0-4 4v2" />
+		<path d="M11.5 15H7a4 4 0 0 0-4 4v2" class="user-path" />
 		<path
 			d="M21.378 16.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"
 			class="pen"
 			class:animate
 		/>
-		<circle cx="10" cy="7" r="4" />
+		<circle cx="10" cy="7" r="4" class="user-circle" />
 	</svg>
 </div>
 
@@ -56,6 +57,49 @@
 
 	.pen.animate {
 		animation: penWiggle 0.5s ease-in-out 2;
+	}
+
+	.user-path,
+	.user-circle {
+		transition: transform 0.6s ease-in-out;
+	}
+
+	.user-pen-icon.animate .user-path {
+		animation: pathBounce 0.6s ease-in-out;
+	}
+
+	.user-pen-icon.animate .user-circle {
+		animation: circleBounce 0.6s ease-in-out;
+	}
+
+	@keyframes pathBounce {
+		0% {
+			transform: translateY(0);
+		}
+		33% {
+			transform: translateY(2px);
+		}
+		66% {
+			transform: translateY(-2px);
+		}
+		100% {
+			transform: translateY(0);
+		}
+	}
+
+	@keyframes circleBounce {
+		0% {
+			transform: translateY(0);
+		}
+		33% {
+			transform: translateY(4px);
+		}
+		66% {
+			transform: translateY(-2px);
+		}
+		100% {
+			transform: translateY(0);
+		}
 	}
 
 	@keyframes penWiggle {

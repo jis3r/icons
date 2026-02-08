@@ -2808,6 +2808,15 @@
 		"relativeUrl": "message-circle-warning.json"
 	},
 	{
+		"name": "message-circle-x",
+		"title": "message-circle-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-circle-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-circle-x.json"
+	},
+	{
 		"name": "message-circle",
 		"title": "message-circle",
 		"type": "registry:component",
@@ -2887,6 +2896,15 @@
 		"description": "The animated message-square-warning icon component.",
 		"registryDependencies": [],
 		"relativeUrl": "message-square-warning.json"
+	},
+	{
+		"name": "message-square-x",
+		"title": "message-square-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-square-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-square-x.json"
 	},
 	{
 		"name": "message-square",

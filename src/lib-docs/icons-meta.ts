@@ -311,6 +311,7 @@ import messageCircleMore from '$lib/icons/message-circle-more.svelte';
 import messageCircleOff from '$lib/icons/message-circle-off.svelte';
 import messageCircleQuestionMark from '$lib/icons/message-circle-question-mark.svelte';
 import messageCircleWarning from '$lib/icons/message-circle-warning.svelte';
+import messageCircleX from '$lib/icons/message-circle-x.svelte';
 import messageSquare from '$lib/icons/message-square.svelte';
 import messageSquareCode from '$lib/icons/message-square-code.svelte';
 import messageSquareDashed from '$lib/icons/message-square-dashed.svelte';
@@ -320,6 +321,7 @@ import messageSquareMore from '$lib/icons/message-square-more.svelte';
 import messageSquareOff from '$lib/icons/message-square-off.svelte';
 import messageSquareQuote from '$lib/icons/message-square-quote.svelte';
 import messageSquareWarning from '$lib/icons/message-square-warning.svelte';
+import messageSquareX from '$lib/icons/message-square-x.svelte';
 import micOff from '$lib/icons/mic-off.svelte';
 import milkOff from '$lib/icons/milk-off.svelte';
 import minimize from '$lib/icons/minimize.svelte';
@@ -3787,6 +3789,27 @@ const ICONS_LIST = [
 		categories: ['social', 'notifications']
 	},
 	{
+		name: 'message-circle-x',
+		icon: messageCircleX,
+		tags: [
+			'comment',
+			'chat',
+			'conversation',
+			'dialog',
+			'feedback',
+			'speech bubble',
+			'clear',
+			'close',
+			'delete',
+			'remove',
+			'cancel',
+			'silence',
+			'mute',
+			'moderate'
+		],
+		categories: ['account', 'social']
+	},
+	{
 		name: 'message-square',
 		icon: messageSquare,
 		tags: ['comment', 'chat', 'conversation', 'dialog', 'feedback', 'speech bubble'],
@@ -3928,6 +3951,27 @@ const ICONS_LIST = [
 			'exclamation mark'
 		],
 		categories: ['social', 'notifications']
+	},
+	{
+		name: 'message-square-x',
+		icon: messageSquareX,
+		tags: [
+			'comment',
+			'chat',
+			'conversation',
+			'dialog',
+			'feedback',
+			'speech bubble',
+			'clear',
+			'close',
+			'delete',
+			'remove',
+			'cancel',
+			'silence',
+			'mute',
+			'moderate'
+		],
+		categories: ['social']
 	},
 	{
 		name: 'mic-off',

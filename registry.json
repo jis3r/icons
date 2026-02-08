@@ -4997,6 +4997,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "message-circle-x",
+			"title": "message-circle-x",
+			"type": "registry:component",
+			"description": "The animated message-circle-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/message-circle-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/message-circle-x.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "message-circle",
 			"title": "message-circle",
 			"type": "registry:component",
@@ -5135,6 +5151,22 @@
 					"path": "./src/lib/icons/message-square-warning.svelte",
 					"type": "registry:component",
 					"target": "~/src/lib/components/movingicons/message-square-warning.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "message-square-x",
+			"title": "message-square-x",
+			"type": "registry:component",
+			"description": "The animated message-square-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/message-square-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/message-square-x.svelte"
 				}
 			],
 			"registryDependencies": []
