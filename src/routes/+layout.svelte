@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../app.css';
-	import { GeistMono } from 'geist-svelte/font/mono';
+	import 'geist-svelte/font/mono';
 	import { ModeWatcher } from 'mode-watcher';
 	import Navbar from '$lib-docs/components/navbar.svelte';
 	import posthog from 'posthog-js';
