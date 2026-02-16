@@ -1,6 +1,5 @@
 <script lang="ts">
 	import type { IconProps } from './types.js';
-	import { animate } from 'motion';
 
 	let {
 		color = 'currentColor',
@@ -12,7 +11,11 @@
 
 	let animating = $state(false);
 	let morphProgress = $state(0);
+	let frameId = -1;
+	let runId = 0;
 
+	const closeDurationMs = 120;
+	const openDurationMs = 160;
 	const lineY = 12;
 	const leftX = 2.062;
 	const rightX = 21.938;
@@ -21,34 +24,57 @@
 	const archRadiusX = 10.75;
 	const archRadiusY = 10.75;
 
-	const topArchPath = (t: number) => {
+	const easeIn = (t) => t * t * t;
+	const easeOut = (t) => 1 - Math.pow(1 - t, 3);
+
+	const topArchPath = (t) => {
 		const y = upperEndY + (lineY - upperEndY) * t;
 		const ry = Math.max(0.001, archRadiusY * (1 - t));
 		return 'M ' + leftX + ' ' + y + ' A ' + archRadiusX + ' ' + ry + ' 0 0 1 ' + rightX + ' ' + y;
 	};
 
-	const bottomArchPath = (t: number) => {
+	const bottomArchPath = (t) => {
 		const y = lowerEndY - (lowerEndY - lineY) * t;
 		const ry = Math.max(0.001, archRadiusY * (1 - t));
 		return 'M ' + rightX + ' ' + y + ' A ' + archRadiusX + ' ' + ry + ' 0 0 1 ' + leftX + ' ' + y;
 	};
 
+	function animateMorph(from, to, durationMs, ease, currentRunId, onDone) {
+		const start = performance.now();
+
+		const tick = (now) => {
+			if (currentRunId !== runId) return;
+			const elapsed = now - start;
+			const t = Math.min(elapsed / durationMs, 1);
+			const eased = ease(t);
+			morphProgress = from + (to - from) * eased;
+
+			if (t < 1) {
+				frameId = requestAnimationFrame(tick);
+				return;
+			}
+
+			onDone();
+		};
+
+		frameId = requestAnimationFrame(tick);
+	}
+
 	function handleMouseEnter() {
 		if (animating) return;
+		if (frameId !== -1) cancelAnimationFrame(frameId);
+		runId += 1;
+		const currentRunId = runId;
 		animating = true;
-		animate(0, 1, {
-			duration: 0.12,
-			ease: 'easeIn',
-			onUpdate: (v) => (morphProgress = v)
-		}).then(() =>
-			animate(1, 0, {
-				duration: 0.16,
-				ease: 'easeOut',
-				onUpdate: (v) => (morphProgress = v)
-			}).then(() => {
+
+		animateMorph(0, 1, closeDurationMs, easeIn, currentRunId, () => {
+			animateMorph(1, 0, openDurationMs, easeOut, currentRunId, () => {
+				if (currentRunId !== runId) return;
 				animating = false;
-			})
-		);
+				morphProgress = 0;
+				frameId = -1;
+			});
+		});
 	}
 
 	const topOutlineD = $derived(topArchPath(morphProgress));
