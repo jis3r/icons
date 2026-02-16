@@ -3445,6 +3445,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "eye",
+			"title": "eye",
+			"type": "registry:component",
+			"description": "The animated eye icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/eye.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/eye.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "file-chart-column-increasing",
 			"title": "file-chart-column-increasing",
 			"type": "registry:component",

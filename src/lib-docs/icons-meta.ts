@@ -212,6 +212,7 @@ import earOff from '$lib/icons/ear-off.svelte';
 import eclipse from '$lib/icons/eclipse.svelte';
 import eggOff from '$lib/icons/egg-off.svelte';
 import expand from '$lib/icons/expand.svelte';
+import eye from '$lib/icons/eye.svelte';
 import eyeOff from '$lib/icons/eye-off.svelte';
 import fileChartColumn from '$lib/icons/file-chart-column.svelte';
 import fileChartColumnIncreasing from '$lib/icons/file-chart-column-increasing.svelte';
@@ -2914,6 +2915,25 @@ const ICONS_LIST = [
 		icon: expand,
 		tags: ['scale', 'fullscreen', 'maximize', 'minimize', 'contract'],
 		categories: ['text', 'arrows']
+	},
+	{
+		name: 'eye',
+		icon: eye,
+		tags: [
+			'view',
+			'watch',
+			'see',
+			'show',
+			'expose',
+			'reveal',
+			'display',
+			'visible',
+			'visibility',
+			'vision',
+			'preview',
+			'read'
+		],
+		categories: ['accessibility', 'photography', 'design', 'security']
 	},
 	{
 		name: 'eye-off',

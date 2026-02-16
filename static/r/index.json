@@ -1935,6 +1935,15 @@
 		"relativeUrl": "eye-off.json"
 	},
 	{
+		"name": "eye",
+		"title": "eye",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated eye icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "eye.json"
+	},
+	{
 		"name": "file-chart-column-increasing",
 		"title": "file-chart-column-increasing",
 		"type": "registry:component",
