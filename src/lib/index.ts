@@ -213,6 +213,7 @@ export { default as Eclipse } from './icons/eclipse.svelte';
 export { default as EggOff } from './icons/egg-off.svelte';
 export { default as Expand } from './icons/expand.svelte';
 export { default as EyeOff } from './icons/eye-off.svelte';
+export { default as Eye } from './icons/eye.svelte';
 export { default as FileChartColumnIncreasing } from './icons/file-chart-column-increasing.svelte';
 export { default as FileChartColumn } from './icons/file-chart-column.svelte';
 export { default as FileChartLine } from './icons/file-chart-line.svelte';
@@ -744,6 +745,7 @@ export type IconName =
 	| 'egg-off'
 	| 'expand'
 	| 'eye-off'
+	| 'eye'
 	| 'file-chart-column-increasing'
 	| 'file-chart-column'
 	| 'file-chart-line'

@@ -469,7 +469,9 @@
 	</section>
 
 	<section id="documentation" class="documentation-section container max-w-7xl">
-		<div class="relative mx-auto grid grid-cols-1 gap-8 lg:grid-cols-[12rem_1fr_12rem] lg:gap-12">
+		<div
+			class="relative mx-auto grid grid-cols-1 gap-8 lg:grid-cols-[minmax(12rem,1fr)_minmax(0,36rem)_minmax(12rem,1fr)] lg:gap-12"
+		>
 			<aside class="sticky top-24 hidden w-48 self-start lg:block">
 				<nav class="space-y-1">
 					{#each sections as section}
@@ -486,7 +488,7 @@
 				</nav>
 			</aside>
 
-			<div class="mx-auto mt-2 w-full max-w-[592px] space-y-8">
+			<div class="mx-auto mt-2 w-full max-w-xl space-y-8">
 				<div class="space-y-6">
 					<div id="installation" class="scroll-mt-24 space-y-8">
 						<h2 class="flex items-center gap-2 text-2xl font-medium">Installation</h2>
@@ -626,7 +628,24 @@
 				</div>
 			</div>
 
-			<aside class="hidden w-48 lg:block" aria-hidden="true"></aside>
+			<aside class="hidden xl:block" aria-hidden="true">
+				<div class="sticky top-24 w-full">
+					<a
+						href="https://github.com/jis3r/geist-svelte"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="bg-muted/30 block cursor-default rounded-xl p-4 shadow-lg transition"
+					>
+						<h3 class="text-muted-foreground font-semibold">geist-svelte</h3>
+						<p class="text-muted-foreground mt-4 text-sm">
+							Geist font family for Svelte and SvelteKit.
+							<br /> <br />
+							Includes Sans, Mono, and Pixel variants.
+						</p>
+						<Button size="sm" class="mt-4 cursor-pointer">Check it out</Button>
+					</a>
+				</div>
+			</aside>
 		</div>
 	</section>
 </main>
