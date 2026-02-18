@@ -504,6 +504,7 @@ export { default as UserPen } from './icons/user-pen.svelte';
 export { default as UserRoundCheck } from './icons/user-round-check.svelte';
 export { default as UserRoundCog } from './icons/user-round-cog.svelte';
 export { default as UserRoundPen } from './icons/user-round-pen.svelte';
+export { default as UserRoundX } from './icons/user-round-x.svelte';
 export { default as UserRound } from './icons/user-round.svelte';
 export { default as UserX } from './icons/user-x.svelte';
 export { default as User } from './icons/user.svelte';
@@ -1036,6 +1037,7 @@ export type IconName =
 	| 'user-round-check'
 	| 'user-round-cog'
 	| 'user-round-pen'
+	| 'user-round-x'
 	| 'user-round'
 	| 'user-x'
 	| 'user'

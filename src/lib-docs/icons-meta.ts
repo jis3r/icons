@@ -506,6 +506,7 @@ import userRound from '$lib/icons/user-round.svelte';
 import userRoundCheck from '$lib/icons/user-round-check.svelte';
 import userRoundCog from '$lib/icons/user-round-cog.svelte';
 import userRoundPen from '$lib/icons/user-round-pen.svelte';
+import userRoundX from '$lib/icons/user-round-x.svelte';
 import users from '$lib/icons/users.svelte';
 import usersRound from '$lib/icons/users-round.svelte';
 import userX from '$lib/icons/user-x.svelte';
@@ -5905,6 +5906,12 @@ const ICONS_LIST = [
 		name: 'user-round-pen',
 		icon: userRoundPen,
 		tags: ['person', 'account', 'contact', 'profile', 'edit', 'change'],
+		categories: ['account']
+	},
+	{
+		name: 'user-round-x',
+		icon: userRoundX,
+		tags: ['delete', 'remove', 'unfollow', 'unsubscribe', 'unavailable'],
 		categories: ['account']
 	},
 	{

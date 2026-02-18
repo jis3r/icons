@@ -8101,6 +8101,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "user-round-x",
+			"title": "user-round-x",
+			"type": "registry:component",
+			"description": "The animated user-round-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/user-round-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/user-round-x.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "user-round",
 			"title": "user-round",
 			"type": "registry:component",
