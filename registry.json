@@ -4805,6 +4805,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "mail-x",
+			"title": "mail-x",
+			"type": "registry:component",
+			"description": "The animated mail-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/mail-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/mail-x.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "map-pin-check-inside",
 			"title": "map-pin-check-inside",
 			"type": "registry:component",

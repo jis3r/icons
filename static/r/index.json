@@ -2700,6 +2700,15 @@
 		"relativeUrl": "mail-check.json"
 	},
 	{
+		"name": "mail-x",
+		"title": "mail-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated mail-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "mail-x.json"
+	},
+	{
 		"name": "map-pin-check-inside",
 		"title": "map-pin-check-inside",
 		"type": "registry:component",

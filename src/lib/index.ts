@@ -298,6 +298,7 @@ export { default as LoaderPinwheel } from './icons/loader-pinwheel.svelte';
 export { default as LocateOff } from './icons/locate-off.svelte';
 export { default as LogOut } from './icons/log-out.svelte';
 export { default as MailCheck } from './icons/mail-check.svelte';
+export { default as MailX } from './icons/mail-x.svelte';
 export { default as MapPinCheckInside } from './icons/map-pin-check-inside.svelte';
 export { default as MapPinCheck } from './icons/map-pin-check.svelte';
 export { default as MapPinOff } from './icons/map-pin-off.svelte';
@@ -831,6 +832,7 @@ export type IconName =
 	| 'locate-off'
 	| 'log-out'
 	| 'mail-check'
+	| 'mail-x'
 	| 'map-pin-check-inside'
 	| 'map-pin-check'
 	| 'map-pin-off'

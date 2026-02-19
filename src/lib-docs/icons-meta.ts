@@ -298,6 +298,7 @@ import loaderPinwheel from '$lib/icons/loader-pinwheel.svelte';
 import locateOff from '$lib/icons/locate-off.svelte';
 import logOut from '$lib/icons/log-out.svelte';
 import mailCheck from '$lib/icons/mail-check.svelte';
+import mailX from '$lib/icons/mail-x.svelte';
 import mapPinCheck from '$lib/icons/map-pin-check.svelte';
 import mapPinCheckInside from '$lib/icons/map-pin-check-inside.svelte';
 import mapPinOff from '$lib/icons/map-pin-off.svelte';
@@ -3645,6 +3646,12 @@ const ICONS_LIST = [
 			'complete',
 			'task'
 		],
+		categories: ['mail']
+	},
+	{
+		name: 'mail-x',
+		icon: mailX,
+		tags: ['email', 'message', 'letter', 'remove', 'delete'],
 		categories: ['mail']
 	},
 	{
