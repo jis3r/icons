@@ -1,3 +1,5 @@
+<a href="https://vercel.com/oss"><img alt="Vercel OSS Program" src="https://vercel.com/oss/program-badge.svg" /></a>
+
 # `moving icons` - the standard for animated icons in Svelte. 🧡
 
 A collection of 500+ hand-crafted, interaction-ready [Lucide](https://lucide.dev) icons. Built natively for Svelte 5 with zero dependencies. Fully tree-shakeable, MIT licensed, and completely customizable.
