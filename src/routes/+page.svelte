@@ -446,7 +446,7 @@
 			<h1
 				class="hero-title mx-auto mt-8 w-fit max-w-5xl text-center text-3xl font-semibold text-balance sm:text-4xl md:text-5xl"
 			>
-				<span>The</span> <span>new</span> <span>standard</span> <span>for</span>
+				<span>The</span> <span>standard</span> <span>for</span>
 				<span>animated</span> <span>icons</span> <span>in</span>
 				<span class="hero-title-final whitespace-nowrap"
 					><span
