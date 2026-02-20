@@ -483,6 +483,7 @@ export { default as Thermometer } from './icons/thermometer.svelte';
 export { default as ThumbsDown } from './icons/thumbs-down.svelte';
 export { default as ThumbsUp } from './icons/thumbs-up.svelte';
 export { default as TicketCheck } from './icons/ticket-check.svelte';
+export { default as TicketX } from './icons/ticket-x.svelte';
 export { default as TimerOff } from './icons/timer-off.svelte';
 export { default as Timer } from './icons/timer.svelte';
 export { default as ToggleLeft } from './icons/toggle-left.svelte';
@@ -1017,6 +1018,7 @@ export type IconName =
 	| 'thumbs-down'
 	| 'thumbs-up'
 	| 'ticket-check'
+	| 'ticket-x'
 	| 'timer-off'
 	| 'timer'
 	| 'toggle-left'

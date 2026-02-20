@@ -483,6 +483,7 @@ import thermometer from '$lib/icons/thermometer.svelte';
 import thumbsDown from '$lib/icons/thumbs-down.svelte';
 import thumbsUp from '$lib/icons/thumbs-up.svelte';
 import ticketCheck from '$lib/icons/ticket-check.svelte';
+import ticketX from '$lib/icons/ticket-x.svelte';
 import timer from '$lib/icons/timer.svelte';
 import timerOff from '$lib/icons/timer-off.svelte';
 import toggleLeft from '$lib/icons/toggle-left.svelte';
@@ -5753,6 +5754,37 @@ const ICONS_LIST = [
 			'certified',
 			'checked',
 			'used'
+		],
+		categories: ['transportation']
+	},
+	{
+		name: 'ticket-x',
+		icon: ticketX,
+		tags: [
+			'entry',
+			'pass',
+			'voucher',
+			'event',
+			'concert',
+			'show',
+			'cancelled',
+			'cancellation',
+			'refunded',
+			'used',
+			'void',
+			'invalidated',
+			'spoiled',
+			'denied',
+			'refused',
+			'banned',
+			'barred',
+			'forbidden',
+			'prohibited',
+			'delete',
+			'remove',
+			'clear',
+			'error',
+			'x'
 		],
 		categories: ['transportation']
 	},

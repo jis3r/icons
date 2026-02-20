@@ -4365,6 +4365,15 @@
 		"relativeUrl": "ticket-check.json"
 	},
 	{
+		"name": "ticket-x",
+		"title": "ticket-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated ticket-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "ticket-x.json"
+	},
+	{
 		"name": "timer-off",
 		"title": "timer-off",
 		"type": "registry:component",

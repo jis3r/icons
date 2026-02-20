@@ -7765,6 +7765,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "ticket-x",
+			"title": "ticket-x",
+			"type": "registry:component",
+			"description": "The animated ticket-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/ticket-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/ticket-x.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "timer-off",
 			"title": "timer-off",
 			"type": "registry:component",
