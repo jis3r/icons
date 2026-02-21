@@ -468,6 +468,7 @@ import squarePlus from '$lib/icons/square-plus.svelte';
 import squareScissors from '$lib/icons/square-scissors.svelte';
 import squareStack from '$lib/icons/square-stack.svelte';
 import squareTerminal from '$lib/icons/square-terminal.svelte';
+import squareX from '$lib/icons/square-x.svelte';
 import star from '$lib/icons/star.svelte';
 import starOff from '$lib/icons/star-off.svelte';
 import sun from '$lib/icons/sun.svelte';
@@ -5627,6 +5628,22 @@ const ICONS_LIST = [
 		icon: squareTerminal,
 		tags: ['code', 'command line', 'prompt', 'shell'],
 		categories: ['development']
+	},
+	{
+		name: 'square-x',
+		icon: squareX,
+		tags: [
+			'cancel',
+			'close',
+			'delete',
+			'remove',
+			'times',
+			'clear',
+			'math',
+			'multiply',
+			'multiplication'
+		],
+		categories: ['math', 'notifications']
 	},
 	{
 		name: 'star',

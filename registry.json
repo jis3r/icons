@@ -7525,6 +7525,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "square-x",
+			"title": "square-x",
+			"type": "registry:component",
+			"description": "The animated square-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/square-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/square-x.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "star-off",
 			"title": "star-off",
 			"type": "registry:component",

@@ -4230,6 +4230,15 @@
 		"relativeUrl": "square-terminal.json"
 	},
 	{
+		"name": "square-x",
+		"title": "square-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated square-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "square-x.json"
+	},
+	{
 		"name": "star-off",
 		"title": "star-off",
 		"type": "registry:component",

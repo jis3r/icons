@@ -468,6 +468,7 @@ export { default as SquarePlus } from './icons/square-plus.svelte';
 export { default as SquareScissors } from './icons/square-scissors.svelte';
 export { default as SquareStack } from './icons/square-stack.svelte';
 export { default as SquareTerminal } from './icons/square-terminal.svelte';
+export { default as SquareX } from './icons/square-x.svelte';
 export { default as StarOff } from './icons/star-off.svelte';
 export { default as Star } from './icons/star.svelte';
 export { default as Sun } from './icons/sun.svelte';
@@ -1003,6 +1004,7 @@ export type IconName =
 	| 'square-scissors'
 	| 'square-stack'
 	| 'square-terminal'
+	| 'square-x'
 	| 'star-off'
 	| 'star'
 	| 'sun'
