@@ -52,7 +52,8 @@
 		"svelte": "^5.0.0"
 	},
 	"devDependencies": {
-		"@lucide/svelte": "^0.552.0",
+		"@internationalized/date": "^3.11.0",
+		"@lucide/svelte": "^0.561.0",
 		"@number-flow/svelte": "^0.3.6",
 		"@sveltejs/adapter-auto": "^6.0.1",
 		"@sveltejs/kit": "^2.26.1",
@@ -61,7 +62,7 @@
 		"@tailwindcss/vite": "^4.1.16",
 		"@types/eslint": "^9.6.0",
 		"autoprefixer": "^10.4.20",
-		"bits-ui": "^1.8.0",
+		"bits-ui": "^2.16.2",
 		"clsx": "^2.1.1",
 		"eslint": "^9.7.0",
 		"eslint-config-prettier": "^10.1.1",
