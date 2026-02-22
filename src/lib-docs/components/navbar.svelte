@@ -1,11 +1,19 @@
-<script>
-	import { Button } from '$lib-docs/components/ui/button';
-	import { Sun, Moon } from '@lucide/svelte';
+<script lang="ts">
+	import { Button } from '$lib-docs/components/ui/button/index.js';
+	import * as ContextMenu from '$lib-docs/components/ui/context-menu/index.js';
+	import { Sun, Moon, Feather } from '@lucide/svelte';
 	import { toggleMode } from 'mode-watcher';
 	import { onMount, onDestroy } from 'svelte';
 	import Github from '$lib-docs/components/github.svelte';
 	import NumberFlow from '@number-flow/svelte';
 	import iflog from 'iflog';
+
+	function downloadLogoSvg() {
+		const a = document.createElement('a');
+		a.href = '/moving_icons_logo.svg';
+		a.download = 'moving_icons_logo.svg';
+		a.click();
+	}
 
 	let stars = $state(0);
 	/** @type {ReturnType<typeof setInterval>} */
@@ -51,7 +59,28 @@
 	class="bg-background bg-opacity-40 fixed top-0 z-50 h-[72px] w-full border-b backdrop-blur-xl"
 >
 	<nav class="container mx-auto flex max-w-7xl items-center justify-between py-4">
-		<a href="/" class="cursor-pointer text-base"> moving icons </a>
+		<ContextMenu.Root>
+			<ContextMenu.Trigger
+				class="inline-flex cursor-pointer items-center gap-1.5 text-base leading-none"
+			>
+				<a href="/" class="inline-flex items-center gap-1.5 leading-none">
+					<Feather size={18} class="shrink-0" />
+					<span class="leading-none">moving icons</span>
+				</a>
+			</ContextMenu.Trigger>
+			<ContextMenu.Content
+				class="w-48"
+				portalProps={{}}
+				side="bottom"
+				align="start"
+				sideOffset={6}
+			>
+				<ContextMenu.Item class="" inset={false} onSelect={downloadLogoSvg}>
+					Download SVG
+				</ContextMenu.Item>
+			</ContextMenu.Content>
+		</ContextMenu.Root>
+
 		<div class="flex gap-1">
 			<Button
 				variant="outline"
