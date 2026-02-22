@@ -357,6 +357,7 @@ import nutOff from '$lib/icons/nut-off.svelte';
 import octagonAlert from '$lib/icons/octagon-alert.svelte';
 import orbit from '$lib/icons/orbit.svelte';
 import packageCheck from '$lib/icons/package-check.svelte';
+import packageX from '$lib/icons/package-x.svelte';
 import paintbrush from '$lib/icons/paintbrush.svelte';
 import panelBottom from '$lib/icons/panel-bottom.svelte';
 import panelBottomClose from '$lib/icons/panel-bottom-close.svelte';
@@ -4274,6 +4275,12 @@ const ICONS_LIST = [
 		name: 'package-check',
 		icon: packageCheck,
 		tags: ['confirm', 'verified', 'done', 'todo', 'tick', 'complete', 'task', 'delivered'],
+		categories: ['development']
+	},
+	{
+		name: 'package-x',
+		icon: packageX,
+		tags: ['delete', 'remove'],
 		categories: ['development']
 	},
 	{

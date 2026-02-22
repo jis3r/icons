@@ -5749,6 +5749,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "package-x",
+			"title": "package-x",
+			"type": "registry:component",
+			"description": "The animated package-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/package-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/package-x.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "paintbrush",
 			"title": "paintbrush",
 			"type": "registry:component",

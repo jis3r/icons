@@ -357,6 +357,7 @@ export { default as NutOff } from './icons/nut-off.svelte';
 export { default as OctagonAlert } from './icons/octagon-alert.svelte';
 export { default as Orbit } from './icons/orbit.svelte';
 export { default as PackageCheck } from './icons/package-check.svelte';
+export { default as PackageX } from './icons/package-x.svelte';
 export { default as Paintbrush } from './icons/paintbrush.svelte';
 export { default as PanelBottomClose } from './icons/panel-bottom-close.svelte';
 export { default as PanelBottomOpen } from './icons/panel-bottom-open.svelte';
@@ -893,6 +894,7 @@ export type IconName =
 	| 'octagon-alert'
 	| 'orbit'
 	| 'package-check'
+	| 'package-x'
 	| 'paintbrush'
 	| 'panel-bottom-close'
 	| 'panel-bottom-open'
