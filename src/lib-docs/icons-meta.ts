@@ -355,6 +355,7 @@ import nfc from '$lib/icons/nfc.svelte';
 import notebookPen from '$lib/icons/notebook-pen.svelte';
 import nutOff from '$lib/icons/nut-off.svelte';
 import octagonAlert from '$lib/icons/octagon-alert.svelte';
+import octagonX from '$lib/icons/octagon-x.svelte';
 import orbit from '$lib/icons/orbit.svelte';
 import packageCheck from '$lib/icons/package-check.svelte';
 import packageX from '$lib/icons/package-x.svelte';
@@ -4264,6 +4265,12 @@ const ICONS_LIST = [
 		icon: octagonAlert,
 		tags: ['warning', 'alert', 'danger', 'exclamation mark'],
 		categories: ['notifications', 'shapes']
+	},
+	{
+		name: 'octagon-x',
+		icon: octagonX,
+		tags: ['delete', 'stop', 'alert', 'warning', 'times', 'clear', 'math'],
+		categories: ['math', 'notifications']
 	},
 	{
 		name: 'orbit',

@@ -3213,6 +3213,15 @@
 		"relativeUrl": "octagon-alert.json"
 	},
 	{
+		"name": "octagon-x",
+		"title": "octagon-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated octagon-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "octagon-x.json"
+	},
+	{
 		"name": "orbit",
 		"title": "orbit",
 		"type": "registry:component",

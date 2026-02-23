@@ -355,6 +355,7 @@ export { default as Nfc } from './icons/nfc.svelte';
 export { default as NotebookPen } from './icons/notebook-pen.svelte';
 export { default as NutOff } from './icons/nut-off.svelte';
 export { default as OctagonAlert } from './icons/octagon-alert.svelte';
+export { default as OctagonX } from './icons/octagon-x.svelte';
 export { default as Orbit } from './icons/orbit.svelte';
 export { default as PackageCheck } from './icons/package-check.svelte';
 export { default as PackageX } from './icons/package-x.svelte';
@@ -892,6 +893,7 @@ export type IconName =
 	| 'notebook-pen'
 	| 'nut-off'
 	| 'octagon-alert'
+	| 'octagon-x'
 	| 'orbit'
 	| 'package-check'
 	| 'package-x'

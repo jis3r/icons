@@ -5717,6 +5717,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "octagon-x",
+			"title": "octagon-x",
+			"type": "registry:component",
+			"description": "The animated octagon-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/octagon-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/octagon-x.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "orbit",
 			"title": "orbit",
 			"type": "registry:component",
