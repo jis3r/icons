@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
-	import Marquee from 'svelte-fast-marquee';
+	import * as Marquee from '$lib-docs/components/ui/marquee';
 	import { animate } from 'motion';
 	import { page } from '$app/state';
 	import { goto } from '$app/navigation';
@@ -402,45 +402,45 @@
 					class="from-background pointer-events-none absolute top-0 z-10 h-16 w-full bg-linear-to-b to-transparent sm:h-32"
 				></div>
 
-				<Marquee gap="24px" speed={20} class="marquee-row-1 min-h-14">
+				<Marquee.Root gap="24px" speed={20} class="marquee-row-1 min-h-14">
 					{#each marquee1Icons as Icon, i}
-						<div
-							class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-900"
+						<Marquee.Item
+							class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 opacity-0 [filter:blur(6px)] dark:border-zinc-900"
 						>
 							<Icon size={24} class="text-muted-foreground" />
-						</div>
+						</Marquee.Item>
 					{/each}
-				</Marquee>
+				</Marquee.Root>
 
-				<Marquee gap="24px" speed={24} class="marquee-row-2 min-h-14">
+				<Marquee.Root gap="24px" speed={24} class="marquee-row-2 min-h-14">
 					{#each marquee2Icons as Icon}
-						<div
-							class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-900"
+						<Marquee.Item
+							class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 opacity-0 [filter:blur(6px)] dark:border-zinc-900"
 						>
 							<Icon size={24} class="text-muted-foreground" />
-						</div>
+						</Marquee.Item>
 					{/each}
-				</Marquee>
+				</Marquee.Root>
 
-				<Marquee gap="24px" speed={16} class="marquee-row-3 min-h-14">
+				<Marquee.Root gap="24px" speed={16} class="marquee-row-3 min-h-14">
 					{#each marquee3Icons as Icon}
-						<div
-							class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-900"
+						<Marquee.Item
+							class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 opacity-0 [filter:blur(6px)] dark:border-zinc-900"
 						>
 							<Icon size={24} class="text-muted-foreground" />
-						</div>
+						</Marquee.Item>
 					{/each}
-				</Marquee>
+				</Marquee.Root>
 
-				<Marquee gap="24px" speed={28} class="marquee-row-4 min-h-14">
+				<Marquee.Root gap="24px" speed={28} class="marquee-row-4 min-h-14">
 					{#each marquee4Icons as Icon}
-						<div
-							class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-900"
+						<Marquee.Item
+							class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 opacity-0 [filter:blur(6px)] dark:border-zinc-900"
 						>
 							<Icon size={24} class="text-muted-foreground" />
-						</div>
+						</Marquee.Item>
 					{/each}
-				</Marquee>
+				</Marquee.Root>
 			</div>
 
 			<h1
@@ -680,11 +680,5 @@
 		opacity: 0;
 		filter: blur(6px);
 		transform: translateY(15px);
-	}
-
-	.marquee-icon {
-		opacity: 0;
-		filter: blur(6px);
-		transform: translateY(3px);
 	}
 </style>
