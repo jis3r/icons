@@ -68,13 +68,7 @@
 					<span class="leading-none">moving icons</span>
 				</a>
 			</ContextMenu.Trigger>
-			<ContextMenu.Content
-				class="w-48"
-				portalProps={{}}
-				side="bottom"
-				align="start"
-				sideOffset={6}
-			>
+			<ContextMenu.Content class="w-48" portalProps={{}} side="bottom" align="start" sideOffset={6}>
 				<ContextMenu.Item class="" inset={false} onSelect={downloadLogoSvg}>
 					Download SVG
 				</ContextMenu.Item>

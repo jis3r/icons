@@ -1,5 +1,5 @@
 <script>
-	import { ContextMenu as ContextMenuPrimitive } from "bits-ui";
+	import { ContextMenu as ContextMenuPrimitive } from 'bits-ui';
 
 	let { ref = $bindable(null), ...restProps } = $props();
 </script>
