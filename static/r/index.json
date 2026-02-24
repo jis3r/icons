@@ -3825,6 +3825,15 @@
 		"relativeUrl": "shield-question-mark.json"
 	},
 	{
+		"name": "shield-x",
+		"title": "shield-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated shield-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "shield-x.json"
+	},
+	{
 		"name": "ship-wheel",
 		"title": "ship-wheel",
 		"type": "registry:component",

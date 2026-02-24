@@ -6805,6 +6805,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "shield-x",
+			"title": "shield-x",
+			"type": "registry:component",
+			"description": "The animated shield-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/shield-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/shield-x.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "ship-wheel",
 			"title": "ship-wheel",
 			"type": "registry:component",

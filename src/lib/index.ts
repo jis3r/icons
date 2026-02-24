@@ -423,6 +423,7 @@ export { default as ShieldCheck } from './icons/shield-check.svelte';
 export { default as ShieldOff } from './icons/shield-off.svelte';
 export { default as ShieldPlus } from './icons/shield-plus.svelte';
 export { default as ShieldQuestionMark } from './icons/shield-question-mark.svelte';
+export { default as ShieldX } from './icons/shield-x.svelte';
 export { default as ShipWheel } from './icons/ship-wheel.svelte';
 export { default as Ship } from './icons/ship.svelte';
 export { default as ShoppingCart } from './icons/shopping-cart.svelte';
@@ -961,6 +962,7 @@ export type IconName =
 	| 'shield-off'
 	| 'shield-plus'
 	| 'shield-question-mark'
+	| 'shield-x'
 	| 'ship-wheel'
 	| 'ship'
 	| 'shopping-cart'
