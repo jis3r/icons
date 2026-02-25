@@ -521,6 +521,7 @@ import vibrate from '$lib/icons/vibrate.svelte';
 import vibrateOff from '$lib/icons/vibrate-off.svelte';
 import videoOff from '$lib/icons/video-off.svelte';
 import volumeOff from '$lib/icons/volume-off.svelte';
+import volumeX from '$lib/icons/volume-x.svelte';
 import vote from '$lib/icons/vote.svelte';
 import washingMachine from '$lib/icons/washing-machine.svelte';
 import waves from '$lib/icons/waves.svelte';
@@ -6109,6 +6110,12 @@ const ICONS_LIST = [
 	{
 		name: 'volume-off',
 		icon: volumeOff,
+		tags: ['music', 'sound', 'mute', 'speaker'],
+		categories: ['connectivity', 'communication', 'multimedia']
+	},
+	{
+		name: 'volume-x',
+		icon: volumeX,
 		tags: ['music', 'sound', 'mute', 'speaker'],
 		categories: ['connectivity', 'communication', 'multimedia']
 	},

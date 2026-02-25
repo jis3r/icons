@@ -4707,6 +4707,15 @@
 		"relativeUrl": "volume-off.json"
 	},
 	{
+		"name": "volume-x",
+		"title": "volume-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated volume-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "volume-x.json"
+	},
+	{
 		"name": "vote",
 		"title": "vote",
 		"type": "registry:component",

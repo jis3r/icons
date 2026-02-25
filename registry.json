@@ -8373,6 +8373,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "volume-x",
+			"title": "volume-x",
+			"type": "registry:component",
+			"description": "The animated volume-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/volume-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/volume-x.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "vote",
 			"title": "vote",
 			"type": "registry:component",

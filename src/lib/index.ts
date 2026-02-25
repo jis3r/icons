@@ -521,6 +521,7 @@ export { default as VibrateOff } from './icons/vibrate-off.svelte';
 export { default as Vibrate } from './icons/vibrate.svelte';
 export { default as VideoOff } from './icons/video-off.svelte';
 export { default as VolumeOff } from './icons/volume-off.svelte';
+export { default as VolumeX } from './icons/volume-x.svelte';
 export { default as Vote } from './icons/vote.svelte';
 export { default as WashingMachine } from './icons/washing-machine.svelte';
 export { default as Waves } from './icons/waves.svelte';
@@ -1060,6 +1061,7 @@ export type IconName =
 	| 'vibrate'
 	| 'video-off'
 	| 'volume-off'
+	| 'volume-x'
 	| 'vote'
 	| 'washing-machine'
 	| 'waves'
