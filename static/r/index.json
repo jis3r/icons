@@ -2295,6 +2295,15 @@
 		"relativeUrl": "gavel.json"
 	},
 	{
+		"name": "globe-x",
+		"title": "globe-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated globe-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "globe-x.json"
+	},
+	{
 		"name": "grid-2x2-check",
 		"title": "grid-2x2-check",
 		"type": "registry:component",

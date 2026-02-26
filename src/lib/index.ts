@@ -253,6 +253,7 @@ export { default as GalleryVerticalEnd } from './icons/gallery-vertical-end.svel
 export { default as GalleryVertical } from './icons/gallery-vertical.svelte';
 export { default as Gauge } from './icons/gauge.svelte';
 export { default as Gavel } from './icons/gavel.svelte';
+export { default as GlobeX } from './icons/globe-x.svelte';
 export { default as Grid2x2Check } from './icons/grid-2x2-check.svelte';
 export { default as GripHorizontal } from './icons/grip-horizontal.svelte';
 export { default as GripVertical } from './icons/grip-vertical.svelte';
@@ -793,6 +794,7 @@ export type IconName =
 	| 'gallery-vertical'
 	| 'gauge'
 	| 'gavel'
+	| 'globe-x'
 	| 'grid-2x2-check'
 	| 'grip-horizontal'
 	| 'grip-vertical'

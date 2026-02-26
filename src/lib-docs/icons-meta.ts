@@ -253,6 +253,7 @@ import galleryVertical from '$lib/icons/gallery-vertical.svelte';
 import galleryVerticalEnd from '$lib/icons/gallery-vertical-end.svelte';
 import gauge from '$lib/icons/gauge.svelte';
 import gavel from '$lib/icons/gavel.svelte';
+import globeX from '$lib/icons/globe-x.svelte';
 import grid2x2Check from '$lib/icons/grid-2x2-check.svelte';
 import grip from '$lib/icons/grip.svelte';
 import gripHorizontal from '$lib/icons/grip-horizontal.svelte';
@@ -3264,6 +3265,23 @@ const ICONS_LIST = [
 		icon: gavel,
 		tags: ['hammer', 'mallet'],
 		categories: ['navigation', 'tools']
+	},
+	{
+		name: 'globe-x',
+		icon: globeX,
+		tags: [
+			'globe',
+			'internet',
+			'offline',
+			'disconnected',
+			'network',
+			'connection',
+			'world',
+			'no connection',
+			'network failure',
+			'signal off'
+		],
+		categories: ['connectivity', 'devices', 'navigation']
 	},
 	{
 		name: 'grid-2x2-check',

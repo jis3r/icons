@@ -4085,6 +4085,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "globe-x",
+			"title": "globe-x",
+			"type": "registry:component",
+			"description": "The animated globe-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/globe-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/globe-x.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "grid-2x2-check",
 			"title": "grid-2x2-check",
 			"type": "registry:component",
