@@ -2645,6 +2645,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "circle-x",
+			"title": "circle-x",
+			"type": "registry:component",
+			"description": "The animated circle-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/circle-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/circle-x.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "clapperboard",
 			"title": "clapperboard",
 			"type": "registry:component",

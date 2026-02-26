@@ -1485,6 +1485,15 @@
 		"relativeUrl": "circle-question-mark.json"
 	},
 	{
+		"name": "circle-x",
+		"title": "circle-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated circle-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "circle-x.json"
+	},
+	{
 		"name": "clapperboard",
 		"title": "clapperboard",
 		"type": "registry:component",

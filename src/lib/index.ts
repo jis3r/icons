@@ -163,6 +163,7 @@ export { default as CircleOff } from './icons/circle-off.svelte';
 export { default as CircleParkingOff } from './icons/circle-parking-off.svelte';
 export { default as CirclePlus } from './icons/circle-plus.svelte';
 export { default as CircleQuestionMark } from './icons/circle-question-mark.svelte';
+export { default as CircleX } from './icons/circle-x.svelte';
 export { default as Clapperboard } from './icons/clapperboard.svelte';
 export { default as ClipboardCheck } from './icons/clipboard-check.svelte';
 export { default as ClipboardList } from './icons/clipboard-list.svelte';
@@ -704,6 +705,7 @@ export type IconName =
 	| 'circle-parking-off'
 	| 'circle-plus'
 	| 'circle-question-mark'
+	| 'circle-x'
 	| 'clapperboard'
 	| 'clipboard-check'
 	| 'clipboard-list'

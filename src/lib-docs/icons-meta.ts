@@ -163,6 +163,7 @@ import circleOff from '$lib/icons/circle-off.svelte';
 import circleParkingOff from '$lib/icons/circle-parking-off.svelte';
 import circlePlus from '$lib/icons/circle-plus.svelte';
 import circleQuestionMark from '$lib/icons/circle-question-mark.svelte';
+import circleX from '$lib/icons/circle-x.svelte';
 import clapperboard from '$lib/icons/clapperboard.svelte';
 import clipboard from '$lib/icons/clipboard.svelte';
 import clipboardCheck from '$lib/icons/clipboard-check.svelte';
@@ -2510,6 +2511,27 @@ const ICONS_LIST = [
 		icon: circleQuestionMark,
 		tags: ['question mark'],
 		categories: ['accessibility', 'text', 'notifications']
+	},
+	{
+		name: 'circle-x',
+		icon: circleX,
+		tags: [
+			'cancel',
+			'close',
+			'delete',
+			'remove',
+			'times',
+			'clear',
+			'error',
+			'incorrect',
+			'wrong',
+			'mistake',
+			'failure',
+			'linter',
+			'multiply',
+			'multiplication'
+		],
+		categories: ['math', 'development']
 	},
 	{
 		name: 'clapperboard',
