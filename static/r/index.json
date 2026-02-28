@@ -2106,6 +2106,15 @@
 		"relativeUrl": "file-up.json"
 	},
 	{
+		"name": "file-x",
+		"title": "file-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated file-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "file-x.json"
+	},
+	{
 		"name": "fish-off",
 		"title": "fish-off",
 		"type": "registry:component",

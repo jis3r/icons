@@ -232,6 +232,7 @@ export { default as FileSliders } from './icons/file-sliders.svelte';
 export { default as FileStack } from './icons/file-stack.svelte';
 export { default as FileTerminal } from './icons/file-terminal.svelte';
 export { default as FileUp } from './icons/file-up.svelte';
+export { default as FileX } from './icons/file-x.svelte';
 export { default as FishOff } from './icons/fish-off.svelte';
 export { default as FlagOff } from './icons/flag-off.svelte';
 export { default as FlashlightOff } from './icons/flashlight-off.svelte';
@@ -774,6 +775,7 @@ export type IconName =
 	| 'file-stack'
 	| 'file-terminal'
 	| 'file-up'
+	| 'file-x'
 	| 'fish-off'
 	| 'flag-off'
 	| 'flashlight-off'
