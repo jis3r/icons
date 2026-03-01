@@ -337,6 +337,7 @@ import monitorCog from '$lib/icons/monitor-cog.svelte';
 import monitorDown from '$lib/icons/monitor-down.svelte';
 import monitorOff from '$lib/icons/monitor-off.svelte';
 import monitorUp from '$lib/icons/monitor-up.svelte';
+import monitorX from '$lib/icons/monitor-x.svelte';
 import mouseOff from '$lib/icons/mouse-off.svelte';
 import mousePointer from '$lib/icons/mouse-pointer.svelte';
 import mousePointer2 from '$lib/icons/mouse-pointer-2.svelte';
@@ -4161,6 +4162,24 @@ const ICONS_LIST = [
 		name: 'monitor-up',
 		icon: monitorUp,
 		tags: ['tv', 'screen', 'display', 'upload', 'connect', 'remote', 'screen share'],
+		categories: ['connectivity', 'devices']
+	},
+	{
+		name: 'monitor-x',
+		icon: monitorX,
+		tags: [
+			'tv',
+			'screen',
+			'display',
+			'desktop',
+			'virtual machine',
+			'vm',
+			'close',
+			'stop',
+			'suspend',
+			'remove',
+			'delete'
+		],
 		categories: ['connectivity', 'devices']
 	},
 	{

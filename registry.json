@@ -5429,6 +5429,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "monitor-x",
+			"title": "monitor-x",
+			"type": "registry:component",
+			"description": "The animated monitor-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/monitor-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/monitor-x.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "mouse-off",
 			"title": "mouse-off",
 			"type": "registry:component",

@@ -3051,6 +3051,15 @@
 		"relativeUrl": "monitor-up.json"
 	},
 	{
+		"name": "monitor-x",
+		"title": "monitor-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated monitor-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "monitor-x.json"
+	},
+	{
 		"name": "mouse-off",
 		"title": "mouse-off",
 		"type": "registry:component",

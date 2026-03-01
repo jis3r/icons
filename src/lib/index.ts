@@ -337,6 +337,7 @@ export { default as MonitorCog } from './icons/monitor-cog.svelte';
 export { default as MonitorDown } from './icons/monitor-down.svelte';
 export { default as MonitorOff } from './icons/monitor-off.svelte';
 export { default as MonitorUp } from './icons/monitor-up.svelte';
+export { default as MonitorX } from './icons/monitor-x.svelte';
 export { default as MouseOff } from './icons/mouse-off.svelte';
 export { default as MousePointer2 } from './icons/mouse-pointer-2.svelte';
 export { default as MousePointer } from './icons/mouse-pointer.svelte';
@@ -880,6 +881,7 @@ export type IconName =
 	| 'monitor-down'
 	| 'monitor-off'
 	| 'monitor-up'
+	| 'monitor-x'
 	| 'mouse-off'
 	| 'mouse-pointer-2'
 	| 'mouse-pointer'
