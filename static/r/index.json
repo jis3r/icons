@@ -2763,6 +2763,15 @@
 		"relativeUrl": "map-pin-off.json"
 	},
 	{
+		"name": "map-pin-x",
+		"title": "map-pin-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated map-pin-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "map-pin-x.json"
+	},
+	{
 		"name": "maximize-2",
 		"title": "maximize-2",
 		"type": "registry:component",

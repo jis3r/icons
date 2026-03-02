@@ -4917,6 +4917,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "map-pin-x",
+			"title": "map-pin-x",
+			"type": "registry:component",
+			"description": "The animated map-pin-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/map-pin-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/map-pin-x.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "maximize-2",
 			"title": "maximize-2",
 			"type": "registry:component",
