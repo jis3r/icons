@@ -416,6 +416,7 @@ export { default as SaveOff } from './icons/save-off.svelte';
 export { default as ScanText } from './icons/scan-text.svelte';
 export { default as Scissors } from './icons/scissors.svelte';
 export { default as SearchCheck } from './icons/search-check.svelte';
+export { default as SearchX } from './icons/search-x.svelte';
 export { default as Search } from './icons/search.svelte';
 export { default as SendHorizontal } from './icons/send-horizontal.svelte';
 export { default as Send } from './icons/send.svelte';
@@ -960,6 +961,7 @@ export type IconName =
 	| 'scan-text'
 	| 'scissors'
 	| 'search-check'
+	| 'search-x'
 	| 'search'
 	| 'send-horizontal'
 	| 'send'

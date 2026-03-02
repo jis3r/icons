@@ -3762,6 +3762,15 @@
 		"relativeUrl": "search-check.json"
 	},
 	{
+		"name": "search-x",
+		"title": "search-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated search-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "search-x.json"
+	},
+	{
 		"name": "search",
 		"title": "search",
 		"type": "registry:component",

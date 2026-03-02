@@ -417,6 +417,7 @@ import scanText from '$lib/icons/scan-text.svelte';
 import scissors from '$lib/icons/scissors.svelte';
 import search from '$lib/icons/search.svelte';
 import searchCheck from '$lib/icons/search-check.svelte';
+import searchX from '$lib/icons/search-x.svelte';
 import send from '$lib/icons/send.svelte';
 import sendHorizontal from '$lib/icons/send-horizontal.svelte';
 import serverCog from '$lib/icons/server-cog.svelte';
@@ -4904,6 +4905,22 @@ const ICONS_LIST = [
 			'correct',
 			'complete',
 			'tick',
+			'lens'
+		],
+		categories: ['text', 'social']
+	},
+	{
+		name: 'search-x',
+		icon: searchX,
+		tags: [
+			'find',
+			'scan',
+			'magnifier',
+			'magnifying glass',
+			'stop',
+			'clear',
+			'cancel',
+			'abort',
 			'lens'
 		],
 		categories: ['text', 'social']

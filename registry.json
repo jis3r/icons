@@ -6693,6 +6693,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "search-x",
+			"title": "search-x",
+			"type": "registry:component",
+			"description": "The animated search-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/search-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/search-x.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "search",
 			"title": "search",
 			"type": "registry:component",
