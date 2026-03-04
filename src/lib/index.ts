@@ -305,6 +305,7 @@ export { default as MailX } from './icons/mail-x.svelte';
 export { default as MapPinCheckInside } from './icons/map-pin-check-inside.svelte';
 export { default as MapPinCheck } from './icons/map-pin-check.svelte';
 export { default as MapPinOff } from './icons/map-pin-off.svelte';
+export { default as MapPinXInside } from './icons/map-pin-x-inside.svelte';
 export { default as MapPinX } from './icons/map-pin-x.svelte';
 export { default as Maximize2 } from './icons/maximize-2.svelte';
 export { default as Maximize } from './icons/maximize.svelte';
@@ -851,6 +852,7 @@ export type IconName =
 	| 'map-pin-check-inside'
 	| 'map-pin-check'
 	| 'map-pin-off'
+	| 'map-pin-x-inside'
 	| 'map-pin-x'
 	| 'maximize-2'
 	| 'maximize'

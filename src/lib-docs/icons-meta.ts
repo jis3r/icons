@@ -306,6 +306,7 @@ import mapPinCheck from '$lib/icons/map-pin-check.svelte';
 import mapPinCheckInside from '$lib/icons/map-pin-check-inside.svelte';
 import mapPinOff from '$lib/icons/map-pin-off.svelte';
 import mapPinX from '$lib/icons/map-pin-x.svelte';
+import mapPinXInside from '$lib/icons/map-pin-x-inside.svelte';
 import maximize from '$lib/icons/maximize.svelte';
 import maximize2 from '$lib/icons/maximize-2.svelte';
 import megaphoneOff from '$lib/icons/megaphone-off.svelte';
@@ -3731,6 +3732,12 @@ const ICONS_LIST = [
 	{
 		name: 'map-pin-x',
 		icon: mapPinX,
+		tags: ['location', 'waypoint', 'marker', 'drop', 'delete', 'remove', 'erase'],
+		categories: ['navigation', 'travel', 'account']
+	},
+	{
+		name: 'map-pin-x-inside',
+		icon: mapPinXInside,
 		tags: ['location', 'waypoint', 'marker', 'drop', 'delete', 'remove', 'erase'],
 		categories: ['navigation', 'travel', 'account']
 	},

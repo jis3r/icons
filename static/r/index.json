@@ -2763,6 +2763,15 @@
 		"relativeUrl": "map-pin-off.json"
 	},
 	{
+		"name": "map-pin-x-inside",
+		"title": "map-pin-x-inside",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated map-pin-x-inside icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "map-pin-x-inside.json"
+	},
+	{
 		"name": "map-pin-x",
 		"title": "map-pin-x",
 		"type": "registry:component",
