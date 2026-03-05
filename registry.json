@@ -3749,6 +3749,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "file-x-corner",
+			"title": "file-x-corner",
+			"type": "registry:component",
+			"description": "The animated file-x-corner icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/file-x-corner.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/file-x-corner.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "file-x",
 			"title": "file-x",
 			"type": "registry:component",

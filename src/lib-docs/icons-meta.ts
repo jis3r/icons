@@ -233,6 +233,7 @@ import fileStack from '$lib/icons/file-stack.svelte';
 import fileTerminal from '$lib/icons/file-terminal.svelte';
 import fileUp from '$lib/icons/file-up.svelte';
 import fileX from '$lib/icons/file-x.svelte';
+import fileXCorner from '$lib/icons/file-x-corner.svelte';
 import fishOff from '$lib/icons/fish-off.svelte';
 import flagOff from '$lib/icons/flag-off.svelte';
 import flashlightOff from '$lib/icons/flashlight-off.svelte';
@@ -3095,6 +3096,12 @@ const ICONS_LIST = [
 	{
 		name: 'file-x',
 		icon: fileX,
+		tags: ['lost', 'delete', 'remove', 'document'],
+		categories: ['files']
+	},
+	{
+		name: 'file-x-corner',
+		icon: fileXCorner,
 		tags: ['lost', 'delete', 'remove', 'document'],
 		categories: ['files']
 	},
