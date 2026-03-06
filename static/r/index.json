@@ -981,6 +981,15 @@
 		"relativeUrl": "calendar-sync.json"
 	},
 	{
+		"name": "calendar-x",
+		"title": "calendar-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated calendar-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "calendar-x.json"
+	},
+	{
 		"name": "camera-off",
 		"title": "camera-off",
 		"type": "registry:component",

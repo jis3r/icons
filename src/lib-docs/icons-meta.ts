@@ -107,6 +107,7 @@ import calendarCog from '$lib/icons/calendar-cog.svelte';
 import calendarDays from '$lib/icons/calendar-days.svelte';
 import calendarOff from '$lib/icons/calendar-off.svelte';
 import calendarSync from '$lib/icons/calendar-sync.svelte';
+import calendarX from '$lib/icons/calendar-x.svelte';
 import cameraOff from '$lib/icons/camera-off.svelte';
 import candyOff from '$lib/icons/candy-off.svelte';
 import captionsOff from '$lib/icons/captions-off.svelte';
@@ -2077,6 +2078,12 @@ const ICONS_LIST = [
 			'auto'
 		],
 		categories: ['arrows', 'time']
+	},
+	{
+		name: 'calendar-x',
+		icon: calendarX,
+		tags: ['date', 'day', 'month', 'year', 'event', 'remove', 'busy'],
+		categories: ['time']
 	},
 	{
 		name: 'camera-off',
