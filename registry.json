@@ -1749,6 +1749,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "calendar-x-2",
+			"title": "calendar-x-2",
+			"type": "registry:component",
+			"description": "The animated calendar-x-2 icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/calendar-x-2.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/calendar-x-2.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "calendar-x",
 			"title": "calendar-x",
 			"type": "registry:component",

@@ -981,6 +981,15 @@
 		"relativeUrl": "calendar-sync.json"
 	},
 	{
+		"name": "calendar-x-2",
+		"title": "calendar-x-2",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated calendar-x-2 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "calendar-x-2.json"
+	},
+	{
 		"name": "calendar-x",
 		"title": "calendar-x",
 		"type": "registry:component",

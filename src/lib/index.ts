@@ -107,6 +107,7 @@ export { default as CalendarCog } from './icons/calendar-cog.svelte';
 export { default as CalendarDays } from './icons/calendar-days.svelte';
 export { default as CalendarOff } from './icons/calendar-off.svelte';
 export { default as CalendarSync } from './icons/calendar-sync.svelte';
+export { default as CalendarX2 } from './icons/calendar-x-2.svelte';
 export { default as CalendarX } from './icons/calendar-x.svelte';
 export { default as CameraOff } from './icons/camera-off.svelte';
 export { default as CandyOff } from './icons/candy-off.svelte';
@@ -656,6 +657,7 @@ export type IconName =
 	| 'calendar-days'
 	| 'calendar-off'
 	| 'calendar-sync'
+	| 'calendar-x-2'
 	| 'calendar-x'
 	| 'camera-off'
 	| 'candy-off'
