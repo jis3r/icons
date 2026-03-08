@@ -41,6 +41,7 @@ export { default as Axis3d } from './icons/axis-3d.svelte';
 export { default as BadgeAlert } from './icons/badge-alert.svelte';
 export { default as BadgeCheck } from './icons/badge-check.svelte';
 export { default as BadgeQuestionMark } from './icons/badge-question-mark.svelte';
+export { default as BadgeX } from './icons/badge-x.svelte';
 export { default as BatteryCharging } from './icons/battery-charging.svelte';
 export { default as BatteryFull } from './icons/battery-full.svelte';
 export { default as BatteryLow } from './icons/battery-low.svelte';
@@ -107,6 +108,8 @@ export { default as CalendarCog } from './icons/calendar-cog.svelte';
 export { default as CalendarDays } from './icons/calendar-days.svelte';
 export { default as CalendarOff } from './icons/calendar-off.svelte';
 export { default as CalendarSync } from './icons/calendar-sync.svelte';
+export { default as CalendarX2 } from './icons/calendar-x-2.svelte';
+export { default as CalendarX } from './icons/calendar-x.svelte';
 export { default as CameraOff } from './icons/camera-off.svelte';
 export { default as CandyOff } from './icons/candy-off.svelte';
 export { default as CaptionsOff } from './icons/captions-off.svelte';
@@ -163,6 +166,7 @@ export { default as CircleOff } from './icons/circle-off.svelte';
 export { default as CircleParkingOff } from './icons/circle-parking-off.svelte';
 export { default as CirclePlus } from './icons/circle-plus.svelte';
 export { default as CircleQuestionMark } from './icons/circle-question-mark.svelte';
+export { default as CircleX } from './icons/circle-x.svelte';
 export { default as Clapperboard } from './icons/clapperboard.svelte';
 export { default as ClipboardCheck } from './icons/clipboard-check.svelte';
 export { default as ClipboardList } from './icons/clipboard-list.svelte';
@@ -231,6 +235,8 @@ export { default as FileSliders } from './icons/file-sliders.svelte';
 export { default as FileStack } from './icons/file-stack.svelte';
 export { default as FileTerminal } from './icons/file-terminal.svelte';
 export { default as FileUp } from './icons/file-up.svelte';
+export { default as FileXCorner } from './icons/file-x-corner.svelte';
+export { default as FileX } from './icons/file-x.svelte';
 export { default as FishOff } from './icons/fish-off.svelte';
 export { default as FlagOff } from './icons/flag-off.svelte';
 export { default as FlashlightOff } from './icons/flashlight-off.svelte';
@@ -253,6 +259,7 @@ export { default as GalleryVerticalEnd } from './icons/gallery-vertical-end.svel
 export { default as GalleryVertical } from './icons/gallery-vertical.svelte';
 export { default as Gauge } from './icons/gauge.svelte';
 export { default as Gavel } from './icons/gavel.svelte';
+export { default as GlobeX } from './icons/globe-x.svelte';
 export { default as Grid2x2Check } from './icons/grid-2x2-check.svelte';
 export { default as GripHorizontal } from './icons/grip-horizontal.svelte';
 export { default as GripVertical } from './icons/grip-vertical.svelte';
@@ -298,9 +305,12 @@ export { default as LoaderPinwheel } from './icons/loader-pinwheel.svelte';
 export { default as LocateOff } from './icons/locate-off.svelte';
 export { default as LogOut } from './icons/log-out.svelte';
 export { default as MailCheck } from './icons/mail-check.svelte';
+export { default as MailX } from './icons/mail-x.svelte';
 export { default as MapPinCheckInside } from './icons/map-pin-check-inside.svelte';
 export { default as MapPinCheck } from './icons/map-pin-check.svelte';
 export { default as MapPinOff } from './icons/map-pin-off.svelte';
+export { default as MapPinXInside } from './icons/map-pin-x-inside.svelte';
+export { default as MapPinX } from './icons/map-pin-x.svelte';
 export { default as Maximize2 } from './icons/maximize-2.svelte';
 export { default as Maximize } from './icons/maximize.svelte';
 export { default as MegaphoneOff } from './icons/megaphone-off.svelte';
@@ -333,6 +343,7 @@ export { default as MonitorCog } from './icons/monitor-cog.svelte';
 export { default as MonitorDown } from './icons/monitor-down.svelte';
 export { default as MonitorOff } from './icons/monitor-off.svelte';
 export { default as MonitorUp } from './icons/monitor-up.svelte';
+export { default as MonitorX } from './icons/monitor-x.svelte';
 export { default as MouseOff } from './icons/mouse-off.svelte';
 export { default as MousePointer2 } from './icons/mouse-pointer-2.svelte';
 export { default as MousePointer } from './icons/mouse-pointer.svelte';
@@ -354,8 +365,10 @@ export { default as Nfc } from './icons/nfc.svelte';
 export { default as NotebookPen } from './icons/notebook-pen.svelte';
 export { default as NutOff } from './icons/nut-off.svelte';
 export { default as OctagonAlert } from './icons/octagon-alert.svelte';
+export { default as OctagonX } from './icons/octagon-x.svelte';
 export { default as Orbit } from './icons/orbit.svelte';
 export { default as PackageCheck } from './icons/package-check.svelte';
+export { default as PackageX } from './icons/package-x.svelte';
 export { default as Paintbrush } from './icons/paintbrush.svelte';
 export { default as PanelBottomClose } from './icons/panel-bottom-close.svelte';
 export { default as PanelBottomOpen } from './icons/panel-bottom-open.svelte';
@@ -409,6 +422,7 @@ export { default as SaveOff } from './icons/save-off.svelte';
 export { default as ScanText } from './icons/scan-text.svelte';
 export { default as Scissors } from './icons/scissors.svelte';
 export { default as SearchCheck } from './icons/search-check.svelte';
+export { default as SearchX } from './icons/search-x.svelte';
 export { default as Search } from './icons/search.svelte';
 export { default as SendHorizontal } from './icons/send-horizontal.svelte';
 export { default as Send } from './icons/send.svelte';
@@ -420,6 +434,7 @@ export { default as ShieldCheck } from './icons/shield-check.svelte';
 export { default as ShieldOff } from './icons/shield-off.svelte';
 export { default as ShieldPlus } from './icons/shield-plus.svelte';
 export { default as ShieldQuestionMark } from './icons/shield-question-mark.svelte';
+export { default as ShieldX } from './icons/shield-x.svelte';
 export { default as ShipWheel } from './icons/ship-wheel.svelte';
 export { default as Ship } from './icons/ship.svelte';
 export { default as ShoppingCart } from './icons/shopping-cart.svelte';
@@ -467,6 +482,7 @@ export { default as SquarePlus } from './icons/square-plus.svelte';
 export { default as SquareScissors } from './icons/square-scissors.svelte';
 export { default as SquareStack } from './icons/square-stack.svelte';
 export { default as SquareTerminal } from './icons/square-terminal.svelte';
+export { default as SquareX } from './icons/square-x.svelte';
 export { default as StarOff } from './icons/star-off.svelte';
 export { default as Star } from './icons/star.svelte';
 export { default as Sun } from './icons/sun.svelte';
@@ -482,6 +498,7 @@ export { default as Thermometer } from './icons/thermometer.svelte';
 export { default as ThumbsDown } from './icons/thumbs-down.svelte';
 export { default as ThumbsUp } from './icons/thumbs-up.svelte';
 export { default as TicketCheck } from './icons/ticket-check.svelte';
+export { default as TicketX } from './icons/ticket-x.svelte';
 export { default as TimerOff } from './icons/timer-off.svelte';
 export { default as Timer } from './icons/timer.svelte';
 export { default as ToggleLeft } from './icons/toggle-left.svelte';
@@ -504,6 +521,7 @@ export { default as UserPen } from './icons/user-pen.svelte';
 export { default as UserRoundCheck } from './icons/user-round-check.svelte';
 export { default as UserRoundCog } from './icons/user-round-cog.svelte';
 export { default as UserRoundPen } from './icons/user-round-pen.svelte';
+export { default as UserRoundX } from './icons/user-round-x.svelte';
 export { default as UserRound } from './icons/user-round.svelte';
 export { default as UserX } from './icons/user-x.svelte';
 export { default as User } from './icons/user.svelte';
@@ -514,6 +532,7 @@ export { default as VibrateOff } from './icons/vibrate-off.svelte';
 export { default as Vibrate } from './icons/vibrate.svelte';
 export { default as VideoOff } from './icons/video-off.svelte';
 export { default as VolumeOff } from './icons/volume-off.svelte';
+export { default as VolumeX } from './icons/volume-x.svelte';
 export { default as Vote } from './icons/vote.svelte';
 export { default as WashingMachine } from './icons/washing-machine.svelte';
 export { default as Waves } from './icons/waves.svelte';
@@ -573,6 +592,7 @@ export type IconName =
 	| 'badge-alert'
 	| 'badge-check'
 	| 'badge-question-mark'
+	| 'badge-x'
 	| 'battery-charging'
 	| 'battery-full'
 	| 'battery-low'
@@ -639,6 +659,8 @@ export type IconName =
 	| 'calendar-days'
 	| 'calendar-off'
 	| 'calendar-sync'
+	| 'calendar-x-2'
+	| 'calendar-x'
 	| 'camera-off'
 	| 'candy-off'
 	| 'captions-off'
@@ -695,6 +717,7 @@ export type IconName =
 	| 'circle-parking-off'
 	| 'circle-plus'
 	| 'circle-question-mark'
+	| 'circle-x'
 	| 'clapperboard'
 	| 'clipboard-check'
 	| 'clipboard-list'
@@ -763,6 +786,8 @@ export type IconName =
 	| 'file-stack'
 	| 'file-terminal'
 	| 'file-up'
+	| 'file-x-corner'
+	| 'file-x'
 	| 'fish-off'
 	| 'flag-off'
 	| 'flashlight-off'
@@ -785,6 +810,7 @@ export type IconName =
 	| 'gallery-vertical'
 	| 'gauge'
 	| 'gavel'
+	| 'globe-x'
 	| 'grid-2x2-check'
 	| 'grip-horizontal'
 	| 'grip-vertical'
@@ -830,9 +856,12 @@ export type IconName =
 	| 'locate-off'
 	| 'log-out'
 	| 'mail-check'
+	| 'mail-x'
 	| 'map-pin-check-inside'
 	| 'map-pin-check'
 	| 'map-pin-off'
+	| 'map-pin-x-inside'
+	| 'map-pin-x'
 	| 'maximize-2'
 	| 'maximize'
 	| 'megaphone-off'
@@ -865,6 +894,7 @@ export type IconName =
 	| 'monitor-down'
 	| 'monitor-off'
 	| 'monitor-up'
+	| 'monitor-x'
 	| 'mouse-off'
 	| 'mouse-pointer-2'
 	| 'mouse-pointer'
@@ -886,8 +916,10 @@ export type IconName =
 	| 'notebook-pen'
 	| 'nut-off'
 	| 'octagon-alert'
+	| 'octagon-x'
 	| 'orbit'
 	| 'package-check'
+	| 'package-x'
 	| 'paintbrush'
 	| 'panel-bottom-close'
 	| 'panel-bottom-open'
@@ -941,6 +973,7 @@ export type IconName =
 	| 'scan-text'
 	| 'scissors'
 	| 'search-check'
+	| 'search-x'
 	| 'search'
 	| 'send-horizontal'
 	| 'send'
@@ -952,6 +985,7 @@ export type IconName =
 	| 'shield-off'
 	| 'shield-plus'
 	| 'shield-question-mark'
+	| 'shield-x'
 	| 'ship-wheel'
 	| 'ship'
 	| 'shopping-cart'
@@ -999,6 +1033,7 @@ export type IconName =
 	| 'square-scissors'
 	| 'square-stack'
 	| 'square-terminal'
+	| 'square-x'
 	| 'star-off'
 	| 'star'
 	| 'sun'
@@ -1014,6 +1049,7 @@ export type IconName =
 	| 'thumbs-down'
 	| 'thumbs-up'
 	| 'ticket-check'
+	| 'ticket-x'
 	| 'timer-off'
 	| 'timer'
 	| 'toggle-left'
@@ -1036,6 +1072,7 @@ export type IconName =
 	| 'user-round-check'
 	| 'user-round-cog'
 	| 'user-round-pen'
+	| 'user-round-x'
 	| 'user-round'
 	| 'user-x'
 	| 'user'
@@ -1046,6 +1083,7 @@ export type IconName =
 	| 'vibrate'
 	| 'video-off'
 	| 'volume-off'
+	| 'volume-x'
 	| 'vote'
 	| 'washing-machine'
 	| 'waves'

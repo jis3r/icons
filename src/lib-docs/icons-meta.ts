@@ -41,6 +41,7 @@ import axis3d from '$lib/icons/axis-3d.svelte';
 import badgeAlert from '$lib/icons/badge-alert.svelte';
 import badgeCheck from '$lib/icons/badge-check.svelte';
 import badgeQuestionMark from '$lib/icons/badge-question-mark.svelte';
+import badgeX from '$lib/icons/badge-x.svelte';
 import battery from '$lib/icons/battery.svelte';
 import batteryCharging from '$lib/icons/battery-charging.svelte';
 import batteryFull from '$lib/icons/battery-full.svelte';
@@ -107,6 +108,8 @@ import calendarCog from '$lib/icons/calendar-cog.svelte';
 import calendarDays from '$lib/icons/calendar-days.svelte';
 import calendarOff from '$lib/icons/calendar-off.svelte';
 import calendarSync from '$lib/icons/calendar-sync.svelte';
+import calendarX from '$lib/icons/calendar-x.svelte';
+import calendarX2 from '$lib/icons/calendar-x-2.svelte';
 import cameraOff from '$lib/icons/camera-off.svelte';
 import candyOff from '$lib/icons/candy-off.svelte';
 import captionsOff from '$lib/icons/captions-off.svelte';
@@ -163,6 +166,7 @@ import circleOff from '$lib/icons/circle-off.svelte';
 import circleParkingOff from '$lib/icons/circle-parking-off.svelte';
 import circlePlus from '$lib/icons/circle-plus.svelte';
 import circleQuestionMark from '$lib/icons/circle-question-mark.svelte';
+import circleX from '$lib/icons/circle-x.svelte';
 import clapperboard from '$lib/icons/clapperboard.svelte';
 import clipboard from '$lib/icons/clipboard.svelte';
 import clipboardCheck from '$lib/icons/clipboard-check.svelte';
@@ -231,6 +235,8 @@ import fileSliders from '$lib/icons/file-sliders.svelte';
 import fileStack from '$lib/icons/file-stack.svelte';
 import fileTerminal from '$lib/icons/file-terminal.svelte';
 import fileUp from '$lib/icons/file-up.svelte';
+import fileX from '$lib/icons/file-x.svelte';
+import fileXCorner from '$lib/icons/file-x-corner.svelte';
 import fishOff from '$lib/icons/fish-off.svelte';
 import flagOff from '$lib/icons/flag-off.svelte';
 import flashlightOff from '$lib/icons/flashlight-off.svelte';
@@ -253,6 +259,7 @@ import galleryVertical from '$lib/icons/gallery-vertical.svelte';
 import galleryVerticalEnd from '$lib/icons/gallery-vertical-end.svelte';
 import gauge from '$lib/icons/gauge.svelte';
 import gavel from '$lib/icons/gavel.svelte';
+import globeX from '$lib/icons/globe-x.svelte';
 import grid2x2Check from '$lib/icons/grid-2x2-check.svelte';
 import grip from '$lib/icons/grip.svelte';
 import gripHorizontal from '$lib/icons/grip-horizontal.svelte';
@@ -298,9 +305,12 @@ import loaderPinwheel from '$lib/icons/loader-pinwheel.svelte';
 import locateOff from '$lib/icons/locate-off.svelte';
 import logOut from '$lib/icons/log-out.svelte';
 import mailCheck from '$lib/icons/mail-check.svelte';
+import mailX from '$lib/icons/mail-x.svelte';
 import mapPinCheck from '$lib/icons/map-pin-check.svelte';
 import mapPinCheckInside from '$lib/icons/map-pin-check-inside.svelte';
 import mapPinOff from '$lib/icons/map-pin-off.svelte';
+import mapPinX from '$lib/icons/map-pin-x.svelte';
+import mapPinXInside from '$lib/icons/map-pin-x-inside.svelte';
 import maximize from '$lib/icons/maximize.svelte';
 import maximize2 from '$lib/icons/maximize-2.svelte';
 import megaphoneOff from '$lib/icons/megaphone-off.svelte';
@@ -333,6 +343,7 @@ import monitorCog from '$lib/icons/monitor-cog.svelte';
 import monitorDown from '$lib/icons/monitor-down.svelte';
 import monitorOff from '$lib/icons/monitor-off.svelte';
 import monitorUp from '$lib/icons/monitor-up.svelte';
+import monitorX from '$lib/icons/monitor-x.svelte';
 import mouseOff from '$lib/icons/mouse-off.svelte';
 import mousePointer from '$lib/icons/mouse-pointer.svelte';
 import mousePointer2 from '$lib/icons/mouse-pointer-2.svelte';
@@ -354,8 +365,10 @@ import nfc from '$lib/icons/nfc.svelte';
 import notebookPen from '$lib/icons/notebook-pen.svelte';
 import nutOff from '$lib/icons/nut-off.svelte';
 import octagonAlert from '$lib/icons/octagon-alert.svelte';
+import octagonX from '$lib/icons/octagon-x.svelte';
 import orbit from '$lib/icons/orbit.svelte';
 import packageCheck from '$lib/icons/package-check.svelte';
+import packageX from '$lib/icons/package-x.svelte';
 import paintbrush from '$lib/icons/paintbrush.svelte';
 import panelBottom from '$lib/icons/panel-bottom.svelte';
 import panelBottomClose from '$lib/icons/panel-bottom-close.svelte';
@@ -410,6 +423,7 @@ import scanText from '$lib/icons/scan-text.svelte';
 import scissors from '$lib/icons/scissors.svelte';
 import search from '$lib/icons/search.svelte';
 import searchCheck from '$lib/icons/search-check.svelte';
+import searchX from '$lib/icons/search-x.svelte';
 import send from '$lib/icons/send.svelte';
 import sendHorizontal from '$lib/icons/send-horizontal.svelte';
 import serverCog from '$lib/icons/server-cog.svelte';
@@ -420,6 +434,7 @@ import shieldCheck from '$lib/icons/shield-check.svelte';
 import shieldOff from '$lib/icons/shield-off.svelte';
 import shieldPlus from '$lib/icons/shield-plus.svelte';
 import shieldQuestionMark from '$lib/icons/shield-question-mark.svelte';
+import shieldX from '$lib/icons/shield-x.svelte';
 import ship from '$lib/icons/ship.svelte';
 import shipWheel from '$lib/icons/ship-wheel.svelte';
 import shoppingCart from '$lib/icons/shopping-cart.svelte';
@@ -467,6 +482,7 @@ import squarePlus from '$lib/icons/square-plus.svelte';
 import squareScissors from '$lib/icons/square-scissors.svelte';
 import squareStack from '$lib/icons/square-stack.svelte';
 import squareTerminal from '$lib/icons/square-terminal.svelte';
+import squareX from '$lib/icons/square-x.svelte';
 import star from '$lib/icons/star.svelte';
 import starOff from '$lib/icons/star-off.svelte';
 import sun from '$lib/icons/sun.svelte';
@@ -482,6 +498,7 @@ import thermometer from '$lib/icons/thermometer.svelte';
 import thumbsDown from '$lib/icons/thumbs-down.svelte';
 import thumbsUp from '$lib/icons/thumbs-up.svelte';
 import ticketCheck from '$lib/icons/ticket-check.svelte';
+import ticketX from '$lib/icons/ticket-x.svelte';
 import timer from '$lib/icons/timer.svelte';
 import timerOff from '$lib/icons/timer-off.svelte';
 import toggleLeft from '$lib/icons/toggle-left.svelte';
@@ -506,6 +523,7 @@ import userRound from '$lib/icons/user-round.svelte';
 import userRoundCheck from '$lib/icons/user-round-check.svelte';
 import userRoundCog from '$lib/icons/user-round-cog.svelte';
 import userRoundPen from '$lib/icons/user-round-pen.svelte';
+import userRoundX from '$lib/icons/user-round-x.svelte';
 import users from '$lib/icons/users.svelte';
 import usersRound from '$lib/icons/users-round.svelte';
 import userX from '$lib/icons/user-x.svelte';
@@ -514,6 +532,7 @@ import vibrate from '$lib/icons/vibrate.svelte';
 import vibrateOff from '$lib/icons/vibrate-off.svelte';
 import videoOff from '$lib/icons/video-off.svelte';
 import volumeOff from '$lib/icons/volume-off.svelte';
+import volumeX from '$lib/icons/volume-x.svelte';
 import vote from '$lib/icons/vote.svelte';
 import washingMachine from '$lib/icons/washing-machine.svelte';
 import waves from '$lib/icons/waves.svelte';
@@ -978,6 +997,12 @@ const ICONS_LIST = [
 		icon: badgeQuestionMark,
 		tags: ['verified', 'unverified', 'help'],
 		categories: ['accessibility', 'social', 'shapes']
+	},
+	{
+		name: 'badge-x',
+		icon: badgeX,
+		tags: ['verified', 'unverified', 'lost', 'delete', 'remove'],
+		categories: ['social']
 	},
 	{
 		name: 'battery',
@@ -2063,6 +2088,18 @@ const ICONS_LIST = [
 		categories: ['arrows', 'time']
 	},
 	{
+		name: 'calendar-x',
+		icon: calendarX,
+		tags: ['date', 'day', 'month', 'year', 'event', 'remove', 'busy'],
+		categories: ['time']
+	},
+	{
+		name: 'calendar-x-2',
+		icon: calendarX2,
+		tags: ['date', 'day', 'month', 'year', 'event', 'remove'],
+		categories: ['time']
+	},
+	{
 		name: 'camera-off',
 		icon: cameraOff,
 		tags: ['photo', 'webcam', 'video'],
@@ -2501,6 +2538,27 @@ const ICONS_LIST = [
 		icon: circleQuestionMark,
 		tags: ['question mark'],
 		categories: ['accessibility', 'text', 'notifications']
+	},
+	{
+		name: 'circle-x',
+		icon: circleX,
+		tags: [
+			'cancel',
+			'close',
+			'delete',
+			'remove',
+			'times',
+			'clear',
+			'error',
+			'incorrect',
+			'wrong',
+			'mistake',
+			'failure',
+			'linter',
+			'multiply',
+			'multiplication'
+		],
+		categories: ['math', 'development']
 	},
 	{
 		name: 'clapperboard',
@@ -3057,6 +3115,18 @@ const ICONS_LIST = [
 		categories: ['files', 'arrows']
 	},
 	{
+		name: 'file-x',
+		icon: fileX,
+		tags: ['lost', 'delete', 'remove', 'document'],
+		categories: ['files']
+	},
+	{
+		name: 'file-x-corner',
+		icon: fileXCorner,
+		tags: ['lost', 'delete', 'remove', 'document'],
+		categories: ['files']
+	},
+	{
 		name: 'fish-off',
 		icon: fishOff,
 		tags: [
@@ -3256,6 +3326,23 @@ const ICONS_LIST = [
 		icon: gavel,
 		tags: ['hammer', 'mallet'],
 		categories: ['navigation', 'tools']
+	},
+	{
+		name: 'globe-x',
+		icon: globeX,
+		tags: [
+			'globe',
+			'internet',
+			'offline',
+			'disconnected',
+			'network',
+			'connection',
+			'world',
+			'no connection',
+			'network failure',
+			'signal off'
+		],
+		categories: ['connectivity', 'devices', 'navigation']
 	},
 	{
 		name: 'grid-2x2-check',
@@ -3647,6 +3734,12 @@ const ICONS_LIST = [
 		categories: ['mail']
 	},
 	{
+		name: 'mail-x',
+		icon: mailX,
+		tags: ['email', 'message', 'letter', 'remove', 'delete'],
+		categories: ['mail']
+	},
+	{
 		name: 'map-pin-check',
 		icon: mapPinCheck,
 		tags: ['location', 'waypoint', 'marker', 'drop', 'done', 'tick', 'complete', 'task', 'added'],
@@ -3663,6 +3756,18 @@ const ICONS_LIST = [
 		icon: mapPinOff,
 		tags: ['location', 'waypoint', 'marker', 'remove'],
 		categories: ['navigation', 'travel']
+	},
+	{
+		name: 'map-pin-x',
+		icon: mapPinX,
+		tags: ['location', 'waypoint', 'marker', 'drop', 'delete', 'remove', 'erase'],
+		categories: ['navigation', 'travel', 'account']
+	},
+	{
+		name: 'map-pin-x-inside',
+		icon: mapPinXInside,
+		tags: ['location', 'waypoint', 'marker', 'drop', 'delete', 'remove', 'erase'],
+		categories: ['navigation', 'travel', 'account']
 	},
 	{
 		name: 'maximize',
@@ -4103,6 +4208,24 @@ const ICONS_LIST = [
 		categories: ['connectivity', 'devices']
 	},
 	{
+		name: 'monitor-x',
+		icon: monitorX,
+		tags: [
+			'tv',
+			'screen',
+			'display',
+			'desktop',
+			'virtual machine',
+			'vm',
+			'close',
+			'stop',
+			'suspend',
+			'remove',
+			'delete'
+		],
+		categories: ['connectivity', 'devices']
+	},
+	{
 		name: 'mouse-off',
 		icon: mouseOff,
 		tags: ['device', 'scroll', 'click', 'disabled'],
@@ -4255,6 +4378,12 @@ const ICONS_LIST = [
 		categories: ['notifications', 'shapes']
 	},
 	{
+		name: 'octagon-x',
+		icon: octagonX,
+		tags: ['delete', 'stop', 'alert', 'warning', 'times', 'clear', 'math'],
+		categories: ['math', 'notifications']
+	},
+	{
 		name: 'orbit',
 		icon: orbit,
 		tags: ['planet', 'space', 'physics', 'satellites', 'moons'],
@@ -4264,6 +4393,12 @@ const ICONS_LIST = [
 		name: 'package-check',
 		icon: packageCheck,
 		tags: ['confirm', 'verified', 'done', 'todo', 'tick', 'complete', 'task', 'delivered'],
+		categories: ['development']
+	},
+	{
+		name: 'package-x',
+		icon: packageX,
+		tags: ['delete', 'remove'],
 		categories: ['development']
 	},
 	{
@@ -4817,6 +4952,22 @@ const ICONS_LIST = [
 		categories: ['text', 'social']
 	},
 	{
+		name: 'search-x',
+		icon: searchX,
+		tags: [
+			'find',
+			'scan',
+			'magnifier',
+			'magnifying glass',
+			'stop',
+			'clear',
+			'cancel',
+			'abort',
+			'lens'
+		],
+		categories: ['text', 'social']
+	},
+	{
 		name: 'send',
 		icon: send,
 		tags: ['email', 'message', 'mail', 'paper airplane', 'paper aeroplane', 'submit'],
@@ -4888,7 +5039,7 @@ const ICONS_LIST = [
 			'weakness',
 			'infection',
 			'infected',
-			'comprimised',
+			'compromised',
 			'data leak',
 			'audited',
 			'admin',
@@ -5010,7 +5161,7 @@ const ICONS_LIST = [
 			'weakness',
 			'infected',
 			'infection',
-			'comprimised',
+			'compromised',
 			'data leak',
 			'unaudited',
 			'admin',
@@ -5112,7 +5263,7 @@ const ICONS_LIST = [
 			'vulnerable',
 			'weakness',
 			'infection',
-			'comprimised',
+			'compromised',
 			'data leak',
 			'audit',
 			'admin',
@@ -5125,6 +5276,73 @@ const ICONS_LIST = [
 			'crest',
 			'question mark',
 			'?'
+		],
+		categories: ['account', 'security', 'development', 'gaming']
+	},
+	{
+		name: 'shield-x',
+		icon: shieldX,
+		tags: [
+			'unshielded',
+			'cybersecurity',
+			'insecure',
+			'unsecured',
+			'safety',
+			'unsafe',
+			'protection',
+			'unprotected',
+			'guardian',
+			'unguarded',
+			'unarmored',
+			'unarmoured',
+			'defenseless',
+			'defenceless',
+			'undefended',
+			'defender',
+			'blocked',
+			'stopped',
+			'intercepted',
+			'interception',
+			'saved',
+			'thwarted',
+			'threat',
+			'prevention',
+			'prevented',
+			'antivirus',
+			'vigilance',
+			'vigilant',
+			'detection',
+			'detected',
+			'scanned',
+			'found',
+			'exploit',
+			'vulnerability',
+			'vulnerable',
+			'weakness',
+			'infection',
+			'infected',
+			'compromised',
+			'data leak',
+			'audited',
+			'admin',
+			'verification',
+			'unverified',
+			'inactive',
+			'cancel',
+			'error',
+			'wrong',
+			'false',
+			'crest',
+			'bravery',
+			'attacked',
+			'damaged',
+			'injured',
+			'hit',
+			'dead',
+			'deceased',
+			'expired',
+			'eliminated',
+			'exterminated'
 		],
 		categories: ['account', 'security', 'development', 'gaming']
 	},
@@ -5620,6 +5838,22 @@ const ICONS_LIST = [
 		categories: ['development']
 	},
 	{
+		name: 'square-x',
+		icon: squareX,
+		tags: [
+			'cancel',
+			'close',
+			'delete',
+			'remove',
+			'times',
+			'clear',
+			'math',
+			'multiply',
+			'multiplication'
+		],
+		categories: ['math', 'notifications']
+	},
+	{
 		name: 'star',
 		icon: star,
 		tags: ['bookmark', 'favorite', 'like', 'review', 'rating'],
@@ -5745,6 +5979,37 @@ const ICONS_LIST = [
 			'certified',
 			'checked',
 			'used'
+		],
+		categories: ['transportation']
+	},
+	{
+		name: 'ticket-x',
+		icon: ticketX,
+		tags: [
+			'entry',
+			'pass',
+			'voucher',
+			'event',
+			'concert',
+			'show',
+			'cancelled',
+			'cancellation',
+			'refunded',
+			'used',
+			'void',
+			'invalidated',
+			'spoiled',
+			'denied',
+			'refused',
+			'banned',
+			'barred',
+			'forbidden',
+			'prohibited',
+			'delete',
+			'remove',
+			'clear',
+			'error',
+			'x'
 		],
 		categories: ['transportation']
 	},
@@ -5908,6 +6173,12 @@ const ICONS_LIST = [
 		categories: ['account']
 	},
 	{
+		name: 'user-round-x',
+		icon: userRoundX,
+		tags: ['delete', 'remove', 'unfollow', 'unsubscribe', 'unavailable'],
+		categories: ['account']
+	},
+	{
 		name: 'user-x',
 		icon: userX,
 		tags: ['delete', 'remove', 'unfollow', 'unsubscribe', 'unavailable'],
@@ -5964,6 +6235,12 @@ const ICONS_LIST = [
 	{
 		name: 'volume-off',
 		icon: volumeOff,
+		tags: ['music', 'sound', 'mute', 'speaker'],
+		categories: ['connectivity', 'communication', 'multimedia']
+	},
+	{
+		name: 'volume-x',
+		icon: volumeX,
 		tags: ['music', 'sound', 'mute', 'speaker'],
 		categories: ['connectivity', 'communication', 'multimedia']
 	},

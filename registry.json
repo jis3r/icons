@@ -693,6 +693,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "badge-x",
+			"title": "badge-x",
+			"type": "registry:component",
+			"description": "The animated badge-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/badge-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/badge-x.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "battery-charging",
 			"title": "battery-charging",
 			"type": "registry:component",
@@ -1749,6 +1765,38 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "calendar-x-2",
+			"title": "calendar-x-2",
+			"type": "registry:component",
+			"description": "The animated calendar-x-2 icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/calendar-x-2.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/calendar-x-2.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "calendar-x",
+			"title": "calendar-x",
+			"type": "registry:component",
+			"description": "The animated calendar-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/calendar-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/calendar-x.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "camera-off",
 			"title": "camera-off",
 			"type": "registry:component",
@@ -2639,6 +2687,22 @@
 					"path": "./src/lib/icons/circle-question-mark.svelte",
 					"type": "registry:component",
 					"target": "~/src/lib/components/movingicons/circle-question-mark.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "circle-x",
+			"title": "circle-x",
+			"type": "registry:component",
+			"description": "The animated circle-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/circle-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/circle-x.svelte"
 				}
 			],
 			"registryDependencies": []
@@ -3733,6 +3797,38 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "file-x-corner",
+			"title": "file-x-corner",
+			"type": "registry:component",
+			"description": "The animated file-x-corner icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/file-x-corner.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/file-x-corner.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "file-x",
+			"title": "file-x",
+			"type": "registry:component",
+			"description": "The animated file-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/file-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/file-x.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "fish-off",
 			"title": "fish-off",
 			"type": "registry:component",
@@ -4079,6 +4175,22 @@
 					"path": "./src/lib/icons/gavel.svelte",
 					"type": "registry:component",
 					"target": "~/src/lib/components/movingicons/gavel.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "globe-x",
+			"title": "globe-x",
+			"type": "registry:component",
+			"description": "The animated globe-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/globe-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/globe-x.svelte"
 				}
 			],
 			"registryDependencies": []
@@ -4805,6 +4917,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "mail-x",
+			"title": "mail-x",
+			"type": "registry:component",
+			"description": "The animated mail-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/mail-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/mail-x.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "map-pin-check-inside",
 			"title": "map-pin-check-inside",
 			"type": "registry:component",
@@ -4847,6 +4975,38 @@
 					"path": "./src/lib/icons/map-pin-off.svelte",
 					"type": "registry:component",
 					"target": "~/src/lib/components/movingicons/map-pin-off.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "map-pin-x-inside",
+			"title": "map-pin-x-inside",
+			"type": "registry:component",
+			"description": "The animated map-pin-x-inside icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/map-pin-x-inside.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/map-pin-x-inside.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "map-pin-x",
+			"title": "map-pin-x",
+			"type": "registry:component",
+			"description": "The animated map-pin-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/map-pin-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/map-pin-x.svelte"
 				}
 			],
 			"registryDependencies": []
@@ -5365,6 +5525,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "monitor-x",
+			"title": "monitor-x",
+			"type": "registry:component",
+			"description": "The animated monitor-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/monitor-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/monitor-x.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "mouse-off",
 			"title": "mouse-off",
 			"type": "registry:component",
@@ -5701,6 +5877,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "octagon-x",
+			"title": "octagon-x",
+			"type": "registry:component",
+			"description": "The animated octagon-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/octagon-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/octagon-x.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "orbit",
 			"title": "orbit",
 			"type": "registry:component",
@@ -5727,6 +5919,22 @@
 					"path": "./src/lib/icons/package-check.svelte",
 					"type": "registry:component",
 					"target": "~/src/lib/components/movingicons/package-check.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "package-x",
+			"title": "package-x",
+			"type": "registry:component",
+			"description": "The animated package-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/package-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/package-x.svelte"
 				}
 			],
 			"registryDependencies": []
@@ -6581,6 +6789,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "search-x",
+			"title": "search-x",
+			"type": "registry:component",
+			"description": "The animated search-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/search-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/search-x.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "search",
 			"title": "search",
 			"type": "registry:component",
@@ -6751,6 +6975,22 @@
 					"path": "./src/lib/icons/shield-question-mark.svelte",
 					"type": "registry:component",
 					"target": "~/src/lib/components/movingicons/shield-question-mark.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "shield-x",
+			"title": "shield-x",
+			"type": "registry:component",
+			"description": "The animated shield-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/shield-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/shield-x.svelte"
 				}
 			],
 			"registryDependencies": []
@@ -7509,6 +7749,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "square-x",
+			"title": "square-x",
+			"type": "registry:component",
+			"description": "The animated square-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/square-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/square-x.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "star-off",
 			"title": "star-off",
 			"type": "registry:component",
@@ -7743,6 +7999,22 @@
 					"path": "./src/lib/icons/ticket-check.svelte",
 					"type": "registry:component",
 					"target": "~/src/lib/components/movingicons/ticket-check.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "ticket-x",
+			"title": "ticket-x",
+			"type": "registry:component",
+			"description": "The animated ticket-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/ticket-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/ticket-x.svelte"
 				}
 			],
 			"registryDependencies": []
@@ -8101,6 +8373,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "user-round-x",
+			"title": "user-round-x",
+			"type": "registry:component",
+			"description": "The animated user-round-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/user-round-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/user-round-x.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "user-round",
 			"title": "user-round",
 			"type": "registry:component",
@@ -8255,6 +8543,22 @@
 					"path": "./src/lib/icons/volume-off.svelte",
 					"type": "registry:component",
 					"target": "~/src/lib/components/movingicons/volume-off.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "volume-x",
+			"title": "volume-x",
+			"type": "registry:component",
+			"description": "The animated volume-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/volume-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/volume-x.svelte"
 				}
 			],
 			"registryDependencies": []

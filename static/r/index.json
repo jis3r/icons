@@ -387,6 +387,15 @@
 		"relativeUrl": "badge-question-mark.json"
 	},
 	{
+		"name": "badge-x",
+		"title": "badge-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated badge-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "badge-x.json"
+	},
+	{
 		"name": "battery-charging",
 		"title": "battery-charging",
 		"type": "registry:component",
@@ -981,6 +990,24 @@
 		"relativeUrl": "calendar-sync.json"
 	},
 	{
+		"name": "calendar-x-2",
+		"title": "calendar-x-2",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated calendar-x-2 icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "calendar-x-2.json"
+	},
+	{
+		"name": "calendar-x",
+		"title": "calendar-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated calendar-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "calendar-x.json"
+	},
+	{
 		"name": "camera-off",
 		"title": "camera-off",
 		"type": "registry:component",
@@ -1483,6 +1510,15 @@
 		"description": "The animated circle-question-mark icon component.",
 		"registryDependencies": [],
 		"relativeUrl": "circle-question-mark.json"
+	},
+	{
+		"name": "circle-x",
+		"title": "circle-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated circle-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "circle-x.json"
 	},
 	{
 		"name": "clapperboard",
@@ -2097,6 +2133,24 @@
 		"relativeUrl": "file-up.json"
 	},
 	{
+		"name": "file-x-corner",
+		"title": "file-x-corner",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated file-x-corner icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "file-x-corner.json"
+	},
+	{
+		"name": "file-x",
+		"title": "file-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated file-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "file-x.json"
+	},
+	{
 		"name": "fish-off",
 		"title": "fish-off",
 		"type": "registry:component",
@@ -2293,6 +2347,15 @@
 		"description": "The animated gavel icon component.",
 		"registryDependencies": [],
 		"relativeUrl": "gavel.json"
+	},
+	{
+		"name": "globe-x",
+		"title": "globe-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated globe-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "globe-x.json"
 	},
 	{
 		"name": "grid-2x2-check",
@@ -2700,6 +2763,15 @@
 		"relativeUrl": "mail-check.json"
 	},
 	{
+		"name": "mail-x",
+		"title": "mail-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated mail-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "mail-x.json"
+	},
+	{
 		"name": "map-pin-check-inside",
 		"title": "map-pin-check-inside",
 		"type": "registry:component",
@@ -2725,6 +2797,24 @@
 		"description": "The animated map-pin-off icon component.",
 		"registryDependencies": [],
 		"relativeUrl": "map-pin-off.json"
+	},
+	{
+		"name": "map-pin-x-inside",
+		"title": "map-pin-x-inside",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated map-pin-x-inside icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "map-pin-x-inside.json"
+	},
+	{
+		"name": "map-pin-x",
+		"title": "map-pin-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated map-pin-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "map-pin-x.json"
 	},
 	{
 		"name": "maximize-2",
@@ -3015,6 +3105,15 @@
 		"relativeUrl": "monitor-up.json"
 	},
 	{
+		"name": "monitor-x",
+		"title": "monitor-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated monitor-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "monitor-x.json"
+	},
+	{
 		"name": "mouse-off",
 		"title": "mouse-off",
 		"type": "registry:component",
@@ -3204,6 +3303,15 @@
 		"relativeUrl": "octagon-alert.json"
 	},
 	{
+		"name": "octagon-x",
+		"title": "octagon-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated octagon-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "octagon-x.json"
+	},
+	{
 		"name": "orbit",
 		"title": "orbit",
 		"type": "registry:component",
@@ -3220,6 +3328,15 @@
 		"description": "The animated package-check icon component.",
 		"registryDependencies": [],
 		"relativeUrl": "package-check.json"
+	},
+	{
+		"name": "package-x",
+		"title": "package-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated package-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "package-x.json"
 	},
 	{
 		"name": "paintbrush",
@@ -3699,6 +3816,15 @@
 		"relativeUrl": "search-check.json"
 	},
 	{
+		"name": "search-x",
+		"title": "search-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated search-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "search-x.json"
+	},
+	{
 		"name": "search",
 		"title": "search",
 		"type": "registry:component",
@@ -3796,6 +3922,15 @@
 		"description": "The animated shield-question-mark icon component.",
 		"registryDependencies": [],
 		"relativeUrl": "shield-question-mark.json"
+	},
+	{
+		"name": "shield-x",
+		"title": "shield-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated shield-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "shield-x.json"
 	},
 	{
 		"name": "ship-wheel",
@@ -4221,6 +4356,15 @@
 		"relativeUrl": "square-terminal.json"
 	},
 	{
+		"name": "square-x",
+		"title": "square-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated square-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "square-x.json"
+	},
+	{
 		"name": "star-off",
 		"title": "star-off",
 		"type": "registry:component",
@@ -4354,6 +4498,15 @@
 		"description": "The animated ticket-check icon component.",
 		"registryDependencies": [],
 		"relativeUrl": "ticket-check.json"
+	},
+	{
+		"name": "ticket-x",
+		"title": "ticket-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated ticket-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "ticket-x.json"
 	},
 	{
 		"name": "timer-off",
@@ -4554,6 +4707,15 @@
 		"relativeUrl": "user-round-pen.json"
 	},
 	{
+		"name": "user-round-x",
+		"title": "user-round-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated user-round-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "user-round-x.json"
+	},
+	{
 		"name": "user-round",
 		"title": "user-round",
 		"type": "registry:component",
@@ -4642,6 +4804,15 @@
 		"description": "The animated volume-off icon component.",
 		"registryDependencies": [],
 		"relativeUrl": "volume-off.json"
+	},
+	{
+		"name": "volume-x",
+		"title": "volume-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated volume-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "volume-x.json"
 	},
 	{
 		"name": "vote",
