@@ -41,6 +41,7 @@ import axis3d from '$lib/icons/axis-3d.svelte';
 import badgeAlert from '$lib/icons/badge-alert.svelte';
 import badgeCheck from '$lib/icons/badge-check.svelte';
 import badgeQuestionMark from '$lib/icons/badge-question-mark.svelte';
+import badgeX from '$lib/icons/badge-x.svelte';
 import battery from '$lib/icons/battery.svelte';
 import batteryCharging from '$lib/icons/battery-charging.svelte';
 import batteryFull from '$lib/icons/battery-full.svelte';
@@ -996,6 +997,12 @@ const ICONS_LIST = [
 		icon: badgeQuestionMark,
 		tags: ['verified', 'unverified', 'help'],
 		categories: ['accessibility', 'social', 'shapes']
+	},
+	{
+		name: 'badge-x',
+		icon: badgeX,
+		tags: ['verified', 'unverified', 'lost', 'delete', 'remove'],
+		categories: ['social']
 	},
 	{
 		name: 'battery',

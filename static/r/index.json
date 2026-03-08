@@ -387,6 +387,15 @@
 		"relativeUrl": "badge-question-mark.json"
 	},
 	{
+		"name": "badge-x",
+		"title": "badge-x",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated badge-x icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "badge-x.json"
+	},
+	{
 		"name": "battery-charging",
 		"title": "battery-charging",
 		"type": "registry:component",

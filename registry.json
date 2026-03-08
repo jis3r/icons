@@ -693,6 +693,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "badge-x",
+			"title": "badge-x",
+			"type": "registry:component",
+			"description": "The animated badge-x icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/badge-x.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/badge-x.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "battery-charging",
 			"title": "battery-charging",
 			"type": "registry:component",

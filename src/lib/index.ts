@@ -41,6 +41,7 @@ export { default as Axis3d } from './icons/axis-3d.svelte';
 export { default as BadgeAlert } from './icons/badge-alert.svelte';
 export { default as BadgeCheck } from './icons/badge-check.svelte';
 export { default as BadgeQuestionMark } from './icons/badge-question-mark.svelte';
+export { default as BadgeX } from './icons/badge-x.svelte';
 export { default as BatteryCharging } from './icons/battery-charging.svelte';
 export { default as BatteryFull } from './icons/battery-full.svelte';
 export { default as BatteryLow } from './icons/battery-low.svelte';
@@ -591,6 +592,7 @@ export type IconName =
 	| 'badge-alert'
 	| 'badge-check'
 	| 'badge-question-mark'
+	| 'badge-x'
 	| 'battery-charging'
 	| 'battery-full'
 	| 'battery-low'

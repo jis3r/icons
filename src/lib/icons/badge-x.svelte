@@ -18,7 +18,7 @@
 	}
 </script>
 
-<div class={className} aria-label="calendar-x-2" role="img" onmouseenter={handleMouseEnter}>
+<div class={className} aria-label="badge-x" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
@@ -29,15 +29,14 @@
 		stroke-width={strokeWidth}
 		stroke-linecap="round"
 		stroke-linejoin="round"
-		class="calendar-x-2-icon"
+		class="badge-x-icon"
 		class:animate
 	>
-		<path d="M8 2v4" />
-		<path d="M16 2v4" />
-		<path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8" />
-		<path d="M3 10h18" />
-		<path d="M22 17l-5 5" class="diagonal-1" />
-		<path d="m17 17 5 5" class="diagonal-2" />
+		<path
+			d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"
+		/>
+		<line x1="15" x2="9" y1="9" y2="15" class="diagonal-1" />
+		<line x1="9" x2="15" y1="9" y2="15" class="diagonal-2" />
 	</svg>
 </div>
 
@@ -45,23 +44,23 @@
 	div {
 		display: inline-block;
 	}
-	.calendar-x-2-icon {
+	.badge-x-icon {
 		overflow: visible;
 	}
 
 	.diagonal-1,
 	.diagonal-2 {
-		stroke-dasharray: 8;
+		stroke-dasharray: 10;
 		stroke-dashoffset: 0;
 		transition: stroke-dashoffset 0.15s ease-out;
 	}
 
-	.calendar-x-2-icon.animate .diagonal-1 {
+	.badge-x-icon.animate .diagonal-1 {
 		opacity: 0;
 		animation: lineAnimation 0.3s ease-out forwards;
 	}
 
-	.calendar-x-2-icon.animate .diagonal-2 {
+	.badge-x-icon.animate .diagonal-2 {
 		opacity: 0;
 		animation: lineAnimation 0.3s ease-out 0.25s forwards;
 	}
@@ -69,11 +68,11 @@
 	@keyframes lineAnimation {
 		0% {
 			opacity: 0;
-			stroke-dashoffset: 8;
+			stroke-dashoffset: 10;
 		}
 		15% {
 			opacity: 1;
-			stroke-dashoffset: 8;
+			stroke-dashoffset: 10;
 		}
 		100% {
 			opacity: 1;
