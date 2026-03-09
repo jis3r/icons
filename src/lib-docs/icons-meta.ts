@@ -303,6 +303,7 @@ import listRestart from '$lib/icons/list-restart.svelte';
 import listTodo from '$lib/icons/list-todo.svelte';
 import loaderPinwheel from '$lib/icons/loader-pinwheel.svelte';
 import locateOff from '$lib/icons/locate-off.svelte';
+import logIn from '$lib/icons/log-in.svelte';
 import logOut from '$lib/icons/log-out.svelte';
 import mailCheck from '$lib/icons/mail-check.svelte';
 import mailX from '$lib/icons/mail-x.svelte';
@@ -3707,6 +3708,12 @@ const ICONS_LIST = [
 		icon: locateOff,
 		tags: ['map', 'gps', 'location', 'cross'],
 		categories: ['navigation']
+	},
+	{
+		name: 'log-in',
+		icon: logIn,
+		tags: ['sign in', 'arrow', 'enter', 'auth'],
+		categories: ['arrows', 'account']
 	},
 	{
 		name: 'log-out',

@@ -2745,6 +2745,15 @@
 		"relativeUrl": "locate-off.json"
 	},
 	{
+		"name": "log-in",
+		"title": "log-in",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated log-in icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "log-in.json"
+	},
+	{
 		"name": "log-out",
 		"title": "log-out",
 		"type": "registry:component",

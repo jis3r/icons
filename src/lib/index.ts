@@ -303,6 +303,7 @@ export { default as ListRestart } from './icons/list-restart.svelte';
 export { default as ListTodo } from './icons/list-todo.svelte';
 export { default as LoaderPinwheel } from './icons/loader-pinwheel.svelte';
 export { default as LocateOff } from './icons/locate-off.svelte';
+export { default as LogIn } from './icons/log-in.svelte';
 export { default as LogOut } from './icons/log-out.svelte';
 export { default as MailCheck } from './icons/mail-check.svelte';
 export { default as MailX } from './icons/mail-x.svelte';
@@ -854,6 +855,7 @@ export type IconName =
 	| 'list-todo'
 	| 'loader-pinwheel'
 	| 'locate-off'
+	| 'log-in'
 	| 'log-out'
 	| 'mail-check'
 	| 'mail-x'

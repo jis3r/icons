@@ -18,7 +18,7 @@
 	}
 </script>
 
-<div class={className} aria-label="log-out" role="img" onmouseenter={handleMouseEnter}>
+<div class={className} aria-label="log-in" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
@@ -31,11 +31,11 @@
 		stroke-linejoin="round"
 		class:animate
 	>
-		<g class="log-out-group">
-			<polyline points="16 17 21 12 16 7" class="log-out-path1" />
-			<line x1="21" x2="9" y1="12" y2="12" class="log-out-path2" />
+		<g class="log-in-group">
+			<path d="m10 17 5-5-5-5" class="log-in-path1" />
+			<path d="M15 12H3" class="log-in-path2" />
 		</g>
-		<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" class="log-out-path3" />
+		<path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" class="log-in-path3" />
 	</svg>
 </div>
 
@@ -43,16 +43,16 @@
 	div {
 		display: inline-block;
 	}
-	.log-out-group {
+	.log-in-group {
 		transform: translateX(0);
 		transition: transform 0.3s ease-in-out;
 	}
 
-	.animate .log-out-group {
-		animation: logOutGroupAnimation 0.6s ease-in-out;
+	.animate .log-in-group {
+		animation: logInGroupAnimation 0.6s ease-in-out;
 	}
 
-	@keyframes logOutGroupAnimation {
+	@keyframes logInGroupAnimation {
 		0% {
 			transform: translateX(0);
 		}
