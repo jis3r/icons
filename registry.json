@@ -5253,6 +5253,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "message-square-diff",
+			"title": "message-square-diff",
+			"type": "registry:component",
+			"description": "The animated message-square-diff icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/message-square-diff.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/message-square-diff.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "message-square-dot",
 			"title": "message-square-dot",
 			"type": "registry:component",

@@ -2952,6 +2952,15 @@
 		"relativeUrl": "message-square-dashed.json"
 	},
 	{
+		"name": "message-square-diff",
+		"title": "message-square-diff",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-square-diff icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-square-diff.json"
+	},
+	{
 		"name": "message-square-dot",
 		"title": "message-square-dot",
 		"type": "registry:component",

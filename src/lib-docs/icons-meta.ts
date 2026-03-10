@@ -327,6 +327,7 @@ import messageCircleX from '$lib/icons/message-circle-x.svelte';
 import messageSquare from '$lib/icons/message-square.svelte';
 import messageSquareCode from '$lib/icons/message-square-code.svelte';
 import messageSquareDashed from '$lib/icons/message-square-dashed.svelte';
+import messageSquareDiff from '$lib/icons/message-square-diff.svelte';
 import messageSquareDot from '$lib/icons/message-square-dot.svelte';
 import messageSquareHeart from '$lib/icons/message-square-heart.svelte';
 import messageSquareMore from '$lib/icons/message-square-more.svelte';
@@ -3967,6 +3968,30 @@ const ICONS_LIST = [
 		icon: messageSquareDashed,
 		tags: ['comment', 'chat', 'conversation', 'dialog', 'feedback', 'speech bubble', 'draft'],
 		categories: ['social']
+	},
+	{
+		name: 'message-square-diff',
+		icon: messageSquareDiff,
+		tags: [
+			'comment',
+			'chat',
+			'conversation',
+			'dialog',
+			'feedback',
+			'speech bubble',
+			'add',
+			'patch',
+			'difference',
+			'plus',
+			'minus',
+			'plus-minus',
+			'math',
+			'code review',
+			'coding',
+			'version control',
+			'git'
+		],
+		categories: ['development', 'files', 'social']
 	},
 	{
 		name: 'message-square-dot',

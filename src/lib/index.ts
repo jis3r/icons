@@ -326,6 +326,7 @@ export { default as MessageCircleX } from './icons/message-circle-x.svelte';
 export { default as MessageCircle } from './icons/message-circle.svelte';
 export { default as MessageSquareCode } from './icons/message-square-code.svelte';
 export { default as MessageSquareDashed } from './icons/message-square-dashed.svelte';
+export { default as MessageSquareDiff } from './icons/message-square-diff.svelte';
 export { default as MessageSquareDot } from './icons/message-square-dot.svelte';
 export { default as MessageSquareHeart } from './icons/message-square-heart.svelte';
 export { default as MessageSquareMore } from './icons/message-square-more.svelte';
@@ -878,6 +879,7 @@ export type IconName =
 	| 'message-circle'
 	| 'message-square-code'
 	| 'message-square-dashed'
+	| 'message-square-diff'
 	| 'message-square-dot'
 	| 'message-square-heart'
 	| 'message-square-more'
