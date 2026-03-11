@@ -234,6 +234,7 @@ export { default as FileQuestionMark } from './icons/file-question-mark.svelte';
 export { default as FileSliders } from './icons/file-sliders.svelte';
 export { default as FileStack } from './icons/file-stack.svelte';
 export { default as FileTerminal } from './icons/file-terminal.svelte';
+export { default as FileText } from './icons/file-text.svelte';
 export { default as FileUp } from './icons/file-up.svelte';
 export { default as FileXCorner } from './icons/file-x-corner.svelte';
 export { default as FileX } from './icons/file-x.svelte';
@@ -785,6 +786,7 @@ export type IconName =
 	| 'file-sliders'
 	| 'file-stack'
 	| 'file-terminal'
+	| 'file-text'
 	| 'file-up'
 	| 'file-x-corner'
 	| 'file-x'

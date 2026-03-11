@@ -234,6 +234,7 @@ import fileQuestionMark from '$lib/icons/file-question-mark.svelte';
 import fileSliders from '$lib/icons/file-sliders.svelte';
 import fileStack from '$lib/icons/file-stack.svelte';
 import fileTerminal from '$lib/icons/file-terminal.svelte';
+import fileText from '$lib/icons/file-text.svelte';
 import fileUp from '$lib/icons/file-up.svelte';
 import fileX from '$lib/icons/file-x.svelte';
 import fileXCorner from '$lib/icons/file-x-corner.svelte';
@@ -3107,6 +3108,12 @@ const ICONS_LIST = [
 		icon: fileTerminal,
 		tags: ['terminal', 'bash', 'script', 'executable'],
 		categories: ['files', 'development']
+	},
+	{
+		name: 'file-text',
+		icon: fileText,
+		tags: ['data', 'txt', 'pdf', 'document'],
+		categories: ['files', 'text']
 	},
 	{
 		name: 'file-up',
