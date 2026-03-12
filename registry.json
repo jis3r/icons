@@ -5333,6 +5333,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "message-square-plus",
+			"title": "message-square-plus",
+			"type": "registry:component",
+			"description": "The animated message-square-plus icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/message-square-plus.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/message-square-plus.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "message-square-quote",
 			"title": "message-square-quote",
 			"type": "registry:component",
