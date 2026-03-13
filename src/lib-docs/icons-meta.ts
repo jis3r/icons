@@ -334,6 +334,7 @@ import messageSquareMore from '$lib/icons/message-square-more.svelte';
 import messageSquareOff from '$lib/icons/message-square-off.svelte';
 import messageSquarePlus from '$lib/icons/message-square-plus.svelte';
 import messageSquareQuote from '$lib/icons/message-square-quote.svelte';
+import messageSquareText from '$lib/icons/message-square-text.svelte';
 import messageSquareWarning from '$lib/icons/message-square-warning.svelte';
 import messageSquareX from '$lib/icons/message-square-x.svelte';
 import micOff from '$lib/icons/mic-off.svelte';
@@ -4094,6 +4095,12 @@ const ICONS_LIST = [
 			'response'
 		],
 		categories: ['social', 'text']
+	},
+	{
+		name: 'message-square-text',
+		icon: messageSquareText,
+		tags: ['comment', 'chat', 'conversation', 'dialog', 'feedback', 'speech bubble'],
+		categories: ['social']
 	},
 	{
 		name: 'message-square-warning',

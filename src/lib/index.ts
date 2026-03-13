@@ -333,6 +333,7 @@ export { default as MessageSquareMore } from './icons/message-square-more.svelte
 export { default as MessageSquareOff } from './icons/message-square-off.svelte';
 export { default as MessageSquarePlus } from './icons/message-square-plus.svelte';
 export { default as MessageSquareQuote } from './icons/message-square-quote.svelte';
+export { default as MessageSquareText } from './icons/message-square-text.svelte';
 export { default as MessageSquareWarning } from './icons/message-square-warning.svelte';
 export { default as MessageSquareX } from './icons/message-square-x.svelte';
 export { default as MessageSquare } from './icons/message-square.svelte';
@@ -887,6 +888,7 @@ export type IconName =
 	| 'message-square-off'
 	| 'message-square-plus'
 	| 'message-square-quote'
+	| 'message-square-text'
 	| 'message-square-warning'
 	| 'message-square-x'
 	| 'message-square'

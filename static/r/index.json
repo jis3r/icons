@@ -3015,6 +3015,15 @@
 		"relativeUrl": "message-square-quote.json"
 	},
 	{
+		"name": "message-square-text",
+		"title": "message-square-text",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-square-text icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-square-text.json"
+	},
+	{
 		"name": "message-square-warning",
 		"title": "message-square-warning",
 		"type": "registry:component",
