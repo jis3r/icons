@@ -393,6 +393,7 @@ export { default as Pen } from './icons/pen.svelte';
 export { default as PencilLine } from './icons/pencil-line.svelte';
 export { default as PencilOff } from './icons/pencil-off.svelte';
 export { default as Pencil } from './icons/pencil.svelte';
+export { default as PhoneCall } from './icons/phone-call.svelte';
 export { default as PhoneOff } from './icons/phone-off.svelte';
 export { default as Pickaxe } from './icons/pickaxe.svelte';
 export { default as PinOff } from './icons/pin-off.svelte';
@@ -948,6 +949,7 @@ export type IconName =
 	| 'pencil-line'
 	| 'pencil-off'
 	| 'pencil'
+	| 'phone-call'
 	| 'phone-off'
 	| 'pickaxe'
 	| 'pin-off'

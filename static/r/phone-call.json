@@ -1,0 +1,16 @@
+{
+	"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+	"name": "phone-call",
+	"title": "phone-call",
+	"type": "registry:component",
+	"description": "The animated phone-call icon component.",
+	"author": "jis3r <jis3r@protonmail.com>",
+	"files": [
+		{
+			"type": "registry:component",
+			"target": "~/src/lib/components/movingicons/phone-call.svelte",
+			"content": "<script lang=\"ts\">\n\tinterface IconProps {\n\t\tcolor?: string;\n\t\tsize?: number;\n\t\tstrokeWidth?: number;\n\t\tanimate?: boolean;\n\t\tclass?: string;\n\t}\n\n\tlet {\n\t\tcolor = 'currentColor',\n\t\tsize = 24,\n\t\tstrokeWidth = 2,\n\t\tanimate = false,\n\t\tclass: className = ''\n\t}: IconProps = $props();\n\n\tfunction handleMouseEnter() {\n\t\tif (animate) return;\n\t\tanimate = true;\n\t\tsetTimeout(() => {\n\t\t\tanimate = false;\n\t\t}, 800);\n\t}\n</script>\n\n<div class={className} aria-label=\"phone-call\" role=\"img\" onmouseenter={handleMouseEnter}>\n\t<svg\n\t\txmlns=\"http://www.w3.org/2000/svg\"\n\t\twidth={size}\n\t\theight={size}\n\t\tviewBox=\"0 0 24 24\"\n\t\tfill=\"none\"\n\t\tstroke={color}\n\t\tstroke-width={strokeWidth}\n\t\tstroke-linecap=\"round\"\n\t\tstroke-linejoin=\"round\"\n\t\tclass:animate\n\t>\n\t\t<path d=\"M13 6a5 5 0 0 1 5 5\" class=\"phone-call-wave1\" />\n\t\t<path d=\"M13 2a9 9 0 0 1 9 9\" class=\"phone-call-wave2\" />\n\t\t<path\n\t\t\td=\"M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384\"\n\t\t\tclass=\"phone-call-phone\"\n\t\t/>\n\t</svg>\n</div>\n\n<style>\n\tdiv {\n\t\tdisplay: inline-block;\n\t}\n\t.phone-call-wave1,\n\t.phone-call-wave2 {\n\t\topacity: 1;\n\t\ttransform: scale(1);\n\t\ttransform-origin: center;\n\t}\n\n\t.animate .phone-call-wave1 {\n\t\tanimation: phoneCallWaveAnimation 0.6s ease-in-out;\n\t}\n\n\t.animate .phone-call-wave2 {\n\t\tanimation: phoneCallWaveAnimation 0.6s ease-in-out 0.2s;\n\t}\n\n\t@keyframes phoneCallWaveAnimation {\n\t\t0% {\n\t\t\topacity: 1;\n\t\t\ttransform: scale(1);\n\t\t}\n\t\t33.33% {\n\t\t\topacity: 0;\n\t\t\ttransform: scale(0);\n\t\t}\n\t\t66.67% {\n\t\t\topacity: 0;\n\t\t\ttransform: scale(0);\n\t\t}\n\t\t100% {\n\t\t\topacity: 1;\n\t\t\ttransform: scale(1);\n\t\t}\n\t}\n</style>\n"
+		}
+	],
+	"registryDependencies": []
+}

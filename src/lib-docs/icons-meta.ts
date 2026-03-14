@@ -393,6 +393,7 @@ import pencilLine from '$lib/icons/pencil-line.svelte';
 import pencilOff from '$lib/icons/pencil-off.svelte';
 import penLine from '$lib/icons/pen-line.svelte';
 import penOff from '$lib/icons/pen-off.svelte';
+import phoneCall from '$lib/icons/phone-call.svelte';
 import phoneOff from '$lib/icons/phone-off.svelte';
 import pickaxe from '$lib/icons/pickaxe.svelte';
 import pinOff from '$lib/icons/pin-off.svelte';
@@ -4658,6 +4659,12 @@ const ICONS_LIST = [
 			'artist'
 		],
 		categories: ['design', 'cursors', 'tools', 'text']
+	},
+	{
+		name: 'phone-call',
+		icon: phoneCall,
+		tags: ['ring'],
+		categories: ['connectivity', 'devices', 'communication']
 	},
 	{
 		name: 'phone-off',
