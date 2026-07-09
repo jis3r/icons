@@ -92,5 +92,10 @@
 	},
 	"overrides": {
 		"cookie": "0.7.0"
+	},
+	"allowScripts": {
+		"esbuild@0.28.1": true,
+		"fsevents@2.3.3": true,
+		"core-js@3.49.0": true
 	}
 }
