@@ -2124,6 +2124,15 @@
 		"relativeUrl": "file-terminal.json"
 	},
 	{
+		"name": "file-text",
+		"title": "file-text",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated file-text icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "file-text.json"
+	},
+	{
 		"name": "file-up",
 		"title": "file-up",
 		"type": "registry:component",

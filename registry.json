@@ -3781,6 +3781,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "file-text",
+			"title": "file-text",
+			"type": "registry:component",
+			"description": "The animated file-text icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/file-text.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/file-text.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "file-up",
 			"title": "file-up",
 			"type": "registry:component",
