@@ -113,3 +113,28 @@ git push origin your-branch-name
 12. Open a pull request on the original repository.
 
 Thank you for contributing to the project!
+
+## Releasing
+
+Releases are published by CI, triggered by pushing a `v*` tag. To cut a release:
+
+1. Bump the `version` field in `package.json` (SemVer).
+
+2. Update `CHANGELOG.md`: move the entries under `[Unreleased]` to a new version section with today's date, for example `## [2.8.0] - 2026-07-10`. Leave an empty `[Unreleased]` section at the top for the next round of changes.
+
+3. Commit the version bump and changelog update:
+
+```
+git commit -am "chore: release vX.Y.Z"
+```
+
+4. Tag the commit and push the tag:
+
+```
+git tag vX.Y.Z
+git push origin vX.Y.Z
+```
+
+5. Pushing the tag triggers `.github/workflows/release.yml`, which verifies the tag matches `package.json`, runs lint and tests, builds the package, and publishes to npm with [provenance](https://docs.npmjs.com/generating-provenance-statements).
+
+**One-time setup**: the workflow publishes using an npm automation token stored as the `NPM_TOKEN` repository secret. Create an automation token on npmjs.com and add it under the repository's Settings → Secrets and variables → Actions as `NPM_TOKEN`. The workflow fails without it.
