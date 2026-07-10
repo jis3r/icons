@@ -5,7 +5,7 @@
 	import * as Tooltip from '$lib-docs/components/ui/tooltip';
 	import { Download, Copy, ExternalLink, Check, Terminal } from '@lucide/svelte';
 	import { onMount } from 'svelte';
-	import { downloadIcon, preloadIconSources } from '$lib-docs/utils/icons';
+	import { downloadIcon, getIconSource } from '$lib-docs/utils/icons';
 	import ICONS_LIST from '$lib-docs/icons-meta';
 	import { debounce } from '$lib-docs/utils/debounce';
 	import { animate } from 'motion';
@@ -37,16 +37,13 @@
 	const debouncedUpdateFilteredIcons = debounce(updateFilteredIcons, 300);
 
 	/** @param {typeof icons[number]} icon */
-	const handleCopy = (icon) => {
+	const handleCopy = async (icon) => {
 		try {
 			if (!icon.source) {
-				console.error('Icon source not available:', icon.name);
-				return;
+				icon.source = await getIconSource(icon.name);
 			}
 
-			navigator.clipboard.writeText(icon.source).catch((err) => {
-				console.error('Failed to copy to clipboard:', err);
-			});
+			await navigator.clipboard.writeText(icon.source);
 
 			icon.copied = true;
 			setTimeout(() => {
@@ -74,11 +71,6 @@
 	/** @param {typeof icons[number]} icon */
 	const handleTerminalCopy = (icon) => {
 		try {
-			if (!icon.source) {
-				console.error('Icon source not available:', icon.name);
-				return;
-			}
-
 			const command = `npx shadcn-svelte@latest add https://movingicons.dev/r/${icon.name}.json`;
 			navigator.clipboard.writeText(command).catch((err) => {
 				console.error('Failed to copy terminal command to clipboard:', err);
@@ -140,20 +132,6 @@
 				iconsAdded = icons.length - JSON.parse(lastVisit);
 			}
 			localStorage.setItem('lastVisit', JSON.stringify(icons.length));
-
-			preloadIconSources(icons)
-				.then((updatedIcons) => {
-					icons = updatedIcons;
-
-					if (searchQuery) {
-						updateFilteredIcons(searchQuery);
-					} else {
-						filteredIcons = icons;
-					}
-				})
-				.catch((err) => {
-					console.error('Failed to preload icons:', err);
-				});
 		} catch (err) {
 			console.error(err);
 		} finally {
@@ -213,7 +191,7 @@
 				>
 					{#each filteredIcons as icon (icon.name)}
 						<div
-							class="border-input flex h-full w-full flex-col items-center justify-center rounded-md border p-3"
+							class="icon-card border-input flex h-full w-full flex-col items-center justify-center rounded-md border p-3"
 						>
 							<icon.icon
 								{size}
@@ -333,3 +311,10 @@
 		</p>
 	</div>
 </main>
+
+<style>
+	.icon-card {
+		content-visibility: auto;
+		contain-intrinsic-size: auto 180px;
+	}
+</style>

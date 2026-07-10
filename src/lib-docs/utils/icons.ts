@@ -31,30 +31,6 @@ export const getIconSource = async (iconName: string): Promise<string> => {
 	}
 };
 
-export const preloadIconSources = async (icons: Icon[]): Promise<IconWithSource[]> => {
-	try {
-		const iconModules = import.meta.glob('/src/lib/icons/*.svelte', {
-			query: '?raw',
-			import: 'default',
-			eager: false
-		});
-
-		const loadPromises = icons.map(async (icon): Promise<IconWithSource> => {
-			const iconPath = `/src/lib/icons/${icon.name}.svelte`;
-			if (iconPath in iconModules) {
-				const raw = (await iconModules[iconPath]()) as string;
-				return { ...icon, source: toStandaloneSource(raw) };
-			}
-			return icon;
-		});
-
-		return await Promise.all(loadPromises);
-	} catch (error) {
-		iflog.error('Failed to preload icon sources:', error);
-		throw error;
-	}
-};
-
 export const downloadIcon = async (icon: IconWithSource): Promise<void> => {
 	try {
 		if (!icon.source) {
