@@ -49,15 +49,31 @@ Import icons as named Svelte components:
 - All icons are available as named exports in PascalCase and are identical to the respective Lucide icon names.
 - Compatible with SvelteKit and Svelte projects.
 
+### Import a single icon
+
+If you don't want to pull in the barrel file, import an icon directly from its subpath:
+
+```svelte
+<script>
+	import Bell from '@jis3r/icons/icons/bell'; // single-icon import, no barrel
+</script>
+
+<Bell size={16} />
+```
+
 ## Props
 
-| Prop          | Type    | Default        | Description                     |
-| ------------- | ------- | -------------- | ------------------------------- |
-| `size`        | number  | 24             | Icon size in pixels             |
-| `color`       | string  | 'currentColor' | Stroke color (CSS color value)  |
-| `strokeWidth` | number  | 2              | SVG stroke width                |
-| `class`       | string  | —              | Optional additional CSS classes |
-| `animate`     | boolean | false          | Controls icon animation state   |
+| Prop          | Type    | Default        | Description                                                                                        |
+| ------------- | ------- | -------------- | -------------------------------------------------------------------------------------------------- |
+| `size`        | number  | 24             | Icon size in pixels                                                                                |
+| `color`       | string  | 'currentColor' | Stroke color (CSS color value)                                                                     |
+| `strokeWidth` | number  | 2              | SVG stroke width                                                                                   |
+| `class`       | string  | —              | Optional additional CSS classes                                                                    |
+| `animate`     | boolean | false          | Externally triggers the animation (icons also animate on their own hover; the two combine with OR) |
+
+### Animation behavior
+
+Every icon self-animates when a pointer hovers over it, with no setup required: a one-shot animation plays automatically (duration varies per icon, roughly 200-1500ms), and a few icons instead animate continuously for as long as they're hovered ("hover-hold"). The `animate` prop is a separate, external trigger: setting it to `true` plays the animation regardless of hover, and it is OR-ed with the internal hover state, so a parent can trigger the same animation programmatically (see [Advanced Usage](#advanced-usage) below). There is currently no prop to disable the built-in hover trigger.
 
 ## Advanced Usage
 
@@ -121,6 +137,12 @@ Use the wrapper component in your navigation:
 	</HoverableItem>
 </nav>
 ```
+
+## Accessibility
+
+- Every icon renders a `<div role="img" aria-label="<lucide-name>">` wrapper around its SVG, where `<lucide-name>` is the icon's Lucide name (for example, `aria-label="bell"`).
+- If you're using an icon decoratively - for example, next to a text label that already conveys the meaning - wrap it with `aria-hidden="true"` yourself; the icon's own `aria-label` is always present and can't be removed via props.
+- **Known limitation:** animations do not currently respect `prefers-reduced-motion`. If your users need reduced motion, gate the hover interaction or rendering yourself, for example by checking `window.matchMedia('(prefers-reduced-motion: reduce)')` before enabling animate-related interactions.
 
 ## Contributing
 
