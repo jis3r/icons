@@ -4887,13 +4887,13 @@
 		"relativeUrl": "washing-machine.json"
 	},
 	{
-		"name": "waves",
-		"title": "waves",
+		"name": "waves-horizontal",
+		"title": "waves-horizontal",
 		"type": "registry:component",
 		"author": "jis3r <jis3r@protonmail.com>",
-		"description": "The animated waves icon component.",
+		"description": "The animated waves-horizontal icon component.",
 		"registryDependencies": [],
-		"relativeUrl": "waves.json"
+		"relativeUrl": "waves-horizontal.json"
 	},
 	{
 		"name": "webhook-off",
