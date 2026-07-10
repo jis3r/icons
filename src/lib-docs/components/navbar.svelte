@@ -7,7 +7,6 @@
 	import { onMount, onDestroy } from 'svelte';
 	import Github from '$lib-docs/components/github.svelte';
 	import NumberFlow from '@number-flow/svelte';
-	import iflog from 'iflog';
 
 	function downloadLogoSvg() {
 		const a = document.createElement('a');
@@ -46,7 +45,7 @@
 				}
 			}, delay);
 		} catch (err) {
-			iflog.error('Failed to fetch GitHub stars:', err);
+			console.error('Failed to fetch GitHub stars:', err);
 			stars = 312;
 		}
 	});

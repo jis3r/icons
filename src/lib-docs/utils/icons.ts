@@ -1,4 +1,3 @@
-import iflog from 'iflog';
 import type ICONS_LIST_TYPE from '$lib-docs/icons-meta.ts';
 import { ICON_PROPS_IMPORT, INLINED_ICON_PROPS } from '$lib/icons/standalone-props.js';
 
@@ -45,7 +44,7 @@ export const downloadIcon = async (icon: IconWithSource): Promise<void> => {
 		link.click();
 		URL.revokeObjectURL(url);
 	} catch (error) {
-		iflog.error(`Failed to download icon ${icon.name}:`, error);
+		console.error(`Failed to download icon ${icon.name}:`, error);
 		throw error;
 	}
 };

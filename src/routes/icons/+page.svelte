@@ -3,7 +3,7 @@
 	import { Input } from '$lib-docs/components/ui/input';
 	import { Badge } from '$lib-docs/components/ui/badge';
 	import * as Tooltip from '$lib-docs/components/ui/tooltip';
-	import { Download, Copy, ExternalLink, Check, Terminal } from '@lucide/svelte';
+	import { Download, Copy, Check, Terminal } from '@lucide/svelte';
 	import { onMount } from 'svelte';
 	import { downloadIcon, getIconSource } from '$lib-docs/utils/icons';
 	import ICONS_LIST from '$lib-docs/icons-meta';
@@ -249,24 +249,6 @@
 										</Tooltip.Trigger>
 										<Tooltip.Content side="bottom">Download Svelte component</Tooltip.Content>
 									</Tooltip.Root>
-
-									{#if false}
-										<Tooltip.Root>
-											<Tooltip.Trigger>
-												{#snippet child({ props })}
-													<Button
-														{...props}
-														href="https://github.com/jis3r/icons/blob/master/src/lib/icons/{icon.name}.svelte"
-														variant="ghost"
-														class="hover:bg-accent size-8 rounded-md p-2 transition-colors duration-200"
-													>
-														<ExternalLink class="size-4" />
-													</Button>
-												{/snippet}
-											</Tooltip.Trigger>
-											<Tooltip.Content side="bottom">Open icon source on GitHub</Tooltip.Content>
-										</Tooltip.Root>
-									{/if}
 
 									<Tooltip.Root>
 										<Tooltip.Trigger>
