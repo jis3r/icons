@@ -13,7 +13,7 @@
 		if (browser) {
 			posthog.init('phc_MRu5fLKb2djv49nDpyoTQqni5TuQLC8k2pJOVyERMmE', {
 				api_host: 'https://eu.i.posthog.com',
-				person_profiles: 'always'
+				person_profiles: 'identified_only'
 			});
 		}
 	});
