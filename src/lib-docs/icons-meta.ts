@@ -541,7 +541,7 @@ import volumeOff from '$lib/icons/volume-off.svelte';
 import volumeX from '$lib/icons/volume-x.svelte';
 import vote from '$lib/icons/vote.svelte';
 import washingMachine from '$lib/icons/washing-machine.svelte';
-import waves from '$lib/icons/waves.svelte';
+import wavesHorizontal from '$lib/icons/waves-horizontal.svelte';
 import webhookOff from '$lib/icons/webhook-off.svelte';
 import wheatOff from '$lib/icons/wheat-off.svelte';
 import wifi from '$lib/icons/wifi.svelte';
@@ -6317,9 +6317,19 @@ const ICONS_LIST = [
 		categories: ['home', 'devices', 'travel']
 	},
 	{
-		name: 'waves',
-		icon: waves,
-		tags: ['water', 'sea', 'sound', 'hertz', 'wavelength', 'vibrate'],
+		name: 'waves-horizontal',
+		icon: wavesHorizontal,
+		tags: [
+			'water',
+			'sea',
+			'sound',
+			'hertz',
+			'wavelength',
+			'vibrate',
+			'ocean',
+			'swimming',
+			'frequency'
+		],
 		categories: ['weather', 'navigation', 'multimedia', 'sustainability']
 	},
 	{

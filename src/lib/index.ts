@@ -541,7 +541,7 @@ export { default as VolumeOff } from './icons/volume-off.svelte';
 export { default as VolumeX } from './icons/volume-x.svelte';
 export { default as Vote } from './icons/vote.svelte';
 export { default as WashingMachine } from './icons/washing-machine.svelte';
-export { default as Waves } from './icons/waves.svelte';
+export { default as WavesHorizontal } from './icons/waves-horizontal.svelte';
 export { default as WebhookOff } from './icons/webhook-off.svelte';
 export { default as WheatOff } from './icons/wheat-off.svelte';
 export { default as WifiHigh } from './icons/wifi-high.svelte';
@@ -1098,7 +1098,7 @@ export type IconName =
 	| 'volume-x'
 	| 'vote'
 	| 'washing-machine'
-	| 'waves'
+	| 'waves-horizontal'
 	| 'webhook-off'
 	| 'wheat-off'
 	| 'wifi-high'
