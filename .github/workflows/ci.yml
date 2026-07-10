@@ -21,6 +21,8 @@ jobs:
         run: npm run check
       - name: Test
         run: npm test
+      - name: Icon template conformance
+        run: npm run check:icons
       - name: Package gate (svelte-package + publint)
         run: npm run package
       - name: Generated artifacts are in sync

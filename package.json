@@ -25,6 +25,7 @@
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:icons": "tsx scripts/checkIcons.ts",
 		"test:unit": "vitest",
 		"test": "npm run test:unit -- --run",
 		"index": "tsx scripts/indexIcons.ts && prettier --write src/lib-docs/icons-meta.ts",
