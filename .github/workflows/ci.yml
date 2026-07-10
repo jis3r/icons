@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Lint
+        run: npm run lint
+      - name: Test
+        run: npm test
+      - name: Package gate (svelte-package + publint)
+        run: npm run package
+      - name: Generated artifacts are in sync
+        run: |
+          npm run registry:build
+          npx prettier --write src/lib/index.ts registry.json static/r
+          git diff --exit-code -- src/lib/index.ts registry.json static/r
+          test -z "$(git status --porcelain src/lib/index.ts registry.json static/r)"
