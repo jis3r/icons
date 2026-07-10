@@ -4901,6 +4901,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "log-in",
+			"title": "log-in",
+			"type": "registry:component",
+			"description": "The animated log-in icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/log-in.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/log-in.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "log-out",
 			"title": "log-out",
 			"type": "registry:component",
@@ -5253,6 +5269,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "message-square-diff",
+			"title": "message-square-diff",
+			"type": "registry:component",
+			"description": "The animated message-square-diff icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/message-square-diff.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/message-square-diff.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "message-square-dot",
 			"title": "message-square-dot",
 			"type": "registry:component",
@@ -5317,6 +5349,22 @@
 		},
 		{
 			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "message-square-plus",
+			"title": "message-square-plus",
+			"type": "registry:component",
+			"description": "The animated message-square-plus icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/message-square-plus.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/message-square-plus.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
 			"name": "message-square-quote",
 			"title": "message-square-quote",
 			"type": "registry:component",
@@ -5327,6 +5375,22 @@
 					"path": "./src/lib/icons/message-square-quote.svelte",
 					"type": "registry:component",
 					"target": "~/src/lib/components/movingicons/message-square-quote.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "message-square-text",
+			"title": "message-square-text",
+			"type": "registry:component",
+			"description": "The animated message-square-text icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/message-square-text.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/message-square-text.svelte"
 				}
 			],
 			"registryDependencies": []
@@ -6271,6 +6335,22 @@
 					"path": "./src/lib/icons/pencil.svelte",
 					"type": "registry:component",
 					"target": "~/src/lib/components/movingicons/pencil.svelte"
+				}
+			],
+			"registryDependencies": []
+		},
+		{
+			"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+			"name": "phone-call",
+			"title": "phone-call",
+			"type": "registry:component",
+			"description": "The animated phone-call icon component.",
+			"author": "jis3r <jis3r@protonmail.com>",
+			"files": [
+				{
+					"path": "./src/lib/icons/phone-call.svelte",
+					"type": "registry:component",
+					"target": "~/src/lib/components/movingicons/phone-call.svelte"
 				}
 			],
 			"registryDependencies": []

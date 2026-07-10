@@ -14,7 +14,7 @@
 		animate = true;
 		setTimeout(() => {
 			animate = false;
-		}, 700);
+		}, 1500);
 	}
 </script>
 
@@ -32,11 +32,13 @@
 		class="signal-icon"
 		class:animate
 	>
-		<path d="M2 20h.01" />
-		<path d="M7 20v-4" class="signal-level signal-line-1" />
-		<path d="M12 20v-8" class="signal-level signal-line-2" />
-		<path d="M17 20V8" class="signal-level signal-line-3" />
-		<path d="M22 4v16" class="signal-level signal-line-4" />
+		<g class="signal-group">
+			<path d="M2 20h.01" class="signal-path1" />
+			<path d="M7 20v-4" class="signal-path2" />
+			<path d="M12 20v-8" class="signal-path3" />
+			<path d="M17 20V8" class="signal-path4" />
+			<path d="M22 20V4" class="signal-path5" />
+		</g>
 	</svg>
 </div>
 
@@ -48,41 +50,81 @@
 		overflow: visible;
 	}
 
-	.signal-level {
+	.signal-path1,
+	.signal-path2,
+	.signal-path3,
+	.signal-path4,
+	.signal-path5 {
 		opacity: 1;
-		transition: opacity 0.2s ease;
+		stroke-dasharray: 1;
+		stroke-dashoffset: 0;
 	}
 
-	.signal-icon.animate .signal-level {
-		animation: fadeInSequence 0.6s ease forwards;
+	.signal-path1 {
+		stroke-dasharray: 0.5;
 	}
 
-	.signal-icon.animate .signal-line-1 {
+	.signal-path2 {
+		stroke-dasharray: 4;
+	}
+
+	.signal-path3 {
+		stroke-dasharray: 8;
+	}
+
+	.signal-path4 {
+		stroke-dasharray: 12;
+	}
+
+	.signal-path5 {
+		stroke-dasharray: 16;
+	}
+
+	.animate .signal-path1 {
 		opacity: 0;
-		animation-delay: 0.1s;
+		stroke-dashoffset: 0.5;
+		animation: signalPathAnimation 0.3s ease-in-out forwards;
+		animation-delay: 0s;
 	}
 
-	.signal-icon.animate .signal-line-2 {
+	.animate .signal-path2 {
 		opacity: 0;
+		stroke-dashoffset: 4;
+		animation: signalPathAnimation 0.3s ease-in-out forwards;
 		animation-delay: 0.2s;
 	}
 
-	.signal-icon.animate .signal-line-3 {
+	.animate .signal-path3 {
 		opacity: 0;
-		animation-delay: 0.3s;
-	}
-
-	.signal-icon.animate .signal-line-4 {
-		opacity: 0;
+		stroke-dashoffset: 8;
+		animation: signalPathAnimation 0.3s ease-in-out forwards;
 		animation-delay: 0.4s;
 	}
 
-	@keyframes fadeInSequence {
+	.animate .signal-path4 {
+		opacity: 0;
+		stroke-dashoffset: 12;
+		animation: signalPathAnimation 0.3s ease-in-out forwards;
+		animation-delay: 0.6s;
+	}
+
+	.animate .signal-path5 {
+		opacity: 0;
+		stroke-dashoffset: 16;
+		animation: signalPathAnimation 0.3s ease-in-out forwards;
+		animation-delay: 0.8s;
+	}
+
+	@keyframes signalPathAnimation {
 		0% {
 			opacity: 0;
 		}
+		1% {
+			opacity: 1;
+		}
 		100% {
 			opacity: 1;
+			stroke-dashoffset: 0;
 		}
 	}
 </style>

@@ -304,6 +304,7 @@ import listRestart from '$lib/icons/list-restart.svelte';
 import listTodo from '$lib/icons/list-todo.svelte';
 import loaderPinwheel from '$lib/icons/loader-pinwheel.svelte';
 import locateOff from '$lib/icons/locate-off.svelte';
+import logIn from '$lib/icons/log-in.svelte';
 import logOut from '$lib/icons/log-out.svelte';
 import mailCheck from '$lib/icons/mail-check.svelte';
 import mailX from '$lib/icons/mail-x.svelte';
@@ -327,11 +328,14 @@ import messageCircleX from '$lib/icons/message-circle-x.svelte';
 import messageSquare from '$lib/icons/message-square.svelte';
 import messageSquareCode from '$lib/icons/message-square-code.svelte';
 import messageSquareDashed from '$lib/icons/message-square-dashed.svelte';
+import messageSquareDiff from '$lib/icons/message-square-diff.svelte';
 import messageSquareDot from '$lib/icons/message-square-dot.svelte';
 import messageSquareHeart from '$lib/icons/message-square-heart.svelte';
 import messageSquareMore from '$lib/icons/message-square-more.svelte';
 import messageSquareOff from '$lib/icons/message-square-off.svelte';
+import messageSquarePlus from '$lib/icons/message-square-plus.svelte';
 import messageSquareQuote from '$lib/icons/message-square-quote.svelte';
+import messageSquareText from '$lib/icons/message-square-text.svelte';
 import messageSquareWarning from '$lib/icons/message-square-warning.svelte';
 import messageSquareX from '$lib/icons/message-square-x.svelte';
 import micOff from '$lib/icons/mic-off.svelte';
@@ -390,6 +394,7 @@ import pencilLine from '$lib/icons/pencil-line.svelte';
 import pencilOff from '$lib/icons/pencil-off.svelte';
 import penLine from '$lib/icons/pen-line.svelte';
 import penOff from '$lib/icons/pen-off.svelte';
+import phoneCall from '$lib/icons/phone-call.svelte';
 import phoneOff from '$lib/icons/phone-off.svelte';
 import pickaxe from '$lib/icons/pickaxe.svelte';
 import pinOff from '$lib/icons/pin-off.svelte';
@@ -3716,6 +3721,12 @@ const ICONS_LIST = [
 		categories: ['navigation']
 	},
 	{
+		name: 'log-in',
+		icon: logIn,
+		tags: ['sign in', 'arrow', 'enter', 'auth'],
+		categories: ['arrows', 'account']
+	},
+	{
 		name: 'log-out',
 		icon: logOut,
 		tags: ['sign out', 'arrow', 'exit', 'auth'],
@@ -3969,6 +3980,30 @@ const ICONS_LIST = [
 		categories: ['social']
 	},
 	{
+		name: 'message-square-diff',
+		icon: messageSquareDiff,
+		tags: [
+			'comment',
+			'chat',
+			'conversation',
+			'dialog',
+			'feedback',
+			'speech bubble',
+			'add',
+			'patch',
+			'difference',
+			'plus',
+			'minus',
+			'plus-minus',
+			'math',
+			'code review',
+			'coding',
+			'version control',
+			'git'
+		],
+		categories: ['development', 'files', 'social']
+	},
+	{
 		name: 'message-square-dot',
 		icon: messageSquareDot,
 		tags: [
@@ -4046,6 +4081,12 @@ const ICONS_LIST = [
 		categories: ['social']
 	},
 	{
+		name: 'message-square-plus',
+		icon: messageSquarePlus,
+		tags: ['comment', 'chat', 'conversation', 'dialog', 'feedback', 'speech bubble', 'add'],
+		categories: ['social']
+	},
+	{
 		name: 'message-square-quote',
 		icon: messageSquareQuote,
 		tags: [
@@ -4062,6 +4103,12 @@ const ICONS_LIST = [
 			'response'
 		],
 		categories: ['social', 'text']
+	},
+	{
+		name: 'message-square-text',
+		icon: messageSquareText,
+		tags: ['comment', 'chat', 'conversation', 'dialog', 'feedback', 'speech bubble'],
+		categories: ['social']
 	},
 	{
 		name: 'message-square-warning',
@@ -4619,6 +4666,12 @@ const ICONS_LIST = [
 			'artist'
 		],
 		categories: ['design', 'cursors', 'tools', 'text']
+	},
+	{
+		name: 'phone-call',
+		icon: phoneCall,
+		tags: ['ring'],
+		categories: ['connectivity', 'devices', 'communication']
 	},
 	{
 		name: 'phone-off',

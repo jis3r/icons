@@ -14,7 +14,7 @@
 		animate = true;
 		setTimeout(() => {
 			animate = false;
-		}, 700);
+		}, 900);
 	}
 </script>
 
@@ -29,12 +29,14 @@
 		stroke-width={strokeWidth}
 		stroke-linecap="round"
 		stroke-linejoin="round"
-		class="signal-icon"
+		class="signal-medium-icon"
 		class:animate
 	>
-		<path d="M2 20h.01" />
-		<path d="M7 20v-4" class="signal-level signal-line-1" />
-		<path d="M12 20v-8" class="signal-level signal-line-2" />
+		<g class="signal-medium-group">
+			<path d="M2 20h.01" class="signal-medium-path1" />
+			<path d="M7 20v-4" class="signal-medium-path2" />
+			<path d="M12 20v-8" class="signal-medium-path3" />
+		</g>
 	</svg>
 </div>
 
@@ -42,35 +44,61 @@
 	div {
 		display: inline-block;
 	}
-	.signal-icon {
+	.signal-medium-icon {
 		overflow: visible;
 	}
 
-	.signal-level {
+	.signal-medium-path1,
+	.signal-medium-path2,
+	.signal-medium-path3 {
 		opacity: 1;
-		transition: opacity 0.2s ease;
+		stroke-dasharray: 1;
+		stroke-dashoffset: 0;
 	}
 
-	.signal-icon.animate .signal-level {
-		animation: fadeInSequence 0.6s ease forwards;
+	.signal-medium-path1 {
+		stroke-dasharray: 0.5;
 	}
 
-	.signal-icon.animate .signal-line-1 {
+	.signal-medium-path2 {
+		stroke-dasharray: 4;
+	}
+
+	.signal-medium-path3 {
+		stroke-dasharray: 8;
+	}
+
+	.animate .signal-medium-path1 {
 		opacity: 0;
-		animation-delay: 0.1s;
+		stroke-dashoffset: 0.5;
+		animation: signalMediumPathAnimation 0.3s ease-in-out forwards;
+		animation-delay: 0s;
 	}
 
-	.signal-icon.animate .signal-line-2 {
+	.animate .signal-medium-path2 {
 		opacity: 0;
+		stroke-dashoffset: 4;
+		animation: signalMediumPathAnimation 0.3s ease-in-out forwards;
 		animation-delay: 0.2s;
 	}
 
-	@keyframes fadeInSequence {
+	.animate .signal-medium-path3 {
+		opacity: 0;
+		stroke-dashoffset: 8;
+		animation: signalMediumPathAnimation 0.3s ease-in-out forwards;
+		animation-delay: 0.4s;
+	}
+
+	@keyframes signalMediumPathAnimation {
 		0% {
 			opacity: 0;
 		}
+		1% {
+			opacity: 1;
+		}
 		100% {
 			opacity: 1;
+			stroke-dashoffset: 0;
 		}
 	}
 </style>
