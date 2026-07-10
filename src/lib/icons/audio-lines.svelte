@@ -5,9 +5,12 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		animate = false,
+		animate: animateProp = false,
 		class: className = ''
 	}: IconProps = $props();
+
+	let hoverAnimate = $state(false);
+	const animate = $derived(animateProp || hoverAnimate);
 
 	let line1Y1 = $state(10);
 	let line1Y2 = $state(13);
@@ -212,14 +215,14 @@
 	}
 
 	function handleMouseEnter() {
-		animate = true;
+		hoverAnimate = true;
 		isAnimatingBack = false;
 		startTime = null;
 		animationFrameId = requestAnimationFrame(animateFrame);
 	}
 
 	function handleMouseLeave() {
-		animate = false;
+		hoverAnimate = false;
 		startPositions = {
 			line1: { y1: line1Y1, y2: line1Y2 },
 			line2: { y1: line2Y1, y2: line2Y2 },

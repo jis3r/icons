@@ -3,16 +3,16 @@
 	import { Input } from '$lib-docs/components/ui/input';
 	import { Badge } from '$lib-docs/components/ui/badge';
 	import * as Tooltip from '$lib-docs/components/ui/tooltip';
-	import { Download, Copy, ExternalLink, Check, Terminal } from '@lucide/svelte';
+	import { Download, Copy, Check, Terminal } from '@lucide/svelte';
 	import { onMount } from 'svelte';
-	import { downloadIcon, preloadIconSources } from '$lib-docs/utils/icons';
+	import { downloadIcon, getIconSource } from '$lib-docs/utils/icons';
 	import ICONS_LIST from '$lib-docs/icons-meta';
 	import { debounce } from '$lib-docs/utils/debounce';
 	import { animate } from 'motion';
 	import { page } from '$app/state';
 
 	let iconsAdded = $state(0);
-	/** @type {(typeof ICONS_LIST[number] & { source?: string })[]} */
+	/** @type {(typeof ICONS_LIST[number] & { source?: string, copied?: boolean, downloaded?: boolean, terminalCopied?: boolean })[]} */
 	let icons = $state([]);
 	let searchQuery = $state('');
 	/** @type {typeof icons} */
@@ -37,16 +37,13 @@
 	const debouncedUpdateFilteredIcons = debounce(updateFilteredIcons, 300);
 
 	/** @param {typeof icons[number]} icon */
-	const handleCopy = (icon) => {
+	const handleCopy = async (icon) => {
 		try {
 			if (!icon.source) {
-				console.error('Icon source not available:', icon.name);
-				return;
+				icon.source = await getIconSource(icon.name);
 			}
 
-			navigator.clipboard.writeText(icon.source).catch((err) => {
-				console.error('Failed to copy to clipboard:', err);
-			});
+			await navigator.clipboard.writeText(icon.source);
 
 			icon.copied = true;
 			setTimeout(() => {
@@ -74,11 +71,6 @@
 	/** @param {typeof icons[number]} icon */
 	const handleTerminalCopy = (icon) => {
 		try {
-			if (!icon.source) {
-				console.error('Icon source not available:', icon.name);
-				return;
-			}
-
 			const command = `npx shadcn-svelte@latest add https://movingicons.dev/r/${icon.name}.json`;
 			navigator.clipboard.writeText(command).catch((err) => {
 				console.error('Failed to copy terminal command to clipboard:', err);
@@ -102,18 +94,10 @@
 		/** @type {ReturnType<typeof animate>} */
 		let animation;
 		const show = () => {
-			animation = animate(
-				node,
-				{ opacity: [0, 1], scale: [0, 1] },
-				{ duration: 0.25, easing: 'ease-out' }
-			);
+			animation = animate(node, { opacity: [0, 1], scale: [0, 1] }, { duration: 0.25 });
 		};
 		const hide = () => {
-			animation = animate(
-				node,
-				{ opacity: [1, 0], scale: [1, 0] },
-				{ duration: 0.25, easing: 'ease-in' }
-			);
+			animation = animate(node, { opacity: [1, 0], scale: [1, 0] }, { duration: 0.25 });
 		};
 
 		if (visible) show();
@@ -136,7 +120,7 @@
 			icons = ICONS_LIST;
 
 			if (page.url.searchParams.has('search')) {
-				const searchParam = page.url.searchParams.get('search');
+				const searchParam = page.url.searchParams.get('search') ?? '';
 				searchQuery = searchParam;
 				updateFilteredIcons(searchParam);
 			} else {
@@ -148,20 +132,6 @@
 				iconsAdded = icons.length - JSON.parse(lastVisit);
 			}
 			localStorage.setItem('lastVisit', JSON.stringify(icons.length));
-
-			preloadIconSources(icons)
-				.then((updatedIcons) => {
-					icons = updatedIcons;
-
-					if (searchQuery) {
-						updateFilteredIcons(searchQuery);
-					} else {
-						filteredIcons = icons;
-					}
-				})
-				.catch((err) => {
-					console.error('Failed to preload icons:', err);
-				});
 		} catch (err) {
 			console.error(err);
 		} finally {
@@ -219,9 +189,9 @@
 							filteredIcons.length
 					}}
 				>
-					{#each filteredIcons as icon}
+					{#each filteredIcons as icon (icon.name)}
 						<div
-							class="border-input flex h-full w-full flex-col items-center justify-center rounded-md border p-3"
+							class="icon-card border-input flex h-full w-full flex-col items-center justify-center rounded-md border p-3"
 						>
 							<icon.icon
 								{size}
@@ -280,24 +250,6 @@
 										<Tooltip.Content side="bottom">Download Svelte component</Tooltip.Content>
 									</Tooltip.Root>
 
-									{#if false}
-										<Tooltip.Root>
-											<Tooltip.Trigger>
-												{#snippet child({ props })}
-													<Button
-														{...props}
-														href="https://github.com/jis3r/icons/blob/master/src/lib/icons/{icon.name}.svelte"
-														variant="ghost"
-														class="hover:bg-accent size-8 rounded-md p-2 transition-colors duration-200"
-													>
-														<ExternalLink class="size-4" />
-													</Button>
-												{/snippet}
-											</Tooltip.Trigger>
-											<Tooltip.Content side="bottom">Open icon source on GitHub</Tooltip.Content>
-										</Tooltip.Root>
-									{/if}
-
 									<Tooltip.Root>
 										<Tooltip.Trigger>
 											{#snippet child({ props })}
@@ -341,3 +293,10 @@
 		</p>
 	</div>
 </main>
+
+<style>
+	.icon-card {
+		content-visibility: auto;
+		contain-intrinsic-size: auto 180px;
+	}
+</style>

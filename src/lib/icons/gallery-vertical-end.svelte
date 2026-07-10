@@ -5,17 +5,23 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		animate = false,
+		animate: animateProp = false,
 		class: className = ''
 	}: IconProps = $props();
 
+	let hoverAnimate = $state(false);
+	let resetTimer: ReturnType<typeof setTimeout> | undefined;
+	const animate = $derived(animateProp || hoverAnimate);
+
 	function handleMouseEnter() {
 		if (animate) return;
-		animate = true;
-		setTimeout(() => {
-			animate = false;
+		hoverAnimate = true;
+		resetTimer = setTimeout(() => {
+			hoverAnimate = false;
 		}, 600);
 	}
+
+	$effect(() => () => clearTimeout(resetTimer));
 </script>
 
 <div class={className} aria-label="gallery-vertical-end" role="img" onmouseenter={handleMouseEnter}>
@@ -30,8 +36,8 @@
 		stroke-linecap="round"
 		stroke-linejoin="round"
 	>
-		<path d="M7 2h10" class:animate custom={1} />
-		<path d="M5 6h14" class:animate custom={2} />
+		<path d="M7 2h10" class:animate data-custom="1" />
+		<path d="M5 6h14" class:animate data-custom="2" />
 		<rect width="18" height="12" x="3" y="10" rx="2" />
 	</svg>
 </div>
@@ -49,11 +55,11 @@
 		transform: translateY(0);
 	}
 
-	path[custom='1'].animate {
+	path[data-custom='1'].animate {
 		animation: disappearThenAppear1 0.6s forwards;
 	}
 
-	path[custom='2'].animate {
+	path[data-custom='2'].animate {
 		animation: disappearThenAppear2 0.6s forwards;
 	}
 

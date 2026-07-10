@@ -2,11 +2,11 @@
 	import { Button } from '$lib-docs/components/ui/button/index.js';
 	import * as ContextMenu from '$lib-docs/components/ui/context-menu/index.js';
 	import { Sun, Moon, Feather } from '@lucide/svelte';
+	import { resolve } from '$app/paths';
 	import { toggleMode } from 'mode-watcher';
 	import { onMount, onDestroy } from 'svelte';
 	import Github from '$lib-docs/components/github.svelte';
 	import NumberFlow from '@number-flow/svelte';
-	import iflog from 'iflog';
 
 	function downloadLogoSvg() {
 		const a = document.createElement('a');
@@ -16,8 +16,7 @@
 	}
 
 	let stars = $state(0);
-	/** @type {ReturnType<typeof setInterval>} */
-	let interval;
+	let interval: ReturnType<typeof setInterval> | undefined;
 
 	onMount(async () => {
 		try {
@@ -25,8 +24,7 @@
 			if (!res.ok) {
 				throw new Error(`GitHub API error: ${res.status}`);
 			}
-			/** @type {{ stargazers_count?: number }} */
-			const data = await res.json();
+			const data: { stargazers_count?: number } = await res.json();
 
 			const targetStars = data.stargazers_count ?? 0;
 			if (targetStars === 0) return;
@@ -47,7 +45,7 @@
 				}
 			}, delay);
 		} catch (err) {
-			iflog.error('Failed to fetch GitHub stars:', err);
+			console.error('Failed to fetch GitHub stars:', err);
 			stars = 312;
 		}
 	});
@@ -63,7 +61,7 @@
 			<ContextMenu.Trigger
 				class="inline-flex cursor-pointer items-center gap-1.5 text-base leading-none"
 			>
-				<a href="/" class="inline-flex items-center gap-1.5 leading-none">
+				<a href={resolve('/')} class="inline-flex items-center gap-1.5 leading-none">
 					<Feather size={18} class="shrink-0" />
 					<span class="leading-none">moving icons</span>
 				</a>
@@ -81,7 +79,7 @@
 				class="flex w-[85px] justify-between gap-2"
 				href="https://github.com/jis3r/icons"
 			>
-				<Github size="20" />
+				<Github />
 				<NumberFlow value={stars} />
 			</Button>
 

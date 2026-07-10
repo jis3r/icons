@@ -5,7 +5,7 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		animate = false,
+		animate: animateProp = false,
 		class: className = ''
 	}: IconProps = $props();
 
@@ -38,7 +38,7 @@
 		stroke-linecap="round"
 		stroke-linejoin="round"
 		class="binary-icon"
-		class:animate={hovered}
+		class:animate={animateProp || hovered}
 	>
 		<rect x={14} y={14} width={4} height={6} rx={2} class="binary-rect1" />
 		<rect x={6} y={4} width={4} height={6} rx={2} class="binary-rect2" />

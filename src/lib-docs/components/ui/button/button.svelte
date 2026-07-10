@@ -28,7 +28,19 @@
 
 <script>
 	import { cn } from '$lib-docs/utils.js';
+	import { resolve } from '$app/paths';
 
+	/**
+	 * @type {{
+	 * 	class?: string,
+	 * 	variant?: import('tailwind-variants').VariantProps<typeof buttonVariants>['variant'],
+	 * 	size?: import('tailwind-variants').VariantProps<typeof buttonVariants>['size'],
+	 * 	ref?: HTMLElement | null,
+	 * 	href?: string,
+	 * 	type?: 'button' | 'reset' | 'submit' | null,
+	 * 	children?: import('svelte').Snippet
+	 * } & Record<string, any>}
+	 */
 	let {
 		class: className,
 		variant = 'default',
@@ -39,10 +51,27 @@
 		children,
 		...restProps
 	} = $props();
+
+	const isExternal = $derived(!!href && /^[a-z][a-z0-9+.-]*:/i.test(href));
 </script>
 
-{#if href}
-	<a bind:this={ref} class={cn(buttonVariants({ variant, size }), className)} {href} {...restProps}>
+{#if href && isExternal}
+	<a
+		bind:this={ref}
+		class={cn(buttonVariants({ variant, size }), className)}
+		{href}
+		rel="external"
+		{...restProps}
+	>
+		{@render children?.()}
+	</a>
+{:else if href}
+	<a
+		bind:this={ref}
+		class={cn(buttonVariants({ variant, size }), className)}
+		href={resolve(/** @type {import('$app/types').PathnameWithSearchOrHash} */ (href))}
+		{...restProps}
+	>
 		{@render children?.()}
 	</a>
 {:else}

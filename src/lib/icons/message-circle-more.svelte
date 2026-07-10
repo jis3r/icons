@@ -5,9 +5,13 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		animate = false,
+		animate: animateProp = false,
 		class: className = ''
 	}: IconProps = $props();
+
+	let hoverAnimate = $state(false);
+	let resetTimer: ReturnType<typeof setTimeout> | undefined;
+	const animate = $derived(animateProp || hoverAnimate);
 
 	let line1Y1 = $state(12);
 	let line1Y2 = $state(12);
@@ -36,7 +40,6 @@
 			function frame(currentTime: number): void {
 				const elapsed = (currentTime - startTime) / 1000;
 				const progress = Math.min(elapsed / duration, 1);
-				const eased = easeInOut(progress);
 
 				let y1, y2;
 				if (progress < 0.5) {
@@ -65,7 +68,7 @@
 
 	function handleMouseEnter() {
 		if (animate) return;
-		animate = true;
+		hoverAnimate = true;
 
 		animateLine(12, 12, 10.5, 13.5, 12, 12, 0.6, 0.2, (y1, y2) => {
 			line1Y1 = y1;
@@ -82,10 +85,12 @@
 			line3Y2 = y2;
 		});
 
-		setTimeout(() => {
-			animate = false;
+		resetTimer = setTimeout(() => {
+			hoverAnimate = false;
 		}, 800);
 	}
+
+	$effect(() => () => clearTimeout(resetTimer));
 </script>
 
 <div class={className} aria-label="message-circle-more" role="img" onmouseenter={handleMouseEnter}>

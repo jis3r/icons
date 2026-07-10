@@ -5,9 +5,13 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		animate = false,
+		animate: animateProp = false,
 		class: className = ''
 	}: IconProps = $props();
+
+	let hoverAnimate = $state(false);
+	let resetTimer: ReturnType<typeof setTimeout> | undefined;
+	const animate = $derived(animateProp || hoverAnimate);
 
 	const circles = [
 		{ cx: 9, cy: 5, delay: 0 }, // Left top
@@ -20,12 +24,14 @@
 
 	function handleMouseEnter() {
 		if (animate) return;
-		animate = true;
+		hoverAnimate = true;
 
-		setTimeout(() => {
-			animate = false;
+		resetTimer = setTimeout(() => {
+			hoverAnimate = false;
 		}, 1600);
 	}
+
+	$effect(() => () => clearTimeout(resetTimer));
 </script>
 
 <div class={className} aria-label="grip-vertical" role="img" onmouseenter={handleMouseEnter}>
@@ -41,7 +47,7 @@
 		stroke-linejoin="round"
 		class="grip-vertical-icon"
 	>
-		{#each circles as { cx, cy, delay }}
+		{#each circles as { cx, cy, delay }, i (i)}
 			<circle
 				{cx}
 				{cy}

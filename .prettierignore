@@ -2,3 +2,9 @@
 package-lock.json
 pnpm-lock.yaml
 yarn.lock
+
+# Local agent/tooling artifacts
+.claude/
+.svelte-kit/
+build/
+dist/

@@ -1,5 +1,5 @@
 import { promises as fs } from 'fs';
-import { join, dirname } from 'path';
+import { join, dirname, resolve, sep } from 'path';
 import { fileURLToPath } from 'url';
 import { ICON_PROPS_IMPORT, INLINED_ICON_PROPS } from '../src/lib/icons/standalone-props.js';
 
@@ -54,10 +54,19 @@ async function buildRegistry() {
 				fullPath = join(ROOT_DIR, filePath);
 			}
 
+			const resolved = resolve(fullPath);
+			if (
+				!(resolved + sep).startsWith(resolve(ICONS_DIR) + sep) &&
+				resolved !== resolve(ICONS_DIR)
+			) {
+				throw new Error(`registry item "${name}" path escapes icons dir: ${filePath}`);
+			}
+
 			let content = await fs.readFile(fullPath, 'utf8');
 			content = content.replace(ICON_PROPS_IMPORT, INLINED_ICON_PROPS);
 
-			const { path, ...fileItemWithoutPath } = fileItem;
+			const fileItemWithoutPath = { ...fileItem };
+			delete fileItemWithoutPath.path;
 			const outputItem = {
 				...item,
 				files: [
@@ -67,6 +76,10 @@ async function buildRegistry() {
 					}
 				]
 			};
+
+			if (!/^[a-z0-9-]+$/.test(name)) {
+				throw new Error(`registry item name not kebab-safe: ${name}`);
+			}
 
 			const outputPath = join(OUTPUT_DIR, `${name}.json`);
 			await fs.writeFile(outputPath, JSON.stringify(outputItem, null, '\t'));
@@ -102,6 +115,10 @@ async function buildRegistry() {
 		console.log(`   Errors: ${errors}`);
 	}
 	console.log(`   Index written to: static/r/index.json`);
+
+	if (errors > 0) {
+		process.exit(1);
+	}
 }
 
 buildRegistry().catch((error) => {

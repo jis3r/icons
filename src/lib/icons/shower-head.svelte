@@ -5,9 +5,12 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		animate = false,
+		animate: animateProp = false,
 		class: className = ''
 	}: IconProps = $props();
+
+	let hoverAnimate = $state(false);
+	const animate = $derived(animateProp || hoverAnimate);
 
 	const dropPath = [
 		{ id: 'drop1', d: 'M14 17v.01', delay: 0 },
@@ -21,11 +24,11 @@
 
 	function handleMouseEnter() {
 		if (animate) return;
-		animate = true;
+		hoverAnimate = true;
 	}
 
 	function handleMouseLeave() {
-		animate = false;
+		hoverAnimate = false;
 	}
 </script>
 
@@ -52,7 +55,7 @@
 		<path d="M13.5 6.5a4.95 4.95 0 0 0-7 7" />
 		<path d="M15 5 5 15" />
 		<g class="drops">
-			{#each dropPath as { id, d, delay }}
+			{#each dropPath as { id, d, delay } (id)}
 				<path {id} {d} class="drop" class:animate style="animation-delay: {delay}s;" />
 			{/each}
 		</g>

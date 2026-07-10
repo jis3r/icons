@@ -5,22 +5,25 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		animate = false,
+		animate: animateProp = false,
 		class: className = ''
 	}: IconProps = $props();
 
+	let hoverAnimate = $state(false);
+	const animate = $derived(animateProp || hoverAnimate);
+
 	function handleMouseEnter() {
-		animate = true;
+		hoverAnimate = true;
 	}
 
 	function handleMouseLeave() {
-		animate = false;
+		hoverAnimate = false;
 	}
 </script>
 
 <div
 	class={className}
-	aria-label="arrow-down-z-a"
+	aria-label="arrow-up-z-a"
 	role="img"
 	onmouseenter={handleMouseEnter}
 	onmouseleave={handleMouseLeave}
