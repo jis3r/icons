@@ -24,7 +24,7 @@
 	$effect(() => () => clearTimeout(resetTimer));
 </script>
 
-<div class={className} aria-label="waves" role="img" onmouseenter={handleMouseEnter}>
+<div class={className} aria-label="waves-horizontal" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}

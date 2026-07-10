@@ -1,0 +1,16 @@
+{
+	"$schema": "https://shadcn-svelte.com/schema/registry-item.json",
+	"name": "message-square-plus",
+	"title": "message-square-plus",
+	"type": "registry:component",
+	"description": "The animated message-square-plus icon component.",
+	"author": "jis3r <jis3r@protonmail.com>",
+	"files": [
+		{
+			"type": "registry:component",
+			"target": "~/src/lib/components/movingicons/message-square-plus.svelte",
+			"content": "<script lang=\"ts\">\n\tinterface IconProps {\n\t\tcolor?: string;\n\t\tsize?: number;\n\t\tstrokeWidth?: number;\n\t\tanimate?: boolean;\n\t\tclass?: string;\n\t}\n\n\tlet {\n\t\tcolor = 'currentColor',\n\t\tsize = 24,\n\t\tstrokeWidth = 2,\n\t\tanimate = false,\n\t\tclass: className = ''\n\t}: IconProps = $props();\n\n\tfunction handleMouseEnter() {\n\t\tif (animate) return;\n\t\tanimate = true;\n\t\tsetTimeout(() => {\n\t\t\tanimate = false;\n\t\t}, 800);\n\t}\n</script>\n\n<div class={className} aria-label=\"message-square-plus\" role=\"img\" onmouseenter={handleMouseEnter}>\n\t<svg\n\t\txmlns=\"http://www.w3.org/2000/svg\"\n\t\twidth={size}\n\t\theight={size}\n\t\tviewBox=\"0 0 24 24\"\n\t\tfill=\"none\"\n\t\tstroke={color}\n\t\tstroke-width={strokeWidth}\n\t\tstroke-linecap=\"round\"\n\t\tstroke-linejoin=\"round\"\n\t\tclass:animate\n\t>\n\t\t<g class=\"message-square-plus-group\">\n\t\t\t<path\n\t\t\t\td=\"M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z\"\n\t\t\t\tclass=\"message-square-plus-path1\"\n\t\t\t/>\n\t\t\t<path d=\"M12 7v6\" class=\"message-square-plus-path2\" />\n\t\t\t<path d=\"M9 10h6\" class=\"message-square-plus-path3\" />\n\t\t</g>\n\t</svg>\n</div>\n\n<style>\n\tdiv {\n\t\tdisplay: inline-block;\n\t}\n\t.message-square-plus-group {\n\t\ttransform-origin: bottom left;\n\t}\n\n\t.message-square-plus-path2,\n\t.message-square-plus-path3 {\n\t\ttransform-origin: center;\n\t}\n\n\t.animate .message-square-plus-group {\n\t\tanimation: messageSquarePlusGroupAnimation 0.8s ease-in-out;\n\t}\n\n\t.animate .message-square-plus-path2 {\n\t\tanimation: messageSquarePlusPath2Animation 0.6s ease-in-out;\n\t}\n\n\t.animate .message-square-plus-path3 {\n\t\tanimation: messageSquarePlusPath3Animation 0.6s ease-in-out 0.05s;\n\t}\n\n\t@keyframes messageSquarePlusGroupAnimation {\n\t\t0% {\n\t\t\ttransform: rotate(0deg);\n\t\t}\n\t\t40% {\n\t\t\ttransform: rotate(8deg);\n\t\t}\n\t\t60% {\n\t\t\ttransform: rotate(-8deg);\n\t\t}\n\t\t80% {\n\t\t\ttransform: rotate(2deg);\n\t\t}\n\t\t100% {\n\t\t\ttransform: rotate(0deg);\n\t\t}\n\t}\n\n\t@keyframes messageSquarePlusPath2Animation {\n\t\t0% {\n\t\t\ttransform: rotate(0deg);\n\t\t}\n\t\t50% {\n\t\t\ttransform: rotate(45deg);\n\t\t}\n\t\t100% {\n\t\t\ttransform: rotate(0deg);\n\t\t}\n\t}\n\n\t@keyframes messageSquarePlusPath3Animation {\n\t\t0% {\n\t\t\ttransform: rotate(0deg);\n\t\t}\n\t\t50% {\n\t\t\ttransform: rotate(45deg);\n\t\t}\n\t\t100% {\n\t\t\ttransform: rotate(0deg);\n\t\t}\n\t}\n</style>\n"
+		}
+	],
+	"registryDependencies": []
+}

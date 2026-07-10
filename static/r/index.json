@@ -2754,6 +2754,15 @@
 		"relativeUrl": "locate-off.json"
 	},
 	{
+		"name": "log-in",
+		"title": "log-in",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated log-in icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "log-in.json"
+	},
+	{
 		"name": "log-out",
 		"title": "log-out",
 		"type": "registry:component",
@@ -2952,6 +2961,15 @@
 		"relativeUrl": "message-square-dashed.json"
 	},
 	{
+		"name": "message-square-diff",
+		"title": "message-square-diff",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-square-diff icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-square-diff.json"
+	},
+	{
 		"name": "message-square-dot",
 		"title": "message-square-dot",
 		"type": "registry:component",
@@ -2988,6 +3006,15 @@
 		"relativeUrl": "message-square-off.json"
 	},
 	{
+		"name": "message-square-plus",
+		"title": "message-square-plus",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-square-plus icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-square-plus.json"
+	},
+	{
 		"name": "message-square-quote",
 		"title": "message-square-quote",
 		"type": "registry:component",
@@ -2995,6 +3022,15 @@
 		"description": "The animated message-square-quote icon component.",
 		"registryDependencies": [],
 		"relativeUrl": "message-square-quote.json"
+	},
+	{
+		"name": "message-square-text",
+		"title": "message-square-text",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated message-square-text icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "message-square-text.json"
 	},
 	{
 		"name": "message-square-warning",
@@ -3526,6 +3562,15 @@
 		"description": "The animated pencil icon component.",
 		"registryDependencies": [],
 		"relativeUrl": "pencil.json"
+	},
+	{
+		"name": "phone-call",
+		"title": "phone-call",
+		"type": "registry:component",
+		"author": "jis3r <jis3r@protonmail.com>",
+		"description": "The animated phone-call icon component.",
+		"registryDependencies": [],
+		"relativeUrl": "phone-call.json"
 	},
 	{
 		"name": "phone-off",
@@ -4842,13 +4887,13 @@
 		"relativeUrl": "washing-machine.json"
 	},
 	{
-		"name": "waves",
-		"title": "waves",
+		"name": "waves-horizontal",
+		"title": "waves-horizontal",
 		"type": "registry:component",
 		"author": "jis3r <jis3r@protonmail.com>",
-		"description": "The animated waves icon component.",
+		"description": "The animated waves-horizontal icon component.",
 		"registryDependencies": [],
-		"relativeUrl": "waves.json"
+		"relativeUrl": "waves-horizontal.json"
 	},
 	{
 		"name": "webhook-off",

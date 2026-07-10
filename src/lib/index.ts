@@ -304,6 +304,7 @@ export { default as ListRestart } from './icons/list-restart.svelte';
 export { default as ListTodo } from './icons/list-todo.svelte';
 export { default as LoaderPinwheel } from './icons/loader-pinwheel.svelte';
 export { default as LocateOff } from './icons/locate-off.svelte';
+export { default as LogIn } from './icons/log-in.svelte';
 export { default as LogOut } from './icons/log-out.svelte';
 export { default as MailCheck } from './icons/mail-check.svelte';
 export { default as MailX } from './icons/mail-x.svelte';
@@ -326,11 +327,14 @@ export { default as MessageCircleX } from './icons/message-circle-x.svelte';
 export { default as MessageCircle } from './icons/message-circle.svelte';
 export { default as MessageSquareCode } from './icons/message-square-code.svelte';
 export { default as MessageSquareDashed } from './icons/message-square-dashed.svelte';
+export { default as MessageSquareDiff } from './icons/message-square-diff.svelte';
 export { default as MessageSquareDot } from './icons/message-square-dot.svelte';
 export { default as MessageSquareHeart } from './icons/message-square-heart.svelte';
 export { default as MessageSquareMore } from './icons/message-square-more.svelte';
 export { default as MessageSquareOff } from './icons/message-square-off.svelte';
+export { default as MessageSquarePlus } from './icons/message-square-plus.svelte';
 export { default as MessageSquareQuote } from './icons/message-square-quote.svelte';
+export { default as MessageSquareText } from './icons/message-square-text.svelte';
 export { default as MessageSquareWarning } from './icons/message-square-warning.svelte';
 export { default as MessageSquareX } from './icons/message-square-x.svelte';
 export { default as MessageSquare } from './icons/message-square.svelte';
@@ -390,6 +394,7 @@ export { default as Pen } from './icons/pen.svelte';
 export { default as PencilLine } from './icons/pencil-line.svelte';
 export { default as PencilOff } from './icons/pencil-off.svelte';
 export { default as Pencil } from './icons/pencil.svelte';
+export { default as PhoneCall } from './icons/phone-call.svelte';
 export { default as PhoneOff } from './icons/phone-off.svelte';
 export { default as Pickaxe } from './icons/pickaxe.svelte';
 export { default as PinOff } from './icons/pin-off.svelte';
@@ -536,7 +541,7 @@ export { default as VolumeOff } from './icons/volume-off.svelte';
 export { default as VolumeX } from './icons/volume-x.svelte';
 export { default as Vote } from './icons/vote.svelte';
 export { default as WashingMachine } from './icons/washing-machine.svelte';
-export { default as Waves } from './icons/waves.svelte';
+export { default as WavesHorizontal } from './icons/waves-horizontal.svelte';
 export { default as WebhookOff } from './icons/webhook-off.svelte';
 export { default as WheatOff } from './icons/wheat-off.svelte';
 export { default as WifiHigh } from './icons/wifi-high.svelte';
@@ -856,6 +861,7 @@ export type IconName =
 	| 'list-todo'
 	| 'loader-pinwheel'
 	| 'locate-off'
+	| 'log-in'
 	| 'log-out'
 	| 'mail-check'
 	| 'mail-x'
@@ -878,11 +884,14 @@ export type IconName =
 	| 'message-circle'
 	| 'message-square-code'
 	| 'message-square-dashed'
+	| 'message-square-diff'
 	| 'message-square-dot'
 	| 'message-square-heart'
 	| 'message-square-more'
 	| 'message-square-off'
+	| 'message-square-plus'
 	| 'message-square-quote'
+	| 'message-square-text'
 	| 'message-square-warning'
 	| 'message-square-x'
 	| 'message-square'
@@ -942,6 +951,7 @@ export type IconName =
 	| 'pencil-line'
 	| 'pencil-off'
 	| 'pencil'
+	| 'phone-call'
 	| 'phone-off'
 	| 'pickaxe'
 	| 'pin-off'
@@ -1088,7 +1098,7 @@ export type IconName =
 	| 'volume-x'
 	| 'vote'
 	| 'washing-machine'
-	| 'waves'
+	| 'waves-horizontal'
 	| 'webhook-off'
 	| 'wheat-off'
 	| 'wifi-high'

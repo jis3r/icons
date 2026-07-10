@@ -35,11 +35,13 @@
 		stroke-width={strokeWidth}
 		stroke-linecap="round"
 		stroke-linejoin="round"
-		class="signal-icon"
+		class="signal-low-icon"
 		class:animate
 	>
-		<path d="M2 20h.01" />
-		<path d="M7 20v-4" class="signal-level signal-line-1" />
+		<g class="signal-low-group">
+			<path d="M2 20h.01" class="signal-low-path1" />
+			<path d="M7 20v-4" class="signal-low-path2" />
+		</g>
 	</svg>
 </div>
 
@@ -47,30 +49,49 @@
 	div {
 		display: inline-block;
 	}
-	.signal-icon {
+	.signal-low-icon {
 		overflow: visible;
 	}
 
-	.signal-level {
+	.signal-low-path1,
+	.signal-low-path2 {
 		opacity: 1;
-		transition: opacity 0.2s ease;
+		stroke-dasharray: 1;
+		stroke-dashoffset: 0;
 	}
 
-	.signal-icon.animate .signal-level {
-		animation: fadeInSequence 0.6s ease forwards;
+	.signal-low-path1 {
+		stroke-dasharray: 0.5;
 	}
 
-	.signal-icon.animate .signal-line-1 {
+	.signal-low-path2 {
+		stroke-dasharray: 4;
+	}
+
+	.animate .signal-low-path1 {
 		opacity: 0;
-		animation-delay: 0.25s;
+		stroke-dashoffset: 0.5;
+		animation: signalLowPathAnimation 0.3s ease-in-out forwards;
+		animation-delay: 0s;
 	}
 
-	@keyframes fadeInSequence {
+	.animate .signal-low-path2 {
+		opacity: 0;
+		stroke-dashoffset: 4;
+		animation: signalLowPathAnimation 0.3s ease-in-out forwards;
+		animation-delay: 0.2s;
+	}
+
+	@keyframes signalLowPathAnimation {
 		0% {
 			opacity: 0;
 		}
+		1% {
+			opacity: 1;
+		}
 		100% {
 			opacity: 1;
+			stroke-dashoffset: 0;
 		}
 	}
 </style>
