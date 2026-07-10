@@ -219,7 +219,7 @@
 							filteredIcons.length
 					}}
 				>
-					{#each filteredIcons as icon}
+					{#each filteredIcons as icon (icon.name)}
 						<div
 							class="border-input flex h-full w-full flex-col items-center justify-center rounded-md border p-3"
 						>

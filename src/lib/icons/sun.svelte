@@ -44,7 +44,7 @@
 		class:animate
 	>
 		<circle cx="12" cy="12" r="4" />
-		{#each sunRays as d, index}
+		{#each sunRays as d, index (index)}
 			<path {d} class="sun-ray" style="--index: {index + 1}" />
 		{/each}
 	</svg>

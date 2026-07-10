@@ -39,7 +39,7 @@
 		class="chart-scatter-icon"
 		class:animate
 	>
-		{#each dots as dot, i}
+		{#each dots as dot, i (i)}
 			<circle
 				cx={dot.cx}
 				cy={dot.cy}

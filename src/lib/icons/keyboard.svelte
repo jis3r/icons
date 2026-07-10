@@ -43,7 +43,7 @@
 		class="keyboard-icon"
 	>
 		<rect width="20" height="16" x="2" y="4" rx="2" />
-		{#each keyboardPaths as { id, d, delay }}
+		{#each keyboardPaths as { id, d, delay } (id)}
 			<path {id} {d} class="keyboard-key" class:animate style="animation-delay: {delay}s;" />
 		{/each}
 	</svg>

@@ -28,6 +28,7 @@
 
 <script>
 	import { cn } from '$lib-docs/utils.js';
+	import { resolve } from '$app/paths';
 
 	let {
 		class: className,
@@ -39,10 +40,27 @@
 		children,
 		...restProps
 	} = $props();
+
+	const isExternal = $derived(!!href && /^[a-z][a-z0-9+.-]*:/i.test(href));
 </script>
 
-{#if href}
-	<a bind:this={ref} class={cn(buttonVariants({ variant, size }), className)} {href} {...restProps}>
+{#if href && isExternal}
+	<a
+		bind:this={ref}
+		class={cn(buttonVariants({ variant, size }), className)}
+		{href}
+		rel="external"
+		{...restProps}
+	>
+		{@render children?.()}
+	</a>
+{:else if href}
+	<a
+		bind:this={ref}
+		class={cn(buttonVariants({ variant, size }), className)}
+		href={resolve(href)}
+		{...restProps}
+	>
 		{@render children?.()}
 	</a>
 {:else}

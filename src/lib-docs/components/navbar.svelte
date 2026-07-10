@@ -2,6 +2,7 @@
 	import { Button } from '$lib-docs/components/ui/button/index.js';
 	import * as ContextMenu from '$lib-docs/components/ui/context-menu/index.js';
 	import { Sun, Moon, Feather } from '@lucide/svelte';
+	import { resolve } from '$app/paths';
 	import { toggleMode } from 'mode-watcher';
 	import { onMount, onDestroy } from 'svelte';
 	import Github from '$lib-docs/components/github.svelte';
@@ -63,7 +64,7 @@
 			<ContextMenu.Trigger
 				class="inline-flex cursor-pointer items-center gap-1.5 text-base leading-none"
 			>
-				<a href="/" class="inline-flex items-center gap-1.5 leading-none">
+				<a href={resolve('/')} class="inline-flex items-center gap-1.5 leading-none">
 					<Feather size={18} class="shrink-0" />
 					<span class="leading-none">moving icons</span>
 				</a>

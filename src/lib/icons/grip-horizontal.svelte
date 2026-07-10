@@ -41,7 +41,7 @@
 		stroke-linejoin="round"
 		class="grip-horizontal-icon"
 	>
-		{#each circles as { cx, cy, delay }}
+		{#each circles as { cx, cy, delay }, i (i)}
 			<circle
 				{cx}
 				{cy}

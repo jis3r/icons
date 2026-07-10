@@ -9,7 +9,6 @@ const ROOT_DIR = join(__dirname, '..');
 
 const REGISTRY_PATH = join(ROOT_DIR, 'registry.json');
 const OUTPUT_DIR = join(ROOT_DIR, 'static', 'r');
-const ICONS_DIR = join(ROOT_DIR, 'src', 'lib', 'icons');
 
 async function ensureDir(dir) {
 	try {
@@ -57,7 +56,8 @@ async function buildRegistry() {
 			let content = await fs.readFile(fullPath, 'utf8');
 			content = content.replace(ICON_PROPS_IMPORT, INLINED_ICON_PROPS);
 
-			const { path, ...fileItemWithoutPath } = fileItem;
+			const fileItemWithoutPath = { ...fileItem };
+			delete fileItemWithoutPath.path;
 			const outputItem = {
 				...item,
 				files: [

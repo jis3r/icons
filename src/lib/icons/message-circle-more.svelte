@@ -36,7 +36,6 @@
 			function frame(currentTime: number): void {
 				const elapsed = (currentTime - startTime) / 1000;
 				const progress = Math.min(elapsed / duration, 1);
-				const eased = easeInOut(progress);
 
 				let y1, y2;
 				if (progress < 0.5) {
