@@ -167,6 +167,11 @@
 		PrinterCheck
 	];
 
+	/**
+	 * @template T
+	 * @param {T[]} array
+	 * @returns {T[]}
+	 */
 	function shuffleArray(array) {
 		const shuffled = [...array];
 		for (let i = shuffled.length - 1; i > 0; i--) {
@@ -260,6 +265,7 @@
 
 	let activeSection = $state('installation');
 
+	/** @param {string} sectionId */
 	function scrollToSection(sectionId) {
 		const element = document.getElementById(sectionId);
 		if (element) {
@@ -300,7 +306,7 @@
 
 	onMount(() => {
 		if (page.url.searchParams.has('search')) {
-			const searchParam = page.url.searchParams.get('search');
+			const searchParam = page.url.searchParams.get('search') ?? '';
 			goto(resolve(`/icons?search=${encodeURIComponent(searchParam)}`), { replaceState: true });
 			return;
 		}
@@ -318,8 +324,7 @@
 				},
 				{
 					delay: randomDelays[i] / 1000,
-					duration: 0.4,
-					easing: [0.42, 0, 0.58, 1]
+					duration: 0.4
 				}
 			);
 		});
@@ -334,7 +339,9 @@
 		const description = document.querySelector('.hero-description');
 		const button = document.querySelector('.hero-button');
 
-		const allElements = [logo, ...Array.from(titleSpans), description, button].filter(Boolean);
+		const allElements = /** @type {Element[]} */ (
+			[logo, ...Array.from(titleSpans), description, button].filter(Boolean)
+		);
 		const heroLogoDuration = 0.7;
 
 		allElements.forEach((element, i) => {
@@ -351,8 +358,7 @@
 					},
 					{
 						delay: heroStartTime,
-						duration: heroLogoDuration,
-						easing: [0.16, 1, 0.3, 1]
+						duration: heroLogoDuration
 					}
 				);
 			} else {
@@ -366,8 +372,7 @@
 					},
 					{
 						delay: staggerDelay,
-						duration: 0.7,
-						easing: [0.16, 1, 0.3, 1]
+						duration: 0.7
 					}
 				);
 			}

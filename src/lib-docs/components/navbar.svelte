@@ -17,8 +17,7 @@
 	}
 
 	let stars = $state(0);
-	/** @type {ReturnType<typeof setInterval>} */
-	let interval;
+	let interval: ReturnType<typeof setInterval> | undefined;
 
 	onMount(async () => {
 		try {
@@ -26,8 +25,7 @@
 			if (!res.ok) {
 				throw new Error(`GitHub API error: ${res.status}`);
 			}
-			/** @type {{ stargazers_count?: number }} */
-			const data = await res.json();
+			const data: { stargazers_count?: number } = await res.json();
 
 			const targetStars = data.stargazers_count ?? 0;
 			if (targetStars === 0) return;
@@ -82,7 +80,7 @@
 				class="flex w-[85px] justify-between gap-2"
 				href="https://github.com/jis3r/icons"
 			>
-				<Github size="20" />
+				<Github />
 				<NumberFlow value={stars} />
 			</Button>
 

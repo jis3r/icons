@@ -12,7 +12,7 @@
 	import { page } from '$app/state';
 
 	let iconsAdded = $state(0);
-	/** @type {(typeof ICONS_LIST[number] & { source?: string })[]} */
+	/** @type {(typeof ICONS_LIST[number] & { source?: string, copied?: boolean, downloaded?: boolean, terminalCopied?: boolean })[]} */
 	let icons = $state([]);
 	let searchQuery = $state('');
 	/** @type {typeof icons} */
@@ -102,18 +102,10 @@
 		/** @type {ReturnType<typeof animate>} */
 		let animation;
 		const show = () => {
-			animation = animate(
-				node,
-				{ opacity: [0, 1], scale: [0, 1] },
-				{ duration: 0.25, easing: 'ease-out' }
-			);
+			animation = animate(node, { opacity: [0, 1], scale: [0, 1] }, { duration: 0.25 });
 		};
 		const hide = () => {
-			animation = animate(
-				node,
-				{ opacity: [1, 0], scale: [1, 0] },
-				{ duration: 0.25, easing: 'ease-in' }
-			);
+			animation = animate(node, { opacity: [1, 0], scale: [1, 0] }, { duration: 0.25 });
 		};
 
 		if (visible) show();
@@ -136,7 +128,7 @@
 			icons = ICONS_LIST;
 
 			if (page.url.searchParams.has('search')) {
-				const searchParam = page.url.searchParams.get('search');
+				const searchParam = page.url.searchParams.get('search') ?? '';
 				searchQuery = searchParam;
 				updateFilteredIcons(searchParam);
 			} else {

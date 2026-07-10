@@ -3,6 +3,14 @@
 	import CircleIcon from '@lucide/svelte/icons/circle';
 	import { cn } from '$lib-docs/utils.js';
 
+	/**
+	 * @type {{
+	 * 	ref?: HTMLElement | null,
+	 * 	class?: string,
+	 * 	value: string,
+	 * 	children?: import('svelte').Snippet<[{ checked: boolean }]>
+	 * } & Record<string, any>}
+	 */
 	let { ref = $bindable(null), class: className, children: childrenProp, ...restProps } = $props();
 </script>
 

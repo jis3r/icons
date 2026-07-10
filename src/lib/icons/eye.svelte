@@ -24,25 +24,32 @@
 	const archRadiusX = 10.75;
 	const archRadiusY = 10.75;
 
-	const easeIn = (t) => t * t * t;
-	const easeOut = (t) => 1 - Math.pow(1 - t, 3);
+	const easeIn = (t: number) => t * t * t;
+	const easeOut = (t: number) => 1 - Math.pow(1 - t, 3);
 
-	const topArchPath = (t) => {
+	const topArchPath = (t: number) => {
 		const y = upperEndY + (lineY - upperEndY) * t;
 		const ry = Math.max(0.001, archRadiusY * (1 - t));
 		return 'M ' + leftX + ' ' + y + ' A ' + archRadiusX + ' ' + ry + ' 0 0 1 ' + rightX + ' ' + y;
 	};
 
-	const bottomArchPath = (t) => {
+	const bottomArchPath = (t: number) => {
 		const y = lowerEndY - (lowerEndY - lineY) * t;
 		const ry = Math.max(0.001, archRadiusY * (1 - t));
 		return 'M ' + rightX + ' ' + y + ' A ' + archRadiusX + ' ' + ry + ' 0 0 1 ' + leftX + ' ' + y;
 	};
 
-	function animateMorph(from, to, durationMs, ease, currentRunId, onDone) {
+	function animateMorph(
+		from: number,
+		to: number,
+		durationMs: number,
+		ease: (t: number) => number,
+		currentRunId: number,
+		onDone: () => void
+	) {
 		const start = performance.now();
 
-		const tick = (now) => {
+		const tick = (now: number) => {
 			if (currentRunId !== runId) return;
 			const elapsed = now - start;
 			const t = Math.min(elapsed / durationMs, 1);

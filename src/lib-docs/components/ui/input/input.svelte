@@ -1,6 +1,15 @@
 <script>
 	import { cn } from '$lib-docs/utils.js';
 
+	/**
+	 * @type {{
+	 * 	ref?: HTMLElement | null,
+	 * 	value?: any,
+	 * 	type?: import('svelte/elements').HTMLInputAttributes['type'],
+	 * 	files?: FileList | null,
+	 * 	class?: string
+	 * } & Record<string, any>}
+	 */
 	let {
 		ref = $bindable(null),
 		value = $bindable(),
