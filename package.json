@@ -38,9 +38,7 @@
 		"!dist/**/*.test.*",
 		"!dist/**/*.spec.*"
 	],
-	"sideEffects": [
-		"**/*.css"
-	],
+	"sideEffects": false,
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"type": "module",
@@ -48,6 +46,10 @@
 		".": {
 			"types": "./dist/index.d.ts",
 			"svelte": "./dist/index.js"
+		},
+		"./icons/*": {
+			"types": "./dist/icons/*.svelte.d.ts",
+			"svelte": "./dist/icons/*.svelte"
 		}
 	},
 	"peerDependencies": {
