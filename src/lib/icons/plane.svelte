@@ -5,9 +5,12 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		animate = false,
+		animate: animateProp = false,
 		class: className = ''
 	}: IconProps = $props();
+
+	let hoverAnimate = $state(false);
+	const animate = $derived(animateProp || hoverAnimate);
 
 	const SPEED_LINES = [
 		{ x1: 5, y1: 15, x2: 1, y2: 19, delay: 0.1 },
@@ -16,11 +19,11 @@
 	];
 
 	function handleMouseEnter() {
-		animate = true;
+		hoverAnimate = true;
 	}
 
 	function handleMouseLeave() {
-		animate = false;
+		hoverAnimate = false;
 	}
 </script>
 

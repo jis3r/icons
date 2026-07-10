@@ -5,9 +5,13 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		animate = false,
+		animate: animateProp = false,
 		class: className = ''
 	}: IconProps = $props();
+
+	let hoverAnimate = $state(false);
+	let resetTimer: ReturnType<typeof setTimeout> | undefined;
+	const animate = $derived(animateProp || hoverAnimate);
 
 	const DOTS = [
 		{ cx: 8, cy: 14 },
@@ -20,11 +24,13 @@
 
 	function handleMouseEnter() {
 		if (animate) return;
-		animate = true;
-		setTimeout(() => {
-			animate = false;
+		hoverAnimate = true;
+		resetTimer = setTimeout(() => {
+			hoverAnimate = false;
 		}, 1400);
 	}
+
+	$effect(() => () => clearTimeout(resetTimer));
 </script>
 
 <div class={className} aria-label="calendar-days" role="img" onmouseenter={handleMouseEnter}>

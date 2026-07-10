@@ -5,9 +5,13 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		animate = false,
+		animate: animateProp = false,
 		class: className = ''
 	}: IconProps = $props();
+
+	let hoverAnimate = $state(false);
+	let resetTimer: ReturnType<typeof setTimeout> | undefined;
+	const animate = $derived(animateProp || hoverAnimate);
 
 	const keyboardPaths = [
 		{ id: 'key1', d: 'M10 8h.01', delay: 0 },
@@ -22,11 +26,13 @@
 
 	function handleMouseEnter() {
 		if (animate) return;
-		animate = true;
-		setTimeout(() => {
-			animate = false;
+		hoverAnimate = true;
+		resetTimer = setTimeout(() => {
+			hoverAnimate = false;
 		}, 1500);
 	}
+
+	$effect(() => () => clearTimeout(resetTimer));
 </script>
 
 <div class={className} aria-label="keyboard" role="img" onmouseenter={handleMouseEnter}>

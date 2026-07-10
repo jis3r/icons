@@ -5,9 +5,13 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		animate = false,
+		animate: animateProp = false,
 		class: className = ''
 	}: IconProps = $props();
+
+	let hoverAnimate = $state(false);
+	let resetTimer: ReturnType<typeof setTimeout> | undefined;
+	const animate = $derived(animateProp || hoverAnimate);
 
 	let line1Y1 = $state(10);
 	let line1Y2 = $state(10);
@@ -64,7 +68,7 @@
 
 	function handleMouseEnter() {
 		if (animate) return;
-		animate = true;
+		hoverAnimate = true;
 
 		animateLine(10, 10, 8.5, 11.5, 10, 10, 0.6, 0.2, (y1, y2) => {
 			line1Y1 = y1;
@@ -81,10 +85,12 @@
 			line3Y2 = y2;
 		});
 
-		setTimeout(() => {
-			animate = false;
+		resetTimer = setTimeout(() => {
+			hoverAnimate = false;
 		}, 800);
 	}
+
+	$effect(() => () => clearTimeout(resetTimer));
 </script>
 
 <div class={className} aria-label="message-square-more" role="img" onmouseenter={handleMouseEnter}>

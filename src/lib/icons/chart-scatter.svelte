@@ -5,9 +5,13 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		animate = false,
+		animate: animateProp = false,
 		class: className = ''
 	}: IconProps = $props();
+
+	let hoverAnimate = $state(false);
+	let resetTimer: ReturnType<typeof setTimeout> | undefined;
+	const animate = $derived(animateProp || hoverAnimate);
 	const dots = [
 		{ cx: 7.5, cy: 7.5, delay: 2 },
 		{ cx: 18.5, cy: 5.5, delay: 5 },
@@ -18,11 +22,13 @@
 
 	function handleMouseEnter() {
 		if (animate) return;
-		animate = true;
-		setTimeout(() => {
-			animate = false;
+		hoverAnimate = true;
+		resetTimer = setTimeout(() => {
+			hoverAnimate = false;
 		}, 900);
 	}
+
+	$effect(() => () => clearTimeout(resetTimer));
 </script>
 
 <div class={className} aria-label="chart-scatter" role="img" onmouseenter={handleMouseEnter}>

@@ -5,15 +5,19 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		animate = false,
+		animate: animateProp = false,
 		class: className = ''
 	}: IconProps = $props();
 
+	let hoverAnimate = $state(false);
+	let resetTimer: ReturnType<typeof setTimeout> | undefined;
+	const animate = $derived(animateProp || hoverAnimate);
+
 	function handleMouseEnter() {
 		if (animate) return;
-		animate = true;
-		setTimeout(() => {
-			animate = false;
+		hoverAnimate = true;
+		resetTimer = setTimeout(() => {
+			hoverAnimate = false;
 		}, 1100);
 	}
 
@@ -27,6 +31,8 @@
 		'M2 12h2',
 		'm4.93 4.93 1.41 1.41'
 	];
+
+	$effect(() => () => clearTimeout(resetTimer));
 </script>
 
 <div class={className} aria-label="sun" role="img" onmouseenter={handleMouseEnter}>
