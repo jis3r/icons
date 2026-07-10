@@ -1,11 +1,12 @@
 <script lang="ts">
+	import { untrack } from 'svelte';
 	import type { IconProps } from './types.js';
 
 	let {
 		color = 'currentColor',
 		size = 28,
 		strokeWidth = 2,
-		animate = false,
+		animate: animateProp = false,
 		class: className = ''
 	}: IconProps = $props();
 
@@ -59,7 +60,7 @@
 	}
 
 	function handleMouseEnter() {
-		animate = true;
+		if (line1a_x2 !== 14) return;
 
 		// Animate all values simultaneously
 		Promise.all([
@@ -97,8 +98,6 @@
 	}
 
 	function handleMouseLeave() {
-		animate = false;
-
 		// Reset all values to normal
 		Promise.all([
 			animateValue(line1a_x2, 14, 400, (val) => {
@@ -133,6 +132,11 @@
 			})
 		]);
 	}
+
+	$effect(() => {
+		if (animateProp) untrack(handleMouseEnter);
+		else untrack(handleMouseLeave);
+	});
 </script>
 
 <div
