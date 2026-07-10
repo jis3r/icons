@@ -20,7 +20,7 @@
 
 <div
 	class={className}
-	aria-label="align-horizontal"
+	aria-label="align-horizontal-space-around"
 	role="img"
 	onmouseenter={handleMouseEnter}
 	onmouseleave={handleMouseLeave}

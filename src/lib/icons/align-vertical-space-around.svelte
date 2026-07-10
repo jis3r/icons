@@ -20,7 +20,7 @@
 
 <div
 	class={className}
-	aria-label="align-vertical"
+	aria-label="align-vertical-space-around"
 	role="img"
 	onmouseenter={handleMouseEnter}
 	onmouseleave={handleMouseLeave}

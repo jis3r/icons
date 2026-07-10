@@ -3,7 +3,7 @@
 
 	let {
 		color = 'currentColor',
-		size = 28,
+		size = 24,
 		strokeWidth = 2,
 		animate = false,
 		class: className = ''

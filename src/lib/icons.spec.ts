@@ -12,6 +12,10 @@ const iconFiles = readdirSync(join(import.meta.dirname, 'icons'))
 
 const components = Object.entries(icons).filter(([, v]) => typeof v === 'function');
 
+// Lazy module map keyed by relative path, used to look up each icon file directly
+// by its kebab-case filename (independent of the PascalCase barrel export name).
+const iconModules = import.meta.glob<{ default: Component<IconProps> }>('./icons/*.svelte');
+
 describe('icon barrel', () => {
 	it('exports exactly one component per icon file', () => {
 		expect(components.length).toBe(iconFiles.length);
@@ -39,6 +43,33 @@ describe.each(components)('%s', (name, IconComponent) => {
 		expect(svg!.getAttribute('stroke')).toBe('rebeccapurple');
 		expect(svg!.getAttribute('stroke-width')).toBe('1.5');
 		expect(svg!.getAttribute('viewBox')).toBe('0 0 24 24');
+
+		unmount(instance);
+	});
+});
+
+describe.each(iconFiles)('%s (filename contract)', (name) => {
+	it('has an aria-label matching its filename and default props of size=24, stroke=currentColor, stroke-width=2', async () => {
+		const loadModule = iconModules[`./icons/${name}.svelte`];
+		expect(loadModule, `import.meta.glob entry for ./icons/${name}.svelte`).toBeTruthy();
+		const mod = await loadModule();
+		const IconComponent = mod.default;
+
+		const target = document.createElement('div');
+		// Mount with NO props to exercise the component's own defaults.
+		const instance = mount(IconComponent, { target });
+		flushSync();
+
+		const wrapper = target.querySelector('div[role="img"]');
+		expect(wrapper, 'wrapper div[role=img]').toBeTruthy();
+		expect(wrapper!.getAttribute('aria-label')).toBe(name);
+
+		const svg = wrapper!.querySelector('svg');
+		expect(svg, 'svg element').toBeTruthy();
+		expect(svg!.getAttribute('width')).toBe('24');
+		expect(svg!.getAttribute('height')).toBe('24');
+		expect(svg!.getAttribute('stroke')).toBe('currentColor');
+		expect(svg!.getAttribute('stroke-width')).toBe('2');
 
 		unmount(instance);
 	});

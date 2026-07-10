@@ -20,7 +20,7 @@
 
 <div
 	class={className}
-	aria-label="arrow-down-z-a"
+	aria-label="arrow-up-z-a"
 	role="img"
 	onmouseenter={handleMouseEnter}
 	onmouseleave={handleMouseLeave}
