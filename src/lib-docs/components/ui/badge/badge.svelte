@@ -22,6 +22,15 @@
 <script>
 	import { cn } from '$lib-docs/utils.js';
 
+	/**
+	 * @type {{
+	 * 	ref?: HTMLElement | null,
+	 * 	href?: string,
+	 * 	class?: string,
+	 * 	variant?: import('tailwind-variants').VariantProps<typeof badgeVariants>['variant'],
+	 * 	children?: import('svelte').Snippet
+	 * } & Record<string, any>}
+	 */
 	let {
 		ref = $bindable(null),
 		href,

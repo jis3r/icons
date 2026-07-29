@@ -5,9 +5,13 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		animate = false,
+		animate: animateProp = false,
 		class: className = ''
 	}: IconProps = $props();
+
+	let hoverAnimate = $state(false);
+	let entryTimer: ReturnType<typeof setTimeout> | undefined;
+	const animate = $derived(animateProp || hoverAnimate);
 
 	let eyeY1 = $state(13);
 	let eyeY2 = $state(15);
@@ -21,7 +25,7 @@
 		delay: number = 0
 	): Promise<void> {
 		return new Promise((resolve) => {
-			setTimeout(() => {
+			entryTimer = setTimeout(() => {
 				const startTime = performance.now();
 				const animate = (currentTime: number): void => {
 					const elapsed = currentTime - startTime;
@@ -46,13 +50,15 @@
 
 	function handleMouseEnter() {
 		if (animate) return;
-		animate = true;
+		hoverAnimate = true;
 		animateEyes(13, 15, 14, 14, 250, 200).then(() => {
 			animateEyes(14, 14, 13, 15, 250).then(() => {
-				animate = false;
+				hoverAnimate = false;
 			});
 		});
 	}
+
+	$effect(() => () => clearTimeout(entryTimer));
 </script>
 
 <div class={className} aria-label="bot" role="img" onmouseenter={handleMouseEnter}>

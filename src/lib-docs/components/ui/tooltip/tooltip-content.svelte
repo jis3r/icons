@@ -2,6 +2,13 @@
 	import { Tooltip as TooltipPrimitive } from 'bits-ui';
 	import { cn } from '$lib-docs/utils.js';
 
+	/**
+	 * @type {{
+	 * 	ref?: HTMLElement | null,
+	 * 	class?: string,
+	 * 	sideOffset?: number
+	 * } & Record<string, any>}
+	 */
 	let { ref = $bindable(null), class: className, sideOffset = 4, ...restProps } = $props();
 </script>
 

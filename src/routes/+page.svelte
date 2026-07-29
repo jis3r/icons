@@ -4,6 +4,7 @@
 	import { animate } from 'motion';
 	import { page } from '$app/state';
 	import { goto } from '$app/navigation';
+	import { resolve } from '$app/paths';
 	import { Button } from '$lib-docs/components/ui/button';
 	import {
 		Activity,
@@ -166,6 +167,11 @@
 		PrinterCheck
 	];
 
+	/**
+	 * @template T
+	 * @param {T[]} array
+	 * @returns {T[]}
+	 */
 	function shuffleArray(array) {
 		const shuffled = [...array];
 		for (let i = shuffled.length - 1; i > 0; i--) {
@@ -259,6 +265,7 @@
 
 	let activeSection = $state('installation');
 
+	/** @param {string} sectionId */
 	function scrollToSection(sectionId) {
 		const element = document.getElementById(sectionId);
 		if (element) {
@@ -299,8 +306,8 @@
 
 	onMount(() => {
 		if (page.url.searchParams.has('search')) {
-			const searchParam = page.url.searchParams.get('search');
-			goto(`/icons?search=${encodeURIComponent(searchParam)}`, { replaceState: true });
+			const searchParam = page.url.searchParams.get('search') ?? '';
+			goto(resolve(`/icons?search=${encodeURIComponent(searchParam)}`), { replaceState: true });
 			return;
 		}
 
@@ -317,8 +324,7 @@
 				},
 				{
 					delay: randomDelays[i] / 1000,
-					duration: 0.4,
-					easing: [0.42, 0, 0.58, 1]
+					duration: 0.4
 				}
 			);
 		});
@@ -333,7 +339,9 @@
 		const description = document.querySelector('.hero-description');
 		const button = document.querySelector('.hero-button');
 
-		const allElements = [logo, ...Array.from(titleSpans), description, button].filter(Boolean);
+		const allElements = /** @type {Element[]} */ (
+			[logo, ...Array.from(titleSpans), description, button].filter(Boolean)
+		);
 		const heroLogoDuration = 0.7;
 
 		allElements.forEach((element, i) => {
@@ -350,8 +358,7 @@
 					},
 					{
 						delay: heroStartTime,
-						duration: heroLogoDuration,
-						easing: [0.16, 1, 0.3, 1]
+						duration: heroLogoDuration
 					}
 				);
 			} else {
@@ -365,14 +372,11 @@
 					},
 					{
 						delay: staggerDelay,
-						duration: 0.7,
-						easing: [0.16, 1, 0.3, 1]
+						duration: 0.7
 					}
 				);
 			}
 		});
-
-		const lastElementDelay = heroStartTime + 0.15 + (allElements.length - 2) * 0.04;
 	});
 </script>
 
@@ -403,7 +407,7 @@
 				></div>
 
 				<Marquee.Root gap="24px" speed={20} class="marquee-row-1 min-h-14">
-					{#each marquee1Icons as Icon, i}
+					{#each marquee1Icons as Icon, i (i)}
 						<Marquee.Item
 							class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 opacity-0 [filter:blur(6px)] dark:border-zinc-900"
 						>
@@ -413,7 +417,7 @@
 				</Marquee.Root>
 
 				<Marquee.Root gap="24px" speed={24} class="marquee-row-2 min-h-14">
-					{#each marquee2Icons as Icon}
+					{#each marquee2Icons as Icon, i (i)}
 						<Marquee.Item
 							class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 opacity-0 [filter:blur(6px)] dark:border-zinc-900"
 						>
@@ -423,7 +427,7 @@
 				</Marquee.Root>
 
 				<Marquee.Root gap="24px" speed={16} class="marquee-row-3 min-h-14">
-					{#each marquee3Icons as Icon}
+					{#each marquee3Icons as Icon, i (i)}
 						<Marquee.Item
 							class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 opacity-0 [filter:blur(6px)] dark:border-zinc-900"
 						>
@@ -433,7 +437,7 @@
 				</Marquee.Root>
 
 				<Marquee.Root gap="24px" speed={28} class="marquee-row-4 min-h-14">
-					{#each marquee4Icons as Icon}
+					{#each marquee4Icons as Icon, i (i)}
 						<Marquee.Item
 							class="marquee-icon flex h-14 min-h-14 w-14 min-w-14 items-center justify-center rounded-lg border border-zinc-200 opacity-0 [filter:blur(6px)] dark:border-zinc-900"
 						>
@@ -474,7 +478,7 @@
 		>
 			<aside class="sticky top-24 hidden w-48 self-start lg:block">
 				<nav class="space-y-1">
-					{#each sections as section}
+					{#each sections as section (section.id)}
 						<button
 							onclick={() => scrollToSection(section.id)}
 							class="w-full rounded-md py-2 pr-3 text-left text-sm transition-colors {activeSection ===
@@ -521,7 +525,7 @@
 							<h4 class="text-sm font-medium">Copy from website</h4>
 							<p class="text-muted-foreground text-sm">
 								You can download or copy icon components directly from the
-								<a href="/icons" class="text-foreground underline"> icons page </a>
+								<a href={resolve('/icons')} class="text-foreground underline"> icons page </a>
 
 								and paste them into your Svelte project.
 							</p>

@@ -3,18 +3,21 @@
 
 	let {
 		color = 'currentColor',
-		size = 28,
+		size = 24,
 		strokeWidth = 2,
-		animate = false,
+		animate: animateProp = false,
 		class: className = ''
 	}: IconProps = $props();
 
+	let hoverAnimate = $state(false);
+	const animate = $derived(animateProp || hoverAnimate);
+
 	function handleMouseEnter() {
-		animate = true;
+		hoverAnimate = true;
 	}
 
 	function handleMouseLeave() {
-		animate = false;
+		hoverAnimate = false;
 	}
 </script>
 

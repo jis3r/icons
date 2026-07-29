@@ -4,51 +4,59 @@
  *
  * Description:
  *  - Reads every .svelte file in "src/lib/icons".
- *  - For each file, it looks for a corresponding JSON file in "../lucide/icons"
- *    (using the same basename).
- *  - If found, it reads the JSON file, removes the "$schema" and "contributors" keys,
- *    and then creates an icon entry with the name (based on the filename), an icon property
- *    (the imported Svelte component), tags, and categories.
- *  - The icon property is inserted as the second property in the object.
- *  - The script then reads "src/lib-docs/icons-meta.ts" and checks whether the icon already exists.
- *  - If the icon does not exist, it adds the new icon object to the ICONS_LIST array,
- *    maintaining alphabetical order by name.
- *  - The script also removes icons from the index that no longer have corresponding files.
- *  - The script adds/removes import statements at the top of the file for the corresponding Svelte components.
- *  - Unused imports are automatically removed.
+ *  - For each file, looks for a corresponding JSON file in a Lucide checkout's
+ *    "icons" directory (using the same basename) and, if found, reads its
+ *    "tags" and "categories".
+ *  - Regenerates "src/lib-docs/icons-meta.ts" from scratch every run: one
+ *    sorted import per icon and a sorted ICONS_LIST array of
+ *    { name, icon, tags, categories }. The previous contents of that file are
+ *    never read for data, so a stray apostrophe in a tag or a regex-metachar
+ *    icon name can't silently corrupt or drop an entry.
+ *
+ * Lucide checkout location, in order of precedence:
+ *  1. LUCIDE_ICONS_DIR environment variable (path to the checkout's "icons" dir)
+ *  2. "../lucide/icons" relative to the current working directory
+ *
+ * By default this script never touches the Lucide checkout's git state. Pass
+ * --pull to run "git pull" in it first; a failed pull only warns (useful when
+ * offline) and indexing continues against whatever is on disk.
  *
  * Import variable names are converted to camelCase.
  */
 
 import { readFileSync, writeFileSync, existsSync, readdirSync } from 'fs';
-import { join, basename } from 'path';
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
+import { join, basename, dirname, resolve } from 'path';
 import { execSync } from 'child_process';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+import { pathToFileURL } from 'url';
 
 interface LucideIconData {
 	tags?: string[];
 	categories?: string[];
-	$schema?: string;
-	contributors?: unknown;
 }
 
-interface IconInfo {
-	iconName: string;
+interface IconEntry {
+	name: string;
 	importVar: string;
 	fileName: string;
 	tags: string[];
 	categories: string[];
 }
 
-interface ParsedIcon {
-	name: string;
-	icon: string;
-	tags: string[];
-	categories: string[];
+export interface GenerateIconsMetaOptions {
+	/** Directory containing the .svelte icon files (e.g. src/lib/icons). */
+	iconsDir: string;
+	/** Directory containing Lucide's per-icon JSON metadata (a Lucide checkout's "icons" dir). */
+	lucideIconsDir: string;
+	/** Path to write the generated icons-meta.ts file to. */
+	outFile: string;
+}
+
+export interface GenerateIconsMetaResult {
+	total: number;
+	matched: number;
+	unmatchedIcons: string[];
+	added: number;
+	removed: number;
 }
 
 function toCamelCase(str: string): string {
@@ -58,276 +66,211 @@ function toCamelCase(str: string): string {
 		.join('');
 }
 
-function updateIconsIndex(): void {
-	const packageRoot = process.cwd();
-	const iconsDir = join(packageRoot, 'src/lib/icons');
-	const lucideIconsDir = join(packageRoot, '..', 'lucide/icons');
-	const indexFilePath = join(packageRoot, 'src/lib-docs/icons-meta.ts');
+/**
+ * Best-effort diff against whatever is currently on disk, used only to log
+ * added/removed counts. This looks at icon *names* only (never tags,
+ * categories, or import identifiers), so it cannot corrupt or drop data - at
+ * worst the logged counts are off, which is not a correctness concern.
+ */
+function diffExistingNames(
+	outFile: string,
+	currentNames: Set<string>
+): { added: number; removed: number } {
+	if (!existsSync(outFile)) {
+		return { added: currentNames.size, removed: 0 };
+	}
+
+	try {
+		const previousContent = readFileSync(outFile, 'utf8');
+		const previousNames = new Set<string>();
+		for (const match of previousContent.matchAll(/name:\s*'([^']*)'/g)) {
+			previousNames.add(match[1]);
+		}
+
+		let added = 0;
+		let removed = 0;
+		for (const name of currentNames) {
+			if (!previousNames.has(name)) added++;
+		}
+		for (const name of previousNames) {
+			if (!currentNames.has(name)) removed++;
+		}
+		return { added, removed };
+	} catch {
+		return { added: 0, removed: 0 };
+	}
+}
+
+/**
+ * Regenerates the icons-meta.ts file at `outFile` from scratch: every
+ * .svelte file in `iconsDir` becomes one entry, enriched with tags and
+ * categories from the matching JSON file in `lucideIconsDir` (if any).
+ */
+export function generateIconsMeta({
+	iconsDir,
+	lucideIconsDir,
+	outFile
+}: GenerateIconsMetaOptions): GenerateIconsMetaResult {
+	const svelteFiles = readdirSync(iconsDir).filter((file) => file.endsWith('.svelte'));
+	const unmatchedIcons: string[] = [];
+
+	const entries: IconEntry[] = svelteFiles.map((file) => {
+		const iconName = basename(file, '.svelte');
+		const importVar = toCamelCase(iconName);
+		const lucideFilePath = join(lucideIconsDir, `${iconName}.json`);
+
+		let tags: string[] = [];
+		let categories: string[] = [];
+
+		if (existsSync(lucideFilePath)) {
+			try {
+				const jsonData = JSON.parse(readFileSync(lucideFilePath, 'utf8')) as LucideIconData;
+				tags = jsonData.tags ?? [];
+				categories = jsonData.categories ?? [];
+			} catch (err) {
+				console.warn(
+					`Warning: could not parse Lucide JSON for icon "${iconName}" (${lucideFilePath}): ` +
+						`${err instanceof Error ? err.message : String(err)}. Using empty tags/categories.`
+				);
+				unmatchedIcons.push(iconName);
+			}
+		} else {
+			console.warn(
+				`Warning: no matching Lucide JSON found for icon "${iconName}" in ${lucideIconsDir}. ` +
+					`Using empty tags/categories.`
+			);
+			unmatchedIcons.push(iconName);
+		}
+
+		return { name: iconName, importVar, fileName: file, tags, categories };
+	});
+
+	entries.sort((a, b) => a.name.localeCompare(b.name));
+
+	const importLines = entries
+		.map((entry) => `import ${entry.importVar} from '$lib/icons/${entry.fileName}';`)
+		.sort((a, b) => {
+			const aVar = a.match(/import\s+(\w+)\s+from/)![1];
+			const bVar = b.match(/import\s+(\w+)\s+from/)![1];
+			return aVar.localeCompare(bVar);
+		});
+
+	const listEntries = entries
+		.map(
+			(entry) => `\t{
+\t\tname: '${entry.name}',
+\t\ticon: ${entry.importVar},
+\t\ttags: ${JSON.stringify(entry.tags)},
+\t\tcategories: ${JSON.stringify(entry.categories)}
+\t}`
+		)
+		.join(',\n');
+
+	const fileContent = `${importLines.join('\n')}
+
+const ICONS_LIST = [
+${listEntries}
+];
+
+export default ICONS_LIST;
+`;
+
+	const { added, removed } = diffExistingNames(
+		outFile,
+		new Set(entries.map((entry) => entry.name))
+	);
+
+	writeFileSync(outFile, fileContent, 'utf8');
+
+	return {
+		total: entries.length,
+		matched: entries.length - unmatchedIcons.length,
+		unmatchedIcons,
+		added,
+		removed
+	};
+}
+
+function printHelp(): void {
+	console.log(
+		`Usage: tsx scripts/indexIcons.ts [--pull]
+
+Regenerates src/lib-docs/icons-meta.ts from src/lib/icons/*.svelte and a Lucide checkout.
+
+Environment:
+  LUCIDE_ICONS_DIR   Path to a Lucide checkout's "icons" directory (default: ../lucide/icons)
+
+Options:
+  --pull   Run "git pull" in the Lucide checkout first (best-effort; warns and continues on failure)
+  --help   Show this help message
+`
+	);
+}
+
+function main(): void {
+	if (process.argv.includes('--help') || process.argv.includes('-h')) {
+		printHelp();
+		return;
+	}
+
+	const projectRoot = process.cwd();
+	const iconsDir = join(projectRoot, 'src/lib/icons');
+	const outFile = join(projectRoot, 'src/lib-docs/icons-meta.ts');
+	const defaultLucideIconsDir = join(projectRoot, '..', 'lucide', 'icons');
+	const lucideIconsDir = process.env.LUCIDE_ICONS_DIR
+		? resolve(process.env.LUCIDE_ICONS_DIR)
+		: defaultLucideIconsDir;
 
 	if (!existsSync(iconsDir)) {
 		console.error(`Error: Icons directory not found at ${iconsDir}`);
 		process.exit(1);
 	}
+
 	if (!existsSync(lucideIconsDir)) {
-		console.error(`Error: Lucide icons directory not found at ${lucideIconsDir}`);
-		process.exit(1);
-	}
-	if (!existsSync(indexFilePath)) {
-		console.error(`Error: Index file not found at ${indexFilePath}`);
-		process.exit(1);
-	}
-
-	try {
-		console.log('Pulling latest changes from Lucide repository...');
-		const lucideDir = join(packageRoot, '..', 'lucide');
-		execSync('git pull', { cwd: lucideDir, stdio: 'inherit' });
-		console.log('Successfully pulled latest changes from Lucide repository');
-	} catch (error) {
 		console.error(
-			'Error pulling from Lucide repository:',
-			error instanceof Error ? error.message : String(error)
+			`Error: Lucide icons directory not found at ${lucideIconsDir}.\n` +
+				`Set the LUCIDE_ICONS_DIR environment variable to a Lucide checkout's "icons" directory, ` +
+				`or clone https://github.com/lucide-icons/lucide into "../lucide" relative to the project ` +
+				`root (default path: ${defaultLucideIconsDir}).`
 		);
 		process.exit(1);
 	}
 
-	let indexContent = readFileSync(indexFilePath, 'utf8');
-
-	const files = readdirSync(iconsDir);
-	const svelteFiles = files.filter((file) => file.endsWith('.svelte'));
-
-	const existingIconFiles = new Set(svelteFiles.map((file) => basename(file, '.svelte')));
-
-	let iconsAddedCount = 0;
-	let iconsRemovedCount = 0;
-	const unmatchedIcons: string[] = [];
-	const skippedExistingIcons: string[] = [];
-	const removedIcons: string[] = [];
-	const newIcons: IconInfo[] = [];
-
-	svelteFiles.forEach((file) => {
-		const iconName = basename(file, '.svelte');
-		const lucideFilePath = join(lucideIconsDir, iconName + '.json');
-
-		if (existsSync(lucideFilePath)) {
-			const rawJson = readFileSync(lucideFilePath, 'utf8');
-			let jsonData: LucideIconData;
-			try {
-				jsonData = JSON.parse(rawJson) as LucideIconData;
-			} catch (err) {
-				console.error(`Error parsing JSON for icon "${iconName}":`, err);
-				return;
-			}
-
-			delete jsonData['$schema'];
-			delete jsonData['contributors'];
-
-			const iconExistsRegex = new RegExp(`name\\s*[:=]\\s*["'\`]${iconName}["'\`]`);
-			if (!iconExistsRegex.test(indexContent)) {
-				const importVar = toCamelCase(iconName);
-				newIcons.push({
-					iconName,
-					importVar,
-					fileName: file,
-					tags: jsonData.tags || [],
-					categories: jsonData.categories || []
-				});
-				console.log(`✅ Will add icon "${iconName}"`);
-			} else {
-				skippedExistingIcons.push(iconName);
-				console.log(`⏭️  Skipping "${iconName}" - already exists in index`);
-			}
-		} else {
-			console.log(`❌ No matching JSON file found for icon "${iconName}" in lucide`);
-			unmatchedIcons.push(iconName);
+	if (process.argv.includes('--pull')) {
+		const lucideRepoRoot = dirname(lucideIconsDir);
+		try {
+			console.log(`Pulling latest changes in ${lucideRepoRoot}...`);
+			execSync('git pull', { cwd: lucideRepoRoot, stdio: 'inherit' });
+		} catch (error) {
+			console.warn(
+				`Warning: could not pull latest changes in ${lucideRepoRoot}, continuing with the ` +
+					`checkout as-is: ${error instanceof Error ? error.message : String(error)}`
+			);
 		}
-	});
-
-	const iconsListMatch = indexContent.match(/(let|const) ICONS_LIST = \[([\s\S]*?)\];/);
-	if (!iconsListMatch) {
-		console.error('Error: Could not find ICONS_LIST in index file.');
-		process.exit(1);
 	}
 
-	const declarationType = iconsListMatch[1];
-	const iconsListContent = iconsListMatch[2];
-
-	const existingIcons: ParsedIcon[] = [];
-	const iconRegex =
-		/\{\s*name:\s*['"`]([^'"`]+)['"`],\s*icon:\s*([^,]+),\s*tags:\s*(\[[^\]]*\]),\s*categories:\s*(\[[^\]]*\])\s*\}/g;
-	let match: RegExpExecArray | null;
-
-	while ((match = iconRegex.exec(iconsListContent)) !== null) {
-		const tagsStr = match[3];
-		const categoriesStr = match[4];
-
-		const tagsJson = tagsStr.includes("'") ? tagsStr.replace(/'/g, '"') : tagsStr;
-		const categoriesJson = categoriesStr.includes("'")
-			? categoriesStr.replace(/'/g, '"')
-			: categoriesStr;
-
-		existingIcons.push({
-			name: match[1],
-			icon: match[2].trim(),
-			tags: JSON.parse(tagsJson) as string[],
-			categories: JSON.parse(categoriesJson) as string[]
-		});
-	}
-
-	const filteredIcons = existingIcons.filter((icon) => {
-		if (existingIconFiles.has(icon.name)) {
-			return true;
-		} else {
-			removedIcons.push(icon.name);
-			console.log(`🗑️  Removing icon "${icon.name}" - file no longer exists`);
-			return false;
-		}
-	});
-
-	iconsRemovedCount = removedIcons.length;
-
-	newIcons.forEach((icon) => {
-		filteredIcons.push({
-			name: icon.iconName,
-			icon: icon.importVar,
-			tags: icon.tags,
-			categories: icon.categories
-		});
-	});
-
-	iconsAddedCount = newIcons.length;
-
-	const requiredImportVars = new Set<string>();
-	filteredIcons.forEach((icon) => {
-		requiredImportVars.add(icon.icon);
-	});
-
-	const importLinesToAdd: string[] = [];
-	newIcons.forEach((icon) => {
-		const importRegex = new RegExp(
-			`import\\s+${icon.importVar}\\s+from\\s+['"]\\$lib/icons/${icon.fileName}['"]`
-		);
-		if (!importRegex.test(indexContent)) {
-			importLinesToAdd.push(`import ${icon.importVar} from '$lib/icons/${icon.fileName}';`);
-		}
-	});
-
-	const lines = indexContent.split('\n');
-	let shebangLine: string | null = null;
-	const importLines: string[] = [];
-	const nonImportLines: string[] = [];
-
-	let i = 0;
-	if (lines[0].startsWith('#!')) {
-		shebangLine = lines[0];
-		i = 1;
-	}
-
-	while (i < lines.length && lines[i].trim().startsWith('import')) {
-		importLines.push(lines[i]);
-		i++;
-	}
-
-	while (i < lines.length) {
-		nonImportLines.push(lines[i]);
-		i++;
-	}
-
-	const filteredImportLines = importLines.filter((line) => {
-		const importMatch = line.match(/import\s+(\w+)\s+from/);
-		if (importMatch) {
-			const importVar = importMatch[1];
-			if (requiredImportVars.has(importVar)) {
-				return true;
-			} else {
-				console.log(`🗑️  Removing unused import: ${importVar}`);
-				return false;
-			}
-		}
-		return true;
-	});
-
-	filteredImportLines.push(...importLinesToAdd);
-
-	filteredImportLines.sort((a, b) => {
-		const aMatch = a.match(/import\s+(\w+)\s+from/);
-		const bMatch = b.match(/import\s+(\w+)\s+from/);
-		if (aMatch && bMatch) {
-			return aMatch[1].localeCompare(bMatch[1]);
-		}
-		return a.localeCompare(b);
-	});
-
-	const newLines: string[] = [];
-	if (shebangLine) {
-		newLines.push(shebangLine);
-	}
-	newLines.push(...filteredImportLines);
-	newLines.push(...nonImportLines);
-
-	indexContent = newLines.join('\n');
-
-	filteredIcons.sort((a, b) => a.name.localeCompare(b.name));
-
-	const newIconsListContent = filteredIcons
-		.map((icon) => {
-			return `	{
-		name: '${icon.name}',
-		icon: ${icon.icon},
-		tags: ${JSON.stringify(icon.tags)},
-		categories: ${JSON.stringify(icon.categories)}
-	}`;
-		})
-		.join(',\n');
-
-	const newIconsList = `${declarationType} ICONS_LIST = [
-${newIconsListContent}
-];`;
-
-	indexContent = indexContent.replace(/(let|const) ICONS_LIST = \[[\s\S]*?\];/, newIconsList);
-
-	if (iconsAddedCount > 0) {
-		console.log(`✅ Added ${iconsAddedCount} new icon(s) in alphabetical order`);
-	}
-	if (iconsRemovedCount > 0) {
-		console.log(`🗑️  Removed ${iconsRemovedCount} icon(s) that no longer have files`);
-	}
-	if (iconsAddedCount === 0 && iconsRemovedCount === 0) {
-		console.log('No changes to icons list.');
-	}
-
-	writeFileSync(indexFilePath, indexContent, 'utf8');
+	const result = generateIconsMeta({ iconsDir, lucideIconsDir, outFile });
 
 	console.log(`\nIndex update complete:`);
-	console.log(`✅ Added ${iconsAddedCount} new icon(s)`);
-	if (iconsRemovedCount > 0) {
-		console.log(`🗑️  Removed ${iconsRemovedCount} icon(s)`);
+	console.log(`Indexed ${result.total} icon(s), ${result.matched} matched with Lucide data.`);
+	if (result.added > 0) {
+		console.log(`Added ${result.added} icon(s) since the last run.`);
 	}
-	console.log(`⏭️  Skipped ${skippedExistingIcons.length} existing icon(s)`);
-
-	if (iconsAddedCount > 0) {
-		console.log('\nNewly added icons:');
-		newIcons
-			.sort((a, b) => a.iconName.localeCompare(b.iconName))
-			.forEach((icon) => {
-				console.log(`  - ${icon.iconName}`);
-			});
+	if (result.removed > 0) {
+		console.log(`Removed ${result.removed} icon(s) since the last run.`);
 	}
-
-	if (iconsRemovedCount > 0) {
-		console.log('\nRemoved icons:');
-		removedIcons.sort().forEach((icon) => {
-			console.log(`  - ${icon}`);
-		});
-	}
-
-	if (unmatchedIcons.length > 0) {
-		console.log(`\n❌ Found ${unmatchedIcons.length} unmatched Svelte icon(s):`);
-		unmatchedIcons.sort().forEach((icon) => {
-			console.log(`  - ${icon}`);
-		});
+	if (result.unmatchedIcons.length > 0) {
+		console.log(`\nUnmatched icon(s) with no Lucide JSON (${result.unmatchedIcons.length}):`);
+		result.unmatchedIcons.sort().forEach((icon) => console.log(`  - ${icon}`));
 	} else {
-		console.log('\n✅ All Svelte icons were successfully matched with JSON files.');
+		console.log('\nAll Svelte icons were successfully matched with JSON files.');
 	}
 }
 
-updateIconsIndex();
+const invokedPath = process.argv[1];
+const isMainModule =
+	Boolean(invokedPath) && import.meta.url === pathToFileURL(resolve(invokedPath)).href;
+
+if (isMainModule) {
+	main();
+}

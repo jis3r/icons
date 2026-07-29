@@ -5,20 +5,26 @@
 		color = 'currentColor',
 		size = 24,
 		strokeWidth = 2,
-		animate = false,
+		animate: animateProp = false,
 		class: className = ''
 	}: IconProps = $props();
 
+	let hoverAnimate = $state(false);
+	let resetTimer: ReturnType<typeof setTimeout> | undefined;
+	const animate = $derived(animateProp || hoverAnimate);
+
 	function handleMouseEnter() {
 		if (animate) return;
-		animate = true;
-		setTimeout(() => {
-			animate = false;
+		hoverAnimate = true;
+		resetTimer = setTimeout(() => {
+			hoverAnimate = false;
 		}, 700);
 	}
+
+	$effect(() => () => clearTimeout(resetTimer));
 </script>
 
-<div class={className} aria-label="square stack" role="img" onmouseenter={handleMouseEnter}>
+<div class={className} aria-label="square-stack" role="img" onmouseenter={handleMouseEnter}>
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		width={size}
