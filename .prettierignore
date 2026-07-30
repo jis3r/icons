@@ -8,3 +8,4 @@ yarn.lock
 .svelte-kit/
 build/
 dist/
+plans/

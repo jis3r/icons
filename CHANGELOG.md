@@ -5,6 +5,14 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: [S
 
 ## [Unreleased]
 
+## [2.9.0] - 2026-07-30
+
+### Added
+
+- 5 new icons: `log-in`, `message-square-diff`, `message-square-plus`, `message-square-text`, `phone-call`; `waves` renamed to `waves-horizontal` (matching Lucide upstream)
+- Per-icon subpath imports: `import Bell from '@jis3r/icons/icons/bell'`.
+- `sideEffects: false` for reliable tree-shaking.
+
 ### Fixed
 
 - Parent-controlled `animate` could permanently stop animating after the pointer grazed the icon (internal hover timer clobbered the prop). Hover state is now internal and OR-ed with the prop.
@@ -13,11 +21,6 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: [S
 - `file-sliders` ignored the `size`/`color`/`strokeWidth` props entirely (hardcoded svg attributes); it now honors them.
 - `binary`, `sliders-horizontal`, and `sliders-vertical` ignored the `animate` prop; it now triggers their animations.
 - Hover timers are cleaned up on unmount.
-
-### Added
-
-- Per-icon subpath imports: `import Bell from '@jis3r/icons/icons/bell'`.
-- `sideEffects: false` for reliable tree-shaking.
 
 ## [2.7.0] and earlier
 
