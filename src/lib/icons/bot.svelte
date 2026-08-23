@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { untrack } from 'svelte';
 	import type { IconProps } from './types.js';
 
 	let {
@@ -49,7 +50,9 @@
 	}
 
 	function handleMouseEnter() {
-		if (animate) return;
+		// hoverAnimate doubles as the in-flight flag: guard on it, not on the
+		// animate union, or a parent holding animate=true would block every blink.
+		if (hoverAnimate) return;
 		hoverAnimate = true;
 		animateEyes(13, 15, 14, 14, 250, 200).then(() => {
 			animateEyes(14, 14, 13, 15, 250).then(() => {
@@ -57,6 +60,11 @@
 			});
 		});
 	}
+
+	// The blink is driven imperatively, so the prop has to trigger it explicitly.
+	$effect(() => {
+		if (animateProp) untrack(handleMouseEnter);
+	});
 
 	$effect(() => () => clearTimeout(entryTimer));
 </script>
