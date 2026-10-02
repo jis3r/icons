@@ -95,6 +95,11 @@
 		"vite": "^8.0.16",
 		"vitest": "^4.1.0"
 	},
+	"overrides": {
+		"runed": {
+			"@sveltejs/kit": "$@sveltejs/kit"
+		}
+	},
 	"allowScripts": {
 		"esbuild@0.28.1": true,
 		"fsevents@2.3.3": true,
