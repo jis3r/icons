@@ -19,7 +19,7 @@
 	});
 </script>
 
-<ModeWatcher />
+<ModeWatcher disableHeadScriptInjection />
 
 <Navbar />
 

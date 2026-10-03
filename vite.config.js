@@ -12,7 +12,7 @@ export default defineConfig({
 				mode: 'auto',
 				directives: {
 					'default-src': ['self'],
-					'script-src': ['self'],
+					'script-src': ['self', 'https://eu-assets.i.posthog.com'],
 					'style-src': ['self', 'unsafe-inline'],
 					'img-src': ['self', 'data:'],
 					'connect-src': [
