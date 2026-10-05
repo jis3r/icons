@@ -18,9 +18,11 @@ export default defineConfig({
 					'connect-src': [
 						'self',
 						'https://eu.i.posthog.com',
+						'https://eu.posthog.com',
 						'https://eu-assets.i.posthog.com',
 						'https://api.github.com'
 					],
+					'worker-src': ['self', 'blob:', 'data:'],
 					'font-src': ['self'],
 					'object-src': ['none'],
 					'base-uri': ['self']
