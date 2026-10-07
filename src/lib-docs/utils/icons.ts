@@ -1,5 +1,5 @@
-import type ICONS_LIST_TYPE from '$lib-docs/icons-meta.ts';
-import { ICON_PROPS_IMPORT, INLINED_ICON_PROPS } from '$lib/icons/standalone-props.js';
+import type ICONS_LIST_TYPE from '#lib-docs/icons-meta.js';
+import { ICON_PROPS_IMPORT, INLINED_ICON_PROPS } from '#lib/icons/standalone-props.js';
 
 type Icon = (typeof ICONS_LIST_TYPE)[number];
 type IconWithSource = Icon & { source?: string };

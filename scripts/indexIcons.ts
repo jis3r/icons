@@ -148,7 +148,7 @@ export function generateIconsMeta({
 	entries.sort((a, b) => a.name.localeCompare(b.name));
 
 	const importLines = entries
-		.map((entry) => `import ${entry.importVar} from '$lib/icons/${entry.fileName}';`)
+		.map((entry) => `import ${entry.importVar} from '#lib/icons/${entry.fileName}';`)
 		.sort((a, b) => {
 			const aVar = a.match(/import\s+(\w+)\s+from/)![1];
 			const bVar = b.match(/import\s+(\w+)\s+from/)![1];

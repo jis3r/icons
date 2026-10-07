@@ -1,7 +1,7 @@
 <script>
 	import { ContextMenu as ContextMenuPrimitive } from 'bits-ui';
 	import CheckIcon from '@lucide/svelte/icons/check';
-	import { cn } from '$lib-docs/utils.js';
+	import { cn } from '#lib-docs/utils.js';
 	let {
 		ref = $bindable(null),
 		checked = $bindable(false),

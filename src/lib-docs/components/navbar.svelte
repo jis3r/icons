@@ -1,11 +1,11 @@
 <script lang="ts">
-	import { Button } from '$lib-docs/components/ui/button/index.js';
-	import * as ContextMenu from '$lib-docs/components/ui/context-menu/index.js';
+	import { Button } from '#lib-docs/components/ui/button/index.js';
+	import * as ContextMenu from '#lib-docs/components/ui/context-menu/index.js';
 	import { Sun, Moon, Feather } from '@lucide/svelte';
 	import { resolve } from '$app/paths';
 	import { toggleMode } from 'mode-watcher';
 	import { onMount, onDestroy } from 'svelte';
-	import Github from '$lib-docs/components/github.svelte';
+	import Github from '#lib-docs/components/github.svelte';
 	import NumberFlow from '@number-flow/svelte';
 
 	function downloadLogoSvg() {
