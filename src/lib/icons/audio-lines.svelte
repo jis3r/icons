@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { untrack } from 'svelte';
 	import type { IconProps } from './types.js';
 
 	let {
@@ -214,15 +215,15 @@
 		}
 	}
 
-	function handleMouseEnter() {
-		hoverAnimate = true;
+	function startLoop() {
 		isAnimatingBack = false;
 		startTime = null;
-		animationFrameId = requestAnimationFrame(animateFrame);
+		if (!animationFrameId) {
+			animationFrameId = requestAnimationFrame(animateFrame);
+		}
 	}
 
-	function handleMouseLeave() {
-		hoverAnimate = false;
+	function settleBack() {
 		startPositions = {
 			line1: { y1: line1Y1, y2: line1Y2 },
 			line2: { y1: line2Y1, y2: line2Y2 },
@@ -237,6 +238,28 @@
 			animationFrameId = requestAnimationFrame(animateFrame);
 		}
 	}
+
+	function handleMouseEnter() {
+		hoverAnimate = true;
+		startLoop();
+	}
+
+	function handleMouseLeave() {
+		hoverAnimate = false;
+		// A parent still asking for animation keeps the loop running.
+		if (!animateProp) settleBack();
+	}
+
+	// The loop is driven imperatively, so the prop needs an explicit start/stop.
+	// untrack keeps this effect depending on animateProp alone - reading the frame
+	// state as a dependency would re-run it on every frame.
+	$effect(() => {
+		const on = animateProp;
+		untrack(() => {
+			if (on) startLoop();
+			else if (!hoverAnimate && animationFrameId) settleBack();
+		});
+	});
 </script>
 
 <div

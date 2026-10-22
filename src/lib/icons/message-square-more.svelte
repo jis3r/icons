@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { untrack } from 'svelte';
 	import type { IconProps } from './types.js';
 
 	let {
@@ -67,7 +68,9 @@
 	}
 
 	function handleMouseEnter() {
-		if (animate) return;
+		// hoverAnimate doubles as the in-flight flag: guard on it, not on the
+		// animate union, or a parent holding animate=true would block the dots.
+		if (hoverAnimate) return;
 		hoverAnimate = true;
 
 		animateLine(10, 10, 8.5, 11.5, 10, 10, 0.6, 0.2, (y1, y2) => {
@@ -89,6 +92,12 @@
 			hoverAnimate = false;
 		}, 800);
 	}
+
+	// The dot animation is driven imperatively, so the prop has to trigger it
+	// explicitly; the group rotation is CSS and follows the animate union.
+	$effect(() => {
+		if (animateProp) untrack(handleMouseEnter);
+	});
 
 	$effect(() => () => clearTimeout(resetTimer));
 </script>
