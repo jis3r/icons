@@ -1,6 +1,6 @@
 <script>
 	import { Tooltip as TooltipPrimitive } from 'bits-ui';
-	import { cn } from '$lib-docs/utils.js';
+	import { cn } from '#lib-docs/utils.js';
 
 	/**
 	 * @type {{

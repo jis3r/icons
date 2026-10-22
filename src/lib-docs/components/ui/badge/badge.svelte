@@ -20,7 +20,7 @@
 </script>
 
 <script>
-	import { cn } from '$lib-docs/utils.js';
+	import { cn } from '#lib-docs/utils.js';
 
 	/**
 	 * @type {{
