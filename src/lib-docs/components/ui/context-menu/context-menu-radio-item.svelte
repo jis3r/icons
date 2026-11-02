@@ -1,7 +1,7 @@
 <script>
 	import { ContextMenu as ContextMenuPrimitive } from 'bits-ui';
 	import CircleIcon from '@lucide/svelte/icons/circle';
-	import { cn } from '$lib-docs/utils.js';
+	import { cn } from '#lib-docs/utils.js';
 
 	/**
 	 * @type {{

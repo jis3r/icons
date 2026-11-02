@@ -1,6 +1,6 @@
 <script>
 	import { ContextMenu as ContextMenuPrimitive } from 'bits-ui';
-	import { cn } from '$lib-docs/utils.js';
+	import { cn } from '#lib-docs/utils.js';
 	import ContextMenuPortal from './context-menu-portal.svelte';
 	let { ref = $bindable(null), portalProps, class: className, ...restProps } = $props();
 </script>

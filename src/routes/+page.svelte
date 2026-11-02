@@ -1,11 +1,11 @@
 <script>
 	import { onMount } from 'svelte';
-	import * as Marquee from '$lib-docs/components/ui/marquee';
+	import * as Marquee from '#lib-docs/components/ui/marquee/index.js';
 	import { animate } from 'motion';
 	import { page } from '$app/state';
 	import { goto } from '$app/navigation';
 	import { resolve } from '$app/paths';
-	import { Button } from '$lib-docs/components/ui/button';
+	import { Button } from '#lib-docs/components/ui/button/index.js';
 	import {
 		Activity,
 		AlarmClock,
@@ -307,7 +307,7 @@
 	onMount(() => {
 		if (page.url.searchParams.has('search')) {
 			const searchParam = page.url.searchParams.get('search') ?? '';
-			goto(resolve(`/icons?search=${encodeURIComponent(searchParam)}`), { replaceState: true });
+			goto(resolve(`icons?search=${encodeURIComponent(searchParam)}`), { replace: true });
 			return;
 		}
 
@@ -525,7 +525,7 @@
 							<h4 class="text-sm font-medium">Copy from website</h4>
 							<p class="text-muted-foreground text-sm">
 								You can download or copy icon components directly from the
-								<a href={resolve('/icons')} class="text-foreground underline"> icons page </a>
+								<a href={resolve('icons')} class="text-foreground underline"> icons page </a>
 
 								and paste them into your Svelte project.
 							</p>

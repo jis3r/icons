@@ -48,9 +48,9 @@ describe('generateIconsMeta', () => {
 		const importLines = content.split('\n').filter((line) => line.startsWith('import'));
 
 		expect(importLines).toEqual([
-			"import a from '$lib/icons/a.svelte';",
-			"import bIcon from '$lib/icons/b-icon.svelte';",
-			"import noLucide from '$lib/icons/no-lucide.svelte';"
+			"import a from '#lib/icons/a.svelte';",
+			"import bIcon from '#lib/icons/b-icon.svelte';",
+			"import noLucide from '#lib/icons/no-lucide.svelte';"
 		]);
 	});
 
