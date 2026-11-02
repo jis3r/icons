@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { untrack } from 'svelte';
 	import type { IconProps } from './types.js';
 
 	let {
@@ -83,6 +84,12 @@
 			});
 		});
 	}
+
+	// The blink morph is driven imperatively, so the prop has to trigger it
+	// explicitly; the pupil scaling is CSS and follows the class union below.
+	$effect(() => {
+		if (animateProp) untrack(handleMouseEnter);
+	});
 
 	const topOutlineD = $derived(topArchPath(morphProgress));
 	const bottomOutlineD = $derived(bottomArchPath(morphProgress));
